@@ -1,0 +1,15 @@
+{
+  "version": "P45-OFFICIAL-REPAIR-ROLLBACK-001",
+  "ready": true,
+  "root": "v27_storage/audits/official_repair_apply_001/rollback",
+  "files": [
+    {"path":"src/p45_v27/pairs/production.py","size":13393,"sha256":"e842bd0f5f9d397ef8e4aadbf1f32c91eeeb68ccac6b87c3a7cead366487fbbb"},
+    {"path":"src/p45_v27/pairs/lifecycle_v12.py","size":9473,"sha256":"b0c5041e7319aaa235bbd0fae0a1df8293b38da581822810f83ad769de222942"},
+    {"path":"00_P45_STATE/P45_CURRENT_STATE.json","size":68689,"sha256":"0b3adfd687f108a347a44e8a6ad68d85ad733558b023bfe3aa8c21c45be2e0ce"},
+    {"path":"00_P45_STATE/P45_CURRENT_STATE.md","size":5399,"sha256":"86e1dd845baa7a7f97f4659a738d18cc96bb339b87b776b5f0a12a2d6044d086"},
+    {"path":"00_P45_STATE/P45_DECISION_LOG.md","size":135746,"sha256":"a4767505f83b4e8567fbf2c8e56ef9d950a365c0574fcd98a541cb48985691b6"},
+    {"path":"00_P45_STATE/P45_HANDOFF.md","size":1109,"sha256":"41e0263113124544942026958cd7b302192ae858c30194ba061aefd26f6b0192"},
+    {"path":"00_P45_STATE/experiment_lab/06_INITIAL_EXPERIMENT_REGISTRY.md","size":19329,"sha256":"2c8f563f0e3164c759b4ab799f1a3df50ab14ce38769efeb4233d8d62238975e"},
+    {"path":"v27_storage/manifests/protected-canonical-v1.json","size":19932,"sha256":"051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd"}
+  ]
+}

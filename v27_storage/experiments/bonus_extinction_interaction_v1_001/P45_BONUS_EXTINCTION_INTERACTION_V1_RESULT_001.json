@@ -1,0 +1,758 @@
+{
+  "precheck": "PASS",
+  "canonical_latest": 1238,
+  "canonical_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "protocol_sha256": "d6c165da8ddee79e5d5773c2e9f961645587337f67bd7102812f0146d19d9529",
+  "seed": 15474761783979206558,
+  "simulations": 100000,
+  "data_checks": {
+    "continuous": true,
+    "duplicates_0": true,
+    "main_valid": true,
+    "bonus_valid": true,
+    "latest": 1238
+  },
+  "configurations": {
+    "L5-M2": {
+      "config_id": 1,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 1218,
+      "low_exposure": false,
+      "candidate_exposures": 19375,
+      "main_hits": 2628,
+      "mean_recovery_excess_informative": 0.036672140120416016,
+      "interaction_sum": 22.599999999999987,
+      "effect_per_informative": 0.018555008210180614,
+      "effect_per_target": 0.018555008210180614,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 1218,
+          "interaction_sum": 22.599999999999987,
+          "effect_per_informative": 0.018555008210180614,
+          "effect_per_target": 0.018555008210180614
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 609,
+          "interaction_sum": -35.0,
+          "effect_per_informative": -0.05747126436781609,
+          "effect_per_target": -0.05747126436781609
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 609,
+          "interaction_sum": 57.60000000000001,
+          "effect_per_informative": 0.09458128078817736,
+          "effect_per_target": 0.09458128078817736
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 100,
+          "interaction_sum": 46.06666666666666,
+          "effect_per_informative": 0.4606666666666666,
+          "effect_per_target": 0.4606666666666666
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 50,
+          "interaction_sum": 27.266666666666666,
+          "effect_per_informative": 0.5453333333333333,
+          "effect_per_target": 0.5453333333333333
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 20,
+          "interaction_sum": 16.53333333333333,
+          "effect_per_informative": 0.8266666666666665,
+          "effect_per_target": 0.8266666666666665
+        }
+      },
+      "T": 0.29738639648167414,
+      "raw_two_sided_p": 0.7643323566764333,
+      "holm_p": 1.0,
+      "maxT_p": 0.999990000099999,
+      "null_sd": 75.99540620343294
+    },
+    "L5-M3": {
+      "config_id": 2,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 1196,
+      "low_exposure": false,
+      "candidate_exposures": 12013,
+      "main_hits": 1636,
+      "mean_recovery_excess_informative": 0.028651059085841705,
+      "interaction_sum": -49.06666666666666,
+      "effect_per_informative": -0.041025641025641026,
+      "effect_per_target": -0.04028461959496442,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 1196,
+          "interaction_sum": -49.06666666666666,
+          "effect_per_informative": -0.041025641025641026,
+          "effect_per_target": -0.04028461959496442
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 598,
+          "interaction_sum": -53.93333333333333,
+          "effect_per_informative": -0.09018952062430323,
+          "effect_per_target": -0.08856048166392994
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 598,
+          "interaction_sum": 4.866666666666674,
+          "effect_per_informative": 0.008138238573021194,
+          "effect_per_target": 0.007991242474001107
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 96,
+          "interaction_sum": 14.800000000000002,
+          "effect_per_informative": 0.1541666666666667,
+          "effect_per_target": 0.14800000000000002
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 48,
+          "interaction_sum": 2.7333333333333356,
+          "effect_per_informative": 0.05694444444444449,
+          "effect_per_target": 0.05466666666666671
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 18,
+          "interaction_sum": 11.466666666666667,
+          "effect_per_informative": 0.6370370370370371,
+          "effect_per_target": 0.5733333333333334
+        }
+      },
+      "T": -0.7509148425259349,
+      "raw_two_sided_p": 0.4520654793452065,
+      "holm_p": 1.0,
+      "maxT_p": 0.991410085899141,
+      "null_sd": 65.34251806984626
+    },
+    "L5-M4": {
+      "config_id": 3,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 966,
+      "low_exposure": false,
+      "candidate_exposures": 6880,
+      "main_hits": 908,
+      "mean_recovery_excess_informative": -0.009661835748792234,
+      "interaction_sum": -59.466666666666654,
+      "effect_per_informative": -0.06155969634230503,
+      "effect_per_target": -0.048823207443897086,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 966,
+          "interaction_sum": -59.466666666666654,
+          "effect_per_informative": -0.06155969634230503,
+          "effect_per_target": -0.048823207443897086
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 492,
+          "interaction_sum": -26.133333333333336,
+          "effect_per_informative": -0.05311653116531166,
+          "effect_per_target": -0.04291187739463602
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 474,
+          "interaction_sum": -33.33333333333334,
+          "effect_per_informative": -0.07032348804500706,
+          "effect_per_target": -0.0547345374931582
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 73,
+          "interaction_sum": 8.600000000000001,
+          "effect_per_informative": 0.11780821917808221,
+          "effect_per_target": 0.08600000000000002
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 36,
+          "interaction_sum": -7.866666666666667,
+          "effect_per_informative": -0.21851851851851853,
+          "effect_per_target": -0.15733333333333335
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 11,
+          "interaction_sum": 2.6666666666666665,
+          "effect_per_informative": 0.2424242424242424,
+          "effect_per_target": 0.13333333333333333
+        }
+      },
+      "T": -1.1509157217550796,
+      "raw_two_sided_p": 0.24960750392496076,
+      "holm_p": 1.0,
+      "maxT_p": 0.8946010539894601,
+      "null_sd": 51.669001945671084
+    },
+    "L5-M5": {
+      "config_id": 4,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 560,
+      "low_exposure": false,
+      "candidate_exposures": 3632,
+      "main_hits": 477,
+      "mean_recovery_excess_informative": -0.012976190476190443,
+      "interaction_sum": -47.0,
+      "effect_per_informative": -0.08392857142857142,
+      "effect_per_target": -0.03858784893267652,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 560,
+          "interaction_sum": -47.0,
+          "effect_per_informative": -0.08392857142857142,
+          "effect_per_target": -0.03858784893267652
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 285,
+          "interaction_sum": -5.999999999999992,
+          "effect_per_informative": -0.02105263157894734,
+          "effect_per_target": -0.00985221674876846
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 275,
+          "interaction_sum": -41.0,
+          "effect_per_informative": -0.14909090909090908,
+          "effect_per_target": -0.06732348111658457
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 41,
+          "interaction_sum": 1.8000000000000003,
+          "effect_per_informative": 0.04390243902439025,
+          "effect_per_target": 0.018000000000000002
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 23,
+          "interaction_sum": -6.2666666666666675,
+          "effect_per_informative": -0.2724637681159421,
+          "effect_per_target": -0.12533333333333335
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 5,
+          "interaction_sum": -0.6666666666666666,
+          "effect_per_informative": -0.13333333333333333,
+          "effect_per_target": -0.03333333333333333
+        }
+      },
+      "T": -1.2188809416760034,
+      "raw_two_sided_p": 0.2230377696223038,
+      "holm_p": 1.0,
+      "maxT_p": 0.8610213897861021,
+      "null_sd": 38.55995970810191
+    },
+    "L10-M2": {
+      "config_id": 5,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 1109,
+      "low_exposure": false,
+      "candidate_exposures": 5344,
+      "main_hits": 710,
+      "mean_recovery_excess_informative": -0.002284340246468263,
+      "interaction_sum": 1.2000000000000028,
+      "effect_per_informative": 0.001082055906221824,
+      "effect_per_target": 0.0009852216748768496,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 1109,
+          "interaction_sum": 1.2000000000000028,
+          "effect_per_informative": 0.001082055906221824,
+          "effect_per_target": 0.0009852216748768496
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 562,
+          "interaction_sum": -10.466666666666665,
+          "effect_per_informative": -0.018623962040332145,
+          "effect_per_target": -0.017186644772851666
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 547,
+          "interaction_sum": 11.666666666666664,
+          "effect_per_informative": 0.021328458257160263,
+          "effect_per_target": 0.01915708812260536
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 83,
+          "interaction_sum": 11.800000000000002,
+          "effect_per_informative": 0.1421686746987952,
+          "effect_per_target": 0.11800000000000002
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 43,
+          "interaction_sum": 11.466666666666669,
+          "effect_per_informative": 0.2666666666666667,
+          "effect_per_target": 0.22933333333333336
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 14,
+          "interaction_sum": 7.6000000000000005,
+          "effect_per_informative": 0.5428571428571429,
+          "effect_per_target": 0.38
+        }
+      },
+      "T": 0.02583819099955146,
+      "raw_two_sided_p": 0.979210207897921,
+      "holm_p": 1.0,
+      "maxT_p": 1.0,
+      "null_sd": 46.442879844832575
+    },
+    "L10-M3": {
+      "config_id": 6,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 464,
+      "low_exposure": false,
+      "candidate_exposures": 1758,
+      "main_hits": 229,
+      "mean_recovery_excess_informative": -0.011637931034482747,
+      "interaction_sum": -25.266666666666673,
+      "effect_per_informative": -0.05445402298850576,
+      "effect_per_target": -0.020744389709906955,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 464,
+          "interaction_sum": -25.266666666666673,
+          "effect_per_informative": -0.05445402298850576,
+          "effect_per_target": -0.020744389709906955
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 255,
+          "interaction_sum": -12.066666666666672,
+          "effect_per_informative": -0.04732026143790852,
+          "effect_per_target": -0.01981390257252327
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 209,
+          "interaction_sum": -13.2,
+          "effect_per_informative": -0.06315789473684211,
+          "effect_per_target": -0.02167487684729064
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 23,
+          "interaction_sum": 0.3999999999999999,
+          "effect_per_informative": 0.017391304347826084,
+          "effect_per_target": 0.003999999999999999
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 19,
+          "interaction_sum": 3.1999999999999993,
+          "effect_per_informative": 0.16842105263157892,
+          "effect_per_target": 0.06399999999999999
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 1,
+          "interaction_sum": 1.2,
+          "effect_per_informative": 1.2,
+          "effect_per_target": 0.06
+        }
+      },
+      "T": -0.9469309590253356,
+      "raw_two_sided_p": 0.3418465815341847,
+      "holm_p": 1.0,
+      "maxT_p": 0.961920380796192,
+      "null_sd": 26.68269151604605
+    },
+    "L10-M4": {
+      "config_id": 7,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 130,
+      "low_exposure": true,
+      "candidate_exposures": 564,
+      "main_hits": 69,
+      "mean_recovery_excess_informative": -0.04769230769230765,
+      "interaction_sum": -21.666666666666668,
+      "effect_per_informative": -0.16666666666666669,
+      "effect_per_target": -0.01778872468527641,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 130,
+          "interaction_sum": -21.666666666666668,
+          "effect_per_informative": -0.16666666666666669,
+          "effect_per_target": -0.01778872468527641
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 75,
+          "interaction_sum": -14.266666666666667,
+          "effect_per_informative": -0.19022222222222224,
+          "effect_per_target": -0.023426382047071703
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 55,
+          "interaction_sum": -7.4,
+          "effect_per_informative": -0.13454545454545455,
+          "effect_per_target": -0.012151067323481117
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 3,
+          "interaction_sum": 0.3999999999999999,
+          "effect_per_informative": 0.1333333333333333,
+          "effect_per_target": 0.003999999999999999
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 3,
+          "interaction_sum": 0.3999999999999999,
+          "effect_per_informative": 0.1333333333333333,
+          "effect_per_target": 0.007999999999999998
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        }
+      },
+      "T": -1.55663911022512,
+      "raw_two_sided_p": 0.11838881611183888,
+      "holm_p": 1.0,
+      "maxT_p": 0.6494735052649474,
+      "null_sd": 13.91887594519789
+    },
+    "L10-M5": {
+      "config_id": 8,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 33,
+      "low_exposure": true,
+      "candidate_exposures": 168,
+      "main_hits": 20,
+      "mean_recovery_excess_informative": -0.07272727272727268,
+      "interaction_sum": -12.866666666666667,
+      "effect_per_informative": -0.3898989898989899,
+      "effect_per_target": -0.01056376573617953,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 33,
+          "interaction_sum": -12.866666666666667,
+          "effect_per_informative": -0.3898989898989899,
+          "effect_per_target": -0.01056376573617953
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 14,
+          "interaction_sum": -6.0,
+          "effect_per_informative": -0.42857142857142855,
+          "effect_per_target": -0.009852216748768473
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 19,
+          "interaction_sum": -6.866666666666667,
+          "effect_per_informative": -0.36140350877192984,
+          "effect_per_target": -0.011275314723590587
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 1,
+          "interaction_sum": -1.0,
+          "effect_per_informative": -1.0,
+          "effect_per_target": -0.01
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 1,
+          "interaction_sum": -1.0,
+          "effect_per_informative": -1.0,
+          "effect_per_target": -0.02
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        }
+      },
+      "T": -1.8573380195563038,
+      "raw_two_sided_p": 0.06670933290667093,
+      "holm_p": 0.8005119948800512,
+      "maxT_p": 0.44146558534414654,
+      "null_sd": 6.927477137274325
+    },
+    "L20-M2": {
+      "config_id": 9,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 193,
+      "low_exposure": true,
+      "candidate_exposures": 416,
+      "main_hits": 45,
+      "mean_recovery_excess_informative": -0.054231433506044875,
+      "interaction_sum": 7.733333333333332,
+      "effect_per_informative": 0.040069084628670114,
+      "effect_per_target": 0.0063492063492063475,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 193,
+          "interaction_sum": 7.733333333333332,
+          "effect_per_informative": 0.040069084628670114,
+          "effect_per_target": 0.0063492063492063475
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 96,
+          "interaction_sum": 0.7333333333333316,
+          "effect_per_informative": 0.007638888888888871,
+          "effect_per_target": 0.0012041598248494771
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 97,
+          "interaction_sum": 7.000000000000002,
+          "effect_per_informative": 0.07216494845360827,
+          "effect_per_target": 0.011494252873563222
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 3,
+          "interaction_sum": 2.2666666666666666,
+          "effect_per_informative": 0.7555555555555555,
+          "effect_per_target": 0.022666666666666665
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 1,
+          "interaction_sum": 1.4666666666666668,
+          "effect_per_informative": 1.4666666666666668,
+          "effect_per_target": 0.029333333333333336
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        }
+      },
+      "T": 0.6481933232173089,
+      "raw_two_sided_p": 0.5153848461515385,
+      "holm_p": 1.0,
+      "maxT_p": 0.996760032399676,
+      "null_sd": 11.930597024586609
+    },
+    "L20-M3": {
+      "config_id": 10,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 12,
+      "low_exposure": true,
+      "candidate_exposures": 36,
+      "main_hits": 4,
+      "mean_recovery_excess_informative": -0.06666666666666667,
+      "interaction_sum": -3.4000000000000004,
+      "effect_per_informative": -0.2833333333333334,
+      "effect_per_target": -0.0027914614121510675,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 12,
+          "interaction_sum": -3.4000000000000004,
+          "effect_per_informative": -0.2833333333333334,
+          "effect_per_target": -0.0027914614121510675
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 6,
+          "interaction_sum": -0.6000000000000005,
+          "effect_per_informative": -0.10000000000000009,
+          "effect_per_target": -0.000985221674876848
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 6,
+          "interaction_sum": -2.8,
+          "effect_per_informative": -0.4666666666666666,
+          "effect_per_target": -0.004597701149425287
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        }
+      },
+      "T": -1.0684142302021908,
+      "raw_two_sided_p": 0.24225757742422577,
+      "holm_p": 1.0,
+      "maxT_p": 0.927460725392746,
+      "null_sd": 3.182286330421274
+    },
+    "L20-M4": {
+      "config_id": 11,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 0,
+      "low_exposure": true,
+      "candidate_exposures": 0,
+      "main_hits": 0,
+      "mean_recovery_excess_informative": null,
+      "interaction_sum": 0.0,
+      "effect_per_informative": null,
+      "effect_per_target": 0.0,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        }
+      },
+      "T": 0.0,
+      "raw_two_sided_p": 1.0,
+      "holm_p": 1.0,
+      "maxT_p": 1.0,
+      "null_sd": 0.7752079311254866
+    },
+    "L20-M5": {
+      "config_id": 12,
+      "valid_target_rounds": 1218,
+      "informative_rounds": 0,
+      "low_exposure": true,
+      "candidate_exposures": 0,
+      "main_hits": 0,
+      "mean_recovery_excess_informative": null,
+      "interaction_sum": 0.0,
+      "effect_per_informative": null,
+      "effect_per_target": 0.0,
+      "periods": {
+        "full": {
+          "target_rounds": 1218,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "first_half": {
+          "target_rounds": 609,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "second_half": {
+          "target_rounds": 609,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent100": {
+          "target_rounds": 100,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent50": {
+          "target_rounds": 50,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        },
+        "recent20": {
+          "target_rounds": 20,
+          "informative_rounds": 0,
+          "interaction_sum": 0.0,
+          "effect_per_informative": null,
+          "effect_per_target": 0.0
+        }
+      },
+      "T": 0.0,
+      "raw_two_sided_p": 1.0,
+      "holm_p": 1.0,
+      "maxT_p": 1.0,
+      "null_sd": 0.17176251042913968
+    }
+  },
+  "best_observed_configuration": "L10-M5",
+  "family_maxT_two_sided_p": 0.44146558534414654,
+  "holm_pass_count": 0,
+  "final_judgment": "FAILED_NOT_INTERESTING",
+  "future_leakage": 0,
+  "EXP004_FINAL": "FAILED",
+  "EXP015_FINAL": "FAILED_EARLY",
+  "EXP017": "NOT_CREATED",
+  "official_protected_changes": 0
+}

@@ -1,0 +1,31 @@
+{
+  "schema_version": "PRIZE-SHARE-PROSPECTIVE-LEDGER-1.0",
+  "logical_id": "EXP-PRIZE-PROSPECTIVE-001-V1",
+  "append_only": true,
+  "correction_policy": "PRESERVE_ORIGINAL_AND_APPEND_LINKED_CORRECTION",
+  "signal_blind_before_allowed_look": true,
+  "fields": [
+    {"name": "record_id", "type": "string", "required": true},
+    {"name": "record_type", "type": "enum:OBSERVATION|CORRECTION", "required": true},
+    {"name": "corrects_record_id", "type": "string|null", "required": true},
+    {"name": "round", "type": "integer", "required": true},
+    {"name": "main_numbers", "type": "array[6]:integer(1..45)", "required": true},
+    {"name": "bonus", "type": "integer(1..45)", "required": true},
+    {"name": "second_prize_games", "type": "integer>=0", "source_field": "rnk2WnNope", "required": true},
+    {"name": "first_prize_games", "type": "integer>=0", "source_field": "rnk1WnNope", "required": true},
+    {"name": "total_sales_amount_krw", "type": "integer>0", "source_field": "wholEpsdSumNtslAmt", "required": true},
+    {"name": "retrieved_at", "type": "RFC3339 timestamp", "required": true},
+    {"name": "source_endpoint", "type": "string", "required": true},
+    {"name": "source_schema_version", "type": "string", "required": true},
+    {"name": "source_payload_sha256", "type": "sha256", "required": true},
+    {"name": "append_batch_sha256", "type": "sha256", "required": true}
+  ],
+  "forbidden_prelook_fields": [
+    "beta",
+    "p_value",
+    "effect_direction",
+    "signal_summary",
+    "subgroup_result",
+    "outcome_trend"
+  ]
+}

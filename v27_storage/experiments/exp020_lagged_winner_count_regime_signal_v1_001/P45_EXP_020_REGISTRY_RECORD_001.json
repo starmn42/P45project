@@ -1,0 +1,18 @@
+{
+  "experiment_id": "EXP-DRAW-20260828-020-V1",
+  "research_domain": "DRAW",
+  "lab_name": "LAGGED CROWD METADATA SIGNAL LAB",
+  "research_name": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
+  "data_range": {"history_start": 1, "history_end": 1238, "target_start": 2, "target_end": 1238},
+  "predictor": "official first-prize winning-game count at T-1",
+  "protocol_version": "V1-001",
+  "canonical_protocol_hash": "610da2d9522e37e8b35d4492abf750dcac5c42b264de4af52e32c1df8174475b",
+  "research_result": {"train_candidates": 60, "selection_eligible": 0, "holdout_executed": false, "final_verdict": "FAILED_NO_SELECTION_SIGNAL"},
+  "failure_reason": ["NO_FROZEN_TRAIN_CANDIDATE_PASSED_SELECTION_ELIGIBILITY"],
+  "reproducibility_status": "PASS",
+  "status": "FAILED",
+  "promotion_eligible": false,
+  "official_effect": "NONE",
+  "official_isolation_verified": true,
+  "future_leakage": 0
+}

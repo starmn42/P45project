@@ -1,0 +1,107 @@
+{
+  "backup_dir": "E:\\P45 프로젝트\\v27_storage\\backups\\schema272\\20260806T204608+0900",
+  "hashes": {
+    "source_core": "a3ef34cf27bd7cd7c5ec14eac25adf42befa65aecbb63daa8432ea7099dd7e4c",
+    "backup_core": "a3ef34cf27bd7cd7c5ec14eac25adf42befa65aecbb63daa8432ea7099dd7e4c",
+    "source_audit": "e864af10ca0917bdf58ef156c26870124056572b6a8feebe681df1dc9940897c",
+    "backup_audit": "e864af10ca0917bdf58ef156c26870124056572b6a8feebe681df1dc9940897c"
+  },
+  "before": {
+    "core": {
+      "user_version": 272,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "approval_record",
+        "core_locked_result",
+        "core_run",
+        "engine_version_record",
+        "number_ledger",
+        "pair_ledger",
+        "sealed_forward_ledger",
+        "trio_ledger",
+        "unit_definition",
+        "unit_group",
+        "unit_number_metric",
+        "unit_relation",
+        "unit_round_metric",
+        "unit_structure_ledger"
+      ],
+      "total_rows": 0,
+      "trigger_count": 24
+    },
+    "audit": {
+      "user_version": 272,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "audit_cache",
+        "audit_chunk",
+        "audit_run"
+      ],
+      "total_rows": 0,
+      "trigger_count": 6
+    }
+  },
+  "schema273": {
+    "core": {
+      "user_version": 273,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "approval_record",
+        "core_locked_result",
+        "core_run",
+        "engine_version_record",
+        "number_ledger",
+        "pair_ledger",
+        "sealed_forward_ledger",
+        "trio_gate_result",
+        "trio_ledger",
+        "trio_pareto_relation",
+        "trio_period_metric",
+        "trio_risk_metric",
+        "trio_role_evidence",
+        "trio_stat_test",
+        "trio_structure_metric",
+        "trio_unit_coverage",
+        "trio_walkforward_exposure",
+        "trio_walkforward_outcome",
+        "trio_walkforward_run",
+        "unit_definition",
+        "unit_group",
+        "unit_number_metric",
+        "unit_relation",
+        "unit_round_metric",
+        "unit_structure_ledger"
+      ],
+      "total_rows": 0,
+      "trigger_count": 24
+    },
+    "audit": {
+      "user_version": 273,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "audit_cache",
+        "audit_chunk",
+        "audit_run"
+      ],
+      "total_rows": 0,
+      "trigger_count": 6
+    }
+  },
+  "pointer": {
+    "schema_version": 273,
+    "core_db": "p45_v273_core.sqlite3",
+    "audit_db": "p45_v273_audit.sqlite3",
+    "previous_core_db": "p45_v272_core.sqlite3",
+    "previous_audit_db": "p45_v272_audit.sqlite3",
+    "previous_schema_version": 272,
+    "activated_at": "20260806T204608+0900"
+  },
+  "new_hashes": {
+    "core": "2cbc4cc03f7e189c951529fd1ca1beeaa4514ed0c8e02e2ffca2fd42b4c72ccd",
+    "audit": "b919b8b5067860e3705c323b8caf182e1f397d26f61ccdfa051a094c4a1c2d95"
+  }
+}

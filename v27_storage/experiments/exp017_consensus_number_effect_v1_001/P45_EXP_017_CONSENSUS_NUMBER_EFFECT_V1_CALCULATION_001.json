@@ -1,0 +1,76 @@
+{
+  "experiment_id": "EXP-017 / EXP-DRAW-20260827-017-V1",
+  "execution_mode": "LOCKED_HISTORICAL_BACKTEST_CONDITIONAL_WALKFORWARD",
+  "lock_verify": {
+    "protocol_sha_expected": "da86d5192cf25a7d45b3c8eb8d68a55d06f720613cd2335dc41f06fdf0cd83a3",
+    "protocol_sha_actual": "da86d5192cf25a7d45b3c8eb8d68a55d06f720613cd2335dc41f06fdf0cd83a3",
+    "protocol_sha_status": "PASS",
+    "lock_sha_expected": "839ae4c0e96a19823d8b900447cb8082fd696dc67bbac4e75d28c504e381272c",
+    "lock_sha_actual": "839ae4c0e96a19823d8b900447cb8082fd696dc67bbac4e75d28c504e381272c",
+    "lock_sha_status": "PASS"
+  },
+  "structural_reproduction": {
+    "targets": 1237,
+    "active_rounds": 1104,
+    "total_exposures": 2267,
+    "k_distribution": {
+      "0": 133,
+      "1": 342,
+      "2": 448,
+      "3": 249,
+      "4": 48,
+      "5": 12,
+      "6": 5
+    },
+    "max_k": 6,
+    "development": {
+      "targets": 866,
+      "active_rounds": 769,
+      "total_exposures": 1592
+    },
+    "walkforward": {
+      "targets": 371,
+      "active_rounds": 335,
+      "total_exposures": 675
+    },
+    "structural_match": "PASS"
+  },
+  "development": {
+    "range": "2..867",
+    "targets": 866,
+    "active_rounds": 769,
+    "exposures": 1592,
+    "hits": 224,
+    "inclusion_rate": 0.1407035175879397,
+    "null_rate": 0.13333333333333333,
+    "absolute_lift": 0.007370184254606366,
+    "absolute_lift_percentage_points": 0.7370184254606366,
+    "exact_p_primary_one_sided_upper": 0.19907501596738386,
+    "rate_condition": true,
+    "p_condition": false,
+    "verdict": "FAILED_NOT_SUPPORTED"
+  },
+  "walkforward": {
+    "executed": false,
+    "reason": "DEVELOPMENT_FAILED_PROTOCOL_GATE"
+  },
+  "secondary_robustness": {
+    "executed": true,
+    "permutations": 100000,
+    "seed": 20260827,
+    "greater_or_equal": 19935,
+    "p_secondary_add_one": 0.1993580064199358,
+    "status": "ROBUSTNESS_CONTEXT_ONLY"
+  },
+  "final_verdict": "FAILED_NOT_SUPPORTED",
+  "prospective": {
+    "required": false,
+    "start_target": 1239,
+    "outcome_read_or_written": false
+  },
+  "protection": {
+    "future_leakage": 0,
+    "sealed_1239_changed": false,
+    "prospective_outcome_changes": 0
+  }
+}

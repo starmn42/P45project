@@ -1,0 +1,26 @@
+{
+  "blocks": [
+    {
+      "range": "801~900",
+      "delta_ll": 10.566984493988855,
+      "train_end_round": 800
+    },
+    {
+      "range": "901~1000",
+      "delta_ll": -1.793163354441674,
+      "train_end_round": 900
+    },
+    {
+      "range": "1001~1100",
+      "delta_ll": 0.2987422313137813,
+      "train_end_round": 1000
+    },
+    {
+      "range": "1101~1237",
+      "delta_ll": 12.924911390340185,
+      "train_end_round": 1100
+    }
+  ],
+  "total": 21.997474761201147,
+  "gate": "PASS"
+}

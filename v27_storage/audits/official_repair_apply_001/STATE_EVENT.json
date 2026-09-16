@@ -1,0 +1,51 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER_ATTACHED_OFFICIAL_REPAIR_WORK_INSTRUCTION_001",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260824-095",
+  "decision": "사용자 명시 승인에 따라 PAIR historical lifecycle implementation defect를 SHADOW_LIFECYCLE_RESTORATION_ONLY 범위로 공식 적용하고 sealed 1238 pre-draw canary 및 관련 검증을 통과시킨 뒤 official engine을 새 baseline에서 다시 FROZEN으로 확정한다.",
+  "reason": "Architecture review는 ARCHITECTURE_REPAIR_SPECIFIABLE, shadow는 SHADOW_REPAIR_RESTORES_LIFECYCLE, Phase A와 Phase B는 PASS였으며 staging 및 official 패치가 봉인된 target 1238/max source 1237 canary에서 NO_OUTPUT과 동일 digest를 재현했다.",
+  "related_stage": "OFFICIAL_PAIR_LIFECYCLE_REPAIR_APPLY_001",
+  "category": "OFFICIAL_FROZEN_ENGINE_APPROVED_REPAIR",
+  "evidence": "plan fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9; RC 361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546; Phase A PASS; Phase B PASS; sealed canary digest 771eba5da4736b9745c866eb018f143010e01b4ff9a0d8b7ea40a57b5f65cf55",
+  "affected_files": "src/p45_v27/pairs/production.py; src/p45_v27/pairs/lifecycle_v12.py; one canonical registry row; managed State/Decision/Handoff files; recovery handoff; audit evidence only",
+  "affected_schema": "none; official DB not written",
+  "previous_rule": "PAIR historical lifecycle implementation was missing and official engine remained frozen with contaminated 0/867 end-to-end coverage evidence",
+  "new_rule": "PAIR historical lifecycle implementation defect officially repaired and verified; old 0/867 is not clean end-to-end performance evidence; shadow 100/867 is not official performance; NO-PICK remains unresolved",
+  "allowed_next_action": "CHATGPT_REVIEW_OF_OFFICIAL_APPLY_RESULT",
+  "forbidden_actions": ["EXP_017_CREATION", "DRAW_DISCOVERY_PAUSE_RELEASE", "HISTORICAL_OUTCOME_SCORING", "SHADOW_100_OF_867_AS_OFFICIAL_PERFORMANCE", "GATE_THRESHOLD_SIGNATURE_SEMANTICS_CHANGE", "PROSPECTIVE_SIGNAL_PEEKING"],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "OFFICIAL_PAIR_LIFECYCLE_REPAIR_APPLY_001_COMPLETE",
+    "current_status": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED_ENGINE_FROZEN",
+    "last_completed_stage": "OFFICIAL_PAIR_LIFECYCLE_REPAIR_APPLY_001",
+    "next_stage": "CHATGPT_REVIEW_OF_OFFICIAL_APPLY_RESULT",
+    "next_action": "CHATGPT_REVIEW_OF_OFFICIAL_APPLY_RESULT",
+    "experiment_lab": {"registered_experiments": 63, "registry_count_definition": "CANONICAL_PHYSICAL_VERSION_ROWS", "registry_unique_experiment_ids": 63, "registry_unique_logical_families": 61},
+    "research_memory_policy": {"experiment_registry_total": 63},
+    "research_state": {
+      "registry_physical_rows": 63,
+      "official_pair_lifecycle_repair_apply_001": {
+        "status": "APPLIED_AND_VERIFIED",
+        "scope": "SHADOW_LIFECYCLE_RESTORATION_ONLY",
+        "official_engine": "FROZEN",
+        "gate_changed": false,
+        "threshold_changed": false,
+        "signature_changed": false,
+        "semantics_changed": false,
+        "historical_outcome_scoring_count": 0,
+        "future_leakage_count": 0,
+        "sealed_canary_target": 1238,
+        "sealed_canary_max_source": 1237,
+        "sealed_canary_output": "NO_OUTPUT",
+        "sealed_canary_digest": "771eba5da4736b9745c866eb018f143010e01b4ff9a0d8b7ea40a57b5f65cf55",
+        "old_0_of_867_interpretation": "CONTAMINATED_NOT_CLEAN_END_TO_END_PERFORMANCE_EVIDENCE",
+        "shadow_100_of_867_interpretation": "NOT_OFFICIAL_HISTORICAL_PERFORMANCE",
+        "no_pick_status": "UNRESOLVED",
+        "draw_discovery_pause": "ACTIVE",
+        "exp_017": "NOT_CREATED",
+        "prize_retail_prospective_protocols": "UNCHANGED"
+      }
+    }
+  }
+}

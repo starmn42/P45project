@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-10T13:35:00+09:00",
+  "transaction_id": "6e002bb4-a5a6-4aa2-a973-affa91b8ad55",
+  "decision_id": "DECISION-20260810-013",
+  "state_version": "1.0.2",
+  "project_version": "P45 v2.7.3",
+  "current_stage": "STAGE_7_2_COMPLETE",
+  "current_status": "TRIO_FINAL_AGGREGATION_COMPLETE",
+  "state_hash": "c544427730338ac0ce89ea6c694b4e22eec3bea719d4a38b0b5db82f1760ff70",
+  "current_state_md_sha256": "a19aeacbb13f6b6a895cc06a5157b593bd3496de3040be747341138b92fd6cb1",
+  "current_state_json_sha256": "b04465a22091207e271dc2789677f4750430bb4cca828f0edae6ffcd570f0bba",
+  "handoff_sha256": "678fa0fba02964ef90d5dc48567d41a39e223cff23cbaaa91d60800d7029d939",
+  "decision_log_sha256": "d73b3413e4bf24b7c234bc28fea885f6a09e96e0a120bdba5f5e00b1158e582a",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

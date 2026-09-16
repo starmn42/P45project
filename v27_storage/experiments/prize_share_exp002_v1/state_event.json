@@ -1,0 +1,67 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260821-078",
+  "decision": "EXP-PRIZE-002-V1은 source semantics를 outcome 분석 전에 확인하고 protocol을 봉인한 뒤 1~1237회만 사용했다. TRAIN 방향, confirmatory block permutation, frozen walkforward를 모두 통과했으므로 SUPPORTED_CROSS_OUTCOME으로 보존한다.",
+  "reason": "판매량을 조건으로 한 2등 당첨게임 수에서 사전고정 X2가 같은 양의 방향을 보였고 잠긴 검증 관문을 통과했다. 이는 cross-outcome corroboration일 뿐 독립 재현·인과·DRAW 신호·공식 승격은 아니다.",
+  "related_stage": "EXPERIMENT_LAB_PRIZE_SHARE_EXP002_V1",
+  "category": "EXPERIMENT_RESULT",
+  "evidence": "protocol e27100d726264310d2402cb691f8ca8a53d0d2e5f9ece861cd033156573f5302; data 95955ee79afd6b7004f0283776eba9007834d30fd8f0b4b18cce379bf3ec9e4b; result 785bb10a8d6183f58ac29f7214e5a0ed8a8946784354b1f2f95bfbf7779cc88b; final report a8c7fc12550230ec8770ce5b1e1b0bca79771caf05036c1dffbed2a1d682b8d8",
+  "affected_files": "EXP-PRIZE-002 source preflight, locked protocol, calculator, immutable snapshot, permutation/WF/result evidence, registry, state files, portable bundle",
+  "affected_schema": "none",
+  "previous_rule": "EXP-PRIZE-002-V1 not run",
+  "new_rule": "No official research-rule change. Preserve EXP-PRIZE-002-V1 as SUPPORTED_CROSS_OUTCOME with promotion candidate false.",
+  "allowed_next_action": "PROSPECTIVE_CONFIRMATION_PROTOCOL_DESIGN_ONLY_AFTER_SEPARATE_APPROVAL",
+  "forbidden_actions": [
+    "OFFICIAL_ENGINE_PROMOTION",
+    "DRAW_ENGINE_CONNECTION",
+    "THRESHOLD_RETUNING",
+    "EXP_PRIZE_002_V2_RESCUE",
+    "PROSPECTIVE_RUN_WITHOUT_APPROVAL"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "EXPERIMENT_LAB_PRIZE_SHARE_EXP002_V1_COMPLETE",
+    "last_completed_stage": "EXP_PRIZE_002_V1_SUPPORTED_CROSS_OUTCOME",
+    "current_status": "EXP_PRIZE_002_V1_SUPPORTED_CROSS_OUTCOME",
+    "next_stage": "PROSPECTIVE_CONFIRMATION_PROTOCOL_DESIGN",
+    "next_action": "PROSPECTIVE_CONFIRMATION_PROTOCOL_DESIGN_ONLY_AFTER_SEPARATE_APPROVAL",
+    "research_state": {
+      "prize_share_exp002_v1": {
+        "logical_id": "EXP-PRIZE-002-V1",
+        "registry_id": "EXP-PRIZE-20260821-004-V1",
+        "domain": "PRIZE_SHARE",
+        "status": "SUPPORTED_CROSS_OUTCOME",
+        "protocol_sha256": "e27100d726264310d2402cb691f8ca8a53d0d2e5f9ece861cd033156573f5302",
+        "source_semantics": "PASS",
+        "second_prize_count_field": "rnk2WnNope",
+        "bonus_field": "bnsWnNo",
+        "total_sales_field": "wholEpsdSumNtslAmt",
+        "data_range": "1~1237",
+        "data_rows": 1237,
+        "data_sha256": "95955ee79afd6b7004f0283776eba9007834d30fd8f0b4b18cce379bf3ec9e4b",
+        "round_1238_plus_used": false,
+        "train_beta2": 0.039379783189906856,
+        "train_gate": "PASS",
+        "holdout_beta2": 0.04020656383082838,
+        "effect_per_plus1_x2": 1.0410257902595796,
+        "primary_block_permutation_p": 0.028089719102808972,
+        "secondary_global_permutation_p": 0.02867971320286797,
+        "permutations_each": 100000,
+        "wf_delta_ll_total": 21.997474761201147,
+        "wf_gate": "PASS",
+        "deterministic_rerun": true,
+        "future_leakage": 0,
+        "independent_empirical_replication": false,
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false,
+        "result_document": "00_P45_STATE/experiment_lab/EXP-PRIZE-002_SECOND_PRIZE/EXP_PRIZE_002_V1_FINAL_RESULT.md"
+      }
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 47
+    }
+  }
+}

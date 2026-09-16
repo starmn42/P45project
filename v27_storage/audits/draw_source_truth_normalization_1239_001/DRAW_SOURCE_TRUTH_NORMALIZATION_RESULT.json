@@ -1,0 +1,49 @@
+{
+  "status": "DRAW_SOURCE_OF_TRUTH_NORMALIZED",
+  "rows": 1239,
+  "min_round": 1,
+  "max_round": 1239,
+  "missing_rounds": 0,
+  "duplicate_rounds": 0,
+  "csv_sqlite_equal": true,
+  "baseline_1_1237_exact": true,
+  "round_1238": {
+    "value": [
+      1238,
+      "2026-08-22",
+      [
+        2,
+        13,
+        18,
+        32,
+        38,
+        42
+      ],
+      22
+    ],
+    "approved_source_payload_sha256": "99d44e493a357785f976e37d99b1e0d2ae179b161cc1aa4a5665f9606ec0c119",
+    "provenance": "PASS"
+  },
+  "round_1239": {
+    "value": [
+      1239,
+      "2026-08-29",
+      [
+        11,
+        13,
+        22,
+        32,
+        33,
+        36
+      ],
+      8
+    ],
+    "source_payload_sha256": "4c0c600801ddeef24d98b54206bac807eaf623c7031bac35c035d4892d6c109a",
+    "canonical_row_sha256": "86055d9da5ae5bbefd17cb52d1f9b7232184d1df7a2430b3f172a78b732b445d",
+    "provenance": "PASS"
+  },
+  "canonical_csv": "E:\\P45 프로젝트\\v27_storage\\audits\\draw_source_truth_normalization_1239_001\\CANONICAL_DRAW_1_1239.csv",
+  "canonical_csv_sha256": "56748e0192252706d2cf90c6306aff9b8c6c88381a90624c27f4fb23713ca27c",
+  "live_csv_sha256": "56748e0192252706d2cf90c6306aff9b8c6c88381a90624c27f4fb23713ca27c",
+  "live_db_sha256": "fc8d4fcd364520480121cd629499b706915ba1abd6425bc2676706e754fdc20e"
+}

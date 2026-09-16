@@ -1,0 +1,188 @@
+﻿{
+  "state_version": "1.0.10",
+  "updated_at": "2026-08-10T15:42:24+09:00",
+  "updated_by": "p45_state_manager",
+  "project_version": "P45 v2.7.4",
+  "schema_version": "273",
+  "current_stage": "STAGE_7_2_COMPLETE",
+  "current_status": "TRIO_FINAL_AGGREGATION_COMPLETE",
+  "last_completed_stage": "7.2",
+  "next_stage": "PAIR_STAGE_3_APPROVAL_REQUIRED",
+  "next_action": "P45 v2.7.4 PAIR 3단계 gate/state/risk/structure/recent/Pareto/ranking 별도 승인",
+  "pair_implementation_approved": true,
+  "official_documents": [
+    {
+      "name": "P45 v2.7.1",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.1_Work_UTF8_BOM_CRLF.md",
+      "sha256": "dca50b766b028ba2c2e76830611bc4c13aef1764f5194fbb34bc6c84c9a0128a"
+    },
+    {
+      "name": "Stage 5.5 Work",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.1_Stage5_5_Work_UTF8_BOM_CRLF.md",
+      "sha256": "830bf51f44d479e0b3bf2b23e00fc9153c6b2007fdc6732501e05f86d4bcfb24"
+    },
+    {
+      "name": "Number Gate v2.7.2",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.2_Number_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "sha256": "6c268c0950edfd1523bd8bf6d6451eef4b12517e34a0cfdc5c7040639c6f25cd"
+    },
+    {
+      "name": "Stage 6 Work",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.2_Stage6_Work_UTF8_BOM_CRLF.md",
+      "sha256": "6f4094412163e8b07f3c02f69cad417bb8fc7758070c2e24d49870f4fc24403a"
+    },
+    {
+      "name": "TRIO Gate v2.7.3",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.3_TRIO_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "sha256": "2ed0257c1545f8ebca462d0c03ca9176d3a96cb709f65e6335df4bc944bdecd9"
+    },
+    {
+      "name": "Stage 7 Work",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.3_Stage7_Work_UTF8_BOM_CRLF.md",
+      "sha256": "73478304eefe438747f497d8021f71e982e60f8f2a7ea5f264504573cfd55d15"
+    },
+    {
+      "name": "PAIR Gate v2.7.4",
+      "path": "E:\\P45 프로젝트\\P45_v2.7.4_PAIR_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "sha256": "a31a065838f88c65d40605c1a170c13eb5fca7cf3d706de5eda088b43227ae6f"
+    }
+  ],
+  "walkforward": {
+    "run_id": "b7a92876-4a55-4472-a738-f1edb74796ec",
+    "evaluation_range": "43~1235",
+    "total_rounds": 1193,
+    "complete": 1088,
+    "skipped_research_hold": 105,
+    "failed": 0,
+    "selection_exposure": 100711,
+    "duplicate_exposure": 0,
+    "missing_rounds": 0,
+    "duplicate_rounds": 0,
+    "status": "WALKFORWARD_COMPLETE",
+    "source_db": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_walkforward.sqlite3",
+    "sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5"
+  },
+  "number_state": {
+    "analysis_round": 1236,
+    "candidates": [
+      3,
+      2,
+      31,
+      13,
+      19,
+      27,
+      40,
+      38,
+      20,
+      45,
+      39,
+      15
+    ],
+    "candidate_pool_type": "EXPANDED_TEST_POOL",
+    "number_pass": 1,
+    "operational_ledger_rows": 0
+  },
+  "trio_state": {
+    "total": 220,
+    "pass": 0,
+    "weaken": 0,
+    "test": 12,
+    "hold": 208,
+    "fail": 0,
+    "valid_for_pair_true": 12,
+    "valid_trios": [
+      "2-13-27",
+      "2-13-31",
+      "2-15-27",
+      "2-15-31",
+      "2-19-38",
+      "2-19-40",
+      "2-20-38",
+      "2-20-39",
+      "2-27-45",
+      "2-31-45",
+      "13-27-45",
+      "13-31-45"
+    ],
+    "result_db": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_final.sqlite3",
+    "sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+  },
+  "pair_state": {
+    "rows": 0,
+    "status": "NOT_STARTED",
+    "approved": false,
+    "completeness_audit": "PAIR_SPEC_COMPLETE",
+    "implementation_blockers": 0,
+    "data_completeness": "DATA_GAP",
+    "amendment_draft": "P45_v2.7.4_PAIR_Gate_Amendment_DRAFT_UTF8_BOM_CRLF.md",
+    "amendment_draft_status": "DRAFT_SPEC_COMPLETE_PENDING_USER_REVIEW",
+    "amendment_draft_rule_authority": "NONE",
+    "amendment_open_gaps": 0,
+    "spec_blockers": 0,
+    "implementation_ready": true,
+    "implementation_approved": true,
+    "official_rule_document": "P45_v2.7.4_PAIR_Gate_Amendment_UTF8_BOM_CRLF.md",
+    "official_rule_sha256": "a31a065838f88c65d40605c1a170c13eb5fca7cf3d706de5eda088b43227ae6f",
+    "approved_scope": "PAIR_STAGE_1_2_ONLY",
+    "stage_1_schema_storage": "COMPLETE_SYNTHETIC_FIXTURE_ONLY",
+    "stage_2_candidate_key_signature": "COMPLETE_SYNTHETIC_FIXTURE_ONLY",
+    "schema274_status": "VERIFIED_NOT_ACTIVE"
+  },
+  "core_state": {
+    "official_rows": 0,
+    "final_lock": "NONE"
+  },
+  "audit_state": {
+    "official_rows": 0
+  },
+  "blockers": [
+    "PAIR_STAGE_3_APPROVAL_REQUIRED"
+  ],
+  "forbidden_actions": [
+    "PAIR_GENERATION",
+    "NONOVERLAPPING_TRIO_PAIR_GENERATION",
+    "FINAL_SIX",
+    "SET_1_SET_2",
+    "CORE_SET_READY",
+    "CORE_TEST_SET_READY_FINAL",
+    "OFFICIAL_LOCK",
+    "LIVE_OFFICIAL",
+    "AUDIT_RUN",
+    "RULE_RELAXATION",
+    "OFFICIAL_RULE_MUTATION"
+  ],
+  "important_hashes": {
+    "canonical_manifest": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+    "walkforward_db": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+    "trio_final_db": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59",
+    "active_core_db": "2cbc4cc03f7e189c951529fd1ca1beeaa4514ed0c8e02e2ffca2fd42b4c72ccd",
+    "active_audit_db": "b919b8b5067860e3705c323b8caf182e1f397d26f61ccdfa051a094c4a1c2d95"
+  },
+  "last_decision_id": "DECISION-20260810-020",
+  "state_hash": "1514849881905ff9ae6b97b7be98e607679a3b582d74a0fc38e3e8e2a2aa64f0",
+  "state_system_version": "1.2.1",
+  "capture_system": {
+    "status": "STATE_CAPTURE_READY",
+    "state_check_enabled": true,
+    "policy_file": "E:\\P45 프로젝트\\00_P45_STATE\\P45_CAPTURE_POLICY.md",
+    "allowed_event_types": [
+      "CONVERSATION_ONLY",
+      "IDEA_PENDING",
+      "AMBIGUOUS_IMPORTANT",
+      "DECISION_CONFIRMED"
+    ],
+    "automatic_research_promotion": false,
+    "scope": "CURRENT_P45_WORK_CONTEXT_ONLY"
+  },
+  "handoff_system": {
+    "status": "STATE_HANDOFF_READY",
+    "new_chat_start": "E:\\P45 프로젝트\\00_P45_STATE\\P45_NEW_CHAT_START.md",
+    "portable_bundle": "E:\\P45 프로젝트\\00_P45_STATE\\P45_PORTABLE_HANDOFF.zip",
+    "local_verification": "STATE_HANDOFF_VERIFIED",
+    "portable_verification": "STATE_HANDOFF_PORTABLE_ONLY",
+    "chronology_policy": "decision <= state <= bundle; state <= snapshot",
+    "external_portable_test": "STATE_HANDOFF_PORTABLE_ONLY_VERIFIED",
+    "external_portable_conflicts": 0,
+    "external_portable_scope": "FRESH_CHATGPT_CHAT_BUNDLE_ONLY"
+  }
+}

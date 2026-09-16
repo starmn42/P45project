@@ -1,0 +1,11 @@
+{
+  "status":"PAIR_WALKFORWARD_RUNNER_READY",
+  "signature_version":"PAIR-RULE-SIGNATURE-1.1",
+  "runner_schema_version":2741,
+  "tests":{"passed":44,"failed":0},
+  "verified":["R_MINUS_1_ONLY","PREDICTION_BEFORE_RESULT","R_PLUS_1_HISTORY","ZERO_EXPOSURE","NEW_SIGNATURE","CHANGED_SIGNATURE","IDENTITY_SELECTION_SEPARATION","ONE_REP_PER_ROUND_SIGNATURE","ATOMIC_ROLLBACK","RESUME","RESUME_EQUALS_CONTINUOUS","DUPLICATE_ROUND_BLOCK","DUPLICATE_EXPOSURE_BLOCK","HASH_MISMATCH_BLOCK","SOURCE_CHANGE_BLOCK","DETERMINISM_10"],
+  "full_walkforward_started":false,
+  "dedicated_production_db_created":false,
+  "operational_pair_rows":0,
+  "remaining_blockers":[]
+}

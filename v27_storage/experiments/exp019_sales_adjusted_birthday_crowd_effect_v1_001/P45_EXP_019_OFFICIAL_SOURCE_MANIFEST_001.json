@@ -1,0 +1,56 @@
+{
+  "experiment_id": "EXP-019 / EXP-DRAW-20260827-019-V1",
+  "source_domain": "www.dhlottery.co.kr",
+  "official_third_party_flag": "OFFICIAL",
+  "source_method": "GET /lt645/selectPstLt645InfoNew.do: one center batch followed by sequential 10-round older batches",
+  "retrieval_timestamp": "2026-08-27T22:06:45+09:00",
+  "round_range": [
+    88,
+    1238
+  ],
+  "expected_rounds": 1151,
+  "obtained_rounds": 1151,
+  "development_rounds": 780,
+  "holdout_rounds": 371,
+  "missing_rounds": [],
+  "duplicate_rounds": [],
+  "main6_mismatch_rounds": [],
+  "invalid_sales_rounds": [],
+  "price_per_game": 1000,
+  "dataset_path": "v27_storage/experiments/exp019_sales_adjusted_birthday_crowd_effect_v1_001/P45_EXP_019_OFFICIAL_CROWD_METADATA_001.csv",
+  "dataset_sha256": "03cec8aea026d987a6ea8550154e4110ac8b100df9c868f18ce19258cb65a9a4",
+  "raw_batches_path": "v27_storage/experiments/exp019_sales_adjusted_birthday_crowd_effect_v1_001/P45_EXP_019_OFFICIAL_RAW_BATCHES_001.jsonl",
+  "raw_batches_sha256": "e825073224aa7a869d0902be237ea5dc60652acae10632d6314517465a691742",
+  "source_endpoint": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
+  "source_urls_requested_count": 116,
+  "structural_preflight": {
+    "sales_min": 39232234000,
+    "sales_max": 134945802000,
+    "games_sold_min": 39232234,
+    "games_sold_max": 134945802,
+    "lambda_min": 4.81669060755845,
+    "lambda_max": 16.5678094452343,
+    "birthday_range_count_min": 0,
+    "birthday_range_count_max": 6,
+    "birthday_range_count_distribution": {
+      "0": 1,
+      "1": 12,
+      "2": 58,
+      "3": 240,
+      "4": 405,
+      "5": 335,
+      "6": 100
+    }
+  },
+  "relationship_peek": {
+    "b_vs_winner_relationship": false,
+    "sales_adjusted_effect": false,
+    "beta": false,
+    "u_statistic": false,
+    "permutation": false,
+    "p_value": false,
+    "split_verdict": false
+  },
+  "future_leakage": 0,
+  "status": "DATA_PREFLIGHT_PASS"
+}

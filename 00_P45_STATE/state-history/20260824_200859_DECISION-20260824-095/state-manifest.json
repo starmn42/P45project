@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-24T20:08:59+09:00",
+  "transaction_id": "4f95ca12-b0b2-4c98-92b6-1fe0e12a2ae6",
+  "decision_id": "DECISION-20260824-095",
+  "state_version": "1.0.88",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "OFFICIAL_PAIR_LIFECYCLE_REPAIR_APPLY_001_COMPLETE",
+  "current_status": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED_ENGINE_FROZEN",
+  "state_hash": "465cebdab31bee72eac8b374f9a061596dcce81ed4ec572c90d7ee2efa14abf2",
+  "current_state_md_sha256": "6065181d95fc765d7174c9e1d556b82e7e2d52d6090032aee68b40d05f480aed",
+  "current_state_json_sha256": "d4c8792796cc1197777f6c34c1bdf0869826088ae0e7a62101f1ca100a8d8038",
+  "handoff_sha256": "31049f9cc444ea3bcc40ceb1b6b547cb0762f18717fa75653fd5090e85b6651f",
+  "decision_log_sha256": "e60631e14bc7287e6a71ea9ce1a9d46542fa03a69598bab8b1ad29c34d585a2b",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

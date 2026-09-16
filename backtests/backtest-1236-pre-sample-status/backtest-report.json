@@ -1,0 +1,422 @@
+{
+  "candidate_selection_performed": false,
+  "current_exact_occupancy_vector": {
+    "by_annihilated_group": {
+      "28~36": {
+        "bonus_return_count": 3,
+        "integrated": {
+          "depth_counts": {
+            "0": 4,
+            "1": 4,
+            "2": 1,
+            "3_PLUS": 0
+          },
+          "random_structural_reference": {
+            "0": 0.18395217941445963,
+            "1": 0.3862995767703652,
+            "2": 0.2990706400802827,
+            "3_PLUS": 0.13067760373489243,
+            "return_any": 0.8160478205855404
+          },
+          "return_count": 5,
+          "return_rate": 0.5555555555555556,
+          "return_rate_minus_random": -0.2604922650299848,
+          "wilson_95": [
+            0.26665129349549305,
+            0.8112214789023355
+          ]
+        },
+        "main": {
+          "depth_counts": {
+            "0": 6,
+            "1": 3,
+            "2": 0,
+            "3_PLUS": 0
+          },
+          "random_structural_reference": {
+            "0": 0.2391378332387975,
+            "1": 0.41656267725467955,
+            "2": 0.2603516732841747,
+            "3_PLUS": 0.08394781622234827,
+            "return_any": 0.7608621667612026
+          },
+          "return_count": 3,
+          "return_rate": 0.3333333333333333,
+          "return_rate_minus_random": -0.42752883342786924,
+          "wilson_95": [
+            0.1205838183869109,
+            0.6457978644196036
+          ]
+        },
+        "opposite_hypothesis": {
+          "continued_annihilation": 4,
+          "return": 5,
+          "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+        },
+        "sample_count": 9
+      }
+    },
+    "event_count": 9,
+    "vector": [
+      2,
+      2,
+      1,
+      0,
+      2
+    ]
+  },
+  "event_definition": "one event per annihilated 9-number group in the previous draw",
+  "leakage_audit": {
+    "cutoff_mismatch_count": 0,
+    "evaluation_rule": "target R result is read only after condition creation",
+    "event_count": 1121,
+    "generation_rule": "target R condition uses draw R-1 only",
+    "status": "PASS"
+  },
+  "official_gate": {
+    "reason": "candidate generation and candidate exposure do not exist before Phase 6",
+    "status": "HOLD"
+  },
+  "periods": {
+    "first_half": {
+      "bonus_return_count": 114,
+      "integrated": {
+        "depth_counts": {
+          "0": 98,
+          "1": 221,
+          "2": 177,
+          "3_PLUS": 64
+        },
+        "random_structural_reference": {
+          "0": 0.18395217941445963,
+          "1": 0.3862995767703652,
+          "2": 0.2990706400802827,
+          "3_PLUS": 0.13067760373489243,
+          "return_any": 0.8160478205855404
+        },
+        "return_count": 462,
+        "return_rate": 0.825,
+        "return_rate_minus_random": 0.008952179414459582,
+        "wilson_95": [
+          0.7913448507125475,
+          0.8542266912619044
+        ]
+      },
+      "main": {
+        "depth_counts": {
+          "0": 134,
+          "1": 237,
+          "2": 148,
+          "3_PLUS": 41
+        },
+        "random_structural_reference": {
+          "0": 0.2391378332387975,
+          "1": 0.41656267725467955,
+          "2": 0.2603516732841747,
+          "3_PLUS": 0.08394781622234827,
+          "return_any": 0.7608621667612026
+        },
+        "return_count": 426,
+        "return_rate": 0.7607142857142857,
+        "return_rate_minus_random": -0.00014788104691687565,
+        "wilson_95": [
+          0.7236773711348713,
+          0.7941987009984802
+        ]
+      },
+      "opposite_hypothesis": {
+        "continued_annihilation": 98,
+        "return": 462,
+        "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+      },
+      "sample_count": 560
+    },
+    "overall": {
+      "bonus_return_count": 226,
+      "integrated": {
+        "depth_counts": {
+          "0": 193,
+          "1": 429,
+          "2": 353,
+          "3_PLUS": 146
+        },
+        "random_structural_reference": {
+          "0": 0.18395217941445963,
+          "1": 0.3862995767703652,
+          "2": 0.2990706400802827,
+          "3_PLUS": 0.13067760373489243,
+          "return_any": 0.8160478205855404
+        },
+        "return_count": 928,
+        "return_rate": 0.8278322925958965,
+        "return_rate_minus_random": 0.01178447201035615,
+        "wilson_95": [
+          0.8046220867031465,
+          0.8488033309291202
+        ]
+      },
+      "main": {
+        "depth_counts": {
+          "0": 264,
+          "1": 447,
+          "2": 320,
+          "3_PLUS": 90
+        },
+        "random_structural_reference": {
+          "0": 0.2391378332387975,
+          "1": 0.41656267725467955,
+          "2": 0.2603516732841747,
+          "3_PLUS": 0.08394781622234827,
+          "return_any": 0.7608621667612026
+        },
+        "return_count": 857,
+        "return_rate": 0.7644959857270295,
+        "return_rate_minus_random": 0.0036338189658269293,
+        "wilson_95": [
+          0.7387798234837958,
+          0.7884055814902643
+        ]
+      },
+      "opposite_hypothesis": {
+        "continued_annihilation": 193,
+        "return": 928,
+        "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+      },
+      "sample_count": 1121
+    },
+    "recent_100": {
+      "bonus_return_count": 17,
+      "integrated": {
+        "depth_counts": {
+          "0": 14,
+          "1": 37,
+          "2": 21,
+          "3_PLUS": 17
+        },
+        "random_structural_reference": {
+          "0": 0.18395217941445963,
+          "1": 0.3862995767703652,
+          "2": 0.2990706400802827,
+          "3_PLUS": 0.13067760373489243,
+          "return_any": 0.8160478205855404
+        },
+        "return_count": 75,
+        "return_rate": 0.8426966292134831,
+        "return_rate_minus_random": 0.02664880862794272,
+        "wilson_95": [
+          0.7531121499312459,
+          0.9039219033337944
+        ]
+      },
+      "main": {
+        "depth_counts": {
+          "0": 19,
+          "1": 34,
+          "2": 27,
+          "3_PLUS": 9
+        },
+        "random_structural_reference": {
+          "0": 0.2391378332387975,
+          "1": 0.41656267725467955,
+          "2": 0.2603516732841747,
+          "3_PLUS": 0.08394781622234827,
+          "return_any": 0.7608621667612026
+        },
+        "return_count": 70,
+        "return_rate": 0.7865168539325843,
+        "return_rate_minus_random": 0.02565468717138175,
+        "wilson_95": [
+          0.690471517751574,
+          0.8588520349782139
+        ]
+      },
+      "opposite_hypothesis": {
+        "continued_annihilation": 14,
+        "return": 75,
+        "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+      },
+      "sample_count": 89
+    },
+    "recent_20": {
+      "bonus_return_count": 3,
+      "integrated": {
+        "depth_counts": {
+          "0": 1,
+          "1": 9,
+          "2": 4,
+          "3_PLUS": 4
+        },
+        "random_structural_reference": {
+          "0": 0.18395217941445963,
+          "1": 0.3862995767703652,
+          "2": 0.2990706400802827,
+          "3_PLUS": 0.13067760373489243,
+          "return_any": 0.8160478205855404
+        },
+        "return_count": 17,
+        "return_rate": 0.9444444444444444,
+        "return_rate_minus_random": 0.12839662385890405,
+        "wilson_95": [
+          0.7424269921812741,
+          0.990124809021697
+        ]
+      },
+      "main": {
+        "depth_counts": {
+          "0": 2,
+          "1": 8,
+          "2": 5,
+          "3_PLUS": 3
+        },
+        "random_structural_reference": {
+          "0": 0.2391378332387975,
+          "1": 0.41656267725467955,
+          "2": 0.2603516732841747,
+          "3_PLUS": 0.08394781622234827,
+          "return_any": 0.7608621667612026
+        },
+        "return_count": 16,
+        "return_rate": 0.8888888888888888,
+        "return_rate_minus_random": 0.1280267221276863,
+        "wilson_95": [
+          0.672002348698212,
+          0.9689804773543876
+        ]
+      },
+      "opposite_hypothesis": {
+        "continued_annihilation": 1,
+        "return": 17,
+        "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+      },
+      "sample_count": 18
+    },
+    "recent_50": {
+      "bonus_return_count": 8,
+      "integrated": {
+        "depth_counts": {
+          "0": 5,
+          "1": 19,
+          "2": 9,
+          "3_PLUS": 7
+        },
+        "random_structural_reference": {
+          "0": 0.18395217941445963,
+          "1": 0.3862995767703652,
+          "2": 0.2990706400802827,
+          "3_PLUS": 0.13067760373489243,
+          "return_any": 0.8160478205855404
+        },
+        "return_count": 35,
+        "return_rate": 0.875,
+        "return_rate_minus_random": 0.05895217941445963,
+        "wilson_95": [
+          0.738878801611489,
+          0.945404997490546
+        ]
+      },
+      "main": {
+        "depth_counts": {
+          "0": 8,
+          "1": 16,
+          "2": 13,
+          "3_PLUS": 3
+        },
+        "random_structural_reference": {
+          "0": 0.2391378332387975,
+          "1": 0.41656267725467955,
+          "2": 0.2603516732841747,
+          "3_PLUS": 0.08394781622234827,
+          "return_any": 0.7608621667612026
+        },
+        "return_count": 32,
+        "return_rate": 0.8,
+        "return_rate_minus_random": 0.03913783323879749,
+        "wilson_95": [
+          0.652426936536005,
+          0.895000102745623
+        ]
+      },
+      "opposite_hypothesis": {
+        "continued_annihilation": 5,
+        "return": 35,
+        "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+      },
+      "sample_count": 40
+    },
+    "second_half": {
+      "bonus_return_count": 112,
+      "integrated": {
+        "depth_counts": {
+          "0": 95,
+          "1": 208,
+          "2": 176,
+          "3_PLUS": 82
+        },
+        "random_structural_reference": {
+          "0": 0.18395217941445963,
+          "1": 0.3862995767703652,
+          "2": 0.2990706400802827,
+          "3_PLUS": 0.13067760373489243,
+          "return_any": 0.8160478205855404
+        },
+        "return_count": 466,
+        "return_rate": 0.8306595365418895,
+        "return_rate_minus_random": 0.014611715956349136,
+        "wilson_95": [
+          0.7973993226242684,
+          0.8594221521566259
+        ]
+      },
+      "main": {
+        "depth_counts": {
+          "0": 130,
+          "1": 210,
+          "2": 172,
+          "3_PLUS": 49
+        },
+        "random_structural_reference": {
+          "0": 0.2391378332387975,
+          "1": 0.41656267725467955,
+          "2": 0.2603516732841747,
+          "3_PLUS": 0.08394781622234827,
+          "return_any": 0.7608621667612026
+        },
+        "return_count": 431,
+        "return_rate": 0.768270944741533,
+        "return_rate_minus_random": 0.007408777980330461,
+        "wilson_95": [
+          0.7316024122978028,
+          0.8012904823357528
+        ]
+      },
+      "opposite_hypothesis": {
+        "continued_annihilation": 95,
+        "return": 466,
+        "risk_rating": "NOT_RATED_MISSING_THRESHOLD"
+      },
+      "sample_count": 561
+    }
+  },
+  "recent_20_usage": "OBSERVATION_ONLY",
+  "record_type": "BACKTEST",
+  "structural_counts": {
+    "prior_rounds_tested": 1234,
+    "rounds_with_multiple_annihilated_9_groups": 210,
+    "rounds_without_annihilated_9_group": 331
+  },
+  "structure_collapse": {
+    "arbitrary_threshold_created": false,
+    "final_stage": "HOLD",
+    "fixed_threshold_stage": "HOLD",
+    "percentile_stage": "HOLD",
+    "reasons": [
+      "candidate hit-rate decline is unavailable before Phase 6",
+      "the guide does not predefine aggregation formulas for structural percentile change metrics"
+    ]
+  },
+  "target_round": 1236,
+  "tested_outcome_rounds": {
+    "end": 1235,
+    "start": 2
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "status": "P45_WEB_INTEGRATION_V1_READY",
+  "framework": "Python standard-library ThreadingHTTPServer + vanilla HTML/CSS/JavaScript",
+  "entrypoint": "python -m p45_v27.webapp --host 127.0.0.1 --port 8045",
+  "local_url": "http://127.0.0.1:8045/",
+  "adapter": "src/p45_v27/web_adapter.py",
+  "adapter_policy": "P45_CURRENT_STATE and final aggregation report, read only",
+  "checks": {
+    "adapter_tests": "2/2 PASS",
+    "http_get": "200 PASS",
+    "http_post_read_only": "405 PASS",
+    "official_core_available": false,
+    "official_final_numbers": [],
+    "valid_for_core": 0,
+    "diagnostic_only_label": "PASS",
+    "desktop_dom": "PASS",
+    "mobile_360px": "PASS",
+    "horizontal_scroll": false,
+    "refresh_button_height_px": 54,
+    "protected_manifest_equal": true,
+    "operating_core_rows": 0,
+    "operating_audit_rows": 0
+  },
+  "files": {
+    "src/p45_v27/web_adapter.py": "cfd1caa2ad57908d449a15286f2a04c53f4b2935f1ac40684e282bf9c39f190f",
+    "src/p45_v27/webapp.py": "7291c13923ecbe66400dd9f190e2225670be4bdb0dc5e0cdafd3775d4f1ac9d8",
+    "web/index.html": "2bd822eb469bec0ef73db7dcd550048b228cd7e08a8fef231722a5e120d559fc",
+    "web/app.js": "6da6887cd6127e575d743ce6d5cd37c30ce87ca7e50206db5de06b3435a2735a",
+    "web/styles.css": "76b9408f1ecb8a7ac88c97fcdd60915c9b335413c9c49cf205b623ef92631240"
+  }
+}

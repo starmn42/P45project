@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "fixture_round": 1237,
+  "fixture_file": "downloads/official-1-1237/raw/api-0001.json",
+  "fixture_file_sha256": "50f487e857b6b45f4dcf591facf710dc0a71c0d6c5ee50de2db956b4fd658471",
+  "serialized_row_sha256": "1c6a00c58e7c17f31ec15265998f3dfe1bc69e7f17784e65db5c3f9f3ffc52bc",
+  "mismatches": {},
+  "prospective_ledger_write": 0,
+  "signal_calculation_code_paths": 0
+}

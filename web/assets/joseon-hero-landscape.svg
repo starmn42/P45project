@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 260" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <filter id="paper" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="2" seed="8" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray"><feFuncA type="table" tableValues="0 0.08"/></feComponentTransfer>
+    </filter>
+    <linearGradient id="inkLeft" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#11201f" stop-opacity="1"/>
+      <stop offset="0.68" stop-color="#243531" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#243531" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5f7468" stop-opacity="0.52"/>
+      <stop offset="1" stop-color="#2a3c36" stop-opacity="0.08"/>
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0" stop-color="#efdca9" stop-opacity="0.82"/>
+      <stop offset="1" stop-color="#efdca9" stop-opacity="0.18"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="260" fill="#efe3cd"/>
+  <rect width="1600" height="260" fill="#80684a" filter="url(#paper)" opacity="0.42"/>
+
+  <!-- left bold ink wash -->
+  <path d="M0,26 C170,-5 332,6 480,56 C434,85 440,118 508,150 C404,144 264,176 188,223 C148,246 96,257 0,260 Z" fill="url(#inkLeft)"/>
+  <path d="M0,88 C137,45 286,76 412,114 C295,125 207,164 120,233 L0,260 Z" fill="#101d1d" opacity="0.36"/>
+  <path d="M0,126 C88,111 172,119 258,149 C201,168 140,203 74,248 L0,260 Z" fill="#20312e" opacity="0.18"/>
+
+  <!-- center and right mountains -->
+  <path d="M450 195 C514 149 569 154 628 110 C678 72 742 71 783 118 C831 84 898 91 940 132 C1008 97 1070 71 1121 102 C1161 67 1246 61 1307 121 C1368 181 1457 155 1600 114 L1600 260 L450 260 Z" fill="url(#mist)"/>
+  <path d="M560 217 C651 174 717 181 795 139 C877 95 967 93 1054 150 C1116 192 1189 178 1267 133 C1332 97 1431 109 1600 172 L1600 260 L560 260 Z" fill="#33453f" opacity="0.22"/>
+  <path d="M832 228 C929 208 998 196 1085 153 C1182 105 1301 127 1600 208 L1600 260 L832 260 Z" fill="#5b7064" opacity="0.14"/>
+
+  <!-- moon and pavilion -->
+  <circle cx="1088" cy="68" r="40" fill="url(#moonGlow)"/>
+  <circle cx="1088" cy="68" r="49" fill="none" stroke="#bb9b60" stroke-width="1" opacity="0.38"/>
+  <g transform="translate(1270,118) scale(0.78)" fill="#1c302a" opacity="0.72">
+    <path d="M0 31 H130 L106 18 H24 Z"/>
+    <path d="M20 31 H110 V84 H20 Z"/>
+    <path d="M29 37 H101 V79 H29 Z" fill="#efe3cd" opacity="0.15"/>
+    <path d="M7 86 H123 V92 H7 Z"/>
+    <path d="M35 31 V87 H29 V31 Z M101 31 V87 H95 V31 Z"/>
+    <path d="M-10 29 L64 0 L138 29 L106 23 L64 10 L22 23 Z"/>
+  </g>
+  <!-- pines -->
+  <g fill="#1b3128" opacity="0.58">
+    <path d="M1207 169 C1195 124 1206 98 1223 74 C1212 118 1219 150 1230 178Z"/>
+    <path d="M1198 90 C1165 95 1145 82 1130 65 C1155 74 1176 73 1204 59 C1190 77 1187 82 1198 90Z"/>
+    <path d="M1232 82 C1255 58 1280 58 1302 64 C1273 69 1255 82 1240 100Z"/>
+  </g>
+
+  <!-- blossom branch right -->
+  <g stroke="#6f4037" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.75">
+    <path d="M1600 9 C1526 8 1487 30 1450 56 C1412 81 1387 79 1362 78"/>
+    <path d="M1531 22 C1518 9 1510 2 1498 -9"/>
+    <path d="M1468 46 C1457 31 1448 16 1439 3"/>
+    <path d="M1414 71 C1406 57 1396 45 1387 35"/>
+  </g>
+  <g fill="#f7eee0" stroke="#9e5145" stroke-width="1.3" opacity="0.96">
+    <circle cx="1536" cy="20" r="8"/><circle cx="1511" cy="27" r="7"/><circle cx="1488" cy="35" r="8"/>
+    <circle cx="1464" cy="45" r="7"/><circle cx="1438" cy="58" r="8"/><circle cx="1416" cy="72" r="7"/>
+  </g>
+  <g fill="#aa5043" opacity="0.9">
+    <circle cx="1536" cy="20" r="2.1"/><circle cx="1511" cy="27" r="2"/><circle cx="1488" cy="35" r="2.1"/>
+    <circle cx="1464" cy="45" r="2"/><circle cx="1438" cy="58" r="2.1"/><circle cx="1416" cy="72" r="2"/>
+  </g>
+  <!-- blossom branch left subtle -->
+  <g stroke="#7e5148" stroke-width="3.5" fill="none" stroke-linecap="round" opacity="0.45">
+    <path d="M0 40 C58 34 94 48 132 67"/>
+    <path d="M93 56 C107 43 115 31 121 16"/>
+  </g>
+  <g fill="#f7eee0" stroke="#a85d4d" stroke-width="1" opacity="0.75">
+    <circle cx="83" cy="55" r="6"/><circle cx="112" cy="49" r="5"/><circle cx="127" cy="67" r="6"/>
+  </g>
+
+  <!-- subtle paper frame lines -->
+  <rect x="8" y="8" width="1584" height="244" fill="none" stroke="#c8b080" stroke-opacity="0.24"/>
+  <path d="M0 240 C248 229 402 250 611 240 C841 230 1012 251 1240 240 C1397 232 1500 236 1600 231" stroke="#bda878" stroke-width="1" opacity="0.3" fill="none"/>
+</svg>

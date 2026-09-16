@@ -1,0 +1,1 @@
+{"status":"PASS","syntax_import":"PASS","focused_unit_fixture":"PASS","materialization_shadow_equivalence":true,"public_interface_compatible":true,"schema_compatible":true,"historical_outcome_dependency":"PRIOR_ROUNDS_ONLY","future_data_dependency":false,"gate_changed":false,"threshold_changed":false,"signature_changed":false,"semantics_changed":false}

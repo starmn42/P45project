@@ -1,0 +1,69 @@
+{
+  "final_verdict": "OPPOSITE_PERIOD_STABILITY_FILTER_VALIDATION_COMPLETE",
+  "protocol_locked": true,
+  "protocol_sha256": "03bb3ba7c472955b0f7825dc9ed348a865f7b3d42dfc19611bdd5a705a09ff4b",
+  "first_valid_target": 3,
+  "last_target": 1238,
+  "target_round_count": 1236,
+  "activated_rounds": 1026,
+  "blocked_only_observations": 7117,
+  "minimum_sample_pass": true,
+  "blocked_only_main_hits": 916,
+  "blocked_only_main_hit_rate": 0.12870591541379794,
+  "random_baseline": 0.13333333333333333,
+  "delta_random": -0.004627417919535387,
+  "cluster_bootstrap_95_ci": [
+    -0.011270296084049669,
+    0.0018200657746542392
+  ],
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260825,
+  "primary_verdict": "INCONCLUSIVE",
+  "official_survivor_count_distribution": {
+    "0": 51,
+    "1": 34,
+    "2": 25,
+    "3": 10,
+    "4": 18,
+    "5": 7,
+    ">=6": 1091
+  },
+  "fixed_variant_survivor_count_distribution": {
+    "0": 40,
+    "1": 0,
+    "2": 0,
+    "3": 0,
+    "4": 1,
+    "5": 0,
+    ">=6": 1195
+  },
+  "official_average_eligible_count": 22.330906148867314,
+  "fixed_variant_average_eligible_count": 36.65857605177994,
+  "official_eligible_observations": 27601,
+  "official_eligible_main_hits": 3698,
+  "official_eligible_main_hit_rate": 0.13398065287489583,
+  "fixed_variant_eligible_observations": 45310,
+  "fixed_variant_eligible_main_hits": 6057,
+  "fixed_variant_eligible_main_hit_rate": 0.13367909953652615,
+  "blocked_only_average_candidates_per_activated_round": 6.936647173489279,
+  "official_average_main_hits_captured_per_round": 2.9919093851132685,
+  "fixed_variant_average_main_hits_captured_per_round": 4.900485436893204,
+  "multiple_testing_policy": {
+    "primary_hypotheses": 1,
+    "patterns": 1,
+    "metrics": 1,
+    "threshold_search": 0,
+    "lookback_search": 0,
+    "subgroup_rescue": 0,
+    "parameter_tuning": 0,
+    "status": "PASS"
+  },
+  "future_source_access_count": 0,
+  "target_1239_scoring": 0,
+  "partial_survivor_reporting": {
+    "id": "PARTIAL_SURVIVOR_REPORTING",
+    "status": "REPORTING_POLICY_DIRECTION_CONFIRMED",
+    "reporting_minimum": "NONE"
+  },
+  "evidence_csv_sha256": "8136dad4557757b759193e2376b8ed041849f98d27dc4468095aa5ee8be14279"
+}

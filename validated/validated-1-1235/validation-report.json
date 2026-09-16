@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "checks": {
+    "collection_hashes": "PASS",
+    "csv_schema_and_parse": "PASS",
+    "round_continuity": "PASS",
+    "main_numbers": "PASS",
+    "bonus_number": "PASS",
+    "date_round_alignment": "PASS",
+    "normalization": "PASS",
+    "user_data_comparison": "NOT_PROVIDED"
+  }
+}

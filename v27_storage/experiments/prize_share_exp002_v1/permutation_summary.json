@@ -1,0 +1,16 @@
+{
+  "primary": {
+    "type": "within-fixed-time-block",
+    "seed": 2026082103,
+    "n": 100000,
+    "exceed": 2808,
+    "p": 0.028089719102808972
+  },
+  "secondary": {
+    "type": "global-diagnostic-only",
+    "seed": 2026082104,
+    "n": 100000,
+    "exceed": 2867,
+    "p": 0.02867971320286797
+  }
+}

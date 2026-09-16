@@ -1,0 +1,22 @@
+# P45 BONUS × EXTINCTION INTERACTION V1 PROTOCOL LOCKED 001
+
+- LOCKED_AT: `2026-08-27 KST`, before interaction outcome calculation.
+- Scope: new independent interaction study. EXP-004 remains `FAILED`; EXP-015 remains `FAILED_EARLY`. Neither is rerun, retuned, rescued, or edited. EXP-017 is not created. OFFICIAL ENGINE remains frozen.
+- Canonical input: latest validated contiguous local MAIN6+BONUS history; verify SHA before analysis.
+- Target range: common range `21..latest`, because the largest fixed lookback is 20. Target R candidate zones use MAIN history through R-1 only. BONUS and MAIN at R are never used to create R's candidate zone.
+- Fixed configuration family: lookback `5,10,20` crossed with minimum maximal-contiguous-extinction-run length `2,3,4,5`, yielding exactly 12 configurations.
+- For each R/configuration, `Z` is the union of all maximal runs of numbers absent from MAIN(R-L..R-1) whose length is at least M. Boundaries are excluded. `K=|Z|`, `H=|Z∩MAIN(R)|`, `RECOVERY_EXCESS=H-6K/45`.
+- Prior BONUS rank: within sorted MAIN6+BONUS of R-1, rank is 1..7. `BONUS_SCORE=4-rank`, retaining all seven ranks without thresholding.
+- Round interaction: `BONUS_SCORE(R-1) × RECOVERY_EXCESS(R)`. Configuration statistic is the sum over the common target range. Effect size is the interaction sum divided by informative rounds (`K>0`); also report total-target mean.
+- Primary direction: two-sided, fixed before results.
+- Full-sequence fair null: `100,000` simulated histories. Each round draws MAIN6 uniformly from all C(45,6) subsets and BONUS uniformly from the remaining 39 values. For every simulated history, recompute prior-MAIN extinction zones, prior BONUS rank, R recovery, and all 12 interaction sums from scratch. Actual candidate sets are never reused.
+- Per-configuration raw p: plus-one two-sided empirical tail `P(|S_sim|>=|S_obs|)` under the exact zero-centered fair null. Standardized statistic is `T=S/sd(S_sim)`.
+- Family correction: for each simulation record `max_config |T_sim|`; `FAMILY_MAXT_TWO_SIDED_P` compares it with the largest observed absolute T. Holm step-down adjustment of the 12 raw p-values is descriptive.
+- Seed rule: after this protocol is written, take the first 16 hexadecimal characters of its SHA-256 as an unsigned 64-bit integer. Record SHA and seed before outcome calculation. No human seed selection.
+- Exposure: informative rounds `K>0`; fewer than 200 is `LOW_EXPOSURE` and cannot be a strong candidate.
+- Stability: full, chronological first/second halves, recent100, recent50, recent20; only first/second direction enters the strong criterion. Recent windows cannot rescue.
+- STRONG_INTERACTION_CANDIDATE: family maxT p<=0.05, informative>=200, first/second effects not opposite, leakage0, all validations PASS.
+- INTERESTING_WATCHLIST: family p in `(0.05,0.10]`, or raw p<=0.05 with consistent first/second direction but family failure.
+- Otherwise `FAILED_NOT_INTERESTING`.
+- No number recommendations, 0–6 signal construction, hidden scores, arbitrary weights, post-result subgroup/threshold changes, or official promotion.
+- Protected changes: official code/DB/gate/threshold/signature/semantics/NUMBER/TRIO/PAIR/CORE/State/Decision/Registry `0`.

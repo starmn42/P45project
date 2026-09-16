@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source_preflight": {
+    "official_endpoint": "https://www.dhlottery.co.kr/wnprchsplcsrch/selectLtWnShp.do",
+    "round_1237_rows": 23,
+    "round_1237_snapshot_mismatch": 0,
+    "round_1237_payload_sha256": "25b60dcdae39cf51618e0d2839387443e7e30fbdcd7a1929292722792fc6f4d7",
+    "round_1238_rows": 23,
+    "round_1238_payload_sha256": "ccf3287d2488997cf8e4a4f8fca379ac36b0b417cb811396ec51f0e3bc9a17ec",
+    "round_1239_published": false,
+    "round_1238_ledger_write": 0
+  },
+  "focused_tests": "7/7 PASS",
+  "duplicate_rerun": "NO_WRITE PASS",
+  "source_unavailable": "SAFE_NO_WRITE PASS",
+  "correction_test": "APPEND_ONLY_VERSIONING PASS",
+  "lock_defer_test": "PASS",
+  "signal_calculation_code_paths": 0,
+  "collector_first_run_status": "SOURCE_UNAVAILABLE_OR_ALREADY_CURRENT",
+  "ledger_rows_at_lock": 0,
+  "scheduled_task": "P45 Crowd Retail Prospective Raw Capture",
+  "task_schedule": "SUNDAY_10:00_ASIA_SEOUL",
+  "task_status": "READY",
+  "existing_prize_task_changed": false,
+  "existing_prize_ledger_changed": false
+}

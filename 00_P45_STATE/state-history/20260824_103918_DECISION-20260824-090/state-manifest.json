@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-24T10:39:18+09:00",
+  "transaction_id": "879f4e22-0169-422a-9264-59fb45521145",
+  "decision_id": "DECISION-20260824-090",
+  "state_version": "1.0.83",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "PROTECTION_HASH_CONSISTENCY_AUDIT_017_COMPLETE",
+  "current_status": "REPORTING_SCOPE_DIFFERENCE",
+  "state_hash": "522cddb3f5826e39dd94f9f5250f5124d5c663d96fdf5d4b8b0a53589ed1bcf8",
+  "current_state_md_sha256": "ae60f0a27f198a5b5a7f19c3023be0347462ad59a83e2c3c155b5cacabf4745e",
+  "current_state_json_sha256": "447ef6c7ba04b802775d0bd971dbeb2de3dabbfd0a33861258fe255cf385fc3f",
+  "handoff_sha256": "e59ea68da2b3f31b8a1cb3d0b896568298f556c79e8980a4d75cae379c2001be",
+  "decision_log_sha256": "c50659e959124962023bd7d344c972a7d81ab22c6043c220e15c2adb95c28b98",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

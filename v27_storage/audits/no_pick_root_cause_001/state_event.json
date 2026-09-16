@@ -1,0 +1,68 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260824-092",
+  "decision": "OFFICIAL NO-PICK STRUCTURAL ROOT-CAUSE AUDIT 001은 867개 유효회차의 0 output을 재현했고, 현재 frozen 실행경로의 PAIR historical metric materialization 및 TEST_READY lifecycle 누락을 IMPLEMENTATION_OR_DEFINITION_ANOMALY로 확정한다.",
+  "reason": "763회가 NUMBER 입력을 통과하고 271회가 valid TRIO 2개 이상, 258회가 disjoint raw PAIR를 생성했지만 148,215개 PAIR 후보 전부의 PG07/PG08이 INCOMPLETE였다. production gate input의 historical evidence가 None으로 고정되고 lifecycle에 PAIR_TEST_READY 반환경로가 없어 CORE 입력이 0이었다. 두 전체 실행의 결과/회차/benchmark hash가 동일했다.",
+  "related_stage": "OFFICIAL_NO_PICK_STRUCTURAL_ROOT_CAUSE_AUDIT_001",
+  "category": "OFFICIAL_FROZEN_ARCHITECTURE_ROOT_CAUSE_AUDIT",
+  "evidence": "VALID 867; stage stops N/T/P/C=104/492/13/258; shadow N/T/P/C=763/271/258/0; PAIR candidates 148215; PG07 and PG08 INCOMPLETE 148215 each; result hash 79911e694f7338c53aff3c837bb0f9dff979e7d7e129afac5a0f4706d8983b27; deterministic rerun identical; DB integrity ok/FK0",
+  "affected_files": "new audit-only source, machine report, per-round audit, compatibility/starvation/null reports, deterministic evidence, state records",
+  "affected_schema": "none",
+  "previous_rule": "OFFICIAL NO-PICK root cause UNRESOLVED",
+  "new_rule": "root cause is IMPLEMENTATION_OR_DEFINITION_ANOMALY; no gate/threshold/rule change; separate OFFICIAL ARCHITECTURE RESEARCH REVIEW required before repair or new DRAW experiment",
+  "allowed_next_action": "OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_DESIGN_ONLY",
+  "forbidden_actions": [
+    "OFFICIAL_GATE_OR_THRESHOLD_CHANGE",
+    "PAIR_HISTORICAL_METRIC_REPAIR_WITHOUT_APPROVAL",
+    "PAIR_TEST_READY_LIFECYCLE_REPAIR_WITHOUT_APPROVAL",
+    "EXP_017_CREATION",
+    "NEW_DRAW_EXPERIMENT_BEFORE_REPAIR_AUDIT",
+    "PROSPECTIVE_SIGNAL_PEEKING",
+    "OFFICIAL_RECOMMENDATION_GENERATION"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "OFFICIAL_NO_PICK_STRUCTURAL_ROOT_CAUSE_AUDIT_001_COMPLETE",
+    "current_status": "NO_PICK_ROOT_CAUSE_IMPLEMENTATION_OR_DEFINITION_ANOMALY",
+    "last_completed_stage": "OFFICIAL_NO_PICK_STRUCTURAL_ROOT_CAUSE_AUDIT_001",
+    "next_stage": "OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW",
+    "next_action": "DESIGN_ONLY; FROZEN OFFICIAL CHANGE REQUIRES SEPARATE USER APPROVAL",
+    "experiment_lab": {
+      "registry_physical_rows": 62,
+      "registry_unique_experiment_ids": 62,
+      "registry_unique_logical_families": 60
+    },
+    "research_state": {
+      "official_no_pick_root_cause_audit_001": {
+        "status": "COMPLETE",
+        "root_cause_class": "IMPLEMENTATION_OR_DEFINITION_ANOMALY",
+        "valid_rounds": 867,
+        "output_available_rounds": 0,
+        "number_stage_stop": 104,
+        "trio_stage_stop": 492,
+        "pair_stage_stop": 13,
+        "core_stage_stop": 258,
+        "number_shadow_pass": 763,
+        "trio_shadow_pass": 271,
+        "pair_shadow_pass": 258,
+        "core_shadow_pass": 0,
+        "four_way_shadow_pass": 0,
+        "pair_candidate_rows": 148215,
+        "pg07_incomplete": 148215,
+        "pg08_incomplete": 148215,
+        "implementation_anomaly": true,
+        "definition_anomaly": true,
+        "logical_gate_conflict_found": false,
+        "deterministic_rerun": "PASS",
+        "result_hash": "79911e694f7338c53aff3c837bb0f9dff979e7d7e129afac5a0f4706d8983b27",
+        "audit_rows_hash": "603a847b1fbf56d71508ff556fbebd3c68aeb099c21f91121b052bd377a78601",
+        "audit_report": "00_P45_STATE/research_review/NO_PICK_STRUCTURAL_ROOT_CAUSE_AUDIT_001.md",
+        "official_engine_changed": false,
+        "exp_017_created": false,
+        "prospective_signal_peeking": 0
+      }
+    }
+  }
+}

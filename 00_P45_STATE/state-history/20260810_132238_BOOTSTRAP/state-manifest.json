@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-10T13:22:38+09:00",
+  "transaction_id": "MANUAL",
+  "decision_id": "BOOTSTRAP",
+  "state_version": "1.0.0",
+  "project_version": "P45 v2.7.3",
+  "current_stage": "STAGE_7_2_COMPLETE",
+  "current_status": "TRIO_FINAL_AGGREGATION_COMPLETE",
+  "state_hash": "0f83390d65821e528ea971a35db25f25dc8c031f851cd03ac0db1bb1116edd0f",
+  "current_state_md_sha256": "09eff88105c21cb04116fec477915fc53a70fa0d295a665d837dd11f168daf36",
+  "current_state_json_sha256": "7b0d0074c944bda2224f040544d455efd6f2474ea2837a7a16204aff48a8d8be",
+  "handoff_sha256": "d17898d0e8fb34f4d310b6802845e8b6b8d9c74d46c1a725dc7cc863f2b4f94c",
+  "decision_log_sha256": "d882a31bea6f5c2dc9c7c68731182630b63d09c4989b310975b784efd6f470a6",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

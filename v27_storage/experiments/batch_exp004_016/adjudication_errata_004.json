@@ -1,0 +1,718 @@
+{
+  "status": "PASS",
+  "data_range": "1~1237",
+  "round_1238_used": false,
+  "data_sha256": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0",
+  "adjudicated": 13,
+  "matched": 13,
+  "unresolved_mismatch": 0,
+  "checks": [
+    {
+      "experiment": "EXP-004",
+      "field": "holm_pass_count",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-004",
+      "field": "maxT_pass_count",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-004",
+      "field": "walkforward_exposed",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-004",
+      "field": "judgment",
+      "expected": "FAILED",
+      "reproduced": "FAILED",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-004",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-004",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "total_overlap",
+      "expected": 1038,
+      "reproduced": 1038,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "analytical_p",
+      "expected": 0.069534898,
+      "reproduced": 0.06953489829191344,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "mc_p",
+      "expected": 0.071209288,
+      "reproduced": 0.07145928540714593,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "walkforward_exposed",
+      "expected": 1004,
+      "reproduced": 1004,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "walkforward_p",
+      "expected": 0.128288717,
+      "reproduced": 0.12767872321276788,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "judgment",
+      "expected": "FAILED",
+      "reproduced": "FAILED",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-005",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "exposure",
+      "expected": 19970,
+      "reproduced": 19970,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "hits",
+      "expected": 2645,
+      "reproduced": 2645,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "analytical_p",
+      "expected": 0.645098492,
+      "reproduced": 0.6450984919765692,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "mc_p",
+      "expected": 0.648123519,
+      "reproduced": 0.6429035709642904,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "walkforward_exposed",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "judgment",
+      "expected": "FAILED",
+      "reproduced": "FAILED",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-006",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "informative_rounds",
+      "expected": 1213,
+      "reproduced": 1213,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "exposure",
+      "expected": 22788,
+      "reproduced": 22788,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "hits",
+      "expected": 3022,
+      "reproduced": 3022,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "analytical_p",
+      "expected": 0.602916381,
+      "reproduced": 0.6029163807260163,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "bootstrap_p",
+      "expected": 0.60096399,
+      "reproduced": 0.6025239747602524,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "walkforward_exposed",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "walkforward_status",
+      "expected": "NO_SIGNAL_EXPOSURE",
+      "reproduced": "NO_SIGNAL_EXPOSURE",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "judgment",
+      "expected": "FAILED",
+      "reproduced": "FAILED",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-007",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "pair_opportunities",
+      "expected": 18540,
+      "reproduced": 18540,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "matched_pairs",
+      "expected": 7048,
+      "reproduced": 7048,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "analytical_p",
+      "expected": 0.837598889,
+      "reproduced": 0.8375988894359606,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "bootstrap_p",
+      "expected": 0.837181628,
+      "reproduced": 0.8366216337836622,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "walkforward_exposed",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "judgment",
+      "expected": "FAILED",
+      "reproduced": "FAILED",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-008",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-009",
+      "field": "analytical_p",
+      "expected": 0.705960045,
+      "reproduced": 0.7059600448256893,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-009",
+      "field": "mc_p",
+      "expected": 0.703852961,
+      "reproduced": 0.7067729322706773,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-009",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-009",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-009",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-010",
+      "field": "analytical_p",
+      "expected": 0.726231009,
+      "reproduced": 0.7262310089222362,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-010",
+      "field": "mc_p",
+      "expected": 0.726192738,
+      "reproduced": 0.7241727582724172,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-010",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-010",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-010",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-011",
+      "field": "analytical_p",
+      "expected": 0.446471068,
+      "reproduced": 0.44647106828636096,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-011",
+      "field": "mc_p",
+      "expected": 0.447085529,
+      "reproduced": 0.44715552844471557,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-011",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-011",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-011",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "start_round",
+      "expected": 28,
+      "reproduced": 28,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "target_rounds",
+      "expected": 1210,
+      "reproduced": 1210,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "analytical_p",
+      "expected": 0.556374595,
+      "reproduced": 0.5563745953715649,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "bootstrap_p",
+      "expected": 0.551724483,
+      "reproduced": 0.5511644883551164,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-012",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-013",
+      "field": "target_rounds",
+      "expected": 1037,
+      "reproduced": 1037,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-013",
+      "field": "analytical_p",
+      "expected": 0.255029275,
+      "reproduced": 0.25502927454806706,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-013",
+      "field": "bootstrap_p",
+      "expected": 0.251627484,
+      "reproduced": 0.25325746742532573,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-013",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-013",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-013",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "hits",
+      "expected": 169,
+      "reproduced": 169,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "target_rounds",
+      "expected": 1236,
+      "reproduced": 1236,
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "exact_p",
+      "expected": 0.706642641,
+      "reproduced": 0.7066426410885681,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "mc_p",
+      "expected": 0.706142939,
+      "reproduced": 0.7060129398706013,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-014",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-015",
+      "field": "mean_rank",
+      "expected": 3.897332255,
+      "reproduced": 3.89733225545675,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-015",
+      "field": "exact_p",
+      "expected": 0.072115396,
+      "reproduced": 0.07211539628592747,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-015",
+      "field": "holdout_one_sided_p",
+      "expected": 0.087483204,
+      "reproduced": 0.08748320418779645,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-015",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-015",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-015",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "training_analytical_p",
+      "expected": 0.373712746,
+      "reproduced": 0.37371274555268147,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "training_mc_p",
+      "expected": 0.378481076,
+      "reproduced": 0.37333133343332836,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "overall_analytical_p",
+      "expected": 0.880486657,
+      "reproduced": 0.880486657393584,
+      "tolerance": 1e-06,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "overall_mc_p",
+      "expected": 0.881505925,
+      "reproduced": 0.8808559572021399,
+      "tolerance": 0.01,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "judgment",
+      "expected": "FAILED_EARLY",
+      "reproduced": "FAILED_EARLY",
+      "tolerance": 0.0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "data_range",
+      "expected": "1~1237",
+      "reproduced": "1~1237",
+      "tolerance": 0,
+      "pass": true
+    },
+    {
+      "experiment": "EXP-016",
+      "field": "future_leakage",
+      "expected": 0,
+      "reproduced": 0,
+      "tolerance": 0,
+      "pass": true
+    }
+  ],
+  "failed": [],
+  "raw_log": "v27_storage/experiments/batch_exp004_016/reproduction_errata_004.json",
+  "raw_log_sha256": "832da57ea986f5613b29d41b990944c763683139fdef08ad99c07cdb501c40cb"
+}

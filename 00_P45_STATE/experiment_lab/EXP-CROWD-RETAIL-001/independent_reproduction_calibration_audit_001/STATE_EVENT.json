@@ -1,0 +1,57 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260824-089",
+  "decision": "EXP-CROWD-RETAIL-001-V1의 원 결과를 별도 구현과 fresh original-null로 독립 재현했고, 사전 잠금한 prequential retailer-propensity calibrated null에서도 same-store manual collision excess가 남아 RETAILER_PROPENSITY_ROBUST_EXPLORATORY_CONCENTRATION으로 기록한다. 원 EXP-001 상태와 공식 엔진은 변경하지 않는다.",
+  "reason": "262~749에서만 Beta-Binomial EB prior를 추정하고 750~1237 각 회차는 R 이전 이력과 실제 manual total만 사용한 exact conditional Bernoulli null로 감사했다. observed 102 versus expected 45.75567801672646, 0/300000 exceedances이며 결정론적 전체 재실행이 일치했다.",
+  "related_stage": "EXP_CROWD_RETAIL_001_INDEPENDENT_REPRODUCTION_PROPENSITY_CALIBRATION_AUDIT_001",
+  "category": "INDEPENDENT_REPRODUCTION_AND_METHODOLOGY_CALIBRATION_AUDIT",
+  "evidence": "source SHA 854ca7256219eadf574ac32ad256b84e9a5bfa42ceece09f0a09dd1eed79cd50; independent S/E 132/56.97188240042372; fresh original null 300000 seed 2026082308 p 0.0000033333222222592593; EB alpha/beta 2.3854957135043726/5.04582203071465; calibrated S/E 102/45.75567801672646; calibrated 300000 seed 2026082309 p 0.0000033333222222592593; deterministic rerun PASS; 1238+ used NO",
+  "affected_files": "isolated independent reproduction/calibration calculator, locked audit note, audit result/report, state files and portable handoff",
+  "affected_schema": "none",
+  "previous_rule": "EXP-CROWD-RETAIL-001-V1 exploratory result supported only under round-conditional exchangeability null",
+  "new_rule": "No official rule change. The parent exploratory finding is independently reproduced and remains robust under the locked history-based retailer propensity null; causal mechanism and same-person identity remain unconfirmed.",
+  "allowed_next_action": "PROSPECTIVE_RETAILER_MODE_CONFIRMATION_FEASIBILITY_REVIEW_REQUIRES_SEPARATE_APPROVAL; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+  "forbidden_actions": [
+    "SAME_PERSON_OR_CAUSAL_MECHANISM_CLAIM",
+    "RETAILER_OR_REGION_SUBGROUP_MINING",
+    "PROPENSITY_MODEL_RETUNING",
+    "AUTOMATIC_PROMOTION_CANDIDATE",
+    "CROWD_RESULT_TO_DRAW_ENGINE_CONNECTION",
+    "ROUND_1238_PLUS_HISTORICAL_USE",
+    "OFFICIAL_ENGINE_CHANGE"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "EXPERIMENT_LAB_CROWD_RETAIL_001_CALIBRATION_AUDIT_COMPLETE",
+    "current_status": "RETAILER_PROPENSITY_ROBUST_EXPLORATORY_CONCENTRATION",
+    "last_completed_stage": "EXP_CROWD_RETAIL_001_INDEPENDENT_REPRODUCTION_PROPENSITY_CALIBRATION_AUDIT_001",
+    "next_stage": "PROSPECTIVE_RETAILER_MODE_CONFIRMATION_FEASIBILITY_REQUIRES_SEPARATE_APPROVAL",
+    "next_action": "DO_NOT_PROMOTE; PROSPECTIVE_RETAILER_MODE_CONFIRMATION_ONLY_IF_SEPARATELY_APPROVED; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+    "research_state": {
+      "crowd_retail_exp001_v1": {
+        "status": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+        "registry_id": "EXP-CROWD-20260823-008-V1",
+        "evidence_class": "POST_LINEAGE_EXPLORATORY",
+        "same_person_identified": false,
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false,
+        "independent_reproduction_status": "INDEPENDENT_REPRODUCTION_PASS",
+        "propensity_calibration_status": "RETAILER_PROPENSITY_ROBUST_EXPLORATORY_CONCENTRATION",
+        "propensity_calibration_train_range": "262~749",
+        "propensity_calibration_eval_range": "750~1237",
+        "propensity_calibration_observed": 102,
+        "propensity_calibration_expected": 45.75567801672646,
+        "propensity_calibration_p": 0.0000033333222222592593,
+        "causal_mechanism": "NOT_CONFIRMED",
+        "audit_output": "v27_storage/experiments/crowd_retail_exp001_v1/independent_reproduction_calibration_audit_001/independent_reproduction_calibration_result.json"
+      }
+    },
+    "experiment_lab": {
+      "registry_physical_rows": 61,
+      "registry_unique_experiment_ids": 61
+    }
+  }
+}

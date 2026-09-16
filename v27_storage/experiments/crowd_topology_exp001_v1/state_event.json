@@ -1,0 +1,89 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260823-082",
+  "decision": "EXP-CROWD-TOPO-001-V1을 결과 관계 분석 전에 봉인된 단일 Johnson distance-1 가설로 실행했고, TRAIN 통과 후 confirmatory HOLDOUT 방향과 primary block-wild 검정을 통과하지 못해 FAILED로 종료한다.",
+  "reason": "TRAIN THETA는 양수였으나 HOLDOUT THETA=-0.006490796148433605, T=-0.23637472744996546, one-sided block-wild p=0.6344536554634453으로 사전고정 성공조건을 충족하지 못했다.",
+  "related_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP001_V1",
+  "category": "EXPERIMENT_LOCKED_RESULT",
+  "evidence": "protocol 421720adfa6cee93b622cdf51e7aac3200f3e44ae934e36c2790289aa1988006; snapshot 1a03abc4babec2cd64eda8c426429747352e412bc1f63e5513f7794aa980ef32; result f85465b82dd0c7ab62a142a05fd8dcfaf7c72cd078f6f5ad2c84a6f0467f9431; deterministic rerun PASS; focused tests 5/5 PASS; round1238+ used NO",
+  "affected_files": "source preflight, locked protocol, protocol lock, immutable snapshot, calculator, bootstrap/MC summaries, final result, deterministic evidence, experiment registry, state files, portable bundle",
+  "affected_schema": "isolated experiment CSV/JSON only; official schemas unchanged",
+  "previous_rule": "CROWD topology direction was REGISTERED_IDEA / NEEDS_EVIDENCE without an experiment",
+  "new_rule": "V1 Johnson distance-1 global-average local-autocorrelation hypothesis is FAILED and cannot be rescued by retuning or unregistered distance shells",
+  "allowed_next_action": "DISTANCE2_OR3_REQUIRES_A_NEW_SEPARATELY_APPROVED_PREREGISTERED_EXPERIMENT; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+  "forbidden_actions": [
+    "EXP_CROWD_TOPO_001_V1_RETUNING_OR_RERUN",
+    "DISTANCE2_OR3_POSTHOC_RESCUE",
+    "FAILED_RESULT_DELETION",
+    "CROWD_TOPOLOGY_TO_DRAW_ENGINE_CONNECTION",
+    "NOVELTY_CONFIRMED_OR_WORLD_FIRST_CLAIM",
+    "PROSPECTIVE_SIGNAL_ANALYSIS_BEFORE_ROUND_1289_PUBLICATION"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP001_V1_COMPLETE",
+    "current_status": "EXP_CROWD_TOPO_001_V1_FAILED",
+    "last_completed_stage": "EXP_CROWD_TOPO_001_V1_LOCKED_RUN",
+    "next_stage": "PROSPECTIVE_STAGE1_WAIT_AND_SEPARATE_RESEARCH_APPROVAL",
+    "next_action": "DISTANCE2_OR3_REQUIRES_A_NEW_SEPARATELY_APPROVED_PREREGISTERED_EXPERIMENT; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+    "experiment_lab": {
+      "crowd_topology_exp001_v1": {
+        "logical_id": "EXP-CROWD-TOPO-001-V1",
+        "registry_id": "EXP-CROWD-20260823-005-V1",
+        "idea_id": "IDEA-20260823-CROWD001",
+        "domain": "CROWD_PRIZE_SHARE_SEPARATE_FROM_DRAW",
+        "status": "FAILED",
+        "protocol_version": "EXP-CROWD-TOPO-001-PROTOCOL-1.0",
+        "protocol_sha256": "421720adfa6cee93b622cdf51e7aac3200f3e44ae934e36c2790289aa1988006",
+        "calculator_version": "EXP-CROWD-TOPO-001-CALCULATOR-1.0",
+        "calculator_sha256": "48d3f975c0ac16aa865dec8f61a168f2fab5877451520720e8824a581573f816",
+        "data_range": "1~1237",
+        "data_rows": 1237,
+        "data_sha256": "1a03abc4babec2cd64eda8c426429747352e412bc1f63e5513f7794aa980ef32",
+        "round_1238_plus_used": false,
+        "johnson_graph": "J(45,6)",
+        "total_vertices": 8145060,
+        "d1_degree": 234,
+        "shell_identity": "PASS",
+        "train_theta": 0.04552699104566624,
+        "train_gate": "PASS",
+        "holdout_theta": -0.006490796148433605,
+        "holdout_t": -0.23637472744996546,
+        "primary_block_wild_p": 0.6344536554634453,
+        "primary_bootstraps": 100000,
+        "uniform_mc_p": 0.6814531854681454,
+        "uniform_mc": 100000,
+        "v_hat": 0.038860200996909955,
+        "rho1_hat": -0.16702940236849864,
+        "positive_19round_blocks": 11,
+        "deterministic_rerun": "PASS",
+        "independent_reproduction": "NOT_YET",
+        "final_judgment": "FAILED",
+        "novelty_status": "NOVELTY_NOT_CONFIRMED",
+        "promotion_candidate": false,
+        "recommendation_generated": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false,
+        "result_hash": "f85465b82dd0c7ab62a142a05fd8dcfaf7c72cd078f6f5ad2c84a6f0467f9431",
+        "result_document": "00_P45_STATE/experiment_lab/EXP-CROWD-TOPO-001/EXP_CROWD_TOPO_001_V1_FINAL_RESULT.md"
+      }
+    },
+    "research_state": {
+      "crowd_topology": {
+        "status": "EXPERIMENT_COMPLETED / FAILED",
+        "experiment_id": "EXP-CROWD-20260823-005-V1",
+        "novelty_status": "NOVELTY_NOT_CONFIRMED",
+        "outcome_analysis_executed": true,
+        "experiment_created": true,
+        "protocol_created": true,
+        "official_effect": "NONE",
+        "official_engine_changed": false
+      }
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 49
+    }
+  }
+}

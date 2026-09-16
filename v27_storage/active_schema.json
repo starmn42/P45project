@@ -1,0 +1,9 @@
+{
+  "schema_version": 273,
+  "core_db": "p45_v273_core.sqlite3",
+  "audit_db": "p45_v273_audit.sqlite3",
+  "previous_core_db": "p45_v272_core.sqlite3",
+  "previous_audit_db": "p45_v272_audit.sqlite3",
+  "previous_schema_version": 272,
+  "activated_at": "20260806T204608+0900"
+}

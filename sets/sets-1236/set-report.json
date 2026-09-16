@@ -1,0 +1,10 @@
+{
+  "candidate_replacement_performed": false,
+  "hold_reason": "final selection does not contain six unique candidates",
+  "placement_status": "HOLD",
+  "selected_numbers_before_placement": [],
+  "selection_mode": "NONE",
+  "set_1": [],
+  "set_2": [],
+  "target_round": 1236
+}

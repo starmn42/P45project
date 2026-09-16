@@ -1,0 +1,23 @@
+{
+  "target": 1240,
+  "source_round": 1239,
+  "pattern_index": 7,
+  "previous_seven": [8, 11, 13, 22, 32, 33, 36],
+  "anchors": [36, 8, 13],
+  "fixed": [[15, 31, 44], [16, 29, 45], [17, 19, 33]],
+  "linked": [[15, 36, 39], [8, 35, 41], [13, 34, 37]],
+  "reset": false,
+  "pointer_before": 3,
+  "selected_class": 4,
+  "pointer_after": 5,
+  "used_count": 81,
+  "common": [],
+  "fixed_only": [[15, 31, 44], [16, 29, 45], [17, 19, 33]],
+  "linked_only": [[15, 36, 39], [8, 35, 41], [13, 34, 37]],
+  "canonical_sha256": "56748e0192252706d2cf90c6306aff9b8c6c88381a90624c27f4fb23713ca27c",
+  "preview_sha256": "655c4e174723a2467b5ae24c53568a2dff778cdbbbdbce08c589b6f82e3c8e70",
+  "deterministic_repeat": "PASS",
+  "future_leakage": 0,
+  "protocol_sha256": "22e8ba6f87d2e1e715abb020e59e8c3493dbf641212fbb3507047d0e16e0ecf7",
+  "kts_sha256": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075"
+}

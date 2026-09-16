@@ -1,0 +1,9 @@
+{
+  "engine_version": "P45 Research Engine v2.3 Integrated Compact",
+  "lock_status": "LOCKED",
+  "locked_at": "2026-08-04T20:44:00+09:00",
+  "locked_report_sha256": "82ce65513761b3d7df0c029fffa08716ab8cfe57cc609453ed918ec819c23a8a",
+  "manifest_sha256": "cdfabfe1e5871b50fbabdcb39b90c8ce0f7f2a6452f8df1ca5a2f22570bdff9e",
+  "record_type": "IMMUTABLE_ANALYSIS_LOCK",
+  "target_round": 1236
+}

@@ -1,0 +1,5 @@
+{
+  "rule": "MAX_OUTCOME_ROUND_USED <= evaluation_round - 1",
+  "violations": 0,
+  "round_funnel_hash": "77c9b134c2a0d842e742b5851d1a4ce7ee34878b716bd3e7384e6f909cbcd329"
+}

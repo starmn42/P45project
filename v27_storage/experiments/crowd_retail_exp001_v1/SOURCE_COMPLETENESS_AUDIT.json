@@ -1,0 +1,10783 @@
+{
+  "range": "262~1237",
+  "rounds": 976,
+  "unresolved_mismatches": 0,
+  "rounds_audit": [
+    {
+      "round": 262,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 263,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 264,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 265,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 266,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 267,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 268,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 269,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 270,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 271,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 272,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 273,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 274,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 275,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 276,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 277,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 278,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 279,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 280,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 281,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 282,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 283,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 284,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 285,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 286,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 287,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 288,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 289,
+      "official_k1": 0,
+      "api_total": 0,
+      "row_count": 0,
+      "difference": 0,
+      "modes": []
+    },
+    {
+      "round": 290,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 291,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 292,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 293,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 294,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 295,
+      "official_k1": 0,
+      "api_total": 0,
+      "row_count": 0,
+      "difference": 0,
+      "modes": []
+    },
+    {
+      "round": 296,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 297,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 298,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "수동"
+      ]
+    },
+    {
+      "round": 299,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 300,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 301,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 302,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 303,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 304,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 305,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 306,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 307,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 308,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 309,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 310,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 311,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 312,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 313,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 314,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 315,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 316,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 317,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 318,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 319,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 320,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 321,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 322,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 323,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 324,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 325,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 326,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 327,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 328,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 329,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 330,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 331,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 332,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 333,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 334,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 335,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 336,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 337,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 338,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 339,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 340,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 341,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 342,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 343,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 344,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 345,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 346,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 347,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 348,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 349,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 350,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 351,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 352,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 353,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 354,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 355,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 356,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 357,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 358,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 359,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 360,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 361,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 362,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 363,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 364,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 365,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 366,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 367,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 368,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 369,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 370,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 371,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 372,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 373,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 374,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 375,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 376,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 377,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 378,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 379,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 380,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 381,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 382,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 383,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 384,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 385,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 386,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 387,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 388,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 389,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 390,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 391,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "수동"
+      ]
+    },
+    {
+      "round": 392,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 393,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 394,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 395,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 396,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 397,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 398,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 399,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 400,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 401,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 402,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 403,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 404,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 405,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 406,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 407,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 408,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 409,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 410,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 411,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 412,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 413,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 414,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 415,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 416,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 417,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 418,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 419,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 420,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 421,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 422,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 423,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 424,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 425,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 426,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 427,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 428,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 429,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 430,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 431,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 432,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 433,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 434,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 435,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 436,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 437,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 438,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 439,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 440,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 441,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 442,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 443,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 444,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 445,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 446,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 447,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 448,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 449,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 450,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 451,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 452,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 453,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 454,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 455,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 456,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 457,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 458,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 459,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 460,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 461,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 462,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 463,
+      "official_k1": 0,
+      "api_total": 0,
+      "row_count": 0,
+      "difference": 0,
+      "modes": []
+    },
+    {
+      "round": 464,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 465,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 466,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 467,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 468,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 469,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 470,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 471,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 472,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 473,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 474,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 475,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 476,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 477,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 478,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 479,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 480,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 481,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 482,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 483,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 484,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 485,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 486,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 487,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 488,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 489,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 490,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 491,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 492,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 493,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 494,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 495,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 496,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 497,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 498,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 499,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 500,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 501,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 502,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 503,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 504,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 505,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 506,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 507,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 508,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 509,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 510,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 511,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 512,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 513,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 514,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 515,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "수동"
+      ]
+    },
+    {
+      "round": 516,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 517,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 518,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 519,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 520,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 521,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 522,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 523,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 524,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 525,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 526,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 527,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 528,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 529,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 530,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 531,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 532,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 533,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 534,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 535,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 536,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 537,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 538,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 539,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 540,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 541,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 542,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 543,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 544,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 545,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 546,
+      "official_k1": 30,
+      "api_total": 30,
+      "row_count": 30,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 547,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 548,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 549,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 550,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 551,
+      "official_k1": 1,
+      "api_total": 1,
+      "row_count": 1,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 552,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 553,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 554,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 555,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 556,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 557,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 558,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 559,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 560,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 561,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 562,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 563,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 564,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 565,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 566,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 567,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 568,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 569,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 570,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 571,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 572,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 573,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 574,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 575,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 576,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 577,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 578,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 579,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 580,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 581,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 582,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 583,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 584,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 585,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 586,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 587,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 588,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 589,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 590,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 591,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 592,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 593,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 594,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 595,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 596,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 597,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 598,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 599,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 600,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 601,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 602,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 603,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 604,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 605,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 606,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 607,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 608,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 609,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 610,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 611,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 612,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 613,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 614,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 615,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 616,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 617,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 618,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 619,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 620,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 621,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 622,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 623,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 624,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 625,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 626,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 627,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 628,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 629,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 630,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 631,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 632,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 633,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 634,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 635,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 636,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 637,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 638,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 639,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 640,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 641,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 642,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 643,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 644,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 645,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 646,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 647,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 648,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 649,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 650,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 651,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 652,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 653,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 654,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 655,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 656,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 657,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 658,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 659,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 660,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 661,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 662,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 663,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 664,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 665,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 666,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 667,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 668,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 669,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 670,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 671,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 672,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 673,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 674,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 675,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 676,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 677,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 678,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 679,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 680,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 681,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 682,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 683,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 684,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 685,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 686,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 687,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 688,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 689,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 690,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 691,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 692,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 693,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 694,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 695,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 696,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 697,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 698,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 699,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 700,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 701,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 702,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 703,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 704,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 705,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 706,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 707,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 708,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 709,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 710,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 711,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 712,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 713,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 714,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 715,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 716,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 717,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 718,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 719,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 720,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 721,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 722,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 723,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 724,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 725,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 726,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 727,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 728,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 729,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 730,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 731,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 732,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 733,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 734,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 735,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 736,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 737,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 738,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 739,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 740,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 741,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 742,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 743,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 744,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 745,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 746,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 747,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 748,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 749,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 750,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 751,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 752,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 753,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 754,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 755,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 756,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 757,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 758,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 759,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 760,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 761,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 762,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 763,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 764,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 765,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 766,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 767,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 768,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 769,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 770,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 771,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 772,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 773,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 774,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 775,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 776,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 777,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 778,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 779,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 780,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 781,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 782,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 783,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 784,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 785,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 786,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 787,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 788,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 789,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 790,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 791,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 792,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 793,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 794,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 795,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 796,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 797,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 798,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 799,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 800,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 801,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 802,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 803,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 804,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 805,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 806,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 807,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 808,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 809,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 810,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 811,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 812,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 813,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 814,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 815,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 816,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 817,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 818,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 819,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 820,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 821,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 822,
+      "official_k1": 3,
+      "api_total": 3,
+      "row_count": 3,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 823,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 824,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 825,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 826,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 827,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 828,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 829,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 830,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 831,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 832,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 833,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 834,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 835,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 836,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 837,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 838,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 839,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 840,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 841,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 842,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 843,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 844,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 845,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 846,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 847,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 848,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 849,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 850,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 851,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 852,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 853,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 854,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 855,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 856,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 857,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 858,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 859,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 860,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 861,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 862,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 863,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 864,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 865,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 866,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 867,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 868,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 869,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 870,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 871,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 872,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 873,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 874,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 875,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 876,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 877,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 878,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 879,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 880,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 881,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 882,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 883,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 884,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 885,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 886,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 887,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 888,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 889,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 890,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 891,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 892,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 893,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 894,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 895,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 896,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 897,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 898,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 899,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 900,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 901,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 902,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 903,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 904,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 905,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 906,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 907,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 908,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 909,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 910,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 911,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 912,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 913,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 914,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 915,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 916,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 917,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 918,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 919,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 920,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 921,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 922,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 923,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 924,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 925,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 926,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 927,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 928,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 929,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 930,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 931,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 932,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 933,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 934,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 935,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 936,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 937,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 938,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 939,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 940,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 941,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 942,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 943,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 944,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 945,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 946,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 947,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 948,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 949,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 950,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 951,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 952,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 953,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 954,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 955,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 956,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 957,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 958,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 959,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 960,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 961,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 962,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 963,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 964,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 965,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 966,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 967,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 968,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 969,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 970,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 971,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 972,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 973,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 974,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 975,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 976,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 977,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 978,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 979,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 980,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 981,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 982,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 983,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 984,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 985,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 986,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 987,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 988,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 989,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 990,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 991,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 992,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 993,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 994,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 995,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 996,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 997,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 998,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 999,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1000,
+      "official_k1": 22,
+      "api_total": 22,
+      "row_count": 22,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1001,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1002,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1003,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1004,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1005,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1006,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1007,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1008,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1009,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1010,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1011,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1012,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1013,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1014,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1015,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1016,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1017,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1018,
+      "official_k1": 2,
+      "api_total": 2,
+      "row_count": 2,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1019,
+      "official_k1": 50,
+      "api_total": 50,
+      "row_count": 50,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1020,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1021,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1022,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1023,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1024,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1025,
+      "official_k1": 4,
+      "api_total": 4,
+      "row_count": 4,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1026,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1027,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1028,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1029,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1030,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1031,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1032,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1033,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1034,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1035,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1036,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1037,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1038,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1039,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1040,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1041,
+      "official_k1": 25,
+      "api_total": 25,
+      "row_count": 25,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1042,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1043,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1044,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1045,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1046,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1047,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1048,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1049,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1050,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1051,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1052,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1053,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1054,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1055,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1056,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1057,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1058,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1059,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1060,
+      "official_k1": 28,
+      "api_total": 28,
+      "row_count": 28,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1061,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1062,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1063,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1064,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1065,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1066,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1067,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1068,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1069,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1070,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1071,
+      "official_k1": 5,
+      "api_total": 5,
+      "row_count": 5,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1072,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1073,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1074,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1075,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1076,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1077,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1078,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1079,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1080,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1081,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1082,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1083,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1084,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1085,
+      "official_k1": 23,
+      "api_total": 23,
+      "row_count": 23,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1086,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1087,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1088,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1089,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1090,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1091,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1092,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1093,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1094,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1095,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1096,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1097,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1098,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1099,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1100,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1101,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1102,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1103,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1104,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1105,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1106,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1107,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1108,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1109,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1110,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1111,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1112,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1113,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1114,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1115,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1116,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1117,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1118,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1119,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1120,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1121,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1122,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1123,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1124,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1125,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1126,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1127,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1128,
+      "official_k1": 63,
+      "api_total": 63,
+      "row_count": 63,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1129,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1130,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1131,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1132,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1133,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1134,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1135,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1136,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1137,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1138,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1139,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1140,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1141,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1142,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1143,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1144,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1145,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1146,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1147,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1148,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1149,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1150,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1151,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1152,
+      "official_k1": 35,
+      "api_total": 35,
+      "row_count": 35,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1153,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1154,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1155,
+      "official_k1": 7,
+      "api_total": 7,
+      "row_count": 7,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1156,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1157,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1158,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1159,
+      "official_k1": 23,
+      "api_total": 23,
+      "row_count": 23,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1160,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1161,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1162,
+      "official_k1": 36,
+      "api_total": 36,
+      "row_count": 36,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1163,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1164,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1165,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1166,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1167,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1168,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1169,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1170,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1171,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1172,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1173,
+      "official_k1": 24,
+      "api_total": 24,
+      "row_count": 24,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1174,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1175,
+      "official_k1": 20,
+      "api_total": 20,
+      "row_count": 20,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1176,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1177,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1178,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1179,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1180,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1181,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1182,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1183,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1184,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1185,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1186,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1187,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1188,
+      "official_k1": 24,
+      "api_total": 24,
+      "row_count": 24,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1189,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1190,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1191,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1192,
+      "official_k1": 29,
+      "api_total": 29,
+      "row_count": 29,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1193,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1194,
+      "official_k1": 28,
+      "api_total": 28,
+      "row_count": 28,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1195,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1196,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1197,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1198,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1199,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1200,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1201,
+      "official_k1": 19,
+      "api_total": 19,
+      "row_count": 19,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1202,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1203,
+      "official_k1": 21,
+      "api_total": 21,
+      "row_count": 21,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1204,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1205,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1206,
+      "official_k1": 15,
+      "api_total": 15,
+      "row_count": 15,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1207,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1208,
+      "official_k1": 6,
+      "api_total": 6,
+      "row_count": 6,
+      "difference": 0,
+      "modes": [
+        "자동"
+      ]
+    },
+    {
+      "round": 1209,
+      "official_k1": 22,
+      "api_total": 22,
+      "row_count": 22,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1210,
+      "official_k1": 24,
+      "api_total": 24,
+      "row_count": 24,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1211,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1212,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1213,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1214,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1215,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1216,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1217,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1218,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1219,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1220,
+      "official_k1": 14,
+      "api_total": 14,
+      "row_count": 14,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1221,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1222,
+      "official_k1": 24,
+      "api_total": 24,
+      "row_count": 24,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1223,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1224,
+      "official_k1": 12,
+      "api_total": 12,
+      "row_count": 12,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1225,
+      "official_k1": 13,
+      "api_total": 13,
+      "row_count": 13,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1226,
+      "official_k1": 10,
+      "api_total": 10,
+      "row_count": 10,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1227,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1228,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1229,
+      "official_k1": 8,
+      "api_total": 8,
+      "row_count": 8,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1230,
+      "official_k1": 16,
+      "api_total": 16,
+      "row_count": 16,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1231,
+      "official_k1": 17,
+      "api_total": 17,
+      "row_count": 17,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1232,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1233,
+      "official_k1": 31,
+      "api_total": 31,
+      "row_count": 31,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1234,
+      "official_k1": 18,
+      "api_total": 18,
+      "row_count": 18,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1235,
+      "official_k1": 9,
+      "api_total": 9,
+      "row_count": 9,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1236,
+      "official_k1": 11,
+      "api_total": 11,
+      "row_count": 11,
+      "difference": 0,
+      "modes": [
+        "반자동",
+        "수동",
+        "자동"
+      ]
+    },
+    {
+      "round": 1237,
+      "official_k1": 23,
+      "api_total": 23,
+      "row_count": 23,
+      "difference": 0,
+      "modes": [
+        "수동",
+        "자동"
+      ]
+    }
+  ]
+}

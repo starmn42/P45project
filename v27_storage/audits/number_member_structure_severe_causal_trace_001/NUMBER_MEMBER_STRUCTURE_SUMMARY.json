@@ -1,0 +1,142 @@
+{
+  "target_round": 1238,
+  "max_source_round": 1237,
+  "number_survivor_count": 12,
+  "number_identities": [
+    13,
+    24,
+    27,
+    37,
+    34,
+    12,
+    19,
+    20,
+    28,
+    21,
+    6,
+    39
+  ],
+  "number_state_distribution": {
+    "NUMBER_WEAKEN": 12
+  },
+  "number_structure_distribution": {
+    "SEVERE": 12
+  },
+  "number_structure_reasons": {
+    "ANY_EVALUABLE_UNIT_STRUCTURE_SEVERE:END_DIGIT+UNIT_5": 12
+  },
+  "unit_structure_ledgers": {
+    "UNIT_3": {
+      "structure_state": "WARNING",
+      "decision_reason": "MAX_METRIC_PERCENTILE_WITHOUT_WEIGHTING",
+      "overall_percentile": 96.03559870550161,
+      "sample_count": 1236,
+      "metric_percentiles": {
+        "zero_group_count": 77.9126213592233,
+        "max_abs_standardized_occupancy": 96.03559870550161,
+        "max_annihilation_streak": 9.466019417475728,
+        "realized_return_depth": 54.20711974110032,
+        "recent50_zero_group_shift": 69.25566343042071
+      },
+      "current_metrics": {
+        "zero_group_count": 9.0,
+        "max_abs_standardized_occupancy": 2.500053705115955,
+        "max_annihilation_streak": 3.0,
+        "realized_return_depth": 1.0,
+        "recent50_zero_group_shift": 0.10853288364249458
+      }
+    },
+    "UNIT_5": {
+      "structure_state": "SEVERE",
+      "decision_reason": "MAX_METRIC_PERCENTILE_WITHOUT_WEIGHTING",
+      "overall_percentile": 99.19093851132686,
+      "sample_count": 1236,
+      "metric_percentiles": {
+        "zero_group_count": 83.89967637540452,
+        "max_abs_standardized_occupancy": 99.19093851132686,
+        "max_annihilation_streak": 76.13268608414239,
+        "realized_return_depth": 2.4271844660194173,
+        "recent50_zero_group_shift": 57.76699029126213
+      },
+      "current_metrics": {
+        "zero_group_count": 4.0,
+        "max_abs_standardized_occupancy": 2.875878420888012,
+        "max_annihilation_streak": 3.0,
+        "realized_return_depth": 0.0,
+        "recent50_zero_group_shift": 0.08016863406408081
+      }
+    },
+    "UNIT_9": {
+      "structure_state": "WARNING",
+      "decision_reason": "MAX_METRIC_PERCENTILE_WITHOUT_WEIGHTING",
+      "overall_percentile": 97.41100323624596,
+      "sample_count": 1236,
+      "metric_percentiles": {
+        "zero_group_count": 83.00970873786407,
+        "max_abs_standardized_occupancy": 40.614886731391586,
+        "max_annihilation_streak": 97.41100323624596,
+        "realized_return_depth": 36.73139158576052,
+        "recent50_zero_group_shift": 59.54692556634304
+      },
+      "current_metrics": {
+        "zero_group_count": 1.0,
+        "max_abs_standardized_occupancy": 1.4234871932945812,
+        "max_annihilation_streak": 2.0,
+        "realized_return_depth": 0.0,
+        "recent50_zero_group_shift": 0.09231028667790897
+      }
+    },
+    "UNIT_10": {
+      "structure_state": "WARNING",
+      "decision_reason": "MAX_METRIC_PERCENTILE_WITHOUT_WEIGHTING",
+      "overall_percentile": 96.92556634304208,
+      "sample_count": 1236,
+      "metric_percentiles": {
+        "zero_group_count": 76.86084142394822,
+        "max_abs_standardized_occupancy": 96.92556634304208,
+        "max_annihilation_streak": 93.042071197411,
+        "realized_return_depth": 38.349514563106794,
+        "recent50_zero_group_shift": 33.00970873786408
+      },
+      "current_metrics": {
+        "zero_group_count": 1.0,
+        "max_abs_standardized_occupancy": 2.3913557179370017,
+        "max_annihilation_streak": 2.0,
+        "realized_return_depth": 0.0,
+        "recent50_zero_group_shift": 0.02505902192242826
+      }
+    },
+    "END_DIGIT": {
+      "structure_state": "SEVERE",
+      "decision_reason": "MAX_METRIC_PERCENTILE_WITHOUT_WEIGHTING",
+      "overall_percentile": 99.19093851132686,
+      "sample_count": 1236,
+      "metric_percentiles": {
+        "zero_group_count": 87.54045307443366,
+        "max_abs_standardized_occupancy": 99.19093851132686,
+        "max_annihilation_streak": 29.77346278317152,
+        "realized_return_depth": 48.62459546925567,
+        "recent50_zero_group_shift": 4.449838187702265
+      },
+      "current_metrics": {
+        "zero_group_count": 5.0,
+        "max_abs_standardized_occupancy": 3.3981877782208976,
+        "max_annihilation_streak": 2.0,
+        "realized_return_depth": 1.0,
+        "recent50_zero_group_shift": 0.00037099494097780905
+      }
+    }
+  },
+  "combinatorial_propagation": {
+    "severe_number_count": 12,
+    "non_severe_number_count": 0,
+    "trios_without_severe": 0,
+    "trios_with_at_least_one_severe": 220,
+    "canonical_rule": "max(member number_structure_state by STRUCTURE_RANK); one SEVERE member is sufficient"
+  },
+  "min_number_state_change_for_one_trio_release": 3,
+  "structural_root_cause_class": "NUMBER_GLOBAL_STRUCTURE_SEVERE",
+  "defect_evidence_found": false,
+  "future_leakage_count": 0,
+  "outcome_scoring_count": 0
+}

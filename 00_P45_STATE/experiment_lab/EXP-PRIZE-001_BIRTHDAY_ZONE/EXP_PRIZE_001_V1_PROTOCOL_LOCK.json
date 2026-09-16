@@ -1,0 +1,15 @@
+{
+  "logical_id": "EXP-PRIZE-001-V1",
+  "registry_id": "EXP-PRIZE-20260816-001-V1",
+  "protocol_version": "EXP-PRIZE-001-PROTOCOL-1.0",
+  "protocol_path": "00_P45_STATE/experiment_lab/EXP-PRIZE-001_BIRTHDAY_ZONE/EXP_PRIZE_001_V1_LOCKED_PROTOCOL.md",
+  "protocol_sha256": "38d6059a52ac5af59d94b964774f2c4430fae8a5167740c409031224e25ef1b7",
+  "historical_range": "1~1237",
+  "round_1238_plus_allowed": false,
+  "permutation_seed": 2026082101,
+  "permutations": 100000,
+  "train_range": "1~800",
+  "holdout_range": "801~1237",
+  "status": "LOCKED_BEFORE_OUTCOME_INGEST",
+  "official_engine_effect": "NONE"
+}

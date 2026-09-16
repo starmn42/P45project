@@ -1,0 +1,54 @@
+{
+  "feasibility_verdict": "SEMANTICS_RECOVERED_EXISTING",
+  "final_verdict": "SEMANTICS_REBUILD_NOT_EQUIVALENT",
+  "spec_sha256": "71b7e31fc59fe749fc9593ac583dd50084ebac143060cf73141fe1493b02387b",
+  "new_semantics_added": false,
+  "trio_rebuild": {
+    "range": "43..1235",
+    "rounds": 1193,
+    "authoritative_rounds": 1193,
+    "round_state_equal": true,
+    "exposures": 100711,
+    "authoritative_exposures": 100711,
+    "deterministic_exposure_equal": true,
+    "first_mismatch": null
+  },
+  "pair_rebuild": {
+    "range_started": "43..1235",
+    "last_checkpoint_examined": 796,
+    "stopped_after_decisive_mismatch": true,
+    "first_decisive_mismatch_target": 662,
+    "candidate": "10-13-27__14-17-43",
+    "authoritative": {
+      "integrated_primary_evidence": null,
+      "main_primary_evidence": null,
+      "PG07": "INCOMPLETE",
+      "PG08": "INCOMPLETE",
+      "pair_state": "PAIR_SYSTEM_HOLD"
+    },
+    "rebuilt": {
+      "integrated_primary_evidence": "INSUFFICIENT",
+      "main_primary_evidence": "INSUFFICIENT",
+      "PG07": "PASS",
+      "PG08": "PASS",
+      "pair_state": "PAIR_TEST_READY"
+    }
+  },
+  "existing_035_baseline_reused": {
+    "valid_targets": "369..1235",
+    "valid_count": 867,
+    "output_available": 0,
+    "no_pick": 867,
+    "records_hash": "ba77b407b8f7991ff1da511976b50994e297d83576d485cd7e417e965eee0b21"
+  },
+  "experiment_035": {
+    "hypothesis": "NOT_EVALUATED",
+    "simulation_B": 0,
+    "status": "STOP_NULL_SEMANTICS_NOT_VALID",
+    "registry": "REGISTERED",
+    "registry_status_update": "REGISTRY_STATUS_UPDATE_NOT_CONFIRMED",
+    "executed_count_change": 0
+  },
+  "fair_null_B2000_executed": false,
+  "future_leakage": 0
+}

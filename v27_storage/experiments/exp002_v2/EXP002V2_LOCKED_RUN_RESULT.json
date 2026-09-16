@@ -1,0 +1,115 @@
+{
+  "run_id": "e7049813-6e76-406a-9c0e-c599fc031c55",
+  "lock": {
+    "experiment_id": "EXP-DRAW-20260816-038-V2",
+    "protocol_version": "EXP002-V2-PROTOCOL-1.0",
+    "files": [
+      {
+        "path": "00_P45_STATE/experiment_lab/EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_01_PREREGISTRATION.md",
+        "sha256": "93453a92ae68e0ffd18e0d5e6f5b26f6e331ea9afa1b8f14e6799f1a88022888"
+      },
+      {
+        "path": "00_P45_STATE/experiment_lab/EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_02_SELECTION.md",
+        "sha256": "69b1019f2352bfe8d3482850b5270f880dd7ed35d498eebbf88d8cfea1f43114"
+      },
+      {
+        "path": "00_P45_STATE/experiment_lab/EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_03_METRICS_NULL.md",
+        "sha256": "9e96cb1de764600ab0f6b07b6b080ecb0edab28c8b43a146073c94f2018b1b99"
+      },
+      {
+        "path": "00_P45_STATE/experiment_lab/EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_04_WALKFORWARD.md",
+        "sha256": "55541a2def8bc47df07ffdd1ce9f847beaf7e52018d66517acce9d573493cf8b"
+      },
+      {
+        "path": "00_P45_STATE/experiment_lab/EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_05_SUCCESS_FAILURE.md",
+        "sha256": "962b0cf9df29b393ec8345f8764ef7d0c4abdf10750674a2bb564e55e4b946dc"
+      }
+    ],
+    "canonical_protocol_hash": "eec5b8aca4d4a8b7888fb03a13f21cc2d6dcc8c3969351d993ea7b988b10b6ff",
+    "data_boundary": "1~1235",
+    "data_hash": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+    "number_ranking": "OFFICIAL_NUMBER_14_KEY",
+    "selection": "RANK_1_2_3_AS_A__RANK_4_5_6_AS_B",
+    "trio_calculator_used": false,
+    "v1_evidence_used": false,
+    "seed": 202608160238,
+    "repetitions": 100000,
+    "lock_hash": "05168d0da9c9749d65a91a5293be830efc313be31e12363ca3934ef461e2bcfe"
+  },
+  "result": {
+    "valid_no_pick_rounds": 867,
+    "fallback_eligible": 412,
+    "fallback_pick_rounds": 412,
+    "experimental_no_pick": 455,
+    "coverage_rate": 0.47520184544405997,
+    "main_3of3": 1,
+    "main_rate": 0.0024271844660194173,
+    "integrated_3of3": 4,
+    "integrated_rate": 0.009708737864077669,
+    "main_exact2": {
+      "A": 17,
+      "B": 23
+    },
+    "integrated_exact2": {
+      "A": 23,
+      "B": 32
+    },
+    "random_main_baseline": 0.0028187637660127733,
+    "random_integrated_baseline": 0.004932192028051359,
+    "main_wilson95": [
+      0.0004285862248333697,
+      0.013618735649373725
+    ],
+    "integrated_wilson95": [
+      0.0037818335441660647,
+      0.024694064107491656
+    ],
+    "main_exact_p_upper": 0.6874436519436522,
+    "permutation": {
+      "seed": 202608160238,
+      "repetitions": 100000,
+      "observed_main": 1,
+      "observed_integrated": 4,
+      "main_p_upper": 0.7364726352736473,
+      "integrated_p_upper": 0.22218777812221877
+    },
+    "periods": {
+      "first_half": {
+        "n": 206,
+        "main": 0,
+        "integrated": 1
+      },
+      "second_half": {
+        "n": 206,
+        "main": 1,
+        "integrated": 3
+      },
+      "recent100": {
+        "n": 100,
+        "main": 0,
+        "integrated": 1
+      },
+      "recent50": {
+        "n": 50,
+        "main": 0,
+        "integrated": 0
+      },
+      "recent20_test_only": {
+        "n": 20,
+        "main": 0,
+        "integrated": 0
+      }
+    },
+    "primary_superior": false,
+    "walkforward_stable": false,
+    "final_judgment": "FAILED",
+    "explanation_code": "B",
+    "promotion_candidate": false,
+    "future_leakage": 0,
+    "hash_mismatch": 0,
+    "failed_rounds": 0,
+    "determinism_hash": "03e9cb21cfe6d8dbdc5f409d9fa86b7be1e8e3b0d01399ae4406a957a743e690",
+    "determinism_10x": true
+  },
+  "db_sha256": "d8ef536a6fb421f72b84406148b36fdbe0ca85438eace25069c1916964d6e17d"
+}

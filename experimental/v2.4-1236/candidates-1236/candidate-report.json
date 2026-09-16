@@ -1,0 +1,67 @@
+{
+  "approved_scope": "1236_ONLY",
+  "data_cutoff_round": 1235,
+  "experiment_version": "P45 v2.4-EXPERIMENTAL-1236",
+  "forced_fill_performed": false,
+  "label": "실험 재계산 결과·당시 공식 추천 아님",
+  "official_candidate_result": "HOLD",
+  "official_pass_candidates": [],
+  "original_locked_result": "HOLD",
+  "percentile_structure_collapse": {
+    "metrics": {
+      "absent_5": {
+        "current_change": 0.020000000000000018,
+        "percentile": 16.387665198237887,
+        "stage": "NORMAL"
+      },
+      "absent_endings": {
+        "current_change": 0.1999999999999993,
+        "percentile": 86.69603524229075,
+        "stage": "NORMAL"
+      },
+      "annihilated_9": {
+        "current_change": 0.14,
+        "percentile": 58.502202643171806,
+        "stage": "NORMAL"
+      },
+      "concentration": {
+        "current_change": 0.8399999999999999,
+        "percentile": 66.51982378854626,
+        "stage": "NORMAL"
+      },
+      "continued_annihilation": {
+        "current_change": 0.05867346938775511,
+        "percentile": 50.66079295154185,
+        "stage": "NORMAL"
+      },
+      "return_depth_distribution": {
+        "current_change": 0.10765306122448978,
+        "percentile": 35.242290748898675,
+        "stage": "NORMAL"
+      }
+    },
+    "official": true,
+    "sample_count": 1135,
+    "stage": "NORMAL",
+    "window": "previous 50 draws versus latest 50 draws"
+  },
+  "status_counts": {
+    "FAIL": 29,
+    "TEST": 11,
+    "WEAKEN": 5
+  },
+  "target_round": 1236,
+  "valid_test_candidates": [
+    2,
+    3,
+    14,
+    16,
+    18,
+    19,
+    24,
+    26,
+    27,
+    39,
+    45
+  ]
+}

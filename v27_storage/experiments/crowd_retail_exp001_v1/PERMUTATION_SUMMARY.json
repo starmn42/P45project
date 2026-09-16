@@ -1,0 +1,13 @@
+{
+  "observed_manual_collision_cells": 132,
+  "expected_manual_collision_cells": 56.97188240042372,
+  "primary_randomization_p": 1.999996000008e-06,
+  "randomizations": 500000,
+  "randomization_seed": 2026082307,
+  "exceedances": 0,
+  "mc_standard_error": 1.999996000008e-06,
+  "null_mean": 56.971024,
+  "null_q95": 64.0,
+  "null_q99": 67.0,
+  "null_q999": 70.0
+}

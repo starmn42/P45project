@@ -1,0 +1,42 @@
+{
+  "experiment_id": "EXP-DRAW-20260816-038-V1",
+  "protocol_version": "EXP002-PROTOCOL-1.0",
+  "protocol_files": [
+    {
+      "path": "00_P45_STATE/experiment_lab/EXP-002_NO_PICK_FALLBACK/EXP002_01_PREREGISTRATION.md",
+      "sha256": "82d1e49d3ed8ffc44c1ed5d9a4e1b1d1338e97f6ccfe3035fd8f15ad4dcac58a"
+    },
+    {
+      "path": "00_P45_STATE/experiment_lab/EXP-002_NO_PICK_FALLBACK/EXP002_02_ELIGIBILITY_AND_SELECTION.md",
+      "sha256": "702c02c7183b222aa14807309b34c76b44f7fc7acb9b083343e87d355f98ac47"
+    },
+    {
+      "path": "00_P45_STATE/experiment_lab/EXP-002_NO_PICK_FALLBACK/EXP002_03_METRIC_NULL_POLICY.md",
+      "sha256": "76e19801db79feaa8a0d30e0cc37ffe3b4c44025ae94e3f6b5071efce13d88a6"
+    },
+    {
+      "path": "00_P45_STATE/experiment_lab/EXP-002_NO_PICK_FALLBACK/EXP002_04_WALKFORWARD_DESIGN.md",
+      "sha256": "c1021033838a77c208b0f17879e9824632c85bf51e4333bf6e463b591cb25442"
+    },
+    {
+      "path": "00_P45_STATE/experiment_lab/EXP-002_NO_PICK_FALLBACK/EXP002_05_SUCCESS_FAILURE_CRITERIA.md",
+      "sha256": "af99efc7d1b243ce541de8078239189dd23ae85ad47468450f4659083f0b07ad"
+    }
+  ],
+  "canonical_protocol_hash": "832e7df52854a61ae5b769ebdf529e48b6df0ca622606a583b5fa9c9055b7c46",
+  "draft_protocol_hash_declared": "832e7df52854a61ae5b769ebdf529e48b6df0ca622606a583b5fa9c9055b7c46",
+  "data_snapshot": "v27_storage/experiments/exp002/data/exp002_draws_1_1235.csv",
+  "data_snapshot_hash": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "data_boundary": "1~1235",
+  "pool_type": "EXP002_FALLBACK_POOL_V1",
+  "number_order": "OFFICIAL_NUMBER_14_KEY",
+  "trio_order": "OFFICIAL_TRIO_15_KEY",
+  "trio_exposure_policy": "EXP002_ONLY_R_MINUS_1",
+  "selection": "FIRST_TRIO_PLUS_FIRST_LATER_DISJOINT_TRIO",
+  "seed": 202608160038,
+  "iid_repetitions": 100000,
+  "permutation_repetitions": 100000,
+  "outcome_separation": "EACH_ROUND_PREDICTION_COMMITTED_BEFORE_ITS_OUTCOME;R_OUTCOME_USED_FROM_R_PLUS_1",
+  "locked_at": "2026-08-16T17:50:52+09:00",
+  "lock_hash": "0f8277ef43440764ec7e52dc80331af6b96ffc775bf24caaa06ba1a858e239fd"
+}

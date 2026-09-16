@@ -1,0 +1,26 @@
+{
+  "raw_rows": 9193,
+  "auto_rows": 6085,
+  "manual_rows": 2847,
+  "semiauto_excluded": 261,
+  "online_excluded": 119,
+  "duplicate_capable_cells": 150,
+  "observed_s_cell": 132,
+  "expected_s_cell": 56.97188240042372,
+  "s_pair": 469,
+  "expected_pair": 168.8878974918936,
+  "max_manual_multiplicity": 10,
+  "max_manual_round": 546,
+  "max_manual_retailer": "ID:12600054",
+  "randomization": {
+    "randomizations": 300000,
+    "seed": 2026082308,
+    "exceedances": 0,
+    "p": 3.3333222222592593e-06,
+    "mc_standard_error": 3.3333222222592593e-06,
+    "null_mean": 56.97893,
+    "q95": 64.0,
+    "q99": 67.0,
+    "q999": 71.0
+  }
+}

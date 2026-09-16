@@ -1,0 +1,62 @@
+[
+  {
+    "Path": "00_P45_STATE/experiment_lab/06_INITIAL_EXPERIMENT_REGISTRY.md",
+    "Size": 9273,
+    "SHA256": "a89260767d7cf2ecfa3da5857f96b2bde8b817a132c7add77d24290e5886c308"
+  },
+  {
+    "Path": "00_P45_STATE/P45_CURRENT_STATE.json",
+    "Size": 38042,
+    "SHA256": "342158fdef8986f7438bcf94aba535efa3ebb427b514e0d9a50278e600c23a9d"
+  },
+  {
+    "Path": "00_P45_STATE/P45_CURRENT_STATE.md",
+    "Size": 5169,
+    "SHA256": "6a56bbdc7f255b810c61b424a9e9d6955373471fcd26d82b1f7473a85e5c5388"
+  },
+  {
+    "Path": "00_P45_STATE/P45_DECISION_LOG.md",
+    "Size": 94544,
+    "SHA256": "e38ca91afaedbbd3dc6430178a60153a00a653835272cdc404eae024ee228a2d"
+  },
+  {
+    "Path": "00_P45_STATE/P45_FINAL_OPERATION_STATE.md",
+    "Size": 3786,
+    "SHA256": "833da632abf71072baae611cc270c2bd5e2246263a92e7ddeb971d7a09e8b3cf"
+  },
+  {
+    "Path": "00_P45_STATE/P45_HANDOFF.md",
+    "Size": 1040,
+    "SHA256": "135266f50440b7c28592f58b0473da4e447ffa25086f6eb423724346923e58c8"
+  },
+  {
+    "Path": "00_P45_STATE/P45_NEW_CHAT_START.md",
+    "Size": 1026,
+    "SHA256": "9b94be13a205f377e3a21bca640ebfd6684ce763ea3bf6f8aa8a0d2e7268ca4b"
+  },
+  {
+    "Path": "v27_storage/experiments/exp001/exp001_research.sqlite3",
+    "Size": 13881344,
+    "SHA256": "bc20ae1e80c05297485a3f0fb9d98946eda94c2b54d1fc3865be992b0a52c6fd"
+  },
+  {
+    "Path": "v27_storage/experiments/exp002_v2/exp002_v2_research.sqlite3",
+    "Size": 315392,
+    "SHA256": "d8ef536a6fb421f72b84406148b36fdbe0ca85438eace25069c1916964d6e17d"
+  },
+  {
+    "Path": "v27_storage/experiments/exp002/exp002_research.sqlite3",
+    "Size": 1855488,
+    "SHA256": "1b658292cc26c1ef943349c4afd851aa3a3d56ad6e72004bd67e9d70e152e10f"
+  },
+  {
+    "Path": "v27_storage/experiments/exp003/exp003_research.sqlite3",
+    "Size": 3256320,
+    "SHA256": "571f327cf09e0d6743dd8e23bbadae1fed46c64a12502234974282e9d222a5a0"
+  },
+  {
+    "Path": "v27_storage/manifests/protected-canonical-v1.json",
+    "Size": 19932,
+    "SHA256": "051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd"
+  }
+]

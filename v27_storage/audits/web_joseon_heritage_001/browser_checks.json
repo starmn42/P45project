@@ -1,0 +1,220 @@
+{
+  "http": {
+    "home": 200,
+    "status": 200
+  },
+  "errors": [],
+  "checks": [
+    {
+      "name": "desktop_1366",
+      "width": 1366,
+      "documentWidth": 1366,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "desktop_1440",
+      "width": 1440,
+      "documentWidth": 1440,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "mobile_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "mobile_412",
+      "width": 412,
+      "documentWidth": 412,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "mobile_430",
+      "width": 430,
+      "documentWidth": 430,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "mobile_menu_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "detail_1241_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "detail_1240_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "prospective_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "system_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "status_390",
+      "width": 390,
+      "documentWidth": 390,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "status_768",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "prospective_768",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "system_768",
+      "width": 768,
+      "documentWidth": 768,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "status_980",
+      "width": 980,
+      "documentWidth": 980,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "prospective_980",
+      "width": 980,
+      "documentWidth": 980,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "system_980",
+      "width": 980,
+      "documentWidth": 980,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "status_981",
+      "width": 981,
+      "documentWidth": 981,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "prospective_981",
+      "width": 981,
+      "documentWidth": 981,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "system_981",
+      "width": 981,
+      "documentWidth": 981,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "status_1366",
+      "width": 1366,
+      "documentWidth": 1366,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "prospective_1366",
+      "width": 1366,
+      "documentWidth": 1366,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    },
+    {
+      "name": "system_1366",
+      "width": 1366,
+      "documentWidth": 1366,
+      "overflow": 0,
+      "outside": [],
+      "fonts": "loaded"
+    }
+  ],
+  "requests": [
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8045/"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8045/styles.css?v=46"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8045/app.js?v=46"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8045/heritage-landscape.svg"
+    },
+    {
+      "method": "GET",
+      "url": "http://127.0.0.1:8045/api/status"
+    }
+  ],
+  "nonGetRequests": 0,
+  "pendingHits": 0,
+  "drawerFocusTrap": true,
+  "drawerEscape": true,
+  "approvedReference": "NOT_PROVIDED"
+}

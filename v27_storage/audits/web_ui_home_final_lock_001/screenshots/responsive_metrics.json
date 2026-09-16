@@ -1,0 +1,83 @@
+{
+  "results": [
+    {
+      "name": "mobile_390.png",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 1431,
+      "bodyWidth": 390,
+      "buttons": [
+        {
+          "text": "1241회 출격 보기",
+          "left": 10,
+          "right": 380,
+          "width": 370
+        },
+        {
+          "text": "1240회 결과 보기",
+          "left": 10,
+          "right": 380,
+          "width": 370
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "mobile_412.png",
+      "width": 412,
+      "height": 915,
+      "mobile": true,
+      "clientWidth": 412,
+      "scrollWidth": 412,
+      "scrollHeight": 1431,
+      "bodyWidth": 412,
+      "buttons": [
+        {
+          "text": "1241회 출격 보기",
+          "left": 10,
+          "right": 402,
+          "width": 392
+        },
+        {
+          "text": "1240회 결과 보기",
+          "left": 10,
+          "right": 402,
+          "width": 392
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "mobile_430.png",
+      "width": 430,
+      "height": 932,
+      "mobile": true,
+      "clientWidth": 430,
+      "scrollWidth": 430,
+      "scrollHeight": 1431,
+      "bodyWidth": 430,
+      "buttons": [
+        {
+          "text": "1241회 출격 보기",
+          "left": 10,
+          "right": 420,
+          "width": 410
+        },
+        {
+          "text": "1240회 결과 보기",
+          "left": 10,
+          "right": 420,
+          "width": 410
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    }
+  ],
+  "consoleErrors": []
+}

@@ -1,0 +1,465 @@
+{
+  "status": "PAIR_DIAGNOSTIC_READY",
+  "analysis_round": 1236,
+  "data_range": "1~1235",
+  "result_data_read": false,
+  "valid_trio_count": 12,
+  "valid_trio_hash": "6745ce383547b684aa56adf867832a7d2d19ee680ad59c774d4aff9c11b93732",
+  "disjoint_pair_count": 10,
+  "prediction_context_hash": "1c290f73a1e9d2a87a4005f01ee0d41216e5aac10a778dd7cc4bfdd76c322c6a",
+  "decision_hash": "61da26629695e31cd81138f22444f70e1b32c44927865d5a7b3567bc88cacae1",
+  "state_counts": {
+    "PAIR_SYSTEM_HOLD": 10
+  },
+  "gate_counts": {
+    "PG01": {
+      "FAIL": 10
+    },
+    "PG02": {
+      "PASS": 10
+    },
+    "PG03": {
+      "PASS": 10
+    },
+    "PG04": {
+      "PASS": 10
+    },
+    "PG05": {
+      "INCOMPLETE": 10
+    },
+    "PG06": {
+      "FAIL": 10
+    },
+    "PG07": {
+      "INCOMPLETE": 10
+    },
+    "PG08": {
+      "INCOMPLETE": 10
+    },
+    "PG09": {
+      "INCOMPLETE": 10
+    },
+    "PG10": {
+      "INCOMPLETE": 10
+    },
+    "PG11": {
+      "PASS": 10
+    },
+    "PG12": {
+      "PASS": 10
+    },
+    "PG13": {
+      "PASS": 10
+    },
+    "PG14": {
+      "INCOMPLETE": 10
+    }
+  },
+  "incomplete_items": [
+    "PAIR_WALKFORWARD_PRELOCK",
+    "PAIR_PRIMARY_STATS",
+    "PAIR_MAIN_STATS",
+    "PAIR_RECENT_SUPPORT",
+    "PAIR_RULE_RISK",
+    "PAIR_NORMALIZED_LEDGER"
+  ],
+  "insufficient_sample_items": [
+    "PAIR_SELECTION_EXPOSURE",
+    "PAIR_STRUCTURE_HISTORY"
+  ],
+  "candidates": [
+    {
+      "canonical_pair_key": "13-27-45__2-15-31",
+      "pair_rule_signature": "cfd9f32f808b7e5474130a3d8ec0e58211d69bc82ab1af6423629f3b34c15abe",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-27-45__2-19-38",
+      "pair_rule_signature": "a5bab1e80f0a98eb8949a2d627d6fbebd149f2be680dbb2a69fe1cedffecad83",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-27-45__2-19-40",
+      "pair_rule_signature": "a5bab1e80f0a98eb8949a2d627d6fbebd149f2be680dbb2a69fe1cedffecad83",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-27-45__2-20-38",
+      "pair_rule_signature": "a5bab1e80f0a98eb8949a2d627d6fbebd149f2be680dbb2a69fe1cedffecad83",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-27-45__2-20-39",
+      "pair_rule_signature": "a5bab1e80f0a98eb8949a2d627d6fbebd149f2be680dbb2a69fe1cedffecad83",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-31-45__2-15-27",
+      "pair_rule_signature": "b457035b2b4db0521b0ee476fb2338b4b04251313697c2aac2f96e4083184d7b",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-31-45__2-19-38",
+      "pair_rule_signature": "b6968785eea46082e622268daf223983770779b61f1eb26b844e7419d10cad40",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-31-45__2-19-40",
+      "pair_rule_signature": "b6968785eea46082e622268daf223983770779b61f1eb26b844e7419d10cad40",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-31-45__2-20-38",
+      "pair_rule_signature": "b6968785eea46082e622268daf223983770779b61f1eb26b844e7419d10cad40",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    },
+    {
+      "canonical_pair_key": "13-31-45__2-20-39",
+      "pair_rule_signature": "b6968785eea46082e622268daf223983770779b61f1eb26b844e7419d10cad40",
+      "state": "PAIR_SYSTEM_HOLD",
+      "gates": {
+        "PG01": "FAIL",
+        "PG02": "PASS",
+        "PG03": "PASS",
+        "PG04": "PASS",
+        "PG05": "INCOMPLETE",
+        "PG06": "FAIL",
+        "PG07": "INCOMPLETE",
+        "PG08": "INCOMPLETE",
+        "PG09": "INCOMPLETE",
+        "PG10": "INCOMPLETE",
+        "PG11": "PASS",
+        "PG12": "PASS",
+        "PG13": "PASS",
+        "PG14": "INCOMPLETE"
+      },
+      "limiting": [
+        "PG01",
+        "PG05",
+        "PG06",
+        "PG07",
+        "PG08",
+        "PG09",
+        "PG10",
+        "PG14"
+      ],
+      "coverage_complete_cells": 30,
+      "conflict_columns": 0,
+      "risk": "INCOMPLETE",
+      "structure": "CAUTION",
+      "recent": "INSUFFICIENT_SAMPLE",
+      "bonus": "INCOMPLETE",
+      "pareto": "NOT_COMPARABLE",
+      "ranking": "PARTIAL_NULL_SAFE_ONLY"
+    }
+  ],
+  "determinism_runs": 10,
+  "determinism_hash_count": 1,
+  "determinism_ok": true
+}

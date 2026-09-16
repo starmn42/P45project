@@ -1,0 +1,12 @@
+{
+  "analysis_status": "COMPLETE",
+  "analysis_type": "BASIC_STRUCTURE",
+  "created_at": "2026-08-04T20:23:42+09:00",
+  "effective_data_sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "engine_version": "P45 Research Engine v2.3 Integrated Compact",
+  "future_data_blocked_after_round": 1235,
+  "source_dataset": "E:\\P45 프로젝트\\validated\\validated-1-1235",
+  "source_normalized_sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "structure_report_sha256": "534f23856513e6f4c5e1b7d5628513bb91c9bbd01768a772faba6c0dcc98b378",
+  "target_round": 1236
+}

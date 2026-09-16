@@ -1,0 +1,59 @@
+{
+  "status": "PAIR_V12_IMPLEMENTATION_READY",
+  "project_version": "P45 v2.7.4",
+  "official_patch_sha256": "0c91315ef0cc7d1638a61f321faf3e62079f9545a1386bd3271710b27e113316",
+  "signature_version": "PAIR-RULE-SIGNATURE-1.2",
+  "context_fingerprint_version": "PAIR-CONTEXT-FINGERPRINT-1.0",
+  "walkforward_schema_version": 2743,
+  "semantic_policy_hashes": {
+    "eligibility": "4cdcb3523b8a3b443f92f3f3f13de49c3a03015f0779f82461151632a34ba68e",
+    "candidate_generation": "73119db8306e669bc900ccf90388bcedd5a7fcb24121faa4827040037be527bc",
+    "ranking": "b8965fbbf91b7cdb4423fdf9c35da70a9687def464df7fc5fddab1f045ab0d38",
+    "representative_selection": "1f6260a0f27af5f21b9663c7a13b0f938797ff25e31030d85e175d973fa7e567",
+    "gate_state": "3dce8b886556f952af5c8f401fd2db02cec0527e10647cdbde6747bd543359c5",
+    "bootstrap": "9fa2925129d9e9bcaf31aa108fcbc3c0e3e27de2ec0589719dc6b948e2cca03d"
+  },
+  "context_fixed_field_count": 21,
+  "context_empty_object_count": 0,
+  "context_freeform_field_count": 0,
+  "tests": {"passed": 54, "failed": 0, "elapsed_seconds": 120.232},
+  "timing_sequence": {
+    "prelock_pg05": "PASS",
+    "pg13_preliminary_marker": "PASS",
+    "pg14_fourteenth_identity": "PASS",
+    "pg13_same_record_final_certification": "PASS",
+    "final_state_before_outcome": "PASS",
+    "outcome_access_before_finalization": 0,
+    "self_reference": 0,
+    "future_leakage": 0
+  },
+  "audit_rehash": {"canonical_rule_json": "PASS", "canonical_context_json": "PASS"},
+  "production_smoke": {
+    "selection_basis": "first, midpoint, and last COMPLETE rounds from preserved v1.1 RAW evidence plus current 1236 diagnostic",
+    "rounds": [
+      {"evaluation_round": 369, "source_end_round": 368, "candidate_count": 20, "distinct_rule_signature": 1, "distinct_context_fingerprint": 20},
+      {"evaluation_round": 751, "source_end_round": 750, "candidate_count": 386, "distinct_rule_signature": 1, "distinct_context_fingerprint": 386},
+      {"evaluation_round": 1233, "source_end_round": 1232, "candidate_count": 877, "distinct_rule_signature": 1, "distinct_context_fingerprint": 877},
+      {"evaluation_round": 1236, "source_end_round": 1235, "candidate_count": 10, "distinct_rule_signature": 1, "distinct_context_fingerprint": 10}
+    ],
+    "outcome_access_before_prediction": 0,
+    "round1236_determinism": "10/10 PASS"
+  },
+  "storage": {
+    "dedicated_default_path": "v27_storage/backtests/p45_v274_pair_walkforward_v12.sqlite3",
+    "full_db_created": false,
+    "temporary_schema_integrity": "ok",
+    "temporary_schema_foreign_key_violations": 0,
+    "rollback_resume_duplicate_guards": "PASS"
+  },
+  "protection": {
+    "operational_pair_rows": 0,
+    "v11_raw_status": "RAW EVIDENCE ONLY",
+    "v11_raw_sha256_before": "1d7fe8ba1c50e454b57d5bfe86da1e1bfee1fd2c6577cce47ae3d72dd89cfd57",
+    "v11_raw_sha256_after": "1d7fe8ba1c50e454b57d5bfe86da1e1bfee1fd2c6577cce47ae3d72dd89cfd57",
+    "state_handoff_before_recording": "STATE_HANDOFF_VERIFIED"
+  },
+  "full_walkforward_executed": false,
+  "blocker_count": 0,
+  "full_walkforward_preflight_possible": true
+}

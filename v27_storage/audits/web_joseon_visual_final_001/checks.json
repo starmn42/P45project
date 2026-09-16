@@ -1,0 +1,17 @@
+{
+  "homeHttp": 200,
+  "apiHttp": 200,
+  "dispatch": true,
+  "result": true,
+  "prospective": true,
+  "system": true,
+  "status": true,
+  "overflow": {
+    "390": 0,
+    "412": 0,
+    "430": 0
+  },
+  "mobileMenu": true,
+  "consoleErrors": [],
+  "screenshots": 3
+}

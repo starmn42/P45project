@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-16T20:57:34+09:00",
+  "transaction_id": "10e22d7e-3742-463e-b3ce-d1fdef9bf29c",
+  "decision_id": "DECISION-20260816-073",
+  "state_version": "1.0.66",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "EXPERIMENT_LAB_EXP003_LOCKED_RUN_COMPLETE",
+  "current_status": "EXP003_FAILED_NOT_REPRODUCED",
+  "state_hash": "5df9a5682de5e14c13b895dd884b01626df1e14cdb295fcaf371b5ab47a0ede5",
+  "current_state_md_sha256": "6a56bbdc7f255b810c61b424a9e9d6955373471fcd26d82b1f7473a85e5c5388",
+  "current_state_json_sha256": "342158fdef8986f7438bcf94aba535efa3ebb427b514e0d9a50278e600c23a9d",
+  "handoff_sha256": "135266f50440b7c28592f58b0473da4e447ffa25086f6eb423724346923e58c8",
+  "decision_log_sha256": "e38ca91afaedbbd3dc6430178a60153a00a653835272cdc404eae024ee228a2d",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

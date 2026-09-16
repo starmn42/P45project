@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-23T21:17:20+09:00",
+  "transaction_id": "e151de87-5e13-4163-b715-7cefc723823c",
+  "decision_id": "DECISION-20260823-087",
+  "state_version": "1.0.80",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP003_V1_COMPLETE",
+  "current_status": "EXPLORATORY_NOT_SUPPORTED",
+  "state_hash": "7583ba071db77a44b346c664bbc39c66bc2130c6bd03889b7fd4c5fa1f33f72a",
+  "current_state_md_sha256": "e907ac943147ec4c0bedc905f4200b68c808f5c3928c82e65ea696b5a140c38b",
+  "current_state_json_sha256": "ea72f4d81177f3bbaa71e858ae8db08a01d39ce21a49daa04b64904f498cfebf",
+  "handoff_sha256": "e9a828f65af1d94bfb759d7a91a43757f5aff610d1f5eb78c3fb6a69fc5ad290",
+  "decision_log_sha256": "9bf6ded0167a1b198a91f77aaf44740f778e25502f329f4f52314578b70832ef",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

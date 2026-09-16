@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "method": "two complete calculations in one locked run using the same immutable snapshot, calculator, and seeds",
+  "comparison": "canonical JSON exact equality before adding rerun metadata",
+  "theta_train": 0.04552699104566624,
+  "theta_holdout": -0.006490796148433605,
+  "primary_block_wild_p": 0.6344536554634453,
+  "uniform_mc_p": 0.6814531854681454,
+  "calculator_sha256": "48d3f975c0ac16aa865dec8f61a168f2fab5877451520720e8824a581573f816",
+  "snapshot_sha256": "1a03abc4babec2cd64eda8c426429747352e412bc1f63e5513f7794aa980ef32"
+}

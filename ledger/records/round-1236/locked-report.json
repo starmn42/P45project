@@ -1,0 +1,291 @@
+{
+  "candidate_result": {
+    "official_pass_candidates": [],
+    "official_status": "HOLD",
+    "valid_test_candidates": []
+  },
+  "data": {
+    "confirmation_status": "CONFIRMED",
+    "normalized_sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+    "range": [
+      1,
+      1235
+    ],
+    "source": "동행복권 공식 사이트",
+    "valid_draw_count": 1235
+  },
+  "engine_version": "P45 Research Engine v2.3 Integrated Compact",
+  "first_execution": true,
+  "locked": true,
+  "previous_review": "최초 실행 회차로 이전 추천 대조 데이터 없음.",
+  "record_class": "LIVE_TEST",
+  "rule_versions": {
+    "determinism": "DETERMINISTIC-SELECTION-1.2",
+    "exact_structure": "EXACT-OCCUPANCY-VECTOR-1.1",
+    "ledger": "IMMUTABLE-LEDGER-1.2",
+    "non_return_operation": "NON-RETURN-TEST-PROMOTION-1.2",
+    "non_return_selection": "NON-RETURN-CANDIDATE-GATE-1.0",
+    "performance_gate": "CONSERVATIVE-B-1.2",
+    "return_selection": "RETURN-CANDIDATE-GATE-1.2",
+    "structure_collapse": "HYBRID-FIXED-PERCENTILE-1.2"
+  },
+  "selection": {
+    "all_six_unique": false,
+    "forced_fill_performed": false,
+    "mixed_test_hold_reason": "official plus valid TEST candidates fewer than 6",
+    "mixed_test_status": "HOLD",
+    "next_phase": null,
+    "official_hold_reason": "official PASS candidates fewer than 6",
+    "official_pool_order": [],
+    "official_status": "HOLD",
+    "selected_count": 0,
+    "selected_numbers": [],
+    "selection_mode": "NONE",
+    "sets_created": false,
+    "stages": {
+      "alternate_eliminated": [],
+      "final_selected": [],
+      "initial_eliminated": [
+        {
+          "number": 4,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 5,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 6,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 7,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 8,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 9,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 10,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 11,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 15,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 17,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 20,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 21,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 22,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 23,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 25,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 29,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 30,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 32,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 33,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 35,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 36,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 37,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 38,
+          "reason_code": "OVERALL_FAIL"
+        },
+        {
+          "number": 42,
+          "reason_code": "OVERALL_FAIL"
+        }
+      ],
+      "middle_eliminated": [
+        {
+          "number": 1,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 2,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 3,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 12,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 13,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 14,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 16,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 18,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 19,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 24,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 26,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 27,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 28,
+          "reason_code": "SAMPLE_INSUFFICIENT"
+        },
+        {
+          "number": 31,
+          "reason_code": "SAMPLE_INSUFFICIENT"
+        },
+        {
+          "number": 34,
+          "reason_code": "SAMPLE_INSUFFICIENT"
+        },
+        {
+          "number": 39,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 40,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 41,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 43,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 44,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        },
+        {
+          "number": 45,
+          "reason_code": "NON_RETURN_TEST_ONLY"
+        }
+      ]
+    },
+    "target_round": 1236,
+    "valid_test_pool_order": []
+  },
+  "sets": {
+    "candidate_replacement_performed": false,
+    "hold_reason": "final selection does not contain six unique candidates",
+    "placement_status": "HOLD",
+    "selected_numbers_before_placement": [],
+    "selection_mode": "NONE",
+    "set_1": [],
+    "set_2": [],
+    "target_round": 1236
+  },
+  "structure": {
+    "absent_5": [
+      "1~5",
+      "21~25",
+      "26~30",
+      "31~35"
+    ],
+    "absent_endings": [
+      2,
+      4,
+      8
+    ],
+    "annihilated_9": [
+      "28~36"
+    ],
+    "bonus": 20,
+    "main": [
+      6,
+      7,
+      11,
+      15,
+      39,
+      43
+    ],
+    "occupancy_9": [
+      2,
+      2,
+      1,
+      0,
+      2
+    ],
+    "round": 1235,
+    "seven": [
+      6,
+      7,
+      11,
+      15,
+      20,
+      39,
+      43
+    ]
+  },
+  "target_round": 1236,
+  "title": "P45 분석 잠금 기록",
+  "warning": "정해진 연구 규칙에 따른 결과이며 당첨을 보장하지 않습니다."
+}

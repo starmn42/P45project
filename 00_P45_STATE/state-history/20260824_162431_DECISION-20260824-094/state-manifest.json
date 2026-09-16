@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-24T16:24:31+09:00",
+  "transaction_id": "3dc20eb0-9ece-495d-a212-c02de5080035",
+  "decision_id": "DECISION-20260824-094",
+  "state_version": "1.0.87",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "OFFICIAL_SHADOW_REPAIR_PROTOTYPE_001_COMPLETE",
+  "current_status": "SHADOW_REPAIR_RESTORES_LIFECYCLE",
+  "state_hash": "6c2defc322d656d8a9b69bebaf1e287acd9de6ffa4f16fbb24321acc7af6e08b",
+  "current_state_md_sha256": "86e1dd845baa7a7f97f4659a738d18cc96bb339b87b776b5f0a12a2d6044d086",
+  "current_state_json_sha256": "0b3adfd687f108a347a44e8a6ad68d85ad733558b023bfe3aa8c21c45be2e0ce",
+  "handoff_sha256": "41e0263113124544942026958cd7b302192ae858c30194ba061aefd26f6b0192",
+  "decision_log_sha256": "a4767505f83b4e8567fbf2c8e56ef9d950a365c0574fcd98a541cb48985691b6",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

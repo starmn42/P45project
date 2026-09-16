@@ -1,0 +1,74 @@
+{
+  "version": "PAIR-SHADOW-REPAIR-001-CALCULATOR-1.0",
+  "locked_spec_bundle_sha256": "d515b535b98125940140dd97772592cdfbc5bb1fc878019bfe270e381377f48f",
+  "valid_rounds": 867,
+  "raw_pair_candidates": 148215,
+  "future_leakage": 0,
+  "outcome_access_before_final_state": 0,
+  "first_rounds": {
+    "evidence_sufficient": 976,
+    "recent_sufficient": 527,
+    "test_ready": 533
+  },
+  "materialization": {
+    "main_evidence_materialized": 148215,
+    "integrated_evidence_materialized": 148215,
+    "still_insufficient_sample": 118211,
+    "pg01": {
+      "FAIL": 148215
+    },
+    "pg06": {
+      "FAIL": 118211,
+      "PASS": 30004
+    },
+    "pg07": {
+      "FAIL": 44835,
+      "PASS": 103380
+    },
+    "pg08": {
+      "FAIL": 16190,
+      "PASS": 132025
+    },
+    "states": {
+      "PAIR_RESEARCH_HOLD": 86800,
+      "PAIR_TEST_READY": 61415
+    },
+    "test_ready_rounds": 100,
+    "core_eligible_candidates": 61415
+  },
+  "old_funnel": {
+    "number_pass": 763,
+    "trio_pass": 271,
+    "raw_pair_rounds": 258,
+    "core_entry": 0,
+    "output_available": 0
+  },
+  "repaired_funnel": {
+    "number_pass": 763,
+    "trio_pass": 271,
+    "raw_pair_rounds": 258,
+    "test_ready_rounds": 100,
+    "pair_ready_rounds": 0,
+    "pair_pass_rounds": 100,
+    "core_entry_rounds": 100,
+    "core_pass_rounds": 100,
+    "output_available_rounds": 100,
+    "no_pick_rounds": 767,
+    "no_pick_rate": 0.8846597462514417,
+    "max_no_pick_run": 425
+  },
+  "canonical_scoring_defined": true,
+  "scoring_run": false,
+  "primary_3_of_3": "NOT_RUN",
+  "support_exact_2_of_3": "NOT_RUN",
+  "primary_support_mixed": false,
+  "live_defect_confirmed": true,
+  "integrity": "ok",
+  "foreign_key_violations": 0,
+  "candidate_lifecycle_hash": "3eab6fd12e1e54f5cb79f364a66311be543d7f94d129ebda37ee5a397cc73303",
+  "round_funnel_hash": "77c9b134c2a0d842e742b5851d1a4ce7ee34878b716bd3e7384e6f909cbcd329",
+  "outcome_access_log_hash": "7b46728a216d9f9c17d82bbe52369e8ffcca058517484077712b8d65b8b0990d",
+  "synthetic_test_ready": "PAIR_TEST_READY",
+  "repair_result_class": "SHADOW_REPAIR_RESTORES_LIFECYCLE",
+  "result_hash": "22e7ec231e7c70f6f994cf07d061bc996def8328ba84f59d89f6138f44d4993b"
+}

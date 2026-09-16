@@ -1,0 +1,284 @@
+{
+  "app": "P45 TRIO ORBIT PROSPECTIVE WEB V1",
+  "canonical": {
+    "latest": 1240,
+    "sha256": "882aa084ba6f5947c057d30ddc8ad3641396d9a697865657cce24e5628c65655",
+    "read_status": "PASS"
+  },
+  "current": {
+    "target": 1241,
+    "target_result_status": "PENDING",
+    "result_status": "PENDING",
+    "sealed": true,
+    "sealed_timestamp": "2026-09-06T11:19:13.352754+09:00",
+    "action": "WAITING_FOR_RESULT"
+  },
+  "lifecycle": {
+    "display_target": 1241,
+    "display_status": "PENDING",
+    "completed_target": 1240,
+    "next_target": 1241
+  },
+  "operation": {
+    "official_engine": "FROZEN",
+    "no_pick": "UNRESOLVED",
+    "draw_discovery_pause": "ACTIVE",
+    "verified_independent_signal": "NONE",
+    "latest_exp": "EXP-020",
+    "latest_exp_status": "FAILED_NO_SELECTION_SIGNAL",
+    "exp017": "FAILED_NOT_SUPPORTED",
+    "exp018_v1": "EXECUTION_BLOCKED_BOOTSTRAP_AMBIGUITY",
+    "exp018_v2": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+    "exp019": "FAILED_NOT_SUPPORTED"
+  },
+  "orbits": {
+    "fixed": {
+      "status": "ACTIVE",
+      "role": "CONTROL",
+      "trios": [
+        "20 22 36",
+        "23 25 39",
+        "26 28 42"
+      ]
+    },
+    "linked": {
+      "status": "ACTIVE",
+      "role": "PRACTICAL_PRIORITY",
+      "trios": [
+        "6 11 16",
+        "13 33 38",
+        "20 30 40"
+      ],
+      "anchors": [
+        11,
+        13,
+        20
+      ]
+    }
+  },
+  "divergence": {
+    "common_count": 0,
+    "common_trios": "NONE",
+    "fixed_only": "20-22-36; 23-25-39; 26-28-42",
+    "linked_only": "6-11-16; 13-33-38; 20-30-40",
+    "reset": "NO"
+  },
+  "seal": {
+    "path": "E:\\P45 프로젝트\\v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1241_SEALED_PREDRAW_001.md",
+    "sha256": "78db5180e8af1189fb815aef4ad8883eea0601c9198839a5a53dd0f73dc9b702",
+    "verify": "PASS",
+    "canonical_sha256": "882aa084ba6f5947c057d30ddc8ad3641396d9a697865657cce24e5628c65655",
+    "future_leakage": 0
+  },
+  "prospective": {
+    "completed_rounds": 2,
+    "pending_count": 1,
+    "fixed_exact3": 0,
+    "linked_exact3": 0,
+    "fixed_exact2": 2,
+    "linked_exact2": 0,
+    "fixed_only_exact3": 0,
+    "linked_only_exact3": 0,
+    "rows": [
+      {
+        "target_round": "1239",
+        "source_round": "1238",
+        "fixed_A": "9 38 40",
+        "fixed_B": "11 13 27",
+        "fixed_C": "12 41 43",
+        "linked_A": "11 38 44",
+        "linked_B": "3 39 42",
+        "linked_C": "2 13 30",
+        "linked_anchor_A": "38",
+        "linked_anchor_B": "42",
+        "linked_anchor_C": "13",
+        "common_count": "0",
+        "common_trios": "NONE",
+        "fixed_only_trios": "9-38-40;11-13-27;12-41-43",
+        "linked_only_trios": "11-38-44;3-39-42;2-13-30",
+        "fixed_hits_A": "0",
+        "fixed_hits_B": "2",
+        "fixed_hits_C": "0",
+        "linked_hits_A": "1",
+        "linked_hits_B": "0",
+        "linked_hits_C": "1",
+        "fixed_success": "0",
+        "linked_success": "0",
+        "fixed_only_exact3_contribution": "0",
+        "linked_only_exact3_contribution": "0",
+        "fixed_only_exact2_contribution": "1",
+        "linked_only_exact2_contribution": "0",
+        "linked_only_anchor_reappeared": "NO",
+        "reset_before_selection": "NO",
+        "selection_record_sha256": "ed23691c5b9f1715c85b6d3362735dfa8cebb72b31dc258e2aa43bc299c94ead",
+        "result_status": "OUTCOME_RECORDED",
+        "future_leakage_flag": "0",
+        "outcome_recorded_at": ""
+      },
+      {
+        "target_round": "1240",
+        "source_round": "1239",
+        "fixed_A": "15 31 44",
+        "fixed_B": "16 29 45",
+        "fixed_C": "17 19 33",
+        "linked_A": "15 36 39",
+        "linked_B": "8 35 41",
+        "linked_C": "13 34 37",
+        "linked_anchor_A": "36",
+        "linked_anchor_B": "8",
+        "linked_anchor_C": "13",
+        "common_count": "0",
+        "common_trios": "NONE",
+        "fixed_only_trios": "15-31-44;16-29-45;17-19-33",
+        "linked_only_trios": "15-36-39;8-35-41;13-34-37",
+        "fixed_hits_A": "2",
+        "fixed_hits_B": "0",
+        "fixed_hits_C": "1",
+        "linked_hits_A": "0",
+        "linked_hits_B": "0",
+        "linked_hits_C": "1",
+        "fixed_success": "0",
+        "linked_success": "0",
+        "fixed_only_exact3_contribution": "0",
+        "linked_only_exact3_contribution": "0",
+        "fixed_only_exact2_contribution": "1",
+        "linked_only_exact2_contribution": "0",
+        "linked_only_anchor_reappeared": "0;0;1",
+        "reset_before_selection": "NO",
+        "selection_record_sha256": "d8b7f0753500adf7fc62e894b1a8f2a9551f6bb90be0ec92d1fa3480082375fe",
+        "result_status": "OUTCOME_RECORDED",
+        "future_leakage_flag": "0",
+        "outcome_recorded_at": "2026-09-06T11:19:12.62426+09:00"
+      },
+      {
+        "target_round": "1241",
+        "source_round": "1240",
+        "fixed_A": "20 22 36",
+        "fixed_B": "23 25 39",
+        "fixed_C": "26 28 42",
+        "linked_A": "6 11 16",
+        "linked_B": "13 33 38",
+        "linked_C": "20 30 40",
+        "linked_anchor_A": "11",
+        "linked_anchor_B": "13",
+        "linked_anchor_C": "20",
+        "common_count": "0",
+        "common_trios": "NONE",
+        "fixed_only_trios": "20-22-36;23-25-39;26-28-42",
+        "linked_only_trios": "6-11-16;13-33-38;20-30-40",
+        "fixed_hits_A": "PENDING",
+        "fixed_hits_B": "PENDING",
+        "fixed_hits_C": "PENDING",
+        "linked_hits_A": "PENDING",
+        "linked_hits_B": "PENDING",
+        "linked_hits_C": "PENDING",
+        "fixed_success": "PENDING",
+        "linked_success": "PENDING",
+        "fixed_only_exact3_contribution": "PENDING",
+        "linked_only_exact3_contribution": "PENDING",
+        "fixed_only_exact2_contribution": "PENDING",
+        "linked_only_exact2_contribution": "PENDING",
+        "linked_only_anchor_reappeared": "PENDING",
+        "reset_before_selection": "NO",
+        "selection_record_sha256": "78db5180e8af1189fb815aef4ad8883eea0601c9198839a5a53dd0f73dc9b702",
+        "result_status": "PENDING",
+        "future_leakage_flag": "0",
+        "outcome_recorded_at": ""
+      }
+    ]
+  },
+  "historical": {
+    "evaluated": 1237,
+    "fixed_exact3": 5,
+    "linked_exact3": 7,
+    "final": "FAILED_NOT_SUPPORTED"
+  },
+  "latest_result": {
+    "round": 1240,
+    "date": "2026-09-05",
+    "main": [
+      11,
+      13,
+      19,
+      20,
+      31,
+      44
+    ],
+    "bonus": 27,
+    "fixed": [
+      {
+        "label": "A",
+        "numbers": "15 31 44",
+        "hits": 2
+      },
+      {
+        "label": "B",
+        "numbers": "16 29 45",
+        "hits": 0
+      },
+      {
+        "label": "C",
+        "numbers": "17 19 33",
+        "hits": 1
+      }
+    ],
+    "linked": [
+      {
+        "label": "A",
+        "numbers": "15 36 39",
+        "hits": 0
+      },
+      {
+        "label": "B",
+        "numbers": "8 35 41",
+        "hits": 0
+      },
+      {
+        "label": "C",
+        "numbers": "13 34 37",
+        "hits": 1
+      }
+    ],
+    "fixed_primary": 0,
+    "fixed_support": 1,
+    "linked_primary": 0,
+    "linked_support": 0
+  },
+  "integrity": {
+    "protected": {
+      "P45_TRIO_ORBIT_V1_PROTOCOL_LOCKED_001.md": true,
+      "P45_TRIO_ORBIT_V1_KTS45_SCHEDULE_001.csv": true,
+      "P45_TRIO_ORBIT_V1_ROUND_TRACE_001.csv": true,
+      "P45_TRIO_ORBIT_V1_BACKTEST_RESULT_001.md": true,
+      "p45_trio_orbit_v1_backtest_001.py": true
+    },
+    "kts_expected": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+    "official_protected": {
+      "00_P45_STATE\\P45_CURRENT_STATE.json": true,
+      "v27_storage\\reports\\p45_v274_pair_v12_final_aggregation.json": true,
+      "v27_storage\\backtests\\p45_v274_pair_v12_final_aggregation.sqlite3": true
+    },
+    "kts_actual": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+    "kts_pass": true,
+    "sealed_path": "E:\\P45 프로젝트\\v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1241_SEALED_PREDRAW_001.md",
+    "sealed_sha256": "78db5180e8af1189fb815aef4ad8883eea0601c9198839a5a53dd0f73dc9b702",
+    "sealed_expected_sha256": "78db5180e8af1189fb815aef4ad8883eea0601c9198839a5a53dd0f73dc9b702",
+    "sealed_pass": true,
+    "manifest_pass": true,
+    "all_pass": true,
+    "state_path": "E:\\P45 프로젝트\\v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_PROSPECTIVE_STATE_005.json",
+    "log_path": "E:\\P45 프로젝트\\v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_PROSPECTIVE_LOG_001.csv",
+    "manifest_status": "PASS",
+    "future_leakage": 0,
+    "write_status": "ALLOWED_WHEN_PRECONDITIONS_PASS"
+  },
+  "engine_status": "P45_TRIO_ORBIT_PROSPECTIVE_WEB_V1",
+  "auto_update": {
+    "status": "자동 업데이트 반영",
+    "last_check": 1788670965.2301157,
+    "last_error": null,
+    "steps": [
+      "DRAW_ALREADY_CURRENT"
+    ]
+  }
+}

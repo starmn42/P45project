@@ -1,0 +1,137 @@
+{
+  "status": "SEMANTIC_AUDIT_PASS",
+  "protocol_sha256": "479c83f5905d1bcd928e5b388420a41259c413836711202fd30704e7b4b9d5b7",
+  "source_page": "https://www.dhlottery.co.kr/lt645/result",
+  "source_api": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
+  "total_sales_field": "wholEpsdSumNtslAmt",
+  "forbidden_denominator_field": "rlvtEpsdSumNtslAmt",
+  "price_rule": {
+    "1~87": 2000,
+    "88~1237": 1000
+  },
+  "rounds": "1~1237",
+  "rows": 1237,
+  "round_1238_plus_used": false,
+  "missing": 0,
+  "duplicates": 0,
+  "canonical_main_mismatch": 0,
+  "audit_rounds": [
+    {
+      "round": 1,
+      "main": [
+        10,
+        23,
+        29,
+        33,
+        37,
+        40
+      ],
+      "first_prize_games": 0,
+      "whole_sales_amount": 3681782000,
+      "relevant_sales_amount": 3681782000,
+      "price_per_game": 2000,
+      "sold_lines": 1840891,
+      "integer_conversion": true,
+      "source_file": "downloads/official-1-1237/raw/api-0124.json",
+      "source_file_sha256": "d6b3da00d57e9c5123384b2a334a150be277d3b4575e561ebbab3ff2d1037629"
+    },
+    {
+      "round": 10,
+      "main": [
+        9,
+        25,
+        30,
+        33,
+        41,
+        44
+      ],
+      "first_prize_games": 13,
+      "whole_sales_amount": 260856392000,
+      "relevant_sales_amount": 260856392000,
+      "price_per_game": 2000,
+      "sold_lines": 130428196,
+      "integer_conversion": true,
+      "source_file": "downloads/official-1-1237/raw/api-0123.json",
+      "source_file_sha256": "11ca32d2b0d265ef02f16a770b60098828a08661d39f99ae93c7657dae03f507"
+    },
+    {
+      "round": 87,
+      "main": [
+        4,
+        12,
+        16,
+        23,
+        34,
+        43
+      ],
+      "first_prize_games": 11,
+      "whole_sales_amount": 83793642000,
+      "relevant_sales_amount": 83793642000,
+      "price_per_game": 2000,
+      "sold_lines": 41896821,
+      "integer_conversion": true,
+      "source_file": "downloads/official-1-1237/raw/api-0116.json",
+      "source_file_sha256": "2243957efef0fd9aecb5e56cc4082746b925013aefa42bd99ccc16759dfe4313"
+    },
+    {
+      "round": 88,
+      "main": [
+        1,
+        17,
+        20,
+        24,
+        30,
+        41
+      ],
+      "first_prize_games": 4,
+      "whole_sales_amount": 51910612000,
+      "relevant_sales_amount": 51910612000,
+      "price_per_game": 1000,
+      "sold_lines": 51910612,
+      "integer_conversion": true,
+      "source_file": "downloads/official-1-1237/raw/api-0115.json",
+      "source_file_sha256": "bd33285bab4f61349f4e7bcdcb0dfbdb892e4df3c4dbfc2338db88cdb75e8f6a"
+    },
+    {
+      "round": 1201,
+      "main": [
+        7,
+        9,
+        24,
+        27,
+        35,
+        36
+      ],
+      "first_prize_games": 19,
+      "whole_sales_amount": 115389593000,
+      "relevant_sales_amount": 57694796500,
+      "price_per_game": 1000,
+      "sold_lines": 115389593,
+      "integer_conversion": true,
+      "source_file": "downloads/official-1-1237/raw/api-0004.json",
+      "source_file_sha256": "92505786aac052490217f6f78b0decb3055b96f5f257e7b6a22f1d11d389f05a"
+    },
+    {
+      "round": 1237,
+      "main": [
+        10,
+        20,
+        23,
+        34,
+        37,
+        40
+      ],
+      "first_prize_games": 23,
+      "whole_sales_amount": 118363161000,
+      "relevant_sales_amount": 59181583190,
+      "price_per_game": 1000,
+      "sold_lines": 118363161,
+      "integer_conversion": true,
+      "source_file": "downloads/official-1-1237/raw/api-0001.json",
+      "source_file_sha256": "50f487e857b6b45f4dcf591facf710dc0a71c0d6c5ee50de2db956b4fd658471"
+    }
+  ],
+  "snapshot": "v27_storage/experiments/prize_share_exp001_v2/exp_prize_001_v2_draws_1_1237.csv",
+  "snapshot_sha256": "86b14968aca3ad10b854f9d5c53eba00a786627f73e353938e1e801dc888fa21",
+  "retrieved_at": "2026-08-21T17:13:55+09:00"
+}

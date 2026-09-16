@@ -1,0 +1,40 @@
+{
+  "precheck": "PASS",
+  "canonical_latest": 1238,
+  "canonical_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "source_verification": {
+    "EXP006": {"status": "PASS", "final": "FAILED", "protocol_sha256": "e86ea7f9d7a21dfe54c047459a899ce552985867a95cae59ec5ca2c1490a85d7", "result_sha256": "e433cd01cabd6ef8f334975518e3b93f0fff0319a419b02be4f2a999e9b95c78"},
+    "EXP013": {"status": "PASS", "final": "FAILED_EARLY", "protocol_sha256": "7dff134fc3e8fd3e4642dac4273e99e2fd80dac358fd523f2e6bc1e691098317", "result_sha256": "d0dffc7c15535fa15a609c2df472bcfd41eadb4549eca50423c09ebbde2a792c"}
+  },
+  "protocol_sha256": "3db9d2fb4c82f1d858f49369da5ea8bfbc3268017528a4b25b903dee64489de1",
+  "seed": 4447818083767349720,
+  "simulations": 100000,
+  "target_range": [201, 1238],
+  "evaluated_rounds": 1038,
+  "total_candidate_exposures": 16698,
+  "total_candidate_hits": 2231,
+  "candidate_hit_rate": 0.13360881542699724,
+  "exp006_fair_expected_rate": 0.13333333333333333,
+  "rate_difference": 0.0002754820936639035,
+  "total_score": -254.5,
+  "mean_hit_centered_frequency_rank": -0.11407440609592111,
+  "mean_hit_raw_within_candidate_rank": 8.834603316898251,
+  "direction": "LOW_FREQUENCY_CANDIDATES_MORE_HITS",
+  "primary_full_sequence_mc": {"extreme_count": 25039, "p": 0.25039749602503975, "null_mean_score": 0.008545},
+  "conditional_randomization": {"extreme_count": 24996, "p": 0.24996750032499676, "null_mean_score": 0.54731},
+  "stability": {
+    "full": {"n": 1038, "total_score": -254.5, "mean_round_score": -0.2451830443159923},
+    "first_half": {"n": 519, "target_range": [201,719], "total_score": -60.5, "mean_round_score": -0.11657032755298652},
+    "second_half": {"n": 519, "target_range": [720,1238], "total_score": -194.0, "mean_round_score": -0.3737957610789981},
+    "recent100": {"n": 100, "total_score": -97.5, "mean_round_score": -0.975},
+    "recent50": {"n": 50, "total_score": -64.0, "mean_round_score": -1.28},
+    "recent20": {"n": 20, "total_score": -27.5, "mean_round_score": -1.375}
+  },
+  "structure_validation": "PASS",
+  "final_judgment": "FAILED_NOT_INTERESTING",
+  "future_leakage": 0,
+  "official_protected_changes": 0,
+  "EXP006_FINAL": "FAILED",
+  "EXP013_FINAL": "FAILED_EARLY",
+  "EXP017": "NOT_CREATED"
+}

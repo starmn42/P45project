@@ -1,0 +1,7 @@
+{
+  "reproducible": true,
+  "result_sha256": "cd5529c36fc83213e6efb8ddc9b1010c2ab7c1a5f82c31f7e00d927c3aae8397",
+  "protocol_sha256": "479c83f5905d1bcd928e5b388420a41259c413836711202fd30704e7b4b9d5b7",
+  "data_sha256": "86b14968aca3ad10b854f9d5c53eba00a786627f73e353938e1e801dc888fa21",
+  "future_leakage": 0
+}

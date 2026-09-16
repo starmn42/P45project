@@ -1,0 +1,39 @@
+{
+  "implementation": "INDEPENDENT_IRLS_2X2_NEWTON",
+  "data_sha256": "86b14968aca3ad10b854f9d5c53eba00a786627f73e353938e1e801dc888fa21",
+  "range": "1~1237",
+  "assertions": {
+    "rows": 1237,
+    "duplicates": 0,
+    "missing": 0,
+    "derived_mismatch": 0,
+    "round_1238_plus": 0,
+    "price_boundary": "PASS",
+    "future_leakage": 0
+  },
+  "train_beta": 0.014328046466611778,
+  "holdout_beta": 0.04026262768425499,
+  "fresh_permutation_seed": 2026082102,
+  "permutations": 100000,
+  "fresh_permutation_exceed_count": 2042,
+  "fresh_permutation_p": 0.02042979570204298,
+  "wf_delta_ll_total": 3.470493272595604,
+  "wf_blocks": [
+    {
+      "range": "801~900",
+      "delta_ll": 0.7178853096798434
+    },
+    {
+      "range": "901~1000",
+      "delta_ll": 0.6662083655322135
+    },
+    {
+      "range": "1001~1100",
+      "delta_ll": 1.640822168657735
+    },
+    {
+      "range": "1101~1237",
+      "delta_ll": 0.4455774287258123
+    }
+  ]
+}

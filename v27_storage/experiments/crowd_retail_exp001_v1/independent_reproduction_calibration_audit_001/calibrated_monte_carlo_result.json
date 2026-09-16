@@ -1,0 +1,54 @@
+{
+  "eb_fit": {
+    "alpha": 2.3854957135043726,
+    "beta": 5.04582203071465,
+    "prior_mean": 0.3210057483223752,
+    "prior_concentration": 7.431317744219022,
+    "iterations": 89,
+    "converged": true,
+    "near_boundary": false,
+    "negative_log_likelihood_hessian_eigenvalues": [
+      6.970438320124913,
+      1299.9624432416815
+    ],
+    "hessian_positive_definite": true
+  },
+  "train_unique_retailers": 2215,
+  "eval_unique_retailers": 3182,
+  "seen_rows": 3108,
+  "unseen_rows": 2349,
+  "seen_row_share": 0.5695437053326003,
+  "duplicate_capable_cells": 115,
+  "duplicate_capable_cells_all_retailers_seen": 57,
+  "posterior_propensity_quantiles": {
+    "q05": 0.22868594093266892,
+    "q25": 0.28293272604273517,
+    "median": 0.3210057483223752,
+    "q75": 0.3210057483223752,
+    "q95": 0.4204162715621226
+  },
+  "prequential_propensity_sequence_hash": "7e9660b167a41a6050f059bd11fdb767b0cb8c3a1891a80cb7496748a62de25e",
+  "observed_s_cell": 102,
+  "expected_s_cell": 45.75567801672646,
+  "excess": 56.24432198327354,
+  "enrichment": 2.2292315275650125,
+  "exposure_gate": "PASS",
+  "randomization": {
+    "randomizations": 300000,
+    "seed": 2026082309,
+    "exceedances": 0,
+    "p": 3.3333222222592593e-06,
+    "mc_standard_error": 3.3333222222592593e-06,
+    "null_mean": 45.75535333333333,
+    "q95": 52.0,
+    "q99": 55.0,
+    "q999": 58.0
+  },
+  "first_half_excess": 17.475286776063157,
+  "second_half_excess": 38.76903520721037,
+  "top1_removed_excess": 56.244122349598165,
+  "top5_removed_excess": 55.8007633221721,
+  "final_status": "RETAILER_PROPENSITY_ROBUST_EXPLORATORY_CONCENTRATION",
+  "round_1238_plus_used": false,
+  "outcome_future_used": 0
+}

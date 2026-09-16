@@ -1,0 +1,36 @@
+{
+  "status": "SUPPORTED_WITHIN_EXPERIMENT",
+  "protocol_sha256": "479c83f5905d1bcd928e5b388420a41259c413836711202fd30704e7b4b9d5b7",
+  "data_range": "1~1237",
+  "data_sha256": "86b14968aca3ad10b854f9d5c53eba00a786627f73e353938e1e801dc888fa21",
+  "round_1238_plus_used": false,
+  "train_beta": 0.01432804646661183,
+  "train_gate": "PASS",
+  "holdout_beta": 0.040262627684254704,
+  "holdout_effect_per_birthday_number": 1.0410841558129813,
+  "holdout_permutation_p": 0.01999980000199998,
+  "permutations": 100000,
+  "wf_delta_ll_total": 3.4704932725932736,
+  "wf_blocks": [
+    {
+      "range": "801~900",
+      "delta_ll": 0.7178853096791045
+    },
+    {
+      "range": "901~1000",
+      "delta_ll": 0.6662083655314746
+    },
+    {
+      "range": "1001~1100",
+      "delta_ll": 1.6408221686568254
+    },
+    {
+      "range": "1101~1237",
+      "delta_ll": 0.44557742872586914
+    }
+  ],
+  "promotion_candidate": false,
+  "official_engine_changed": false,
+  "final_judgment": "SUPPORTED_WITHIN_EXPERIMENT",
+  "decision_hash": "643d1408495cf5272ce2318cb912392d54e73500bef3162e298de9bbee662d20"
+}

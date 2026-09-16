@@ -1,0 +1,21 @@
+{
+  "source": "DHLottery official winner-store API",
+  "endpoint": "https://www.dhlottery.co.kr/wnprchsplcsrch/selectLtWnShp.do",
+  "range": "262~1237",
+  "rounds": 976,
+  "rows": 9193,
+  "round_1238_plus_rows": 0,
+  "snapshot_sha256": "854ca7256219eadf574ac32ad256b84e9a5bfa42ceece09f0a09dd1eed79cd50",
+  "audit_sha256": "5601e547836243b04b24537c24947ae46aa8dbd174d10fe4730172f568481555",
+  "fields": [
+    "round",
+    "row_no",
+    "store_id",
+    "store_name",
+    "store_address",
+    "mode_code",
+    "mode",
+    "is_online",
+    "source_endpoint"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "holdout_mean_cal_resid": 6.039406338771726,
+  "holdout_t_cal": 1.1281510037684361,
+  "primary_two_sided_p_cal": 0.1977040114799426,
+  "bootstraps": 200000,
+  "bootstrap_seed": 2026082305,
+  "bootstrap_exceedances": 39540
+}

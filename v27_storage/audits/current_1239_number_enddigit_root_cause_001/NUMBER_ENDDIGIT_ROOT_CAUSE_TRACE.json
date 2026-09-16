@@ -1,0 +1,1031 @@
+{
+  "final_verdict": "CURRENT_1239_NUMBER_ENDDIGIT_ROOT_CAUSE_COMPLETE",
+  "staging_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "source_end": 1238,
+  "target": 1239,
+  "number_counts": {
+    "NUMBER_HOLD": 40,
+    "NUMBER_WEAKEN": 5
+  },
+  "eligible_identities": [
+    13,
+    18,
+    20,
+    24,
+    27
+  ],
+  "per_number": [
+    {
+      "number": 1,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_08",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 2,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "HIGH",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_RISK_HIGH",
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 3,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 4,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_07",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 5,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 6,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_08",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 7,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_07",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 8,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 9,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 10,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 11,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 12,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 13,
+      "primary_integrated_evidence": "POSITIVE_CONFIRMED",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_WEAKEN",
+      "eligible_source": true,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_07",
+      "first_limited_gate": "NUMBER_PASS_GATE_07",
+      "canonical_reasons": [
+        "MANDATORY_WEAKEN_AND_WEAK_REASON"
+      ]
+    },
+    {
+      "number": 14,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_08",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 15,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 16,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 17,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 18,
+      "primary_integrated_evidence": "POSITIVE_CONFIRMED",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_WEAKEN",
+      "eligible_source": true,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_07",
+      "first_limited_gate": "NUMBER_PASS_GATE_07",
+      "canonical_reasons": [
+        "MANDATORY_WEAKEN_AND_WEAK_REASON"
+      ]
+    },
+    {
+      "number": 19,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 20,
+      "primary_integrated_evidence": "POSITIVE_CONFIRMED",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_WEAKEN",
+      "eligible_source": true,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_09",
+      "first_limited_gate": "NUMBER_PASS_GATE_09",
+      "canonical_reasons": [
+        "MANDATORY_WEAKEN_AND_WEAK_REASON"
+      ]
+    },
+    {
+      "number": 21,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_09",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 22,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 23,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 24,
+      "primary_integrated_evidence": "POSITIVE_CONFIRMED",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_WEAKEN",
+      "eligible_source": true,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_PASS_GATE_06",
+      "canonical_reasons": [
+        "MANDATORY_WEAKEN_AND_WEAK_REASON"
+      ]
+    },
+    {
+      "number": 25,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 26,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 27,
+      "primary_integrated_evidence": "POSITIVE_CONFIRMED",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_WEAKEN",
+      "eligible_source": true,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_PASS_GATE_06",
+      "canonical_reasons": [
+        "MANDATORY_WEAKEN_AND_WEAK_REASON"
+      ]
+    },
+    {
+      "number": 28,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 29,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_08",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 30,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 31,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 32,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 33,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_09",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 34,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 35,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_07",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 36,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 37,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 38,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 39,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 40,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 41,
+      "primary_integrated_evidence": "NEGATIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "NONE",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "SEVERE_AND_PRIMARY_NOT_POSITIVE"
+      ]
+    },
+    {
+      "number": 42,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 43,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 44,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    },
+    {
+      "number": 45,
+      "primary_integrated_evidence": "POSITIVE_TENTATIVE",
+      "structure_state": "SEVERE",
+      "opposite_risk": "MEDIUM",
+      "context_conflict": "MEDIUM",
+      "lifecycle": "NUMBER_HOLD",
+      "eligible_source": false,
+      "first_failed_pass_gate": "NUMBER_PASS_GATE_06",
+      "first_limited_gate": "NUMBER_HOLD_RULE",
+      "canonical_reasons": [
+        "OPPOSITE_PERIOD_DIRECTIONS"
+      ]
+    }
+  ],
+  "taxonomy": [
+    {
+      "number_reason": "NUMBER_HOLD:SEVERE_AND_PRIMARY_NOT_POSITIVE",
+      "count": 12,
+      "structure": "SEVERE",
+      "primary_evidence": "NEGATIVE_TENTATIVE",
+      "canonical_predicate": "SEVERE_AND_PRIMARY_NOT_POSITIVE",
+      "numbers": [
+        1,
+        5,
+        9,
+        11,
+        12,
+        14,
+        25,
+        26,
+        34,
+        37,
+        38,
+        41
+      ]
+    },
+    {
+      "number_reason": "NUMBER_HOLD:OPPOSITE_PERIOD_DIRECTIONS",
+      "count": 27,
+      "structure": "SEVERE",
+      "primary_evidence": "POSITIVE_TENTATIVE",
+      "canonical_predicate": "OPPOSITE_PERIOD_DIRECTIONS",
+      "numbers": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        15,
+        16,
+        17,
+        19,
+        21,
+        22,
+        23,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        39,
+        40,
+        42,
+        43,
+        44,
+        45
+      ]
+    },
+    {
+      "number_reason": "NUMBER_HOLD:OPPOSITE_RISK_HIGH+OPPOSITE_PERIOD_DIRECTIONS",
+      "count": 1,
+      "structure": "SEVERE",
+      "primary_evidence": "POSITIVE_TENTATIVE",
+      "canonical_predicate": "OPPOSITE_RISK_HIGH+OPPOSITE_PERIOD_DIRECTIONS",
+      "numbers": [
+        2
+      ]
+    },
+    {
+      "number_reason": "NUMBER_WEAKEN:MANDATORY_WEAKEN_AND_WEAK_REASON",
+      "count": 5,
+      "structure": "SEVERE",
+      "primary_evidence": "POSITIVE_CONFIRMED",
+      "canonical_predicate": "MANDATORY_WEAKEN_AND_WEAK_REASON",
+      "numbers": [
+        13,
+        18,
+        20,
+        24,
+        27
+      ]
+    }
+  ],
+  "unique_number_hold_reason_count": 3,
+  "shadow": {
+    "assumption": "END_DIGIT_STRUCTURE_STATE_WARNING_ONLY",
+    "number_counts": {
+      "NUMBER_TEST": 12,
+      "NUMBER_HOLD": 28,
+      "NUMBER_WEAKEN": 5
+    },
+    "eligible_count": 5,
+    "eligible_identities": [
+      13,
+      18,
+      20,
+      24,
+      27
+    ],
+    "selected_count": 0,
+    "selected_identities": [],
+    "hold_numbers_changed": [
+      1,
+      5,
+      9,
+      11,
+      12,
+      14,
+      25,
+      26,
+      34,
+      37,
+      38,
+      41
+    ],
+    "minimum_6_met": false
+  },
+  "end_digit": {
+    "state": "SEVERE",
+    "overall_percentile": 100.0,
+    "reference_sample": 1237,
+    "current_metrics": {
+      "zero_group_count": 7.0,
+      "max_abs_standardized_occupancy": 4.170023710287618,
+      "max_annihilation_streak": 3.0,
+      "realized_return_depth": 4.0,
+      "recent50_zero_group_shift": 0.041668070766638365
+    },
+    "metric_percentiles": {
+      "zero_group_count": 100.0,
+      "max_abs_standardized_occupancy": 99.91915925626516,
+      "max_annihilation_streak": 58.124494745351655,
+      "realized_return_depth": 100.0,
+      "recent50_zero_group_shift": 34.76151980598222
+    },
+    "historical_positions": {
+      "zero_group_count": {
+        "raw_current": 7.0,
+        "percentile": 100.0,
+        "reference_n": 1237,
+        "less_count": 1224,
+        "tie_count": 13,
+        "greater_count": 0,
+        "strict_maximum": false,
+        "tied_maximum": true,
+        "reference_min": 3.0,
+        "reference_max": 7.0
+      },
+      "max_abs_standardized_occupancy": {
+        "raw_current": 4.170023710287618,
+        "percentile": 99.91915925626516,
+        "reference_n": 1237,
+        "less_count": 1227,
+        "tie_count": 9,
+        "greater_count": 1,
+        "strict_maximum": false,
+        "tied_maximum": false,
+        "reference_min": 0.8892453999082722,
+        "reference_max": 4.827332170930621
+      },
+      "max_annihilation_streak": {
+        "raw_current": 3.0,
+        "percentile": 58.124494745351655,
+        "reference_n": 1237,
+        "less_count": 369,
+        "tie_count": 350,
+        "greater_count": 518,
+        "strict_maximum": false,
+        "tied_maximum": false,
+        "reference_min": 1.0,
+        "reference_max": 14.0
+      },
+      "realized_return_depth": {
+        "raw_current": 4.0,
+        "percentile": 100.0,
+        "reference_n": 1237,
+        "less_count": 1233,
+        "tie_count": 4,
+        "greater_count": 0,
+        "strict_maximum": false,
+        "tied_maximum": true,
+        "reference_min": 0.0,
+        "reference_max": 4.0
+      },
+      "recent50_zero_group_shift": {
+        "raw_current": 0.041668070766638365,
+        "percentile": 34.76151980598222,
+        "reference_n": 1237,
+        "less_count": 430,
+        "tie_count": 0,
+        "greater_count": 807,
+        "strict_maximum": false,
+        "tied_maximum": false,
+        "reference_min": 0.0,
+        "reference_max": 0.6200000000000001
+      }
+    },
+    "groups": [
+      {
+        "group": "END_0",
+        "members": [
+          10,
+          20,
+          30,
+          40
+        ],
+        "size": 4,
+        "occupancy": 0,
+        "expected_occupancy": 0.6222222222222222,
+        "abs_standardized_occupancy": 0.8892453999082722
+      },
+      {
+        "group": "END_1",
+        "members": [
+          1,
+          11,
+          21,
+          31,
+          41
+        ],
+        "size": 5,
+        "occupancy": 0,
+        "expected_occupancy": 0.7777777777777777,
+        "abs_standardized_occupancy": 1.006557447310804
+      },
+      {
+        "group": "END_2",
+        "members": [
+          2,
+          12,
+          22,
+          32,
+          42
+        ],
+        "size": 5,
+        "occupancy": 4,
+        "expected_occupancy": 0.7777777777777777,
+        "abs_standardized_occupancy": 4.170023710287618
+      },
+      {
+        "group": "END_3",
+        "members": [
+          3,
+          13,
+          23,
+          33,
+          43
+        ],
+        "size": 5,
+        "occupancy": 1,
+        "expected_occupancy": 0.7777777777777777,
+        "abs_standardized_occupancy": 0.28758784208880134
+      },
+      {
+        "group": "END_4",
+        "members": [
+          4,
+          14,
+          24,
+          34,
+          44
+        ],
+        "size": 5,
+        "occupancy": 0,
+        "expected_occupancy": 0.7777777777777777,
+        "abs_standardized_occupancy": 1.006557447310804
+      },
+      {
+        "group": "END_5",
+        "members": [
+          5,
+          15,
+          25,
+          35,
+          45
+        ],
+        "size": 5,
+        "occupancy": 0,
+        "expected_occupancy": 0.7777777777777777,
+        "abs_standardized_occupancy": 1.006557447310804
+      },
+      {
+        "group": "END_6",
+        "members": [
+          6,
+          16,
+          26,
+          36
+        ],
+        "size": 4,
+        "occupancy": 0,
+        "expected_occupancy": 0.6222222222222222,
+        "abs_standardized_occupancy": 0.8892453999082722
+      },
+      {
+        "group": "END_7",
+        "members": [
+          7,
+          17,
+          27,
+          37
+        ],
+        "size": 4,
+        "occupancy": 0,
+        "expected_occupancy": 0.6222222222222222,
+        "abs_standardized_occupancy": 0.8892453999082722
+      },
+      {
+        "group": "END_8",
+        "members": [
+          8,
+          18,
+          28,
+          38
+        ],
+        "size": 4,
+        "occupancy": 2,
+        "expected_occupancy": 0.6222222222222222,
+        "abs_standardized_occupancy": 1.9690433855111742
+      },
+      {
+        "group": "END_9",
+        "members": [
+          9,
+          19,
+          29,
+          39
+        ],
+        "size": 4,
+        "occupancy": 0,
+        "expected_occupancy": 0.6222222222222222,
+        "abs_standardized_occupancy": 0.8892453999082722
+      }
+    ],
+    "zero_groups": [
+      "END_0",
+      "END_1",
+      "END_4",
+      "END_5",
+      "END_6",
+      "END_7",
+      "END_9"
+    ],
+    "return_from_prior_zero_groups": [
+      {
+        "group": "END_1",
+        "previous_occupancy": 0,
+        "current_occupancy": 0
+      },
+      {
+        "group": "END_2",
+        "previous_occupancy": 0,
+        "current_occupancy": 4
+      },
+      {
+        "group": "END_5",
+        "previous_occupancy": 0,
+        "current_occupancy": 0
+      },
+      {
+        "group": "END_8",
+        "previous_occupancy": 0,
+        "current_occupancy": 2
+      },
+      {
+        "group": "END_9",
+        "previous_occupancy": 0,
+        "current_occupancy": 0
+      }
+    ],
+    "max_abs_standardized_groups": [
+      "END_2"
+    ],
+    "max_abs_standardized_value": 4.170023710287618
+  },
+  "end_digit_severe_necessary_for_current_number_extinction": false,
+  "latent_trio_global_severe_current": true,
+  "common_root_cause_class": "NUMBER_EXTINCTION_INDEPENDENT_OF_END_DIGIT",
+  "defect_evidence_found": false,
+  "future_leakage": 0,
+  "outcome_scoring": 0
+}

@@ -1,0 +1,20 @@
+{
+  "directive_sha256": "110F3D7C77CEA41CB64221F3C4A591CF7629AB5DF104577A72FED06011EA3711",
+  "rule_version": "P45 Research Engine v2.5 Triple-Set Priority",
+  "approval_status": "APPROVED",
+  "approved_by": "형님",
+  "approved_at": "2026-08-06",
+  "effective_round": 1237,
+  "single_official_directive": "P45_v2.5_Work_UTF8_BOM_CRLF.md",
+  "supersedes": [
+    "P45 v2.3",
+    "P45 v2.4 effective-round-1237 plan"
+  ],
+  "round_1236_treatment": {
+    "locked_v2_3_result": "PRESERVE",
+    "experimental_result": "PRESERVE_AS_EXPERIMENT_EXCEPTION",
+    "include_in_live_official": false
+  },
+  "activation_condition": "All mandatory v2.5 implementation, audit, ledger, report, determinism, and approval checks must pass before an official round-1237 pair is locked.",
+  "approval_reason": "Use P45 v2.5 as the single official directive beginning with round 1237."
+}

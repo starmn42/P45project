@@ -1,0 +1,13 @@
+{
+  "conflict_id": "PORTABLE_CONFLICT_001",
+  "detected_status": "STATE_HANDOFF_CONFLICT",
+  "new_chat_verdict": "STATE_HANDOFF_CONFLICT",
+  "latest_decision_id": "DECISION-20260810-014",
+  "latest_decision_timestamp": "2026-08-10T14:10:00+09:00",
+  "current_state_updated_at": "2026-08-10T14:05:27+09:00",
+  "portable_bundle_generated_at": "2026-08-10T14:06:04+09:00",
+  "problem": "The current state and portable bundle refer to a decision timestamped later than both artifacts, violating decision <= state <= bundle chronology.",
+  "evidence_bundle_sha256": "2e80266e0af0d7ab9d06e8f692558a8dcb70ddec88c37e73d9951d4e1a21f916",
+  "evidence_portable_content_hash": "c5e33e5f8e9921874f2bc851088d788fefecc383d87b807e9cbd69df6a366744",
+  "preservation_policy": "Immutable conflict evidence; do not edit or delete."
+}

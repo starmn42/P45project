@@ -1,0 +1,71 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260821-079",
+  "decision": "EXP-PRIZE-PROSPECTIVE-001-V1은 공식 최신 공개 1237회 다음 미공개 회차 1238회를 START_ROUND로 고정하고, 52회와 104회의 두 번만 검정하는 prospective confirmation protocol을 결과 공개 전에 봉인한다.",
+  "reason": "EXP-PRIZE-001 V2와 EXP-PRIZE-002 V1의 역사 신호를 미래 연속 회차에서 사전고정 검증하되 중간 엿보기, 규칙 변경, DRAW 연결, 자동 승격을 차단하기 위함이다.",
+  "related_stage": "EXPERIMENT_LAB_PRIZE_SHARE_PROSPECTIVE_001_V1",
+  "category": "PROSPECTIVE_PROTOCOL_LOCK",
+  "evidence": "official result page latest published 1237 at 2026-08-21T20:35:44.0250684+09:00; protocol 207a084177edf0bc8d71ca1476f844c283a9c6e65e45943837b5ed13537cff18; start manifest 279d6caecb69100d3d71ccb21738184d6d66310a55c456813cb04ad45b619480",
+  "affected_files": "prospective locked protocol, source preflight note, zero-row start manifest, append-only ledger schema, experiment registry, state files, portable bundle",
+  "affected_schema": "PRIZE-SHARE-PROSPECTIVE-LEDGER-1.0 structural schema only; zero outcome rows",
+  "previous_rule": "Prospective confirmation not created",
+  "new_rule": "START 1238; Stage1 1238~1289 at alpha 0.01; final 1238~1341 at alpha 0.04; signal-blind before allowed looks; no automatic promotion.",
+  "allowed_next_action": "WAIT_FOR_ALL_STAGE1_ROUNDS_THROUGH_1289_THEN_REQUIRE_SEPARATE_STAGE1_EXECUTION_APPROVAL",
+  "forbidden_actions": [
+    "PROSPECTIVE_SIGNAL_ANALYSIS_BEFORE_ROUND_1289_PUBLICATION",
+    "PARTIAL_BETA_OR_P_VALUE_CALCULATION",
+    "SIGNAL_DIRECTION_SUMMARY",
+    "PROTOCOL_RETUNING",
+    "HISTORICAL_BACKFILL_INTO_PROSPECTIVE",
+    "OFFICIAL_OR_DRAW_ENGINE_CONNECTION",
+    "AUTOMATIC_PROMOTION",
+    "EXP017_AUTOMATIC_CREATION"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "EXPERIMENT_LAB_PRIZE_SHARE_PROSPECTIVE_001_V1_LOCKED",
+    "last_completed_stage": "EXP_PRIZE_PROSPECTIVE_001_V1_PROTOCOL_LOCK",
+    "current_status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+    "next_stage": "PROSPECTIVE_STAGE1_WAIT",
+    "next_action": "WAIT_FOR_ALL_STAGE1_ROUNDS_THROUGH_1289_THEN_REQUIRE_SEPARATE_STAGE1_EXECUTION_APPROVAL",
+    "experiment_lab": {
+      "prize_share_prospective_001_v1": {
+        "logical_id": "EXP-PRIZE-PROSPECTIVE-001-V1",
+        "registry_id": "EXP-PRIZE-20260821-005-V1",
+        "domain": "PRIZE_SHARE",
+        "status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+        "lock_timestamp": "2026-08-21T20:35:44.0250684+09:00",
+        "latest_published_round_at_lock": 1237,
+        "start_round": 1238,
+        "start_result_published_at_lock": false,
+        "protocol_sha256": "207a084177edf0bc8d71ca1476f844c283a9c6e65e45943837b5ed13537cff18",
+        "ledger_schema_version": "PRIZE-SHARE-PROSPECTIVE-LEDGER-1.0",
+        "ledger_schema_sha256": "b9823812c5cde941dd70bfa108270bee2c9203692fdf43a08aa3e22635a8d0f9",
+        "ledger_rows": 0,
+        "stage1_n": 52,
+        "stage1_end_round": 1289,
+        "stage1_alpha": 0.01,
+        "final_n": 104,
+        "final_end_round": 1341,
+        "final_alpha": 0.04,
+        "primary_outcome": "SECOND_PRIZE_COUNT",
+        "primary_predictor": "X2",
+        "primary_permutations": 200000,
+        "primary_block_size": 13,
+        "secondary_outcome": "FIRST_PRIZE_COUNT",
+        "future_outcome_analyzed": 0,
+        "signal_peeking": 0,
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false,
+        "protocol_document": "00_P45_STATE/experiment_lab/EXP-PRIZE-PROSPECTIVE-001/EXP_PRIZE_PROSPECTIVE_001_V1_LOCKED_PROTOCOL.md",
+        "start_manifest": "v27_storage/experiments/prize_share_prospective_001_v1/PROSPECTIVE_START_MANIFEST.json"
+      }
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 48
+    }
+  }
+}

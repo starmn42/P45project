@@ -1,0 +1,20 @@
+{
+  "rows": 1237,
+  "range": "1~1237",
+  "round_1238_plus_rows": 0,
+  "snapshot_sha256": "1fb570c8205596a73777c8a19ace5276b3299e05f5e3b191788cec15b04818a9",
+  "fields": [
+    "round",
+    "date",
+    "k1",
+    "k2",
+    "k3",
+    "k4",
+    "k5",
+    "sales",
+    "price",
+    "sold_lines",
+    "source_file",
+    "source_sha256"
+  ]
+}

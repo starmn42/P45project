@@ -1,0 +1,25 @@
+{
+  "updates": {
+    "current_stage": "PROJECT_FILE_CLEANUP",
+    "current_status": "P45_CLEANUP_COMPLETE",
+    "last_completed_stage": "PROJECT_FILE_CLEANUP",
+    "next_stage": "AUTOMATED_DRAW_OPERATIONS",
+    "next_action": "보호된 연구자료와 운영 DB를 유지하며 자동 회차 업데이트와 READ ONLY 웹 운영 계속"
+  },
+  "decision": {
+    "decision_id": "DECISION-20260812-059",
+    "project_version": "P45 v2.7.4",
+    "stage": "PROJECT FILE CLEANUP",
+    "category": "OPERATIONS/PROTECTION/CLEANUP",
+    "decision": "실행·상태·공식문서·보호 Manifest 참조를 전수 확인하고, 참조 0이며 공식본이 별도 존재하는 PAIR Amendment Review Matrix 1개만 삭제했다. 과거 연구 폴더와 나머지 초안·검토본은 보호 또는 상태 참조 때문에 보존했다.",
+    "reason": "실제 당첨결과와 연구 장부를 손상시키지 않으면서 명백히 불필요한 중복 검토 파일만 제거하기 위함이다.",
+    "evidence": "deleted 1 file/3092 bytes; deleted folders 0; web and /api/status PASS; draw updater status DRAW_ALREADY_CURRENT; scheduled task retained; active DB integrity ok/FK 0; canonical protected hash unchanged 7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+    "affected_files": "P45_v2.7.4_PAIR_Amendment_Review_Matrix.md deleted; state files; portable bundle",
+    "affected_schema": "NONE",
+    "previous_rule": "P45_WEB_DATA_CONSISTENCY_FIXED",
+    "new_rule": "P45_CLEANUP_COMPLETE",
+    "allowed_next_action": "continue automated draw operations and read-only web display",
+    "forbidden_actions": "research rule mutation; research result deletion; draw data deletion; DB mutation; protected path deletion; unreviewed draft deletion",
+    "approval_source": "사용자 명시 승인"
+  }
+}

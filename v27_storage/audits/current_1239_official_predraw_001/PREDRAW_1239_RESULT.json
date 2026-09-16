@@ -1,0 +1,83 @@
+{
+  "final_verdict": "CURRENT_1239_NO_OUTPUT_TRACED",
+  "draw_1238": {
+    "canonical_confirmed": true,
+    "round": 1238,
+    "date": "2026-08-22",
+    "main": [
+      2,
+      13,
+      18,
+      32,
+      38,
+      42
+    ],
+    "bonus": 22,
+    "source_url": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do?srchDir=center&srchLtEpsd=1238",
+    "source_payload_sha256": "99d44e493a357785f976e37d99b1e0d2ae179b161cc1aa4a5665f9606ec0c119",
+    "duplicate_conflict": false
+  },
+  "draw_input_mode": "STAGING_PREDRAW",
+  "previous_max_source_round": 1237,
+  "max_source_round": 1238,
+  "target_round": 1239,
+  "snapshot_path": "v27_storage\\audits\\current_1239_official_predraw_001\\STAGING_IMMUTABLE_DRAW_THROUGH_1238.csv",
+  "snapshot_sha256": "8779cb28068de1ee6ed69ef7d76ab3e0c30b64e17c3993f9622bda6261dd8c97",
+  "number": {
+    "input": 45,
+    "output": 0,
+    "all_state_counts": {
+      "NUMBER_HOLD": 40,
+      "NUMBER_WEAKEN": 5
+    },
+    "selected_state_counts": {},
+    "selected_structure_distribution": {},
+    "identities": []
+  },
+  "unit_5": {
+    "state": "NORMAL",
+    "percentile": 56.8421052631579,
+    "metric_percentiles": {
+      "zero_group_count": 6.558704453441296,
+      "max_abs_standardized_occupancy": 6.558704453441296,
+      "max_annihilation_streak": 48.097165991902834,
+      "realized_return_depth": 45.4251012145749,
+      "recent50_zero_group_shift": 56.8421052631579
+    }
+  },
+  "end_digit": {
+    "state": "SEVERE",
+    "percentile": 100.0,
+    "metric_percentiles": {
+      "zero_group_count": 100.0,
+      "max_abs_standardized_occupancy": 99.91902834008097,
+      "max_annihilation_streak": 78.78542510121457,
+      "realized_return_depth": 100.0,
+      "recent50_zero_group_shift": 20.647773279352226
+    }
+  },
+  "trio": {
+    "universe": 0,
+    "status_counts": {},
+    "eligible": 0,
+    "member_structure_distribution": {},
+    "final_structure_distribution": {}
+  },
+  "pair": {
+    "universe": 0,
+    "state_counts": {},
+    "eligible": 0
+  },
+  "primary_3of3_survivors": 0,
+  "support_exact2_survivors": 0,
+  "final_three_number_candidate_sets": 0,
+  "two_set_constructible": false,
+  "official_output": false,
+  "sets": [],
+  "forced_pick": false,
+  "first_fatal_bottleneck": "NUMBER_EXTINCTION",
+  "same_as_1238_severe_bottleneck": false,
+  "future_leakage_count": 0,
+  "outcome_scoring_count": 0,
+  "historical_lifecycle_update_count": 22
+}

@@ -1,0 +1,15 @@
+{
+  "audit_version": "NO-PICK-ROOT-CAUSE-AUDIT-001",
+  "same_canonical_input": true,
+  "same_frozen_rules": true,
+  "same_audit_code": true,
+  "same_seed": 2026082403,
+  "run_1_result_hash": "79911e694f7338c53aff3c837bb0f9dff979e7d7e129afac5a0f4706d8983b27",
+  "run_2_result_hash": "79911e694f7338c53aff3c837bb0f9dff979e7d7e129afac5a0f4706d8983b27",
+  "run_1_rows_hash": "603a847b1fbf56d71508ff556fbebd3c68aeb099c21f91121b052bd377a78601",
+  "run_2_rows_hash": "603a847b1fbf56d71508ff556fbebd3c68aeb099c21f91121b052bd377a78601",
+  "run_1_benchmark_hash": "af223ca49bd199ac08a094020440480511d32a352b2fcf8497475603211ca454",
+  "run_2_benchmark_hash": "af223ca49bd199ac08a094020440480511d32a352b2fcf8497475603211ca454",
+  "byte_identical_machine_reports": true,
+  "status": "PASS"
+}

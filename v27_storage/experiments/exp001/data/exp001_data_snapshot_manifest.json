@@ -1,0 +1,27 @@
+{
+  "duplicate_rounds": 0,
+  "end_round": 1237,
+  "experiment_id": "EXP-DRAW-20260816-002-V1",
+  "future_data_policy": "END_ROUND_LOCKED_NO_EXTENSION_AFTER_RESULTS",
+  "integrated_width": 7,
+  "main_width": 6,
+  "missing_rounds": 0,
+  "row_count": 1237,
+  "snapshot_path": "v27_storage/experiments/exp001/data/exp001_draws_1_1237.csv",
+  "snapshot_sha256": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0",
+  "snapshot_version": "EXP001-DATA-SNAPSHOT-1.0",
+  "sorted": true,
+  "source_files": [
+    {
+      "mode": "READ_ONLY",
+      "path": "analysis/structure-1236/analysis-input.csv",
+      "sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800"
+    },
+    {
+      "mode": "READ_ONLY",
+      "path": "v27_storage/live/p45_new_draw_update_v1.sqlite3",
+      "sha256": "9671b67ecd37ab04b5e5136c04fd3a8a9329540da0591545d026e689ba8fc02a"
+    }
+  ],
+  "start_round": 1
+}

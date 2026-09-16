@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "canonical_numeric_result_match": true,
+  "primary_sha256": "60437581cfc71aa7fe34d931425b9a24f799c3e7df016ea42b9fd7598a38cee4",
+  "reproduction_result": {
+    "research_id": "P45_LZ76_MACRO_COMPLEXITY_V1",
+    "protocol_sha256": "ca19e210753725ad16f7b692d4be1e9f4a5042ccc1171508141c4a509c1b0b81",
+    "input_sha256": "04394615583466fe52b8c87939ec5c60a8903f119d04b8103ad72e7f356eb4ea",
+    "data_range": "1..1238 MAIN6 ONLY",
+    "future_data_used": 0,
+    "lz_windows": 1139,
+    "threshold": {
+      "seed": 2026082901,
+      "virtual_windows": 100000,
+      "order_statistic_1_based": 20000,
+      "q_phrase_count": 211,
+      "q_normalized_lz76": 0.5690299243040062,
+      "phrase_count_mean": 212.69957
+    },
+    "null": {
+      "seed": 2026082902,
+      "histories": 10000,
+      "occupancy_mean": 0.3092855136084285,
+      "lag1_autocorr_mean": 0.5832729833447268,
+      "not_estimable": 0
+    },
+    "actual": {
+      "state_a_count": 511,
+      "occupancy": 0.4486391571553995,
+      "lag1_autocorrelation": 0.591537998171019
+    },
+    "p1_occupancy": 0.014598540145985401,
+    "p2_autocorrelation": 0.43745625437456254,
+    "joint_criteria_pass": false,
+    "final_verdict": "FAILED_NOT_SUPPORTED",
+    "preflight": {
+      "status": "PASS",
+      "synthetic_crosscheck": [
+        {
+          "case": "repeating",
+          "length": 256,
+          "reference_c": 9,
+          "calculator_c": 9,
+          "match": true
+        },
+        {
+          "case": "alternating",
+          "length": 256,
+          "reference_c": 9,
+          "calculator_c": 9,
+          "match": true
+        },
+        {
+          "case": "fixed_seed_random",
+          "length": 256,
+          "reference_c": 37,
+          "calculator_c": 37,
+          "match": true
+        }
+      ],
+      "input": {
+        "path": "E:\\P45 프로젝트\\v27_storage\\experiments\\exp020_lagged_winner_count_regime_signal_v1_001\\P45_EXP_020_OFFICIAL_FULL_HISTORY_001.csv",
+        "size_bytes": 28878,
+        "sha256": "04394615583466fe52b8c87939ec5c60a8903f119d04b8103ad72e7f356eb4ea",
+        "row_count": 1238,
+        "round_first": 1,
+        "round_last": 1238,
+        "main6_only": true,
+        "bonus_used": false,
+        "future_data_used": 0
+      },
+      "encoded_shape": [
+        1238,
+        45
+      ],
+      "ones_per_round_all_six": true,
+      "window_bits": 4500,
+      "window_count": 1139,
+      "adjacent_state_pairs": 1138,
+      "environment": {
+        "python": "3.12.13 (main, Aug  7 2026, 02:26:41) [MSC v.1944 64 bit (AMD64)]",
+        "python_executable": "C:\\Users\\sung2\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+        "platform": "Windows-10-10.0.19045-SP0",
+        "numpy": "2.3.5",
+        "bit_generator": "PCG64",
+        "workers": 16
+      }
+    },
+    "csharp_crosscheck": [
+      {
+        "case": "repeating_4500",
+        "python_suffix_automaton_c": 13,
+        "csharp_suffix_automaton_c": 13,
+        "match": true
+      },
+      {
+        "case": "alternating_4500",
+        "python_suffix_automaton_c": 13,
+        "csharp_suffix_automaton_c": 13,
+        "match": true
+      },
+      {
+        "case": "fixed_seed_random_4500",
+        "python_suffix_automaton_c": 387,
+        "csharp_suffix_automaton_c": 387,
+        "match": true
+      }
+    ],
+    "calculator": {
+      "python_orchestrator_sha256": "d9989b975474c7c500700cbbec7e34dcb4f1a876c09e50daf31eafa42f795c27",
+      "python_reference_sha256": "03cf0ab639ed9d8afffe672f83dfe8f3128a5e9f127a0dfaa67a2c1195c7c19d",
+      "csharp_source_sha256": "26e004f949846c28170055a5fb2fd72f1c416cbc2c51ef4880a5e647a6d00c97",
+      "csharp_assembly_sha256": "8f14b749e7e40654b15c9d5b27ce4deb941301f344f4bc9dd34c31b40bf0f8db",
+      "workers": 16
+    },
+    "elapsed_seconds": 1285.7130987644196
+  }
+}
+

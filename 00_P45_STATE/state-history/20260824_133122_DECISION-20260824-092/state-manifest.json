@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-24T13:31:22+09:00",
+  "transaction_id": "4a0be50b-f7a2-484d-ae2e-3aab001376e1",
+  "decision_id": "DECISION-20260824-092",
+  "state_version": "1.0.85",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "OFFICIAL_NO_PICK_STRUCTURAL_ROOT_CAUSE_AUDIT_001_COMPLETE",
+  "current_status": "NO_PICK_ROOT_CAUSE_IMPLEMENTATION_OR_DEFINITION_ANOMALY",
+  "state_hash": "f39356679ae66bc042ac7620047fb5414bf34c6699e79e2692ad42785200fd9f",
+  "current_state_md_sha256": "b7e29e807dce59e54c0e231b53bbda363c704d28a2b7bc9673035a1b2d6feda8",
+  "current_state_json_sha256": "9f3214107337f8fb5fa675b0ed786e612babbce425a1353620ba6fa6d340043d",
+  "handoff_sha256": "004500ff07775619cd765b8bf8d8df2b31183121698f6bd7846473ae155b6c21",
+  "decision_log_sha256": "9f8432e7d82450ef37f913b71f23ef13be330558fff36ad9d72895cdf77c1463",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

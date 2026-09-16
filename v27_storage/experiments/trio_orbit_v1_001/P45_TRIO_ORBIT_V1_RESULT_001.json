@@ -1,0 +1,130 @@
+{
+  "source": "E:\\P45 프로젝트\\v27_storage\\audits\\current_1239_predraw_rerun_001\\STAGING_CONTIGUOUS_DRAW_1_1238.csv",
+  "source_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "range": [
+    1,
+    1238
+  ],
+  "evaluated_rounds": 1237,
+  "data_checks": {
+    "continuity": true,
+    "duplicate_rounds_0": true,
+    "main_errors_0": true,
+    "bonus_range_errors_0": true,
+    "bonus_main_overlap_0": true
+  },
+  "schedule_sha256": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+  "invariants": {
+    "parallel_classes_22": true,
+    "each_class_15": true,
+    "each_class_partitions_1_45": true,
+    "total_trios_330": true,
+    "unique_trios_330": true,
+    "unordered_pairs_990": true,
+    "each_pair_once": true,
+    "each_number_22": true,
+    "no_within_trio_duplicate": true,
+    "number_range_1_45": true,
+    "latin_cells_valid": true
+  },
+  "fixed_primary": 5,
+  "linked_primary": 7,
+  "delta": 2,
+  "delta_percentage_points": 0.16168148746968472,
+  "relative_count_change_percent": 40.0,
+  "paired": {
+    "both_success": 0,
+    "fixed_only": 5,
+    "linked_only": 7,
+    "both_fail": 1225
+  },
+  "mcnemar_exact_two_sided": 0.7744140625,
+  "mc": {
+    "nsim": 20000,
+    "seed": 20260826,
+    "ge": 6387,
+    "p_one_sided": 0.31938403079846006,
+    "delta_distribution": {
+      "-14": 1,
+      "-13": 4,
+      "-12": 3,
+      "-11": 13,
+      "-10": 18,
+      "-9": 62,
+      "-8": 103,
+      "-7": 193,
+      "-6": 441,
+      "-5": 725,
+      "-4": 1153,
+      "-3": 1620,
+      "-2": 2102,
+      "-1": 2378,
+      "0": 2450,
+      "1": 2347,
+      "2": 2080,
+      "3": 1626,
+      "4": 1113,
+      "5": 710,
+      "6": 424,
+      "7": 217,
+      "8": 122,
+      "9": 52,
+      "10": 29,
+      "11": 5,
+      "12": 5,
+      "13": 3,
+      "14": 1
+    }
+  },
+  "exact2": {
+    "fixed_trio_count": 161,
+    "linked_trio_count": 175,
+    "fixed_round_any": 159,
+    "linked_round_any": 174
+  },
+  "resets": {
+    "count": 21,
+    "interval_mean": 57.76190476190476,
+    "interval_median": 59,
+    "interval_min": 43,
+    "interval_max": 63,
+    "mean_used_before": 173.14285714285714
+  },
+  "exposure": {
+    "number_min": 227,
+    "number_max": 264,
+    "number_std_population": 10.510100961561797
+  },
+  "pair_output_frequency_distribution": {
+    "5": 3,
+    "6": 6,
+    "7": 39,
+    "8": 81,
+    "9": 114,
+    "10": 111,
+    "11": 177,
+    "12": 177,
+    "13": 120,
+    "14": 81,
+    "15": 45,
+    "16": 27,
+    "17": 9
+  },
+  "trio_output_frequency_distribution": {
+    "5": 1,
+    "6": 2,
+    "7": 13,
+    "8": 27,
+    "9": 38,
+    "10": 37,
+    "11": 59,
+    "12": 59,
+    "13": 40,
+    "14": 27,
+    "15": 15,
+    "16": 9,
+    "17": 3
+  },
+  "future_leakage": 0,
+  "final_judgment": "FAILED_NOT_SUPPORTED"
+}

@@ -1,0 +1,12 @@
+{
+  "transaction_id": "e8891083-6ec0-4de8-a46c-8381caab21ea",
+  "status": "FAILED_ROLLED_BACK",
+  "files": [
+    "P45_CURRENT_STATE.json",
+    "P45_CURRENT_STATE.md",
+    "P45_HANDOFF.md",
+    "P45_DECISION_LOG.md"
+  ],
+  "created_at": "2026-08-11T18:18:50+09:00",
+  "rolled_back_at": "2026-08-11T18:18:50+09:00"
+}

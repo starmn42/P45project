@@ -1,0 +1,66 @@
+{
+  "status": "SOURCE_AUDIT_COMPLETE",
+  "preflight": {
+    "state": "1.0.88",
+    "decision": "DECISION-20260824-095",
+    "registry_physical_rows": 63,
+    "official_engine": "FROZEN",
+    "no_pick": "UNRESOLVED",
+    "draw_discovery_pause": "ACTIVE",
+    "exp_017": "NOT_CREATED"
+  },
+  "priority_order_locked_before_audit": [
+    "DRAW_MACHINE_BALL_SET_EQUIPMENT_IDENTITY",
+    "TRUE_DRAW_ORDER_EXTRACTION_POSITION",
+    "VERIFIED_OPERATIONAL_TIMESTAMP_METADATA"
+  ],
+  "families": [
+    {
+      "priority": 1,
+      "family": "DRAW_MACHINE_BALL_SET_EQUIPMENT_IDENTITY",
+      "available": false,
+      "authoritative_provenance": "FAIL",
+      "future_known": "FAIL",
+      "coverage_rounds": 0,
+      "missing_rounds": 1238,
+      "stable_schema": "FAIL",
+      "independent_from_failed_families": "PASS",
+      "plausible_mechanical_causal_link": "FAIL_NO_SOURCE",
+      "admissible": false
+    },
+    {
+      "priority": 2,
+      "family": "TRUE_DRAW_ORDER_EXTRACTION_POSITION",
+      "available": false,
+      "authoritative_provenance": "FAIL",
+      "future_known": "FAIL",
+      "coverage_rounds": 0,
+      "missing_rounds": 1238,
+      "stable_schema": "FAIL",
+      "independent_from_failed_families": "FAIL_REJECT_AS_FAILED_FAMILY_REPACKAGING",
+      "plausible_mechanical_causal_link": "FAIL_UNVERIFIED_POSITION_SEMANTICS",
+      "admissible": false
+    },
+    {
+      "priority": 3,
+      "family": "VERIFIED_OPERATIONAL_TIMESTAMP_METADATA",
+      "available": true,
+      "available_scope": "ROUND_1238_RETRIEVAL_TIMESTAMP_AND_DRAW_DATES_ONLY",
+      "authoritative_provenance": "PARTIAL",
+      "future_known": "FAIL_RETRIEVAL_IS_POST_OUTCOME",
+      "coverage_rounds": 1,
+      "missing_rounds": 1237,
+      "stable_schema": "PARTIAL",
+      "independent_from_failed_families": "PASS",
+      "plausible_mechanical_causal_link": "FAIL",
+      "admissible": false
+    }
+  ],
+  "first_test_candidate": null,
+  "no_credible_independent_signal_source": true,
+  "protocol_created": false,
+  "test_executed": false,
+  "final_verdict": "NO_CREDIBLE_INDEPENDENT_SIGNAL_SOURCE",
+  "future_leakage": 0,
+  "target_1239_scoring": 0
+}

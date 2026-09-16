@@ -1,0 +1,1624 @@
+{
+  "precheck": "PASS",
+  "canonical_latest": 1238,
+  "canonical_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "kts_source_sha256": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+  "kts_sha_match": "PASS",
+  "protocol_sha256": "ed799d32979ab560ec85d1a0ba233995bb23a1dbfc1bccd8ef1834419722fac0",
+  "seed": "17111881099788334432",
+  "simulations": 100000,
+  "source_trace_reused": true,
+  "source_trace_sha256": "bcf54e5f13bc3b3ab73eb23d936030648b7da63f9264a10bcdf715bc5ea091e7",
+  "evaluated_rounds": 1237,
+  "common_count_distribution": {
+    "0": 1206,
+    "1": 26,
+    "2": 5,
+    "3": 0
+  },
+  "areas": {
+    "COMMON": {
+      "exposures": 36,
+      "exact3": 0,
+      "exact2": 1,
+      "round3": 0,
+      "round2": 1,
+      "exact3_rate": 0,
+      "exact2_rate": 0.027777777777777776
+    },
+    "FIXED_ONLY": {
+      "exposures": 3675,
+      "exact3": 5,
+      "exact2": 160,
+      "round3": 5,
+      "round2": 158,
+      "exact3_rate": 0.0013605442176870747,
+      "exact2_rate": 0.04353741496598639
+    },
+    "LINKED_ONLY": {
+      "exposures": 3675,
+      "exact3": 7,
+      "exact2": 174,
+      "round3": 7,
+      "round2": 173,
+      "exact3_rate": 0.0019047619047619048,
+      "exact2_rate": 0.0473469387755102
+    }
+  },
+  "original_success_sources": {
+    "fixed": [
+      {
+        "round": 334,
+        "trio": "13-15-29",
+        "source": "FIXED_ONLY"
+      },
+      {
+        "round": 556,
+        "trio": "28-30-44",
+        "source": "FIXED_ONLY"
+      },
+      {
+        "round": 864,
+        "trio": "7-13-25",
+        "source": "FIXED_ONLY"
+      },
+      {
+        "round": 1211,
+        "trio": "23-27-40",
+        "source": "FIXED_ONLY"
+      },
+      {
+        "round": 1229,
+        "trio": "13-34-37",
+        "source": "FIXED_ONLY"
+      }
+    ],
+    "linked": [
+      {
+        "round": 74,
+        "trio": "6-15-18",
+        "source": "LINKED_ONLY"
+      },
+      {
+        "round": 167,
+        "trio": "27-30-36",
+        "source": "LINKED_ONLY"
+      },
+      {
+        "round": 625,
+        "trio": "3-7-20",
+        "source": "LINKED_ONLY"
+      },
+      {
+        "round": 902,
+        "trio": "19-23-36",
+        "source": "LINKED_ONLY"
+      },
+      {
+        "round": 1037,
+        "trio": "14-15-22",
+        "source": "LINKED_ONLY"
+      },
+      {
+        "round": 1040,
+        "trio": "16-26-36",
+        "source": "LINKED_ONLY"
+      },
+      {
+        "round": 1099,
+        "trio": "3-38-43",
+        "source": "LINKED_ONLY"
+      }
+    ],
+    "fixed_round_successes": 5,
+    "linked_round_successes": 7
+  },
+  "observed": {
+    "linked_only_exact3": 7,
+    "fixed_only_exact3": 5,
+    "difference_exact3": 2,
+    "primary_one_sided_p": 0.38690613093869064,
+    "exact3_two_sided_p": 0.7752422475775242,
+    "linked_only_exact2": 174,
+    "fixed_only_exact2": 160,
+    "difference_exact2": 14,
+    "exact2_one_sided_p": 0.22602773972260276,
+    "exact2_two_sided_p": 0.45077549224507757
+  },
+  "common_count_performance": [
+    {
+      "common_count": 0,
+      "rounds": 1206,
+      "fixed_exact3": 5,
+      "linked_exact3": 6,
+      "fixed_exact2": 159,
+      "linked_exact2": 172
+    },
+    {
+      "common_count": 1,
+      "rounds": 26,
+      "fixed_exact3": 0,
+      "linked_exact3": 1,
+      "fixed_exact2": 1,
+      "linked_exact2": 2
+    },
+    {
+      "common_count": 2,
+      "rounds": 5,
+      "fixed_exact3": 0,
+      "linked_exact3": 0,
+      "fixed_exact2": 1,
+      "linked_exact2": 1
+    },
+    {
+      "common_count": 3,
+      "rounds": 0,
+      "fixed_exact3": 0,
+      "linked_exact3": 0,
+      "fixed_exact2": 0,
+      "linked_exact2": 0
+    }
+  ],
+  "anchor_contribution": {
+    "available": true,
+    "linked_only_exact3": [
+      {
+        "round": 74,
+        "trio": "6-15-18",
+        "hits": 3,
+        "anchor": 18,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      },
+      {
+        "round": 167,
+        "trio": "27-30-36",
+        "hits": 3,
+        "anchor": 36,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      },
+      {
+        "round": 625,
+        "trio": "3-7-20",
+        "hits": 3,
+        "anchor": 7,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      },
+      {
+        "round": 902,
+        "trio": "19-23-36",
+        "hits": 3,
+        "anchor": 23,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1037,
+        "trio": "14-15-22",
+        "hits": 3,
+        "anchor": 22,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1040,
+        "trio": "16-26-36",
+        "hits": 3,
+        "anchor": 36,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1099,
+        "trio": "3-38-43",
+        "hits": 3,
+        "anchor": 43,
+        "anchor_hit": true,
+        "other_two_hits": 2
+      }
+    ],
+    "linked_only_exact3_anchor_hit": 7,
+    "linked_only_exact3_anchor_miss": 0,
+    "linked_only_exact2": [
+      {
+        "round": 5,
+        "trio": "25-29-42",
+        "hits": 2,
+        "anchor": 42,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 7,
+        "trio": "9-38-40",
+        "hits": 2,
+        "anchor": 40,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 21,
+        "trio": "17-30-31",
+        "hits": 2,
+        "anchor": 30,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 22,
+        "trio": "4-15-17",
+        "hits": 2,
+        "anchor": 17,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 23,
+        "trio": "5-42-43",
+        "hits": 2,
+        "anchor": 5,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 24,
+        "trio": "8-33-43",
+        "hits": 2,
+        "anchor": 33,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 34,
+        "trio": "15-35-40",
+        "hits": 2,
+        "anchor": 40,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 38,
+        "trio": "26-30-43",
+        "hits": 2,
+        "anchor": 30,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 59,
+        "trio": "6-33-39",
+        "hits": 2,
+        "anchor": 33,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 71,
+        "trio": "5-8-29",
+        "hits": 2,
+        "anchor": 5,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 78,
+        "trio": "25-29-42",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 84,
+        "trio": "16-22-34",
+        "hits": 2,
+        "anchor": 34,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 114,
+        "trio": "24-28-41",
+        "hits": 2,
+        "anchor": 28,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 146,
+        "trio": "25-27-41",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 146,
+        "trio": "2-35-44",
+        "hits": 2,
+        "anchor": 2,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 149,
+        "trio": "11-33-34",
+        "hits": 2,
+        "anchor": 33,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 151,
+        "trio": "8-13-18",
+        "hits": 2,
+        "anchor": 18,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 157,
+        "trio": "21-30-33",
+        "hits": 2,
+        "anchor": 30,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 159,
+        "trio": "18-21-42",
+        "hits": 2,
+        "anchor": 18,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 160,
+        "trio": "10-39-41",
+        "hits": 2,
+        "anchor": 41,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 162,
+        "trio": "1-36-41",
+        "hits": 2,
+        "anchor": 36,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 164,
+        "trio": "11-26-41",
+        "hits": 2,
+        "anchor": 11,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 169,
+        "trio": "27-29-43",
+        "hits": 2,
+        "anchor": 43,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 176,
+        "trio": "17-30-31",
+        "hits": 2,
+        "anchor": 17,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 179,
+        "trio": "9-10-17",
+        "hits": 2,
+        "anchor": 9,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 186,
+        "trio": "4-10-22",
+        "hits": 2,
+        "anchor": 4,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 194,
+        "trio": "17-26-44",
+        "hits": 2,
+        "anchor": 26,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 197,
+        "trio": "7-44-45",
+        "hits": 2,
+        "anchor": 45,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 200,
+        "trio": "6-14-25",
+        "hits": 2,
+        "anchor": 25,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 202,
+        "trio": "6-33-39",
+        "hits": 2,
+        "anchor": 39,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 207,
+        "trio": "3-37-44",
+        "hits": 2,
+        "anchor": 3,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 220,
+        "trio": "11-39-43",
+        "hits": 2,
+        "anchor": 11,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 225,
+        "trio": "3-5-19",
+        "hits": 2,
+        "anchor": 19,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 240,
+        "trio": "7-10-16",
+        "hits": 2,
+        "anchor": 7,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 241,
+        "trio": "16-28-37",
+        "hits": 2,
+        "anchor": 16,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 252,
+        "trio": "19-26-45",
+        "hits": 2,
+        "anchor": 45,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 255,
+        "trio": "24-30-42",
+        "hits": 2,
+        "anchor": 24,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 266,
+        "trio": "9-36-42",
+        "hits": 2,
+        "anchor": 9,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 268,
+        "trio": "3-15-24",
+        "hits": 2,
+        "anchor": 24,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 277,
+        "trio": "25-29-42",
+        "hits": 2,
+        "anchor": 25,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 291,
+        "trio": "18-20-34",
+        "hits": 2,
+        "anchor": 18,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 294,
+        "trio": "29-30-37",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 308,
+        "trio": "17-28-45",
+        "hits": 2,
+        "anchor": 45,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 311,
+        "trio": "24-28-41",
+        "hits": 2,
+        "anchor": 28,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 315,
+        "trio": "13-33-38",
+        "hits": 2,
+        "anchor": 38,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 324,
+        "trio": "2-10-21",
+        "hits": 2,
+        "anchor": 10,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 332,
+        "trio": "9-36-42",
+        "hits": 2,
+        "anchor": 9,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 342,
+        "trio": "1-14-30",
+        "hits": 2,
+        "anchor": 1,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 343,
+        "trio": "27-29-43",
+        "hits": 2,
+        "anchor": 43,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 347,
+        "trio": "22-27-32",
+        "hits": 2,
+        "anchor": 22,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 352,
+        "trio": "5-20-35",
+        "hits": 2,
+        "anchor": 5,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 353,
+        "trio": "16-22-34",
+        "hits": 2,
+        "anchor": 16,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 360,
+        "trio": "16-23-42",
+        "hits": 2,
+        "anchor": 23,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 366,
+        "trio": "4-5-27",
+        "hits": 2,
+        "anchor": 5,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 374,
+        "trio": "11-15-28",
+        "hits": 2,
+        "anchor": 15,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 388,
+        "trio": "1-9-20",
+        "hits": 2,
+        "anchor": 20,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 389,
+        "trio": "23-26-32",
+        "hits": 2,
+        "anchor": 32,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 399,
+        "trio": "9-10-17",
+        "hits": 2,
+        "anchor": 10,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 413,
+        "trio": "7-34-40",
+        "hits": 2,
+        "anchor": 7,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 431,
+        "trio": "18-29-31",
+        "hits": 2,
+        "anchor": 18,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 433,
+        "trio": "22-29-33",
+        "hits": 2,
+        "anchor": 33,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 438,
+        "trio": "26-29-35",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 440,
+        "trio": "10-31-34",
+        "hits": 2,
+        "anchor": 31,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 449,
+        "trio": "3-38-43",
+        "hits": 2,
+        "anchor": 3,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 450,
+        "trio": "21-26-31",
+        "hits": 2,
+        "anchor": 26,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 452,
+        "trio": "23-30-34",
+        "hits": 2,
+        "anchor": 30,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 463,
+        "trio": "20-23-44",
+        "hits": 2,
+        "anchor": 20,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 476,
+        "trio": "13-15-29",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 488,
+        "trio": "2-38-41",
+        "hits": 2,
+        "anchor": 41,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 494,
+        "trio": "26-30-43",
+        "hits": 2,
+        "anchor": 26,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 496,
+        "trio": "4-32-36",
+        "hits": 2,
+        "anchor": 4,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 500,
+        "trio": "4-6-20",
+        "hits": 2,
+        "anchor": 20,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 509,
+        "trio": "25-30-35",
+        "hits": 2,
+        "anchor": 35,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 510,
+        "trio": "12-32-37",
+        "hits": 2,
+        "anchor": 12,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 511,
+        "trio": "7-32-42",
+        "hits": 2,
+        "anchor": 42,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 517,
+        "trio": "9-37-41",
+        "hits": 2,
+        "anchor": 41,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 519,
+        "trio": "6-9-30",
+        "hits": 2,
+        "anchor": 6,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 530,
+        "trio": "24-27-33",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 534,
+        "trio": "17-29-38",
+        "hits": 2,
+        "anchor": 17,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 536,
+        "trio": "15-32-43",
+        "hits": 2,
+        "anchor": 15,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 541,
+        "trio": "3-8-28",
+        "hits": 2,
+        "anchor": 3,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 549,
+        "trio": "12-40-44",
+        "hits": 2,
+        "anchor": 12,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 550,
+        "trio": "7-34-40",
+        "hits": 2,
+        "anchor": 40,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 551,
+        "trio": "3-7-20",
+        "hits": 2,
+        "anchor": 20,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 554,
+        "trio": "5-14-17",
+        "hits": 2,
+        "anchor": 17,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 557,
+        "trio": "27-28-35",
+        "hits": 2,
+        "anchor": 28,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 559,
+        "trio": "12-32-37",
+        "hits": 2,
+        "anchor": 12,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 562,
+        "trio": "20-27-31",
+        "hits": 2,
+        "anchor": 20,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 581,
+        "trio": "5-20-35",
+        "hits": 2,
+        "anchor": 35,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 607,
+        "trio": "2-14-23",
+        "hits": 2,
+        "anchor": 14,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 609,
+        "trio": "4-8-21",
+        "hits": 2,
+        "anchor": 8,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 612,
+        "trio": "6-33-39",
+        "hits": 2,
+        "anchor": 33,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 616,
+        "trio": "18-27-45",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 619,
+        "trio": "2-13-30",
+        "hits": 2,
+        "anchor": 30,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 640,
+        "trio": "12-15-21",
+        "hits": 2,
+        "anchor": 15,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 641,
+        "trio": "21-23-37",
+        "hits": 2,
+        "anchor": 21,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 643,
+        "trio": "10-32-33",
+        "hits": 2,
+        "anchor": 32,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 645,
+        "trio": "16-26-36",
+        "hits": 2,
+        "anchor": 36,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 647,
+        "trio": "16-24-35",
+        "hits": 2,
+        "anchor": 24,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 659,
+        "trio": "25-29-42",
+        "hits": 2,
+        "anchor": 25,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 666,
+        "trio": "5-6-28",
+        "hits": 2,
+        "anchor": 5,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 668,
+        "trio": "12-32-37",
+        "hits": 2,
+        "anchor": 37,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 676,
+        "trio": "8-31-45",
+        "hits": 2,
+        "anchor": 8,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 678,
+        "trio": "12-32-37",
+        "hits": 2,
+        "anchor": 12,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 681,
+        "trio": "21-29-40",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 689,
+        "trio": "19-23-36",
+        "hits": 2,
+        "anchor": 23,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 700,
+        "trio": "14-29-44",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 702,
+        "trio": "16-29-45",
+        "hits": 2,
+        "anchor": 16,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 708,
+        "trio": "4-19-34",
+        "hits": 2,
+        "anchor": 19,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 712,
+        "trio": "9-33-45",
+        "hits": 2,
+        "anchor": 45,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 718,
+        "trio": "11-32-35",
+        "hits": 2,
+        "anchor": 32,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 723,
+        "trio": "27-30-36",
+        "hits": 2,
+        "anchor": 30,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 726,
+        "trio": "21-22-44",
+        "hits": 2,
+        "anchor": 21,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 735,
+        "trio": "25-27-41",
+        "hits": 2,
+        "anchor": 41,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 741,
+        "trio": "4-5-27",
+        "hits": 2,
+        "anchor": 4,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 760,
+        "trio": "17-22-42",
+        "hits": 2,
+        "anchor": 42,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 764,
+        "trio": "7-31-43",
+        "hits": 2,
+        "anchor": 43,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 772,
+        "trio": "6-21-36",
+        "hits": 2,
+        "anchor": 6,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 781,
+        "trio": "18-19-41",
+        "hits": 2,
+        "anchor": 19,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 783,
+        "trio": "14-35-38",
+        "hits": 2,
+        "anchor": 38,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 795,
+        "trio": "3-13-23",
+        "hits": 2,
+        "anchor": 13,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 796,
+        "trio": "16-26-36",
+        "hits": 2,
+        "anchor": 26,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 801,
+        "trio": "10-37-43",
+        "hits": 2,
+        "anchor": 10,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 804,
+        "trio": "10-12-26",
+        "hits": 2,
+        "anchor": 26,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 805,
+        "trio": "16-18-32",
+        "hits": 2,
+        "anchor": 32,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 831,
+        "trio": "16-17-39",
+        "hits": 2,
+        "anchor": 17,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 836,
+        "trio": "9-13-26",
+        "hits": 2,
+        "anchor": 13,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 839,
+        "trio": "3-9-21",
+        "hits": 2,
+        "anchor": 9,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 841,
+        "trio": "5-11-23",
+        "hits": 2,
+        "anchor": 11,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 854,
+        "trio": "20-27-31",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 860,
+        "trio": "8-12-25",
+        "hits": 2,
+        "anchor": 8,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 865,
+        "trio": "3-32-34",
+        "hits": 2,
+        "anchor": 32,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 873,
+        "trio": "13-32-39",
+        "hits": 2,
+        "anchor": 32,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 882,
+        "trio": "18-27-45",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 893,
+        "trio": "1-36-41",
+        "hits": 2,
+        "anchor": 36,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 908,
+        "trio": "21-23-37",
+        "hits": 2,
+        "anchor": 37,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 910,
+        "trio": "17-23-35",
+        "hits": 2,
+        "anchor": 35,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 913,
+        "trio": "13-14-21",
+        "hits": 2,
+        "anchor": 21,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 928,
+        "trio": "3-4-26",
+        "hits": 2,
+        "anchor": 26,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 939,
+        "trio": "4-39-44",
+        "hits": 2,
+        "anchor": 4,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 945,
+        "trio": "9-33-45",
+        "hits": 2,
+        "anchor": 33,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 946,
+        "trio": "6-9-30",
+        "hits": 2,
+        "anchor": 9,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 953,
+        "trio": "22-27-32",
+        "hits": 2,
+        "anchor": 22,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 962,
+        "trio": "18-29-31",
+        "hits": 2,
+        "anchor": 29,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 970,
+        "trio": "2-9-28",
+        "hits": 2,
+        "anchor": 9,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 977,
+        "trio": "14-29-44",
+        "hits": 2,
+        "anchor": 14,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 981,
+        "trio": "3-36-45",
+        "hits": 2,
+        "anchor": 3,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 989,
+        "trio": "27-29-43",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1001,
+        "trio": "10-38-42",
+        "hits": 2,
+        "anchor": 42,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1004,
+        "trio": "15-36-39",
+        "hits": 2,
+        "anchor": 39,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1022,
+        "trio": "11-37-45",
+        "hits": 2,
+        "anchor": 45,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1032,
+        "trio": "2-6-19",
+        "hits": 2,
+        "anchor": 19,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1043,
+        "trio": "5-12-16",
+        "hits": 2,
+        "anchor": 5,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1057,
+        "trio": "8-36-40",
+        "hits": 2,
+        "anchor": 36,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1062,
+        "trio": "20-27-31",
+        "hits": 2,
+        "anchor": 27,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1065,
+        "trio": "3-36-45",
+        "hits": 2,
+        "anchor": 3,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1067,
+        "trio": "7-10-16",
+        "hits": 2,
+        "anchor": 16,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1073,
+        "trio": "6-15-18",
+        "hits": 2,
+        "anchor": 18,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1075,
+        "trio": "1-15-23",
+        "hits": 2,
+        "anchor": 15,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1109,
+        "trio": "16-19-40",
+        "hits": 2,
+        "anchor": 19,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1122,
+        "trio": "6-21-36",
+        "hits": 2,
+        "anchor": 6,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1123,
+        "trio": "17-21-34",
+        "hits": 2,
+        "anchor": 21,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1126,
+        "trio": "9-38-40",
+        "hits": 2,
+        "anchor": 40,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1129,
+        "trio": "1-10-28",
+        "hits": 2,
+        "anchor": 1,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1157,
+        "trio": "5-7-21",
+        "hits": 2,
+        "anchor": 7,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1175,
+        "trio": "4-8-21",
+        "hits": 2,
+        "anchor": 8,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1192,
+        "trio": "2-39-40",
+        "hits": 2,
+        "anchor": 2,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1195,
+        "trio": "9-15-27",
+        "hits": 2,
+        "anchor": 15,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1209,
+        "trio": "2-37-42",
+        "hits": 2,
+        "anchor": 42,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1215,
+        "trio": "19-24-44",
+        "hits": 2,
+        "anchor": 19,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1219,
+        "trio": "2-9-28",
+        "hits": 2,
+        "anchor": 28,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1220,
+        "trio": "2-36-43",
+        "hits": 2,
+        "anchor": 2,
+        "anchor_hit": true,
+        "other_two_hits": 1
+      },
+      {
+        "round": 1231,
+        "trio": "14-31-42",
+        "hits": 2,
+        "anchor": 42,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      },
+      {
+        "round": 1233,
+        "trio": "2-3-25",
+        "hits": 2,
+        "anchor": 3,
+        "anchor_hit": false,
+        "other_two_hits": 2
+      }
+    ]
+  },
+  "judgment": "DIVERGENCE_NOT_SUPPORTED",
+  "future_leakage": 0,
+  "original_trio_orbit_final": "FAILED_NOT_SUPPORTED",
+  "official_protected_changes": 0,
+  "EXP017": "NOT_CREATED"
+}

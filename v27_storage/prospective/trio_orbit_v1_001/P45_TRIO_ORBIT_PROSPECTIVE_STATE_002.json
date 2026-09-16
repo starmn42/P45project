@@ -1,0 +1,18 @@
+{
+  "state_status": "POST_OUTCOME_SETTLED",
+  "target_round": 1239,
+  "source_round": 1238,
+  "result_status": "SETTLED",
+  "actual_main": [11, 13, 22, 32, 33, 36],
+  "actual_bonus": 8,
+  "fixed_primary_3of3": 0,
+  "fixed_support_exact_2of3": 1,
+  "linked_primary_3of3": 0,
+  "linked_support_exact_2of3": 0,
+  "sealed_record_sha256": "ed23691c5b9f1715c85b6d3362735dfa8cebb72b31dc258e2aa43bc299c94ead",
+  "prior_state_file": "P45_TRIO_ORBIT_PROSPECTIVE_STATE_001.json",
+  "future_leakage": 0,
+  "fixed_rule_changes": 0,
+  "linked_rule_changes": 0,
+  "official_protected_changes": 0
+}

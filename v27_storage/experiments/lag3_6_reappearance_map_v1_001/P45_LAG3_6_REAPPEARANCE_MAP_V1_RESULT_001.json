@@ -1,0 +1,293 @@
+{
+  "precheck": "PASS",
+  "canonical_latest": 1238,
+  "canonical_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "protocol_sha256": "f8d72775f2e3de92f1cdfa2c58a0ff7a2e4ff2681624044d8619ae3589d870ec",
+  "data_checks": {
+    "continuous": true,
+    "duplicates_0": true,
+    "main_valid": true,
+    "bonus_valid": true,
+    "latest": 1238,
+    "bonus_used": false
+  },
+  "lags": {
+    "3": {
+      "valid_targets": 1235,
+      "target_range": [
+        4,
+        1238
+      ],
+      "candidate_exposures": 7410,
+      "total_hits": 974,
+      "observed_mean": 0.7886639676113361,
+      "expected_mean": 0.8,
+      "mean_difference": -0.011336032388663986,
+      "observed_rate": 0.13144399460188935,
+      "expected_rate": 0.13333333333333333,
+      "rate_difference": -0.0018893387314439791,
+      "z": -0.5081799796277061,
+      "analytical_one_sided_p": 0.6998131550419403,
+      "stability": {
+        "full": {
+          "n": 1235,
+          "hits": 974,
+          "mean": 0.7886639676113361,
+          "difference": -0.011336032388663986
+        },
+        "first_half": {
+          "n": 618,
+          "hits": 486,
+          "mean": 0.7864077669902912,
+          "difference": -0.013592233009708798
+        },
+        "second_half": {
+          "n": 617,
+          "hits": 488,
+          "mean": 0.7909238249594813,
+          "difference": -0.00907617504051872
+        },
+        "recent100": {
+          "n": 100,
+          "hits": 73,
+          "mean": 0.73,
+          "difference": -0.07000000000000006
+        },
+        "recent50": {
+          "n": 50,
+          "hits": 31,
+          "mean": 0.62,
+          "difference": -0.18000000000000005
+        },
+        "recent20": {
+          "n": 20,
+          "hits": 10,
+          "mean": 0.5,
+          "difference": -0.30000000000000004
+        }
+      },
+      "monte_carlo_one_sided_p": 0.6981430185698143,
+      "holm_adjusted_p": 1.0,
+      "plain_korean": "우연 가능성 약 69.98% — 무작위 실험 100번 중 약 70.0번 이 정도 이상으로 좋아 보일 수준"
+    },
+    "4": {
+      "valid_targets": 1234,
+      "target_range": [
+        5,
+        1238
+      ],
+      "candidate_exposures": 7404,
+      "total_hits": 948,
+      "observed_mean": 0.7682333873581848,
+      "expected_mean": 0.8,
+      "mean_difference": -0.03176661264181524,
+      "observed_rate": 0.1280388978930308,
+      "expected_rate": 0.13333333333333333,
+      "rate_difference": -0.005294435440302531,
+      "z": -1.4234803675074368,
+      "analytical_one_sided_p": 0.925829425114723,
+      "stability": {
+        "full": {
+          "n": 1234,
+          "hits": 948,
+          "mean": 0.7682333873581848,
+          "difference": -0.03176661264181524
+        },
+        "first_half": {
+          "n": 617,
+          "hits": 465,
+          "mean": 0.7536466774716369,
+          "difference": -0.046353322528363106
+        },
+        "second_half": {
+          "n": 617,
+          "hits": 483,
+          "mean": 0.7828200972447326,
+          "difference": -0.017179902755267484
+        },
+        "recent100": {
+          "n": 100,
+          "hits": 72,
+          "mean": 0.72,
+          "difference": -0.08000000000000007
+        },
+        "recent50": {
+          "n": 50,
+          "hits": 34,
+          "mean": 0.68,
+          "difference": -0.12
+        },
+        "recent20": {
+          "n": 20,
+          "hits": 17,
+          "mean": 0.85,
+          "difference": 0.04999999999999993
+        }
+      },
+      "monte_carlo_one_sided_p": 0.9264307356926431,
+      "holm_adjusted_p": 1.0,
+      "plain_korean": "우연 가능성 약 92.58% — 무작위 실험 100번 중 약 92.6번 이 정도 이상으로 좋아 보일 수준"
+    },
+    "5": {
+      "valid_targets": 1233,
+      "target_range": [
+        6,
+        1238
+      ],
+      "candidate_exposures": 7398,
+      "total_hits": 994,
+      "observed_mean": 0.8061638280616383,
+      "expected_mean": 0.8,
+      "mean_difference": 0.006163828061638288,
+      "observed_rate": 0.13436063801027304,
+      "expected_rate": 0.13333333333333333,
+      "rate_difference": 0.0010273046769397054,
+      "z": 0.2760927792864289,
+      "analytical_one_sided_p": 0.39700551434981507,
+      "stability": {
+        "full": {
+          "n": 1233,
+          "hits": 994,
+          "mean": 0.8061638280616383,
+          "difference": 0.006163828061638288
+        },
+        "first_half": {
+          "n": 617,
+          "hits": 498,
+          "mean": 0.807131280388979,
+          "difference": 0.007131280388978922
+        },
+        "second_half": {
+          "n": 616,
+          "hits": 496,
+          "mean": 0.8051948051948052,
+          "difference": 0.0051948051948051965
+        },
+        "recent100": {
+          "n": 100,
+          "hits": 84,
+          "mean": 0.84,
+          "difference": 0.039999999999999925
+        },
+        "recent50": {
+          "n": 50,
+          "hits": 41,
+          "mean": 0.82,
+          "difference": 0.019999999999999907
+        },
+        "recent20": {
+          "n": 20,
+          "hits": 16,
+          "mean": 0.8,
+          "difference": 0.0
+        }
+      },
+      "monte_carlo_one_sided_p": 0.3967060329396706,
+      "holm_adjusted_p": 1.0,
+      "plain_korean": "우연 가능성 약 39.70% — 무작위 실험 100번 중 약 39.7번 이 정도 이상으로 좋아 보일 수준"
+    },
+    "6": {
+      "valid_targets": 1232,
+      "target_range": [
+        7,
+        1238
+      ],
+      "candidate_exposures": 7392,
+      "total_hits": 955,
+      "observed_mean": 0.7751623376623377,
+      "expected_mean": 0.8,
+      "mean_difference": -0.02483766233766238,
+      "observed_rate": 0.12919372294372294,
+      "expected_rate": 0.13333333333333333,
+      "rate_difference": -0.0041396103896103875,
+      "z": -1.1120877763540733,
+      "analytical_one_sided_p": 0.8710243876908267,
+      "stability": {
+        "full": {
+          "n": 1232,
+          "hits": 955,
+          "mean": 0.7751623376623377,
+          "difference": -0.02483766233766238
+        },
+        "first_half": {
+          "n": 616,
+          "hits": 483,
+          "mean": 0.7840909090909091,
+          "difference": -0.015909090909090984
+        },
+        "second_half": {
+          "n": 616,
+          "hits": 472,
+          "mean": 0.7662337662337663,
+          "difference": -0.03376623376623378
+        },
+        "recent100": {
+          "n": 100,
+          "hits": 68,
+          "mean": 0.68,
+          "difference": -0.12
+        },
+        "recent50": {
+          "n": 50,
+          "hits": 34,
+          "mean": 0.68,
+          "difference": -0.12
+        },
+        "recent20": {
+          "n": 20,
+          "hits": 7,
+          "mean": 0.35,
+          "difference": -0.45000000000000007
+        }
+      },
+      "monte_carlo_one_sided_p": 0.8691313086869131,
+      "holm_adjusted_p": 1.0,
+      "plain_korean": "우연 가능성 약 87.10% — 무작위 실험 100번 중 약 87.1번 이 정도 이상으로 좋아 보일 수준"
+    }
+  },
+  "monte_carlo": {
+    "histories": 100000,
+    "seed": 17930843828938595986,
+    "observed_max_z": 0.2760927792864289,
+    "family_ge": 86216,
+    "family_maxT_one_sided_p": 0.8621613783862161,
+    "per_lag": {
+      "3": {
+        "ge": 69814,
+        "one_sided_p": 0.6981430185698143,
+        "sim_mean_total": 987.87598,
+        "sim_sd_total": 27.497685339670365
+      },
+      "4": {
+        "ge": 92643,
+        "one_sided_p": 0.9264307356926431,
+        "sim_mean_total": 987.19035,
+        "sim_sd_total": 27.558619284672908
+      },
+      "5": {
+        "ge": 39670,
+        "one_sided_p": 0.3967060329396706,
+        "sim_mean_total": 986.36828,
+        "sim_sd_total": 27.60922725904411
+      },
+      "6": {
+        "ge": 86913,
+        "one_sided_p": 0.8691313086869131,
+        "sim_mean_total": 985.54186,
+        "sim_sd_total": 27.688376040140486
+      }
+    }
+  },
+  "holm_adjusted_p": {
+    "5": 1.0,
+    "3": 1.0,
+    "6": 1.0,
+    "4": 1.0
+  },
+  "best_lag": 5,
+  "final_judgment": "FAILED_NOT_INTERESTING",
+  "future_leakage": 0,
+  "EXP005_FINAL": "FAILED",
+  "EXP017": "NOT_CREATED",
+  "official_protected_changes": 0
+}

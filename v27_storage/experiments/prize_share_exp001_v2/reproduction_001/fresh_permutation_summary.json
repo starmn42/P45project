@@ -1,0 +1,12 @@
+{
+  "seed": 2026082102,
+  "permutations": 100000,
+  "exceed_count": 2042,
+  "fresh_p": 0.02042979570204298,
+  "original_reference_p": 0.0199998,
+  "absolute_delta": 0.0004299957020429798,
+  "consistency_limit": 0.005,
+  "positive_holdout_beta": true,
+  "p_le_0_05": true,
+  "consistency_gate": "PASS"
+}

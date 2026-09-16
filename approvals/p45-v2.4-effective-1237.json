@@ -1,0 +1,15 @@
+{
+  "rule_version": "P45 Research Engine v2.4 Integrated Compact",
+  "approval_status": "SUPERSEDED",
+  "superseded_by": "P45 Research Engine v2.5 Triple-Set Priority",
+  "superseded_at": "2026-08-06",
+  "approved_by": "형님",
+  "approved_at": "2026-08-05",
+  "effective_round": 1237,
+  "previous_round": 1236,
+  "previous_round_treatment": "EXPERIMENT_EXCEPTION",
+  "previous_round_ledger_class": "LIVE_TEST",
+  "include_previous_round_in_live_official": false,
+  "activation_condition": "v2.4 implementation and mandatory audits must be complete before round 1237 analysis is locked",
+  "approval_reason": "Apply the completed v2.4 rules beginning with the next unanalyzed round while preserving the locked v2.3 round-1236 record."
+}

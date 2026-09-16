@@ -1,0 +1,19 @@
+{
+  "source_range": "43..1235",
+  "first_valid_target": 369,
+  "last_valid_target": 1235,
+  "valid_rounds": 867,
+  "output_available_rounds": 0,
+  "research_no_pick_rounds": 867,
+  "no_pick_rate": 1.0,
+  "stage_counts": {
+    "NUMBER_STAGE_STOP": 104,
+    "TRIO_STAGE_STOP": 492,
+    "PAIR_STAGE_STOP": 13,
+    "CORE_STAGE_STOP": 258
+  },
+  "future_leakage": 0,
+  "records_hash": "ba77b407b8f7991ff1da511976b50994e297d83576d485cd7e417e965eee0b21",
+  "reproduction": "PASS"
+}
+

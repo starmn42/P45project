@@ -1,0 +1,12 @@
+{
+  "analysis_status": "COMPLETE",
+  "analysis_type": "SEQUENTIAL_RETURN_BACKTEST",
+  "backtest_report_sha256": "528f5b791d740b9bcab3c8f6509096a46922d94b5f705c1b1006dc46d3ee0bb1",
+  "created_at": "2026-08-04T20:27:19+09:00",
+  "engine_version": "P45 Research Engine v2.3 Integrated Compact",
+  "event_ledger_sha256": "ce443aef0dc671b09099e1735bb643202c30597e424eb008ed8f660aed3ec372",
+  "record_type": "BACKTEST",
+  "source_effective_data_sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "source_structure": "E:\\P45 프로젝트\\analysis\\structure-1236",
+  "target_round": 1236
+}

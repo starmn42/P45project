@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="ko" class="dark">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#090d12">
+  <title>P45 운칠기삼</title><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=45">
+</head>
+<body>
+  <aside class="drawer">
+    <div class="drawer-title"><span>P45</span><h1>운칠기삼</h1><small>TRIO ORBIT</small></div>
+    <nav aria-label="메인 메뉴">
+      <a href="#status" data-tab="status" class="active"><span>◆</span>홈</a>
+      <a href="#prospective" data-tab="prospective"><span>▤</span>미래검증 기록</a>
+      <a href="#system" data-tab="system"><span>⌬</span>안전 점검</a>
+    </nav>
+    <div class="engine-online"><i></i><b>OFFICIAL ENGINE FROZEN</b><small>Prospective 전용 운용</small></div>
+  </aside>
+  <header class="mobile-header"><strong>P45 TRIO ORBIT</strong><span id="mobileTarget">—</span><b><i>WEB V1</i></b></header>
+  <main>
+    <div class="desktop-top"><button class="sync-button" data-refresh>↻ 새로고침</button></div>
+
+    <section id="status" class="v1-page active">
+      <div class="home-actions"><button id="showNextDispatch" class="dispatch-button" type="button">다음회차 출격 보기</button><button id="showLastResult" class="result-button" type="button">지난회차 결과 보기</button></div>
+      <section class="home-dispatch">
+        <div class="home-block-title"><h2 id="nextPickTitle">다음 회차 추천 픽</h2><p>데이터가 제안하는 다음 회차의 새로운 가능성</p></div>
+        <div class="home-orbit-grid"><article class="lab-card home-orbit"><span>순수 고정 · 비교 기준</span><div id="homeFixedCards" class="home-set-list"></div></article><article class="lab-card home-orbit linked"><span>직전연동 V1 · 실전 우선</span><div id="homeLinkedCards" class="home-set-list"></div></article></div>
+      </section>
+      <div class="home-block-title review-title"><h2>지난 회차 검수</h2><p id="reviewSubtitle">지난 회차 결과를 기준으로 추천픽 적중을 확인합니다.</p></div>
+      <div id="resultOverview" class="result-layout">
+        <article class="lab-card pick-round"><span class="eyebrow">픽 기준 회차</span><strong id="resultRound">—</strong><small>결과 반영 완료</small></article>
+        <article class="lab-card draw-result"><span class="eyebrow" id="drawResultTitle">지난회차 결과 요약</span><div id="winningNumbers" class="winning-numbers"></div><p>보너스 <b id="bonusNumber">—</b> · <span id="drawDate">—</span></p><div class="hit-summary"><span class="eyebrow">추천픽 결과</span><div><b>순수 고정</b><span>주적중(3/3) <strong id="fixedPrimary">0</strong> · 보조적중(2/3) <strong id="fixedSupport">0</strong></span></div><div><b>직전연동 V1</b><span>주적중(3/3) <strong id="linkedPrimary">0</strong> · 보조적중(2/3) <strong id="linkedSupport">0</strong></span></div></div></article>
+        <article class="lab-card set-results"><span class="eyebrow">세트별 적중 결과</span><div id="setResultRows"></div></article>
+      </div>
+      <div class="home-aux-hidden" aria-hidden="true"><article class="hero v1-hero compact"><div><span id="targetLabel">현재 미래검증 회차</span><h2><b id="targetRound">—</b>회</h2><small id="completedRecord">—</small></div><div><b id="canonicalLatest">—</b><b id="resultAvailability">—</b><b id="sealStatus">—</b><b id="autoUpdateStatus">—</b></div></article>
+      <div class="status-grid operation-grid">
+        <article class="lab-card status"><span>공식 엔진</span><strong id="officialEngine">—</strong></article>
+        <article class="lab-card status"><span>미출력 문제</span><strong id="noPick">—</strong></article>
+        <article class="lab-card status"><span>신규 신호 탐색</span><strong id="discovery">—</strong></article>
+        <article class="lab-card status"><span>최신 번호 연구 · EXP-020</span><strong id="latestExp">—</strong></article>
+      </div>
+      <div class="orbit-summary"><article class="lab-card"><span class="eyebrow">순수 고정</span><h3>비교 기준 궤도</h3><b class="badge">운용 중 · 비교 기준</b></article><article class="lab-card"><span class="eyebrow">직전연동 V1</span><h3>실전 우선 궤도</h3><b class="badge accent">운용 중 · 실전 우선</b></article></div>
+      <p class="signal-line">검증된 독립 신호: <b id="verifiedSignal">—</b></p>
+      <section class="next-action"><div id="primaryAction">연결 중</div><div class="prospective-actions"><button id="previewNext" type="button" hidden>다음 출격 미리보기</button><button id="sealNext" type="button" hidden>이 출격을 봉인</button></div><article id="previewPanel" class="preview-panel" hidden><b id="previewTarget">—</b><b id="previewGuard">—</b><strong id="previewFixed">—</strong><strong id="previewLinked">—</strong><strong id="previewAnchors">—</strong><dd id="previewSource">—</dd><dd id="previewProtocol">—</dd><dd id="previewSha">—</dd></article></section></div>
+    </section>
+
+    <section id="dispatch" class="v1-page">
+      <button class="breadcrumb" data-home type="button">홈 <span>›</span> <b id="dispatchCrumb">출격 상세</b></button>
+      <div class="section-title"><div><span id="dispatchEyebrow" class="eyebrow">봉인된 신규회차</span><h2 id="dispatchTitle">출격 상세</h2></div><b id="dispatchSealBadge" class="badge">—</b></div>
+      <h3 class="orbit-heading">순수 고정 · 비교 기준</h3><div id="fixedCards" class="trio-grid"></div>
+      <h3 class="orbit-heading">직전연동 V1 · 실전 우선</h3><div id="linkedCards" class="trio-grid"></div>
+      <article class="lab-card divergence"><div><span>공통 세트</span><b id="commonCount">—</b><small id="commonTrios">—</small></div><div><span>순수 고정만</span><small id="fixedOnly">—</small></div><div><span>직전연동만</span><small id="linkedOnly">—</small></div><div><span>초기화 발생</span><b id="reset">—</b></div></article>
+      <article class="lab-card seal-detail"><h3>봉인 정보</h3><dl><div><dt>봉인 시각</dt><dd id="sealTime">—</dd></div><div><dt>원본 데이터 SHA</dt><dd id="sealDataSha">—</dd></div><div><dt>봉인 SHA</dt><dd id="sealedSha">—</dd></div><div><dt>미래 데이터 누수</dt><dd id="leakage">—</dd></div><div><dt>결과 상태</dt><dd id="dispatchResult">—</dd></div></dl></article>
+    </section>
+
+    <section id="result-detail" class="v1-page">
+      <button class="breadcrumb" data-home type="button">홈 <span>›</span> <b id="resultCrumb">결과 상세</b></button>
+      <div class="section-title"><div><span class="eyebrow">정산 완료 · 지난 회차</span><h2 id="resultDetailTitle">결과 상세</h2></div><b class="badge accent">결과 반영 완료</b></div>
+      <div class="previous-detail-grid">
+        <article class="lab-card draw-result"><span class="eyebrow">공식 당첨번호</span><div id="detailWinningNumbers" class="winning-numbers"></div><p>보너스 <b id="detailBonusNumber">—</b> · <span id="detailDrawDate">—</span></p><div class="hit-summary"><span class="eyebrow">추천픽 결과</span><div><b>순수 고정</b><span>주적중(3/3) <strong id="detailFixedPrimary">0</strong> · 보조적중(2/3) <strong id="detailFixedSupport">0</strong></span></div><div><b>직전연동 V1</b><span>주적중(3/3) <strong id="detailLinkedPrimary">0</strong> · 보조적중(2/3) <strong id="detailLinkedSupport">0</strong></span></div></div></article>
+        <article class="lab-card set-results detail-set-results"><span class="eyebrow">세트별 적중 결과</span><div id="detailSetResultRows"></div></article>
+      </div>
+    </section>
+
+    <section id="prospective" class="v1-page">
+      <div class="section-title"><div><span class="eyebrow">미래검증 전용</span><h2>미래검증 기록</h2></div><b class="warning">과거 백테스트와 별도 기록</b></div>
+      <div class="status-grid stats-grid"><article class="lab-card status"><span>완료 회차</span><strong id="completedRounds">0</strong></article><article class="lab-card status"><span>순수 고정 3개 적중</span><strong id="pFixed3">0</strong></article><article class="lab-card status"><span>직전연동 3개 적중</span><strong id="pLinked3">0</strong></article><article class="lab-card status"><span>결과 대기 회차</span><strong id="pendingCount">0</strong></article></div>
+      <div class="table-wrap"><table><thead><tr><th>회차</th><th>순수 고정 A/B/C</th><th>직전연동 A/B/C</th><th>공통</th><th>초기화</th><th>상태</th><th>고정/연동 3개 적중</th><th>고정/연동 2개 적중</th><th>봉인</th></tr></thead><tbody id="prospectiveRows"></tbody></table></div>
+      <article class="lab-card historical-ref"><span>과거 백테스트 참고</span><b>순수 고정 3개 적중 5 / 1237</b><b>직전연동 3개 적중 7 / 1237</b><strong>최종 판정 · 통계적 지지 없음</strong></article>
+    </section>
+
+    <section id="system" class="v1-page">
+      <div class="section-title"><div><span class="eyebrow">안전 점검</span><h2>보호 상태</h2></div><b id="allChecks" class="badge">—</b></div>
+      <div id="integrityGrid" class="integrity-grid"></div>
+      <article class="lab-card paths"><h3>미래검증 쓰기 허용 영역</h3><p><b>상태 파일</b><code id="statePath">—</code></p><p><b>기록 파일</b><code id="logPath">—</code></p><p><b>봉인 파일</b><code id="sealedPath">—</code></p></article>
+      <p id="writeStatus" class="action-banner">—</p>
+    </section>
+    <p id="updated" class="updated" aria-live="polite"></p><footer><b>P45 TRIO ORBIT WEB V1</b><span>공식/과거 자료 읽기 전용 · 미래검증 영역만 기록 허용</span><strong id="connection">연결 중</strong></footer>
+  </main>
+  <nav class="mobile-v1-nav"><a href="#status" data-tab="status" class="active">홈</a><a href="#prospective" data-tab="prospective">미래검증 기록</a><a href="#system" data-tab="system">안전 점검</a></nav>
+  <script src="/app.js?v=45" defer></script>
+</body></html>

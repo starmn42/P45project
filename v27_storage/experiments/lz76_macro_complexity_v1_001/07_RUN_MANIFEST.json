@@ -1,0 +1,50 @@
+{
+  "research_id": "P45_LZ76_MACRO_COMPLEXITY_V1",
+  "run_date": "2026-08-29",
+  "protocol_sha256": "ca19e210753725ad16f7b692d4be1e9f4a5042ccc1171508141c4a509c1b0b81",
+  "input": {
+    "path": "E:\\P45 프로젝트\\v27_storage\\experiments\\exp020_lagged_winner_count_regime_signal_v1_001\\P45_EXP_020_OFFICIAL_FULL_HISTORY_001.csv",
+    "size_bytes": 28878,
+    "sha256": "04394615583466fe52b8c87939ec5c60a8903f119d04b8103ad72e7f356eb4ea",
+    "rows": 1238,
+    "columns_used": ["draw", "main1", "main2", "main3", "main4", "main5", "main6"]
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "numpy": "2.3.5",
+    "rng": "numpy.random.Generator(PCG64)",
+    "threshold_seed": 2026082901,
+    "null_seed": 2026082902,
+    "workers": 16,
+    "python_orchestrator_sha256": "d9989b975474c7c500700cbbec7e34dcb4f1a876c09e50daf31eafa42f795c27",
+    "python_reference_sha256": "03cf0ab639ed9d8afffe672f83dfe8f3128a5e9f127a0dfaa67a2c1195c7c19d",
+    "csharp_source_sha256": "26e004f949846c28170055a5fb2fd72f1c416cbc2c51ef4880a5e647a6d00c97",
+    "csharp_assembly_sha256": "8f14b749e7e40654b15c9d5b27ce4deb941301f344f4bc9dd34c31b40bf0f8db"
+  },
+  "simulation": {
+    "threshold_virtual_windows": 100000,
+    "threshold_order_statistic_1_based": 20000,
+    "null_histories": 10000,
+    "rounds_per_history": 1238,
+    "windows_per_history": 1139,
+    "null_not_estimable": 0
+  },
+  "primary_calculation_sha256": "60437581cfc71aa7fe34d931425b9a24f799c3e7df016ea42b9fd7598a38cee4",
+  "reproduction_calculation_sha256": "2b54d01981fb3c450a5be8a43caea3e558f1cee38c730b8e5f80db5ba569428a",
+  "reproducibility": {
+    "status": "PASS",
+    "canonical_numeric_result_match": true
+  },
+  "access_and_change": {
+    "future_data_used": 0,
+    "bonus_used": false,
+    "official_changed": false,
+    "official_db_changed": false,
+    "registry_changed": false,
+    "existing_exp_result_changed": false,
+    "fixed_linked_changed": false,
+    "kts45_changed": false,
+    "sealed_prospective_changed": false,
+    "master_append_applied": false
+  }
+}

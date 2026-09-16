@@ -1,0 +1,39 @@
+{
+  "updates": {
+    "current_stage": "NEW_DRAW_OPERATION_AUTOMATION_V1",
+    "current_status": "P45_NEW_DRAW_UPDATE_V1_READY",
+    "last_completed_stage": "NEW_DRAW_OPERATION_AUTOMATION_V1",
+    "next_stage": "WEB_NEW_DRAW_OPERATION",
+    "next_action": "다음 공식 추첨 발표 후 P45 회차 업데이트.cmd 실행; 평상시 웹 새로고침은 화면 데이터만 다시 읽음",
+    "draw_update": {
+      "version": "P45-NEW-DRAW-UPDATE-1.0",
+      "status": "P45_NEW_DRAW_UPDATE_V1_READY",
+      "latest_completed_draw": 1236,
+      "current_analysis_draw": 1237,
+      "official_source": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
+      "official_main_numbers": [12, 18, 21, 29, 34, 38],
+      "official_bonus_number": 10,
+      "valid_for_core": 0,
+      "official_selection": [],
+      "live_db": "E:\\P45 프로젝트\\v27_storage\\live\\p45_new_draw_update_v1.sqlite3",
+      "live_csv": "E:\\P45 프로젝트\\v27_storage\\live\\p45_live_draws.csv",
+      "web_fields": ["latest_completed_draw", "current_analysis_draw", "draw_update_status", "last_update_time", "official_selection", "diagnostic_top3"]
+    }
+  },
+  "decision": {
+    "decision_id": "DECISION-20260812-055",
+    "project_version": "P45 v2.7.4",
+    "stage": "NEW DRAW OPERATION AUTOMATION V1",
+    "category": "IMPLEMENTATION/OPERATIONS/DRAW_UPDATE/FROZEN_ENGINE",
+    "decision": "동행복권 공식 새 회차를 자동 확인·검증하고 별도 운영 저장소에서 직전 예측 복기와 다음 회차 사전 상태 생성을 수행하는 P45_NEW_DRAW_UPDATE_V1을 운영 적용했다.",
+    "reason": "사용자 수동 번호 입력 없이 공식 결과를 안전하게 반영하되 동결 연구자료와 규칙은 수정하지 않고 실패 시 기존 정상 상태를 보존하기 위함이다.",
+    "evidence": "official draw 1236 main 12,18,21,29,34,38 bonus 10; validation PASS; duplicate rerun DRAW_ALREADY_CURRENT; evaluation rows 10; analysis round 1237; valid_for_core 0; API fields PASS; protected canonical manifest unchanged",
+    "affected_files": "src/p45_v27/draw_update.py; src/p45_v27/web_adapter.py; tests_v27/test_draw_update.py; P45 회차 업데이트.cmd; v27_storage/live; state files; portable bundle",
+    "affected_schema": "P45 live operational schema v1 only; research schema 273/2743 unchanged",
+    "previous_rule": "P45_LAN_MOBILE_PREVIEW_READY",
+    "new_rule": "P45_NEW_DRAW_UPDATE_V1_READY",
+    "allowed_next_action": "next official draw update or web display verification",
+    "forbidden_actions": "research rule mutation; threshold relaxation; signature/context change; historical walkforward rerun; diagnostic promotion; forced CORE; fake draw",
+    "approval_source": "사용자 명시 승인"
+  }
+}

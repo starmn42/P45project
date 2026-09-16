@@ -1,0 +1,18 @@
+{
+  "seal_version": "P45-PREDRAW-CANARY-SEAL-1",
+  "sealed_at": "2026-08-24T18:57:11.390828+09:00",
+  "target_round": 1238,
+  "max_source_round": 1237,
+  "plan_sha256": "fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9",
+  "artifact_file_sha256": "30c70cecd35e2df0835cf4b197462f10c7f3e75f103c8196b8c67993d53e504b",
+  "artifact_canonical_sha256": "0c244318d13990bd33a34b24482766a110d62a472e65771dcf0a89dc426f58a3",
+  "deterministic_digest_1": "771eba5da4736b9745c866eb018f143010e01b4ff9a0d8b7ea40a57b5f65cf55",
+  "deterministic_digest_2": "771eba5da4736b9745c866eb018f143010e01b4ff9a0d8b7ea40a57b5f65cf55",
+  "input_hashes": {
+    "canary_input_snapshot": "ad69ec8d28b4e5cdb40d468ad758c5f23acaeb6225f525c5201c8027952701e6",
+    "base_csv": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+    "live_db": "1c2d55b7a6e0888245281b3f3a9c90e3a86e635b48bea74596344ac21bacd453",
+    "pair_db": "e2f7b6291bc3d0ecea6a170eda11bc47f04aa65cb9686d556ebd6b1b12f61740",
+    "trio_db": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5"
+  }
+}

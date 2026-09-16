@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-24T13:47:47+09:00",
+  "transaction_id": "f2a79bb0-fd94-433d-9497-cfce17275174",
+  "decision_id": "DECISION-20260824-093",
+  "state_version": "1.0.86",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_001_COMPLETE",
+  "current_status": "ARCHITECTURE_REPAIR_SPECIFIABLE",
+  "state_hash": "c21d4e8c57bc20381ee948a0c92f5fbacf419403e9580fae7ef28010c23eb219",
+  "current_state_md_sha256": "7e83e5a7beaf6241e797c2fe41cc0a8f453754eb11a56467392bdb56cf4a2d31",
+  "current_state_json_sha256": "b468f6a6355fe1054b3ba8ee4c570e7fbbc85b7d276305bdf0acf86a43dadd91",
+  "handoff_sha256": "7b070f13064afb1389bfd2807ef0f153e86839eb93ddc7a0a9545d78dc80093b",
+  "decision_log_sha256": "5a33a629f0b91638a98aa1df9c58045b2ac82c1f67328991b3227ebad182deec",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

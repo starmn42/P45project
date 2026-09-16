@@ -1,0 +1,17 @@
+{
+  "logical_id": "EXP-CROWD-TOPO-002-V1",
+  "registry_id": "EXP-CROWD-20260823-006-V1",
+  "protocol_version": "EXP-CROWD-TOPO-002-PROTOCOL-1.0",
+  "protocol_path": "00_P45_STATE/experiment_lab/EXP-CROWD-TOPO-002/EXP_CROWD_TOPO_002_V1_LOCKED_PROTOCOL.md",
+  "protocol_sha256": "7d32357ff787a50e7ef67ecbcf8e38780b2886b0bf6d4ffedb1871cf35edd8c3",
+  "lock_status": "LOCKED_BEFORE_OUTCOME_ANALYSIS",
+  "outcome_analyzed_at_lock": false,
+  "data_range": "1~1237",
+  "snapshot_sha256": "1a03abc4babec2cd64eda8c426429747352e412bc1f63e5513f7794aa980ef32",
+  "primary_statistic": "MEAN_PEARSON_CONTRIBUTION_MINUS_1",
+  "null_probability": "1/39",
+  "mc_repetitions": 200000,
+  "mc_seed": 2026082303,
+  "novelty_status": "NOVELTY_NOT_CONFIRMED",
+  "official_effect": "NONE"
+}

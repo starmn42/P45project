@@ -1,0 +1,14 @@
+{
+  "alpha": 2.3854957135043726,
+  "beta": 5.04582203071465,
+  "prior_mean": 0.3210057483223752,
+  "prior_concentration": 7.431317744219022,
+  "iterations": 89,
+  "converged": true,
+  "near_boundary": false,
+  "negative_log_likelihood_hessian_eigenvalues": [
+    6.970438320124913,
+    1299.9624432416815
+  ],
+  "hessian_positive_definite": true
+}

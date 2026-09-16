@@ -1,0 +1,19 @@
+{
+  "logical_id": "EXP-CROWD-RETAIL-PROSPECTIVE-001-V1",
+  "registry_id": "EXP-CROWD-20260824-009-V1",
+  "evidence_class": "PROSPECTIVE_CONFIRMATION",
+  "lock_timestamp": "2026-08-24T10:53:59+09:00",
+  "latest_published_at_lock": 1238,
+  "start_round": 1239,
+  "start_result_published_at_lock": false,
+  "historical_base_range": "262~1237",
+  "historical_data_sha256": "854ca7256219eadf574ac32ad256b84e9a5bfa42ceece09f0a09dd1eed79cd50",
+  "round_1238_used_as_prospective": false,
+  "known_regime_marker": 1238,
+  "protocol_sha256": "b9effad1c8d06c8d5227ce65bbfe904614d08c9d3ac4c9ae92f1ff90f50eaaa5",
+  "collector_sha256": "e02691ce861678353618018a0b3cc29fd6b72888f29ff06b4a396cc8029d5c55",
+  "ledger_rows_at_lock": 0,
+  "signal_peeking": 0,
+  "signal_calculation_code_paths": 0,
+  "official_engine": "FROZEN"
+}

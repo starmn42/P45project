@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 700" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="mist" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8e9d8d" stop-opacity="0"/>
+      <stop offset="0.55" stop-color="#8e9d8d" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#c9ccb2" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+  <rect width="340" height="700" fill="transparent"/>
+  <circle cx="95" cy="128" r="54" fill="#dfcc92" opacity="0.18"/>
+  <path d="M0 474 C59 426 102 435 152 384 C190 346 224 353 252 394 C282 437 305 427 340 381 V700 H0Z" fill="#6d7d6d" opacity="0.2"/>
+  <path d="M0 534 C74 482 127 492 177 444 C222 401 277 421 340 395 V700 H0Z" fill="#859381" opacity="0.26"/>
+  <path d="M0 596 C74 561 122 570 176 531 C236 489 285 514 340 498 V700 H0Z" fill="url(#mist)"/>
+  <g transform="translate(46 498)" fill="#c7c9b1" opacity="0.52">
+    <path d="M0 28 H116 L96 16 H20 Z"/>
+    <path d="M17 28 H99 V76 H17 Z"/>
+    <path d="M8 78 H108 V83 H8 Z"/>
+    <path d="M33 28 V78 H28 V28 Z M88 28V78H83V28Z" fill="#162421"/>
+    <path d="M-7 26 L58 0 L123 26 L97 20 L58 9 L19 20 Z"/>
+  </g>
+  <g fill="#a6af95" opacity="0.42">
+    <path d="M236 575 C224 513 238 445 262 405 C248 471 257 524 274 591Z"/>
+    <path d="M244 459 C206 453 184 431 173 409 C199 425 223 423 255 408 C238 431 231 448 244 459Z"/>
+    <path d="M262 434 C286 407 310 407 327 414 C301 419 283 436 270 456Z"/>
+  </g>
+  <path d="M40 565 C55 545 77 534 104 528" stroke="#cec8ae" stroke-width="2" opacity="0.4" fill="none"/>
+</svg>

@@ -1,0 +1,94 @@
+{
+  "backup_dir": "E:\\P45 프로젝트\\v27_storage\\backups\\schema27\\20260806T183723+0900",
+  "hashes": {
+    "source_core": "210384fed7e4bdfc7acf0021b3b418789d2c4a413423be44b7664b2c5d92dbe0",
+    "backup_core": "210384fed7e4bdfc7acf0021b3b418789d2c4a413423be44b7664b2c5d92dbe0",
+    "source_audit": "bcb596b1c2b6c38933169d5bf9c73fc277f2b0d425f07a7ba00cfa91de8be883",
+    "backup_audit": "bcb596b1c2b6c38933169d5bf9c73fc277f2b0d425f07a7ba00cfa91de8be883"
+  },
+  "before": {
+    "core": {
+      "user_version": 27,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "approval_record",
+        "core_locked_result",
+        "core_run",
+        "engine_version_record",
+        "number_ledger",
+        "pair_ledger",
+        "sealed_forward_ledger",
+        "trio_ledger",
+        "unit_definition",
+        "unit_group",
+        "unit_number_metric",
+        "unit_relation",
+        "unit_round_metric"
+      ],
+      "total_rows": 0,
+      "trigger_count": 24
+    },
+    "audit": {
+      "user_version": 27,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "audit_cache",
+        "audit_chunk",
+        "audit_run"
+      ],
+      "total_rows": 0,
+      "trigger_count": 6
+    }
+  },
+  "schema271": {
+    "core": {
+      "user_version": 271,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "approval_record",
+        "core_locked_result",
+        "core_run",
+        "engine_version_record",
+        "number_ledger",
+        "pair_ledger",
+        "sealed_forward_ledger",
+        "trio_ledger",
+        "unit_definition",
+        "unit_group",
+        "unit_number_metric",
+        "unit_relation",
+        "unit_round_metric",
+        "unit_structure_ledger"
+      ],
+      "total_rows": 0,
+      "trigger_count": 24
+    },
+    "audit": {
+      "user_version": 271,
+      "integrity": "ok",
+      "foreign_key_violations": 0,
+      "tables": [
+        "audit_cache",
+        "audit_chunk",
+        "audit_run"
+      ],
+      "total_rows": 0,
+      "trigger_count": 6
+    }
+  },
+  "pointer": {
+    "schema_version": 271,
+    "core_db": "p45_v271_core.sqlite3",
+    "audit_db": "p45_v271_audit.sqlite3",
+    "previous_core_db": "p45_v27_core.sqlite3",
+    "previous_audit_db": "p45_v27_audit.sqlite3",
+    "activated_at": "20260806T183723+0900"
+  },
+  "new_hashes": {
+    "core": "4f5de571dd9850aca11c49939ff916f94af8998f10615623fd26062f1259aade",
+    "audit": "f3a2dc8583bde174b3cf79addc55449da1b531db10b97fc7ad98d730c3b874dd"
+  }
+}

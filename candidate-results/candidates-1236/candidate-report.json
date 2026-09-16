@@ -1,0 +1,73 @@
+{
+  "annihilated_9_groups": [
+    "28~36"
+  ],
+  "arbitrary_threshold_created": false,
+  "current_occupancy_vector": [
+    2,
+    2,
+    1,
+    0,
+    2
+  ],
+  "final_six_selected": false,
+  "non_return_test_numbers": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45
+  ],
+  "official_candidate_reason": "unresolved opposite-risk and structure-collapse gates",
+  "official_candidate_result": "HOLD",
+  "official_pass_candidates": [],
+  "ranking_performed": false,
+  "return_candidate_numbers": [
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36
+  ],
+  "status_counts": {
+    "FAIL": 24,
+    "HOLD": 21
+  },
+  "target_round": 1236,
+  "valid_test_candidates": []
+}

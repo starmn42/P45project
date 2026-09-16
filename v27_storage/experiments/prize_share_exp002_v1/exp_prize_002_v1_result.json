@@ -1,0 +1,46 @@
+{
+  "status": "SUPPORTED_CROSS_OUTCOME",
+  "protocol_sha256": "e27100d726264310d2402cb691f8ca8a53d0d2e5f9ece861cd033156573f5302",
+  "data_range": "1~1237",
+  "data_sha256": "95955ee79afd6b7004f0283776eba9007834d30fd8f0b4b18cce379bf3ec9e4b",
+  "round_1238_plus_used": false,
+  "future_leakage": 0,
+  "train_beta2": 0.039379783189906856,
+  "train_gate": "PASS",
+  "holdout_beta2": 0.04020656383082838,
+  "effect_per_plus1_x2": 1.0410257902595796,
+  "primary_block_permutation_p": 0.028089719102808972,
+  "secondary_global_permutation_p": 0.02867971320286797,
+  "block_exceed": 2808,
+  "global_exceed": 2867,
+  "permutations_each": 100000,
+  "wf_delta_ll_total": 21.997474761201147,
+  "wf_blocks": [
+    {
+      "range": "801~900",
+      "delta_ll": 10.566984493988855,
+      "train_end_round": 800
+    },
+    {
+      "range": "901~1000",
+      "delta_ll": -1.793163354441674,
+      "train_end_round": 900
+    },
+    {
+      "range": "1001~1100",
+      "delta_ll": 0.2987422313137813,
+      "train_end_round": 1000
+    },
+    {
+      "range": "1101~1237",
+      "delta_ll": 12.924911390340185,
+      "train_end_round": 1100
+    }
+  ],
+  "wf_gate": "PASS",
+  "cross_outcome_corroboration": true,
+  "independent_empirical_replication": false,
+  "promotion_candidate": false,
+  "draw_engine_changed": false,
+  "decision_hash": "508409ef3d23fea534fd3ce110e0153c593b247acaeefa2fee59f3ea06a2a583"
+}

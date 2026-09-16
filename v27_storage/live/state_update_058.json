@@ -1,0 +1,25 @@
+{
+  "updates": {
+    "current_stage": "WEB_DATA_CONSISTENCY",
+    "current_status": "P45_WEB_DATA_CONSISTENCY_FIXED",
+    "last_completed_stage": "WEB_DATA_CONSISTENCY",
+    "next_stage": "AUTOMATED_DRAW_OPERATIONS",
+    "next_action": "localhost와 LAN이 하나의 P45 READ ONLY 서버와 동일 /api/status를 사용하도록 유지"
+  },
+  "decision": {
+    "decision_id": "DECISION-20260812-058",
+    "project_version": "P45 v2.7.4",
+    "stage": "WEB DATA CONSISTENCY",
+    "category": "IMPLEMENTATION/WEB/CONSISTENCY/READ_ONLY",
+    "decision": "localhost 전용 구형 서버와 LAN 전용 최신 서버가 동시에 8045를 점유하던 구성을 제거하고, 단일 0.0.0.0 서버가 localhost와 LAN 모두에 동일한 API와 화면을 제공하도록 고정했다.",
+    "reason": "화면 크기나 접속 주소와 무관하게 현재 DIAGNOSTIC RANK 1과 출처·상태 버전이 완전히 같아야 하기 때문이다.",
+    "evidence": "duplicate listeners 2 to 1; localhost/LAN /api/status byte-equivalent; draw 1237; TRIO A 11,26,37; TRIO B 8,19,24; PAIR_SYSTEM_HOLD; static asset version v31; no-store cache; hardcoded/fallback/sample diagnostic numbers 0; protected canonical manifest unchanged",
+    "affected_files": "src/p45_v27/webapp.py; P45 시작.cmd; web/index.html; state files; portable bundle",
+    "affected_schema": "NONE",
+    "previous_rule": "P45_WEB_DIAGNOSTIC_RANK1_READY",
+    "new_rule": "P45_WEB_DATA_CONSISTENCY_FIXED",
+    "allowed_next_action": "continue automatic draw operations and read-only web display",
+    "forbidden_actions": "research engine mutation; DB mutation; diagnostic calculation change; duplicate web server; hardcoded diagnostic numbers; forced official promotion",
+    "approval_source": "사용자 명시 승인"
+  }
+}

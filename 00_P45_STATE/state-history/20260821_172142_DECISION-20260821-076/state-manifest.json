@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-21T17:21:42+09:00",
+  "transaction_id": "a77f6bc5-f254-4409-b2df-06607b40d22d",
+  "decision_id": "DECISION-20260821-076",
+  "state_version": "1.0.69",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "PRIZE_SHARE_LAB_EXP001_V2_LOCKED_RUN_COMPLETE",
+  "current_status": "EXP_PRIZE_001_V2_SUPPORTED_WITHIN_EXPERIMENT",
+  "state_hash": "6c7b02022528513ef75157ae8f401a8be3ac19ee38a8efe69733d5b9b46fd47c",
+  "current_state_md_sha256": "a848b4e5d3d55c3468eac83412f1354229faf6624b93bbf917cfdf9e05a80bc4",
+  "current_state_json_sha256": "73d0c43873a9133e53a57b75f8d6a2bf0a070736e07f5394e4255bcdabff9288",
+  "handoff_sha256": "9ff2f14206a7f63c5a85ad7f9de0b7bf9342502169856e4db4babaea3aee21e1",
+  "decision_log_sha256": "e44546753a5ea747fcf8d8d70e5c7bcb433df6d804d8ad7edf89776b357ad105",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

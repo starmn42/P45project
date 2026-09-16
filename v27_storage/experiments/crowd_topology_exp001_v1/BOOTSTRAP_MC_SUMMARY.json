@@ -1,0 +1,20 @@
+{
+  "primary": {
+    "method": "19-round fixed-block Rademacher wild multiplier bootstrap",
+    "holdout": "801~1237",
+    "blocks": 23,
+    "block_size": 19,
+    "repetitions": 100000,
+    "seed": 2026082301,
+    "theta": -0.006490796148433605,
+    "t_observed": -0.23637472744996546,
+    "one_sided_p": 0.6344536554634453
+  },
+  "secondary": {
+    "method": "fair-uniform multinomial Monte Carlo",
+    "repetitions": 100000,
+    "seed": 2026082302,
+    "one_sided_p": 0.6814531854681454,
+    "judgment_role": "DIAGNOSTIC_ONLY"
+  }
+}

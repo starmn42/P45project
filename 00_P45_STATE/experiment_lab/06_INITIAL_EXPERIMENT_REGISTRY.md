@@ -1,0 +1,376 @@
+# P45 초기 EXPERIMENT Registry
+
+- 등록일: 2026-08-16
+- 등록 상태: `REGISTERED / DESIGNED / FAILED / FAILED_EARLY` 혼합
+- 실행·계산·DB 생성: EXP-001~016 승인 범위에서 별도 증거로 수행
+- official_effect: 전부 `NONE`
+- official_isolation_verified: 전부 `true`
+- promotion_eligible: 전부 `false`
+
+기존 연구 후보와 CROWD/PRIZE_SHARE 후보를 보존하며, 2026-08-21 EXP-004~016 정산에서 기존 항목 5건을 연결하고 기존 Registry에 없던 완료 연구 8건을 추가했다. PRIZE-SHARE EXP-001 V2는 V1 source-semantics BLOCKED 이력을 보존한 별도 version으로 추가했다. 현재 총 55건이다.
+
+## 등록 시 공통 미정 필드
+
+아래 항목은 등록만으로 임의 정의하지 않으며 `DESIGNED` 또는 `READY_FOR_TEST` 전환 전에 각각 채워야 한다.
+
+- hypothesis, counter_hypothesis
+- data_range, input_data, calculation_method
+- result_metrics, success_criteria, failure_criteria, minimum_sample
+- validation_windows, future_data_block
+- walkforward_required, random_null_required
+- multiple_testing_risk, overfitting_risk
+- canonical_protocol_hash, locked_at
+- research_result, failure_reason, reproducibility_status
+
+|experiment_id|LAB|RESEARCH_DOMAIN|연구명|인벤토리 출처상태|현재 상태|공식 영향|승격 가능|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260816-001-V1|NUMBER RELATION LAB|DRAW|숫자 관계망 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-002-V1|NUMBER RELATION LAB|DRAW|숫자 동시출현 관계망 (EXP-001)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-003-V1|NUMBER RELATION LAB|DRAW|조건부 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-004-V1|NUMBER RELATION LAB|DRAW|A 출현 후 다음 회차 B 관계|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-005-V1|NUMBER RELATION LAB|DRAW|2회 간격 관계|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-006-V1|NUMBER RELATION LAB|DRAW|3개 숫자 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-007-V1|NUMBER RELATION LAB|DRAW|최근100 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-008-V1|NUMBER RELATION LAB|DRAW|최근50 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-009-V1|NUMBER RELATION LAB|DRAW|전체 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-010-V1|TRANSITION LAB|DRAW|NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-011-V1|TRANSITION LAB|DRAW|회차 간 흔적 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-012-V1|TRANSITION LAB|DRAW|격회 재출현 (EXP-005)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-013-V1|TRANSITION LAB|DRAW|같은 끝자리 회차 전이 (EXP-006)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-014-V1|TRANSITION LAB|DRAW|끝수 전이|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-015-V1|STRUCTURE LAB|DRAW|결손 회복속도|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-016-V1|STRUCTURE LAB|DRAW|결손 회복 전환점|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-017-V1|STRUCTURE LAB|DRAW|가변 전멸구간 (EXP-004)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-018-V1|STRUCTURE LAB|DRAW|다중 전멸구간 상호작용|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-019-V1|STRUCTURE LAB|DRAW|이동×가변 전멸 교차|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-020-V1|STRUCTURE LAB|DRAW|최근10 강도 지속|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-021-V1|STRUCTURE LAB|DRAW|비전멸 전용 엔진|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-022-V1|STRUCTURE LAB|DRAW|구간별 복귀우선 전이|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-023-V1|SIMILAR ROUND LAB|DRAW|쌍둥이 유사 회차|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-024-V1|SIMILAR ROUND LAB|DRAW|구조형 쌍둥이 회차 전이|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-025-V1|SIMILAR ROUND LAB|DRAW|유사 회차 이후 다음 회차 전이 (EXP-007)|HOLD|FAILED|NONE|false|
+|EXP-DRAW-20260816-026-V1|SPACING LAB|DRAW|숫자 간격 구조 (EXP-008)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-027-V1|SPACING LAB|DRAW|간격 분산|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-028-V1|SPACING LAB|DRAW|등차수열형 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-029-V1|SPACING LAB|DRAW|+13/+14 고정 간격|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-030-V1|ROLE AND AUDIT LAB|DRAW|숫자 역할 구조|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-031-V1|ROLE AND AUDIT LAB|DRAW|특정 UNIT 일시 강세|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-032-V1|ROLE AND AUDIT LAB|DRAW|NUMBER 역할|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-033-V1|ROLE AND AUDIT LAB|DRAW|역할 충돌|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-034-V1|ROLE AND AUDIT LAB|DRAW|실패 원인 복기|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-035-V1|ROLE AND AUDIT LAB|DRAW|전체 엔진 귀무감사|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-036-V1|ROLE AND AUDIT LAB|DRAW|placebo/permutation|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-037-V1|ROLE AND AUDIT LAB|DRAW|과최적화 방지|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-038-V1|NO-PICK COVERAGE LAB|DRAW|NO-PICK COVERAGE & QUALIFIED RESEARCH FALLBACK (EXP-002)|NEW_REGISTERED|DESIGNED|NONE|false|
+|EXP-DRAW-20260816-038-V2|NO-PICK COVERAGE LAB|DRAW|NO-PICK COVERAGE & NUMBER-RANK FALLBACK (EXP-002 V2)|PROTOCOL_REVISION|FAILED|NONE|false|
+|EXP-DRAW-20260821-039-V1|SERIAL COMPOSITION LAB|DRAW|홀수 개수 lag-1 공분산 (EXP-009)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-040-V1|SERIAL COMPOSITION LAB|DRAW|추첨 합계 lag-1 공분산 (EXP-010)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-041-V1|TRANSITION LAB|DRAW|미러 보수 전이 (EXP-011)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-042-V1|RETURN LAB|DRAW|개별 숫자 return-age rank (EXP-012)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-043-V1|FREQUENCY LAB|DRAW|누적 빈도 rank (EXP-013)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-044-V1|BONUS TRANSITION LAB|DRAW|직전 BONUS→다음 MAIN (EXP-014)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-045-V1|BONUS ROLE LAB|DRAW|BONUS 상대 순위 교환가능성 (EXP-015)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-DRAW-20260821-046-V1|MARGINAL LABEL LAB|DRAW|번호 라벨 이질성·지속성 (EXP-016)|LOCAL_SETTLEMENT|FAILED_EARLY|NONE|false|
+|EXP-CROWD-20260816-001-V1|CROWD LAB|CROWD|대중 번호 선택 행동|MISSING|REGISTERED|NONE|false|
+|EXP-CROWD-20260816-002-V1|CROWD LAB|CROWD|많이 고르는 번호·패턴|MISSING|REGISTERED|NONE|false|
+|EXP-PRIZE-20260816-001-V1|PRIZE-SHARE LAB|PRIZE_SHARE|판매량 대비 1등 당첨게임 밀도 / EXP-PRIZE-001-V1 BIRTHDAY-ZONE CONCENTRATION|NEW_REGISTERED|PROTOCOL_BLOCKED_SOURCE_SEMANTICS|NONE|false|
+|EXP-PRIZE-20260816-001-V2|PRIZE-SHARE LAB|PRIZE_SHARE|BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)|V2_LOCKED_BACKTEST + INDEPENDENT_REPRODUCTION_PASS|SUPPORTED_WITHIN_EXPERIMENT|NONE|false|
+|EXP-PRIZE-20260821-004-V1|PRIZE-SHARE LAB|PRIZE_SHARE|SECOND-PRIZE CROSS-OUTCOME CORROBORATION (EXP-PRIZE-002-V1)|LOCKED_CROSS_OUTCOME_BACKTEST|SUPPORTED_CROSS_OUTCOME|NONE|false|
+|EXP-PRIZE-20260821-005-V1|PRIZE-SHARE LAB|PRIZE_SHARE|BIRTHDAY-ZONE CROWD CONCENTRATION — PROSPECTIVE CONFIRMATION|PROTOCOL_LOCKED|PROSPECTIVE_LOCKED_WAITING_FOR_DATA|NONE|false|
+|EXP-PRIZE-20260816-002-V1|PRIZE-SHARE LAB|PRIZE_SHARE|LOW/NORMAL/HIGH WINNER 구조|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-CROWD-20260816-003-V1|CROWD LAB|CROWD|생일번호 편향|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-PRIZE-20260816-003-V1|PRIZE-SHARE LAB|PRIZE_SHARE|공동당첨 위험|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-CROWD-20260816-004-V1|CROWD LAB|CROWD|고번호·끝수·연속수·시각/OMR 선택편향|NEW_REGISTERED|REGISTERED|NONE|false|
+
+## CROWD/PRIZE_SHARE 경계
+
+- CROWD는 사람들이 무엇을 고르는지 연구한다.
+- PRIZE_SHARE는 당첨됐을 때 타인과 상금을 나눌 상대 위험을 연구한다.
+- 어느 쪽도 추첨번호 발생확률을 높이는 근거로 사용하지 않는다.
+- LOW/HIGH WINNER에서 발견된 특징은 DRAW 효과와 CROWD 효과를 별도 실험 ID·지표로 검증한다.
+
+## EXP-001 설계 연결
+
+- short_id: `EXP-001`
+- registry_experiment_id: `EXP-DRAW-20260816-002-V1`
+- status transition: `REGISTERED → DESIGNED → READY_FOR_TEST → BACKTESTED/WALKFORWARD_TESTED → FAILED`
+- protocol documents: `EXP-001_NUMBER_COOCCURRENCE/EXP001_01`~`05`
+- calculation_run: `6cb93fa4-2d29-4deb-8229-c7febcac0255` (`SINGLE SEALED RUN`, complete)
+- data_snapshot: `1~1237`, SHA-256 `b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0`
+- canonical_protocol_hash: `2d4e723b87bc2f44a7a0d763ee4779ded40b007f3cbf4b093b9e771c9248dd9d`
+- protocol_lock: `LOCKED_BEFORE_BACKTEST`
+- calculator_storage: `READY`
+- preflight: `17/17 PASS`
+- actual_backtest_run: `true`
+- result_document: `EXP-001_NUMBER_COOCCURRENCE/EXP001_07_LOCKED_RUN_RESULT.md`
+- retrospective_result: `NO_STATIC_MAIN_SIGNAL`
+- walkforward_result: `NOT_REPRODUCED` (`501~1237`, 737/737 complete, failed 0)
+- final_judgment: `FAILED` / explanation code `D`
+- strongest observed pairs: `MAIN + 11-21`, `MAIN - 8-12` (`DIAGNOSTIC ONLY`)
+- official_recommendation_allowed: `false`
+- promotion_eligible: `false`
+- official_effect: `NONE`
+
+## EXP-002 설계 연결
+
+- short_id: `EXP-002`
+- registry_experiment_id: `EXP-DRAW-20260816-038-V1`
+- status: `DESIGNED / READY_TO_LOCK`
+- protocol documents: `EXP-002_NO_PICK_FALLBACK/EXP002_01`~`05`
+
+## EXP-002 V2 설계 연결
+
+- canonical ID: `EXP-DRAW-20260816-038-V2`
+- V1은 `PROTOCOL_BLOCKED`로 보존하며 prediction/outcome은 INVALID EVIDENCE이다.
+- V2는 공식 NUMBER 14-key 순서의 상위 6개를 `1~3 / 4~6`으로 나누며 공식 TRIO calculator를 사용하지 않는다.
+- protocol documents: `EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_01`~`05`
+
+## EXP-003 설계 연결
+
+- human alias: `EXP-003`
+- canonical ID: `EXP-DRAW-20260816-010-V1`
+- 기존 `숫자 이동 구조` 등록항목을 구체화한 것이며 새 중복 Experiment가 아니다.
+- V1 scope는 오직 `R-1 → R` 1-step transition이다.
+- protocol documents: `EXP-003_NUMBER_TRANSITION/EXP003_01`~`06`
+- draft protocol hash: `832e7df52854a61ae5b769ebdf529e48b6df0ca622606a583b5fa9c9055b7c46`
+- coverage audit: `43~1235`, valid 867, output 0, RESEARCH_NO_PICK 867
+- fallback ranking: official NUMBER 14-key and TRIO 15-key reused without weights
+- calculation/storage skeleton: `READY`
+- actual_backtest_run: `false`
+- actual_fallback_results_viewed: `false`
+- promotion_eligible: `false`
+- official_effect: `NONE`
+
+## 역사 아이디어 복구 종료 기록
+
+- Inventory 87 `선정 안정성 감사`는 이미 공식 v2.7.1에 존재하는 감사 연구이므로 신규 Experiment로 등록하지 않는다.
+- 부분 포착 6건은 기존 Inventory/Registry 항목의 원래 의미 보강이며 신규 Experiment ID를 발급하지 않는다.
+- `DEPRECATED_HISTORICAL` 6건과 `AMBIGUOUS` 3건도 등록하지 않는다.
+- Registry 총수: 44 유지
+
+## EXP-004~016 로컬 일괄정산 및 EXP-007 ERRATA — 2026-08-21
+
+- historical data boundary: `1~1237` only
+- data SHA-256 (BOM 제외): `b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0`
+- round 1238 used: `NO`
+- adjudication: `13/13 PASS`
+- settlement DB: `v27_storage/experiments/batch_exp004_016/exp004_016_settlement.sqlite3`
+- settlement run: `12b42d36-b09f-4d9b-a0f6-286f04b1d5c6`
+- official effect: `NONE`
+- recommendation connection: `NO`
+- official engine changed: `NO`
+- EXP-017 short alias: `EXP-DRAW-20260827-017-V1` / `FAILED_NOT_SUPPORTED`
+- EXP-018 short alias: `EXP-DRAW-20260827-018-V1` / `READY_FOR_TEST`
+
+|short_id|canonical registry ID|final status|reproduction|special note|
+|---|---|---|---|---|
+|EXP-004|EXP-DRAW-20260816-017-V1|FAILED|REPRODUCED|가변 전멸구간|
+|EXP-005|EXP-DRAW-20260816-012-V1|FAILED|REPRODUCED|격회 exact reappearance|
+|EXP-006|EXP-DRAW-20260816-013-V1|FAILED|REPRODUCED|ending-family carryover|
+|EXP-007|EXP-DRAW-20260816-025-V1|FAILED|REPRODUCED_WITH_ERRATA|WF exposure `1013→0`; final unchanged|
+|EXP-008|EXP-DRAW-20260816-026-V1|FAILED|REPRODUCED|within-round gap-set carryover|
+|EXP-009|EXP-DRAW-20260821-039-V1|FAILED_EARLY|REPRODUCED|parity-load lag-1|
+|EXP-010|EXP-DRAW-20260821-040-V1|FAILED_EARLY|REPRODUCED|draw-sum lag-1|
+|EXP-011|EXP-DRAW-20260821-041-V1|FAILED_EARLY|REPRODUCED|mirror complement|
+|EXP-012|EXP-DRAW-20260821-042-V1|FAILED_EARLY|REPRODUCED|return-age rank|
+|EXP-013|EXP-DRAW-20260821-043-V1|FAILED_EARLY|REPRODUCED|cumulative frequency rank|
+|EXP-014|EXP-DRAW-20260821-044-V1|FAILED_EARLY|REPRODUCED|prior BONUS carryover|
+|EXP-015|EXP-DRAW-20260821-045-V1|FAILED_EARLY|REPRODUCED|BONUS relative rank|
+|EXP-016|EXP-DRAW-20260821-046-V1|FAILED_EARLY|REPRODUCED|global label heterogeneity|
+
+EXP-007 원본 결과는 변경하지 않았으며 additive ERRATA:
+`v27_storage/experiments/exp007/P45_EXP007_독립분석_결과_ERRATA_001.md`
+로만 정정 이력을 연결한다.
+
+## CROWD TOPOLOGY EXP-001 V1 — 2026-08-23
+
+- Idea linkage: `IDEA-20260823-CROWD001`
+- Generic combination-clustering novelty claim: `REJECTED`
+- Refined-direction novelty: `NOT_CONFIRMED`
+- Historical boundary: `1~1237`; 1238+ used `NO`
+- Official/DRAW effect: `NONE`
+
+|experiment_id|logical_id|lab|domain|title|protocol status|final status|promotion candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-CROWD-20260823-005-V1|EXP-CROWD-TOPO-001-V1|CROWD / PRIZE-SHARE LAB|CROWD|JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION|LOCKED BEFORE OUTCOME RELATION ANALYSIS|FAILED|false|
+
+## CROWD TOPOLOGY EXP-002 V1 — 2026-08-23
+
+- Idea linkage: `IDEA-20260823-CROWD001`
+- Candidate: `RANDOM-BONUS COLUMN PROBE / D1-SHELL OVERDISPERSION`
+- Historical boundary: `1~1237`; 1238+ used `NO`
+- Program-level status ceiling: `SUPPORTED_WITHIN_EXPERIMENT`
+- Independent reproduction: `NOT_YET`
+- Official/DRAW effect: `NONE`
+
+|experiment_id|logical_id|lab|domain|title|protocol status|final status|promotion candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-CROWD-20260823-006-V1|EXP-CROWD-TOPO-002-V1|CROWD / PRIZE-SHARE LAB|CROWD|RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION|LOCKED BEFORE OUTCOME ANALYSIS|SUPPORTED_WITHIN_EXPERIMENT|false|
+
+### Current count after EXP-CROWD-TOPO-002 V1
+
+- count method: canonical physical/version rows parsed from formal `EXP-...-Vn` row IDs; no manual increment
+- physical rows: `59`
+- unique experiment IDs: `59`
+- unique logical experiment families: `57`
+
+### EXP-CROWD-TOPO-002 V1 independent reproduction 001
+
+- reproduction status: `INDEPENDENT_REPRODUCTION_PASS`
+- implementation: separate `p45_reproductions` module; original calculator import `0`
+- fresh null: 39-category Multinomial, fixed column 0, seed `2026082304`, repetitions `300000`
+- fresh exceedances / p: `0 / 0.0000033333222222592593`
+- original experiment status: `SUPPORTED_WITHIN_EXPERIMENT` unchanged
+- independent empirical/external replication: `NO`
+- Registry physical rows: `59` unchanged; reproduction evidence is not a new Experiment row
+
+### EXP-CROWD-TOPO-002 calibration audit 001
+
+- audit status: `NO_CALIBRATION_TENSION_DETECTED`
+- exact identity: `E[K2(K2-1)] = 6E[K1(K1-1)] + (5/39)E[K1*K23]`
+- K1-only calibration identifiable: `NO`
+- two-sided fixed-block wild p: `0.1977040114799426`
+- original status/reproduction: unchanged
+- program interpretation: `STRONG INDEPENDENT-UNIFORM NULL REJECTED; TOPOLOGY-SPECIFIC MECHANISM NOT IDENTIFIED`
+- Registry physical rows: `59` unchanged; methodology audit is not a new Experiment row
+
+## Registry 총계 정합성 감사 — 2026-08-23
+
+- canonical count unit: 이 문서에서 `EXP-(DRAW|CROWD|PRIZE|CROSS)-YYYYMMDD-NNN-Vn` 형식의 정식 experiment ID를 가진 행 1개를 physical/version row 1건으로 센다.
+- current physical rows: `58`
+- current unique experiment IDs: `58`
+- current unique logical experiment families: `56` (`-Vn`만 제거하여 집계)
+- version rows: `V1 56`, `V2 2`
+- domain rows: `DRAW 47`, `CROWD 5`, `PRIZE_SHARE 6`
+- 모든 `REGISTERED`, `DESIGNED`, `FAILED`, `FAILED_EARLY`, `PROTOCOL_BLOCKED_SOURCE_SEMANTICS`, `PROSPECTIVE_LOCKED_WAITING_FOR_DATA`, `SUPPORTED_WITHIN_EXPERIMENT`, `SUPPORTED_CROSS_OUTCOME` 행을 포함한다.
+- 위 `현재 총 55건` 문구는 `DECISION-20260821-076` 시점까지의 physical row 총계로서 역사적 provenance를 보존하되, 이후 `EXP-PRIZE-002-V1`, `EXP-PRIZE-PROSPECTIVE-001-V1`, `EXP-CROWD-TOPO-001-V1` 3건이 추가되어 현재 총계로는 stale이다.
+- `Registry 총수: 44 유지`는 역사 아이디어 복구 종료 당시의 point-in-time 기록이며 현재 운영 총계를 뜻하지 않는다.
+- authoritative current count audit: `07_REGISTRY_COUNT_CONSISTENCY_AUDIT.md`
+
+### EXP-CROWD-TOPO-003-V1 — 2026-08-23
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-CROWD-20260823-007-V1|EXP-CROWD-TOPO-003-V1|CROWD / PRIZE-SHARE LAB|CROWD|JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS|LOCKED BEFORE OUTCOME ANALYSIS|EXPLORATORY_NOT_SUPPORTED|false|
+
+- data: official rounds `1~1237`; train `1~800`; holdout `801~1237`; 1238+ used `NO`
+- primary: five-contrast studentized maximum, 23x19 common-sign block wild bootstrap, `200,000`, seed `2026082306`
+- result: `T_MAX=1.9205012586094152`, two-sided omnibus `p=0.05624971875140624`
+- official effect: `NONE`; maximum possible positive label was exploratory only
+- canonical physical/version rows after this registration: `59`
+
+### EXP-CROWD-RETAIL-001-V1 — 2026-08-23
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-CROWD-20260823-008-V1|EXP-CROWD-RETAIL-001-V1|CROWD / PRIZE-SHARE LAB|CROWD|MANUAL SAME-RETAILER JACKPOT COLLISION|LOCKED BEFORE OUTCOME TEST|EXPLORATORY_RETAILER_MODE_CONCENTRATION|false|
+
+- evidence class: `POST_LINEAGE_EXPLORATORY`
+- data: official winner-store rows, rounds `262~1237`; 1238+ used `NO`
+- primary: round-conditional mode-label randomization, `500,000`, seed `2026082307`
+- observed/expected manual collision cells: `132 / 56.97188240042372`
+- one-sided p: `0.000001999996000008` (0 exceedances)
+- interpretation: retailer/mode association only; same person not identified; official effect `NONE`
+- actual canonical physical/version rows after this registration: `61`
+
+### EXP-CROWD-RETAIL-PROSPECTIVE-001-V1 — 2026-08-24
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-CROWD-20260824-009-V1|EXP-CROWD-RETAIL-PROSPECTIVE-001-V1|CROWD / PRIZE-SHARE LAB|CROWD|PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION|LOCKED BEFORE START 1239 PUBLICATION|PROSPECTIVE_LOCKED_WAITING_FOR_DATA|false|
+
+- evidence class: `PROSPECTIVE_CONFIRMATION`
+- START `1239`; Stage 1 end `1290`; Final end `1342`
+- round 1238 is pre-lock and excluded from prospective analysis/history/signal inspection
+- raw-only signal-blind collector; Sunday 10:00; ledger rows at lock `0`
+- official effect `NONE`; same-person and causal mechanism not identified
+- actual canonical physical/version rows after this registration: `62`
+
+### OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001 — 2026-08-24
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260824-010-V1|OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001|PAIR OFFICIAL CHANGE CONTROL|DRAW|OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT|USER-APPROVED SEALED CHANGE CONTROL|OFFICIAL_REPAIR_APPLIED_AND_VERIFIED|false|
+
+- This is the single canonical change-control registry row for `DECISION-20260824-095`; it does not create `EXP-017` or authorize a new research experiment.
+- scope: `SHADOW_LIFECYCLE_RESTORATION_ONLY`; gate/threshold/signature/semantics unchanged.
+- historical outcome scoring `0`; future leakage `0`; sealed 1238 canary `NO_OUTPUT`.
+- `NO-PICK = UNRESOLVED`; `DRAW_DISCOVERY_PAUSE = ACTIVE`; official engine returned to `FROZEN`.
+- actual canonical physical/version rows after this registration: `63`
+
+### EXP-017 — TRIO ORBIT CONSENSUS NUMBER EFFECT V1 — 2026-08-27
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260827-017-V1|EXP-017|TRIO ORBIT CONSENSUS NUMBER LAB|DRAW|TRIO ORBIT CONSENSUS NUMBER EFFECT V1|SHA-256 LOCKED BEFORE OUTCOME TEST|FAILED_NOT_SUPPORTED|false|
+
+- lifecycle: `IDEA -> REGISTERED -> DESIGNED -> READY_FOR_TEST -> TESTING -> BACKTESTED -> FAILED`
+- protocol SHA-256: `da86d5192cf25a7d45b3c8eb8d68a55d06f720613cd2335dc41f06fdf0cd83a3`
+- lock record SHA-256: `839ae4c0e96a19823d8b900447cb8082fd696dc67bbac4e75d28c504e381272c`
+- structural preflight: `PASS`; historical max k `6`; minimum sample `PASS`
+- Development was evaluated under the locked exact null and ended `FAILED_NOT_SUPPORTED`; formal Historical Walkforward was not executed.
+- WALKFORWARD_TESTED: `NO`; SUPPORTED: `NO`; PROMOTION_CANDIDATE: `NO`
+- official effect: `NONE`; promotion candidate: `false`; future leakage: `0`
+- actual canonical physical/version rows after this registration: `64`
+
+### EXP-018 — RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1 — 2026-08-27
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260827-018-V1|EXP-018|RESIDUAL NEIGHBOR CLOSURE LAB|DRAW|RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1|SHA-256 LOCKED BEFORE OUTCOME TEST|READY_FOR_TEST|false|
+
+- lifecycle: `IDEA -> REGISTERED -> DESIGNED -> READY_FOR_TEST`
+- protocol SHA-256: `d64b3ec3bdf5c65006236cefc67432333bc5edbc61dbe3b5db90d85a614d527c`
+- lock record SHA-256: `08006727b6b83f6d903cc1216c24be64a8bf21fbc027a7e471162da10aeab906`
+- structural preflight: `PASS`; outcome peek: `0`; result calculation: `NO`
+- locked execution attempt: `EXP_018_EXECUTION_BLOCKED_BOOTSTRAP_AMBIGUITY`; stopped before outcome access; schema status remains `READY_FOR_TEST`
+- official effect: `NONE`; promotion candidate: `false`; future leakage: `0`
+- actual canonical physical/version rows after this registration: `65`
+
+### EXP-018 V2 — RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE — 2026-08-27
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260827-018-V2|EXP-018 V2|RESIDUAL NEIGHBOR CLOSURE LAB|DRAW|RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2|PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME|AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT|false|
+
+- supersedes protocol version: `EXP-DRAW-20260827-018-V1` without editing or retiring V1
+- V1 status/verdict preserved: `READY_FOR_TEST / EXP_018_EXECUTION_BLOCKED_BOOTSTRAP_AMBIGUITY`
+- V2 protocol SHA-256: `a75bbe585f01be80ced3dd1252aad2f3b5de2e1b0d93e5db3d3ade73408c3127`
+- V2 lock SHA-256: `da2c637e994fbd0c39b49a97471f342a1dbc332e91fa2817b8b9fbf37b7a8909`
+- modification scope: bootstrap U95 construction clarification only
+- lifecycle: `IDEA -> REGISTERED -> DESIGNED -> READY_FOR_TEST -> TESTING -> BACKTESTED -> WALKFORWARD_TESTED -> FAILED`
+- Development/Holdout: `NO_PRACTICALLY_USEFUL_EFFECT / NO_PRACTICALLY_USEFUL_EFFECT`
+- final verdict: `AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT`
+- outcome execution completed under locked V2; future leakage: `0`
+- official effect: `NONE`; promotion candidate: `false`
+- actual canonical physical/version rows after this registration: `66`
+
+### EXP-019 — SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1 — 2026-08-27
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260827-019-V1|EXP-019|SALES-ADJUSTED CROWD EFFECT LAB|DRAW|SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1|LOCKED BEFORE OFFICIAL-DATA ACQUISITION|FAILED_NOT_SUPPORTED|false|
+
+- protocol SHA-256: `220d59aa8c50e11c74f6146061784b8f5e0413c5a7013758a47891404e2f4d5c`
+- lock SHA-256: `fb28b4daed366e4a9448a33c68155bb742a63fecda41a2f6ce37eec30ef32b6a`
+- official source preflight: `PASS` for rounds `88..1238` (`1,151/1,151`)
+- lifecycle: `IDEA -> REGISTERED -> DESIGNED -> READY_FOR_TEST -> TESTING -> BACKTESTED -> FAILED`
+- Development: `beta=0.011148559895275412`, `p_perm=0.22829771702282978`, `FAILED_NOT_SUPPORTED`
+- Holdout formal execution: `NO` (`DEVELOPMENT_FAILED_PROTOCOL_GATE`)
+- reproducibility: `PASS`
+- official effect: `NONE`; promotion candidate: `false`; future leakage: `0`
+- actual canonical physical/version rows after this registration: `67`
+
+### EXP-020 — LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1 — 2026-08-28
+
+|experiment_id|logical_id|lab|research_domain|name|protocol|status|promotion_candidate|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260828-020-V1|EXP-020|LAGGED CROWD METADATA SIGNAL LAB|DRAW|LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1|LOCKED BEFORE TRAIN RELATIONSHIP|FAILED_NO_SELECTION_SIGNAL|false|
+
+- lifecycle: `IDEA -> REGISTERED -> DESIGNED -> READY_FOR_TEST -> TESTING -> BACKTESTED -> FAILED`
+- full official history: `1..1238 PASS`
+- TRAIN positive-lift candidates: `60`; Selection eligible candidates: `0`
+- Holdout formal execution: `NO`; deterministic reproduction: `PASS`
+- `10..15` was an example only and was not fixed or preferred.
+- official effect: `NONE`; future leakage: `0`
+- actual canonical physical/version rows after this registration: `68`

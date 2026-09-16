@@ -1,0 +1,9 @@
+{
+  "engine_version": "P45 v2.4-EXPERIMENTAL-1236",
+  "lock_status": "LOCKED",
+  "locked_at": "2026-08-04T21:16:24+09:00",
+  "locked_report_sha256": "6ab8d4dcc3c58d2b065d65b64ddc7a68c7588bf17b6deef8eee677f6b61dd919",
+  "manifest_sha256": "cbb0d225d4e37af00020ba3e9a1d44db2ef8384d6c2769258b4fb5466de05d2b",
+  "record_type": "IMMUTABLE_ANALYSIS_LOCK",
+  "target_round": 1236
+}

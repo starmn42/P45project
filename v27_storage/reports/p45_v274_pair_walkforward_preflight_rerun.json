@@ -1,0 +1,37 @@
+{
+  "status": "PAIR_WALKFORWARD_PREFLIGHT_FAILED",
+  "official_gate_sha256": "a31a065838f88c65d40605c1a170c13eb5fca7cf3d706de5eda088b43227ae6f",
+  "official_bootstrap_patch_sha256": "df85587a618e520064553456ec82feb87d5d72b1b3b29139d98fc2120d8dcd86",
+  "checks": {
+    "01_official_document_hashes": "PASS",
+    "02_schema_bonus_columns": "PASS",
+    "03_schema_integrity_and_fk": "PASS",
+    "04_base_signature_noncyclic_implementation": "FAIL",
+    "05_zero_exposure_deterministic_implementation": "FAIL",
+    "06_new_or_changed_signature_deterministic_implementation": "FAIL",
+    "07_r_uses_only_1_to_r_minus_1": "FAIL_NOT_IMPLEMENTED",
+    "08_prediction_hash_before_result_read": "FAIL_NOT_IMPLEMENTED",
+    "09_r_outcome_visible_from_r_plus_1": "FAIL_NOT_IMPLEMENTED",
+    "10_selection_identity_exposure_separation": "PASS",
+    "11_one_selection_per_round_signature": "PASS",
+    "12_checkpoint_resume_reproduction": "FAIL_NOT_IMPLEMENTED",
+    "13_dedicated_backtest_db_creation_ready": "PASS",
+    "14_atomic_round_commit_rollback_ready": "FAIL_RUNNER_NOT_IMPLEMENTED",
+    "15_source_operational_read_only_and_protected": "PASS"
+  },
+  "evidence": {
+    "implemented_signature_version": "PAIR-RULE-SIGNATURE-1.0",
+    "required_signature_version": "PAIR-RULE-SIGNATURE-1.1",
+    "dynamic_pair_fields_still_in_payload": ["pair_opposite_risk", "structure_context", "recent_support_state", "bonus_dependence_state"],
+    "pair_walkforward_runner_exists": false,
+    "pair_related_tests": "28/28 PASS",
+    "dedicated_db_created": false,
+    "rounds_processed": 0,
+    "operational_pair_rows": 0
+  },
+  "previous_blockers": {
+    "PAIR_SCHEMA274_OUTCOME_GAP": "RESOLVED",
+    "PAIR_SIGNATURE_EXPOSURE_BOOTSTRAP_UNDEFINED": "SPEC_RESOLVED_IMPLEMENTATION_PENDING"
+  },
+  "remaining_blockers": ["PAIR_SIGNATURE_V11_NOT_IMPLEMENTED", "PAIR_WALKFORWARD_RUNNER_NOT_IMPLEMENTED"]
+}

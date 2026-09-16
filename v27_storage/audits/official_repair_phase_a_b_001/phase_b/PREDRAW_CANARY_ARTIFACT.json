@@ -1,0 +1,26 @@
+{
+  "version": "P45-OFFICIAL-REPAIR-RC-CANARY-001",
+  "signature_version": "PAIR-RULE-SIGNATURE-1.2",
+  "context_version": "PAIR-CONTEXT-FINGERPRINT-1.0",
+  "target_round": 1238,
+  "max_source_round_used": 1237,
+  "source_end_round": 1237,
+  "source_hash": "1e64089ac01572f170a9e6f39ea0aa9fb7a2dd15115e461991328f25584ad8d0",
+  "prediction_prefix_hash": "d386d3c3dc616267bf3e4df7bbc5ecf54179fe42427bbdcc6ca1b12b3c7f3278",
+  "skip_status": "SKIPPED_TRIO_UNDER_2",
+  "candidate_count": 0,
+  "output_status": "NO_OUTPUT",
+  "candidates": [],
+  "outcome_access_count": 0,
+  "historical_outcome_scoring_count": 0,
+  "future_leakage_count": 0,
+  "plan_sha256": "fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9",
+  "rc_source_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+  "input_hashes": {
+    "canary_input_snapshot": "ad69ec8d28b4e5cdb40d468ad758c5f23acaeb6225f525c5201c8027952701e6",
+    "base_csv": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+    "live_db": "1c2d55b7a6e0888245281b3f3a9c90e3a86e635b48bea74596344ac21bacd453",
+    "pair_db": "e2f7b6291bc3d0ecea6a170eda11bc47f04aa65cb9686d556ebd6b1b12f61740",
+    "trio_db": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5"
+  }
+}

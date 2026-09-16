@@ -1,0 +1,18 @@
+{
+  "null_benchmark": {
+    "independence_p_joint": 0.0,
+    "independence_expected_outputs": 0.0,
+    "independence_p_zero": 1.0,
+    "block_bootstrap": {
+      "repetitions": 100000,
+      "seed": 2026082403,
+      "block_size": 19,
+      "expected_4way": 0.0,
+      "p_zero": 1.0,
+      "q95": 0.0,
+      "q99": 0.0,
+      "counts_hash": "af223ca49bd199ac08a094020440480511d32a352b2fcf8497475603211ca454",
+      "degenerate_exact_evaluation": true
+    }
+  }
+}

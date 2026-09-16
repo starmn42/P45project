@@ -1,0 +1,161 @@
+{
+  "results": [
+    {
+      "name": "desktop_1366.png",
+      "width": 1366,
+      "height": 768,
+      "mobile": false,
+      "clientWidth": 1366,
+      "scrollWidth": 1366,
+      "scrollHeight": 768,
+      "bodyWidth": 1366,
+      "buttons": [
+        {
+          "text": "1240회 결과 보기",
+          "left": 718,
+          "right": 988.21875,
+          "width": 270.21875
+        },
+        {
+          "text": "1241회 출격 보기",
+          "left": 1000.21875,
+          "right": 1338,
+          "width": 337.78125
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "desktop_1440.png",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "scrollHeight": 900,
+      "bodyWidth": 1440,
+      "buttons": [
+        {
+          "text": "1240회 결과 보기",
+          "left": 792,
+          "right": 1062.21875,
+          "width": 270.21875
+        },
+        {
+          "text": "1241회 출격 보기",
+          "left": 1074.21875,
+          "right": 1412,
+          "width": 337.78125
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "desktop_1920.png",
+      "width": 1920,
+      "height": 1080,
+      "mobile": false,
+      "clientWidth": 1920,
+      "scrollWidth": 1920,
+      "scrollHeight": 1080,
+      "bodyWidth": 1920,
+      "buttons": [
+        {
+          "text": "1240회 결과 보기",
+          "left": 1272,
+          "right": 1542.21875,
+          "width": 270.21875
+        },
+        {
+          "text": "1241회 출격 보기",
+          "left": 1554.21875,
+          "right": 1892,
+          "width": 337.78125
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "mobile_390.png",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "scrollHeight": 1292,
+      "bodyWidth": 390,
+      "buttons": [
+        {
+          "text": "1240회 결과 보기",
+          "left": 10,
+          "right": 380,
+          "width": 370
+        },
+        {
+          "text": "1241회 출격 보기",
+          "left": 10,
+          "right": 380,
+          "width": 370
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "mobile_412.png",
+      "width": 412,
+      "height": 915,
+      "mobile": true,
+      "clientWidth": 412,
+      "scrollWidth": 412,
+      "scrollHeight": 1292,
+      "bodyWidth": 412,
+      "buttons": [
+        {
+          "text": "1240회 결과 보기",
+          "left": 10,
+          "right": 402,
+          "width": 392
+        },
+        {
+          "text": "1241회 출격 보기",
+          "left": 10,
+          "right": 402,
+          "width": 392
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    },
+    {
+      "name": "mobile_430.png",
+      "width": 430,
+      "height": 932,
+      "mobile": true,
+      "clientWidth": 430,
+      "scrollWidth": 430,
+      "scrollHeight": 1292,
+      "bodyWidth": 430,
+      "buttons": [
+        {
+          "text": "1240회 결과 보기",
+          "left": 10,
+          "right": 420,
+          "width": 410
+        },
+        {
+          "text": "1241회 출격 보기",
+          "left": 10,
+          "right": 420,
+          "width": 410
+        }
+      ],
+      "textOverflow": [],
+      "horizontalOverflow": 0
+    }
+  ],
+  "consoleErrors": []
+}

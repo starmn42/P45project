@@ -1,0 +1,48 @@
+{
+  "status": "PAIR_WALKFORWARD_REPAIR_NOT_SAFE",
+  "source_run_id": "6dc5ae1f-92d9-43ae-8b1a-7452e1c842fe",
+  "source_database": "v27_storage/backtests/p45_v274_pair_walkforward.sqlite3",
+  "source_database_sha256_before": "1d7fe8ba1c50e454b57d5bfe86da1e1bfee1fd2c6577cce47ae3d72dd89cfd57",
+  "source_database_sha256_after": "1d7fe8ba1c50e454b57d5bfe86da1e1bfee1fd2c6577cce47ae3d72dd89cfd57",
+  "storage_enforcement": {
+    "status": "PASS",
+    "schema_version": 2742,
+    "required_fields": ["gate_input_json", "gate_results_json", "pair_state"],
+    "gate_ids": ["PG01", "PG02", "PG03", "PG04", "PG05", "PG06", "PG07", "PG08", "PG09", "PG10", "PG11", "PG12", "PG13", "PG14"],
+    "allowed_gate_statuses": ["PASS", "FAIL", "INCOMPLETE"],
+    "allowed_pair_states": ["PAIR_READY", "PAIR_TEST_READY", "PAIR_RESEARCH_HOLD", "PAIR_SYSTEM_HOLD"],
+    "missing_context_fail_fast": "PAIR_GATE_STATE_CONTEXT_MISSING",
+    "outcome_read_before_failure": 0,
+    "focused_tests": "26/26 PASS"
+  },
+  "candidate_total": 148215,
+  "safe_repair_candidates": 0,
+  "unsafe_or_unproven_candidates": 148215,
+  "direct_restore_candidates": 0,
+  "missing_gate_state_candidates": 148215,
+  "maximum_stored_signature_exposure": 7,
+  "sufficient_exposure_sample_available": false,
+  "missing_pre_result_inputs": [
+    "PG01-PG14 result vector",
+    "final PAIR state",
+    "Wilson intervals and exact evidence labels",
+    "recent100/recent50 state inputs",
+    "historical structure percentile inputs",
+    "historical pair-unit-conflict exposure series",
+    "member/rule/final risk context"
+  ],
+  "sample_checks": {
+    "round_369_first_eligible_new_signature": "NOT_REPRODUCIBLE_FROM_STORED_PRE_RESULT_CONTEXT",
+    "round_389_under_50_exposure": "NOT_REPRODUCIBLE_FROM_STORED_PRE_RESULT_CONTEXT",
+    "round_485_signature_change": "NOT_REPRODUCIBLE_FROM_STORED_PRE_RESULT_CONTEXT",
+    "sufficient_exposure": "NO_SUCH_SAMPLE_MAX_EXPOSURE_7",
+    "round_1233_late_round": "NOT_REPRODUCIBLE_FROM_STORED_PRE_RESULT_CONTEXT"
+  },
+  "outcome_table_used_for_repair": false,
+  "future_data_used_for_repair": false,
+  "repair_performed": false,
+  "repaired_database_created": false,
+  "operational_pair_rows": 0,
+  "aggregation_started": false,
+  "reason": "Exact equality with the official production gate engine cannot be demonstrated. The original production adapter never generated gate/state and the raw run lacks required pre-result history inputs. Backfilling now would be a new post-result interpretation, not deterministic restoration."
+}

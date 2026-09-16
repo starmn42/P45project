@@ -1,0 +1,23 @@
+{
+  "state_status": "POST_SELECTION_PRE_OUTCOME",
+  "target_round": 1239,
+  "source_round": 1238,
+  "result_status": "PENDING",
+  "canonical_latest_at_selection": 1238,
+  "canonical_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "kts_schedule_sha256": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+  "pattern_index": 6,
+  "linked_pointer_before": 22,
+  "selected_class": 2,
+  "linked_pointer_after": 3,
+  "last_reset_target": 1214,
+  "cumulative_reset_count": 21,
+  "reset_occurred": false,
+  "used_trio_count_before": 75,
+  "used_trio_count_after": 78,
+  "sealed_record_sha256": "ed23691c5b9f1715c85b6d3362735dfa8cebb72b31dc258e2aa43bc299c94ead",
+  "future_leakage": 0,
+  "fixed_rule_changes": 0,
+  "linked_rule_changes": 0,
+  "official_protected_changes": 0
+}

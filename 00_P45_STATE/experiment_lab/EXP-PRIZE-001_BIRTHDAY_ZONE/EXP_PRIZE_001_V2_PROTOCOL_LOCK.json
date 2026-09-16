@@ -1,0 +1,18 @@
+{
+  "logical_id": "EXP-PRIZE-001-V2",
+  "protocol_version": "EXP-PRIZE-001-PROTOCOL-2.0",
+  "protocol_path": "00_P45_STATE/experiment_lab/EXP-PRIZE-001_BIRTHDAY_ZONE/EXP_PRIZE_001_V2_LOCKED_PROTOCOL.md",
+  "protocol_sha256": "479c83f5905d1bcd928e5b388420a41259c413836711202fd30704e7b4b9d5b7",
+  "historical_range": "1~1237",
+  "round_1238_plus_allowed": false,
+  "total_sales_field": "wholEpsdSumNtslAmt",
+  "forbidden_denominator_field": "rlvtEpsdSumNtslAmt",
+  "price_rounds_1_87": 2000,
+  "price_rounds_88_1237": 1000,
+  "train_range": "1~800",
+  "holdout_range": "801~1237",
+  "permutations": 100000,
+  "permutation_seed": 2026082101,
+  "status": "LOCKED_BEFORE_SOURCE_AUDIT_AND_OUTCOME_ANALYSIS",
+  "official_engine_effect": "NONE"
+}

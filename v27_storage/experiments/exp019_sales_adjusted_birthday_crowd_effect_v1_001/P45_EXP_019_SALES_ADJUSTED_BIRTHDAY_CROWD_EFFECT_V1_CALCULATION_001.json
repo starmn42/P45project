@@ -1,0 +1,74 @@
+{
+  "experiment_id": "EXP-DRAW-20260827-019-V1",
+  "protocol_sha256": "220d59aa8c50e11c74f6146061784b8f5e0413c5a7013758a47891404e2f4d5c",
+  "lock_sha256": "fb28b4daed366e4a9448a33c68155bb742a63fecda41a2f6ce37eec30ef32b6a",
+  "dataset_sha256": "03cec8aea026d987a6ea8550154e4110ac8b100df9c868f18ce19258cb65a9a4",
+  "raw_sha256": "e825073224aa7a869d0902be237ea5dc60652acae10632d6314517465a691742",
+  "manifest_sha256": "b19c14c9f843a9db5fecf377ca391663f206322a2f99ef0ec77e7103e4bc383a",
+  "historical_range": [
+    88,
+    1238
+  ],
+  "development_range": [
+    88,
+    867
+  ],
+  "holdout_range": [
+    868,
+    1238
+  ],
+  "predictor_definition": "B_t=count(MAIN6 intersection {1..31})",
+  "model_definition": "log(E[W_t])=log(LAMBDA_t)+alpha+beta*B_t; LAMBDA_t=games_sold/8145060",
+  "development": {
+    "targets": 780,
+    "winner_games_total": 5528,
+    "games_sold_total": 44292440306,
+    "lambda_total": 5437.951384765735,
+    "b_distribution": {
+      "0": 1,
+      "1": 7,
+      "2": 43,
+      "3": 166,
+      "4": 262,
+      "5": 232,
+      "6": 69
+    },
+    "beta_hat": 0.011148559895275412,
+    "exp_beta_hat": 1.011210936677392,
+    "U_obs": 72.50874769925632,
+    "permutations": 100000,
+    "seed": 20260827,
+    "exceedance_count": 22829,
+    "p_perm": 0.22829771702282978,
+    "success": false,
+    "verdict": "FAILED_NOT_SUPPORTED"
+  },
+  "holdout_executed": false,
+  "holdout": null,
+  "final_verdict": "FAILED_NOT_SUPPORTED",
+  "reproducibility": {
+    "full_calculation_runs": 2,
+    "beta": "PASS",
+    "U_statistic": "PASS",
+    "permutation_exceedance": "PASS",
+    "p_value": "PASS",
+    "development_verdict": "PASS",
+    "holdout_verdict": "NOT_RUN",
+    "final_verdict": "PASS",
+    "deterministic_execution_proof_sha256": "2a8a8e5d93f19df9bf4c2a75e848d6634834f5588e1869013fb8d12a8ba996d2"
+  },
+  "protection_checks": {
+    "protocol_changed": "NO",
+    "lock_changed": "NO",
+    "dataset_changed": "NO",
+    "official_changes": 0,
+    "DB_changes": 0,
+    "Fixed_changes": 0,
+    "Linked_changes": 0,
+    "KTS_changes": 0,
+    "sealed_1239_changes": 0,
+    "prospective_changes": 0,
+    "existing_experiment_verdict_changes": 0,
+    "FUTURE_LEAKAGE": 0
+  }
+}

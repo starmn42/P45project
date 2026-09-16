@@ -1,0 +1,300 @@
+{
+  "data_sha256_bom_excluded": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0",
+  "results": {
+    "EXP-004": {
+      "protocol_sha256": "9b044d38dd065416c8dd5498131ba920bbd8b0a2b7425ec0c919226bd8124774",
+      "result_document_sha256": "7ccb323f38e4ba7375238313e1ea3a4c25d288743ff8eea670717f1006073fb6",
+      "calculation": {
+        "holm_pass_count": 0,
+        "maxT_pass_count": 0,
+        "walkforward_exposed": 0,
+        "raw_pass_count": 0,
+        "configurations": {
+          "L5-M2": {
+            "rounds": 1217,
+            "exposure": 19357,
+            "hits": 2625,
+            "observed_rate": 0.1356098568993129,
+            "risk_difference": 0.0022765235659795713,
+            "t": 1.1574794451874588,
+            "analytical_p": 0.24707653242350835
+          },
+          "L5-M3": {
+            "rounds": 1195,
+            "exposure": 12007,
+            "hits": 1636,
+            "observed_rate": 0.1362538519197135,
+            "risk_difference": 0.0029205185863801775,
+            "t": 1.0775065339832666,
+            "analytical_p": 0.2812540332982487
+          },
+          "L5-M4": {
+            "rounds": 966,
+            "exposure": 6880,
+            "hits": 908,
+            "observed_rate": 0.13197674418604652,
+            "risk_difference": -0.001356589147286813,
+            "t": -0.36289086033156953,
+            "analytical_p": 0.7166864144368132
+          },
+          "L5-M5": {
+            "rounds": 560,
+            "exposure": 3632,
+            "hits": 477,
+            "observed_rate": 0.13133259911894274,
+            "risk_difference": -0.0020007342143905926,
+            "t": -0.3827007941178259,
+            "analytical_p": 0.7019416255822392
+          },
+          "L10-M2": {
+            "rounds": 1108,
+            "exposure": 5338,
+            "hits": 709,
+            "observed_rate": 0.13282128137879357,
+            "risk_difference": -0.0005120519545397662,
+            "t": -0.11680967706484087,
+            "analytical_p": 0.907010875064075
+          },
+          "L10-M3": {
+            "rounds": 464,
+            "exposure": 1758,
+            "hits": 229,
+            "observed_rate": 0.13026166097838454,
+            "risk_difference": -0.00307167235494879,
+            "t": -0.3935953159069042,
+            "analytical_p": 0.693879840022682
+          },
+          "L10-M4": {
+            "rounds": 130,
+            "exposure": 564,
+            "hits": 69,
+            "observed_rate": 0.12234042553191489,
+            "risk_difference": -0.010992907801418442,
+            "t": -0.7999292077286195,
+            "analytical_p": 0.4237518141742625
+          },
+          "L10-M5": {
+            "rounds": 33,
+            "exposure": 168,
+            "hits": 20,
+            "observed_rate": 0.11904761904761904,
+            "risk_difference": -0.01428571428571429,
+            "t": -0.5720578549245664,
+            "analytical_p": 0.5672827800650596
+          },
+          "L20-M2": {
+            "rounds": 193,
+            "exposure": 416,
+            "hits": 45,
+            "observed_rate": 0.10817307692307693,
+            "risk_difference": -0.025160256410256404,
+            "t": -1.5316990336115301,
+            "analytical_p": 0.12559672099797828
+          },
+          "L20-M3": {
+            "rounds": 12,
+            "exposure": 36,
+            "hits": 4,
+            "observed_rate": 0.1111111111111111,
+            "risk_difference": -0.022222222222222227,
+            "t": -0.40146252773099644,
+            "analytical_p": 0.6880796216064591
+          },
+          "L20-M4": {
+            "rounds": 0
+          },
+          "L20-M5": {
+            "rounds": 0
+          }
+        },
+        "judgment": "FAILED"
+      }
+    },
+    "EXP-005": {
+      "protocol_sha256": "ddfcc638b6366269b69c903b64c47a4ea28f5c07183b417731f2f92286bbe21a",
+      "result_document_sha256": "17467cdc47a934e2de875bb9bb37b4577cee4e69ab0cfaed205bc1f157e3d910",
+      "calculation": {
+        "total_overlap": 1038,
+        "mean_overlap": 0.8404858299595142,
+        "t": 1.814928498670379,
+        "analytical_p": 0.06953489829191344,
+        "mc_p": 0.07145928540714593,
+        "walkforward_exposed": 1004,
+        "walkforward_score": 27.800000000001443,
+        "walkforward_p": 0.12767872321276788,
+        "judgment": "FAILED"
+      }
+    },
+    "EXP-006": {
+      "protocol_sha256": "e86ea7f9d7a21dfe54c047459a899ce552985867a95cae59ec5ca2c1490a85d7",
+      "result_document_sha256": "e433cd01cabd6ef8f334975518e3b93f0fff0319a419b02be4f2a999e9b95c78",
+      "calculation": {
+        "rounds": 1236,
+        "exposure": 19970,
+        "hits": 2645,
+        "observed_rate": 0.13244867300951427,
+        "risk_difference": -0.0008846603238190642,
+        "t": -0.46058205039622113,
+        "analytical_p": 0.6450984919765692,
+        "mc_p": 0.6429035709642904,
+        "walkforward_exposed": 0,
+        "judgment": "FAILED"
+      }
+    },
+    "EXP-007": {
+      "protocol_sha256": "09f4edeb35112c0d3429ee2b2685e3544bf43349c579cecdefb3d043e6c5e80c",
+      "result_document_sha256": "4aa42dbeeb210235da9f5eb5a55161f9c682d5578d21215b3901e0af2987215d",
+      "calculation": {
+        "rounds": 1213,
+        "exposure": 22788,
+        "hits": 3022,
+        "observed_rate": 0.13261365631033878,
+        "risk_difference": -0.0007196770229945526,
+        "t": -0.5202111988729499,
+        "analytical_p": 0.6029163807260163,
+        "informative_rounds": 1213,
+        "non_informative_rounds": 21,
+        "bootstrap_p": 0.6025239747602524,
+        "post_minimum_evaluable": 1013,
+        "walkforward_exposed": 0,
+        "walkforward_score": 0.0,
+        "walkforward_status": "NO_SIGNAL_EXPOSURE",
+        "judgment": "FAILED"
+      }
+    },
+    "EXP-008": {
+      "protocol_sha256": "2c5a122125f5418beec3a70b9ce2780c23adb83dd57eadf5f2cacfce60f22626",
+      "result_document_sha256": "395f718f299056a94c7988d9a8c7176d83bd5b62a4448f3a9bc56f924dc682fb",
+      "calculation": {
+        "pair_opportunities": 18540,
+        "candidate_graph_edges": 466017,
+        "matched_pairs": 7048,
+        "mean_excess": -0.010407472786113706,
+        "t": -0.2049657436005174,
+        "analytical_p": 0.8375988894359606,
+        "bootstrap_p": 0.8366216337836622,
+        "walkforward_exposed": 0,
+        "judgment": "FAILED"
+      }
+    },
+    "EXP-009": {
+      "protocol_sha256": "5d475a78cfed4698cfaaf54b20a03469b3242b604a87c29a7b3917f838fa2763",
+      "result_document_sha256": "3499281c6de71eb7e42e5902f02fce0b7ee9dd5427a33b9627e79bdc6c1392a4",
+      "calculation": {
+        "covariance": 0.014261057173678498,
+        "normalized": 0.010731564762801547,
+        "t": 0.3772873865783746,
+        "analytical_p": 0.7059600448256893,
+        "mc_p": 0.7067729322706773,
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-010": {
+      "protocol_sha256": "155996ac4b9fceca68548a9b49957e61df4e9f980ec5d6ee706d6f1bc2da4bce",
+      "result_document_sha256": "3617bcd57eae4353397287c488ffca46d0e11ebe5b254efa467c9f3f2e797cfa",
+      "calculation": {
+        "covariance": 8.933656957928802,
+        "normalized": 0.009959483788103459,
+        "t": 0.35014349660433874,
+        "analytical_p": 0.7262310089222362,
+        "mc_p": 0.7241727582724172,
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-011": {
+      "protocol_sha256": "a32bf95af7e36811bfdfa8c22dcb250b0bd6ae4cb45902773a357745ddb61556",
+      "result_document_sha256": "e8e232684e6540113d8df5bc6e3910003ff605ce7d5b9475a408b76ef59405d9",
+      "calculation": {
+        "rounds": 1236,
+        "exposure": 7269,
+        "hits": 990,
+        "observed_rate": 0.1361947998349154,
+        "risk_difference": 0.0028614665015820606,
+        "t": 0.7613114414829514,
+        "analytical_p": 0.44647106828636096,
+        "mc_p": 0.44715552844471557,
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-012": {
+      "protocol_sha256": "836a57b38d59d64831848203158d062b0157712998670debd41cabae06e70dc1",
+      "result_document_sha256": "685c13de6488e945e08d96df525d2982123781a6fcd41a2e8b36dc88bb451774",
+      "calculation": {
+        "start_round": 28,
+        "target_rounds": 1210,
+        "mean_selected_rank": 22.91590909090909,
+        "rank_shift": -0.08409090909091077,
+        "t": -0.5882349589415548,
+        "analytical_p": 0.5563745953715649,
+        "bootstrap_p": 0.5511644883551164,
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-013": {
+      "protocol_sha256": "7dff134fc3e8fd3e4642dac4273e99e2fd80dac358fd523f2e6bc1e691098317",
+      "result_document_sha256": "d0dffc7c15535fa15a609c2df472bcfd41eadb4549eca50423c09ebbde2a792c",
+      "calculation": {
+        "start_round": 201,
+        "target_rounds": 1037,
+        "mean_selected_rank": 22.823931211828995,
+        "rank_shift": -0.1760687881710048,
+        "t": -1.1382184545398413,
+        "analytical_p": 0.25502927454806706,
+        "bootstrap_p": 0.25325746742532573,
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-014": {
+      "protocol_sha256": "b2fddf147f5da5e15adfe1ff8aee25d38a1176cc8cb47a5f559a9856fcd8a54a",
+      "result_document_sha256": "3e79aab596cfa03b110f6b2adfb0060f3eed34e82da09318c21a0db66ef797e1",
+      "calculation": {
+        "target_rounds": 1236,
+        "hits": 169,
+        "rate": 0.13673139158576053,
+        "risk_difference": 0.0033980582524271996,
+        "exact_p": 0.7066426410885681,
+        "mc_p": 0.7060129398706013,
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-015": {
+      "protocol_sha256": "829527d428838a91997be3b6840bc2f04616180e813355c6db50d3a32e1d82c1",
+      "result_document_sha256": "2c846b3ec276013f44d366c97b661453be3c56a28af1c2aa727ea84d3e659141",
+      "calculation": {
+        "target_rounds": 1237,
+        "mean_rank": 3.89733225545675,
+        "rank_shift": -0.10266774454325,
+        "t": -1.8054641755648826,
+        "analytical_p": 0.07100207657672357,
+        "exact_p": 0.07211539628592747,
+        "holdout_one_sided_p": 0.08748320418779645,
+        "rank_counts": {
+          "1": 204,
+          "2": 176,
+          "3": 192,
+          "4": 144,
+          "5": 184,
+          "6": 166,
+          "7": 171
+        },
+        "judgment": "FAILED_EARLY"
+      }
+    },
+    "EXP-016": {
+      "protocol_sha256": "a28a921012d750cf1fe1c597d60aec314e78d8231150aaaa764936f7fa3fe913",
+      "result_document_sha256": "00da772210aa888df8ede26c4724591ae27ace3a3bf85c3197cf539806441784",
+      "calculation": {
+        "training_q": 46.398805078416736,
+        "training_analytical_p": 0.37371274555268147,
+        "training_mc_p": 0.37333133343332836,
+        "overall_q": 33.290715751507996,
+        "overall_analytical_p": 0.880486657393584,
+        "overall_mc_p": 0.8808559572021399,
+        "holdout_t": -2.1723162517486734,
+        "holdout_one_sided_p": 0.9850840914853004,
+        "holdout_exact_mc_p": null,
+        "judgment": "FAILED_EARLY"
+      }
+    }
+  }
+}

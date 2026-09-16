@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "p45://experiment-lab/registry-schema/1.0",
+  "title": "P45 EXPERIMENT Registry Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "experiment_id", "supersedes_experiment_id", "research_domain", "lab_name",
+    "research_name", "research_purpose", "hypothesis", "counter_hypothesis",
+    "data_range", "input_data", "calculation_method", "result_metrics",
+    "success_criteria", "failure_criteria", "minimum_sample", "validation_windows",
+    "future_data_block", "walkforward_required", "random_null_required",
+    "multiple_testing_risk", "overfitting_risk", "protocol_version",
+    "canonical_protocol_hash", "locked_at", "research_result", "failure_reason",
+    "reproducibility_status", "status", "promotion_eligible", "official_effect",
+    "official_isolation_verified", "created_at", "updated_at", "record_hash"
+  ],
+  "properties": {
+    "experiment_id": {"type": "string", "pattern": "^EXP-(DRAW|CROWD|PRIZE|CROSS)-[0-9]{8}-[0-9]{3}-V[1-9][0-9]*$"},
+    "supersedes_experiment_id": {"type": ["string", "null"]},
+    "research_domain": {"enum": ["DRAW", "CROWD", "PRIZE_SHARE", "DRAW_CROWD_CROSS_TEST"]},
+    "lab_name": {"type": "string", "minLength": 1},
+    "research_name": {"type": "string", "minLength": 1},
+    "research_purpose": {"type": ["string", "null"]},
+    "hypothesis": {"type": ["string", "null"]},
+    "counter_hypothesis": {"type": ["string", "null"]},
+    "data_range": {"type": ["object", "null"]},
+    "input_data": {"type": "array"},
+    "calculation_method": {"type": ["object", "string", "null"]},
+    "result_metrics": {"type": "array"},
+    "success_criteria": {"type": "array"},
+    "failure_criteria": {"type": "array"},
+    "minimum_sample": {"type": ["integer", "object", "null"], "minimum": 0},
+    "validation_windows": {"type": ["object", "null"]},
+    "future_data_block": {"type": ["object", "string", "null"]},
+    "walkforward_required": {"type": ["boolean", "null"]},
+    "random_null_required": {"type": ["boolean", "null"]},
+    "multiple_testing_risk": {"type": ["object", "null"]},
+    "overfitting_risk": {"type": ["object", "null"]},
+    "protocol_version": {"type": ["string", "null"]},
+    "canonical_protocol_hash": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"},
+    "locked_at": {"type": ["string", "null"]},
+    "research_result": {"type": ["object", "null"]},
+    "failure_reason": {"type": "array"},
+    "reproducibility_status": {"enum": ["NOT_TESTED", "REPRODUCED", "NOT_REPRODUCED", "REPRODUCTION_INCOMPLETE"]},
+    "status": {"enum": ["IDEA", "REGISTERED", "DESIGNED", "READY_FOR_TEST", "TESTING", "BACKTESTED", "WALKFORWARD_TESTED", "SUPPORTED", "INCONCLUSIVE", "FAILED", "RETIRED", "PROMOTION_CANDIDATE"]},
+    "promotion_eligible": {"type": "boolean"},
+    "official_effect": {"const": "NONE"},
+    "official_isolation_verified": {"type": "boolean"},
+    "created_at": {"type": "string"},
+    "updated_at": {"type": "string"},
+    "record_hash": {"type": ["string", "null"], "pattern": "^[a-f0-9]{64}$"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"promotion_eligible": {"const": true}}},
+      "then": {"properties": {"status": {"const": "PROMOTION_CANDIDATE"}}}
+    }
+  ]
+}

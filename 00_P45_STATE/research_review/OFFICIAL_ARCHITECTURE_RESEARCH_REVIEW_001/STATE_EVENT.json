@@ -1,0 +1,62 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER_ATTACHED_WORK_INSTRUCTION_020",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260824-093",
+  "decision": "PAIR historical evidence materialization과 TEST_READY lifecycle의 공식 아키텍처 검토 결과를 ARCHITECTURE_REPAIR_SPECIFIABLE로 확정한다. 이는 gate/threshold 변경이 아니라 기존 공식 규칙의 누락 구현 복구 명세이며, 별도 승인 전 shadow prototype과 official 적용은 금지한다.",
+  "reason": "공식 PAIR Amendment에는 evidence/recent/sample/state semantics가 완결되어 있으나 production path는 evidence를 None, recent를 고정 placeholder로 전달하고 canonical decide_state의 TEST_READY branch를 호출하지 않는다. r-1 경계의 결정론적 materialization contract를 기존 기준만으로 명세할 수 있다.",
+  "related_stage": "OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_001",
+  "category": "OFFICIAL_ARCHITECTURE_READ_ONLY_REVIEW",
+  "evidence": "7 review/specification documents; official Gate Amendment sections 10-12; source provenance production.py/decision.py/lifecycle_v12.py/final_aggregation.py; no historical output calculation",
+  "affected_files": "00_P45_STATE/research_review/OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_001 documents and managed state files only",
+  "affected_schema": "none",
+  "previous_rule": "NO_PICK_ROOT_CAUSE_IMPLEMENTATION_OR_DEFINITION_ANOMALY; architecture repairability not yet decided",
+  "new_rule": "Architecture repair is specifiable using existing canonical semantics; official implementation remains frozen and requires separate approval",
+  "allowed_next_action": "SEPARATELY_APPROVED_SHADOW_REPAIR_PROTOTYPE_AFTER_REPAIR_SPEC_AND_HASH_LOCK",
+  "forbidden_actions": [
+    "OFFICIAL_SOURCE_OR_DB_CHANGE",
+    "GATE_THRESHOLD_SIGNATURE_CHANGE",
+    "UNAPPROVED_SHADOW_REPLAY",
+    "HISTORICAL_OUTCOME_DRIVEN_TUNING",
+    "EXP_017_CREATION",
+    "PROSPECTIVE_SIGNAL_PEEKING"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_001_COMPLETE",
+    "current_status": "ARCHITECTURE_REPAIR_SPECIFIABLE",
+    "last_completed_stage": "OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_001",
+    "next_stage": "SHADOW_REPAIR_PROTOTYPE_REQUIRES_SEPARATE_APPROVAL",
+    "next_action": "LOCK_REPAIR_SPEC_AND_HASH_BEFORE_ANY_SEPARATELY_APPROVED_SHADOW_REPLAY; OFFICIAL ENGINE REMAINS FROZEN",
+    "research_state": {
+      "official_architecture_review_001": {
+        "status": "ARCHITECTURE_REPAIR_SPECIFIABLE",
+        "no_pick_status": "UNRESOLVED",
+        "root_cause_input": "IMPLEMENTATION_OR_DEFINITION_ANOMALY",
+        "canonical_semantics_complete": true,
+        "historical_materializer": "PARTIAL_CURRENT_ONLY_PER_R_PATH_MISSING",
+        "pair_test_ready_defined": true,
+        "pair_test_ready_implemented_primitive": true,
+        "pair_test_ready_reachable_in_production": false,
+        "test_ready_reachable_by_defined_rules": true,
+        "repair_requires_gate_change": false,
+        "repair_requires_threshold_change": false,
+        "live_current_path_affected": true,
+        "historical_coverage_interpretation": "PARTIALLY_VALID",
+        "affected_valid_rounds": 867,
+        "affected_raw_pair_candidates": 148215,
+        "affected_pair_rounds": 258,
+        "official_engine_changed": false,
+        "official_db_changed": false,
+        "shadow_output_calculated": false,
+        "exp_017_created": false,
+        "prospective_signal_peeking": 0,
+        "output_directory": "00_P45_STATE/research_review/OFFICIAL_ARCHITECTURE_RESEARCH_REVIEW_001",
+        "review_sha256": "b100461f7ef1b7d11e624db5aacab3fa67840ca40925d1964e57e970b6224f6b",
+        "provenance_sha256": "72985eb300b3ed66a8aad073d27932eae7d2a41cd619212fb3cf89a9f90f0a23",
+        "contract_sha256": "1a7b961c13a0c1fd4a5ab0eb9032fb3c3dfc1082833356ed9f9d8d9efe03e542",
+        "repair_spec_sha256": "214b9cf431a691b8697b7fc2bac284aed17f1e1b6e18ef7ebc24a47a756b2764"
+      }
+    }
+  }
+}

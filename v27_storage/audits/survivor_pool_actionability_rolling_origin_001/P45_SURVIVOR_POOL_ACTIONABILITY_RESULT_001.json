@@ -1,0 +1,59 @@
+{
+  "final_verdict": "SURVIVOR_POOL_ACTIONABILITY_VALIDATION_COMPLETE",
+  "protocol_locked": true,
+  "protocol_sha256": "64dead6a65b141bf99725bcfc98106f713bc44843c2135244ea37e4eefa08a44",
+  "valid_target_count": 1236,
+  "discovery_range": [
+    3,
+    867
+  ],
+  "confirmation_range": [
+    868,
+    1238
+  ],
+  "k_discovery": null,
+  "discovery_selected": null,
+  "confirmation": {
+    "rounds": null,
+    "observations": null,
+    "hits": null,
+    "hit_rate": null,
+    "delta_random": null,
+    "ci95": null,
+    "average_pool_size": null,
+    "average_main_hits_per_round": null,
+    "minimum_sample_pass": false
+  },
+  "primary_verdict": "NO_DISCOVERY_K",
+  "max_actionable_pool": null,
+  "current_1239_raw_survivor_count": 5,
+  "current_1239_raw_survivors": [
+    13,
+    18,
+    20,
+    24,
+    27
+  ],
+  "current_1239_actionable": "NOT_CONFIRMED",
+  "confirmation_outcome_accessed": false,
+  "future_leakage": 0,
+  "target_1239_scoring": 0,
+  "multiple_testing_policy": "PASS",
+  "exp_017": "NOT_CREATED",
+  "survivor_pool_actionability_policy": {
+    "raw_preserved": "0..45",
+    "max_actionable_pool": "NOT_CONFIRMED",
+    "broad_pool": "N>MAX => BROAD_POOL / NO_ACTIONABLE_PICK",
+    "top_k_truncation": "FORBIDDEN",
+    "official_3x2_separate": true
+  },
+  "artifacts": {
+    "per_target_sha256": "371b16e7280352c335122da35cf0ab995f1a0ace845ff3886ae40dc2ee10797b",
+    "exact_n_sha256": "48ea2c71b54cf84ac6644c3091e426f31e530ae4eb55945b7ea456e651f57825",
+    "coarse_bin_sha256": "d9b5706b0a7245865415aafe56b7697c5d68681e740807a987ec2849f5bc38d7",
+    "discovery_k_sha256": "2c63fcc57ba6ef0f1571ca7ec77649b0aa32cbf87624d0ed34259a79c83c1621"
+  },
+  "confirmation_predictive_test_performed": false,
+  "confirmation_outcome_accessed_for_descriptive_only": true,
+  "full_historical_evidence_target_count": 1236
+}

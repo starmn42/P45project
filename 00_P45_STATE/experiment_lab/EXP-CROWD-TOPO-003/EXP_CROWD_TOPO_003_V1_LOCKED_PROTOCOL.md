@@ -1,0 +1,22 @@
+# EXP-CROWD-TOPO-003-V1 LOCKED PROTOCOL
+
+- Logical ID: `EXP-CROWD-TOPO-003-V1`
+- Domain: `CROWD`
+- Title: `JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS`
+- Lock timing: after source-schema and algebra preflight, before outcome analysis.
+- Data: official rounds 1..1237 only; train 1..800; holdout 801..1237.
+- Price: 1..87 KRW 2,000; 88..1237 KRW 1,000. Sold lines M=sales/price.
+- Shell observations: Y0=K1, Y1=K2+K3, Y2=K4, Y3=K5.
+- Valencies: `[1,234,11115,182780,1233765,3454542,3262623]`.
+- Factorial cross moments: F_ab=(Y_a(Y_b-1[a=b]))/(N(N-1)), N=Y0+Y1+Y2+Y3.
+- Inversion: g0=F00; g1=F01; g2=F02; g3=F03; g4=(F13-148g2-117g3)/16; g5=(F23-7030g1-5772g2-2871g3-888g4)/100; g6=(F33-182780g0-91390g1-47212g2-25123g3-12056g4-3500g5)/400.
+- Null: g1/v1=...=g6/v6.
+- Contrasts: Z_d=M^2(g_d/v_d-g1/v1), d=2..6.
+- Holdout blocks: 23 consecutive blocks of 19 rounds.
+- Primary statistic: component studentized T and T_MAX=max(abs(T)).
+- Null calibration: 200,000 common-sign block wild-bootstrap repetitions, seed `2026082306`, two-sided omnibus p.
+- Decision: p<=.05 => `EXPLORATORY_TOPOLOGY_DEVIATION`; otherwise `EXPLORATORY_NOT_SUPPORTED`.
+- Maximum positive status: exploratory only; promotion candidate is false.
+- Descriptive only: d0..d6 profile mean/median/SE/difference from d1; no individual p-values.
+- Diagnostics: preregistered universal identities F11/F12/F22, full/holdout residual summaries, float64-vs-high-precision aggregate contrast comparison, top-10 absolute contribution share, deterministic rerun.
+- Forbidden: 1238+, threshold changes, post-result rule changes, score aggregation into the DRAW engine, official promotion, prospective protocol change.

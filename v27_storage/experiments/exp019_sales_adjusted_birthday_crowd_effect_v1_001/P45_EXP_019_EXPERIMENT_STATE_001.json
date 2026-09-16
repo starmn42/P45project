@@ -1,0 +1,25 @@
+{
+  "short_id": "EXP-019",
+  "experiment_id": "EXP-DRAW-20260827-019-V1",
+  "title": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1",
+  "status": "FAILED",
+  "final_verdict": "FAILED_NOT_SUPPORTED",
+  "lifecycle": ["IDEA", "REGISTERED", "DESIGNED", "READY_FOR_TEST", "TESTING", "BACKTESTED", "FAILED"],
+  "protocol_path": "v27_storage/experiments/exp019_sales_adjusted_birthday_crowd_effect_v1_001/P45_EXP_019_SALES_ADJUSTED_BIRTHDAY_CROWD_EFFECT_V1_PROTOCOL_001.md",
+  "protocol_sha256": "220d59aa8c50e11c74f6146061784b8f5e0413c5a7013758a47891404e2f4d5c",
+  "lock_path": "v27_storage/experiments/exp019_sales_adjusted_birthday_crowd_effect_v1_001/P45_EXP_019_PROTOCOL_LOCK_001.md",
+  "lock_sha256": "fb28b4daed366e4a9448a33c68155bb742a63fecda41a2f6ce37eec30ef32b6a",
+  "locked_at": "2026-08-27T21:50:04+09:00",
+  "official_data_manifest": "v27_storage/experiments/exp019_sales_adjusted_birthday_crowd_effect_v1_001/P45_EXP_019_OFFICIAL_SOURCE_MANIFEST_001.json",
+  "structural_preflight": "PASS",
+  "outcome_peek": 1,
+  "result_calculation": true,
+  "research_result": {
+    "development": {"targets": 780, "beta_hat": 0.011148559895275412, "exp_beta_hat": 1.011210936677392, "U_obs": 72.50874769925632, "permutation_exceedance": 22829, "p_perm": 0.22829771702282978, "verdict": "FAILED_NOT_SUPPORTED"},
+    "holdout": {"executed": false, "reason": "DEVELOPMENT_FAILED_PROTOCOL_GATE"},
+    "reproducibility": "PASS"
+  },
+  "official_effect": "NONE",
+  "promotion_eligible": false,
+  "future_leakage": 0
+}

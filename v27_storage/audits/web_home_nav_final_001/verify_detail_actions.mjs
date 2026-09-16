@@ -1,0 +1,15 @@
+import fs from "node:fs/promises";
+const [endpoint,outDir]=process.argv.slice(2),pages=await(await fetch(`${endpoint}/json`)).json(),page=pages.find(x=>x.type==="page"),ws=new WebSocket(page.webSocketDebuggerUrl);
+await new Promise((r,j)=>{ws.onopen=r;ws.onerror=j});let id=0;const pending=new Map(),errors=[];
+ws.onmessage=({data})=>{const m=JSON.parse(data);if(m.id&&pending.has(m.id)){const p=pending.get(m.id);pending.delete(m.id);m.error?p.j(new Error(JSON.stringify(m.error))):p.r(m.result)}else if(m.method==="Runtime.exceptionThrown"||m.method==="Runtime.consoleAPICalled"&&m.params.type==="error")errors.push(m.method)};
+const send=(method,params={})=>new Promise((r,j)=>{const n=++id;pending.set(n,{r,j});ws.send(JSON.stringify({id:n,method,params}))});
+const evalv=async expression=>(await send("Runtime.evaluate",{expression,returnByValue:true})).result.value;
+const capture=async name=>fs.writeFile(`${outDir}/${name}`,Buffer.from((await send("Page.captureScreenshot",{format:"png",captureBeyondViewport:true,fromSurface:true})).data,"base64"));
+await send("Runtime.enable");await send("Page.enable");await send("Emulation.setDeviceMetricsOverride",{width:390,height:844,deviceScaleFactor:1,mobile:true});await send("Page.navigate",{url:"http://127.0.0.1:8045/"});await new Promise(r=>setTimeout(r,1600));
+const menu=await evalv(`[...document.querySelectorAll('.mobile-v1-nav a')].map(x=>x.textContent.trim())`);
+await evalv(`document.getElementById('showNextDispatch').click()`);await new Promise(r=>setTimeout(r,150));
+const next=await evalv(`({active:document.querySelector('.v1-page.active').id,title:document.getElementById('dispatchTitle').textContent,crumb:document.getElementById('dispatchCrumb').textContent,result:document.getElementById('dispatchResult').textContent,text:document.querySelector('.v1-page.active').innerText})`);await capture("detail_1241_390.png");
+await evalv(`document.querySelector('#dispatch [data-home]').click();document.getElementById('showLastResult').click()`);await new Promise(r=>setTimeout(r,150));
+const previous=await evalv(`({active:document.querySelector('.v1-page.active').id,title:document.getElementById('resultDetailTitle').textContent,crumb:document.getElementById('resultCrumb').textContent,hitCount:document.querySelectorAll('#result-detail .hit-number').length,text:document.querySelector('.v1-page.active').innerText})`);await capture("detail_1240_390.png");
+const result={menu,next:{active:next.active,title:next.title,crumb:next.crumb,result:next.result,banned:/보조적중|주적중|[0123]\/3/.test(next.text)},previous:{active:previous.active,title:previous.title,crumb:previous.crumb,hitCount:previous.hitCount,settled:/결과 반영 완료/.test(previous.text)},consoleErrors:errors};
+await fs.writeFile(`${outDir}/detail_action_metrics.json`,JSON.stringify(result,null,2));console.log(JSON.stringify(result,null,2));ws.close();

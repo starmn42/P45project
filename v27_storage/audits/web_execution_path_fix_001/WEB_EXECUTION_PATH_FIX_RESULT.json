@@ -1,0 +1,37 @@
+{
+  "verdict": "PARTIAL_DEVICE_SIDE_NOT_CONFIRMED",
+  "root_causes": ["START_SCRIPT_PATH_ERROR", "WEB_PROJECTION_DUPLICATE"],
+  "pc": {
+    "launcher_exit": 0,
+    "listener": "127.0.0.1:8045",
+    "home_http": 200,
+    "api_http": 200,
+    "browser_render": "PASS",
+    "console_errors": 0
+  },
+  "phone": {
+    "lan_ipv4": "172.30.1.20",
+    "listener": "0.0.0.0:8045",
+    "url": "http://172.30.1.20:8045/",
+    "home_http_from_pc": 200,
+    "api_http_from_pc": 200,
+    "device_side": "NOT_CONFIRMED"
+  },
+  "projection": {
+    "target": 1239,
+    "rows": 1,
+    "completed_rounds": 1,
+    "fixed_exact2": 1
+  },
+  "regression": "3/3 PASS",
+  "protected": {
+    "canonical_draw_changed": false,
+    "sealed_changed": false,
+    "settlement_changed": false,
+    "fixed_linked_changed": false,
+    "kts45_changed": false,
+    "official_engine_semantics_changed": false,
+    "registry_changed": false,
+    "research_changed": false
+  }
+}

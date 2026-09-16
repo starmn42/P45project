@@ -1,0 +1,12 @@
+{
+  "event_type": "IDEA_PENDING",
+  "idea_id": "IDEA-20260823-CROWD001",
+  "source": "USER",
+  "title": "CROWD TOPOLOGY / JOHNSON-SPACE LOCAL AUTOCORRELATION",
+  "summary": "Treat the 6/45 ticket space as Johnson graph J(45,6) and investigate whether latent crowd-choice density q(v) has positive distance-1 local autocorrelation, using prize-tier winner counts as candidate radial-shell measurements only after identifiability and covariance design review.",
+  "reason": "The direction is more specific than generic birthday, low-number, or combination preference research, while remaining separate from the DRAW engine; literature overlap means novelty and evidence are not yet confirmed.",
+  "related_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_ROADMAP",
+  "related_rule": "CROWD_AND_PRIZE_SHARE_SEPARATED_FROM_DRAW_ENGINE",
+  "official_effect": "NONE",
+  "next_review": "IDENTIFIABILITY_MULTINOMIAL_NULL_AND_POWER_DESIGN_REQUIRES_SEPARATE_APPROVAL"
+}

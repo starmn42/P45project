@@ -1,0 +1,265 @@
+{
+  "generated_at": "2026-08-10T14:06:05+09:00",
+  "local": {
+    "read_files": [
+      "P45_START_HERE.md",
+      "P45_CAPTURE_POLICY.md",
+      "P45_HANDOFF.md",
+      "P45_CURRENT_STATE.md",
+      "P45_CURRENT_STATE.json",
+      "P45_DECISION_LOG.md",
+      "P45_IDEA_INBOX.md"
+    ],
+    "read_order": [
+      "P45_START_HERE.md",
+      "P45_CAPTURE_POLICY.md",
+      "P45_HANDOFF.md",
+      "P45_CURRENT_STATE.md",
+      "P45_CURRENT_STATE.json",
+      "P45_DECISION_LOG.md",
+      "P45_IDEA_INBOX.md"
+    ],
+    "recovered": {
+      "project_version": "P45 v2.7.3",
+      "schema": "273",
+      "stage": "STAGE_7_2_COMPLETE",
+      "status": "TRIO_FINAL_AGGREGATION_COMPLETE",
+      "last_completed_stage": "7.2",
+      "walkforward": {
+        "run_id": "b7a92876-4a55-4472-a738-f1edb74796ec",
+        "evaluation_range": "43~1235",
+        "total_rounds": 1193,
+        "complete": 1088,
+        "skipped_research_hold": 105,
+        "failed": 0,
+        "selection_exposure": 100711,
+        "duplicate_exposure": 0,
+        "missing_rounds": 0,
+        "duplicate_rounds": 0,
+        "status": "WALKFORWARD_COMPLETE",
+        "source_db": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_walkforward.sqlite3",
+        "sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5"
+      },
+      "number_state": {
+        "analysis_round": 1236,
+        "candidates": [
+          3,
+          2,
+          31,
+          13,
+          19,
+          27,
+          40,
+          38,
+          20,
+          45,
+          39,
+          15
+        ],
+        "candidate_pool_type": "EXPANDED_TEST_POOL",
+        "number_pass": 1,
+        "operational_ledger_rows": 0
+      },
+      "trio_state": {
+        "total": 220,
+        "pass": 0,
+        "weaken": 0,
+        "test": 12,
+        "hold": 208,
+        "fail": 0,
+        "valid_for_pair_true": 12,
+        "valid_trios": [
+          "2-13-27",
+          "2-13-31",
+          "2-15-27",
+          "2-15-31",
+          "2-19-38",
+          "2-19-40",
+          "2-20-38",
+          "2-20-39",
+          "2-27-45",
+          "2-31-45",
+          "13-27-45",
+          "13-31-45"
+        ],
+        "result_db": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_final.sqlite3",
+        "sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+      },
+      "pair_state": {
+        "rows": 0,
+        "status": "NOT_STARTED",
+        "approved": false
+      },
+      "core_state": {
+        "official_rows": 0,
+        "final_lock": "NONE"
+      },
+      "audit_state": {
+        "official_rows": 0
+      },
+      "blockers": [
+        "PAIR_RULE_COMPLETENESS_AUDIT_REQUIRED"
+      ],
+      "next_action": "PAIR 구현 전에 공식 PAIR 규칙의 빈칸을 별도 검토",
+      "forbidden_actions": [
+        "PAIR_GENERATION",
+        "NONOVERLAPPING_TRIO_PAIR_GENERATION",
+        "FINAL_SIX",
+        "SET_1_SET_2",
+        "CORE_SET_READY",
+        "CORE_TEST_SET_READY_FINAL",
+        "OFFICIAL_LOCK",
+        "LIVE_OFFICIAL",
+        "AUDIT_RUN",
+        "RULE_RELAXATION",
+        "OFFICIAL_RULE_MUTATION"
+      ],
+      "latest_decision": "DECISION-20260810-014",
+      "state_hash": "77fd483f6e88bbdb95a458d492f729cc74771957d81c701146cd0c99dfa6fd41",
+      "capture_system": {
+        "status": "STATE_CAPTURE_READY",
+        "state_check_enabled": true,
+        "policy_file": "E:\\P45 프로젝트\\00_P45_STATE\\P45_CAPTURE_POLICY.md",
+        "allowed_event_types": [
+          "CONVERSATION_ONLY",
+          "IDEA_PENDING",
+          "AMBIGUOUS_IMPORTANT",
+          "DECISION_CONFIRMED"
+        ],
+        "automatic_research_promotion": false,
+        "scope": "CURRENT_P45_WORK_CONTEXT_ONLY"
+      }
+    },
+    "conflicts": [],
+    "db_verified": true,
+    "manifest_verified": true,
+    "protected_verified": true,
+    "questions": {
+      "Q1": true,
+      "Q2": true,
+      "Q3": true,
+      "Q4": true,
+      "Q5": true,
+      "Q6": true
+    },
+    "state_check_recovered": true,
+    "status": "STATE_HANDOFF_VERIFIED"
+  },
+  "portable": {
+    "recovered": {
+      "project_version": "P45 v2.7.3",
+      "schema": "273",
+      "stage": "STAGE_7_2_COMPLETE",
+      "status": "TRIO_FINAL_AGGREGATION_COMPLETE",
+      "last_completed_stage": "7.2",
+      "walkforward": {
+        "run_id": "b7a92876-4a55-4472-a738-f1edb74796ec",
+        "evaluation_range": "43~1235",
+        "total_rounds": 1193,
+        "complete": 1088,
+        "skipped_research_hold": 105,
+        "failed": 0,
+        "selection_exposure": 100711,
+        "duplicate_exposure": 0,
+        "missing_rounds": 0,
+        "duplicate_rounds": 0,
+        "status": "WALKFORWARD_COMPLETE",
+        "source_db": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_walkforward.sqlite3",
+        "sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5"
+      },
+      "number_state": {
+        "analysis_round": 1236,
+        "candidates": [
+          3,
+          2,
+          31,
+          13,
+          19,
+          27,
+          40,
+          38,
+          20,
+          45,
+          39,
+          15
+        ],
+        "candidate_pool_type": "EXPANDED_TEST_POOL",
+        "number_pass": 1,
+        "operational_ledger_rows": 0
+      },
+      "trio_state": {
+        "total": 220,
+        "pass": 0,
+        "weaken": 0,
+        "test": 12,
+        "hold": 208,
+        "fail": 0,
+        "valid_for_pair_true": 12,
+        "valid_trios": [
+          "2-13-27",
+          "2-13-31",
+          "2-15-27",
+          "2-15-31",
+          "2-19-38",
+          "2-19-40",
+          "2-20-38",
+          "2-20-39",
+          "2-27-45",
+          "2-31-45",
+          "13-27-45",
+          "13-31-45"
+        ],
+        "result_db": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_final.sqlite3",
+        "sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+      },
+      "pair_state": {
+        "rows": 0,
+        "status": "NOT_STARTED",
+        "approved": false
+      },
+      "core_state": {
+        "official_rows": 0,
+        "final_lock": "NONE"
+      },
+      "audit_state": {
+        "official_rows": 0
+      },
+      "blockers": [
+        "PAIR_RULE_COMPLETENESS_AUDIT_REQUIRED"
+      ],
+      "next_action": "PAIR 구현 전에 공식 PAIR 규칙의 빈칸을 별도 검토",
+      "forbidden_actions": [
+        "PAIR_GENERATION",
+        "NONOVERLAPPING_TRIO_PAIR_GENERATION",
+        "FINAL_SIX",
+        "SET_1_SET_2",
+        "CORE_SET_READY",
+        "CORE_TEST_SET_READY_FINAL",
+        "OFFICIAL_LOCK",
+        "LIVE_OFFICIAL",
+        "AUDIT_RUN",
+        "RULE_RELAXATION",
+        "OFFICIAL_RULE_MUTATION"
+      ],
+      "latest_decision": "DECISION-20260810-014",
+      "state_hash": "77fd483f6e88bbdb95a458d492f729cc74771957d81c701146cd0c99dfa6fd41",
+      "capture_system": {
+        "status": "STATE_CAPTURE_READY",
+        "state_check_enabled": true,
+        "policy_file": "E:\\P45 프로젝트\\00_P45_STATE\\P45_CAPTURE_POLICY.md",
+        "allowed_event_types": [
+          "CONVERSATION_ONLY",
+          "IDEA_PENDING",
+          "AMBIGUOUS_IMPORTANT",
+          "DECISION_CONFIRMED"
+        ],
+        "automatic_research_promotion": false,
+        "scope": "CURRENT_P45_WORK_CONTEXT_ONLY"
+      }
+    },
+    "conflicts": [],
+    "status": "STATE_HANDOFF_PORTABLE_ONLY",
+    "portable_content_hash": "c5e33e5f8e9921874f2bc851088d788fefecc383d87b807e9cbd69df6a366744"
+  },
+  "final_status": "STATE_HANDOFF_VERIFIED"
+}

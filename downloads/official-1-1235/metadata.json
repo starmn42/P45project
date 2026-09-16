@@ -1,0 +1,13 @@
+{
+  "source": "동행복권 공식 사이트",
+  "source_page": "https://www.dhlottery.co.kr/lt645/result",
+  "source_api": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do",
+  "collection_status": "COLLECTED_UNVERIFIED",
+  "start_round": 1,
+  "end_round": 1235,
+  "draw_count": 1235,
+  "raw_bundle_sha256": "b6e7c6797b426a90b3149ce5c814e251adb72cb0516e2c80c70524e54d5a0d14",
+  "csv_sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "collected_at": "2026-08-04T20:17:51+09:00",
+  "next_gate": "PHASE_3_DATA_VALIDATION"
+}

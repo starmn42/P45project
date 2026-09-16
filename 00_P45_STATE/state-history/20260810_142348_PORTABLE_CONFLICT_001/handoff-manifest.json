@@ -1,0 +1,144 @@
+{
+  "generated_at": "2026-08-10T14:06:04+09:00",
+  "state_system_version": "1.2",
+  "state_version": "1.0.4",
+  "state_hash": "77fd483f6e88bbdb95a458d492f729cc74771957d81c701146cd0c99dfa6fd41",
+  "latest_decision_id": "DECISION-20260810-014",
+  "project_version": "P45 v2.7.3",
+  "active_schema": "273",
+  "current_stage": "STAGE_7_2_COMPLETE",
+  "current_status": "TRIO_FINAL_AGGREGATION_COMPLETE",
+  "files": [
+    {
+      "relative_path": "P45_CAPTURE_POLICY.md",
+      "size": 5041,
+      "sha256": "5da7eb290838e84226fc2650359589131365d4522a69f2d2ddc8366ce45f21f3"
+    },
+    {
+      "relative_path": "P45_CURRENT_STATE.json",
+      "size": 5302,
+      "sha256": "7ccd0a8d963e59f58d3511cf18325bae797018c5a257add1be8db5567d433183"
+    },
+    {
+      "relative_path": "P45_CURRENT_STATE.md",
+      "size": 3982,
+      "sha256": "98103b728400332e597bb13adcb892f0f3b59c75a3ba764dc139920507397e13"
+    },
+    {
+      "relative_path": "P45_DECISION_LOG.md",
+      "size": 11147,
+      "sha256": "b204a24dcc5c1472b9bde5bef0e77af812c72ba342b97921e6c5e4491741d81a"
+    },
+    {
+      "relative_path": "P45_HANDOFF.md",
+      "size": 873,
+      "sha256": "9a7be4e049109b727874dd8b1b7c37da34dbf5f6307ee5c08e0d1a31d6e72897"
+    },
+    {
+      "relative_path": "P45_IDEA_INBOX.md",
+      "size": 448,
+      "sha256": "9f010c625a7f8a937a59a708ce724c0bacc69693e0d76171c68a3b4dca23333f"
+    },
+    {
+      "relative_path": "P45_NEW_CHAT_START.md",
+      "size": 1026,
+      "sha256": "9b94be13a205f377e3a21bca640ebfd6684ce763ea3bf6f8aa8a0d2e7268ca4b"
+    },
+    {
+      "relative_path": "P45_START_HERE.md",
+      "size": 2588,
+      "sha256": "54bfdf51a9e03bc21d83e984ddbc2bc18fc29a832df9a2ab7535507a8706706e"
+    },
+    {
+      "relative_path": "official-docs/P45_v2.7.1_Stage5_5_Work_UTF8_BOM_CRLF.md",
+      "size": 4616,
+      "sha256": "830bf51f44d479e0b3bf2b23e00fc9153c6b2007fdc6732501e05f86d4bcfb24"
+    },
+    {
+      "relative_path": "official-docs/P45_v2.7.1_Work_UTF8_BOM_CRLF.md",
+      "size": 76439,
+      "sha256": "dca50b766b028ba2c2e76830611bc4c13aef1764f5194fbb34bc6c84c9a0128a"
+    },
+    {
+      "relative_path": "official-docs/P45_v2.7.2_Number_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "size": 17685,
+      "sha256": "6c268c0950edfd1523bd8bf6d6451eef4b12517e34a0cfdc5c7040639c6f25cd"
+    },
+    {
+      "relative_path": "official-docs/P45_v2.7.2_Stage6_Work_UTF8_BOM_CRLF.md",
+      "size": 1943,
+      "sha256": "6f4094412163e8b07f3c02f69cad417bb8fc7758070c2e24d49870f4fc24403a"
+    },
+    {
+      "relative_path": "official-docs/P45_v2.7.3_Stage7_Work_UTF8_BOM_CRLF.md",
+      "size": 2784,
+      "sha256": "73478304eefe438747f497d8021f71e982e60f8f2a7ea5f264504573cfd55d15"
+    },
+    {
+      "relative_path": "official-docs/P45_v2.7.3_TRIO_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "size": 22184,
+      "sha256": "2ed0257c1545f8ebca462d0c03ca9176d3a96cb709f65e6335df4bc944bdecd9"
+    }
+  ],
+  "official_documents": [
+    {
+      "original_path": "E:\\P45 프로젝트\\P45_v2.7.1_Work_UTF8_BOM_CRLF.md",
+      "bundle_path": "official-docs/P45_v2.7.1_Work_UTF8_BOM_CRLF.md",
+      "size": 76439,
+      "sha256": "dca50b766b028ba2c2e76830611bc4c13aef1764f5194fbb34bc6c84c9a0128a"
+    },
+    {
+      "original_path": "E:\\P45 프로젝트\\P45_v2.7.1_Stage5_5_Work_UTF8_BOM_CRLF.md",
+      "bundle_path": "official-docs/P45_v2.7.1_Stage5_5_Work_UTF8_BOM_CRLF.md",
+      "size": 4616,
+      "sha256": "830bf51f44d479e0b3bf2b23e00fc9153c6b2007fdc6732501e05f86d4bcfb24"
+    },
+    {
+      "original_path": "E:\\P45 프로젝트\\P45_v2.7.2_Number_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "bundle_path": "official-docs/P45_v2.7.2_Number_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "size": 17685,
+      "sha256": "6c268c0950edfd1523bd8bf6d6451eef4b12517e34a0cfdc5c7040639c6f25cd"
+    },
+    {
+      "original_path": "E:\\P45 프로젝트\\P45_v2.7.2_Stage6_Work_UTF8_BOM_CRLF.md",
+      "bundle_path": "official-docs/P45_v2.7.2_Stage6_Work_UTF8_BOM_CRLF.md",
+      "size": 1943,
+      "sha256": "6f4094412163e8b07f3c02f69cad417bb8fc7758070c2e24d49870f4fc24403a"
+    },
+    {
+      "original_path": "E:\\P45 프로젝트\\P45_v2.7.3_TRIO_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "bundle_path": "official-docs/P45_v2.7.3_TRIO_Gate_Amendment_UTF8_BOM_CRLF.md",
+      "size": 22184,
+      "sha256": "2ed0257c1545f8ebca462d0c03ca9176d3a96cb709f65e6335df4bc944bdecd9"
+    },
+    {
+      "original_path": "E:\\P45 프로젝트\\P45_v2.7.3_Stage7_Work_UTF8_BOM_CRLF.md",
+      "bundle_path": "official-docs/P45_v2.7.3_Stage7_Work_UTF8_BOM_CRLF.md",
+      "size": 2784,
+      "sha256": "73478304eefe438747f497d8021f71e982e60f8f2a7ea5f264504573cfd55d15"
+    }
+  ],
+  "external_sources": {
+    "canonical_manifest": {
+      "sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb"
+    },
+    "walkforward_db": {
+      "path": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_walkforward.sqlite3",
+      "sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+      "size": 89186304,
+      "integrity": "ok",
+      "run_id": "b7a92876-4a55-4472-a738-f1edb74796ec"
+    },
+    "trio_final_db": {
+      "path": "E:\\P45 프로젝트\\v27_storage\\backtests\\p45_v273_trio_final.sqlite3",
+      "sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59",
+      "size": 147341312,
+      "integrity": "ok"
+    },
+    "protected_code": {
+      "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb"
+    }
+  },
+  "portable_content_hash": "c5e33e5f8e9921874f2bc851088d788fefecc383d87b807e9cbd69df6a366744",
+  "source_of_truth": "PROJECT_ORIGINALS; bundle documents are read-only snapshots"
+}

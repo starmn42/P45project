@@ -1,0 +1,21 @@
+{
+  "execution_hash": "0298ac8e95800a41d7cba2f745c9ab8ee80391404f7693b71b2fa0d724f39892",
+  "payload": {
+    "code_hash": "5a5155877832b2a367b492ae2be455781393edc109fe15f5955d9c03cb7fd866",
+    "data_snapshot_hash": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0",
+    "experiment_id": "EXP-DRAW-20260816-002-V1",
+    "fixed_marginal_burnin": "10*N*45_ACCEPTED",
+    "fixed_marginal_interval": "N*45_ACCEPTED",
+    "fixed_marginal_prng": "XOSHIRO128STARSTAR-UINT32",
+    "fixed_marginal_samples": 10000,
+    "iid_chunks": 500,
+    "iid_prng": "PCG64DXSM",
+    "iid_seed_root": 450990001,
+    "numpy": "2.3.5",
+    "protocol_hash": "2d4e723b87bc2f44a7a0d763ee4779ded40b007f3cbf4b093b9e771c9248dd9d",
+    "python": "CPYTHON-3.11-BUNDLED",
+    "round_permutation_policy": "LOCKED_SELECTION_EXPOSURE_OUTCOME_LABEL_PERMUTATION"
+  },
+  "run_id": "6cb93fa4-2d29-4deb-8229-c7febcac0255",
+  "status": "LOCKED_BEFORE_RESULT"
+}

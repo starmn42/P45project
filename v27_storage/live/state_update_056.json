@@ -1,0 +1,40 @@
+{
+  "updates": {
+    "current_stage": "WEEKLY_AUTO_DRAW_UPDATE",
+    "current_status": "P45_WEEKLY_AUTO_DRAW_UPDATE_READY",
+    "last_completed_stage": "WEEKLY_AUTO_DRAW_UPDATE",
+    "next_stage": "AUTOMATED_DRAW_OPERATIONS",
+    "next_action": "Windows가 토요일 22:30과 일요일 09:00에 공식 회차를 자동 확인; 필요 시 설치/삭제 CMD로 해당 예약만 관리",
+    "weekly_draw_update": {
+      "status": "P45_WEEKLY_AUTO_DRAW_UPDATE_READY",
+      "task_name": "P45 Weekly Draw Update",
+      "primary_schedule": "SATURDAY 22:30 LOCAL",
+      "backup_schedule": "SUNDAY 09:00 LOCAL",
+      "start_when_available": true,
+      "multiple_instances": "IGNORE_NEW",
+      "run_level": "LIMITED",
+      "logon_type": "INTERACTIVE_TOKEN",
+      "command": "E:\\P45 프로젝트\\P45 회차 업데이트.cmd",
+      "installer": "E:\\P45 프로젝트\\P45 자동업데이트 설치.cmd",
+      "uninstaller": "E:\\P45 프로젝트\\P45 자동업데이트 삭제.cmd",
+      "manual_test_result": 0,
+      "internet_public": false
+    }
+  },
+  "decision": {
+    "decision_id": "DECISION-20260812-056",
+    "project_version": "P45 v2.7.4",
+    "stage": "WEEKLY AUTO DRAW UPDATE",
+    "category": "IMPLEMENTATION/OPERATIONS/WINDOWS_SCHEDULER",
+    "decision": "Windows 작업 스케줄러에 P45 Weekly Draw Update를 현재 사용자 일반 권한으로 등록하고 토요일 22:30 1차 및 일요일 09:00 백업 확인을 자동화했다.",
+    "reason": "사용자 수동 실행 없이 새 공식 회차를 확인하면서 놓친 예약은 가능한 즉시 실행하고 동일 작업 중복 실행 및 동일 회차 중복 저장을 차단하기 위함이다.",
+    "evidence": "two weekly triggers exact 22:30:00 and 09:00:00; StartWhenAvailable true; MultipleInstances IgnoreNew; RunLevel Limited; manual scheduled run result 0; DRAW_ALREADY_CURRENT; duplicate draw rows 0; protected canonical manifest unchanged",
+    "affected_files": "P45 회차 업데이트.cmd; P45 자동업데이트 설치.ps1; P45 자동업데이트 설치.cmd; P45 자동업데이트 삭제.cmd; Windows scheduled task P45 Weekly Draw Update; state files; portable bundle",
+    "affected_schema": "NONE",
+    "previous_rule": "P45_NEW_DRAW_UPDATE_V1_READY",
+    "new_rule": "P45_WEEKLY_AUTO_DRAW_UPDATE_READY",
+    "allowed_next_action": "automatic weekly execution or schedule removal using the dedicated delete CMD",
+    "forbidden_actions": "other Windows task mutation; research rule mutation; threshold/signature/context change; historical walkforward rerun; forced CORE; duplicate draw insertion",
+    "approval_source": "사용자 명시 승인"
+  }
+}

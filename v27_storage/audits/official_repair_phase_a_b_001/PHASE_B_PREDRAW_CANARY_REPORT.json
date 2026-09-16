@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "target_round": 1238,
+  "max_source_round_used": 1237,
+  "target_outcome_available_at_lock_time": false,
+  "candidate_count": 0,
+  "output_status": "NO_OUTPUT",
+  "artifact_sha256": "30c70cecd35e2df0835cf4b197462f10c7f3e75f103c8196b8c67993d53e504b",
+  "artifact_canonical_hash": "0c244318d13990bd33a34b24482766a110d62a472e65771dcf0a89dc426f58a3",
+  "seal_timestamp": "2026-08-24T18:57:11.390828+09:00",
+  "future_leakage_count": 0,
+  "deterministic_rerun": true,
+  "outcome_access_count": 0,
+  "historical_outcome_scoring_count": 0,
+  "tuning_after_canary_count": 0
+}

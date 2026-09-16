@@ -1,0 +1,13 @@
+{
+  "round": "ltEpsd; official draw round",
+  "main_1_to_main_6": "tm1WnNo through tm6WnNo; official main winning numbers",
+  "bonus": "bnsWnNo; retained for source/prize-tier semantic audit only",
+  "k1": "rnk1WnNope; first-prize winning game count",
+  "k2": "rnk2WnNope; second-prize winning game count",
+  "k3": "rnk3WnNope; third-prize winning game count",
+  "total_sales_krw": "wholEpsdSumNtslAmt; official whole-round sales",
+  "price_per_game_krw": "2000 for rounds 1~87; 1000 for rounds 88~1237",
+  "sold_lines": "total_sales_krw / price_per_game_krw; required positive integer",
+  "source_file": "archived official API payload path",
+  "source_file_sha256": "SHA-256 of archived official API payload"
+}

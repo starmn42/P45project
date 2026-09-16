@@ -1,0 +1,65 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260823-081",
+  "decision": "중단된 주간 updater RUNNING 기록은 canonical recovery가 없어 원본 보존하는 NON_BLOCKING_STALE_AUDIT_RECORD로 분류하고, CROWD TOPOLOGY / JOHNSON-SPACE LOCAL AUTOCORRELATION을 DRAW 엔진과 분리된 REGISTERED_IDEA / NEEDS_EVIDENCE 연구방향으로 저장한다.",
+  "reason": "stale row는 새 updater 실행을 차단하지 않고 임의 DB UPDATE는 감사성을 훼손한다. Crowd topology 방향은 기존 일반 조합군집 선행연구와 겹치므로 novelty를 확정하지 않은 상태에서 식별가능성·정확 null·공분산·power 설계가 먼저 필요하다.",
+  "related_stage": "OPERATIONS_008_AND_CROWD_TOPOLOGY_ROADMAP",
+  "category": "OPERATIONS_AUDIT_AND_RESEARCH_ROADMAP",
+  "evidence": "weekly task READY; last result 0xC000013A; root cause not confirmed; stale run 1283b25b-edee-48c3-96d4-32a29634c16e inactive and non-blocking; temp-clone readiness DRAW_ALREADY_CURRENT; live integrity ok/FK0; idea IDEA-20260823-CROWD001; no outcome calculation",
+  "affected_files": "operations audit report, crowd topology novelty note, IDEA inbox, state-manager handoff rendering, state files, portable bundle",
+  "affected_schema": "none",
+  "previous_rule": "weekly updater stale run anomaly unclassified; crowd topology direction not registered",
+  "new_rule": "preserve non-blocking stale audit evidence without invented recovery; register crowd topology only as NEEDS_EVIDENCE and keep it separate from DRAW and Prospective-001",
+  "allowed_next_action": "WAIT_FOR_ALL_STAGE1_ROUNDS_THROUGH_1289_WHILE_SIGNAL_BLIND_RAW_CAPTURE_CONTINUES; CROWD_TOPOLOGY_DESIGN_REQUIRES_SEPARATE_APPROVAL",
+  "forbidden_actions": [
+    "STALE_UPDATE_RUN_DELETE_OR_FAKE_COMPLETION",
+    "CROWD_TOPOLOGY_OUTCOME_CALCULATION_WITHOUT_PROTOCOL_APPROVAL",
+    "CROWD_TOPOLOGY_EXPERIMENT_AUTOMATIC_CREATION",
+    "CROWD_TOPOLOGY_NOVELTY_CONFIRMED_CLAIM",
+    "CROWD_OR_PRIZE_SHARE_TO_DRAW_ENGINE_CONNECTION",
+    "PROSPECTIVE_SIGNAL_ANALYSIS_BEFORE_ROUND_1289_PUBLICATION"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "last_completed_stage": "OPERATIONS_008_AND_CROWD_TOPOLOGY_ROADMAP_SAVE",
+    "operations_state": {
+      "weekly_draw_update_stale_run": {
+        "audit_status": "NON_BLOCKING_STALE_AUDIT_RECORD",
+        "run_id": "1283b25b-edee-48c3-96d4-32a29634c16e",
+        "started_at": "2026-08-23T15:01:45+09:00",
+        "task_last_result_decimal": -1073741510,
+        "task_last_result_hex": "0xC000013A",
+        "root_cause": "NOT_CONFIRMED",
+        "process_active": false,
+        "lock_active": false,
+        "canonical_recovery_available": false,
+        "recovery_executed": false,
+        "future_run_blocked": false,
+        "temp_clone_readiness": "DRAW_ALREADY_CURRENT",
+        "live_db_integrity": "ok",
+        "foreign_key_violations": 0,
+        "original_row_preserved": true
+      }
+    },
+    "research_state": {
+      "crowd_topology": {
+        "name": "CROWD TOPOLOGY / JOHNSON-SPACE LOCAL AUTOCORRELATION",
+        "status": "REGISTERED_IDEA / NEEDS_EVIDENCE",
+        "idea_id": "IDEA-20260823-CROWD001",
+        "domain": "CROWD_PRIZE_SHARE_SEPARATE_FROM_DRAW",
+        "generic_combination_cluster_novel": false,
+        "refined_direction": "JOHNSON_SPACE_LOCAL_AUTOCORRELATION",
+        "johnson_graph": "J(45,6)",
+        "novelty_status": "PROMISING_NOVEL_DIRECTION / NOVELTY_NOT_CONFIRMED",
+        "outcome_analysis_executed": false,
+        "experiment_created": false,
+        "protocol_created": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false,
+        "note": "00_P45_STATE/research_review/CROWD_TOPOLOGY_NOVELTY_NOTE_001.md"
+      }
+    }
+  }
+}

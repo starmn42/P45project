@@ -1,0 +1,11 @@
+{
+  "holdout_d": 10.198417703972382,
+  "holdout_q": 4893.708536635931,
+  "primary_mc_p": 4.9999750001249995e-06,
+  "mc_repetitions": 200000,
+  "mc_seed": 2026082303,
+  "mc_exceedances": 0,
+  "mc_standard_error": 4.9999750001249995e-06,
+  "max_abs_z": 59.9949255651178,
+  "top10_q_share": 0.8451120001824394
+}

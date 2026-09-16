@@ -1,0 +1,38 @@
+{
+  "status": "EXP003_PREFLIGHT_PASS",
+  "checks": {
+    "protocol_hash_locked": "PASS",
+    "protocol_files_locked": "PASS",
+    "snapshot_1_1237_complete": "PASS",
+    "snapshot_hash_locked": "PASS",
+    "r_minus_one_boundary": "PASS",
+    "distance_0_44_predeclared": "PASS",
+    "all_45_numbers_partitioned": "PASS",
+    "feature_has_no_outcome": "PASS",
+    "deterministic_10_runs": "PASS",
+    "main_integrated_separate": "PASS",
+    "db_integrity_fk": "PASS",
+    "actual_result_rows_zero": "PASS",
+    "protected_canonical_unchanged": "PASS"
+  },
+  "passed": 13,
+  "failed": 0,
+  "failed_checks": [],
+  "protocol_hash": "feb78db79d1dbebbfe6f41b097651aa27acdc8b7b7d7d4260e1e6645e6035329",
+  "data_snapshot_hash": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0",
+  "data_range": "1~1237",
+  "data_rows": 1237,
+  "db_integrity": "ok",
+  "foreign_key_violations": 0,
+  "result_row_counts": {
+    "experiment_run": 0,
+    "prediction_lock": 0,
+    "transition_outcome": 0,
+    "metric_result": 0,
+    "final_judgment": 0
+  },
+  "actual_backtest_run": false,
+  "actual_result_viewed": false,
+  "recommendation_created": false,
+  "protected_canonical_hash": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb"
+}

@@ -1,0 +1,567 @@
+{
+  "draw": {
+    "round": 1239,
+    "date": "2026-08-29",
+    "main": [
+      11,
+      13,
+      22,
+      32,
+      33,
+      36
+    ],
+    "bonus": 8,
+    "source_url": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do?srchDir=center&srchLtEpsd=1239",
+    "source_sha256": "4c0c600801ddeef24d98b54206bac807eaf623c7031bac35c035d4892d6c109a"
+  },
+  "evaluations": [
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-27-45__2-15-31",
+      "a": [
+        13,
+        27,
+        45
+      ],
+      "b": [
+        2,
+        15,
+        31
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-31-45__2-15-27",
+      "a": [
+        13,
+        31,
+        45
+      ],
+      "b": [
+        2,
+        15,
+        27
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-31-45__2-19-38",
+      "a": [
+        13,
+        31,
+        45
+      ],
+      "b": [
+        2,
+        19,
+        38
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-31-45__2-19-40",
+      "a": [
+        13,
+        31,
+        45
+      ],
+      "b": [
+        2,
+        19,
+        40
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-31-45__2-20-38",
+      "a": [
+        13,
+        31,
+        45
+      ],
+      "b": [
+        2,
+        20,
+        38
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-31-45__2-20-39",
+      "a": [
+        13,
+        31,
+        45
+      ],
+      "b": [
+        2,
+        20,
+        39
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-27-45__2-19-38",
+      "a": [
+        13,
+        27,
+        45
+      ],
+      "b": [
+        2,
+        19,
+        38
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-27-45__2-19-40",
+      "a": [
+        13,
+        27,
+        45
+      ],
+      "b": [
+        2,
+        19,
+        40
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-27-45__2-20-38",
+      "a": [
+        13,
+        27,
+        45
+      ],
+      "b": [
+        2,
+        20,
+        38
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "PAIR_DIAGNOSTIC",
+      "key": "13-27-45__2-20-39",
+      "a": [
+        13,
+        27,
+        45
+      ],
+      "b": [
+        2,
+        20,
+        39
+      ],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-13-27",
+      "a": [
+        2,
+        13,
+        27
+      ],
+      "b": [],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-13-31",
+      "a": [
+        2,
+        13,
+        31
+      ],
+      "b": [],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-15-27",
+      "a": [
+        2,
+        15,
+        27
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-15-31",
+      "a": [
+        2,
+        15,
+        31
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-19-38",
+      "a": [
+        2,
+        19,
+        38
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-19-40",
+      "a": [
+        2,
+        19,
+        40
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-20-38",
+      "a": [
+        2,
+        20,
+        38
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-20-39",
+      "a": [
+        2,
+        20,
+        39
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-27-45",
+      "a": [
+        2,
+        27,
+        45
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "2-31-45",
+      "a": [
+        2,
+        31,
+        45
+      ],
+      "b": [],
+      "ia": 0,
+      "ib": 0,
+      "ma": 0,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "13-27-45",
+      "a": [
+        13,
+        27,
+        45
+      ],
+      "b": [],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    },
+    {
+      "scope": "TRIO_DIAGNOSTIC",
+      "key": "13-31-45",
+      "a": [
+        13,
+        31,
+        45
+      ],
+      "b": [],
+      "ia": 1,
+      "ib": 0,
+      "ma": 1,
+      "mb": 0,
+      "ip": 0,
+      "is": 0,
+      "mp": 0,
+      "ms": 0,
+      "integrated_category": "NO_PRIMARY_OR_SUPPORT",
+      "main_category": "NO_PRIMARY_OR_SUPPORT"
+    }
+  ],
+  "snapshot": {
+    "analysis_round": 1240,
+    "source_end_round": 1239,
+    "status": "LIVE_ANALYSIS_READY",
+    "valid_for_core": 0,
+    "official_selection": [],
+    "diagnostic_top3": [
+      {
+        "rank": 1,
+        "pair_key": "13-16-38__4-10-27",
+        "set_1": [
+          13,
+          16,
+          38
+        ],
+        "set_2": [
+          4,
+          10,
+          27
+        ],
+        "state": "PAIR_RESEARCH_HOLD",
+        "label": "DIAGNOSTIC ONLY",
+        "official_recommendation": false
+      },
+      {
+        "rank": 2,
+        "pair_key": "10-21-38__13-16-28",
+        "set_1": [
+          10,
+          21,
+          38
+        ],
+        "set_2": [
+          13,
+          16,
+          28
+        ],
+        "state": "PAIR_RESEARCH_HOLD",
+        "label": "DIAGNOSTIC ONLY",
+        "official_recommendation": false
+      },
+      {
+        "rank": 3,
+        "pair_key": "13-16-28__4-10-38",
+        "set_1": [
+          13,
+          16,
+          28
+        ],
+        "set_2": [
+          4,
+          10,
+          38
+        ],
+        "state": "PAIR_RESEARCH_HOLD",
+        "label": "DIAGNOSTIC ONLY",
+        "official_recommendation": false
+      }
+    ],
+    "pair_state_counts": {
+      "ready": 0,
+      "test_ready": 0,
+      "research_hold": 332,
+      "system_hold": 0
+    },
+    "source_hash": "94291f98159770346b1a3c2accb1b75c0009b46a5bff6b199ccda20c443421cf",
+    "prediction_hash": "3b9447dca2d579cc47bebe08c2e83129757a766d987ec59c89369423734a4fc2"
+  }
+}

@@ -1,0 +1,138 @@
+# P45 초기 EXPERIMENT Registry
+
+- 등록일: 2026-08-16
+- 등록 상태: 전부 `REGISTERED`
+- 실행·계산·DB 생성: 없음
+- official_effect: 전부 `NONE`
+- official_isolation_verified: 전부 `true`
+- promotion_eligible: 전부 `false`
+
+기존 86개 매트릭스의 MISSING 26건, PARTIAL 8건, HOLD 5건을 모두 등록했다. CROWD/PRIZE_SHARE 후보 5건과 승인된 EXP-002 1건을 포함해 총 45건이다.
+
+## 등록 시 공통 미정 필드
+
+아래 항목은 등록만으로 임의 정의하지 않으며 `DESIGNED` 또는 `READY_FOR_TEST` 전환 전에 각각 채워야 한다.
+
+- hypothesis, counter_hypothesis
+- data_range, input_data, calculation_method
+- result_metrics, success_criteria, failure_criteria, minimum_sample
+- validation_windows, future_data_block
+- walkforward_required, random_null_required
+- multiple_testing_risk, overfitting_risk
+- canonical_protocol_hash, locked_at
+- research_result, failure_reason, reproducibility_status
+
+|experiment_id|LAB|RESEARCH_DOMAIN|연구명|인벤토리 출처상태|현재 상태|공식 영향|승격 가능|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260816-001-V1|NUMBER RELATION LAB|DRAW|숫자 관계망 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-002-V1|NUMBER RELATION LAB|DRAW|숫자 동시출현 관계망 (EXP-001)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-003-V1|NUMBER RELATION LAB|DRAW|조건부 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-004-V1|NUMBER RELATION LAB|DRAW|A 출현 후 다음 회차 B 관계|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-005-V1|NUMBER RELATION LAB|DRAW|2회 간격 관계|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-006-V1|NUMBER RELATION LAB|DRAW|3개 숫자 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-007-V1|NUMBER RELATION LAB|DRAW|최근100 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-008-V1|NUMBER RELATION LAB|DRAW|최근50 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-009-V1|NUMBER RELATION LAB|DRAW|전체 관계망|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-010-V1|TRANSITION LAB|DRAW|NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)|MISSING|FAILED|NONE|false|
+|EXP-DRAW-20260816-011-V1|TRANSITION LAB|DRAW|회차 간 흔적 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-012-V1|TRANSITION LAB|DRAW|격회 재출현|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-013-V1|TRANSITION LAB|DRAW|같은 끝자리 회차 전이|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-014-V1|TRANSITION LAB|DRAW|끝수 전이|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-015-V1|STRUCTURE LAB|DRAW|결손 회복속도|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-016-V1|STRUCTURE LAB|DRAW|결손 회복 전환점|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-017-V1|STRUCTURE LAB|DRAW|가변 전멸구간|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-018-V1|STRUCTURE LAB|DRAW|다중 전멸구간 상호작용|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-019-V1|STRUCTURE LAB|DRAW|이동×가변 전멸 교차|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-020-V1|STRUCTURE LAB|DRAW|최근10 강도 지속|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-021-V1|STRUCTURE LAB|DRAW|비전멸 전용 엔진|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-022-V1|STRUCTURE LAB|DRAW|구간별 복귀우선 전이|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-023-V1|SIMILAR ROUND LAB|DRAW|쌍둥이 유사 회차|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-024-V1|SIMILAR ROUND LAB|DRAW|구조형 쌍둥이 회차 전이|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-025-V1|SIMILAR ROUND LAB|DRAW|유사 회차 이후 다음 회차 전이|HOLD|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-026-V1|SPACING LAB|DRAW|숫자 간격 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-027-V1|SPACING LAB|DRAW|간격 분산|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-028-V1|SPACING LAB|DRAW|등차수열형 구조|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-029-V1|SPACING LAB|DRAW|+13/+14 고정 간격|MISSING|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-030-V1|ROLE AND AUDIT LAB|DRAW|숫자 역할 구조|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-031-V1|ROLE AND AUDIT LAB|DRAW|특정 UNIT 일시 강세|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-032-V1|ROLE AND AUDIT LAB|DRAW|NUMBER 역할|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-033-V1|ROLE AND AUDIT LAB|DRAW|역할 충돌|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-034-V1|ROLE AND AUDIT LAB|DRAW|실패 원인 복기|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-035-V1|ROLE AND AUDIT LAB|DRAW|전체 엔진 귀무감사|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-036-V1|ROLE AND AUDIT LAB|DRAW|placebo/permutation|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-037-V1|ROLE AND AUDIT LAB|DRAW|과최적화 방지|PARTIAL|REGISTERED|NONE|false|
+|EXP-DRAW-20260816-038-V1|NO-PICK COVERAGE LAB|DRAW|NO-PICK COVERAGE & QUALIFIED RESEARCH FALLBACK (EXP-002)|NEW_REGISTERED|DESIGNED|NONE|false|
+|EXP-DRAW-20260816-038-V2|NO-PICK COVERAGE LAB|DRAW|NO-PICK COVERAGE & NUMBER-RANK FALLBACK (EXP-002 V2)|PROTOCOL_REVISION|FAILED|NONE|false|
+|EXP-CROWD-20260816-001-V1|CROWD LAB|CROWD|대중 번호 선택 행동|MISSING|REGISTERED|NONE|false|
+|EXP-CROWD-20260816-002-V1|CROWD LAB|CROWD|많이 고르는 번호·패턴|MISSING|REGISTERED|NONE|false|
+|EXP-PRIZE-20260816-001-V1|PRIZE-SHARE LAB|PRIZE_SHARE|판매량 대비 1등 당첨게임 밀도|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-PRIZE-20260816-002-V1|PRIZE-SHARE LAB|PRIZE_SHARE|LOW/NORMAL/HIGH WINNER 구조|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-CROWD-20260816-003-V1|CROWD LAB|CROWD|생일번호 편향|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-PRIZE-20260816-003-V1|PRIZE-SHARE LAB|PRIZE_SHARE|공동당첨 위험|NEW_REGISTERED|REGISTERED|NONE|false|
+|EXP-CROWD-20260816-004-V1|CROWD LAB|CROWD|고번호·끝수·연속수·시각/OMR 선택편향|NEW_REGISTERED|REGISTERED|NONE|false|
+
+## CROWD/PRIZE_SHARE 경계
+
+- CROWD는 사람들이 무엇을 고르는지 연구한다.
+- PRIZE_SHARE는 당첨됐을 때 타인과 상금을 나눌 상대 위험을 연구한다.
+- 어느 쪽도 추첨번호 발생확률을 높이는 근거로 사용하지 않는다.
+- LOW/HIGH WINNER에서 발견된 특징은 DRAW 효과와 CROWD 효과를 별도 실험 ID·지표로 검증한다.
+
+## EXP-001 설계 연결
+
+- short_id: `EXP-001`
+- registry_experiment_id: `EXP-DRAW-20260816-002-V1`
+- status transition: `REGISTERED → DESIGNED → READY_FOR_TEST → BACKTESTED/WALKFORWARD_TESTED → FAILED`
+- protocol documents: `EXP-001_NUMBER_COOCCURRENCE/EXP001_01`~`05`
+- calculation_run: `6cb93fa4-2d29-4deb-8229-c7febcac0255` (`SINGLE SEALED RUN`, complete)
+- data_snapshot: `1~1237`, SHA-256 `b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0`
+- canonical_protocol_hash: `2d4e723b87bc2f44a7a0d763ee4779ded40b007f3cbf4b093b9e771c9248dd9d`
+- protocol_lock: `LOCKED_BEFORE_BACKTEST`
+- calculator_storage: `READY`
+- preflight: `17/17 PASS`
+- actual_backtest_run: `true`
+- result_document: `EXP-001_NUMBER_COOCCURRENCE/EXP001_07_LOCKED_RUN_RESULT.md`
+- retrospective_result: `NO_STATIC_MAIN_SIGNAL`
+- walkforward_result: `NOT_REPRODUCED` (`501~1237`, 737/737 complete, failed 0)
+- final_judgment: `FAILED` / explanation code `D`
+- strongest observed pairs: `MAIN + 11-21`, `MAIN - 8-12` (`DIAGNOSTIC ONLY`)
+- official_recommendation_allowed: `false`
+- promotion_eligible: `false`
+- official_effect: `NONE`
+
+## EXP-002 설계 연결
+
+- short_id: `EXP-002`
+- registry_experiment_id: `EXP-DRAW-20260816-038-V1`
+- status: `DESIGNED / READY_TO_LOCK`
+- protocol documents: `EXP-002_NO_PICK_FALLBACK/EXP002_01`~`05`
+
+## EXP-002 V2 설계 연결
+
+- canonical ID: `EXP-DRAW-20260816-038-V2`
+- V1은 `PROTOCOL_BLOCKED`로 보존하며 prediction/outcome은 INVALID EVIDENCE이다.
+- V2는 공식 NUMBER 14-key 순서의 상위 6개를 `1~3 / 4~6`으로 나누며 공식 TRIO calculator를 사용하지 않는다.
+- protocol documents: `EXP-002_V2_NUMBER_RANK_FALLBACK/EXP002V2_01`~`05`
+
+## EXP-003 설계 연결
+
+- human alias: `EXP-003`
+- canonical ID: `EXP-DRAW-20260816-010-V1`
+- 기존 `숫자 이동 구조` 등록항목을 구체화한 것이며 새 중복 Experiment가 아니다.
+- V1 scope는 오직 `R-1 → R` 1-step transition이다.
+- protocol documents: `EXP-003_NUMBER_TRANSITION/EXP003_01`~`06`
+- draft protocol hash: `832e7df52854a61ae5b769ebdf529e48b6df0ca622606a583b5fa9c9055b7c46`
+- coverage audit: `43~1235`, valid 867, output 0, RESEARCH_NO_PICK 867
+- fallback ranking: official NUMBER 14-key and TRIO 15-key reused without weights
+- calculation/storage skeleton: `READY`
+- actual_backtest_run: `false`
+- actual_fallback_results_viewed: `false`
+- promotion_eligible: `false`
+- official_effect: `NONE`
+
+## 역사 아이디어 복구 종료 기록
+
+- Inventory 87 `선정 안정성 감사`는 이미 공식 v2.7.1에 존재하는 감사 연구이므로 신규 Experiment로 등록하지 않는다.
+- 부분 포착 6건은 기존 Inventory/Registry 항목의 원래 의미 보강이며 신규 Experiment ID를 발급하지 않는다.
+- `DEPRECATED_HISTORICAL` 6건과 `AMBIGUOUS` 3건도 등록하지 않는다.
+- Registry 총수: 44 유지

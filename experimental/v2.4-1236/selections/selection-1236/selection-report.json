@@ -1,0 +1,207 @@
+{
+  "all_six_unique": true,
+  "forced_fill_performed": false,
+  "mixed_test_hold_reason": null,
+  "mixed_test_status": "MIXED_TEST",
+  "next_phase": "PHASE_8_SET_PLACEMENT",
+  "official_hold_reason": "official PASS candidates fewer than 6",
+  "official_pool_order": [],
+  "official_status": "HOLD",
+  "selected_count": 6,
+  "selected_numbers": [
+    2,
+    39,
+    3,
+    45,
+    18,
+    16
+  ],
+  "selection_mode": "MIXED_TEST",
+  "sets_created": false,
+  "stages": {
+    "alternate_eliminated": [
+      {
+        "number": 14,
+        "reason_code": "RANK_CUTOFF"
+      },
+      {
+        "number": 19,
+        "reason_code": "RANK_CUTOFF"
+      },
+      {
+        "number": 24,
+        "reason_code": "RANK_CUTOFF"
+      },
+      {
+        "number": 26,
+        "reason_code": "RANK_CUTOFF"
+      },
+      {
+        "number": 27,
+        "reason_code": "RANK_CUTOFF"
+      }
+    ],
+    "final_selected": [
+      2,
+      39,
+      3,
+      45,
+      18,
+      16
+    ],
+    "initial_eliminated": [
+      {
+        "number": 4,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 5,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 6,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 7,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 8,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 9,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 10,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 11,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 12,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 15,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 17,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 20,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 21,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 22,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 23,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 25,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 28,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 29,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 30,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 32,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 33,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 34,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 35,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 36,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 37,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 38,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 40,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 42,
+        "reason_code": "OPPOSITE_HIGH"
+      },
+      {
+        "number": 44,
+        "reason_code": "OPPOSITE_HIGH"
+      }
+    ],
+    "middle_eliminated": [
+      {
+        "number": 1,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 13,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 31,
+        "reason_code": "SAMPLE_INSUFFICIENT"
+      },
+      {
+        "number": 41,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 43,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      }
+    ]
+  },
+  "target_round": 1236,
+  "valid_test_pool_order": [
+    2,
+    39,
+    3,
+    45,
+    18,
+    16,
+    27,
+    24,
+    14,
+    26,
+    19
+  ]
+}

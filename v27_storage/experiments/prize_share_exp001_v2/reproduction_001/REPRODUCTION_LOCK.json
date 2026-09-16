@@ -1,0 +1,10 @@
+{
+  "status": "LOCKED_BEFORE_INDEPENDENT_CALCULATION",
+  "protocol_note_sha256": "8dc73459ef99e9e70f05bf1cf27e95c71d82a05096292b901e88dd5ad4bb9f58",
+  "independent_calculator_sha256": "c3157891c06196b40b4c2bdb2daf31dc058323b3201af3aafc83d45d38b4f29d",
+  "source_v2_protocol_sha256": "479c83f5905d1bcd928e5b388420a41259c413836711202fd30704e7b4b9d5b7",
+  "input_data_sha256": "86b14968aca3ad10b854f9d5c53eba00a786627f73e353938e1e801dc888fa21",
+  "fresh_seed": 2026082102,
+  "permutations": 100000,
+  "round_1238_plus_allowed": false
+}

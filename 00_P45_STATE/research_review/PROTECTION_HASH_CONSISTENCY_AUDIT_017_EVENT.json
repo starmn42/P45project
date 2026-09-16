@@ -1,0 +1,42 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260824-090",
+  "decision": "보호 해시 불일치는 실제 변경이 아니라 서로 다른 scope의 해시를 같은 라벨로 보고한 오류로 판정한다. 공식 protected canonical content hash는 7c145832...이고, 051a9add...는 manifest JSON 파일 자체의 SHA-256이다.",
+  "reason": "공식 build_manifest로 6개 root 72개 파일을 재계산한 결과 canonical content hash는 Decision 088, Decision 089 및 현재 상태와 동일한 7c145832...였고 file-by-file 변경은 0개였다.",
+  "related_stage": "PROTECTION_HASH_CONSISTENCY_AUDIT_017",
+  "category": "PROTECTION_REPORTING_ERRATA",
+  "evidence": "protected canonical recomputation 7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb; manifest file SHA 051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd; 72/72 protected files match; changed files 0",
+  "affected_files": "append-only protection hash audit note and state records only",
+  "affected_schema": "none",
+  "previous_rule": "Completion report ambiguously labeled the manifest-file SHA as PROTECTED_CANONICAL_HASH",
+  "new_rule": "Use PROTECTED_CANONICAL_CONTENT_HASH for 7c145... and PROTECTED_MANIFEST_FILE_SHA256 for 051a9...; no protected content changed.",
+  "allowed_next_action": "PROSPECTIVE_RETAILER_MODE_CONFIRMATION_FEASIBILITY_REVIEW_REQUIRES_SEPARATE_APPROVAL; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+  "forbidden_actions": [
+    "PROTECTED_FILE_AUTOMATIC_RESTORE_OR_OVERWRITE",
+    "HASH_SCOPE_CONFLATION",
+    "OFFICIAL_ENGINE_CHANGE",
+    "ROUND_1238_PLUS_HISTORICAL_USE"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "PROTECTION_HASH_CONSISTENCY_AUDIT_017_COMPLETE",
+    "current_status": "REPORTING_SCOPE_DIFFERENCE",
+    "last_completed_stage": "PROTECTION_HASH_CONSISTENCY_AUDIT_017",
+    "next_stage": "PROSPECTIVE_RETAILER_MODE_CONFIRMATION_FEASIBILITY_REQUIRES_SEPARATE_APPROVAL",
+    "next_action": "USE_EXPLICIT_HASH_SCOPE_LABELS; DO_NOT_PROMOTE; PROSPECTIVE_RETAILER_MODE_CONFIRMATION_ONLY_IF_SEPARATELY_APPROVED",
+    "protection_hash_audit": {
+      "status": "REPORTING_SCOPE_DIFFERENCE",
+      "protected_canonical_content_hash": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+      "protected_manifest_file_sha256": "051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd",
+      "same_scope": false,
+      "protected_file_count": 72,
+      "changed_file_count": 0,
+      "integrity": "PASS",
+      "errata_required": true,
+      "errata_recorded": true,
+      "report": "00_P45_STATE/research_review/PROTECTION_HASH_CONSISTENCY_AUDIT_017.md"
+    }
+  }
+}

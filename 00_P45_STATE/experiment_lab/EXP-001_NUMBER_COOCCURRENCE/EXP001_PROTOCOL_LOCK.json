@@ -1,0 +1,45 @@
+{
+  "canonical_payload": {
+    "data_snapshot_sha256": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0",
+    "documents": [
+      {
+        "order": 1,
+        "path": "00_P45_STATE/experiment_lab/EXP-001_NUMBER_COOCCURRENCE/EXP001_01_PREREGISTRATION.md",
+        "sha256": "01080042224a7904999f91fab9fc88b546888c10fa3a433f0f5e067ff7260d4e"
+      },
+      {
+        "order": 2,
+        "path": "00_P45_STATE/experiment_lab/EXP-001_NUMBER_COOCCURRENCE/EXP001_02_METRIC_DEFINITION.md",
+        "sha256": "0778ba772538929a4fa1bb474660b4713306faea918295db9d3fe178c4af891e"
+      },
+      {
+        "order": 3,
+        "path": "00_P45_STATE/experiment_lab/EXP-001_NUMBER_COOCCURRENCE/EXP001_03_NULL_AND_MULTIPLE_TEST_POLICY.md",
+        "sha256": "be3cdc03760207b410fc9f7e6b3ae831c2751e9cacfef10cc9c1277fa3440542"
+      },
+      {
+        "order": 4,
+        "path": "00_P45_STATE/experiment_lab/EXP-001_NUMBER_COOCCURRENCE/EXP001_04_WALKFORWARD_DESIGN.md",
+        "sha256": "4a5257861e108fd7a85250a2eff9c4e145e6621624ade351585d29deade2ec36"
+      },
+      {
+        "order": 5,
+        "path": "00_P45_STATE/experiment_lab/EXP-001_NUMBER_COOCCURRENCE/EXP001_05_SUCCESS_FAILURE_CRITERIA.md",
+        "sha256": "71e364566542ed92f1870ce38ce4cc495dd99e4b51b8f7b31648a0ca552f3011"
+      }
+    ],
+    "experiment_id": "EXP-DRAW-20260816-002-V1",
+    "integrated_baseline": "7/330",
+    "main_baseline": "1/66",
+    "maxT_repetitions": 100000,
+    "maxT_seed": 450990001,
+    "multiple_test": "HOLM_FWER_0.05",
+    "mutation_policy": "NEW_EXPERIMENT_VERSION_REQUIRED",
+    "primary_metric": "RISK_DIFFERENCE",
+    "primary_null": "IID_FAIR_DRAW_NULL",
+    "protocol_version": "EXP001-PROTOCOL-1.0",
+    "recent20_policy": "TEST_ONLY"
+  },
+  "canonical_protocol_hash": "2d4e723b87bc2f44a7a0d763ee4779ded40b007f3cbf4b093b9e771c9248dd9d",
+  "status": "LOCKED_BEFORE_BACKTEST"
+}

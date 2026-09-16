@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-23T20:33:09+09:00",
+  "transaction_id": "cafc419f-7028-4200-917a-af3db138e6e5",
+  "decision_id": "DECISION-20260823-085",
+  "state_version": "1.0.78",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP002_V1_INDEPENDENT_REPRODUCTION_COMPLETE",
+  "current_status": "EXP_CROWD_TOPO_002_V1_INDEPENDENT_REPRODUCTION_PASS",
+  "state_hash": "92182d93d3b21c514dc80a5f817ee9c5a64f1ac390d3f085bcec3b05343ab51f",
+  "current_state_md_sha256": "4a9f3a1b6900c1fc5095a630045fe33182b8c36d098544f87eb7bc28a0f3d191",
+  "current_state_json_sha256": "b301ab382e931b5f0b991b6209481829a096d11ccc3ff4a696765851f9ca3cbc",
+  "handoff_sha256": "fcf76490d8c549e79967519b6d86ef9524bfd483497c7946c4ffd4db91d64c9d",
+  "decision_log_sha256": "d501239d32be0dd06785e1c39993cbe407e55d2e6eb3a6ccb33481108ea5158d",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

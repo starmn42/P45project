@@ -1,0 +1,18 @@
+{
+  "comparison_basis": "EXP-035 preflight protected hashes versus post-audit hashes",
+  "protected_files_touched_by_audit": false,
+  "canonical_csv": "56748e0192252706d2cf90c6306aff9b8c6c88381a90624c27f4fb23713ca27c",
+  "canonical_sqlite": "c4e131a47518c54ddc7c2a50b21bdaa95ae102743aac64da5b6ebf63723a7404",
+  "official_state": "d4c8792796cc1197777f6c34c1bdf0869826088ae0e7a62101f1ca100a8d8038",
+  "official_pair_db_preflight": "f00c1c27e92fc8f551ae4c0de6ae1c8f9c991ac37da155546dfd7eea83c0229a",
+  "sealed_1239": "ed23691c5b9f1715c85b6d3362735dfa8cebb72b31dc258e2aa43bc299c94ead",
+  "sealed_1240": "d8b7f0753500adf7fc62e894b1a8f2a9551f6bb90be0ec92d1fa3480082375fe",
+  "state_1240": "2d1432d103386c1bde458ab1e722bd1f4da3b376aadb3f3a4fd597b2601b0317",
+  "kts": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+  "official_changes": 0,
+  "canonical_changes": 0,
+  "1239_changes": 0,
+  "1240_changes": 0,
+  "kts_changes": 0,
+  "registry_changes": 0
+}

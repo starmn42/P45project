@@ -1,0 +1,43 @@
+{
+  "fix_verdict": "FIXED_AND_REGRESSION_VERIFIED",
+  "root_cause": "PAIR_REPAIR_COMPATIBILITY_GAP",
+  "modified_code": "src/p45_v27/draw_update.py",
+  "code_sha256_before": "0e9d3ce56cebae9b04ca93ead8ec7712b96be5916811f8df63e78d2ae46efa60",
+  "code_sha256_after": "e3c0d0a406cbe78b5f5d1159a1148d82242d2e96036fdae94004a5dcafbcfea6",
+  "official_semantics_changed": false,
+  "canonical_draw_range": "1..1239",
+  "draw_result_changed": false,
+  "csv_sqlite_draw_equal": true,
+  "post_update_1239": {
+    "status": "PASS",
+    "evaluation_rows": 22,
+    "analysis_round": 1240,
+    "source_end_round": 1239,
+    "snapshot_status": "LIVE_ANALYSIS_READY",
+    "valid_for_core": 0,
+    "prediction_hash": "3b9447dca2d579cc47bebe08c2e83129757a766d987ec59c89369423734a4fc2"
+  },
+  "no_new_draw_test": {
+    "status": "PASS",
+    "updater_result": "DRAW_ALREADY_CURRENT",
+    "csv_unchanged": true,
+    "sqlite_file_unchanged": true,
+    "duplicates": 0,
+    "integrity": "ok",
+    "foreign_key_violations": 0
+  },
+  "regression_tests": {
+    "new": "6/6 PASS",
+    "existing_pair_shadow_repair": "5/5 PASS",
+    "total": "11/11 PASS"
+  },
+  "protected": {
+    "sealed_prospective_changed": false,
+    "fixed_linked_changed": false,
+    "kts45_changed": false,
+    "registry_changed": false,
+    "registry_count": 68,
+    "latest_numbered_exp": "EXP-020",
+    "future_leakage": 0
+  }
+}

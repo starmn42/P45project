@@ -1,0 +1,30 @@
+{
+  "status": "PAIR_WALKFORWARD_PREFLIGHT_FAILED",
+  "checked_at": "2026-08-10T16:10:00+09:00",
+  "official_document_sha256": "a31a065838f88c65d40605c1a170c13eb5fca7cf3d706de5eda088b43227ae6f",
+  "checks": {
+    "official_v274_sha": "PASS",
+    "schema274_integrity": "PASS",
+    "schema274_foreign_keys": "PASS",
+    "pair_engine_tests_22": "PASS",
+    "source_and_official_db_read_only_open": "PASS",
+    "schema274_required_pair_outcome_fields": "FAIL",
+    "pair_signature_walkforward_bootstrap": "FAIL",
+    "checkpoint_resume": "NOT_RUN_AFTER_FAIL_FAST",
+    "dedicated_pair_backtest_db": "NOT_CREATED",
+    "full_walkforward": "NOT_STARTED"
+  },
+  "conflicts": [
+    {
+      "code": "PAIR_SCHEMA274_OUTCOME_GAP",
+      "detail": "pair_walkforward_outcome lacks official a_bonus_assisted_triple and b_bonus_assisted_triple columns required by v2.7.4 chapters 2 and 18"
+    },
+    {
+      "code": "PAIR_SIGNATURE_EXPOSURE_BOOTSTRAP_UNDEFINED",
+      "detail": "pair_rule_signature requires pair rule risk, recent support state, structure context and bonus dependence; those values require prior selection exposures grouped by pair_rule_signature. The official rule does not define the initial/transition lookup key or a deterministic fixed-point rule, so implementing one would add an unapproved research rule."
+    }
+  ],
+  "operational_pair_rows": 0,
+  "dedicated_db_created": false,
+  "walkforward_rounds_processed": 0
+}

@@ -1,0 +1,39 @@
+{
+  "task": "P45_WEB_FINAL_COMPLETION_1240_001",
+  "locked_before_preview": true,
+  "canonical_latest": 1239,
+  "next_target": 1240,
+  "current_prospective_before": 1239,
+  "current_result_before": "OUTCOME_RECORDED",
+  "confirmed_existing_procedure": {
+    "preview_method": "ProspectiveOrbitService.preview_next",
+    "seal_method": "ProspectiveOrbitService.seal_next",
+    "preview_api": "/api/prospective/preview",
+    "seal_api": "/api/prospective/seal",
+    "deterministic_repeat_guard": true,
+    "duplicate_guard": true,
+    "future_leakage_guard": 0
+  },
+  "pre_operation_sha256": {
+    "canonical_csv": "56748e0192252706d2cf90c6306aff9b8c6c88381a90624c27f4fb23713ca27c",
+    "canonical_sqlite": "c4e131a47518c54ddc7c2a50b21bdaa95ae102743aac64da5b6ebf63723a7404",
+    "sealed_1239": "ed23691c5b9f1715c85b6d3362735dfa8cebb72b31dc258e2aa43bc299c94ead",
+    "settlement_1239": "8915610705da3563d35b72b2d569d7f8208da4df28a134581880814e6d68716c",
+    "prospective_log": "308e1ea65fd2d4953c8d2e50120f74f8dee3ecf8821cc673495ea5bdc9e9f903",
+    "prospective_state_002": "eac2ead0c0ca3130a629fd86271d3abb22a0ab47c200d0aca278290a55514891",
+    "kts": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+    "protocol": "22e8ba6f87d2e1e715abb020e59e8c3493dbf641212fbb3507047d0e16e0ecf7",
+    "official_state": "d4c8792796cc1197777f6c34c1bdf0869826088ae0e7a62101f1ca100a8d8038",
+    "registry": "a4eba0de3e5045d966b068e76d466a574be01bb02ec2f35801af9712f7bc4b8a",
+    "research_master": "8dc9fece55a3e95833a0ec3156015d4521a73bd16e4e6b3d5c70a37208a06a61"
+  },
+  "root_cause": [
+    "FRONTEND_PREVIEW_SEAL_NOT_CONNECTED",
+    "STALE_WEB_LIFECYCLE_PROJECTION",
+    "STALE_EXP017_NOT_CREATED",
+    "PROSPECTIVE_MANIFEST_NOT_SYNCED_AFTER_EXTERNAL_SETTLEMENT",
+    "LUCK_PRINCIPLE_UI_MISSING"
+  ],
+  "rule_changes_after_result": 0,
+  "official_protected_changes": 0
+}

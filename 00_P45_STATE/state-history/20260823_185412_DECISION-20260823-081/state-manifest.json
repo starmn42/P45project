@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-23T18:54:12+09:00",
+  "transaction_id": "c7746ec4-c264-423b-a2b7-16fe5a4861a4",
+  "decision_id": "DECISION-20260823-081",
+  "state_version": "1.0.74",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "EXPERIMENT_LAB_PRIZE_SHARE_PROSPECTIVE_RAW_CAPTURE_READY",
+  "current_status": "SIGNAL_BLIND_CAPTURE_READY_SIDECAR_SOURCE",
+  "state_hash": "e4a3fe75302c4ebe1847dca08b540cb6b6c5165f5574f99f8734654a6acaf28d",
+  "current_state_md_sha256": "506985673436c67a9d2173c6e7682d43d38daaeb282193cb522650f35816e3c2",
+  "current_state_json_sha256": "ab720c02e84ea6fe6e9810832115dd9931560b72662501f9182cbf64adde09c0",
+  "handoff_sha256": "5e71d0e586de41ae1be04e6af5e78152674fb2d42516fc79bb7453017c835d5a",
+  "decision_log_sha256": "a6cf2a5a1dce9d0a7e860af05b0024087cd9efc7933cbafec7093168edea8467",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

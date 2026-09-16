@@ -1,0 +1,18 @@
+{
+  "protected_content_expected": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "protected_content_actual": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "protected_manifest_expected": "051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd",
+  "protected_manifest_actual": "051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd",
+  "protected_roots": [
+    "src/p45",
+    "analysis",
+    "ledger",
+    "validated",
+    "experimental",
+    "ledger-experimental"
+  ],
+  "plan_file_sha256": "fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9",
+  "plan_canonical_sha256": "fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9",
+  "plan_size": 3184,
+  "plan_mtime": "2026-08-24T16:44:01.203037+09:00"
+}

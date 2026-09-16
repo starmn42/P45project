@@ -1,0 +1,85 @@
+{
+  "updates": {
+    "current_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP002_V1_INDEPENDENT_REPRODUCTION_COMPLETE",
+    "current_status": "EXP_CROWD_TOPO_002_V1_INDEPENDENT_REPRODUCTION_PASS",
+    "last_completed_stage": "EXP_CROWD_TOPO_002_V1_INDEPENDENT_REPRODUCTION_001",
+    "next_stage": "PROSPECTIVE_STAGE1_WAIT_AND_REALISTIC_NULL_OR_EXTERNAL_CONFIRMATION_DESIGN_REVIEW",
+    "next_action": "REALISTIC_WEAKER_NULL_OR_EXTERNAL_PROSPECTIVE_CONFIRMATION_DESIGN_REQUIRES_SEPARATE_APPROVAL; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+    "experiment_lab": {
+      "registered_experiments": 59,
+      "registry_unique_experiment_ids": 59,
+      "registry_unique_logical_families": 57,
+      "crowd_topology_exp002_v1": {
+        "status": "SUPPORTED_WITHIN_EXPERIMENT",
+        "independent_reproduction": "INDEPENDENT_REPRODUCTION_PASS",
+        "independent_reproducer_version": "EXP-CROWD-TOPO-002-INDEPENDENT-REPRODUCER-1.0",
+        "independent_reproducer_sha256": "534aa5f306b09bce4081c270a81deeae608310668a0458bae69dedb786abec3a",
+        "independent_result_sha256": "4249f14c62d4fc75f887c1039b6ae6946c955b42f0c665323b63c2ff4150a392",
+        "independent_result_hash": "b8097d9fadd3fa03dd2af4aed7eda181e61eb5c0ad6176456ed4dbbf37e283a7",
+        "fresh_mc_method": "39-category multinomial; fixed column index 0",
+        "fresh_mc_seed": 2026082304,
+        "fresh_mc_repetitions": 300000,
+        "fresh_mc_exceedances": 0,
+        "fresh_mc_p": 0.0000033333222222592593,
+        "fresh_mc_standard_error": 0.0000033333222222592593,
+        "null_d_mean": -0.00010782564430489311,
+        "null_d_q95": 0.11396841934682223,
+        "null_d_q99": 0.16427996975756956,
+        "null_d_q999": 0.22195703771186281,
+        "observed_gt_null_q999": true,
+        "deterministic_max_delta": 0.0000000000000002220446049250313,
+        "strong_null_limitation_recorded": true,
+        "independent_empirical_replication": false,
+        "novelty_status": "NOVELTY_NOT_CONFIRMED",
+        "promotion_candidate": false,
+        "prospective_signal_peeking": 0,
+        "official_effect": "NONE",
+        "official_engine_changed": false,
+        "independent_result_document": "00_P45_STATE/experiment_lab/EXP-CROWD-TOPO-002/independent_reproduction_001/FINAL_INDEPENDENT_REPRODUCTION_RESULT.md"
+      }
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 59
+    },
+    "research_state": {
+      "crowd_topology_exp002_v1": {
+        "status": "SUPPORTED_WITHIN_EXPERIMENT",
+        "independent_reproduction": "INDEPENDENT_REPRODUCTION_PASS",
+        "independent_empirical_replication": false,
+        "strong_null_limitation": "INDEPENDENT_AND_UNIFORM_39_COLUMN_OCCUPANCY_NULL; MECHANISM_NOT_IDENTIFIED",
+        "novelty_status": "NOVELTY_NOT_CONFIRMED",
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false
+      }
+    }
+  },
+  "decision": {
+    "decision_id": "DECISION-20260823-085",
+    "timestamp": "2026-08-23T20:30:41+09:00",
+    "project_version": "P45 v2.7.4",
+    "stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP002_V1_INDEPENDENT_REPRODUCTION",
+    "category": "EXPERIMENT_INDEPENDENT_REPRODUCTION_RESULT",
+    "decision": "EXP-CROWD-TOPO-002-V1의 잠긴 결과를 원 계산기를 import하지 않는 별도 구현으로 재계산했다. 결정값 최대 차이는 2.220446049250313e-16이었고, 새 seed 2026082304의 39범주 Multinomial 300,000회에서 exceedance 0, p=0.0000033333222222592593으로 재현되어 INDEPENDENT_REPRODUCTION_PASS로 보존한다.",
+    "reason": "독립 구현은 원 결과를 계산 분기에 사용하지 않고 raw K2/K3에서 결정량을 먼저 만든 뒤 비교했으며, 원 seed와 Binomial 생성 경로 대신 full 39-category Multinomial의 fixed column 0을 사용했다. 결과는 independent-uniform column occupancy라는 강한 null의 기각만 지지하며 원인 메커니즘·DRAW 효과·특정 번호·추천효과는 식별하지 않는다.",
+    "evidence": "reproducer 534aa5f306b09bce4081c270a81deeae608310668a0458bae69dedb786abec3a; raw result 4249f14c62d4fc75f887c1039b6ae6946c955b42f0c665323b63c2ff4150a392; fresh MC 300000 seed 2026082304 exceedance 0; tests 6/6 PASS; original files changed 0; round1238+ used NO",
+    "affected_files": "isolated independent reproduction protocol/calculator/result, Registry reproduction note, CURRENT_STATE, Decision, HANDOFF only",
+    "affected_schema": "none",
+    "previous_rule": "EXP-CROWD-TOPO-002 V1 SUPPORTED_WITHIN_EXPERIMENT; independent reproduction NOT_YET",
+    "new_rule": "No official or experiment threshold change. EXP-CROWD-TOPO-002 V1 is computationally independently reproduced; strong-null limitation, no empirical/external replication, no promotion, and no DRAW effect remain explicit.",
+    "allowed_next_action": "REALISTIC_WEAKER_NULL_OR_EXTERNAL_PROSPECTIVE_CONFIRMATION_DESIGN_REQUIRES_SEPARATE_APPROVAL; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+    "forbidden_actions": [
+      "EXP_CROWD_TOPO_002_V1_ORIGINAL_FILE_MODIFICATION",
+      "STRONG_NULL_REJECTION_AS_CAUSAL_MECHANISM_CLAIM",
+      "JOHNSON_TOPOLOGY_GENERAL_VALIDATION_CLAIM",
+      "SPECIFIC_POPULAR_NUMBER_OR_COMBINATION_CLAIM",
+      "CROWD_TOPOLOGY_TO_DRAW_ENGINE_CONNECTION",
+      "AUTOMATIC_PROMOTION_CANDIDATE",
+      "NOVELTY_CONFIRMED_OR_WORLD_FIRST_CLAIM",
+      "PROSPECTIVE_SIGNAL_ANALYSIS_BEFORE_ROUND_1289_PUBLICATION",
+      "EXP017_AUTOMATIC_CREATION",
+      "OFFICIAL_ENGINE_CHANGE"
+    ],
+    "approval_source": "USER_EXPLICIT_CROWD_TOPOLOGY_EXP002_INDEPENDENT_REPRODUCTION_INSTRUCTION_012"
+  }
+}

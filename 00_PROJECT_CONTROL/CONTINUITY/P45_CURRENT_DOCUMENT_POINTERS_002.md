@@ -1,0 +1,13 @@
+# P45 CURRENT DOCUMENT POINTERS 002
+
+- latest Recovery = `E:\P45 프로젝트\00_PROJECT_CONTROL\CONTINUITY\1-P45_GPT_RECOVERY_HANDOFF_036.md`
+- latest Start Here = `E:\P45 프로젝트\00_PROJECT_CONTROL\CONTINUITY\P45_NEW_CHAT_START_HERE_003.md`
+- latest Core = `E:\P45 프로젝트\00_PROJECT_CONTROL\CONTINUITY\2-P45_PROJECT_CORE_GUIDE_TRIO_FIRST_ORBIT_009.md`
+- latest Research Master = `E:\P45 프로젝트\90_RESEARCH\P45_RESEARCH_MASTER_INDEX_002.md`
+- latest Coverage Audit = `E:\P45 프로젝트\90_RESEARCH\P45_RESEARCH_COVERAGE_AUDIT_002.md`
+- Registry Snapshot = `E:\P45 프로젝트\90_RESEARCH\P45_FORMAL_EXP_REGISTRY_SNAPSHOT_001.csv`
+- Evidence Inventory = `E:\P45 프로젝트\90_RESEARCH\P45_RESEARCH_EVIDENCE_INVENTORY_001.csv`
+- 새 대화방 복구 1순위 = latest Recovery/Handoff
+- project root / Work source = `E:\P45 프로젝트`
+- P45 Home = `REMOVED / DO NOT USE`
+

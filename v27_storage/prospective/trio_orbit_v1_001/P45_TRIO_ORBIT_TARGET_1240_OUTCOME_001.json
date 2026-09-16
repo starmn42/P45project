@@ -1,0 +1,35 @@
+{
+  "target": 1240,
+  "main": [
+    11,
+    13,
+    19,
+    20,
+    31,
+    44
+  ],
+  "bonus": 27,
+  "sealed_sha256": "d8b7f0753500adf7fc62e894b1a8f2a9551f6bb90be0ec92d1fa3480082375fe",
+  "recorded_at": "2026-09-06T02:19:12.624260+00:00",
+  "fixed_hits": [
+    2,
+    0,
+    1
+  ],
+  "linked_hits": [
+    0,
+    0,
+    1
+  ],
+  "fixed_exact3": 0,
+  "linked_exact3": 0,
+  "fixed_exact2": 1,
+  "linked_exact2": 0,
+  "fixed_success": false,
+  "linked_success": false,
+  "fixed_only_exact3": 0,
+  "linked_only_exact3": 0,
+  "fixed_only_exact2": 1,
+  "linked_only_exact2": 0,
+  "future_leakage": 0
+}

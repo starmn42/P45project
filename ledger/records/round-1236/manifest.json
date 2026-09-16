@@ -1,0 +1,95 @@
+{
+  "files": [
+    {
+      "path": "locked-report.json",
+      "sha256": "82ce65513761b3d7df0c029fffa08716ab8cfe57cc609453ed918ec819c23a8a",
+      "size": 6977
+    },
+    {
+      "path": "snapshot/phase3-data/metadata.json",
+      "sha256": "13be0e0104c001177c409f4cc650be8feee220f0cc12eae26e75fa3c193a0a95",
+      "size": 732
+    },
+    {
+      "path": "snapshot/phase3-data/normalized.csv",
+      "sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+      "size": 42904
+    },
+    {
+      "path": "snapshot/phase3-data/validation-report.json",
+      "sha256": "a3372579ebd5bde2c43af7350fa7eecc92dc278eba72b6f18a4ed9919095c2eb",
+      "size": 320
+    },
+    {
+      "path": "snapshot/phase4-structure/analysis-input.csv",
+      "sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+      "size": 42904
+    },
+    {
+      "path": "snapshot/phase4-structure/draw-structures.jsonl",
+      "sha256": "282e34a8a796014bd5b530840d0be22c4193b54ee4fb161409b927c7a692b48b",
+      "size": 293186
+    },
+    {
+      "path": "snapshot/phase4-structure/metadata.json",
+      "sha256": "07d79bcd9c1d8a2688b37090565153f99743146e93040b9740d554af26a7464e",
+      "size": 628
+    },
+    {
+      "path": "snapshot/phase4-structure/structure-report.json",
+      "sha256": "534f23856513e6f4c5e1b7d5628513bb91c9bbd01768a772faba6c0dcc98b378",
+      "size": 38413
+    },
+    {
+      "path": "snapshot/phase5-backtest/backtest-report.json",
+      "sha256": "1484eef4af1aaca1d204bee8d7b2e90c2738319dc6073066d6a52a080519cdfd",
+      "size": 12094
+    },
+    {
+      "path": "snapshot/phase5-backtest/metadata.json",
+      "sha256": "6be6bf9c957550f71e7b8bbb092d115c8551d94ab8d663939e024109a8173de4",
+      "size": 625
+    },
+    {
+      "path": "snapshot/phase5-backtest/return-events.jsonl",
+      "sha256": "ce443aef0dc671b09099e1735bb643202c30597e424eb008ed8f660aed3ec372",
+      "size": 260381
+    },
+    {
+      "path": "snapshot/phase6-candidates/candidate-gates.json",
+      "sha256": "05a34dae58a2a716e7000f6907b63a4505b8569b7ab9fccab3c0d3bd5d7b297d",
+      "size": 213630
+    },
+    {
+      "path": "snapshot/phase6-candidates/candidate-report.json",
+      "sha256": "d887dbc54779cc8b3e43cd012b40065b75c736a89bde2f1dd86eb2e8cf16c8bd",
+      "size": 988
+    },
+    {
+      "path": "snapshot/phase6-candidates/metadata.json",
+      "sha256": "9e88b46b23d67fb92188ac96948dec672570a5cb5b5f7598801d0a800860e795",
+      "size": 804
+    },
+    {
+      "path": "snapshot/phase7-selection/metadata.json",
+      "sha256": "e9a90456536ef5faef80acfc6d0de54405364060ab7d55b5ed88ae690cb7a96e",
+      "size": 641
+    },
+    {
+      "path": "snapshot/phase7-selection/selection-report.json",
+      "sha256": "fcc14595a9a559fbad1e36fe8898ce610fd3c25880dcb296f81007abd5ad401b",
+      "size": 4447
+    },
+    {
+      "path": "snapshot/phase8-sets/metadata.json",
+      "sha256": "08a91d069b94e8ded19ff3b73b2d290e56f377bcfd26a09663b0e8a43ecfe5bb",
+      "size": 709
+    },
+    {
+      "path": "snapshot/phase8-sets/set-report.json",
+      "sha256": "22b73e8d1a0a918cb040382c12d6bf313a89c76fbab92e438fef77d8739576ef",
+      "size": 287
+    }
+  ],
+  "target_round": 1236
+}

@@ -1,0 +1,68 @@
+{
+  "status": "PAIR_SIGNATURE_EXPOSURE_STARVATION",
+  "run_id": "6dc5ae1f-92d9-43ae-8b1a-7452e1c842fe",
+  "source_db_sha256": "1d7fe8ba1c50e454b57d5bfe86da1e1bfee1fd2c6577cce47ae3d72dd89cfd57",
+  "signature_version": "PAIR-RULE-SIGNATURE-1.1",
+  "distinct_base_signatures": 82651,
+  "selection_exposure_total": 88498,
+  "identity_exposure_total": 148215,
+  "selection_exposure_distribution": {
+    "max": 8,
+    "median": 1,
+    "p90_nearest_rank": 1,
+    "p95_nearest_rank": 2,
+    "p99_nearest_rank": 3
+  },
+  "signature_count_by_exposure": {
+    "1": 78028,
+    "2_to_7": 4621,
+    "8_to_19": 2,
+    "20_to_49": 0,
+    "50_to_199": 0,
+    "ge_200": 0
+  },
+  "ge_50": 0,
+  "ge_200": 0,
+  "singleton_signature_ratio": 0.9440660125104354,
+  "eligible_selection_rounds": 258,
+  "representatives_per_round_median": 300,
+  "representatives_per_round_max": 1421,
+  "identity_signature_drift": {
+    "distinct_pair_identities": 146338,
+    "repeated_pair_identities": 1817,
+    "repeated_same_signature_only": 6,
+    "repeated_with_signature_change": 1811,
+    "change_rate_among_repeated": 0.9966978536048432,
+    "repeat_span_median_rounds": 60
+  },
+  "payload_field_analysis": {
+    "pair_pool_type": "NO_FRAGMENTATION_OBSERVED_ALL_EXPANDED_TEST_POOL",
+    "constituent_trio_rule_signatures": "LIKELY_PRIMARY_HIGH_CARDINALITY_DRIVER_INFERENCE_FROM_OFFICIAL_PAYLOAD_AND_TIME_DRIFT",
+    "pair_unit_coverage_state_vector": "LIKELY_MAJOR_HIGH_CARDINALITY_DRIVER_INFERENCE",
+    "role_diversity_vector": "POSSIBLE_SECONDARY_DRIVER_NOT_QUANTIFIABLE_FROM_RAW_DB",
+    "evidence_overlap_vector": "POSSIBLE_SECONDARY_DRIVER_NOT_QUANTIFIABLE_FROM_RAW_DB",
+    "member_trio_maximum_opposite_risk": "LOW_CARDINALITY_SECONDARY_DRIVER",
+    "member_trio_structure_summary": "LOW_CARDINALITY_SECONDARY_DRIVER",
+    "quantitative_field_attribution_available": false,
+    "reason": "The raw candidate ledger stores only the signature hash and not the canonical v1.1 payload fields."
+  },
+  "implementation_assessment": {
+    "signature_version_matches": true,
+    "selection_identity_exposure_separated": true,
+    "selection_uniqueness_constraint_working": true,
+    "counting_bug_evidence": false,
+    "payload_auditability_gap": true,
+    "classification": "OFFICIAL_V11_NATURAL_HIGH_CARDINALITY_RESULT_WITHOUT_OBSERVED_COUNTING_ERROR"
+  },
+  "viability": {
+    "theoretical_ge_50": "POSSIBLE_ONLY_IF_A_SIGNATURE_REMAINS_STABLE_ACROSS_AT_LEAST_50_OF_258_ELIGIBLE_ROUNDS",
+    "theoretical_ge_200": "POSSIBLE_ONLY_IF_A_SIGNATURE_REMAINS_STABLE_ACROSS_AT_LEAST_200_OF_258_ELIGIBLE_ROUNDS",
+    "observed_ge_50": false,
+    "observed_ge_200": false,
+    "observed_max": 8,
+    "conclusion": "CURRENT_V11_GRANULARITY_PREVENTED_THE_50_AND_200_SAMPLE_BANDS_FROM_BEING_REACHED_IN_THIS_FULL_RUN"
+  },
+  "rules_changed": false,
+  "thresholds_changed": false,
+  "database_modified": false
+}

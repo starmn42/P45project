@@ -1,0 +1,9 @@
+{
+  "version": "P45-OFFICIAL-REPAIR-RC-CANARY-001",
+  "source": "src\\p45_audits\\pair_shadow_repair_001.py",
+  "source_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+  "rc_copy_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+  "official_repair_applied": false,
+  "semantics": "SHADOW_LIFECYCLE_RESTORATION_ONLY",
+  "historical_outcome_scoring": false
+}

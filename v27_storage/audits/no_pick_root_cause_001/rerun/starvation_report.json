@@ -1,0 +1,49 @@
+{
+  "starvation": {
+    "NUMBER": {
+      "INPUT_STARVATION": 0,
+      "ENOUGH_INPUT_AND_FAIL": 104,
+      "PASS": 763
+    },
+    "TRIO": {
+      "INPUT_STARVATION": 104,
+      "ENOUGH_INPUT_AND_FAIL": 492,
+      "PASS": 271
+    },
+    "PAIR": {
+      "INPUT_STARVATION": 596,
+      "ENOUGH_INPUT_AND_FAIL": 13,
+      "PASS": 258
+    },
+    "CORE": {
+      "INPUT_STARVATION": 609,
+      "ENOUGH_INPUT_AND_FAIL": 258,
+      "PASS": 0
+    }
+  },
+  "survival_loss": {
+    "NUMBER": 104,
+    "TRIO": 492,
+    "PAIR": 13,
+    "CORE": 258
+  },
+  "morphology": {
+    "IMPLEMENTATION_OR_DEFINITION_ANOMALY": 258,
+    "PAIR_BOTTLENECK": 13,
+    "TRIO_BOTTLENECK": 492,
+    "UPSTREAM_STARVATION": 104
+  },
+  "static_findings": {
+    "minimum_number_candidates_for_trio": 6,
+    "minimum_valid_trios_for_pair": 2,
+    "minimum_disjoint_pairs_for_core_evaluation": 1,
+    "logical_gate_conflict_found": false,
+    "implementation_anomaly": true,
+    "definition_anomaly": true,
+    "anomaly_detail": "PAIR production gate input persists historical evidence as None and recent/structure placeholders, causing PG07/PG08 INCOMPLETE and SYSTEM_HOLD despite raw candidates; lifecycle_v12 final-state expression also has no PAIR_TEST_READY return path.",
+    "source_evidence": [
+      "pairs/production.py gate_data assigns integrated_primary_evidence=None and main_primary_evidence=None and recent_state=INSUFFICIENT_SAMPLE",
+      "pairs/lifecycle_v12.py final_state expression returns only PAIR_SYSTEM_HOLD, PAIR_READY, or PAIR_RESEARCH_HOLD"
+    ]
+  }
+}

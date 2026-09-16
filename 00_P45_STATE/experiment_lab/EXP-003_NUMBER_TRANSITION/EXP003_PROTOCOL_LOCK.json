@@ -1,0 +1,40 @@
+{
+  "experiment_id": "EXP-DRAW-20260816-010-V1",
+  "alias": "EXP-003",
+  "protocol_version": "EXP003-PROTOCOL-1.0",
+  "calculator_version": "EXP003-CALCULATOR-1.0",
+  "schema_version": 3001,
+  "protocol_hash": "feb78db79d1dbebbfe6f41b097651aa27acdc8b7b7d7d4260e1e6645e6035329",
+  "data_snapshot_expected": {
+    "first_round": 1,
+    "last_round": 1237,
+    "row_count": 1237,
+    "sha256": "b0cb865e0760060116cab5b6658eaca6d1b203d437ad7120831d5883c7f795b0"
+  },
+  "files": [
+    {
+      "path": "EXP003_01_PREREGISTRATION.md",
+      "sha256": "ddaf4cc5cd05e4e8f9cdb2ba64cc36e70ad3bb7c7dd23dbc3b80e4827f9e3f89"
+    },
+    {
+      "path": "EXP003_02_TRANSITION_DEFINITION.md",
+      "sha256": "7640fe58651ab4ddf94d727ba766745685c792973b16aefc9cebd3e1c12c66e0"
+    },
+    {
+      "path": "EXP003_03_METRIC_NULL_POLICY.md",
+      "sha256": "fab52f2e2aa58963d8c26cf6abd55f3e48b9e7e2dbfb2d3634a2f718c1bfc5db"
+    },
+    {
+      "path": "EXP003_04_WALKFORWARD.md",
+      "sha256": "9d3dd5d8f7a659be90cb35f56fee58ee450c96dbcc3e663a85b4f6c2859e1f4a"
+    },
+    {
+      "path": "EXP003_05_SUCCESS_FAILURE.md",
+      "sha256": "4fbde5ba8bac84774afee93d5029d8e6f6d2b135c7740c6480f9d44f1a87ea1f"
+    }
+  ],
+  "lock_scope": "DESIGN_CALCULATOR_STORAGE_ONLY",
+  "actual_backtest_run": false,
+  "actual_result_viewed": false,
+  "official_engine_changed": false
+}

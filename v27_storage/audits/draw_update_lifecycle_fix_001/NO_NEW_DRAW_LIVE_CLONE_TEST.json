@@ -1,0 +1,14 @@
+{
+  "result": {
+    "status": "DRAW_ALREADY_CURRENT",
+    "latest_completed_draw": 1239
+  },
+  "csv_unchanged": true,
+  "sqlite_file_unchanged": true,
+  "draw_result_unchanged": true,
+  "draw_rows": 1239,
+  "duplicate_rows": 0,
+  "snapshot_1240_preserved": true,
+  "integrity": "ok",
+  "foreign_key_violations": 0
+}

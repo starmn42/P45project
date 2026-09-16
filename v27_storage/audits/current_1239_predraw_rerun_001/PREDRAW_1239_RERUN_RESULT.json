@@ -1,0 +1,158 @@
+{
+  "final_verdict": "CURRENT_1239_RERUN_NO_OUTPUT_TRACED",
+  "preflight": {
+    "state": "1.0.88",
+    "decision": "DECISION-20260824-095",
+    "registry_physical_rows": 63,
+    "engine": "FROZEN",
+    "no_pick": "UNRESOLVED",
+    "pause": "ACTIVE",
+    "exp_017": "NOT_CREATED"
+  },
+  "authoritative_1238": {
+    "status": "PASS",
+    "round": 1238,
+    "date": "2026-08-22",
+    "main": [
+      2,
+      13,
+      18,
+      32,
+      38,
+      42
+    ],
+    "bonus": 22,
+    "source_payload_sha256": "99d44e493a357785f976e37d99b1e0d2ae179b161cc1aa4a5665f9606ec0c119",
+    "provenance_match": true,
+    "conflicts": 0
+  },
+  "staging": {
+    "path": "v27_storage\\audits\\current_1239_predraw_rerun_001\\STAGING_CONTIGUOUS_DRAW_1_1238.csv",
+    "sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+    "rows": 1238,
+    "unique_rounds": 1238,
+    "min_round": 1,
+    "max_round": 1238,
+    "missing_rounds": [],
+    "duplicate_rounds": [],
+    "structural_errors": 0,
+    "baseline_sha256": "ad69ec8d28b4e5cdb40d468ad758c5f23acaeb6225f525c5201c8027952701e6",
+    "first_1237_exact_equality": true,
+    "first_1237_canonical_content_sha256": "a6592ec8d9441b162858bcf26aa3db2c71410a8a4b672daccc9f69124a14e374",
+    "baseline_canonical_content_sha256": "a6592ec8d9441b162858bcf26aa3db2c71410a8a4b672daccc9f69124a14e374",
+    "row_1238_authoritative_equality": true,
+    "row_1238_canonical_hash": "2d301f8fb550733eafc8b63adf40f1304125e7db75ee44de28ed7c0a178e2c4b"
+  },
+  "invalid_staging_disposition": "INVALID_FOR_TARGET_1239_CAUSAL_USE - MISSING_1236_1237",
+  "max_source_round": 1238,
+  "target_round": 1239,
+  "future_leakage_count": 0,
+  "outcome_scoring_count": 0,
+  "number": {
+    "input": 45,
+    "lifecycle_distribution": {
+      "NUMBER_HOLD": 40,
+      "NUMBER_WEAKEN": 5
+    },
+    "eligible_count_before_minimum_gate": 5,
+    "eligible_identities_before_minimum_gate": [
+      13,
+      18,
+      20,
+      24,
+      27
+    ],
+    "selected_count": 0,
+    "selected_identities": [],
+    "structure_distribution": {
+      "SEVERE": 45
+    },
+    "primary_evidence_distribution": {
+      "NEGATIVE_TENTATIVE": 12,
+      "POSITIVE_TENTATIVE": 28,
+      "POSITIVE_CONFIRMED": 5
+    },
+    "support_state": "NOT_APPLICABLE_AT_NUMBER_LEVEL"
+  },
+  "structures": {
+    "UNIT_3": {
+      "state": "NORMAL",
+      "percentile": 69.11883589329022,
+      "metric_percentiles": {
+        "zero_group_count": 32.90218270008084,
+        "max_abs_standardized_occupancy": 32.90218270008084,
+        "max_annihilation_streak": 28.617623282134197,
+        "realized_return_depth": 54.244139046079226,
+        "recent50_zero_group_shift": 69.11883589329022
+      }
+    },
+    "UNIT_5": {
+      "state": "NORMAL",
+      "percentile": 57.47776879547292,
+      "metric_percentiles": {
+        "zero_group_count": 6.628940986257073,
+        "max_abs_standardized_occupancy": 6.628940986257073,
+        "max_annihilation_streak": 48.100242522231206,
+        "realized_return_depth": 45.51333872271625,
+        "recent50_zero_group_shift": 57.47776879547292
+      }
+    },
+    "UNIT_9": {
+      "state": "NORMAL",
+      "percentile": 62.4090541632983,
+      "metric_percentiles": {
+        "zero_group_count": 26.758286176232822,
+        "max_abs_standardized_occupancy": 21.018593371059012,
+        "max_annihilation_streak": 26.758286176232822,
+        "realized_return_depth": 62.4090541632983,
+        "recent50_zero_group_shift": 46.96847210994341
+      }
+    },
+    "UNIT_10": {
+      "state": "NORMAL",
+      "percentile": 65.40016168148748,
+      "metric_percentiles": {
+        "zero_group_count": 23.362974939369444,
+        "max_abs_standardized_occupancy": 13.823767178658043,
+        "max_annihilation_streak": 23.362974939369444,
+        "realized_return_depth": 65.40016168148748,
+        "recent50_zero_group_shift": 14.06628940986257
+      }
+    },
+    "END_DIGIT": {
+      "state": "SEVERE",
+      "percentile": 100.0,
+      "metric_percentiles": {
+        "zero_group_count": 100.0,
+        "max_abs_standardized_occupancy": 99.91915925626516,
+        "max_annihilation_streak": 58.124494745351655,
+        "realized_return_depth": 100.0,
+        "recent50_zero_group_shift": 34.76151980598222
+      }
+    }
+  },
+  "trio": {
+    "entered": false,
+    "universe": 0,
+    "status_counts": {},
+    "eligible": 0,
+    "member_structure_summary": {},
+    "final_structure_state": {}
+  },
+  "pair": {
+    "universe": 0,
+    "status_counts": {},
+    "eligible": 0
+  },
+  "primary_3of3_survivors": 0,
+  "support_exact_2of3_survivors": 0,
+  "final_three_number_candidate_set_count": 0,
+  "two_set_constructible": false,
+  "official_output": false,
+  "sets": [],
+  "forced_pick": false,
+  "first_fatal_bottleneck": "NUMBER_EXTINCTION",
+  "historical_lifecycle_update_count": 22,
+  "official_source_changes": 0,
+  "official_db_changes": 0
+}

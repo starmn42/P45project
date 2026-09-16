@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "complete_runs": 2,
+  "result_sha256_run_1": "785bb10a8d6183f58ac29f7214e5a0ed8a8946784354b1f2f95bfbf7779cc88b",
+  "result_sha256_run_2": "785bb10a8d6183f58ac29f7214e5a0ed8a8946784354b1f2f95bfbf7779cc88b",
+  "identical": true,
+  "protocol_sha256": "e27100d726264310d2402cb691f8ca8a53d0d2e5f9ece861cd033156573f5302",
+  "data_sha256": "95955ee79afd6b7004f0283776eba9007834d30fd8f0b4b18cce379bf3ec9e4b",
+  "round_1238_plus_used": false,
+  "future_leakage": 0
+}

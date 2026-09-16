@@ -1,0 +1,63 @@
+{
+  "max_source_round": 1237,
+  "target_round": 1238,
+  "current": {
+    "label": "CURRENT_TARGET",
+    "target_round": 1238,
+    "max_source_round": 1237,
+    "source_file": "v27_storage\\audits\\no_pick_root_cause_trace_001\\CURRENT_INPUT_SNAPSHOT.csv",
+    "skip_status": "SKIPPED_TRIO_UNDER_2",
+    "stages": [
+      {
+        "stage": "NUMBER",
+        "input": 45,
+        "output": 12,
+        "rejected": 33,
+        "minimum_required": 6,
+        "rejection_reasons": {
+          "NUMBER_WEAKEN": 9,
+          "NUMBER_HOLD": 24
+        }
+      },
+      {
+        "stage": "TRIO",
+        "input": 220,
+        "output": 0,
+        "rejected": 220,
+        "minimum_required": 2,
+        "rejection_reasons": {
+          "TRIO_HOLD": 220
+        },
+        "primary_3of3_survivors": 0,
+        "support_exact2_survivors": 0
+      },
+      {
+        "stage": "PAIR_LIFECYCLE",
+        "input": 0,
+        "output": 0,
+        "rejected": 0,
+        "minimum_required": 1,
+        "state_counts": {},
+        "rejection_reasons": {},
+        "primary_evidence_survivors": 0,
+        "support_evidence_survivors": 0
+      },
+      {
+        "stage": "FINAL_3X2",
+        "input": 0,
+        "output": 0,
+        "rejected": 0,
+        "minimum_required": 1
+      }
+    ],
+    "final_three_set_candidate_count": 0,
+    "two_set_constructible": false,
+    "official_output": false,
+    "outputs": [],
+    "first_fatal_bottleneck": "TRIO",
+    "future_leakage_count": 0,
+    "outcome_scoring_count": 0
+  },
+  "sealed_1238": null,
+  "historical_trace": "HISTORICAL_TRACE_SKIPPED_COST_NOT_JUSTIFIED"
+}

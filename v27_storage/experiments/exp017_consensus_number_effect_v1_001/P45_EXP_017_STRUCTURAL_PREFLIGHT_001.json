@@ -1,0 +1,58 @@
+{
+  "experiment_id": "EXP-017",
+  "canonical_registry_id": "EXP-DRAW-20260827-017-V1",
+  "title": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1",
+  "mode": "OUTCOME_BLIND_STRUCTURAL_PREFLIGHT",
+  "source": "v27_storage/experiments/trio_orbit_v1_001/P45_TRIO_ORBIT_V1_ROUND_TRACE_001.csv",
+  "source_sha256": "bcf54e5f13bc3b3ab73eb23d936030648b7da63f9264a10bcdf715bc5ea091e7",
+  "historical": {
+    "targets": 1237,
+    "active_rounds": 1104,
+    "zero_rounds": 133,
+    "total_exposures": 2267,
+    "k_distribution": {"0": 133, "1": 342, "2": 448, "3": 249, "4": 48, "5": 12, "6": 5},
+    "mean_k": 1.832659660469,
+    "median_positive_k": 2,
+    "max_k": 6,
+    "min_positive_k": 1
+  },
+  "development": {
+    "range": "2..867",
+    "targets": 866,
+    "active_rounds": 769,
+    "zero_rounds": 97,
+    "total_exposures": 1592,
+    "k_distribution": {"0": 97, "1": 222, "2": 323, "3": 187, "4": 26, "5": 7, "6": 4},
+    "mean_k": 1.838337182448,
+    "median_positive_k": 2,
+    "max_k": 6,
+    "min_positive_k": 1
+  },
+  "walkforward": {
+    "range": "868..1238",
+    "targets": 371,
+    "active_rounds": 335,
+    "zero_rounds": 36,
+    "total_exposures": 675,
+    "k_distribution": {"0": 36, "1": 120, "2": 125, "3": 62, "4": 22, "5": 5, "6": 1},
+    "mean_k": 1.819407008086,
+    "median_positive_k": 2,
+    "max_k": 6,
+    "min_positive_k": 1
+  },
+  "checks": {
+    "target_range_contiguous_2_1238": "PASS",
+    "candidate_generation_source_integrity": "PASS",
+    "candidate_reproducibility": "PASS",
+    "minimum_sample": "PASS",
+    "output_size_0_to_6": "PASS",
+    "target_result_used_for_candidates": false,
+    "actual_hits_calculated": false,
+    "hit_rate_calculated": false,
+    "p_value_calculated": false,
+    "walkforward_outcome_calculated": false,
+    "future_leakage": 0
+  },
+  "prospective_1239_candidate_from_sealed_source": [11, 13, 38],
+  "status": "STRUCTURAL_PREFLIGHT_PASS"
+}

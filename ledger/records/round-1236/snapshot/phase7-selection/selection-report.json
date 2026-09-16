@@ -1,0 +1,204 @@
+{
+  "all_six_unique": false,
+  "forced_fill_performed": false,
+  "mixed_test_hold_reason": "official plus valid TEST candidates fewer than 6",
+  "mixed_test_status": "HOLD",
+  "next_phase": null,
+  "official_hold_reason": "official PASS candidates fewer than 6",
+  "official_pool_order": [],
+  "official_status": "HOLD",
+  "selected_count": 0,
+  "selected_numbers": [],
+  "selection_mode": "NONE",
+  "sets_created": false,
+  "stages": {
+    "alternate_eliminated": [],
+    "final_selected": [],
+    "initial_eliminated": [
+      {
+        "number": 4,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 5,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 6,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 7,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 8,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 9,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 10,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 11,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 15,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 17,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 20,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 21,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 22,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 23,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 25,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 29,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 30,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 32,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 33,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 35,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 36,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 37,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 38,
+        "reason_code": "OVERALL_FAIL"
+      },
+      {
+        "number": 42,
+        "reason_code": "OVERALL_FAIL"
+      }
+    ],
+    "middle_eliminated": [
+      {
+        "number": 1,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 2,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 3,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 12,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 13,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 14,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 16,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 18,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 19,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 24,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 26,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 27,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 28,
+        "reason_code": "SAMPLE_INSUFFICIENT"
+      },
+      {
+        "number": 31,
+        "reason_code": "SAMPLE_INSUFFICIENT"
+      },
+      {
+        "number": 34,
+        "reason_code": "SAMPLE_INSUFFICIENT"
+      },
+      {
+        "number": 39,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 40,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 41,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 43,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 44,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      },
+      {
+        "number": 45,
+        "reason_code": "NON_RETURN_TEST_ONLY"
+      }
+    ]
+  },
+  "target_round": 1236,
+  "valid_test_pool_order": []
+}

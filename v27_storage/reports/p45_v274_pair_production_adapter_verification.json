@@ -1,0 +1,24 @@
+{
+  "status": "PAIR_PRODUCTION_ADAPTER_READY",
+  "production_modules": [
+    "p45_v27.stage6_diagnostics.diagnose_stage6",
+    "p45_v27.trio_engine.build_current_trios",
+    "p45_v27.pairs.engine.generate_pair_candidates",
+    "p45_v27.pairs.engine.PAIR-RULE-SIGNATURE-1.1"
+  ],
+  "cli": "python -m p45_v27.pair_walkforward",
+  "related_tests": {"passed": 48, "failed": 0},
+  "smoke": {
+    "round_43": {"source_end_round": 42, "pair_candidates": 0, "status": "SKIPPED_RESEARCH_HOLD"},
+    "round_1235": {"source_end_round": 1234, "pair_candidates": 0, "status": "SKIPPED_TRIO_UNDER_2"},
+    "round_1236": {"source_end_round": 1235, "valid_trios": 12, "disjoint_pairs": 10, "matches_existing_diagnostic": true}
+  },
+  "outcome_access_before_prediction": 0,
+  "determinism_runs": 10,
+  "determinism_hash_count": 1,
+  "signature_version": "PAIR-RULE-SIGNATURE-1.1",
+  "full_walkforward_started": false,
+  "production_backtest_db_created": false,
+  "operational_pair_rows": 0,
+  "blockers": []
+}

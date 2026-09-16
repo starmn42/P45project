@@ -1,0 +1,22 @@
+{
+  "menu": [
+    "홈",
+    "미래검증 기록",
+    "안전 점검"
+  ],
+  "next": {
+    "active": "dispatch",
+    "title": "1241회 출격 상세",
+    "crumb": "1241회 출격 상세",
+    "result": "결과 대기 중",
+    "banned": false
+  },
+  "previous": {
+    "active": "result-detail",
+    "title": "1240회 결과 상세",
+    "crumb": "1240회 결과 상세",
+    "hitCount": 4,
+    "settled": true
+  },
+  "consoleErrors": []
+}

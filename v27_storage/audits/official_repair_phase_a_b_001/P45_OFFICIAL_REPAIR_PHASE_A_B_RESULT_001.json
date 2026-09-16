@@ -1,0 +1,162 @@
+{
+  "final_verdict": "PHASE_A_B_PASS_AWAITING_USER_APPROVAL",
+  "current_official_state": {
+    "state_version": "1.0.87",
+    "latest_decision": "DECISION-20260824-094",
+    "registry_physical_rows": 62,
+    "official_engine_frozen": true,
+    "exp017_status": "NOT_CREATED",
+    "draw_discovery_pause": "ACTIVE",
+    "no_pick_status": "UNRESOLVED"
+  },
+  "protected_preflight": {
+    "protected_content_expected": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+    "protected_content_actual": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+    "protected_manifest_expected": "051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd",
+    "protected_manifest_actual": "051a9add7b8bd68030a014c6f3d2e33226f4fc2db6e2cf90a0647f82349621dd",
+    "protected_roots": [
+      "src/p45",
+      "analysis",
+      "ledger",
+      "validated",
+      "experimental",
+      "ledger-experimental"
+    ],
+    "plan_file_sha256": "fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9",
+    "plan_canonical_sha256": "fdf472f1d41fc16abd7bce9525be20859e9515cf61b7240abbafb0448c56dfb9",
+    "plan_size": 3184,
+    "plan_mtime": "2026-08-24T16:44:01.203037+09:00"
+  },
+  "plan_lock_pass": true,
+  "phase_a": {
+    "phase_a_pass": true,
+    "rc_path": "v27_storage\\audits\\official_repair_phase_a_b_001\\release_candidate",
+    "rc_manifest": {
+      "version": "P45-OFFICIAL-REPAIR-RC-CANARY-001",
+      "source": "src\\p45_audits\\pair_shadow_repair_001.py",
+      "source_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+      "rc_copy_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+      "official_repair_applied": false,
+      "semantics": "SHADOW_LIFECYCLE_RESTORATION_ONLY",
+      "historical_outcome_scoring": false
+    },
+    "baseline_before": [
+      {
+        "path": "src/p45_v27/pairs/production.py",
+        "size": 13393,
+        "sha256": "e842bd0f5f9d397ef8e4aadbf1f32c91eeeb68ccac6b87c3a7cead366487fbbb"
+      },
+      {
+        "path": "src/p45_v27/pairs/decision.py",
+        "size": 12342,
+        "sha256": "625d374e0a0a4461537c85673e638c0e435952882ca4006db29956b7c8f5949e"
+      },
+      {
+        "path": "src/p45_v27/pairs/lifecycle_v12.py",
+        "size": 9473,
+        "sha256": "b0c5041e7319aaa235bbd0fae0a1df8293b38da581822810f83ad769de222942"
+      },
+      {
+        "path": "src/p45_v27/pairs/final_aggregation.py",
+        "size": 16174,
+        "sha256": "162f7f50a499690d896fdd56d1fbc214587b4ab8bae5451913b2ef27d6b9a1e7"
+      },
+      {
+        "path": "v27_storage/backtests/p45_v274_pair_walkforward_v12.sqlite3",
+        "size": 9600729088,
+        "sha256": "e2f7b6291bc3d0ecea6a170eda11bc47f04aa65cb9686d556ebd6b1b12f61740"
+      },
+      {
+        "path": "v27_storage/db/p45_v273_core.sqlite3",
+        "size": 389120,
+        "sha256": "2cbc4cc03f7e189c951529fd1ca1beeaa4514ed0c8e02e2ffca2fd42b4c72ccd"
+      },
+      {
+        "path": "v27_storage/db/p45_v273_audit.sqlite3",
+        "size": 61440,
+        "sha256": "b919b8b5067860e3705c323b8caf182e1f397d26f61ccdfa051a094c4a1c2d95"
+      }
+    ],
+    "baseline_after": [
+      {
+        "path": "src/p45_v27/pairs/production.py",
+        "size": 13393,
+        "sha256": "e842bd0f5f9d397ef8e4aadbf1f32c91eeeb68ccac6b87c3a7cead366487fbbb"
+      },
+      {
+        "path": "src/p45_v27/pairs/decision.py",
+        "size": 12342,
+        "sha256": "625d374e0a0a4461537c85673e638c0e435952882ca4006db29956b7c8f5949e"
+      },
+      {
+        "path": "src/p45_v27/pairs/lifecycle_v12.py",
+        "size": 9473,
+        "sha256": "b0c5041e7319aaa235bbd0fae0a1df8293b38da581822810f83ad769de222942"
+      },
+      {
+        "path": "src/p45_v27/pairs/final_aggregation.py",
+        "size": 16174,
+        "sha256": "162f7f50a499690d896fdd56d1fbc214587b4ab8bae5451913b2ef27d6b9a1e7"
+      },
+      {
+        "path": "v27_storage/backtests/p45_v274_pair_walkforward_v12.sqlite3",
+        "size": 9600729088,
+        "sha256": "e2f7b6291bc3d0ecea6a170eda11bc47f04aa65cb9686d556ebd6b1b12f61740"
+      },
+      {
+        "path": "v27_storage/db/p45_v273_core.sqlite3",
+        "size": 389120,
+        "sha256": "2cbc4cc03f7e189c951529fd1ca1beeaa4514ed0c8e02e2ffca2fd42b4c72ccd"
+      },
+      {
+        "path": "v27_storage/db/p45_v273_audit.sqlite3",
+        "size": 61440,
+        "sha256": "b919b8b5067860e3705c323b8caf182e1f397d26f61ccdfa051a094c4a1c2d95"
+      }
+    ],
+    "official_files_changed": [],
+    "database_files_changed_count": 0,
+    "deterministic_rerun": true,
+    "rerun_digest_1": "732245c7d20ec17b07095d8d732cab65ec30c7ad88c5065a0b6fe0e2a509e4bb",
+    "rerun_digest_2": "732245c7d20ec17b07095d8d732cab65ec30c7ad88c5065a0b6fe0e2a509e4bb",
+    "historical_outcome_scoring_count": 0,
+    "future_leakage_count": 0,
+    "gate_changed": false,
+    "threshold_changed": false,
+    "signature_changed": false,
+    "semantics_changed": false,
+    "raw_pair_candidates": 148215,
+    "test_ready_candidates": 61415,
+    "test_ready_rounds": 100,
+    "output_available_rounds": 100,
+    "shadow_comparison": "EXACT_SAME_UNIVERSE_AND_SEMANTICS",
+    "critical_mismatches": [],
+    "scoring_run": false
+  },
+  "phase_b": {
+    "status": "PASS",
+    "target_round": 1238,
+    "max_source_round_used": 1237,
+    "target_outcome_available_at_lock_time": false,
+    "candidate_count": 0,
+    "output_status": "NO_OUTPUT",
+    "artifact_sha256": "30c70cecd35e2df0835cf4b197462f10c7f3e75f103c8196b8c67993d53e504b",
+    "artifact_canonical_hash": "0c244318d13990bd33a34b24482766a110d62a472e65771dcf0a89dc426f58a3",
+    "seal_timestamp": "2026-08-24T18:57:11.390828+09:00",
+    "future_leakage_count": 0,
+    "deterministic_rerun": true,
+    "outcome_access_count": 0,
+    "historical_outcome_scoring_count": 0,
+    "tuning_after_canary_count": 0
+  },
+  "official_files_changed_count": 0,
+  "db_files_changed_count": 0,
+  "protected_content_after": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "official_repair_applied": false,
+  "official_state_changed": false,
+  "registry_changed": false,
+  "decision_changed": false,
+  "historical_performance_claim_allowed": false,
+  "recommendation_generated": false,
+  "final_next_gate": "AWAITING_CHATGPT_REVIEW_AND_EXPLICIT_USER_APPROVAL"
+}

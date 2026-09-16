@@ -1,0 +1,143 @@
+{
+  "precheck": "PASS",
+  "canonical_latest": 1238,
+  "canonical_sha256": "1160cafab32542f28b9f2e7656ec4b471d01a3a521b8b35e21dc9ae9c953cce8",
+  "protocol_sha256": "d3f271d0869dbba0da466cb77835b8b7638c39fe99d7da8f7fe3c5ddffcac6c3",
+  "data_checks": {
+    "continuous": true,
+    "duplicates_0": true,
+    "main_valid": true,
+    "bonus_valid": true,
+    "latest": 1238
+  },
+  "evaluated_rounds": 1236,
+  "target_range": [
+    3,
+    1238
+  ],
+  "overall": {
+    "n": 1236,
+    "mean_bonus_score": 0.1011326860841424,
+    "mean_overlap": 0.8414239482200647,
+    "covariance": -0.03331552874393856,
+    "regression_slope": -0.008070384356494823,
+    "correlation": -0.020655395967679274,
+    "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+  },
+  "primary_mc": {
+    "histories": 100000,
+    "seed": 15272394426792393632,
+    "extreme_count": 45644,
+    "p": 0.45644543554564454,
+    "null_mean": 6.220234915847133e-05,
+    "null_sd": 0.0446710495553358,
+    "q025": -0.08738301010148615,
+    "q975": 0.08753970030686732
+  },
+  "conditional_shift": {
+    "shifts": 1236,
+    "extreme_count": 597,
+    "p": 0.4830097087378641,
+    "min": -0.13444821482808095,
+    "max": 0.16975890491301934
+  },
+  "stability": {
+    "full": {
+      "n": 1236,
+      "mean_bonus_score": 0.1011326860841424,
+      "mean_overlap": 0.8414239482200647,
+      "covariance": -0.03331552874393856,
+      "regression_slope": -0.008070384356494823,
+      "correlation": -0.020655395967679274,
+      "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+    },
+    "first_half": {
+      "n": 618,
+      "mean_bonus_score": 0.09223300970873786,
+      "mean_overlap": 0.9077669902912622,
+      "covariance": -0.035182392308417396,
+      "regression_slope": -0.008193227736609408,
+      "correlation": -0.020552309801754397,
+      "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+    },
+    "second_half": {
+      "n": 618,
+      "mean_bonus_score": 0.11003236245954692,
+      "mean_overlap": 0.7750809061488673,
+      "covariance": -0.030267801971072733,
+      "regression_slope": -0.007639520375578901,
+      "correlation": -0.020156223448536268,
+      "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+    },
+    "recent100": {
+      "n": 100,
+      "mean_bonus_score": 0.06,
+      "mean_overlap": 0.63,
+      "covariance": -0.38780000000000003,
+      "regression_slope": -0.09375302195145538,
+      "correlation": -0.27153701452863604,
+      "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+    },
+    "recent50": {
+      "n": 50,
+      "mean_bonus_score": 0.22,
+      "mean_overlap": 0.64,
+      "covariance": -0.46079999999999993,
+      "regression_slope": -0.10838272650296357,
+      "correlation": -0.31281022336181113,
+      "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+    },
+    "recent20": {
+      "n": 20,
+      "mean_bonus_score": 0.2,
+      "mean_overlap": 0.7,
+      "covariance": -0.33999999999999997,
+      "regression_slope": -0.09550561797752807,
+      "correlation": -0.2814245560747188,
+      "direction": "NEGATIVE_HIGH_BONUS_MORE_REAPPEARANCE"
+    }
+  },
+  "bonus_rank_table": {
+    "1": {
+      "rounds": 204,
+      "mean_overlap": 0.8431372549019608,
+      "difference_from_0_8": 0.04313725490196074
+    },
+    "2": {
+      "rounds": 175,
+      "mean_overlap": 0.8,
+      "difference_from_0_8": 0.0
+    },
+    "3": {
+      "rounds": 192,
+      "mean_overlap": 0.8229166666666666,
+      "difference_from_0_8": 0.022916666666666585
+    },
+    "4": {
+      "rounds": 144,
+      "mean_overlap": 0.8541666666666666,
+      "difference_from_0_8": 0.054166666666666585
+    },
+    "5": {
+      "rounds": 184,
+      "mean_overlap": 0.8260869565217391,
+      "difference_from_0_8": 0.02608695652173909
+    },
+    "6": {
+      "rounds": 166,
+      "mean_overlap": 0.8855421686746988,
+      "difference_from_0_8": 0.08554216867469877
+    },
+    "7": {
+      "rounds": 171,
+      "mean_overlap": 0.8654970760233918,
+      "difference_from_0_8": 0.06549707602339172
+    }
+  },
+  "final_judgment": "FAILED_NOT_INTERESTING",
+  "future_leakage": 0,
+  "EXP005_FINAL": "FAILED",
+  "EXP015_FINAL": "FAILED_EARLY",
+  "EXP017": "NOT_CREATED",
+  "official_protected_changes": 0
+}

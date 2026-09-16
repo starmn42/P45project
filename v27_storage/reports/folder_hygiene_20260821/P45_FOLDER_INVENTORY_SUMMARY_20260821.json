@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-08-21T15:54:23.3633251+09:00",
+  "root": "E:\\P45 프로젝트",
+  "files_scanned": 1049,
+  "bytes": 10093621109.0,
+  "classifications": [
+    {
+      "classification": "KEEP_ACTIVE",
+      "count": 208
+    },
+    {
+      "classification": "KEEP_ACTIVE_AUDIT_EVIDENCE",
+      "count": 16
+    },
+    {
+      "classification": "KEEP_CANONICAL",
+      "count": 90
+    },
+    {
+      "classification": "KEEP_PROTECTED",
+      "count": 442
+    },
+    {
+      "classification": "KEEP_RUNTIME",
+      "count": 144
+    },
+    {
+      "classification": "TEMP_CANDIDATE",
+      "count": 149
+    }
+  ],
+  "duplicate_hash_groups": 48,
+  "permanent_deleted": 0
+}

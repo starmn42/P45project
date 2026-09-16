@@ -1,0 +1,28 @@
+{
+  "status": "PAIR_SIGNATURE_V11_READY",
+  "official_patch_sha256": "df85587a618e520064553456ec82feb87d5d72b1b3b29139d98fc2120d8dcd86",
+  "signature_version": "PAIR-RULE-SIGNATURE-1.1",
+  "payload_fields": [
+    "signature_version",
+    "pair_pool_type",
+    "constituent_trio_states",
+    "constituent_trio_rule_signatures",
+    "pair_unit_coverage_state_vector",
+    "role_diversity_vector",
+    "evidence_overlap_vector",
+    "member_trio_maximum_opposite_risk",
+    "member_trio_structure_summary"
+  ],
+  "removed_cyclic_fields": [
+    "pair_opposite_risk",
+    "structure_context",
+    "recent_support_state",
+    "bonus_dependence_state"
+  ],
+  "historical_outcome_fields_in_payload": 0,
+  "tests": {"passed": 35, "failed": 0},
+  "determinism_runs": 10,
+  "determinism_hash_count": 1,
+  "remaining_blocker": "PAIR_WALKFORWARD_RUNNER_NOT_IMPLEMENTED",
+  "operational_pair_rows": 0
+}

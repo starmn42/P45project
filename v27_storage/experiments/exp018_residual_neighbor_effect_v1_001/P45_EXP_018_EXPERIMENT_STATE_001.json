@@ -1,0 +1,24 @@
+{
+  "short_id": "EXP-018",
+  "experiment_id": "EXP-DRAW-20260827-018-V1",
+  "title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
+  "status": "READY_FOR_TEST",
+  "lifecycle": ["IDEA", "REGISTERED", "DESIGNED", "READY_FOR_TEST"],
+  "protocol_path": "v27_storage/experiments/exp018_residual_neighbor_effect_v1_001/P45_EXP_018_RESIDUAL_NEIGHBOR_EFFECT_V1_PROTOCOL_001.md",
+  "protocol_sha256": "d64b3ec3bdf5c65006236cefc67432333bc5edbc61dbe3b5db90d85a614d527c",
+  "lock_path": "v27_storage/experiments/exp018_residual_neighbor_effect_v1_001/P45_EXP_018_PROTOCOL_LOCK_001.md",
+  "lock_sha256": "08006727b6b83f6d903cc1216c24be64a8bf21fbc027a7e471162da10aeab906",
+  "locked_at": "2026-08-27T19:19:28+09:00",
+  "structural_preflight": "PASS",
+  "last_execution_attempt": {
+    "timestamp": "2026-08-27T19:42:25+09:00",
+    "status": "BLOCKED_BEFORE_OUTCOME_ACCESS",
+    "verdict": "EXP_018_EXECUTION_BLOCKED_BOOTSTRAP_AMBIGUITY",
+    "reason": "U95_BOUND_CONSTRUCTION_METHOD_NOT_LOCKED"
+  },
+  "outcome_peek": 0,
+  "result_calculation": false,
+  "official_effect": "NONE",
+  "promotion_eligible": false,
+  "future_leakage": 0
+}

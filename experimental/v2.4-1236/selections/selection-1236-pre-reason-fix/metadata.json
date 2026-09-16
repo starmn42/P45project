@@ -1,0 +1,12 @@
+{
+  "analysis_status": "COMPLETE",
+  "analysis_type": "FINAL_SIX_SELECTION",
+  "created_at": "2026-08-04T21:14:46+09:00",
+  "determinism_10_runs": "PASS",
+  "determinism_result_sha256": "e8477534e6d6c10fdbf6df8ab72d42f50940413ab06bd83dccfbf13850c7084d",
+  "engine_version": "P45 Research Engine v2.3 Integrated Compact",
+  "selection_report_sha256": "ca62d5498d33846187d8ec607cdc43e80753731c840edaab6363f02eb33694e8",
+  "source_candidate_gates_sha256": "7075e7692870973a662beaca00ce63056134ca6198bd05fd41fe2d1d91318bc4",
+  "source_candidates": "E:\\P45 프로젝트\\experimental\\v2.4-1236\\candidates-1236",
+  "target_round": 1236
+}

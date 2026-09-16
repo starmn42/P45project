@@ -1,0 +1,13 @@
+{
+  "analysis_status": "COMPLETE",
+  "analysis_type": "TWO_SET_PLACEMENT",
+  "created_at": "2026-08-04T20:39:58+09:00",
+  "determinism_10_runs": "PASS",
+  "determinism_result_sha256": "57051fd90279c0fc76048b5e072f654c3be0ab44869cd79d6ddf408f7d057b3c",
+  "engine_version": "P45 Research Engine v2.3 Integrated Compact",
+  "set_report_sha256": "22b73e8d1a0a918cb040382c12d6bf313a89c76fbab92e438fef77d8739576ef",
+  "source_candidates": "E:\\P45 프로젝트\\candidate-results\\candidates-1236",
+  "source_selection": "E:\\P45 프로젝트\\selections\\selection-1236",
+  "source_selection_report_sha256": "fcc14595a9a559fbad1e36fe8898ce610fd3c25880dcb296f81007abd5ad401b",
+  "target_round": 1236
+}

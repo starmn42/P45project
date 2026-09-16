@@ -1,0 +1,50 @@
+{
+  "final_status": "PAIR_WALKFORWARD_CONFLICT",
+  "raw_runner_status": "WALKFORWARD_COMPLETE",
+  "run_id": "6dc5ae1f-92d9-43ae-8b1a-7452e1c842fe",
+  "database": "v27_storage/backtests/p45_v274_pair_walkforward.sqlite3",
+  "database_sha256": "1d7fe8ba1c50e454b57d5bfe86da1e1bfee1fd2c6577cce47ae3d72dd89cfd57",
+  "evaluation_range": [43, 1235],
+  "total_rounds": 1193,
+  "round_status": {
+    "COMPLETE": 258,
+    "SKIPPED_NO_DISJOINT_PAIR": 13,
+    "SKIPPED_RESEARCH_HOLD": 105,
+    "SKIPPED_TRIO_UNDER_2": 817,
+    "SKIPPED_TOTAL": 935,
+    "FAILED": 0
+  },
+  "first_eligible_pair_round": 369,
+  "selection_exposure": 88498,
+  "identity_exposure": 148215,
+  "duplicate_round": 0,
+  "duplicate_selection_exposure": 0,
+  "missing_evaluation_round": 0,
+  "future_leakage": 0,
+  "prediction_hash_missing": 0,
+  "integrity_check": "ok",
+  "foreign_key_violations": 0,
+  "integrated_main_outcome_separated": true,
+  "operational_pair_rows": 0,
+  "protected_targets_unchanged": true,
+  "resume_events": 2,
+  "conflict": {
+    "code": "PAIR_WALKFORWARD_GATE_STATE_CONTEXT_NOT_STORED",
+    "candidate_rows_checked": 148215,
+    "stored_context_fields": [
+      "integrated_primary_rate",
+      "main_primary_rate",
+      "pair_pool_type",
+      "selection_exposure",
+      "signature_version",
+      "source_end_round",
+      "support_rate",
+      "trio_a",
+      "trio_b"
+    ],
+    "gate_fields_present": false,
+    "state_fields_present": false,
+    "reason": "The approved execution required gate/state context to be preserved for every candidate. The production adapter did not evaluate or store that context."
+  },
+  "aggregation_started": false
+}

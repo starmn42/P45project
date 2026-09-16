@@ -1,0 +1,37 @@
+{
+  "updates": {
+    "experiment_lab": {
+      "registered_experiments": 58,
+      "registry_count_definition": "CANONICAL_PHYSICAL_VERSION_ROWS",
+      "registry_unique_experiment_ids": 58,
+      "registry_unique_logical_families": 56,
+      "registry_count_audit": "00_P45_STATE/experiment_lab/07_REGISTRY_COUNT_CONSISTENCY_AUDIT.md"
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 58
+    }
+  },
+  "decision": {
+    "decision_id": "DECISION-20260823-083",
+    "timestamp": "2026-08-23T19:22:22+09:00",
+    "project_version": "P45 v2.7.4",
+    "stage": "REGISTRY_COUNT_CONSISTENCY_AUDIT",
+    "category": "PROTECTION_STATE_RECONCILIATION",
+    "decision": "Experiment Registry의 canonical physical/version row 58건을 독립 파싱으로 확인하고, 서로 다른 시점에 갱신이 누락된 CURRENT_STATE의 registered_experiments 55와 experiment_registry_total 49를 동일 정의 58로 정합화한다. 역사적 44와 55 기록은 삭제하지 않고 시점별 provenance로 보존한다.",
+    "reason": "정식 ID 58행과 고유 ID 58개가 canonical evidence이며, state-history에서 registered_experiments는 이후 3행을, experiment_registry_total은 EXP-004~016 신규 8행을 반영하지 않은 채 후속 실험만 증분한 사실이 확인됐다.",
+    "evidence": "07_REGISTRY_COUNT_CONSISTENCY_AUDIT.md; physical rows 58; unique IDs 58; logical families 56; V1 56/V2 2; pre-audit registry SHA d9d37688a5cf4777434a2ddb84c854391d5bed7352e0f23aae467c8cad5a8375",
+    "affected_files": "Experiment Registry append-only count note, audit report, CURRENT_STATE, Decision, HANDOFF only",
+    "affected_schema": "none",
+    "previous_rule": "registered_experiments 55; experiment_registry_total 49; count definitions not synchronized",
+    "new_rule": "Current Registry count uses canonical physical/version rows and equals 58; unique logical families are separately recorded as 56. No research rule change.",
+    "allowed_next_action": "USE_CANONICAL_REGISTRY_COUNT_58_AND_PRESERVE_HISTORICAL_COUNTS_AS_POINT_IN_TIME_PROVENANCE",
+    "forbidden_actions": [
+      "REGISTRY_ROW_DELETE_TO_MATCH_OLD_COUNT",
+      "EXP_CROWD_TOPO_001_V1_MODIFICATION",
+      "PROSPECTIVE_PROTOCOL_OR_LEDGER_CHANGE",
+      "OFFICIAL_ENGINE_CHANGE",
+      "DRAW_DISCOVERY_PAUSE_CHANGE"
+    ],
+    "approval_source": "USER_EXPLICIT_REGISTRY_COUNT_AUDIT_INSTRUCTION_010"
+  }
+}

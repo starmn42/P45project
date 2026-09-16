@@ -1,0 +1,16 @@
+{
+  "state_status": "POST_SELECTION_PRE_OUTCOME",
+  "target_round": 1242,
+  "source_round": 1241,
+  "result_status": "PENDING",
+  "canonical_latest_at_selection": 1241,
+  "canonical_sha256": "a41fa0aebd5ed805a3fbc3f4665436c28a1ec5a7769c77a0b762e06f5a783bdc",
+  "kts_schedule_sha256": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+  "pattern_index": 2,
+  "linked_pointer_after": 16,
+  "reset_occurred": false,
+  "sealed_record_sha256": "0df2e25fa769db79150c13701de4b0bc931939a4416d3f5fef5efd2a953f35e0",
+  "prior_state_file": "P45_TRIO_ORBIT_PROSPECTIVE_STATE_006.json",
+  "future_leakage": 0,
+  "official_protected_changes": 0
+}

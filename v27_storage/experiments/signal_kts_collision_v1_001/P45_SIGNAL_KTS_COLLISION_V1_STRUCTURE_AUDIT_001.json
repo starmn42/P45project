@@ -1,0 +1,52 @@
+{
+  "status": "PASS",
+  "total_source_sets": 8145060,
+  "candidate_count_min": 0,
+  "candidate_count_max": 6,
+  "vote_max": 3,
+  "candidate_over_6": 0,
+  "vote_over_3": 0,
+  "distribution": {
+    "0": {
+      "count": 2323710,
+      "rate": 0.2852907160904892
+    },
+    "1": {
+      "count": 3791340,
+      "rate": 0.4654772340535245
+    },
+    "2": {
+      "count": 1572840,
+      "rate": 0.19310354988176884
+    },
+    "3": {
+      "count": 390300,
+      "rate": 0.04791861570080515
+    },
+    "4": {
+      "count": 58320,
+      "rate": 0.007160168249221
+    },
+    "5": {
+      "count": 7200,
+      "rate": 0.0008839713887927161
+    },
+    "6": {
+      "count": 1350,
+      "rate": 0.00016574463539863427
+    }
+  },
+  "checks": {
+    "trios_330": true,
+    "unique_trios_330": true,
+    "pair_map_990": true,
+    "each_pair_once": true,
+    "enumerated_C45_6": true,
+    "candidate_count_min_0": true,
+    "candidate_count_max_6": true,
+    "candidate_count_over_6_zero": true,
+    "vote_max_3": true,
+    "vote_over_3_zero": true,
+    "all_bins_0_to_6_present": true
+  }
+}

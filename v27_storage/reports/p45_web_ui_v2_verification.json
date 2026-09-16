@@ -1,0 +1,24 @@
+{
+  "status": "P45_WEB_UI_V2_READY",
+  "design": "reference HTML adapted: fixed research drawer, neon lab cards, mobile app bar and bottom navigation",
+  "local_url": "http://127.0.0.1:8045/",
+  "checks": {
+    "desktop_1365x900": "PASS",
+    "mobile_360x800": "PASS",
+    "mobile_390x844": "PASS",
+    "mobile_430x932": "PASS",
+    "horizontal_overflow": 0,
+    "card_overlap": 0,
+    "javascript_errors": 0,
+    "refresh": "PASS",
+    "touch_target_height_px": 56,
+    "official_core_available": false,
+    "official_final_numbers": [],
+    "diagnostic_only": "PASS",
+    "historical_performance_separated": "PASS",
+    "reference_fake_recommendations_removed": true,
+    "reference_fake_probabilities_removed": true
+  },
+  "research_policy": "READ_ONLY_FROZEN_ENGINE",
+  "research_rules_changed": false
+}

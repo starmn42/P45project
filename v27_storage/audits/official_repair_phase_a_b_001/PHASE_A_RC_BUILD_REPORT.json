@@ -1,0 +1,105 @@
+{
+  "phase_a_pass": true,
+  "rc_path": "v27_storage\\audits\\official_repair_phase_a_b_001\\release_candidate",
+  "rc_manifest": {
+    "version": "P45-OFFICIAL-REPAIR-RC-CANARY-001",
+    "source": "src\\p45_audits\\pair_shadow_repair_001.py",
+    "source_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+    "rc_copy_sha256": "361f1bc35ef7d04b04c1658c4e4f2fdab112711a150926cb41ba0b72dff2e546",
+    "official_repair_applied": false,
+    "semantics": "SHADOW_LIFECYCLE_RESTORATION_ONLY",
+    "historical_outcome_scoring": false
+  },
+  "baseline_before": [
+    {
+      "path": "src/p45_v27/pairs/production.py",
+      "size": 13393,
+      "sha256": "e842bd0f5f9d397ef8e4aadbf1f32c91eeeb68ccac6b87c3a7cead366487fbbb"
+    },
+    {
+      "path": "src/p45_v27/pairs/decision.py",
+      "size": 12342,
+      "sha256": "625d374e0a0a4461537c85673e638c0e435952882ca4006db29956b7c8f5949e"
+    },
+    {
+      "path": "src/p45_v27/pairs/lifecycle_v12.py",
+      "size": 9473,
+      "sha256": "b0c5041e7319aaa235bbd0fae0a1df8293b38da581822810f83ad769de222942"
+    },
+    {
+      "path": "src/p45_v27/pairs/final_aggregation.py",
+      "size": 16174,
+      "sha256": "162f7f50a499690d896fdd56d1fbc214587b4ab8bae5451913b2ef27d6b9a1e7"
+    },
+    {
+      "path": "v27_storage/backtests/p45_v274_pair_walkforward_v12.sqlite3",
+      "size": 9600729088,
+      "sha256": "e2f7b6291bc3d0ecea6a170eda11bc47f04aa65cb9686d556ebd6b1b12f61740"
+    },
+    {
+      "path": "v27_storage/db/p45_v273_core.sqlite3",
+      "size": 389120,
+      "sha256": "2cbc4cc03f7e189c951529fd1ca1beeaa4514ed0c8e02e2ffca2fd42b4c72ccd"
+    },
+    {
+      "path": "v27_storage/db/p45_v273_audit.sqlite3",
+      "size": 61440,
+      "sha256": "b919b8b5067860e3705c323b8caf182e1f397d26f61ccdfa051a094c4a1c2d95"
+    }
+  ],
+  "baseline_after": [
+    {
+      "path": "src/p45_v27/pairs/production.py",
+      "size": 13393,
+      "sha256": "e842bd0f5f9d397ef8e4aadbf1f32c91eeeb68ccac6b87c3a7cead366487fbbb"
+    },
+    {
+      "path": "src/p45_v27/pairs/decision.py",
+      "size": 12342,
+      "sha256": "625d374e0a0a4461537c85673e638c0e435952882ca4006db29956b7c8f5949e"
+    },
+    {
+      "path": "src/p45_v27/pairs/lifecycle_v12.py",
+      "size": 9473,
+      "sha256": "b0c5041e7319aaa235bbd0fae0a1df8293b38da581822810f83ad769de222942"
+    },
+    {
+      "path": "src/p45_v27/pairs/final_aggregation.py",
+      "size": 16174,
+      "sha256": "162f7f50a499690d896fdd56d1fbc214587b4ab8bae5451913b2ef27d6b9a1e7"
+    },
+    {
+      "path": "v27_storage/backtests/p45_v274_pair_walkforward_v12.sqlite3",
+      "size": 9600729088,
+      "sha256": "e2f7b6291bc3d0ecea6a170eda11bc47f04aa65cb9686d556ebd6b1b12f61740"
+    },
+    {
+      "path": "v27_storage/db/p45_v273_core.sqlite3",
+      "size": 389120,
+      "sha256": "2cbc4cc03f7e189c951529fd1ca1beeaa4514ed0c8e02e2ffca2fd42b4c72ccd"
+    },
+    {
+      "path": "v27_storage/db/p45_v273_audit.sqlite3",
+      "size": 61440,
+      "sha256": "b919b8b5067860e3705c323b8caf182e1f397d26f61ccdfa051a094c4a1c2d95"
+    }
+  ],
+  "official_files_changed": [],
+  "database_files_changed_count": 0,
+  "deterministic_rerun": true,
+  "rerun_digest_1": "732245c7d20ec17b07095d8d732cab65ec30c7ad88c5065a0b6fe0e2a509e4bb",
+  "rerun_digest_2": "732245c7d20ec17b07095d8d732cab65ec30c7ad88c5065a0b6fe0e2a509e4bb",
+  "historical_outcome_scoring_count": 0,
+  "future_leakage_count": 0,
+  "gate_changed": false,
+  "threshold_changed": false,
+  "signature_changed": false,
+  "semantics_changed": false,
+  "raw_pair_candidates": 148215,
+  "test_ready_candidates": 61415,
+  "test_ready_rounds": 100,
+  "output_available_rounds": 100,
+  "shadow_comparison": "EXACT_SAME_UNIVERSE_AND_SEMANTICS",
+  "critical_mismatches": [],
+  "scoring_run": false
+}

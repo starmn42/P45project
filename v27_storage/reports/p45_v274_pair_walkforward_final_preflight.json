@@ -1,0 +1,8 @@
+{
+  "status":"PAIR_WALKFORWARD_PREFLIGHT_FAILED",
+  "checks":{
+    "01_gate_amendment_sha":"PASS","02_bootstrap_patch_sha":"PASS","03_signature_v11":"PASS","04_schema274_required_structure":"PASS","05_integrity_fk":"PASS","06_hash_pinning":"PASS","07_source_end_r_minus_1":"PASS","08_prediction_before_result":"PASS","09_r_plus_1_history":"PASS","10_noncyclic_base_signature":"PASS","11_bootstrap_signature_determinism":"PASS","12_selection_identity_separation":"PASS","13_one_rep_per_round_signature":"PASS","14_duplicate_guards":"PASS","15_atomic_rollback":"PASS","16_checkpoint_resume":"PASS","17_resume_equals_continuous":"PASS","18_mismatch_resume_block":"PASS","19_dedicated_production_db_execution_ready":"FAIL","20_source_operational_read_only":"PASS","21_operational_pair_zero":"PASS","22_protected_targets_unchanged":"PASS"
+  },
+  "failure":{"code":"PAIR_PRODUCTION_PIPELINE_ADAPTER_NOT_IMPLEMENTED","detail":"runner accepts a synthetic WalkforwardPipeline protocol, but no concrete P45 UNIT→NUMBER→TRIO→PAIR production adapter or CLI entrypoint exists; full execution cannot be started safely"},
+  "related_tests":"44/44 PASS","run_id_created":false,"production_db_created":false,"rounds_processed":0,"operational_pair_rows":0
+}

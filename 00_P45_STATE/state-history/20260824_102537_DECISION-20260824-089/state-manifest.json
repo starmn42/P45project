@@ -1,0 +1,17 @@
+{
+  "timestamp": "2026-08-24T10:25:37+09:00",
+  "transaction_id": "042c4b87-269c-4157-9ada-95944ad6b33c",
+  "decision_id": "DECISION-20260824-089",
+  "state_version": "1.0.82",
+  "project_version": "P45 v2.7.4",
+  "current_stage": "EXPERIMENT_LAB_CROWD_RETAIL_001_CALIBRATION_AUDIT_COMPLETE",
+  "current_status": "RETAILER_PROPENSITY_ROBUST_EXPLORATORY_CONCENTRATION",
+  "state_hash": "739fe7c5514d7a635de30aaf7a6c7b34d95e549075188cef6a29ba01906bf71b",
+  "current_state_md_sha256": "0d759018ecf8b5aa858f3f7cf5b4b7fe9cf073b997f16171895615a20e863363",
+  "current_state_json_sha256": "a16f3949e0893712ac35048880731009626c4b031db02dee191db8a16437a532",
+  "handoff_sha256": "0e7cc895b569c3ee1363c92a30a052c2e267c2339772aa9eac5be7d7b522dfae",
+  "decision_log_sha256": "dd9e63575b8ebaa7648b0cc8adce6ba87f7a1395540758ac1c6b4310221c7599",
+  "canonical_manifest_sha256": "7c1458328a17a0824622c00ce1f54996e22ed4c2e9d04180be4ad9029ba8febb",
+  "walkforward_db_sha256": "76eaecb50557b66c6ffa3324cebf7a508a982356541236948cadf75ca04825f5",
+  "trio_final_db_sha256": "1b7b86d85f161f1a1dc1ea2d1c6712daefa30d9c8ae938fa8403784e055e9f59"
+}

@@ -1,0 +1,25 @@
+{
+  "status": "CURRENT_1239_END_DIGIT_SEVERE_CAUSAL_TRACE_NOT_CONFIRMED",
+  "root_cause_class": "DEFECT_EVIDENCE_FOUND_NEEDS_REVIEW",
+  "defect_evidence_found": true,
+  "mandated_snapshot": {
+    "path": "v27_storage/audits/current_1239_official_predraw_001/STAGING_IMMUTABLE_DRAW_THROUGH_1238.csv",
+    "sha256": "8779cb28068de1ee6ed69ef7d76ab3e0c30b64e17c3993f9622bda6261dd8c97",
+    "row_count": 1236,
+    "min_round": 1,
+    "max_round": 1238,
+    "missing_rounds": [1236, 1237],
+    "duplicate_rounds": []
+  },
+  "valid_prior_snapshot": {
+    "path": "v27_storage/audits/no_pick_root_cause_trace_001/CURRENT_INPUT_SNAPSHOT.csv",
+    "sha256": "ad69ec8d28b4e5cdb40d468ad758c5f23acaeb6225f525c5201c8027952701e6",
+    "row_count": 1237,
+    "min_round": 1,
+    "max_round": 1237,
+    "missing_rounds": [],
+    "duplicate_rounds": []
+  },
+  "causal_conclusion": "NOT_CONFIRMED",
+  "next_action": "REBUILD_CONTIGUOUS_STAGING_1_1238_AND_RERUN_CURRENT_1239_PREDRAW_001"
+}

@@ -1,0 +1,98 @@
+{
+  "updates": {
+    "current_stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP002_CALIBRATION_AUDIT_001_COMPLETE",
+    "current_status": "NO_CALIBRATION_TENSION_DETECTED",
+    "last_completed_stage": "EXP_CROWD_TOPO_002_CALIBRATION_AUDIT_001",
+    "next_stage": "PROSPECTIVE_STAGE1_WAIT_AND_TOPOLOGY_PARAMETER_IDENTIFIABILITY_REVIEW",
+    "next_action": "PRIZE_TIER_ONLY_TOPOLOGY_SPECIFIC_PARAMETER_IDENTIFIABILITY_REVIEW_REQUIRES_SEPARATE_APPROVAL; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+    "experiment_lab": {
+      "registered_experiments": 59,
+      "registry_unique_experiment_ids": 59,
+      "registry_unique_logical_families": 57,
+      "crowd_topology_exp002_v1": {
+        "status": "SUPPORTED_WITHIN_EXPERIMENT",
+        "independent_reproduction": "INDEPENDENT_REPRODUCTION_PASS",
+        "calibration_audit_001": {
+          "status": "NO_CALIBRATION_TENSION_DETECTED",
+          "audit_protocol_sha256": "b13666657e524a555a6387f180e2aa4fff1a1860366ac72bd120ab3cc0ba91ff",
+          "calculator_sha256": "21456b2eea1f555a3213e627dd65b88320c1e7c2f60bdf5e9665224360229ecf",
+          "raw_result_sha256": "d7aa83062e39eb17ba9c44c8c682fc0b6989904b777486b48c26e7c249d31055",
+          "result_hash": "08df5c13ef5ed6bf4740acd638c55a3c6648d472d4c4e4701559c88098f31d02",
+          "exact_identity_locked": true,
+          "k1_only_calibration_identifiable": false,
+          "required_calibration_terms": ["K1(K1-1)", "K1*K23"],
+          "train_mean_cal_resid": -1.6541259380883246,
+          "holdout_mean_cal_resid": 6.039406338771726,
+          "holdout_t_cal": 1.1281510037684361,
+          "primary_two_sided_p_cal": 0.1977040114799426,
+          "bootstraps": 200000,
+          "bootstrap_seed": 2026082305,
+          "bootstrap_exceedances": 39540,
+          "selected_column_component_mean": 42.077843660300175,
+          "center_dup_component_mean": 6.2331612059814585,
+          "d1_pair_component_mean": 29.805276115546988,
+          "predicted_component_mean": 36.03843732152845,
+          "holdout_half1_mean": 2.6369587558403387,
+          "holdout_half2_mean": 9.426317631370093,
+          "positive_19round_blocks": 14,
+          "top10_abs_share": 0.38330005573692627,
+          "new_experiment_created": false,
+          "round_1238_plus_used": false,
+          "prospective_signal_peeking": 0,
+          "original_status_changed": false,
+          "report": "00_P45_STATE/experiment_lab/EXP-CROWD-TOPO-002/calibration_audit_001/FINAL_CALIBRATION_AUDIT_REPORT.md"
+        },
+        "program_interpretation": "STRONG INDEPENDENT-UNIFORM NULL REJECTED; TOPOLOGY-SPECIFIC MECHANISM NOT IDENTIFIED",
+        "novelty_status": "NOVELTY_NOT_CONFIRMED",
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false
+      }
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 59
+    },
+    "research_state": {
+      "crowd_topology_exp002_v1": {
+        "status": "SUPPORTED_WITHIN_EXPERIMENT",
+        "independent_reproduction": "INDEPENDENT_REPRODUCTION_PASS",
+        "calibration_audit": "NO_CALIBRATION_TENSION_DETECTED",
+        "k1_only_calibration_identifiable": false,
+        "program_interpretation": "STRONG INDEPENDENT-UNIFORM NULL REJECTED; TOPOLOGY-SPECIFIC MECHANISM NOT IDENTIFIED",
+        "novelty_status": "NOVELTY_NOT_CONFIRMED",
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false
+      }
+    }
+  },
+  "decision": {
+    "decision_id": "DECISION-20260823-086",
+    "timestamp": "2026-08-23T20:55:10+09:00",
+    "project_version": "P45 v2.7.4",
+    "stage": "EXPERIMENT_LAB_CROWD_TOPOLOGY_EXP002_CALIBRATION_AUDIT_001",
+    "category": "METHODOLOGY_CALIBRATION_AUDIT",
+    "decision": "EXP-CROWD-TOPO-002의 exact combinatorial calibration identity를 계산 전에 봉인하고 1~1237 자료로 감사했다. HOLDOUT T_CAL=1.1281510037684361, two-sided fixed-block wild p=0.1977040114799426으로 사전 0.01 기준의 tension은 발견되지 않았다. K1-only calibration은 식별 불가능하며 K1(K1-1)과 K1*K23 두 항이 모두 필요하다고 확정 기록한다.",
+    "reason": "selected bonus column의 6 vertices가 서로 D1-adjacent이므로 K2의 2차 moment에는 exact duplicate concentration뿐 아니라 D1 pair concentration이 필연적으로 들어간다. arbitrary crowd heterogeneity를 허용하는 identity와 tension이 없으므로 기존 EXP-002 결과는 보존하되 topology-specific mechanism의 독립 증거로 해석하지 않는다.",
+    "evidence": "locked note b13666657e524a555a6387f180e2aa4fff1a1860366ac72bd120ab3cc0ba91ff; calculator 21456b2eea1f555a3213e627dd65b88320c1e7c2f60bdf5e9665224360229ecf; raw result d7aa83062e39eb17ba9c44c8c682fc0b6989904b777486b48c26e7c249d31055; bootstrap 200000 seed 2026082305 p 0.1977040114799426; tests 5/5 PASS; original files changed 0; round1238+ used NO",
+    "affected_files": "isolated calibration audit lock/calculator/result, Registry audit note, CURRENT_STATE, Decision, HANDOFF only",
+    "affected_schema": "none",
+    "previous_rule": "EXP-002 supported and computationally reproduced under a strong independent-uniform 39-column occupancy null; topology-specific interpretation not calibrated against exact duplicate and D1-pair components",
+    "new_rule": "No experiment or official rule change. K1-only calibration is not identifiable. EXP-002 remains supported/reproduced, but program interpretation is limited to strong-null rejection with topology-specific mechanism not identified.",
+    "allowed_next_action": "PRIZE_TIER_ONLY_TOPOLOGY_SPECIFIC_PARAMETER_IDENTIFIABILITY_REVIEW_REQUIRES_SEPARATE_APPROVAL; PROSPECTIVE_STAGE1_WAIT_CONTINUES",
+    "forbidden_actions": [
+      "EXP002_ORIGINAL_RESULT_OR_REPRODUCTION_MODIFICATION",
+      "K1_ONLY_CALIBRATION_CLAIM",
+      "TOPOLOGY_SPECIFIC_MECHANISM_IDENTIFIED_CLAIM",
+      "CALIBRATION_RESIDUAL_AS_NEW_CROWD_SIGNAL",
+      "NEW_TOPOLOGY_EXPERIMENT_AUTOMATIC_CREATION",
+      "CROWD_TOPOLOGY_TO_DRAW_ENGINE_CONNECTION",
+      "AUTOMATIC_PROMOTION_CANDIDATE",
+      "NOVELTY_CONFIRMED_OR_WORLD_FIRST_CLAIM",
+      "PROSPECTIVE_SIGNAL_ANALYSIS_BEFORE_ROUND_1289_PUBLICATION",
+      "EXP017_AUTOMATIC_CREATION",
+      "OFFICIAL_ENGINE_CHANGE"
+    ],
+    "approval_source": "USER_EXPLICIT_CROWD_TOPOLOGY_EXP002_CALIBRATION_AUDIT_INSTRUCTION_013"
+  }
+}

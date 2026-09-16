@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "same_input": true,
+  "same_code": true,
+  "same_seed": true,
+  "canonical_first_sha256": "46c83d567421513770282346f9415dafe39aed02e50b8265a6f966b73f2fac0f",
+  "compared_fields": [
+    "train_d",
+    "holdout_d",
+    "mc_exceedances",
+    "primary_mc_p",
+    "holdout_half1_d",
+    "holdout_half2_d",
+    "positive_19round_blocks",
+    "top1_removed_d",
+    "top5_removed_d",
+    "top10_removed_d"
+  ]
+}

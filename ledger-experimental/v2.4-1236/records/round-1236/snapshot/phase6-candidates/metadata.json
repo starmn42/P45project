@@ -1,0 +1,16 @@
+{
+  "analysis_status": "COMPLETE",
+  "analysis_type": "CANDIDATE_GATE_EVALUATION",
+  "approved_at": "2026-08-04T21:14:27+09:00",
+  "candidate_gates_sha256": "7075e7692870973a662beaca00ce63056134ca6198bd05fd41fe2d1d91318bc4",
+  "candidate_report_sha256": "ce596410817f2424ea542f8a7a87bbcc56c099b1ca6746e9869361ffc78a3a6c",
+  "determinism_10_runs": "PASS",
+  "determinism_result_sha256": "c573473fc44c54e5635c78a55f1fe45a85e324a48cf066adef6b10876cb073b3",
+  "engine_version": "P45 v2.4-EXPERIMENTAL-1236",
+  "historical_official_recommendation": false,
+  "source_backtest": "E:\\P45 프로젝트\\backtests\\backtest-1236",
+  "source_candidates": "E:\\P45 프로젝트\\candidate-results\\candidates-1236",
+  "source_effective_data_sha256": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "source_structure": "E:\\P45 프로젝트\\analysis\\structure-1236",
+  "target_round": 1236
+}

@@ -1,0 +1,15 @@
+{
+  "experiment_id": "EXP-DRAW-20260816-038-V2",
+  "protocol_version": "EXP002-V2-PROTOCOL-1.0",
+  "canonical_protocol_hash": "eec5b8aca4d4a8b7888fb03a13f21cc2d6dcc8c3969351d993ea7b988b10b6ff",
+  "lock_hash": "05168d0da9c9749d65a91a5293be830efc313be31e12363ca3934ef461e2bcfe",
+  "data_boundary": "1~1235",
+  "data_hash": "a5a33282fa9e6a5265b170086358bf901d3cfdcf6ec7ebc3df6f975ad7b95800",
+  "number_ranking": "OFFICIAL_NUMBER_14_KEY",
+  "selection": "RANK_1_2_3_AS_A__RANK_4_5_6_AS_B",
+  "trio_calculator_used": false,
+  "v1_evidence_used": false,
+  "seed": 202608160238,
+  "repetitions": 100000,
+  "status": "LOCKED_BEFORE_OUTCOME"
+}

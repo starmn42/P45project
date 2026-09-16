@@ -1,0 +1,4 @@
+protocol_sha256=d3f271d0869dbba0da466cb77835b8b7638c39fe99d7da8f7fe3c5ddffcac6c3
+seed_rule=uint64(first_16_hex_of_protocol_sha256)
+monte_carlo_seed=15272394426792393632
+monte_carlo_histories=100000

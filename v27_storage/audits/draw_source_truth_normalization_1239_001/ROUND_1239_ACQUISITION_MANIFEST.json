@@ -1,0 +1,15 @@
+{
+  "round": 1239,
+  "retrieved_at": "2026-09-01T12:01:12+09:00",
+  "source_url": "https://www.dhlottery.co.kr/lt645/selectPstLt645InfoNew.do?srchDir=center&srchLtEpsd=1239",
+  "collector_user_agent": "P45-New-Draw-Updater/1.0",
+  "parser": "src/p45_v27/draw_update.py::parse_official",
+  "raw_path": "v27_storage/audits/draw_source_truth_normalization_1239_001/ROUND_1239_OFFICIAL_RAW.json",
+  "raw_bytes": 6272,
+  "payload_sha256": "4c0c600801ddeef24d98b54206bac807eaf623c7031bac35c035d4892d6c109a",
+  "date": "2026-08-29",
+  "main": [11, 13, 22, 32, 33, 36],
+  "bonus": 8,
+  "canonical_row_sha256": "86055d9da5ae5bbefd17cb52d1f9b7232184d1df7a2430b3f172a78b732b445d",
+  "provenance_status": "PASS"
+}

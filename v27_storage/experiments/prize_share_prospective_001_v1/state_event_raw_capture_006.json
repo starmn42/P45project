@@ -1,0 +1,66 @@
+{
+  "event_type": "DECISION_CONFIRMED",
+  "source": "USER",
+  "approval_explicit": true,
+  "decision_id": "DECISION-20260823-080",
+  "decision": "EXP-PRIZE-PROSPECTIVE-001-V1의 공식 공개 원자료를 신호 비공개 상태로 자동 수집하는 독립 sidecar를 운영하고, 매주 일요일 09:30에 원자료만 append-only로 확인한다.",
+  "reason": "기존 회차 updater는 본번호·보너스만 보존하고 K1, K2, 총판매액과 원시 payload를 보존하지 않아 prospective protocol의 원자료 장부 요건을 충족하지 못하므로, 공식 엔진과 updater를 변경하지 않는 독립 수집 경로가 필요하다.",
+  "related_stage": "EXPERIMENT_LAB_PRIZE_SHARE_PROSPECTIVE_RAW_CAPTURE",
+  "category": "PROTECTION_PROSPECTIVE_RAW_CAPTURE",
+  "evidence": "Branch B; official latest round 1238; ledger 1 raw-only row; dry-run round 1237 PASS; focused tests 7/7 PASS; task P45 Prize Prospective Raw Capture READY; signal calculation paths 0; future outcome analysis 0; peeking 0",
+  "affected_files": "prospective raw collector, append-only raw ledger, raw metadata schema amendment, focused tests, audit/operating documents, dedicated scheduled task, state files, portable bundle",
+  "affected_schema": "PRIZE-SHARE-PROSPECTIVE-LEDGER-1.1 raw provenance metadata only; protocol and analysis schema unchanged",
+  "previous_rule": "Prospective protocol locked with zero-row ledger and no automatic raw-source capture",
+  "new_rule": "Official source raw fields are captured append-only and idempotently without X2, beta, p-value, trend, effect, direction, or any analysis; analysis remains forbidden until the locked look point and separate approval.",
+  "allowed_next_action": "WAIT_FOR_ALL_STAGE1_ROUNDS_THROUGH_1289_WHILE_SIGNAL_BLIND_RAW_CAPTURE_CONTINUES",
+  "forbidden_actions": [
+    "PROSPECTIVE_SIGNAL_ANALYSIS_BEFORE_ROUND_1289_PUBLICATION",
+    "PARTIAL_BETA_OR_P_VALUE_CALCULATION",
+    "SIGNAL_DIRECTION_SUMMARY",
+    "PROTOCOL_RETUNING",
+    "HISTORICAL_BACKFILL_INTO_PROSPECTIVE",
+    "OFFICIAL_OR_DRAW_ENGINE_CONNECTION",
+    "AUTOMATIC_PROMOTION",
+    "EXP017_AUTOMATIC_CREATION"
+  ],
+  "research_rule_change": false,
+  "affected_state": {
+    "current_stage": "EXPERIMENT_LAB_PRIZE_SHARE_PROSPECTIVE_RAW_CAPTURE_READY",
+    "last_completed_stage": "EXP_PRIZE_PROSPECTIVE_001_V1_SIGNAL_BLIND_CAPTURE_SETUP",
+    "current_status": "SIGNAL_BLIND_CAPTURE_READY_SIDECAR_SOURCE",
+    "next_stage": "PROSPECTIVE_STAGE1_WAIT",
+    "next_action": "WAIT_FOR_ALL_STAGE1_ROUNDS_THROUGH_1289_WHILE_SIGNAL_BLIND_RAW_CAPTURE_CONTINUES",
+    "experiment_lab": {
+      "prize_share_prospective_001_v1": {
+        "status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+        "protocol_sha256": "207a084177edf0bc8d71ca1476f844c283a9c6e65e45943837b5ed13537cff18",
+        "collector_status": "SIGNAL_BLIND_CAPTURE_READY_SIDECAR_SOURCE",
+        "collector_branch": "B_SIDECAR_SOURCE",
+        "collector_version": "P45-PROSPECTIVE-RAW-CAPTURE-1.0",
+        "collector_code_sha256": "6c0f2c0dc6bb110c6f42ce10395bd63c73855f86e6297666baf511ba455581bf",
+        "ledger_schema_version": "PRIZE-SHARE-PROSPECTIVE-LEDGER-1.1",
+        "ledger_schema_sha256": "6a8c6c634d5becbb035d668ef15f1d2b1524a8c026e0c135ce03211b1fd69143",
+        "ledger_path": "v27_storage/experiments/prize_share_prospective_001_v1/PRIZE_SHARE_PROSPECTIVE_001_LEDGER.jsonl",
+        "ledger_sha256": "c97f93b2cbdd0a954d2c9610306089b38d18edf252e91d5aeecef2b5cb10fc43",
+        "ledger_rows": 1,
+        "latest_captured_round": 1238,
+        "correction_records": 0,
+        "dry_run_round": 1237,
+        "dry_run_status": "PASS_NO_PROSPECTIVE_WRITE",
+        "focused_tests": "7/7 PASS",
+        "scheduled_task": "P45 Prize Prospective Raw Capture",
+        "scheduled_task_schedule": "SUNDAY_09:30_ASIA_SEOUL",
+        "scheduled_task_status": "READY",
+        "signal_calculation_code_paths": 0,
+        "future_outcome_analyzed": 0,
+        "signal_peeking": 0,
+        "promotion_candidate": false,
+        "official_effect": "NONE",
+        "official_engine_changed": false
+      }
+    },
+    "research_memory_policy": {
+      "experiment_registry_total": 48
+    }
+  }
+}

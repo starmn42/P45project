@@ -1,0 +1,19 @@
+{
+  "short_id": "EXP-020",
+  "experiment_id": "EXP-DRAW-20260828-020-V1",
+  "title": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
+  "status": "FAILED",
+  "final_verdict": "FAILED_NO_SELECTION_SIGNAL",
+  "lifecycle": ["IDEA", "REGISTERED", "DESIGNED", "READY_FOR_TEST", "TESTING", "BACKTESTED", "FAILED"],
+  "protocol_sha256": "610da2d9522e37e8b35d4492abf750dcac5c42b264de4af52e32c1df8174475b",
+  "protocol_lock_sha256": "273432ff04d812b35dbf2fba168c800448e14d4119665665141070317432b3be",
+  "full_history": "1..1238 PASS",
+  "train_positive_candidates": 60,
+  "selection_eligible_candidates": 0,
+  "selection_lock_status": "NOT_CREATED_NO_SELECTION_SIGNAL",
+  "holdout": {"executed": false, "reason": "SELECTION_GATE_FAILED"},
+  "reproducibility": "PASS",
+  "official_effect": "NONE",
+  "promotion_eligible": false,
+  "future_leakage": 0
+}

@@ -1,0 +1,47 @@
+{
+  "experiment_id": "EXP-018 / EXP-DRAW-20260827-018-V1",
+  "execution_status": "BLOCKED_BEFORE_OUTCOME_ACCESS",
+  "final_verdict": "EXP_018_EXECUTION_BLOCKED_BOOTSTRAP_AMBIGUITY",
+  "block_reason": "U95_BOUND_CONSTRUCTION_METHOD_NOT_LOCKED",
+  "lock_verify": {
+    "protocol_sha_expected": "d64b3ec3bdf5c65006236cefc67432333bc5edbc61dbe3b5db90d85a614d527c",
+    "protocol_sha_actual": "d64b3ec3bdf5c65006236cefc67432333bc5edbc61dbe3b5db90d85a614d527c",
+    "protocol_sha_status": "PASS",
+    "lock_sha_expected": "08006727b6b83f6d903cc1216c24be64a8bf21fbc027a7e471162da10aeab906",
+    "lock_sha_actual": "08006727b6b83f6d903cc1216c24be64a8bf21fbc027a7e471162da10aeab906",
+    "lock_sha_status": "PASS"
+  },
+  "structural_reproduction": {
+    "preflight_sha_expected": "ca2a8055eeda0f7c3c8c8217f9dd966b614e5fb51f2c7be54a7250364d074190",
+    "preflight_sha_actual": "ca2a8055eeda0f7c3c8c8217f9dd966b614e5fb51f2c7be54a7250364d074190",
+    "structural_match": "PASS"
+  },
+  "bootstrap_lock_audit": {
+    "cluster_unit": "TARGET_ROUND",
+    "n_bootstrap": 100000,
+    "seed": 20260827,
+    "requested_bound": "ONE_SIDED_95_PERCENT_UPPER",
+    "bound_construction_method": "NOT_SPECIFIED_IN_LOCKED_PROTOCOL",
+    "ambiguous_choices": [
+      "PERCENTILE",
+      "BASIC",
+      "BCA",
+      "STUDENTIZED"
+    ]
+  },
+  "outcome_access": {
+    "historical_outcomes_joined": false,
+    "neighbor_hits_calculated": false,
+    "control_hits_calculated": false,
+    "hit_rates_calculated": false,
+    "matched_delta_calculated": false,
+    "p_value_calculated": false,
+    "bootstrap_executed": false,
+    "split_verdicts_calculated": false
+  },
+  "protection": {
+    "future_leakage": 0,
+    "sealed_1239_changes": 0,
+    "prospective_outcome_changes": 0
+  }
+}
