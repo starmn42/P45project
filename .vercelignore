@@ -1,12 +1,21 @@
-# Exclude non-runtime research archives, tests and local scripts from Vercel deployment
+# Exclude non-web and non-runtime files
 90_ARCHIVE/
 approvals/
 draft_validation/
 experimental/
 ledger-experimental/
 v27_storage/audits/
-v27_storage/backtests/*.sqlite3
-!v27_storage/backtests/p45_v274_pair_v12_final_aggregation.sqlite3
+v27_storage/backups/
+v27_storage/db/
+v27_storage/backtests/p45_v273*
+v27_storage/backtests/p45_v274_pair_walkforward*
+v27_storage/experiments/batch*
+v27_storage/experiments/crowd*
+v27_storage/experiments/exp*
+v27_storage/experiments/lz76*
+v27_storage/experiments/prize*
+v27_storage/experiments/signal*
+v27_storage/experiments/whole*
 tests/
 tests_v27/
 docs/
