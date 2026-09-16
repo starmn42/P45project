@@ -1,0 +1,19 @@
+# Exclude non-runtime research archives, tests and local scripts from Vercel deployment
+90_ARCHIVE/
+approvals/
+draft_validation/
+experimental/
+ledger-experimental/
+v27_storage/audits/
+v27_storage/backtests/*.sqlite3
+!v27_storage/backtests/p45_v274_pair_v12_final_aggregation.sqlite3
+tests/
+tests_v27/
+docs/
+analysis/
+candidate-results/
+selections/
+sets/
+downloads/
+validated/
+*.cmd
