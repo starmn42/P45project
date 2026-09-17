@@ -2,16 +2,7 @@
   "version": 2,
   "functions": {
     "api/index.py": {
-      "includeFiles": [
-        "00_P45_STATE/**",
-        "90_RESEARCH/**",
-        "src/**",
-        "v27_storage/experiments/trio_orbit_v1_001/**",
-        "v27_storage/prospective/trio_orbit_v1_001/**",
-        "v27_storage/live/**",
-        "v27_storage/reports/**",
-        "v27_storage/backtests/p45_v274_pair_v12_final_aggregation.sqlite3"
-      ]
+      "includeFiles": "{00_P45_STATE/**,90_RESEARCH/**,src/**,v27_storage/experiments/trio_orbit_v1_001/**,v27_storage/prospective/trio_orbit_v1_001/**,v27_storage/live/**,v27_storage/reports/**,v27_storage/backtests/p45_v274_pair_v12_final_aggregation.sqlite3}"
     }
   },
   "rewrites": [

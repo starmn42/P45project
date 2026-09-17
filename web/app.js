@@ -10,9 +10,25 @@ function trioCards(rootId,trios,anchors){$(rootId).innerHTML=trios.map((t,i)=>`<
 function homeSets(rootId,sets,winning=[]){$(rootId).innerHTML=sets.map((item,i)=>{const text=typeof item==="string"?item:item.numbers;const hit=typeof item==="string"?null:item.hits;return `<div class="home-set"><b>세트 ${"ABC"[i]}</b><strong>${String(text).trim().split(/\s+/).map(n=>`<span class="${winning.includes(Number(n))?"hit-number":""}">${esc(n)}</span>`).join(" · ")}</strong><small>${hit===null?"봉인":`${hit}/3${hit===3?" · 주적중":hit===2?" · 보조적중":""}`}</small></div>`}).join("")}
 function renderResult(result){if(!result){$("resultOverview").hidden=true;return}$("resultOverview").hidden=false;const win=result.main.map(Number),rows=[...result.fixed.map(x=>["순수 고정",x]),...result.linked.map(x=>["직전연동",x])].map(([name,x])=>`<div><b>${name} ${esc(x.label)}</b><span>${String(x.numbers).trim().split(/\s+/).map(n=>`<i class="${win.includes(Number(n))?"hit-number":""}">${esc(n)}</i>`).join(" · ")}</span><strong>${x.hits}/3${x.hits===3?" · 주적중":x.hits===2?" · 보조적중":""}</strong></div>`).join("");$("resultRound").textContent=result.round;$("drawResultTitle").textContent=`${result.round}회 결과 요약`;$("winningNumbers").innerHTML=balls(result.main.join(" "),win);$("bonusNumber").textContent=result.bonus;$("drawDate").textContent=result.date;$("fixedPrimary").textContent=result.fixed_primary;$("fixedSupport").textContent=result.fixed_support;$("linkedPrimary").textContent=result.linked_primary;$("linkedSupport").textContent=result.linked_support;$("setResultRows").innerHTML=rows;$("resultDetailTitle").textContent=`${result.round}회 결과 상세`;$("resultCrumb").textContent=`${result.round}회 결과 상세`;$("detailWinningNumbers").innerHTML=balls(result.main.join(" "),win);$("detailBonusNumber").textContent=result.bonus;$("detailDrawDate").textContent=result.date;$("detailFixedPrimary").textContent=result.fixed_primary;$("detailFixedSupport").textContent=result.fixed_support;$("detailLinkedPrimary").textContent=result.linked_primary;$("detailLinkedSupport").textContent=result.linked_support;$("detailSetResultRows").innerHTML=rows}
 function checkCard(label,value,detail=""){const pass=value===true||value==="PASS";return `<article class="lab-card integrity ${pass?"pass":"fail"}"><span>${esc(label)}</span><b>${pass?"정상":"오류"}</b><small>${esc(detail)}</small></article>`}
+function formatDrawDateTime(targetRound,lastRound,lastDateStr){
+ let date;
+ if(lastDateStr&&targetRound&&lastRound){
+  const diffWeeks=Number(targetRound)-Number(lastRound);
+  const parts=String(lastDateStr).split("-").map(Number);
+  date=new Date(parts[0],parts[1]-1,parts[2]);
+  date.setDate(date.getDate()+(diffWeeks*7));
+ }else{
+  date=new Date(2026,8,19);
+ }
+ const y=date.getFullYear(),m=date.getMonth()+1,d=date.getDate();
+ const day=["일","월","화","수","목","금","토"][date.getDay()];
+ return `${y}년 ${m}월 ${d}일 (${day}) 오후 8시 35분`;
+}
 function render(data){
  currentData=data;const c=data.current,l=data.lifecycle,o=data.operation,s=data.seal,p=data.prospective,i=data.integrity;
  const ready=l.display_status==="READY_FOR_PREVIEW";$("mobileTarget").textContent=`${l.display_target}회 · ${kor(l.display_status)}`;$("targetRound").textContent=l.display_target;$("targetLabel").textContent=ready?"다음 미래검증 회차":"현재 미래검증 회차";$("completedRecord").textContent=l.completed_target?`${l.completed_target} 미래검증 정산 완료 기록`:"봉인 완료 · 결과 대기";$("canonicalLatest").textContent=data.canonical.latest;$("resultAvailability").textContent=ready?"출격 준비":kor(c.target_result_status);$("sealStatus").textContent=ready?"미봉인":s.verify==="PASS"?"봉인 정상":"봉인 오류";
+ if($("drawScheduleRound"))$("drawScheduleRound").textContent=`${l.display_target}회 추첨`;
+ if($("drawScheduleTime"))$("drawScheduleTime").textContent=formatDrawDateTime(l.display_target,data.latest_result?.round||data.canonical.latest,data.latest_result?.date);
  const action={WAITING_FOR_RESULT:"결과를 기다리세요",RECORD_OUTCOME:"이번 회차 결과를 반영하세요",PREVIEW_AND_SEAL_NEXT:"다음 회차를 생성하고 봉인하세요",WRITE_OPERATIONS_BLOCKED:"기록 작업 안전 차단"}[c.action]||c.action;$("primaryAction").textContent=action;$("primaryAction").classList.toggle("blocked",c.action==="WRITE_OPERATIONS_BLOCKED");
  $("officialEngine").textContent=kor(o.official_engine);$("noPick").textContent=kor(o.no_pick);$("discovery").textContent=o.draw_discovery_pause==="ACTIVE"?"일시중단":kor(o.draw_discovery_pause);$("latestExp").textContent=kor(o.latest_exp_status);$("verifiedSignal").textContent=kor(o.verified_independent_signal);
  renderResult(data.latest_result);homeSets("homeFixedCards",data.orbits.fixed.trios);homeSets("homeLinkedCards",data.orbits.linked.trios);$("nextPickTitle").textContent=`${l.display_target}회 추천 픽`;$("reviewSubtitle").textContent=`${data.latest_result?.round||data.canonical.latest}회 결과를 기준으로 추천픽 적중을 확인합니다.`

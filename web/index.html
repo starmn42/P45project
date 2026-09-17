@@ -2,7 +2,7 @@
 <html lang="ko" class="dark">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#e9dfc8">
-  <title>P45 운칠기삼</title><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=64">
+  <title>P45 운칠기삼</title><link rel="icon" href="/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/styles.css?v=65">
 </head>
 <body>
   <header class="mobile-header site-hero"><div class="hero-motto" aria-hidden="true">조선의 품격으로,<br>더 나은 내일을 봅니다.<small>기록이 쌓이는 곳, 운칠기삼</small></div><div class="mobile-brand"><small>P45</small><strong><span class="brush-wordmark">운칠기삼</span><i class="brand-seal" aria-hidden="true">運</i></strong><small>TRIO ORBIT</small></div><span id="mobileTarget">—</span><button id="menuToggle" type="button" aria-label="메뉴 열기" aria-controls="mainDrawer" aria-expanded="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg></button><p class="hero-note" aria-hidden="true">조선의 품격,<br>데이터의 미래</p></header>
@@ -22,7 +22,18 @@
 
 
     <section id="status" class="v1-page active">
-      <div class="home-actions"><button id="showNextDispatch" class="dispatch-button" type="button">다음회차 출격 보기</button><button id="showLastResult" class="result-button" type="button">지난회차 결과 보기</button></div>
+      <div class="home-top-bar">
+        <div class="draw-schedule-box">
+          <div class="draw-schedule-badge">
+            <span class="schedule-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+            <span id="drawScheduleRound" class="schedule-round">1242회 추첨</span>
+          </div>
+          <div class="schedule-datetime-wrap">
+            <strong id="drawScheduleTime">2026년 9월 19일 (토) 오후 8시 35분</strong>
+          </div>
+        </div>
+        <div class="home-actions"><button id="showNextDispatch" class="dispatch-button" type="button">다음회차 출격 보기</button><button id="showLastResult" class="result-button" type="button">지난회차 결과 보기</button></div>
+      </div>
       <section class="home-dispatch">
         <div class="home-block-title"><h2 id="nextPickTitle">다음 회차 추천 픽</h2><p>데이터가 제안하는 다음 회차의 새로운 가능성</p></div>
         <div class="home-orbit-grid"><article class="lab-card home-orbit"><span>순수 고정 · 비교 기준</span><div id="homeFixedCards" class="home-set-list"></div></article><article class="lab-card home-orbit linked"><span>직전연동 V1 · 실전 우선</span><div id="homeLinkedCards" class="home-set-list"></div></article></div>
@@ -80,6 +91,6 @@
   </main>
   </div>
   <div class="heritage-colophon" aria-hidden="true"><span>조선의 품격으로<br><b>다시, 가능성을 그리다.</b></span><span>한지 · 수묵 · 기록<small>P45 TRIO ORBIT</small></span></div>
-  <script src="/app.js?v=46" defer></script>
+  <script src="/app.js?v=47" defer></script>
 </body></html>
 
