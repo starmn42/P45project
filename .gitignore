@@ -52,3 +52,6 @@ Desktop.ini
 v27_storage/backtests/*.sqlite3
 !v27_storage/backtests/p45_v274_pair_v12_final_aggregation.sqlite3
 v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/*.sqlite3
+
+.vercel
+.env*
