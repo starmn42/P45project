@@ -73,6 +73,10 @@ document.addEventListener("keydown",event=>{
 });
 
 tabs();$("showLastResult").addEventListener("click",()=>{activatePage("result-detail");history.replaceState(null,"","#result-detail")});$("showNextDispatch").addEventListener("click",()=>{activatePage("dispatch");history.replaceState(null,"","#dispatch")});$("previewNext").addEventListener("click",()=>previewNext().catch(e=>{$("primaryAction").textContent=e.message;$("primaryAction").classList.add("blocked")}));$("sealNext").addEventListener("click",()=>sealNext().catch(e=>{$("primaryAction").textContent=e.message;$("primaryAction").classList.add("blocked")}));load();
+setInterval(()=>{if(!document.hidden)load()},60000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden)load()});
+window.addEventListener("focus",load);
+if("serviceWorker" in navigator)navigator.serviceWorker.getRegistrations().then(registrations=>registrations.filter(registration=>[registration.active,registration.waiting,registration.installing].some(worker=>worker?.scriptURL.includes("/service-worker.js"))).forEach(registration=>registration.unregister())).catch(()=>{});
 
 
 

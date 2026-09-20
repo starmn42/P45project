@@ -1,12 +1,13 @@
 """P45 TRIO ORBIT Prospective Web V1 on the existing standard HTTP server."""
 from __future__ import annotations
-import argparse, json, mimetypes, secrets, socket, threading, time
+import argparse, json, mimetypes, os, secrets, socket, threading, time
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
 from urllib.parse import urlparse
 from .web_adapter import FrozenWebAdapter
 from .draw_update import run_update
+from .web_publish import publish
 
 PROJECT_ROOT=Path(__file__).resolve().parents[2]; WEB_ROOT=PROJECT_ROOT/"web"; ADAPTER=FrozenWebAdapter(PROJECT_ROOT)
 API_TOKEN=secrets.token_urlsafe(32)
@@ -25,6 +26,8 @@ class AutoUpdateCoordinator:
                 status=self.adapter.read()
             if status["current"]["action"]=="PREVIEW_AND_SEAL_NEXT":
                 preview=self.adapter.service.preview_next();self.adapter.service.seal_next(preview["preview_sha256"]);steps.append("NEXT_SEALED")
+            if "SETTLED" in steps and "NEXT_SEALED" in steps:
+                steps.append(publish(self.adapter.read()))
             self.state={"status":"자동 업데이트 반영","last_check":time.time(),"last_error":None,"steps":steps}
         except Exception as exc:
             self.state={"status":"자동 업데이트 오류","last_check":time.time(),"last_error":f"{type(exc).__name__}: {exc}","steps":[]}
@@ -51,9 +54,15 @@ class Handler(BaseHTTPRequestHandler):
         route=urlparse(self.path).path
         if route=="/api/status":
             try:
-                value=ADAPTER.read();value["auto_update"]=AUTO.state;self._json(value)
+                if os.environ.get("VERCEL"):
+                    value=json.loads((PROJECT_ROOT/"web_runtime/status.json").read_text(encoding="utf-8"))
+                else:
+                    value=ADAPTER.read();value["auto_update"]=AUTO.state
+                self._json(value)
             except Exception as exc:self._json({"error":str(exc),"write_status":"WRITE_OPERATIONS_BLOCKED"},409)
             return
+        if os.environ.get("VERCEL") and route.startswith("/api/"):
+            self._json({"error":"CLOUD_READ_ONLY"},405);return
         if route=="/api/session":self._json({"token":API_TOKEN});return
         if route=="/api/prospective/preview":
             try:self._json({"ok":True,"preview":ADAPTER.service.preview_next()})
@@ -67,6 +76,8 @@ class Handler(BaseHTTPRequestHandler):
         self.send_header("Content-Type",content_type+("; charset=utf-8" if content_type.startswith(("text/","application/javascript")) else ""));self.send_header("Content-Length",str(len(body)))
         self.send_header("Cache-Control","no-store, max-age=0");self.send_header("X-Content-Type-Options","nosniff");self.end_headers();self.wfile.write(body)
     def do_POST(self)->None:
+        if os.environ.get("VERCEL"):
+            self._json({"ok":False,"error":"CLOUD_READ_ONLY"},405);return
         route=urlparse(self.path).path
         if route not in {"/api/prospective/outcome","/api/prospective/seal"}:self._json({"ok":False,"error":"WRITE_ROUTE_NOT_ALLOWED"},405);return
         if self.headers.get("X-P45-Token")!=API_TOKEN:self._json({"ok":False,"error":"INVALID_SESSION"},403);return
