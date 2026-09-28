@@ -134,17 +134,23 @@ def publish(status: dict, force: bool = False) -> str:
     env = dict(os.environ, NO_UPDATE_CHECK="1", VERCEL_TELEMETRY_DISABLED="1")
     cmd = ["npx.cmd" if os.name == "nt" else "npx", "vercel", "deploy", "--prod", "--yes"]
     start_time = time.time()
-    res = subprocess.run(cmd, cwd=str(ROOT), capture_output=True, text=True, timeout=120, env=env)
+    res = subprocess.run(
+        cmd, cwd=str(ROOT), capture_output=True, text=True,
+        encoding="utf-8", errors="replace", timeout=120, env=env,
+    )
     duration = time.time() - start_time
 
+    stdout = (res.stdout or "").strip()
+    stderr = (res.stderr or "").strip()
+
     print(f"[VERCEL DEPLOY] cmd={' '.join(cmd)} exit_code={res.returncode} duration={duration:.1f}s")
-    if res.stdout.strip():
-        print(f"[VERCEL STDOUT]\n{res.stdout.strip()}")
-    if res.stderr.strip():
-        print(f"[VERCEL STDERR]\n{res.stderr.strip()}")
+    if stdout:
+        print(f"[VERCEL STDOUT]\n{stdout}")
+    if stderr:
+        print(f"[VERCEL STDERR]\n{stderr}")
 
     if res.returncode != 0:
-        err_msg = res.stderr.strip() or res.stdout.strip()
+        err_msg = stderr or stdout
         raise RuntimeError(f"VERCEL_DEPLOY_FAILED (code {res.returncode}): {err_msg}")
 
     # Verify production endpoint reflects target
