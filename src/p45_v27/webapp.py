@@ -26,11 +26,12 @@ class AutoUpdateCoordinator:
                 status=self.adapter.read()
             if status["current"]["action"]=="PREVIEW_AND_SEAL_NEXT":
                 preview=self.adapter.service.preview_next();self.adapter.service.seal_next(preview["preview_sha256"]);steps.append("NEXT_SEALED")
-            if "SETTLED" in steps and "NEXT_SEALED" in steps:
-                steps.append(publish(self.adapter.read()))
+                status=self.adapter.read()
+            pub_res=publish(self.adapter.read())
+            steps.append(pub_res)
             self.state={"status":"자동 업데이트 반영","last_check":time.time(),"last_error":None,"steps":steps}
         except Exception as exc:
-            self.state={"status":"자동 업데이트 오류","last_check":time.time(),"last_error":f"{type(exc).__name__}: {exc}","steps":[]}
+            self.state={"status":"자동 업데이트 오류","last_check":time.time(),"last_error":f"{type(exc).__name__}: {exc}","steps":steps}
         finally:self.lock.release()
         return self.state
     def loop(self)->None:
