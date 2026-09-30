@@ -1,0 +1,12 @@
+{
+  "raw_count": 28,
+  "parsed_count": 28,
+  "source_title_substitution": 0,
+  "source_fingerprint_mismatch": 0,
+  "missing_master_items": 0,
+  "invented_source_items": 0,
+  "ordinal_title_mismatch": 0,
+  "raw_parser_disagreement": 0,
+  "verdict": "PASS_MASTER_SOURCE_IDENTITY",
+  "mismatches": []
+}

@@ -347,11 +347,6 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
 
 - **2026-09-30: [NON-EXP 1:1 LINEAGE & SEMANTIC REFERENTIAL INTEGRITY FINAL PASS]**
   - **작업 목적:** NON-EXP source item 각각이 실제로 그 연구의 정식 formal experiment / lineage에 연결되어 있는지 전수 1:1 감사하고, 도메인 불일치 및 침묵의 오매핑(silent wrong alias)을 원천 차단하는 Domain Compatibility Hard Guard 구축.
-  - **식별된 핵심 문제 및 원인 (Root Cause):**
-    1. 이전 감사 로직은 target_exists와 lineage 등의 키워드 존재 여부만 검사하여, 소스 도메인(CROWD)과 대상 도메인(DRAW)의 불일치를 탐지하지 못함.
-    2. SRC-NONEXP-23 (Crowd topology 001)이 이전 보고에서 DRAW 도메인의 EXP-DRAW-20260816-038-V2 (NO-PICK) 또는 EXP-CROWD-20260816-001-V1에 잘못 매핑됨.
-    3. SRC-NONEXP-24 (Crowd topology 002)가 이전 보고에서 DRAW 도메인의 EXP-DRAW-20260827-018-V2 (Residual Neighbor) 또는 EXP-CROWD-20260816-002-V1에 잘못 매핑됨.
-    4. 후보 C (IDEA-1243-CROS-003) 상위 매치에 '쌍둥이' 단어 매칭으로 인해 구조적으로 무관한 EXP-DRAW-20260816-023-V1 / 024-V1 (쌍둥이 유사 회차 / 전이)가 유입됨.
   - **정정 및 구현 성과:**
     1. **Authoritative Canonical ID 정정:**
        - SRC-NONEXP-23: EXP-CROWD-20260823-005-V1 (EXP-CROWD-TOPO-001-V1, Row 58) 1:1 ALIAS 매핑.
@@ -359,24 +354,43 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
        - SRC-NONEXP-25: EXP-CROWD-20260823-007-V1 (EXP-CROWD-TOPO-003-V1, Row 60) 1:1 ALIAS 매핑.
        - SRC-NONEXP-26: EXP-CROWD-20260823-008-V1 (EXP-CROWD-RETAIL-001-V1, Row 61) 1:1 ALIAS 매핑.
        - SRC-NONEXP-27: 다중 대상 계보 (EXP-PRIZE-20260816-001-V2, EXP-PRIZE-20260821-004-V1, EXP-PRIZE-20260821-005-V1)를 갖는 VALID_RELATED_DISTINCT 및 lineage_targets: [] 스키마 지원.
-       - SRC-NONEXP-01 ~ 19, 28 ~ 31: formal parent가 없는 독자 연구를 억지 alias하지 않고 정당한 VALID_DIRECT 레코드로 유지.
     2. **Domain Compatibility Hard Guard 장착:**
        - CROWD 소스는 반드시 CROWD 정식 대상에만 매핑 허용 (명시적 교차 증거 없는 한 DRAW/PRIZE 타깃 즉시 차단).
-       - PRIZE 소스는 반드시 PRIZE 정식 대상에만 매핑 허용.
-       - PAIR 소스는 반드시 PAIR change-control 대상에만 매핑 허용 (NUMBER RELATION 타깃 불가).
        - 위반 시 DOMAIN_MISMATCH_UNJUSTIFIED 및 FAIL_NON_EXP_REFERENTIAL_INTEGRITY로 Fail-Closed 발동.
-    3. **1:1 전수 감사 리포트 산출:**
-       - v27_storage/research_automation/knowledge/NON_EXP_LINEAGE_AUDIT.json
-       - v27_storage/research_automation/knowledge/NON_EXP_LINEAGE_AUDIT.md (31건 전수 감사 결과: VALID_DIRECT 23건, VALID_ALIAS 5건, VALID_MERGE 2건, VALID_RELATED_DISTINCT 1건, 도메인 불일치 0건).
-    4. **후보군 A/B/C 정밀 재평가:**
+    3. **후보군 A/B/C 정밀 재평가:**
        - 후보 A: REJECT_RESCUE 유지 (전멸·복귀 실패축 기준 차단).
        - 후보 B: REJECT_RESCUE 유지 (간격·인접 실패축 기준 차단).
        - 후보 C: NEEDS_EVIDENCE 유지 (무관한 쌍둥이 유사 회차 제거 완료, 공식 PAIR 라이프사이클 및 010 수리 행, KTS pair completion 기준 상위 매칭 재구성, 자동 승격 0).
+    4. **무결성 판정:** PASS_NON_EXP_REFERENTIAL_INTEGRITY 복구 완료.
+
+- **2026-09-30: [MASTER SOURCE IDENTITY LOCK & INVENTORY FINGERPRINT FINAL AUDIT]**
+  - **작업 목적:** 이전 단계에서 발생한 연구명 임의 치환(예: "Number order statistical distribution", "Consecutive number adjacency structure" 등 합성 영문명 주입)을 완전히 근절하고, `90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md` Section C ("## C. EXP ID 없이 실제 계산·검증한 연구 — 28개 축") 원문을 단일 진실 원천(Single Source of Truth)으로 삼아 1:1 불변의 exact identity를 기계적으로 잠금(Lock).
+  - **식별된 원인 (Root Cause):**
+    - 이전 인벤토리 생성 보고에서 Section C의 한국어 실제 연구 원문 대신, 영문 합성/플레이스홀더 연구명이 임의 치환되어 주입되었음.
+    - Section C는 실제 28개 축이며, 이후 추가된 3건의 감사 연구(WHOLE-ENGINE, TRIO ORBIT 회고, TRIO ORBIT 통계교정)가 Section C에 무리하게 병합되어 31개로 하드코딩되었던 결함 발견.
+  - **정정 및 구현 성과:**
+    1. **독립 1차 원문 추출기 (`MasterSourceRawExtractor`):**
+       - 기존 인벤토리/지식 빌더 모듈과 일체의 함수/변수를 공유하지 않는 독립 Raw Parser 구축.
+       - Section C 시작과 끝 사이의 28개 항목을 번역/요약/치환 없이 있는 그대로 추출하여 `MASTER_NON_EXP_RAW_SNAPSHOT.json` 및 `.md` 생성.
+       - 각 항목 SHA-256 fingerprint 및 전체 섹션 결합 SHA-256 fingerprint (`66baf18efd12f9ad6d1a6e9f5e80422a5cfe9539025937b5a7e77bbc39a2b6bf`) 산출 및 `MASTER_NON_EXP_SOURCE_FINGERPRINTS.json` 영구 보존.
+    2. **출처 분류 체계 분리:**
+       - Section C 순수 28개 축은 `NON_EXP_EXECUTED` (28건)로 1:1 고정.
+       - 이후 3건의 실동 감사는 `SourceClass.OTHER_RESEARCH_SOURCE` (3건: `SRC-OTHER-01` ~ `SRC-OTHER-03`)로 정당 분리.
+       - 전체 소스 총계 115건 (Formal 69 + Official 12 + NON_EXP 28 + Reviewed 2 + Active Prospective 1 + Other 3) 완벽 보존.
+    3. **Two-Parser Exact Reconciliation:**
+       - 독립 1차 Raw Extractor와 2차 Production Parser 간 전수 1:1 대조 감사 (`MASTER_SOURCE_IDENTITY_AUDIT.json`, `.md`).
+       - `RAW_COUNT == PARSED_COUNT == 28`, 제목 치환 0건, 지문 불일치 0건, 누락 0건, 위조 0건 전수 검증 통과 (`PASS_MASTER_SOURCE_IDENTITY`).
+    4. **Fail-Closed 하드 가드 장착:**
+       - `ResearchDiscoveryAgent` 0번 게이트에 Master Source Identity Gate 장착. 불일치 발견 시 즉각 `BLOCKED_MASTER_SOURCE_IDENTITY` 발동 및 아이디어 생성 원천 차단.
+    5. **기존 Lineage Fix 및 후보 A/B/C 판정 보존:**
+       - PAIR 20~22, CROWD 23~26 (`EXP-CROWD-20260823-005~008-V1`), PRIZE 27 다중 계보 등 이전 계보 수정 완전 보존.
+       - 후보 C (IDEA-1243-CROS-003): 무관한 쌍둥이 회차 유입 차단 유지, PAIR repair 감사행 기준 `NEEDS_EVIDENCE` 유지 (자동 승격 0).
+       - 후보 A/B: `REJECT_RESCUE` 유지.
   - **테스트 및 검증:**
-    - 신규 24개 테스트 추가 (TestNonExpLineageSemanticIntegrity), test_canonical_id_integrity.py 46개 전수 통과.
-    - 전체 5개 연구 자동화 모듈 총 110개 테스트 전수 통과 (기존 86개 + 신규 24개, 0 failures, 0 errors).
-    - 공식 엔진/DB/봉인 파일 변경 0건 (Protection verdict: PASS, Changed: 0).
-    - 런타임 가드 활성화: NON_EXP_LINEAGE_GUARD_ACTIVE = YES, DISCOVERY_FAIL_CLOSED_ACTIVE = YES.
-    - Vercel 배포 불필요: VERCEL_DEPLOY_NOT_REQUIRED.
-    - 최종 판정: PASS_NON_EXP_REFERENTIAL_INTEGRITY 복구 완료.
+    - 26개 신규 테스트 추가 (`TestMasterSourceIdentityAndFingerprint`), 총 136개 단위 테스트 전수 통과 (0 failures, 0 errors).
+    - 공식 엔진 보호 검증: 변경 0건, Future Leakage 0건.
+    - Git 반영: `P45 lock Research Master source identity`.
+    - Vercel 배포: `VERCEL_DEPLOY_NOT_REQUIRED`.
+    - 최종 판정: `PASS_MASTER_SOURCE_IDENTITY`.
+
 

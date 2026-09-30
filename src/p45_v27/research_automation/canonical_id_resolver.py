@@ -82,6 +82,10 @@ class NonExpLineageAuditItem:
     current_target_namespace: str
     current_target_domain: str
     current_target_title: str
+    ordinal: int = 0
+    raw_title: str = ""
+    raw_source_text: str = ""
+    source_fingerprint: str = ""
     candidate_formal_targets: list[str] = field(default_factory=list)
     candidate_evidence_paths: list[str] = field(default_factory=list)
     domain_compatible: bool = True
@@ -865,6 +869,10 @@ class CanonicalResearchIdResolver:
                 current_target_namespace=cur_target_ns,
                 current_target_domain=cur_target_domain,
                 current_target_title=cur_target_title,
+                ordinal=getattr(it, "ordinal", 0) or 0,
+                raw_title=getattr(it, "raw_title", stitle),
+                raw_source_text=getattr(it, "raw_source_text", sdesc),
+                source_fingerprint=getattr(it, "source_fingerprint", ""),
                 candidate_formal_targets=cand_targets,
                 candidate_evidence_paths=cand_paths,
                 domain_compatible=domain_comp,
@@ -922,12 +930,13 @@ class CanonicalResearchIdResolver:
         md.append("")
         md.append("## Complete 1:1 Non-EXP Lineage Audit Table")
         md.append("")
-        md.append("| # | Source Item ID | Source Title | Final Target ID | Domain Comp | Semantic Comp | Final Mapping Type | Verdict | Evidence / Reason |")
+        md.append("| # | Source Item ID | Raw Title | Final Target ID | Domain Comp | Semantic Comp | Final Mapping Type | Verdict | Fingerprint |")
         md.append("|---|---|---|---|:---:|:---:|---|---|---|")
         for idx, a in enumerate(audit_items, 1):
             d_icon = "PASS" if a.domain_compatible else "FAIL"
             s_icon = "PASS" if (a.ontology_compatible and a.title_semantic_compatible) else "FAIL"
-            md.append(f"| {idx} | `{a.source_item_id}` | {a.source_title} | `{a.final_target_id}` | `{d_icon}` | `{s_icon}` | `{a.final_mapping_type}` | **`{a.verdict}`** | {a.final_reason} |")
+            fp_short = f"`{a.source_fingerprint[:12]}...`" if a.source_fingerprint else "-"
+            md.append(f"| {idx} | `{a.source_item_id}` | **{a.raw_title}** | `{a.final_target_id}` | `{d_icon}` | `{s_icon}` | `{a.final_mapping_type}` | **`{a.verdict}`** | {fp_short} |")
         md.append("")
 
         md_path.write_text("\n".join(md), encoding="utf-8")

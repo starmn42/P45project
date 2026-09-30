@@ -14,6 +14,7 @@ Guarantees 100% source coverage with unmapped == 0.
 """
 from __future__ import annotations
 
+import hashlib
 import json
 import re
 from dataclasses import asdict, dataclass, field
@@ -29,6 +30,7 @@ class SourceClass(str, Enum):
     NON_EXP_EXECUTED = "NON_EXP_EXECUTED"
     REVIEWED_UNEXECUTED = "REVIEWED_UNEXECUTED"
     ACTIVE_PROSPECTIVE = "ACTIVE_PROSPECTIVE"
+    OTHER_RESEARCH_SOURCE = "OTHER_RESEARCH_SOURCE"
 
 class MappingType(str, Enum):
     DIRECT = "DIRECT"
@@ -47,6 +49,17 @@ class ResearchSourceItem:
     canonical_experiment_id_if_any: str | None = None
     evidence_reference: str = ""
     details: dict[str, Any] = field(default_factory=dict)
+    ordinal: int | None = None
+    raw_title: str = ""
+    raw_source_text: str = ""
+    source_fingerprint: str = ""
+    semantic_title: str = ""
+
+    def __post_init__(self) -> None:
+        if not self.raw_title:
+            self.raw_title = self.source_title
+        if not self.semantic_title:
+            self.semantic_title = self.raw_title
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -77,6 +90,8 @@ class CoverageManifest:
     mapping_type_counts: dict[str, int] = field(default_factory=dict)
     has_referential_integrity: bool = True
     referential_integrity_audit: dict[str, Any] = field(default_factory=dict)
+    has_master_source_identity: bool = True
+    master_source_identity_audit: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -87,6 +102,8 @@ class CoverageManifest:
             "is_complete": self.is_complete,
             "has_referential_integrity": self.has_referential_integrity,
             "referential_integrity_audit": self.referential_integrity_audit,
+            "has_master_source_identity": self.has_master_source_identity,
+            "master_source_identity_audit": self.master_source_identity_audit,
             "source_class_counts": self.source_class_counts,
             "mapping_type_counts": self.mapping_type_counts,
             "unmapped_items": self.unmapped_items,
@@ -166,8 +183,14 @@ class ResearchSourceInventoryBuilder:
             items.append(item)
         return items
 
+    def _get_master_file(self) -> Path:
+        mf = self.root / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md"
+        if not mf.exists() and (ROOT / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md").exists():
+            return ROOT / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md"
+        return mf
+
     def parse_official_internal_axes(self) -> list[ResearchSourceItem]:
-        master_file = self.root / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md"
+        master_file = self._get_master_file()
         items: list[ResearchSourceItem] = []
         if not master_file.exists():
             return items
@@ -178,6 +201,7 @@ class ResearchSourceInventoryBuilder:
             return items
 
         rows = [l.strip() for l in sec_a.group(1).splitlines() if l.strip().startswith('|') and not l.strip().startswith('|---') and not l.strip().startswith('|구조')]
+        doc_base = self.root if master_file.is_relative_to(self.root) else ROOT
         for idx, r in enumerate(rows, 1):
             parts = [p.strip() for p in r.split('|')[1:-1]]
             if len(parts) >= 3:
@@ -189,7 +213,7 @@ class ResearchSourceInventoryBuilder:
                     ResearchSourceItem(
                         source_item_id=item_id,
                         source_class=SourceClass.OFFICIAL_INTERNAL.value,
-                        source_document=str(master_file.relative_to(self.root)),
+                        source_document=str(master_file.relative_to(doc_base)),
                         source_location=f"Section A Table Row {idx} ({axis_name})",
                         source_title=f"{axis_name} ({meaning})",
                         source_status="OFFICIAL_FROZEN",
@@ -201,85 +225,134 @@ class ResearchSourceInventoryBuilder:
         return items
 
     def parse_non_exp_executed_axes(self) -> list[ResearchSourceItem]:
-        master_file = self.root / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md"
+        master_file = self._get_master_file()
         items: list[ResearchSourceItem] = []
         if not master_file.exists():
             return items
 
         text = master_file.read_text(encoding="utf-8")
-        sec_c = re.search(r'## C\. EXP ID 없이 실제 계산[^\n]*\n(.*?)(?=\n## D|\n## \w)', text, re.DOTALL)
-        if sec_c:
-            for l in sec_c.group(1).splitlines():
-                m = re.match(r'^(\d+)\.\s*(.*)', l.strip())
-                if m:
-                    num = int(m.group(1))
-                    raw_text = m.group(2).strip()
-                    title = raw_text.split("—")[0].strip().rstrip(".")
-                    status = "FAILED_NOT_SUPPORTED" if "FAILED" in raw_text else "COMPLETED"
-                    items.append(
-                        ResearchSourceItem(
-                            source_item_id=f"SRC-NONEXP-{num:02d}",
-                            source_class=SourceClass.NON_EXP_EXECUTED.value,
-                            source_document=str(master_file.relative_to(self.root)),
-                            source_location=f"Section C Item {num}",
-                            source_title=title,
-                            source_status=status,
-                            canonical_experiment_id_if_any=None,
-                            evidence_reference=raw_text,
-                            details={"original_index": num, "full_text": raw_text},
-                        )
-                    )
+        lines = text.splitlines()
 
-        # Subsequent non-EXP executed research sections in Master Index
-        # 29. WHOLE-ENGINE synthetic replay semantics recovery audit 001
+        sec_c_start = -1
+        sec_c_end = -1
+        sec_heading = ""
+        for idx, line in enumerate(lines):
+            if line.strip().startswith("## C. EXP ID 없이 실제 계산"):
+                sec_c_start = idx
+                sec_heading = line.strip()
+            elif sec_c_start != -1 and line.strip().startswith("## D."):
+                sec_c_end = idx
+                break
+
+        if sec_c_start == -1:
+            return items
+        if sec_c_end == -1:
+            sec_c_end = len(lines)
+
+        doc_base = self.root if master_file.is_relative_to(self.root) else ROOT
+        rel_doc = str(master_file.relative_to(doc_base)).replace("\\", "/")
+
+        for line_idx in range(sec_c_start + 1, sec_c_end):
+            l = lines[line_idx].strip()
+            m = re.match(r"^(\d+)\.\s*(.*)", l)
+            if m:
+                num = int(m.group(1))
+                raw_text = m.group(2).strip()
+                title = raw_text.split("—")[0].strip().rstrip(".")
+                status = "FAILED_NOT_SUPPORTED" if "FAILED" in raw_text else "COMPLETED"
+
+                # Compute source fingerprint identical to raw extractor
+                fp_payload = f"{rel_doc}:{sec_heading}:{num}:{raw_text}"
+                fp = hashlib.sha256(fp_payload.encode("utf-8")).hexdigest()
+
+                items.append(
+                    ResearchSourceItem(
+                        source_item_id=f"SRC-NONEXP-{num:02d}",
+                        source_class=SourceClass.NON_EXP_EXECUTED.value,
+                        source_document=rel_doc,
+                        source_location=f"Section C Item {num}",
+                        source_title=title,
+                        source_status=status,
+                        canonical_experiment_id_if_any=None,
+                        evidence_reference=raw_text,
+                        details={
+                            "original_index": num,
+                            "full_text": raw_text,
+                            "line_number": line_idx + 1,
+                        },
+                        ordinal=num,
+                        raw_title=title,
+                        raw_source_text=raw_text,
+                        source_fingerprint=fp,
+                        semantic_title=title,
+                    )
+                )
+
+        return items
+
+    def parse_other_research_sources(self) -> list[ResearchSourceItem]:
+        master_file = self.root / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md"
+        items: list[ResearchSourceItem] = []
+        if not master_file.exists():
+            return items
+
+        rel_doc = str(master_file.relative_to(self.root)).replace("\\", "/")
+
+        # 1. WHOLE-ENGINE synthetic replay semantics recovery audit 001
         items.append(
             ResearchSourceItem(
-                source_item_id="SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
-                source_class=SourceClass.NON_EXP_EXECUTED.value,
-                source_document=str(master_file.relative_to(self.root)),
+                source_item_id="SRC-OTHER-01-WHOLE-ENGINE-REPLAY",
+                source_class=SourceClass.OTHER_RESEARCH_SOURCE.value,
+                source_document=rel_doc,
                 source_location="## WHOLE-ENGINE synthetic replay semantics recovery audit",
                 source_title="WHOLE-ENGINE synthetic replay semantics recovery audit 001",
                 source_status="COMPLETED",
                 canonical_experiment_id_if_any=None,
                 evidence_reference="v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/",
                 details={"scope": "Historical draw replay without outcome peeking"},
+                raw_title="WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+                raw_source_text="WHOLE-ENGINE synthetic replay semantics recovery audit",
             )
         )
 
-        # 30. TRIO ORBIT Prospective (1239..1243) Retrospective Audit
+        # 2. TRIO ORBIT Prospective (1239..1243) Retrospective Audit
         items.append(
             ResearchSourceItem(
-                source_item_id="SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-                source_class=SourceClass.NON_EXP_EXECUTED.value,
-                source_document=str(master_file.relative_to(self.root)),
+                source_item_id="SRC-OTHER-02-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+                source_class=SourceClass.OTHER_RESEARCH_SOURCE.value,
+                source_document=rel_doc,
                 source_location="## 2026-09-30 — TRIO ORBIT RETROSPECTIVE + AUTO RESEARCH LOOP V1",
                 source_title="TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
                 source_status="ACTIVE",
                 canonical_experiment_id_if_any=None,
                 evidence_reference="v27_storage/audits/trio_orbit_prospective_retrospective_001/",
                 details={"scope": "Prospective 5-round null calibration and historical trace"},
+                raw_title="TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+                raw_source_text="TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
             )
         )
 
-        # 31. TRIO ORBIT Statistical Correction & Null Calibration 001
+        # 3. TRIO ORBIT Statistical Correction & Null Calibration 001
         items.append(
             ResearchSourceItem(
-                source_item_id="SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
-                source_class=SourceClass.NON_EXP_EXECUTED.value,
-                source_document=str(master_file.relative_to(self.root)),
+                source_item_id="SRC-OTHER-03-TRIO-ORBIT-STATISTICAL-CORRECTION",
+                source_class=SourceClass.OTHER_RESEARCH_SOURCE.value,
+                source_document=rel_doc,
                 source_location="## 2026-09-30 — STATISTICAL CORRECTION + RESEARCH DISCOVERY AGENT V1",
                 source_title="TRIO ORBIT Statistical Correction & Null Calibration 001",
                 source_status="COMPLETED",
                 canonical_experiment_id_if_any=None,
                 evidence_reference="v27_storage/audits/trio_orbit_prospective_retrospective_001/TRIO_ORBIT_STATISTICAL_CORRECTION_001.md",
                 details={"scope": "Wilson CI and Holm family-wise multiplicity adjustment"},
+                raw_title="TRIO ORBIT Statistical Correction & Null Calibration 001",
+                raw_source_text="TRIO ORBIT Statistical Correction & Null Calibration 001",
             )
         )
 
         return items
 
     def parse_reviewed_unexecuted_ideas(self) -> list[ResearchSourceItem]:
-        master_file = self.root / "90_RESEARCH" / "P45_RESEARCH_MASTER_INDEX_005.md"
+        master_file = self._get_master_file()
         items: list[ResearchSourceItem] = []
         if not master_file.exists():
             return items
@@ -290,6 +363,7 @@ class ResearchSourceInventoryBuilder:
             return items
 
         rows = [l.strip() for l in sec_d.group(1).splitlines() if l.strip().startswith('|') and not l.strip().startswith('|---') and not l.strip().startswith('|아이디어')]
+        doc_base = self.root if master_file.is_relative_to(self.root) else ROOT
         for idx, r in enumerate(rows, 1):
             parts = [p.strip() for p in r.split('|')[1:-1]]
             if len(parts) >= 3:
@@ -301,7 +375,7 @@ class ResearchSourceInventoryBuilder:
                     ResearchSourceItem(
                         source_item_id=item_id,
                         source_class=SourceClass.REVIEWED_UNEXECUTED.value,
-                        source_document=str(master_file.relative_to(self.root)),
+                        source_document=str(master_file.relative_to(doc_base)),
                         source_location=f"Section D Table Row {idx} ({name})",
                         source_title=name,
                         source_status="REVIEWED_UNEXECUTED",
@@ -338,6 +412,7 @@ class ResearchSourceInventoryBuilder:
         items.extend(self.parse_non_exp_executed_axes())
         items.extend(self.parse_reviewed_unexecuted_ideas())
         items.extend(self.parse_active_prospective())
+        items.extend(self.parse_other_research_sources())
         return items
 
     def save_source_inventory(self, items: list[ResearchSourceItem]) -> tuple[Path, Path]:
@@ -657,52 +732,51 @@ class ResearchKnowledgeCoverageManifestBuilder:
                             ],
                         )
                     )
-                elif "WHOLE-ENGINE" in sid:
+                elif num == 28:
+                    # LZ76 거시 복잡도 국면 고립 검정 V1 -> DIRECT
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+                            normalized_record_id="NON-EXP-28",
                             mapping_type=MappingType.DIRECT.value,
-                            mapping_reason=f"Distinct executed non-EXP research axis: {it.source_title}",
-                            evidence=it.source_document,
-                            confidence=1.0,
-                        )
-                    )
-                elif "TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE" in sid:
-                    mappings.append(
-                        SourceMappingEntry(
-                            source_item_id=sid,
-                            normalized_record_id="NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-                            mapping_type=MappingType.DIRECT.value,
-                            mapping_reason=f"Distinct executed non-EXP research axis: {it.source_title}",
-                            evidence=it.source_document,
-                            confidence=1.0,
-                        )
-                    )
-                elif "TRIO-ORBIT-STATISTICAL-CORRECTION" in sid:
-                    mappings.append(
-                        SourceMappingEntry(
-                            source_item_id=sid,
-                            normalized_record_id="NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
-                            mapping_type=MappingType.DIRECT.value,
-                            mapping_reason=f"Distinct executed non-EXP research axis: {it.source_title}",
+                            mapping_reason=f"Distinct executed non-EXP research axis without formal registry parent: {it.source_title}",
                             evidence=it.source_document,
                             confidence=1.0,
                         )
                     )
                 else:
                     # All other non-EXP executed research axes have distinct identity -> DIRECT mapping
-                    norm_id = f"NON-EXP-{sid.replace('SRC-NONEXP-', '')}"
+                    norm_id = f"NON-EXP-{num:02d}"
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
                             normalized_record_id=norm_id,
                             mapping_type=MappingType.DIRECT.value,
-                            mapping_reason=f"Distinct executed non-EXP research axis: {it.source_title}",
+                            mapping_reason=f"Distinct executed non-EXP research axis without formal registry parent: {it.source_title}",
                             evidence=it.source_document,
                             confidence=1.0,
                         )
                     )
+
+            elif sclass == SourceClass.OTHER_RESEARCH_SOURCE.value:
+                if "WHOLE-ENGINE" in sid:
+                    norm_id = "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY"
+                elif "PROSPECTIVE-RETROSPECTIVE" in sid:
+                    norm_id = "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE"
+                elif "STATISTICAL-CORRECTION" in sid:
+                    norm_id = "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION"
+                else:
+                    norm_id = sid.replace("SRC-OTHER-", "OTHER-RESEARCH-")
+                mappings.append(
+                    SourceMappingEntry(
+                        source_item_id=sid,
+                        normalized_record_id=norm_id,
+                        mapping_type=MappingType.DIRECT.value,
+                        mapping_reason=f"Distinct post-master audit research axis: {it.source_title}",
+                        evidence=it.source_document,
+                        confidence=1.0,
+                    )
+                )
             else:
                 unmapped.append(sid)
 
@@ -710,17 +784,27 @@ class ResearchKnowledgeCoverageManifestBuilder:
         total_count = len(source_items)
         coverage_ratio = mapped_count / total_count if total_count > 0 else 0.0
 
-        # Referential integrity audit
+        # 1. Referential integrity audit
         from .canonical_id_resolver import CanonicalResearchIdResolver
         resolver = CanonicalResearchIdResolver(self.root)
         audit_report = resolver.audit_referential_integrity(source_items, mappings)
         resolver.save_audit_report(audit_report)
 
+        # 2. Master source identity reconciliation audit
+        from .master_source_raw_extractor import MasterSourceRawExtractor
+        raw_extractor = MasterSourceRawExtractor(self.root)
+        raw_snapshot = raw_extractor.extract_raw_section_c()
+        raw_extractor.save_snapshot(raw_snapshot)
+        non_exp_prods = [it for it in source_items if it.source_class == SourceClass.NON_EXP_EXECUTED.value]
+        identity_report = raw_extractor.reconcile_parsers(raw_snapshot, non_exp_prods)
+        raw_extractor.save_identity_audit(identity_report)
+
+        is_identity_pass = identity_report.verdict == "PASS_MASTER_SOURCE_IDENTITY"
         is_integrity_pass = audit_report.referential_integrity_verdict in (
             "PASS_REFERENTIAL_INTEGRITY",
             "PASS_NON_EXP_REFERENTIAL_INTEGRITY",
         )
-        is_complete = (len(unmapped) == 0) and (mapped_count == total_count) and is_integrity_pass
+        is_complete = (len(unmapped) == 0) and (mapped_count == total_count) and is_integrity_pass and is_identity_pass
 
         src_counts = {sc.value: sum(1 for it in source_items if it.source_class == sc.value) for sc in SourceClass}
         type_counts = {mt.value: sum(1 for m in mappings if m.mapping_type == mt.value) for mt in MappingType}
@@ -733,6 +817,8 @@ class ResearchKnowledgeCoverageManifestBuilder:
             is_complete=is_complete,
             has_referential_integrity=is_integrity_pass,
             referential_integrity_audit=audit_report.to_dict(),
+            has_master_source_identity=is_identity_pass,
+            master_source_identity_audit=identity_report.to_dict(),
             mappings=mappings,
             unmapped_items=unmapped,
             source_class_counts=src_counts,

@@ -1,8 +1,8 @@
 {
   "version": "1.0",
-  "total_audited_items": 31,
+  "total_audited_items": 28,
   "verdict_counts": {
-    "VALID_DIRECT": 23,
+    "VALID_DIRECT": 20,
     "VALID_ALIAS": 5,
     "VALID_MERGE": 2,
     "VALID_RELATED_DISTINCT": 1,
@@ -20,9 +20,13 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-TRIO-ORBIT-FIXED",
+      "ordinal": 1,
+      "raw_title": "TRIO ORBIT Fixed/Linked 역사검증",
+      "raw_source_text": "TRIO ORBIT Fixed/Linked 역사검증.",
+      "source_fingerprint": "0cbe5a67b5c6e976bbc959d5897a5c6ab8baa6bbd09c0386a4734aba721a5713",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
@@ -45,9 +49,13 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-TRIO-ORBIT-LINKED",
+      "ordinal": 2,
+      "raw_title": "TRIO ORBIT divergence attribution",
+      "raw_source_text": "TRIO ORBIT divergence attribution.",
+      "source_fingerprint": "1d54ad01fb06090adea1086f7c2d77366712d635adee7a4b7ca1f2ebd0897e31",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
@@ -70,14 +78,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-03",
+      "ordinal": 3,
+      "raw_title": "KTS pair-completion collision",
+      "raw_source_text": "KTS pair-completion collision.",
+      "source_fingerprint": "0512cdd9ada12e83848a62e529d957e3d200bf9e36f93b994e41e1b47af4bd1b",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: KTS pair-completion collision",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: KTS pair-completion collision",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -95,14 +107,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-04",
+      "ordinal": 4,
+      "raw_title": "LAG 3~6 reappearance map",
+      "raw_source_text": "LAG 3~6 reappearance map.",
+      "source_fingerprint": "8358da3d52ee1b29ad3903e1d88edbdbc779d8ca35c6208da0eec873d6886ead",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: LAG 3~6 reappearance map",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: LAG 3~6 reappearance map",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -120,14 +136,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-05",
+      "ordinal": 5,
+      "raw_title": "BONUS extinction interaction",
+      "raw_source_text": "BONUS extinction interaction.",
+      "source_fingerprint": "98e83fb1aa334285b1b51433c898901bbe0788a4fa94e46e82cf7c0bbe1308ba",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: BONUS extinction interaction",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: BONUS extinction interaction",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -145,14 +165,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-06",
+      "ordinal": 6,
+      "raw_title": "BONUS lag2 interaction",
+      "raw_source_text": "BONUS lag2 interaction.",
+      "source_fingerprint": "03a125f340ec2cd8acc84f4a24502f1d9cc5897fcc89a4a2d9aee081ffb9e76e",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: BONUS lag2 interaction",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: BONUS lag2 interaction",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -170,14 +194,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-07",
+      "ordinal": 7,
+      "raw_title": "Ending-frequency interaction",
+      "raw_source_text": "Ending-frequency interaction.",
+      "source_fingerprint": "298beacfcc9559308e7bfd8cbf422272c3a2b63f86589d07d2df265bd6166564",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Ending-frequency interaction",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Ending-frequency interaction",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -195,14 +223,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-08",
+      "ordinal": 8,
+      "raw_title": "TRIO HOLD causal decomposition",
+      "raw_source_text": "TRIO HOLD causal decomposition.",
+      "source_fingerprint": "9a918f86b86223b4b7b0c7e612844fffe851a8578b120edebfcd3810b60c8fa0",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO HOLD causal decomposition",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: TRIO HOLD causal decomposition",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -220,14 +252,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-09",
+      "ordinal": 9,
+      "raw_title": "Survivor-pool rolling-origin actionability",
+      "raw_source_text": "Survivor-pool rolling-origin actionability.",
+      "source_fingerprint": "73bb5f7dd27a890d2f2649c8ab770ab18a830151af82572dd7e1ec4904297d46",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Survivor-pool rolling-origin actionability",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Survivor-pool rolling-origin actionability",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -245,14 +281,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-10",
+      "ordinal": 10,
+      "raw_title": "Opposite-period stability filter validation",
+      "raw_source_text": "Opposite-period stability filter validation.",
+      "source_fingerprint": "e2c49c7ffc3492c66b3fd6b91fac04e2b38b10e2fc9246262d6c4a2dd62209d1",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Opposite-period stability filter validation",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Opposite-period stability filter validation",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -270,14 +310,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-11",
+      "ordinal": 11,
+      "raw_title": "NO-PICK structural root-cause audit",
+      "raw_source_text": "NO-PICK structural root-cause audit.",
+      "source_fingerprint": "0351ba3f016832f14cb1531c1a3df4b3f2392b78588e9528535e3f706fb34022",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: NO-PICK structural root-cause audit",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: NO-PICK structural root-cause audit",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -295,14 +339,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-12",
+      "ordinal": 12,
+      "raw_title": "NO-PICK causal trace",
+      "raw_source_text": "NO-PICK causal trace.",
+      "source_fingerprint": "345c93676cc4bdaf6deb9f3c6fb592fd624194337282f0fc8d458919252657a4",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: NO-PICK causal trace",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: NO-PICK causal trace",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -320,14 +368,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-13",
+      "ordinal": 13,
+      "raw_title": "NUMBER member-structure SEVERE causal trace",
+      "raw_source_text": "NUMBER member-structure SEVERE causal trace.",
+      "source_fingerprint": "bec7129c3159d1542273baf8fe06583eb75546158bf47dc2e21cb92f4c5610bd",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: NUMBER member-structure SEVERE causal trace",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: NUMBER member-structure SEVERE causal trace",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -345,14 +397,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-14",
+      "ordinal": 14,
+      "raw_title": "Current-1239 END_DIGIT severe causal trace",
+      "raw_source_text": "Current-1239 END_DIGIT severe causal trace.",
+      "source_fingerprint": "d27949801c9565af95473ec7ba42e338e7003c7b262bd328341a9a0a61829cf3",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 END_DIGIT severe causal trace",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 END_DIGIT severe causal trace",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -370,14 +426,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-15",
+      "ordinal": 15,
+      "raw_title": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "raw_source_text": "Current-1239 NUMBER/END_DIGIT root-cause trace.",
+      "source_fingerprint": "d3423f521935bf98c3d00b66b1f0c3b6f9531e1b731bf15e3139def11eeddb88",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 NUMBER/END_DIGIT root-cause trace",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -395,14 +455,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-16",
+      "ordinal": 16,
+      "raw_title": "Current-1239 opposite-period causal trace",
+      "raw_source_text": "Current-1239 opposite-period causal trace.",
+      "source_fingerprint": "99c098b0b3c7c806a2a4c751c9fd0f4a710a16d9bed45e34770a05e9aa0658da",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 opposite-period causal trace",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 opposite-period causal trace",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -420,14 +484,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-17",
+      "ordinal": 17,
+      "raw_title": "Current-1239 official pre-draw audit",
+      "raw_source_text": "Current-1239 official pre-draw audit.",
+      "source_fingerprint": "d60cd4759203bde804974d91c150bfa64b9b600ccff935c3dbbb8587a6ee6e0b",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 official pre-draw audit",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 official pre-draw audit",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -445,14 +513,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-18",
+      "ordinal": 18,
+      "raw_title": "Contiguous 1..1238 rebuild and 1239 rerun",
+      "raw_source_text": "Contiguous 1..1238 rebuild and 1239 rerun.",
+      "source_fingerprint": "408ea3606d60ae87e9120406b7fac2060f554c0c65dd8ed1ad749b0a70ba7c86",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Contiguous 1..1238 rebuild and 1239 rerun",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -470,14 +542,18 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-19",
+      "ordinal": 19,
+      "raw_title": "Discovery 2.0 independent-signal audit",
+      "raw_source_text": "Discovery 2.0 independent-signal audit.",
+      "source_fingerprint": "7f4c10be1294633527cc77b32af85d8ba267573be3dac6550290af58fc2dbc37",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: Discovery 2.0 independent-signal audit",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
@@ -495,6 +571,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "DRAW",
       "current_target_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+      "ordinal": 20,
+      "raw_title": "Pair shadow repair deterministic validation",
+      "raw_source_text": "Pair shadow repair deterministic validation.",
+      "source_fingerprint": "a3e67bea7c2b48ad24a74abf6b957ebd0283cac53b71eb51f3eb6d159703c25b",
       "candidate_formal_targets": [
         "EXP-DRAW-20260824-010-V1"
       ],
@@ -529,6 +609,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "DRAW",
       "current_target_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+      "ordinal": 21,
+      "raw_title": "Official repair Phase A/B canary/change-control validation",
+      "raw_source_text": "Official repair Phase A/B canary/change-control validation.",
+      "source_fingerprint": "2de8c46248e1101175086602466b5d1a9eb9d2957ca0af406ecc61ff996579f8",
       "candidate_formal_targets": [
         "EXP-DRAW-20260824-010-V1"
       ],
@@ -563,6 +647,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "DRAW",
       "current_target_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+      "ordinal": 22,
+      "raw_title": "Official repair apply/finalize verification",
+      "raw_source_text": "Official repair apply/finalize verification.",
+      "source_fingerprint": "4873b121d460a7ccafdc6d9df1d2443f9633567b1aaf0a7bf59214f35db33257",
       "candidate_formal_targets": [
         "EXP-DRAW-20260824-010-V1"
       ],
@@ -597,6 +685,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "CROWD",
       "current_target_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+      "ordinal": 23,
+      "raw_title": "Crowd topology 001 supporting audit lineage",
+      "raw_source_text": "Crowd topology 001 supporting audit lineage.",
+      "source_fingerprint": "b44577db3b819ae5bb804cc7b23ccfe752ce251b7e1782dbf4e6026082a4de65",
       "candidate_formal_targets": [
         "EXP-CROWD-20260823-005-V1"
       ],
@@ -631,6 +723,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "CROWD",
       "current_target_title": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION",
+      "ordinal": 24,
+      "raw_title": "Crowd topology 002 independent reproduction/calibration",
+      "raw_source_text": "Crowd topology 002 independent reproduction/calibration.",
+      "source_fingerprint": "5f4045458f231b1b79b593c7a8b7fa2c03689a95c13343b2c5c916d6b304ba5e",
       "candidate_formal_targets": [
         "EXP-CROWD-20260823-006-V1"
       ],
@@ -666,6 +762,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "CROWD",
       "current_target_title": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS",
+      "ordinal": 25,
+      "raw_title": "Crowd topology 003 supporting methodology lineage",
+      "raw_source_text": "Crowd topology 003 supporting methodology lineage.",
+      "source_fingerprint": "5892dabec5373c046a886294bd03076b2a6f40fc505f84d585babb3fac295bbb",
       "candidate_formal_targets": [
         "EXP-CROWD-20260823-007-V1"
       ],
@@ -700,6 +800,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "CROWD",
       "current_target_title": "MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "ordinal": 26,
+      "raw_title": "Crowd retail 001 calibration/reproduction lineage",
+      "raw_source_text": "Crowd retail 001 calibration/reproduction lineage.",
+      "source_fingerprint": "2393a9add962e9ce0c0d6202f8cc20402201e1b808c0adaa8c9dfadb57958835",
       "candidate_formal_targets": [
         "EXP-CROWD-20260823-008-V1"
       ],
@@ -734,6 +838,10 @@
       "current_target_namespace": "CANONICAL_REGISTRY_ID",
       "current_target_domain": "PRIZE_SHARE",
       "current_target_title": "BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)",
+      "ordinal": 27,
+      "raw_title": "Prize-share 001/002 historical validation 및 prospective preparation lineage",
+      "raw_source_text": "Prize-share 001/002 historical validation 및 prospective preparation lineage.",
+      "source_fingerprint": "9da8de9b7fb2a1dcd84c6036e8b858eef15bb3fbae742d730ad9f89b96714710",
       "candidate_formal_targets": [
         "EXP-PRIZE-20260816-001-V2",
         "EXP-PRIZE-20260821-004-V1",
@@ -784,94 +892,23 @@
       "current_target_namespace": "NON_EXP_ID",
       "current_target_domain": "NON_REGISTRY",
       "current_target_title": "NON-EXP-28",
+      "ordinal": 28,
+      "raw_title": "LZ76 거시 복잡도 국면 고립 검정 V1",
+      "raw_source_text": "LZ76 거시 복잡도 국면 고립 검정 V1 — `FAILED_NOT_SUPPORTED`; occupancy p1 `0.014598540145985401` PASS, persistence p2 `0.43745625437456254` FAIL, joint `NO`, reproducibility `PASS`, future leakage `0`.",
+      "source_fingerprint": "cd2fdf2a04a034ef0d435fc8a950dde13d1883ecca41041500eb1041df098afd",
       "candidate_formal_targets": [],
       "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "domain_compatible": true,
       "ontology_compatible": true,
       "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: LZ76 거시 복잡도 국면 고립 검정 V1",
+      "explicit_lineage_evidence": "Distinct executed non-EXP research axis without formal registry parent: LZ76 거시 복잡도 국면 고립 검정 V1",
       "protocol_or_result_evidence": "",
       "audit_evidence": "",
       "final_mapping_type": "DIRECT",
       "final_target_id": "NON-EXP-28",
       "final_reason": "Distinct executed non-EXP research axis without formal registry parent: LZ76 거시 복잡도 국면 고립 검정 V1",
-      "verdict": "VALID_DIRECT",
-      "lineage_targets": []
-    },
-    {
-      "source_item_id": "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
-      "source_title": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
-      "source_description": "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/",
-      "current_mapping_type": "DIRECT",
-      "current_target_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
-      "current_target_namespace": "NON_EXP_ID",
-      "current_target_domain": "NON_REGISTRY",
-      "current_target_title": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
-      "candidate_formal_targets": [],
-      "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
-      ],
-      "domain_compatible": true,
-      "ontology_compatible": true,
-      "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001",
-      "protocol_or_result_evidence": "",
-      "audit_evidence": "",
-      "final_mapping_type": "DIRECT",
-      "final_target_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
-      "final_reason": "Distinct executed non-EXP research axis without formal registry parent: WHOLE-ENGINE synthetic replay semantics recovery audit 001",
-      "verdict": "VALID_DIRECT",
-      "lineage_targets": []
-    },
-    {
-      "source_item_id": "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-      "source_title": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
-      "source_description": "v27_storage/audits/trio_orbit_prospective_retrospective_001/",
-      "current_mapping_type": "DIRECT",
-      "current_target_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-      "current_target_namespace": "NON_EXP_ID",
-      "current_target_domain": "NON_REGISTRY",
-      "current_target_title": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-      "candidate_formal_targets": [],
-      "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
-      ],
-      "domain_compatible": true,
-      "ontology_compatible": true,
-      "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
-      "protocol_or_result_evidence": "",
-      "audit_evidence": "",
-      "final_mapping_type": "DIRECT",
-      "final_target_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-      "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
-      "verdict": "VALID_DIRECT",
-      "lineage_targets": []
-    },
-    {
-      "source_item_id": "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
-      "source_title": "TRIO ORBIT Statistical Correction & Null Calibration 001",
-      "source_description": "v27_storage/audits/trio_orbit_prospective_retrospective_001/TRIO_ORBIT_STATISTICAL_CORRECTION_001.md",
-      "current_mapping_type": "DIRECT",
-      "current_target_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
-      "current_target_namespace": "NON_EXP_ID",
-      "current_target_domain": "NON_REGISTRY",
-      "current_target_title": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
-      "candidate_formal_targets": [],
-      "candidate_evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
-      ],
-      "domain_compatible": true,
-      "ontology_compatible": true,
-      "title_semantic_compatible": true,
-      "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO ORBIT Statistical Correction & Null Calibration 001",
-      "protocol_or_result_evidence": "",
-      "audit_evidence": "",
-      "final_mapping_type": "DIRECT",
-      "final_target_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
-      "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO ORBIT Statistical Correction & Null Calibration 001",
       "verdict": "VALID_DIRECT",
       "lineage_targets": []
     }

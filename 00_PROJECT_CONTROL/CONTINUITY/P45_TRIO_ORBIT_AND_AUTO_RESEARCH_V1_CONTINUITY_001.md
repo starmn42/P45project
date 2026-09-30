@@ -190,3 +190,35 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - Git Commit: `P45 enforce non-EXP lineage integrity`.
   - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
 
+### 9. P45 MASTER SOURCE IDENTITY LOCK & INVENTORY FINGERPRINT FINAL AUDIT (2026-09-30)
+- **배경 및 원인 분석 (Root Cause):**
+  - 직전 보고에서 NON-EXP 항목명으로 "Number order statistical distribution", "Consecutive number adjacency structure" 등 실제 Research Master Section C에 존재하지 않는 합성 영문 연구명이 주입되는 치환 결함(Title Substitution) 확인.
+  - Section C의 실제 연구 목록은 28개 축이며, 이후 추가된 3건의 실동 감사(Whole Engine, Trio Orbit 회고, Trio Orbit 통계교정)가 Section C에 혼입되어 31개로 하드코딩되었던 출처 분류 혼선 확인.
+- **핵심 구현 및 불변 잠금 (Identity Lock):**
+  - **독립 1차 원문 추출기 (`MasterSourceRawExtractor`):**
+    - 기존 인벤토리/지식 빌더 모듈과 일체의 함수/변수를 공유하지 않는 독립 Raw Parser 구축.
+    - Section C의 28개 한국어 원문 제목/텍스트를 번역·요약·치환 없이 1:1 보존한 `MASTER_NON_EXP_RAW_SNAPSHOT.json` 및 `.md` 생성.
+    - 항목별 SHA-256 fingerprint 및 전체 섹션 SHA-256 fingerprint (`66baf18efd12f9ad6d1a6e9f5e80422a5cfe9539025937b5a7e77bbc39a2b6bf`) 산출 및 `MASTER_NON_EXP_SOURCE_FINGERPRINTS.json` 영구 보존.
+  - **출처 분류 체계 분리:**
+    - Section C 28개 축: `NON_EXP_EXECUTED` (28건)로 1:1 고정.
+    - 이후 3건의 실동 감사: `SourceClass.OTHER_RESEARCH_SOURCE` (3건: `SRC-OTHER-01` ~ `SRC-OTHER-03`)로 정당 분리.
+    - 전체 소스 총계 115건 (Formal 69 + Official 12 + NON_EXP 28 + Reviewed 2 + Active Prospective 1 + Other 3) 완벽 보존.
+  - **Two-Parser Exact Reconciliation:**
+    - 독립 1차 Raw Extractor와 2차 Production Parser 간 전수 1:1 대조 감사 (`MASTER_SOURCE_IDENTITY_AUDIT.json`, `.md`).
+    - `RAW_COUNT == PARSED_COUNT == 28`, 제목 치환 0건, 지문 불일치 0건, 누락 0건, 위조 0건 전수 검증 통과 (`PASS_MASTER_SOURCE_IDENTITY`).
+  - **Fail-Closed 하드 가드 장착:**
+    - `ResearchDiscoveryAgent` 0번 게이트에 Master Source Identity Gate 장착. 불일치 발견 시 즉각 `BLOCKED_MASTER_SOURCE_IDENTITY` 발동 및 아이디어 생성 원천 차단.
+  - **기존 Lineage Fix 및 후보 A/B/C 판정 보존:**
+    - PAIR 20~22, CROWD 23~26 (`EXP-CROWD-20260823-005~008-V1`), PRIZE 27 다중 계보 등 이전 계보 수정 완전 보존.
+    - 후보 C (IDEA-1243-CROS-003): 무관한 쌍둥이 회차 유입 차단 유지, PAIR repair 감사행 기준 `NEEDS_EVIDENCE` 유지 (자동 승격 0).
+    - 후보 A/B: `REJECT_RESCUE` 유지.
+- **무결성 및 검증 요약:**
+  - 26개 신규 테스트 추가 (`TestMasterSourceIdentityAndFingerprint`), 총 136개 단위 테스트 전수 통과 (0 failures, 0 errors).
+  - Official 엔진 보호 검증 PASS: 변경 0건, Future Leakage 0건.
+  - 정식 레지스트리 69행 유지 (신규 실험 0건, 신규 등록 0건).
+  - 로컬 런타임 활성화: MASTER_SOURCE_IDENTITY_GUARD_ACTIVE = YES.
+  - 최종 무결성 판정: `PASS_MASTER_SOURCE_IDENTITY`.
+  - Git Commit: `P45 lock Research Master source identity`.
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+
+

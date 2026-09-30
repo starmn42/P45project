@@ -1,0 +1,148 @@
+{
+  "source_document": "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md",
+  "section_heading": "## C. EXP ID 없이 실제 계산·검증한 연구 — 28개 축",
+  "section_fingerprint": "66baf18efd12f9ad6d1a6e9f5e80422a5cfe9539025937b5a7e77bbc39a2b6bf",
+  "total_items": 28,
+  "item_fingerprints": {
+    "1": {
+      "raw_title": "TRIO ORBIT Fixed/Linked 역사검증",
+      "fingerprint": "0cbe5a67b5c6e976bbc959d5897a5c6ab8baa6bbd09c0386a4734aba721a5713",
+      "line_number": 98
+    },
+    "2": {
+      "raw_title": "TRIO ORBIT divergence attribution",
+      "fingerprint": "1d54ad01fb06090adea1086f7c2d77366712d635adee7a4b7ca1f2ebd0897e31",
+      "line_number": 99
+    },
+    "3": {
+      "raw_title": "KTS pair-completion collision",
+      "fingerprint": "0512cdd9ada12e83848a62e529d957e3d200bf9e36f93b994e41e1b47af4bd1b",
+      "line_number": 100
+    },
+    "4": {
+      "raw_title": "LAG 3~6 reappearance map",
+      "fingerprint": "8358da3d52ee1b29ad3903e1d88edbdbc779d8ca35c6208da0eec873d6886ead",
+      "line_number": 101
+    },
+    "5": {
+      "raw_title": "BONUS extinction interaction",
+      "fingerprint": "98e83fb1aa334285b1b51433c898901bbe0788a4fa94e46e82cf7c0bbe1308ba",
+      "line_number": 102
+    },
+    "6": {
+      "raw_title": "BONUS lag2 interaction",
+      "fingerprint": "03a125f340ec2cd8acc84f4a24502f1d9cc5897fcc89a4a2d9aee081ffb9e76e",
+      "line_number": 103
+    },
+    "7": {
+      "raw_title": "Ending-frequency interaction",
+      "fingerprint": "298beacfcc9559308e7bfd8cbf422272c3a2b63f86589d07d2df265bd6166564",
+      "line_number": 104
+    },
+    "8": {
+      "raw_title": "TRIO HOLD causal decomposition",
+      "fingerprint": "9a918f86b86223b4b7b0c7e612844fffe851a8578b120edebfcd3810b60c8fa0",
+      "line_number": 105
+    },
+    "9": {
+      "raw_title": "Survivor-pool rolling-origin actionability",
+      "fingerprint": "73bb5f7dd27a890d2f2649c8ab770ab18a830151af82572dd7e1ec4904297d46",
+      "line_number": 106
+    },
+    "10": {
+      "raw_title": "Opposite-period stability filter validation",
+      "fingerprint": "e2c49c7ffc3492c66b3fd6b91fac04e2b38b10e2fc9246262d6c4a2dd62209d1",
+      "line_number": 107
+    },
+    "11": {
+      "raw_title": "NO-PICK structural root-cause audit",
+      "fingerprint": "0351ba3f016832f14cb1531c1a3df4b3f2392b78588e9528535e3f706fb34022",
+      "line_number": 108
+    },
+    "12": {
+      "raw_title": "NO-PICK causal trace",
+      "fingerprint": "345c93676cc4bdaf6deb9f3c6fb592fd624194337282f0fc8d458919252657a4",
+      "line_number": 109
+    },
+    "13": {
+      "raw_title": "NUMBER member-structure SEVERE causal trace",
+      "fingerprint": "bec7129c3159d1542273baf8fe06583eb75546158bf47dc2e21cb92f4c5610bd",
+      "line_number": 110
+    },
+    "14": {
+      "raw_title": "Current-1239 END_DIGIT severe causal trace",
+      "fingerprint": "d27949801c9565af95473ec7ba42e338e7003c7b262bd328341a9a0a61829cf3",
+      "line_number": 111
+    },
+    "15": {
+      "raw_title": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "fingerprint": "d3423f521935bf98c3d00b66b1f0c3b6f9531e1b731bf15e3139def11eeddb88",
+      "line_number": 112
+    },
+    "16": {
+      "raw_title": "Current-1239 opposite-period causal trace",
+      "fingerprint": "99c098b0b3c7c806a2a4c751c9fd0f4a710a16d9bed45e34770a05e9aa0658da",
+      "line_number": 113
+    },
+    "17": {
+      "raw_title": "Current-1239 official pre-draw audit",
+      "fingerprint": "d60cd4759203bde804974d91c150bfa64b9b600ccff935c3dbbb8587a6ee6e0b",
+      "line_number": 114
+    },
+    "18": {
+      "raw_title": "Contiguous 1..1238 rebuild and 1239 rerun",
+      "fingerprint": "408ea3606d60ae87e9120406b7fac2060f554c0c65dd8ed1ad749b0a70ba7c86",
+      "line_number": 115
+    },
+    "19": {
+      "raw_title": "Discovery 2.0 independent-signal audit",
+      "fingerprint": "7f4c10be1294633527cc77b32af85d8ba267573be3dac6550290af58fc2dbc37",
+      "line_number": 116
+    },
+    "20": {
+      "raw_title": "Pair shadow repair deterministic validation",
+      "fingerprint": "a3e67bea7c2b48ad24a74abf6b957ebd0283cac53b71eb51f3eb6d159703c25b",
+      "line_number": 117
+    },
+    "21": {
+      "raw_title": "Official repair Phase A/B canary/change-control validation",
+      "fingerprint": "2de8c46248e1101175086602466b5d1a9eb9d2957ca0af406ecc61ff996579f8",
+      "line_number": 118
+    },
+    "22": {
+      "raw_title": "Official repair apply/finalize verification",
+      "fingerprint": "4873b121d460a7ccafdc6d9df1d2443f9633567b1aaf0a7bf59214f35db33257",
+      "line_number": 119
+    },
+    "23": {
+      "raw_title": "Crowd topology 001 supporting audit lineage",
+      "fingerprint": "b44577db3b819ae5bb804cc7b23ccfe752ce251b7e1782dbf4e6026082a4de65",
+      "line_number": 120
+    },
+    "24": {
+      "raw_title": "Crowd topology 002 independent reproduction/calibration",
+      "fingerprint": "5f4045458f231b1b79b593c7a8b7fa2c03689a95c13343b2c5c916d6b304ba5e",
+      "line_number": 121
+    },
+    "25": {
+      "raw_title": "Crowd topology 003 supporting methodology lineage",
+      "fingerprint": "5892dabec5373c046a886294bd03076b2a6f40fc505f84d585babb3fac295bbb",
+      "line_number": 122
+    },
+    "26": {
+      "raw_title": "Crowd retail 001 calibration/reproduction lineage",
+      "fingerprint": "2393a9add962e9ce0c0d6202f8cc20402201e1b808c0adaa8c9dfadb57958835",
+      "line_number": 123
+    },
+    "27": {
+      "raw_title": "Prize-share 001/002 historical validation 및 prospective preparation lineage",
+      "fingerprint": "9da8de9b7fb2a1dcd84c6036e8b858eef15bb3fbae742d730ad9f89b96714710",
+      "line_number": 124
+    },
+    "28": {
+      "raw_title": "LZ76 거시 복잡도 국면 고립 검정 V1",
+      "fingerprint": "cd2fdf2a04a034ef0d435fc8a950dde13d1883ecca41041500eb1041df098afd",
+      "line_number": 125
+    }
+  }
+}

@@ -114,9 +114,9 @@
 | 99 | `NON-EXP-18` | Contiguous 1..1238 rebuild and 1239 rerun | `NON_EXP_EXECUTED` | `COMPLETED` | Diagnostic insight | Standard null |
 | 100 | `NON-EXP-19` | Discovery 2.0 independent-signal audit | `NON_EXP_EXECUTED` | `COMPLETED` | Diagnostic insight | Standard null |
 | 101 | `NON-EXP-28` | LZ76 거시 복잡도 국면 고립 검정 V1 | `NON_EXP_EXECUTED` | `FAILED_NOT_SUPPORTED` | Diagnostic insight | Standard null |
-| 102 | `NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY` | WHOLE-ENGINE synthetic replay semantics recovery audit 001 | `NON_EXP_EXECUTED` | `COMPLETED` | Semantic recovery and pipeline integrity | Synthetic permutation baseline |
-| 103 | `NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001 | `NON_EXP_EXECUTED` | `ACTIVE` | PRIMARY and SUPPORT hits | Exact binomial null p0 ≈ 0.121226 |
-| 104 | `NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION` | TRIO ORBIT Statistical Correction & Null Calibration 001 | `NON_EXP_EXECUTED` | `COMPLETED` | PRIMARY and SUPPORT hits | Exact binomial null p0 ≈ 0.121226 |
-| 105 | `REVIEWED-MBC_실제_공_추첨순서` | MBC 실제 공 추첨순서 / DRAW-ORDER | `REVIEWED_UNEXECUTED` | `REVIEWED_UNEXECUTED` | UNKNOWN | UNKNOWN |
-| 106 | `REVIEWED-REHEARSAL` | REHEARSAL / 리허설 번호 | `REVIEWED_UNEXECUTED` | `REVIEWED_UNEXECUTED` | Rehearsal draw influence | Independent draw null |
-| 107 | `PROSPECTIVE-TRIO-ORBIT-TARGET-1244` | TRIO ORBIT Target Round 1244 Prospective Predraw | `ACTIVE_PROSPECTIVE` | `PENDING_SEALED` | PRIMARY (3/3) and SUPPORT (2/3) hits | Exact hypergeometric combinations null |
+| 102 | `REVIEWED-MBC_실제_공_추첨순서` | MBC 실제 공 추첨순서 / DRAW-ORDER | `REVIEWED_UNEXECUTED` | `REVIEWED_UNEXECUTED` | UNKNOWN | UNKNOWN |
+| 103 | `REVIEWED-REHEARSAL` | REHEARSAL / 리허설 번호 | `REVIEWED_UNEXECUTED` | `REVIEWED_UNEXECUTED` | Rehearsal draw influence | Independent draw null |
+| 104 | `PROSPECTIVE-TRIO-ORBIT-TARGET-1244` | TRIO ORBIT Target Round 1244 Prospective Predraw | `ACTIVE_PROSPECTIVE` | `PENDING_SEALED` | PRIMARY (3/3) and SUPPORT (2/3) hits | Exact hypergeometric combinations null |
+| 105 | `NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY` | WHOLE-ENGINE synthetic replay semantics recovery audit 001 | `OTHER_RESEARCH_SOURCE` | `COMPLETED` | Semantic recovery and pipeline integrity | Synthetic permutation baseline |
+| 106 | `NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001 | `OTHER_RESEARCH_SOURCE` | `ACTIVE` | PRIMARY and SUPPORT hits | Exact binomial null p0 ≈ 0.121226 |
+| 107 | `NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION` | TRIO ORBIT Statistical Correction & Null Calibration 001 | `OTHER_RESEARCH_SOURCE` | `COMPLETED` | PRIMARY and SUPPORT hits | Exact binomial null p0 ≈ 0.121226 |

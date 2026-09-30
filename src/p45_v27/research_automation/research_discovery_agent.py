@@ -118,6 +118,23 @@ class ResearchDiscoveryAgent:
         else:
             idempotency_key = f"discovery_cycle:v1_1:{canonical_round}"
         safe_key_filename = idempotency_key.replace(":", "_")
+
+        # 0. Master Source Identity Gate (Fail-Closed)
+        manifest = getattr(self.knowledge_index, "manifest", None)
+        if manifest and not getattr(manifest, "has_master_source_identity", True):
+            logger.error(
+                "FAIL_CLOSED: Research Master source identity is not exact or fingerprint mismatch. "
+                "Discovery Agent refuses to generate ideas."
+            )
+            return {
+                "status": "BLOCKED_MASTER_SOURCE_IDENTITY",
+                "round": canonical_round,
+                "idempotency_key": idempotency_key,
+                "new_candidates_count": 0,
+                "ready_for_protocol_count": 0,
+                "official_lifecycle_affected": False,
+            }
+
         # 1. Fail-Closed Knowledge Coverage Check (First Gate)
         if not self.knowledge_index.is_coverage_complete():
             logger.error(

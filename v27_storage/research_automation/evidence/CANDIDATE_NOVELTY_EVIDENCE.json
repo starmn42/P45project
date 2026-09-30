@@ -443,7 +443,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: spacing, NUMBER",
+            "Shared ontology concepts: NUMBER, spacing",
             "Shared adjacent spacing / proximity domain inputs",
             "Overlapping target definition: ",
             "Substantive overlap with registered/failed spacing-neighbor axis EXP-DRAW-20260816-026-V1"
@@ -483,7 +483,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: spacing, NUMBER",
+            "Shared ontology concepts: NUMBER, spacing",
             "Shared adjacent spacing / proximity domain inputs",
             "Overlapping target definition: ",
             "Substantive overlap with registered/failed spacing-neighbor axis EXP-DRAW-20260816-027-V1"
@@ -560,7 +560,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: spacing, NUMBER",
+            "Shared ontology concepts: NUMBER, spacing",
             "Shared adjacent spacing / proximity domain inputs",
             "Overlapping target definition: "
           ],
@@ -709,7 +709,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: spacing, NUMBER",
+            "Shared ontology concepts: NUMBER, spacing",
             "Overlapping target definition: "
           ],
           "different_features": [

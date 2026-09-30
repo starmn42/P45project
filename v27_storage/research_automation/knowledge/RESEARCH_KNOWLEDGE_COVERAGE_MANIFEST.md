@@ -104,25 +104,25 @@
 | 79 | `SRC-OFFICIAL-10-FIXED_ORBIT` | `OFFICIAL-FIXED-ORBIT` | `DIRECT` | Authoritative official internal research axis Fixed Orbit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 80 | `SRC-OFFICIAL-11-LINKED_ORBIT` | `OFFICIAL-LINKED-ORBIT` | `DIRECT` | Authoritative official internal research axis Linked Orbit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 81 | `SRC-OFFICIAL-12-KTS45` | `OFFICIAL-KTS45` | `DIRECT` | Authoritative official internal research axis KTS45 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 82 | `SRC-NONEXP-01` | `NON-EXP-TRIO-ORBIT-FIXED` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT Fixed/Linked 역사검증 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 83 | `SRC-NONEXP-02` | `NON-EXP-TRIO-ORBIT-LINKED` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT divergence attribution | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 84 | `SRC-NONEXP-03` | `NON-EXP-03` | `DIRECT` | Distinct executed non-EXP research axis: KTS pair-completion collision | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 85 | `SRC-NONEXP-04` | `NON-EXP-04` | `DIRECT` | Distinct executed non-EXP research axis: LAG 3~6 reappearance map | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 86 | `SRC-NONEXP-05` | `NON-EXP-05` | `DIRECT` | Distinct executed non-EXP research axis: BONUS extinction interaction | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 87 | `SRC-NONEXP-06` | `NON-EXP-06` | `DIRECT` | Distinct executed non-EXP research axis: BONUS lag2 interaction | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 88 | `SRC-NONEXP-07` | `NON-EXP-07` | `DIRECT` | Distinct executed non-EXP research axis: Ending-frequency interaction | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 89 | `SRC-NONEXP-08` | `NON-EXP-08` | `DIRECT` | Distinct executed non-EXP research axis: TRIO HOLD causal decomposition | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 90 | `SRC-NONEXP-09` | `NON-EXP-09` | `DIRECT` | Distinct executed non-EXP research axis: Survivor-pool rolling-origin actionability | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 91 | `SRC-NONEXP-10` | `NON-EXP-10` | `DIRECT` | Distinct executed non-EXP research axis: Opposite-period stability filter validation | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 92 | `SRC-NONEXP-11` | `NON-EXP-11` | `DIRECT` | Distinct executed non-EXP research axis: NO-PICK structural root-cause audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 93 | `SRC-NONEXP-12` | `NON-EXP-12` | `DIRECT` | Distinct executed non-EXP research axis: NO-PICK causal trace | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 94 | `SRC-NONEXP-13` | `NON-EXP-13` | `DIRECT` | Distinct executed non-EXP research axis: NUMBER member-structure SEVERE causal trace | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 95 | `SRC-NONEXP-14` | `NON-EXP-14` | `DIRECT` | Distinct executed non-EXP research axis: Current-1239 END_DIGIT severe causal trace | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 96 | `SRC-NONEXP-15` | `NON-EXP-15` | `DIRECT` | Distinct executed non-EXP research axis: Current-1239 NUMBER/END_DIGIT root-cause trace | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 97 | `SRC-NONEXP-16` | `NON-EXP-16` | `DIRECT` | Distinct executed non-EXP research axis: Current-1239 opposite-period causal trace | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 98 | `SRC-NONEXP-17` | `NON-EXP-17` | `DIRECT` | Distinct executed non-EXP research axis: Current-1239 official pre-draw audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 99 | `SRC-NONEXP-18` | `NON-EXP-18` | `DIRECT` | Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 100 | `SRC-NONEXP-19` | `NON-EXP-19` | `DIRECT` | Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 82 | `SRC-NONEXP-01` | `NON-EXP-TRIO-ORBIT-FIXED` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT Fixed/Linked 역사검증 | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 83 | `SRC-NONEXP-02` | `NON-EXP-TRIO-ORBIT-LINKED` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT divergence attribution | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 84 | `SRC-NONEXP-03` | `NON-EXP-03` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: KTS pair-completion collision | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 85 | `SRC-NONEXP-04` | `NON-EXP-04` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: LAG 3~6 reappearance map | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 86 | `SRC-NONEXP-05` | `NON-EXP-05` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: BONUS extinction interaction | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 87 | `SRC-NONEXP-06` | `NON-EXP-06` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: BONUS lag2 interaction | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 88 | `SRC-NONEXP-07` | `NON-EXP-07` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Ending-frequency interaction | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 89 | `SRC-NONEXP-08` | `NON-EXP-08` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: TRIO HOLD causal decomposition | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 90 | `SRC-NONEXP-09` | `NON-EXP-09` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Survivor-pool rolling-origin actionability | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 91 | `SRC-NONEXP-10` | `NON-EXP-10` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Opposite-period stability filter validation | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 92 | `SRC-NONEXP-11` | `NON-EXP-11` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: NO-PICK structural root-cause audit | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 93 | `SRC-NONEXP-12` | `NON-EXP-12` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: NO-PICK causal trace | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 94 | `SRC-NONEXP-13` | `NON-EXP-13` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: NUMBER member-structure SEVERE causal trace | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 95 | `SRC-NONEXP-14` | `NON-EXP-14` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Current-1239 END_DIGIT severe causal trace | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 96 | `SRC-NONEXP-15` | `NON-EXP-15` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Current-1239 NUMBER/END_DIGIT root-cause trace | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 97 | `SRC-NONEXP-16` | `NON-EXP-16` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Current-1239 opposite-period causal trace | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 98 | `SRC-NONEXP-17` | `NON-EXP-17` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Current-1239 official pre-draw audit | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 99 | `SRC-NONEXP-18` | `NON-EXP-18` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Contiguous 1..1238 rebuild and 1239 rerun | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 100 | `SRC-NONEXP-19` | `NON-EXP-19` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: Discovery 2.0 independent-signal audit | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
 | 101 | `SRC-NONEXP-20` | `EXP-DRAW-20260824-010-V1` | `ALIAS` | Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001) | v27_storage/audits/official_pair_lifecycle_repair_001/ |
 | 102 | `SRC-NONEXP-21` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | v27_storage/audits/official_pair_lifecycle_repair_001/ |
 | 103 | `SRC-NONEXP-22` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | v27_storage/audits/official_pair_lifecycle_repair_001/ |
@@ -131,10 +131,10 @@
 | 106 | `SRC-NONEXP-25` | `EXP-CROWD-20260823-007-V1` | `ALIAS` | Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (EXP-CROWD-20260823-007-V1, Row 60 in Registry) | v27_storage/experiments/crowd_topology_exp003_v1/ |
 | 107 | `SRC-NONEXP-26` | `EXP-CROWD-20260823-008-V1` | `ALIAS` | Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (EXP-CROWD-20260823-008-V1, Row 61 in Registry) | v27_storage/experiments/crowd_retail_exp001_v1/ |
 | 108 | `SRC-NONEXP-27` | `EXP-PRIZE-20260816-001-V2` | `RELATED_BUT_DISTINCT` | Prize-share 001/002 joint historical validation and prospective preparation lineage across multiple formal experiments | v27_storage/experiments/prize_share_exp001_v2/, prize_share_exp002_v1/, prize_share_prospective_001_v1/ |
-| 109 | `SRC-NONEXP-28` | `NON-EXP-28` | `DIRECT` | Distinct executed non-EXP research axis: LZ76 거시 복잡도 국면 고립 검정 V1 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 110 | `SRC-NONEXP-29-WHOLE-ENGINE-REPLAY` | `NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY` | `DIRECT` | Distinct executed non-EXP research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 111 | `SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | `NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 112 | `SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION` | `NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT Statistical Correction & Null Calibration 001 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 113 | `SRC-REVIEWED-01-MBC_실제_공_추첨순서` | `REVIEWED-MBC_실제_공_추첨순서` | `DIRECT` | Reviewed unexecuted research idea | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 114 | `SRC-REVIEWED-02-REHEARSAL` | `REVIEWED-REHEARSAL` | `DIRECT` | Reviewed unexecuted research idea | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 115 | `SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244` | `PROSPECTIVE-TRIO-ORBIT-TARGET-1244` | `DIRECT` | Active sealed prospective target round 1244 | v27_storage\prospective\trio_orbit_v1_001\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md |
+| 109 | `SRC-NONEXP-28` | `NON-EXP-28` | `DIRECT` | Distinct executed non-EXP research axis without formal registry parent: LZ76 거시 복잡도 국면 고립 검정 V1 | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 110 | `SRC-REVIEWED-01-MBC_실제_공_추첨순서` | `REVIEWED-MBC_실제_공_추첨순서` | `DIRECT` | Reviewed unexecuted research idea | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 111 | `SRC-REVIEWED-02-REHEARSAL` | `REVIEWED-REHEARSAL` | `DIRECT` | Reviewed unexecuted research idea | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 112 | `SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244` | `PROSPECTIVE-TRIO-ORBIT-TARGET-1244` | `DIRECT` | Active sealed prospective target round 1244 | v27_storage\prospective\trio_orbit_v1_001\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md |
+| 113 | `SRC-OTHER-01-WHOLE-ENGINE-REPLAY` | `NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY` | `DIRECT` | Distinct post-master audit research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001 | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 114 | `SRC-OTHER-02-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | `NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | `DIRECT` | Distinct post-master audit research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001 | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |
+| 115 | `SRC-OTHER-03-TRIO-ORBIT-STATISTICAL-CORRECTION` | `NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION` | `DIRECT` | Distinct post-master audit research axis: TRIO ORBIT Statistical Correction & Null Calibration 001 | 90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md |

@@ -89,8 +89,10 @@ class TestKnowledgeCoverageCompletion(unittest.TestCase):
     # 2. Latest non-EXP section extraction
     def test_02_non_exp_extraction(self):
         non_exp_items = [it for it in self.source_items if it.source_class == SourceClass.NON_EXP_EXECUTED.value]
-        self.assertGreaterEqual(len(non_exp_items), 28)
-        self.assertEqual(len(non_exp_items), 31)  # 28 historical + 3 post-Section C audits
+        other_items = [it for it in self.source_items if it.source_class == SourceClass.OTHER_RESEARCH_SOURCE.value]
+        self.assertEqual(len(non_exp_items), 28)  # 28 Section C historical axes
+        self.assertEqual(len(other_items), 3)     # 3 post-Section C research audits
+        self.assertEqual(len(non_exp_items) + len(other_items), 31)
 
     # 3. Latest Official internal table extraction
     def test_03_official_internal_extraction(self):

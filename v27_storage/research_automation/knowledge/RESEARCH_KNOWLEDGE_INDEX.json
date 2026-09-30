@@ -8,9 +8,10 @@
   "source_class_counts": {
     "FORMAL_REGISTRY": 69,
     "OFFICIAL_INTERNAL": 12,
-    "NON_EXP_EXECUTED": 31,
+    "NON_EXP_EXECUTED": 28,
     "REVIEWED_UNEXECUTED": 2,
-    "ACTIVE_PROSPECTIVE": 1
+    "ACTIVE_PROSPECTIVE": 1,
+    "OTHER_RESEARCH_SOURCE": 3
   },
   "records": [
     {
@@ -1848,8 +1849,8 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "EXP-PRIZE-20260816-001-V2",
       "source_classes": [
@@ -2110,8 +2111,8 @@
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "EXP-CROWD-20260823-005-V1",
       "source_classes": [
@@ -2150,8 +2151,8 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "EXP-CROWD-20260823-006-V1",
       "source_classes": [
@@ -2190,8 +2191,8 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "EXP-CROWD-20260823-007-V1",
       "source_classes": [
@@ -2230,8 +2231,8 @@
       ],
       "verdict": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "EXP-CROWD-20260823-008-V1",
       "source_classes": [
@@ -2307,8 +2308,8 @@
       ],
       "verdict": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "EXP-DRAW-20260824-010-V1",
       "source_classes": [
@@ -2985,7 +2986,7 @@
       ],
       "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-TRIO-ORBIT-FIXED",
       "source_classes": [
@@ -3019,7 +3020,7 @@
       ],
       "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-TRIO-ORBIT-LINKED",
       "source_classes": [
@@ -3051,7 +3052,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-03",
       "source_classes": [
@@ -3083,7 +3084,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-04",
       "source_classes": [
@@ -3115,7 +3116,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-05",
       "source_classes": [
@@ -3147,7 +3148,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-06",
       "source_classes": [
@@ -3179,7 +3180,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-07",
       "source_classes": [
@@ -3211,7 +3212,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-08",
       "source_classes": [
@@ -3243,7 +3244,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-09",
       "source_classes": [
@@ -3275,7 +3276,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-10",
       "source_classes": [
@@ -3307,7 +3308,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-11",
       "source_classes": [
@@ -3339,7 +3340,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-12",
       "source_classes": [
@@ -3371,7 +3372,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-13",
       "source_classes": [
@@ -3403,7 +3404,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-14",
       "source_classes": [
@@ -3435,7 +3436,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-15",
       "source_classes": [
@@ -3467,7 +3468,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-16",
       "source_classes": [
@@ -3499,7 +3500,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-17",
       "source_classes": [
@@ -3531,7 +3532,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-18",
       "source_classes": [
@@ -3563,7 +3564,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-19",
       "source_classes": [
@@ -3595,7 +3596,7 @@
       ],
       "verdict": "COMPLETED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
       ],
       "record_id": "NON-EXP-28",
       "source_classes": [
@@ -3603,107 +3604,6 @@
       ],
       "source_item_ids": [
         "SRC-NONEXP-28"
-      ],
-      "formal_ids": [],
-      "actionability": "Non-EXP research audit and causal trace",
-      "aliases": []
-    },
-    {
-      "research_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
-      "canonical_name": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
-      "source_class": "NON_EXP_EXECUTED",
-      "status": "COMPLETED",
-      "inputs": "Full synthetic draw replay through official core pipeline",
-      "transformation": "Whole pipeline replay without outcome peeking",
-      "condition": "Simulated lottery distributions",
-      "target": "Semantic recovery and pipeline integrity",
-      "lag": 0,
-      "metrics": [
-        "semantic_fidelity_score"
-      ],
-      "null": "Synthetic permutation baseline",
-      "ontology_tags": [
-        "CORE",
-        "regime"
-      ],
-      "verdict": "SUPPORTED",
-      "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
-      ],
-      "record_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
-      "source_classes": [
-        "NON_EXP_EXECUTED"
-      ],
-      "source_item_ids": [
-        "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY"
-      ],
-      "formal_ids": [],
-      "actionability": "Non-EXP research audit and causal trace",
-      "aliases": []
-    },
-    {
-      "research_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-      "canonical_name": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
-      "source_class": "NON_EXP_EXECUTED",
-      "status": "ACTIVE",
-      "inputs": "TRIO ORBIT 3-trio candidate sets",
-      "transformation": "Historical backtest & null calibration",
-      "condition": "Rounds 1..1243",
-      "target": "PRIMARY and SUPPORT hits",
-      "lag": 1,
-      "metrics": [
-        "support_rate",
-        "mcnemar_exact_p"
-      ],
-      "null": "Exact binomial null p0 ≈ 0.121226",
-      "ontology_tags": [
-        "TRIO",
-        "recurrence"
-      ],
-      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
-      "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
-      ],
-      "record_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
-      "source_classes": [
-        "NON_EXP_EXECUTED"
-      ],
-      "source_item_ids": [
-        "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE"
-      ],
-      "formal_ids": [],
-      "actionability": "Non-EXP research audit and causal trace",
-      "aliases": []
-    },
-    {
-      "research_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
-      "canonical_name": "TRIO ORBIT Statistical Correction & Null Calibration 001",
-      "source_class": "NON_EXP_EXECUTED",
-      "status": "COMPLETED",
-      "inputs": "TRIO ORBIT 3-trio candidate sets",
-      "transformation": "Historical backtest & null calibration",
-      "condition": "Rounds 1..1243",
-      "target": "PRIMARY and SUPPORT hits",
-      "lag": 1,
-      "metrics": [
-        "support_rate",
-        "mcnemar_exact_p"
-      ],
-      "null": "Exact binomial null p0 ≈ 0.121226",
-      "ontology_tags": [
-        "TRIO",
-        "recurrence"
-      ],
-      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
-      "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
-      ],
-      "record_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
-      "source_classes": [
-        "NON_EXP_EXECUTED"
-      ],
-      "source_item_ids": [
-        "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION"
       ],
       "formal_ids": [],
       "actionability": "Non-EXP research audit and causal trace",
@@ -3808,6 +3708,107 @@
         "EXP-DRAW-TRIO-ORBIT-PROSPECTIVE-1244"
       ],
       "actionability": "Active sealed prospective waiting for lottery outcome",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+      "canonical_name": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+      "source_class": "OTHER_RESEARCH_SOURCE",
+      "status": "COMPLETED",
+      "inputs": "Full synthetic draw replay through official core pipeline",
+      "transformation": "Whole pipeline replay without outcome peeking",
+      "condition": "Simulated lottery distributions",
+      "target": "Semantic recovery and pipeline integrity",
+      "lag": 0,
+      "metrics": [
+        "semantic_fidelity_score"
+      ],
+      "null": "Synthetic permutation baseline",
+      "ontology_tags": [
+        "CORE",
+        "regime"
+      ],
+      "verdict": "SUPPORTED",
+      "evidence_paths": [
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+      "source_classes": [
+        "OTHER_RESEARCH_SOURCE"
+      ],
+      "source_item_ids": [
+        "SRC-OTHER-01-WHOLE-ENGINE-REPLAY"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "canonical_name": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+      "source_class": "OTHER_RESEARCH_SOURCE",
+      "status": "ACTIVE",
+      "inputs": "TRIO ORBIT 3-trio candidate sets",
+      "transformation": "Historical backtest & null calibration",
+      "condition": "Rounds 1..1243",
+      "target": "PRIMARY and SUPPORT hits",
+      "lag": 1,
+      "metrics": [
+        "support_rate",
+        "mcnemar_exact_p"
+      ],
+      "null": "Exact binomial null p0 ≈ 0.121226",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence"
+      ],
+      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
+      "evidence_paths": [
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "source_classes": [
+        "OTHER_RESEARCH_SOURCE"
+      ],
+      "source_item_ids": [
+        "SRC-OTHER-02-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "canonical_name": "TRIO ORBIT Statistical Correction & Null Calibration 001",
+      "source_class": "OTHER_RESEARCH_SOURCE",
+      "status": "COMPLETED",
+      "inputs": "TRIO ORBIT 3-trio candidate sets",
+      "transformation": "Historical backtest & null calibration",
+      "condition": "Rounds 1..1243",
+      "target": "PRIMARY and SUPPORT hits",
+      "lag": 1,
+      "metrics": [
+        "support_rate",
+        "mcnemar_exact_p"
+      ],
+      "null": "Exact binomial null p0 ≈ 0.121226",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence"
+      ],
+      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
+      "evidence_paths": [
+        "90_RESEARCH/P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "source_classes": [
+        "OTHER_RESEARCH_SOURCE"
+      ],
+      "source_item_ids": [
+        "SRC-OTHER-03-TRIO-ORBIT-STATISTICAL-CORRECTION"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
       "aliases": []
     }
   ]

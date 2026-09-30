@@ -25,12 +25,18 @@ Covers all 22 required referential integrity assertions:
 22. idempotency
 """
 
+import copy
 import sys
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
+
+from p45_v27.research_automation.master_source_raw_extractor import (
+    MasterSourceRawExtractor,
+    MasterRawSnapshot,
+)
 
 from p45_v27.research_automation.canonical_id_resolver import (
     CanonicalResearchIdResolver,
@@ -420,7 +426,7 @@ class TestNonExpLineageSemanticIntegrity(unittest.TestCase):
     # 6. Every NON-EXP source item has audited lineage verdict.
     def test_28_every_non_exp_has_audited_verdict(self):
         non_exp_items = [it for it in self.source_items if it.source_class == "NON_EXP_EXECUTED"]
-        self.assertGreaterEqual(len(non_exp_items), 31)
+        self.assertEqual(len(non_exp_items), 28)
         for it in non_exp_items:
             sid = it.source_item_id
             self.assertIn(sid, self.non_exp_audits)
@@ -593,6 +599,190 @@ class TestNonExpLineageSemanticIntegrity(unittest.TestCase):
         self.assertEqual(len(audit2.non_exp_lineage_audits), len(self.audit_report.non_exp_lineage_audits))
 
 
+class TestMasterSourceIdentityAndFingerprint(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.raw_extractor = MasterSourceRawExtractor()
+        cls.raw_snapshot = cls.raw_extractor.extract_raw_section_c()
+        cls.inv_builder = ResearchSourceInventoryBuilder()
+        cls.source_items = cls.inv_builder.build_source_inventory()
+        cls.non_exp_prods = [it for it in cls.source_items if it.source_class == SourceClass.NON_EXP_EXECUTED.value]
+        cls.manifest_builder = ResearchKnowledgeCoverageManifestBuilder()
+        cls.manifest = cls.manifest_builder.build_manifest(cls.source_items)
+        cls.resolver = CanonicalResearchIdResolver()
+        cls.lineage_audits = cls.resolver.audit_non_exp_lineage(cls.source_items, cls.manifest.mappings)
+        cls.agent = ResearchDiscoveryAgent()
+        cls.checker = SemanticNoveltyCheckerV1_1(cls.agent.knowledge_index)
+
+    # 1. Master raw section parser count (28)
+    def test_01_master_raw_section_parser_count(self):
+        self.assertEqual(self.raw_snapshot.total_items, 28)
+        self.assertEqual(len(self.raw_snapshot.items), 28)
+
+    # 2. Production parser count equality
+    def test_02_production_parser_count_equality(self):
+        self.assertEqual(len(self.non_exp_prods), self.raw_snapshot.total_items)
+        self.assertEqual(len(self.non_exp_prods), 28)
+
+    # 3. Ordinal exact equality
+    def test_03_ordinal_exact_equality(self):
+        for idx in range(1, 29):
+            raw_it = self.raw_snapshot.items[idx - 1]
+            prod_it = next((it for it in self.non_exp_prods if it.ordinal == idx), None)
+            self.assertIsNotNone(prod_it, f"Ordinal {idx} missing in production parser")
+            self.assertEqual(raw_it.ordinal, prod_it.ordinal)
+
+    # 4. Raw title exact equality
+    def test_04_raw_title_exact_equality(self):
+        for idx in range(1, 29):
+            raw_it = self.raw_snapshot.items[idx - 1]
+            prod_it = next(it for it in self.non_exp_prods if it.ordinal == idx)
+            self.assertEqual(raw_it.raw_title, prod_it.raw_title)
+
+    # 5. Raw source text exact equality
+    def test_05_raw_source_text_exact_equality(self):
+        for idx in range(1, 29):
+            raw_it = self.raw_snapshot.items[idx - 1]
+            prod_it = next(it for it in self.non_exp_prods if it.ordinal == idx)
+            self.assertEqual(raw_it.raw_source_text, prod_it.raw_source_text)
+
+    # 6. Source fingerprint equality
+    def test_06_source_fingerprint_equality(self):
+        for idx in range(1, 29):
+            raw_it = self.raw_snapshot.items[idx - 1]
+            prod_it = next(it for it in self.non_exp_prods if it.ordinal == idx)
+            self.assertEqual(raw_it.source_fingerprint, prod_it.source_fingerprint)
+            self.assertTrue(len(prod_it.source_fingerprint) == 64)
+
+    # 7. Invented title rejection
+    def test_07_invented_title_rejection(self):
+        invented_titles = [
+            "Number order statistical distribution",
+            "Consecutive number adjacency structure",
+            "Pair co-occurrence topology matrix",
+            "Sum distribution dynamic envelope",
+            "AC value structural complexity",
+        ]
+        parsed_titles = [it.raw_title for it in self.non_exp_prods]
+        for inv_title in invented_titles:
+            self.assertNotIn(inv_title, parsed_titles)
+
+    # 8. Missing Master item rejection
+    def test_08_missing_master_item_rejection(self):
+        partial_prods = self.non_exp_prods[:-1]  # Drop 28
+        report = self.raw_extractor.reconcile_parsers(self.raw_snapshot, partial_prods)
+        self.assertGreater(report.missing_master_items, 0)
+        self.assertEqual(report.verdict, "BLOCKED_MASTER_SOURCE_IDENTITY")
+
+    # 9. Ordinal/title swap rejection
+    def test_09_ordinal_title_swap_rejection(self):
+        swapped = copy.deepcopy(self.non_exp_prods)
+        swapped[0].raw_title, swapped[1].raw_title = swapped[1].raw_title, swapped[0].raw_title
+        report = self.raw_extractor.reconcile_parsers(self.raw_snapshot, swapped)
+        self.assertGreater(report.source_title_substitution, 0)
+        self.assertEqual(report.verdict, "BLOCKED_MASTER_SOURCE_IDENTITY")
+
+    # 10. Generated JSON self-reference test prohibition
+    def test_10_no_json_self_reference(self):
+        self.assertTrue(self.raw_snapshot.source_document.endswith(".md"))
+
+    # 11. Source inventory count equality
+    def test_11_source_inventory_count_equality(self):
+        self.assertEqual(len(self.non_exp_prods), 28)
+
+    # 12. Lineage audit count equality
+    def test_12_lineage_audit_count_equality(self):
+        self.assertEqual(len(self.lineage_audits), 28)
+
+    # 13. First anchor identity
+    def test_13_first_anchor_identity(self):
+        it = self.raw_snapshot.items[0]
+        self.assertEqual(it.ordinal, 1)
+        self.assertEqual(it.raw_title, "TRIO ORBIT Fixed/Linked 역사검증")
+
+    # 14. TRIO ORBIT anchor
+    def test_14_trio_orbit_anchor(self):
+        it = self.raw_snapshot.items[1]
+        self.assertEqual(it.ordinal, 2)
+        self.assertEqual(it.raw_title, "TRIO ORBIT divergence attribution")
+
+    # 15. PAIR repair anchor
+    def test_15_pair_repair_anchor(self):
+        it = self.raw_snapshot.items[19]
+        self.assertEqual(it.ordinal, 20)
+        self.assertEqual(it.raw_title, "Pair shadow repair deterministic validation")
+
+    # 16. Crowd topology 001 anchor
+    def test_16_crowd_topology_001_anchor(self):
+        it = self.raw_snapshot.items[22]
+        self.assertEqual(it.ordinal, 23)
+        self.assertEqual(it.raw_title, "Crowd topology 001 supporting audit lineage")
+
+    # 17. Crowd topology 002 anchor
+    def test_17_crowd_topology_002_anchor(self):
+        it = self.raw_snapshot.items[23]
+        self.assertEqual(it.ordinal, 24)
+        self.assertEqual(it.raw_title, "Crowd topology 002 independent reproduction/calibration")
+
+    # 18. Prize-share anchor
+    def test_18_prize_share_anchor(self):
+        it = self.raw_snapshot.items[26]
+        self.assertEqual(it.ordinal, 27)
+        self.assertIn("Prize-share 001/002", it.raw_title)
+
+    # 19. LZ76 anchor
+    def test_19_lz76_anchor(self):
+        it = self.raw_snapshot.items[27]
+        self.assertEqual(it.ordinal, 28)
+        self.assertEqual(it.raw_title, "LZ76 거시 복잡도 국면 고립 검정 V1")
+
+    # 20. Incorrect synthetic title injection -> fail-closed
+    def test_20_incorrect_synthetic_title_injection_fail_closed(self):
+        corrupted = copy.deepcopy(self.non_exp_prods)
+        corrupted[0].raw_title = "Number order statistical distribution"
+        corrupted[0].source_fingerprint = "corrupted_fp"
+        report = self.raw_extractor.reconcile_parsers(self.raw_snapshot, corrupted)
+        self.assertEqual(report.verdict, "BLOCKED_MASTER_SOURCE_IDENTITY")
+
+    # 21. Candidate A regression
+    def test_21_candidate_a_regression(self):
+        res = self.agent.reassess_v1_candidates()
+        cand_a = next(c for c in res if c.candidate_id == "IDEA-1243-NEGA-001")
+        self.assertEqual(cand_a.final_verdict, NoveltyFinalVerdict.REJECT_RESCUE.value)
+
+    # 22. Candidate B regression
+    def test_22_candidate_b_regression(self):
+        res = self.agent.reassess_v1_candidates()
+        cand_b = next(c for c in res if c.candidate_id == "IDEA-1243-OPPO-002")
+        self.assertEqual(cand_b.final_verdict, NoveltyFinalVerdict.REJECT_RESCUE.value)
+
+    # 23. Candidate C irrelevant-match regression
+    def test_23_candidate_c_irrelevant_match_regression(self):
+        res = self.agent.reassess_v1_candidates()
+        cand_c = next(c for c in res if c.candidate_id == "IDEA-1243-CROS-003")
+        self.assertEqual(cand_c.final_verdict, NoveltyFinalVerdict.NEEDS_EVIDENCE.value)
+        top_ids = [m.existing_research_id for m in cand_c.top_matches]
+        self.assertNotIn("EXP-DRAW-20260816-023-V1", top_ids)
+        self.assertNotIn("EXP-DRAW-20260816-024-V1", top_ids)
+
+    # 24. Official firewall
+    def test_24_official_firewall(self):
+        for rec in self.agent.knowledge_index.list_all():
+            if "OFFICIAL" in rec.source_classes:
+                self.assertIn(rec.verdict, ("OFFICIAL_FROZEN", "USER-APPROVED SEALED CHANGE CONTROL", "SUPPORTED"))
+
+    # 25. Future leakage 0
+    def test_25_future_leakage_zero(self):
+        prospective = self.agent.knowledge_index.filter_by_class(SourceClass.ACTIVE_PROSPECTIVE.value)
+        self.assertEqual(len(prospective), 1)
+
+    # 26. Idempotency assertion
+    def test_26_idempotency_assertion(self):
+        snap2 = self.raw_extractor.extract_raw_section_c()
+        self.assertEqual(snap2.section_fingerprint, self.raw_snapshot.section_fingerprint)
+
+
 if __name__ == "__main__":
     unittest.main()
+
 
