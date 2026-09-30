@@ -154,6 +154,46 @@ LAB_METADATA_DEFAULTS: dict[str, dict[str, Any]] = {
         "null": "Poisson/binomial winner count under uniform ticket distribution",
         "ontology_tags": [OntologyConcept.REGIME.value, OntologyConcept.RANGE.value, OntologyConcept.CORE.value],
     },
+    "PAIR OFFICIAL CHANGE CONTROL": {
+        "inputs": "Official shadow lifecycle states for all 990 ball pairs",
+        "transformation": "Deterministic shadow lifecycle repair apply audit (DECISION-20260824-095)",
+        "condition": "Canary non-regression check on historical and unrevealed draws",
+        "target": "Production shadow state integrity without gate or pick changes",
+        "lag": 1,
+        "metrics": ["shadow_integrity_pass", "signature_invariance"],
+        "null": "Frozen production baseline",
+        "ontology_tags": [OntologyConcept.PAIR.value, OntologyConcept.CORE.value, OntologyConcept.TRANSITION.value],
+    },
+    "STRUCTURE LAB": {
+        "inputs": "Variable partition zones and vacancy states across rolling windows",
+        "transformation": "Zone vacancy tracking and recovery rate calculation",
+        "condition": "Previous round extinction state",
+        "target": "Next-round extinction negative-space recovery probability",
+        "lag": 1,
+        "metrics": ["recovery_rate", "vacancy_duration"],
+        "null": "Hypergeometric partition sampling null",
+        "ontology_tags": [OntologyConcept.EXTINCTION.value, OntologyConcept.RECOVERY.value, OntologyConcept.OCCUPANCY.value],
+    },
+    "RETURN LAB": {
+        "inputs": "Individual number return ages (rounds elapsed since last appearance)",
+        "transformation": "Return age rank sorting and threshold hazard tracking",
+        "condition": "Historical return age distributions",
+        "target": "Number reappearance hazard as a function of return age",
+        "lag": 1,
+        "metrics": ["return_age_rank", "reappearance_hazard"],
+        "null": "Geometric distribution with memoryless parameter p = 6/45",
+        "ontology_tags": [OntologyConcept.ORDER_RANK.value, OntologyConcept.GAP.value, OntologyConcept.NUMBER.value],
+    },
+    "SPACING LAB": {
+        "inputs": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
+        "transformation": "Adjacent difference vector and spacing variance calculation",
+        "condition": "Order statistics spacing vector",
+        "target": "Adjacent spacing distribution and minimum distance invariance",
+        "lag": 0,
+        "metrics": ["min_spacing", "spacing_variance", "kolmogorov_smirnov_d"],
+        "null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
+        "ontology_tags": [OntologyConcept.SPACING.value, OntologyConcept.GAP.value, OntologyConcept.NUMBER.value],
+    },
 }
 
 @dataclass
@@ -227,6 +267,11 @@ class ResearchKnowledgeIndex:
     def is_coverage_complete(self) -> bool:
         if self.manifest:
             return self.manifest.is_complete
+        return True
+
+    def has_referential_integrity(self) -> bool:
+        if self.manifest:
+            return getattr(self.manifest, "has_referential_integrity", True)
         return True
 
 class ResearchKnowledgeIndexBuilder:

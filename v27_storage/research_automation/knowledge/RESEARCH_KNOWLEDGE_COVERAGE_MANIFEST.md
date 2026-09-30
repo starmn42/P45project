@@ -4,7 +4,8 @@
 - **총 원천 연구 항목(Total Source Items):** **115건**
 - **매핑 완료 항목(Mapped Source Items):** **115건**
 - **누락 항목(Unmapped Source Items):** **0건**
-- **커버리지 달성률(Coverage Ratio):** **100.0%**
+- **Coverage Ratio:** **100.0%**
+- **Referential Integrity Verdict:** **`PASS_REFERENTIAL_INTEGRITY`**
 - **Coverage Complete Verdict:** **`PASS_FULL_COVERAGE`**
 
 ### Mapping Type Distribution
@@ -122,9 +123,9 @@
 | 98 | `SRC-NONEXP-17` | `NON-EXP-17` | `DIRECT` | Distinct executed non-EXP research axis: Current-1239 official pre-draw audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 99 | `SRC-NONEXP-18` | `NON-EXP-18` | `DIRECT` | Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 100 | `SRC-NONEXP-19` | `NON-EXP-19` | `DIRECT` | Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 101 | `SRC-NONEXP-20` | `EXP-DRAW-20260816-009-V1` | `ALIAS` | Supporting deterministic validation lineage for formal repair EXP-DRAW-20260816-009-V1 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 102 | `SRC-NONEXP-21` | `EXP-DRAW-20260816-009-V1` | `MERGED` | Official repair Phase A/B canary/change-control validation facet | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 103 | `SRC-NONEXP-22` | `EXP-DRAW-20260816-009-V1` | `MERGED` | Official repair apply and finalize verification facet | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 101 | `SRC-NONEXP-20` | `EXP-DRAW-20260824-010-V1` | `ALIAS` | Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001) | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 102 | `SRC-NONEXP-21` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 103 | `SRC-NONEXP-22` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 104 | `SRC-NONEXP-23` | `EXP-CROWD-20260816-001-V1` | `ALIAS` | Crowd topology 001 supporting audit lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 105 | `SRC-NONEXP-24` | `EXP-CROWD-20260816-002-V1` | `ALIAS` | Crowd topology 002 independent calibration lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 106 | `SRC-NONEXP-25` | `EXP-CROWD-20260816-003-V1` | `ALIAS` | Crowd topology 003 methodology supporting lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |

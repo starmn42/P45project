@@ -41,6 +41,7 @@ class NoveltyFinalVerdict(str, Enum):
     REJECT_RESCUE = "REJECT_RESCUE"
     NEEDS_EVIDENCE = "NEEDS_EVIDENCE"
     READY_FOR_PROTOCOL = "READY_FOR_PROTOCOL"
+    BLOCKED_REFERENTIAL_INTEGRITY = "BLOCKED_REFERENTIAL_INTEGRITY"
 
 @dataclass
 class SemanticMatchItem:
@@ -67,6 +68,10 @@ class SemanticMatchItem:
     different_features: list[str]
     similarity_score: float
     semantic_overlap_class: str
+    canonical_registry_id: str | None = None
+    canonical_title: str | None = None
+    resolution_status: str = "RESOLVED"
+    source_evidence: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -82,6 +87,8 @@ class CandidateNoveltyAuditResult:
     failed_axis_rescues: list[str]
     novelty_justification: str
     novelty_evidence_exists: bool = True
+    referential_integrity_pass: bool = True
+    invalid_references: list[str] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         d = asdict(self)
@@ -95,6 +102,8 @@ class SemanticNoveltyCheckerV1_1:
         self.knowledge_index = knowledge_index
         self.root = root
         self.evidence_dir = self.root / "v27_storage" / "research_automation" / "evidence"
+        from .canonical_id_resolver import CanonicalResearchIdResolver
+        self.resolver = CanonicalResearchIdResolver(self.root)
 
     def audit_candidate(self, candidate_pkg: dict[str, Any]) -> CandidateNoveltyAuditResult:
         cand_id = candidate_pkg.get("candidate_id", "UNKNOWN")
@@ -109,11 +118,26 @@ class SemanticNoveltyCheckerV1_1:
         cand_tags = set(candidate_pkg.get("ontology_tags", []))
 
         matches: list[SemanticMatchItem] = []
+        invalid_references: list[str] = []
 
         for record in self.knowledge_index.list_all():
             score = 0.0
             same_feats: list[str] = []
             diff_feats: list[str] = []
+
+            # Resolve canonical reference
+            res = self.resolver.resolve_source_reference(
+                record.research_id,
+                title=record.canonical_name,
+                source_class=record.source_class,
+            )
+            canonical_id = res.resolved_canonical_id
+            canonical_title = res.canonical_title or record.canonical_name
+            res_status = res.status
+            res_evidence = res.evidence
+
+            if res_status in ("INVALID_REFERENCE", "AMBIGUOUS"):
+                invalid_references.append(f"{record.research_id} ({res_status})")
 
             # 1. Concept Tag Overlap
             rec_tags = set(record.ontology_tags)
@@ -125,16 +149,21 @@ class SemanticNoveltyCheckerV1_1:
                 diff_feats.append("No shared ontology concepts")
 
             # 2. Input / Domain Overlap
-            if any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["zone", "partition", "전멸", "결손", "extinction", "recovery", "복귀"]) and \
-               any(term in cand_input.lower() or term in cand_title.lower() for term in ["zone", "partition", "extinction", "recovery", "전멸", "복귀", "결손"]):
+            cand_is_extinction = any(term in cand_input.lower() or term in cand_title.lower() for term in ["zone", "partition", "extinction", "recovery", "전멸", "복귀", "결손"])
+            cand_is_spacing = any(term in cand_title.lower() or term in cand_target.lower() or term in cand_input.lower() for term in ["spacing", "repulsion", "distance", "gap", "간격", "인접", "거리"])
+            cand_is_pair = any(term in cand_title.lower() or term in cand_input.lower() for term in ["pair", "쌍"])
+
+            rec_is_extinction = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["zone", "partition", "전멸", "결손", "extinction", "recovery", "복귀"])
+            rec_is_spacing = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["spacing", "neighbor", "gap", "간격", "인접", "거리"])
+            rec_is_pair = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["pair", "쌍"])
+
+            if rec_is_extinction and cand_is_extinction:
                 score += 25.0
                 same_feats.append("Shared partition/extinction domain inputs")
-            elif any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["spacing", "neighbor", "gap", "간격", "인접", "거리"]) and \
-                 any(term in cand_title.lower() or term in cand_target.lower() or term in cand_input.lower() for term in ["spacing", "repulsion", "distance", "gap", "간격", "인접", "거리"]):
+            elif rec_is_spacing and cand_is_spacing:
                 score += 25.0
                 same_feats.append("Shared adjacent spacing / proximity domain inputs")
-            elif any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["pair", "쌍"]) and \
-                 any(term in cand_title.lower() or term in cand_input.lower() for term in ["pair", "쌍"]):
+            elif rec_is_pair and cand_is_pair:
                 score += 25.0
                 same_feats.append("Shared pair-level combinatorial inputs")
             else:
@@ -168,16 +197,23 @@ class SemanticNoveltyCheckerV1_1:
             verdict_upper = record.verdict.upper()
             is_failed = ("FAILED" in status_upper or "FAILED" in verdict_upper or "CLOSED" in status_upper)
 
+            # Strict Domain Guard: A research cannot be FAILED_AXIS_RESCUE unless domain matches
+            domain_compatible_for_rescue = (
+                (cand_is_extinction and rec_is_extinction) or
+                (cand_is_spacing and rec_is_spacing) or
+                (cand_is_pair and rec_is_pair)
+            )
+
             overlap_class: SemanticOverlapClass
             if record.source_class == "OFFICIAL_INTERNAL":
                 overlap_class = SemanticOverlapClass.PARTIAL_OVERLAP
             elif score >= 65.0:
-                if is_failed:
+                if is_failed and domain_compatible_for_rescue:
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE
                 else:
                     overlap_class = SemanticOverlapClass.NEAR_DUPLICATE
             elif score >= 40.0:
-                if is_failed and any(k in cand_title.lower() for k in ["spacing", "extinction", "간격", "전멸"]):
+                if is_failed and domain_compatible_for_rescue:
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE
                 else:
                     overlap_class = SemanticOverlapClass.PARTIAL_OVERLAP
@@ -189,29 +225,28 @@ class SemanticNoveltyCheckerV1_1:
             rec_ids = {record.research_id, record.research_id.replace("NORM-", "")} | set(getattr(record, "formal_ids", []))
 
             # Specific check for Candidate A (Extinction) vs EXP-004, EXP-015, EXP-022
-            if any(k in cand_title.lower() for k in ["extinction", "recovery", "전멸", "복귀", "결손"]):
+            if cand_is_extinction:
                 if any(x in rec_ids for x in ("EXP-DRAW-20260816-017-V1", "EXP-DRAW-20260816-015-V1", "EXP-DRAW-20260816-022-V1")):
                     score += 40.0
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE if is_failed else SemanticOverlapClass.NEAR_DUPLICATE
                     same_feats.append(f"Substantive overlap with registered/failed extinction-recovery axis {record.research_id}")
 
             # Specific check for Candidate B (Spacing Repulsion) vs EXP-008, EXP-018, EXP-027
-            if any(k in cand_title.lower() for k in ["repulsion", "proximity", "spacing", "간격", "인접", "거리"]):
+            if cand_is_spacing:
                 if any(x in rec_ids for x in ("EXP-DRAW-20260816-026-V1", "EXP-DRAW-20260827-018-V2", "EXP-DRAW-20260816-027-V1")):
                     score += 40.0
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE if is_failed else SemanticOverlapClass.NEAR_DUPLICATE
                     same_feats.append(f"Substantive overlap with registered/failed spacing-neighbor axis {record.research_id}")
 
-            # Specific check for Candidate C (Pair Dormancy) vs EXP-012 and Official Pair Repair
+            # Specific check for Candidate C (Pair Dormancy) vs Official Pair Repair
             if "dormancy" in cand_title.lower() and "pair" in cand_title.lower():
-                # Conceptual difference: geometric hazard on 990 pairs vs empirical quantile intervals / repair integrity
                 if score >= 40.0:
                     overlap_class = SemanticOverlapClass.PARTIAL_OVERLAP
                     same_feats.append(f"Related pair domain concept {record.research_id}, but distinct parametric hazard structure")
 
             match_item = SemanticMatchItem(
                 existing_research_id=record.research_id,
-                existing_title=record.canonical_name,
+                existing_title=canonical_title,
                 source_type=record.source_class,
                 status=record.status,
                 ontology_tags=record.ontology_tags,
@@ -233,6 +268,10 @@ class SemanticNoveltyCheckerV1_1:
                 different_features=diff_feats,
                 similarity_score=score,
                 semantic_overlap_class=overlap_class.value,
+                canonical_registry_id=canonical_id,
+                canonical_title=canonical_title,
+                resolution_status=res_status,
+                source_evidence=res_evidence,
             )
             matches.append(match_item)
 
@@ -240,13 +279,19 @@ class SemanticNoveltyCheckerV1_1:
         matches.sort(key=lambda m: m.similarity_score, reverse=True)
         top_10 = matches[:10]
 
+        # Fail-closed check: Any invalid reference in Top 10 blocks candidate
+        top_invalid = [m.existing_research_id for m in top_10 if m.resolution_status in ("INVALID_REFERENCE", "AMBIGUOUS")]
+
         exact_overlaps = [m.existing_research_id for m in top_10 if m.semantic_overlap_class == SemanticOverlapClass.EXACT_DUPLICATE.value]
         near_duplicates = [m.existing_research_id for m in top_10 if m.semantic_overlap_class == SemanticOverlapClass.NEAR_DUPLICATE.value]
         rescues = [m.existing_research_id for m in top_10 if m.semantic_overlap_class == SemanticOverlapClass.FAILED_AXIS_RESCUE.value]
         partial_overlaps = [m.existing_research_id for m in top_10 if m.semantic_overlap_class == SemanticOverlapClass.PARTIAL_OVERLAP.value]
 
         # Determine Final Verdict
-        if exact_overlaps:
+        if top_invalid:
+            final_verdict = NoveltyFinalVerdict.BLOCKED_REFERENTIAL_INTEGRITY.value
+            novelty_just = f"Blocked: Top semantic matches contain invalid or ambiguous canonical references: {', '.join(top_invalid)}."
+        elif exact_overlaps:
             final_verdict = NoveltyFinalVerdict.REJECT_DUPLICATE.value
             novelty_just = f"Rejected: exact duplication of registered research {', '.join(exact_overlaps)}."
         elif rescues:
@@ -276,6 +321,8 @@ class SemanticNoveltyCheckerV1_1:
             failed_axis_rescues=rescues,
             novelty_justification=novelty_just,
             novelty_evidence_exists=True,
+            referential_integrity_pass=(len(top_invalid) == 0),
+            invalid_references=top_invalid,
         )
 
         return audit_result

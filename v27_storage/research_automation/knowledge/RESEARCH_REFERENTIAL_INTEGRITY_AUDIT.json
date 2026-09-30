@@ -1,0 +1,789 @@
+{
+  "version": "1.0",
+  "total_source_items": 115,
+  "total_formal_references": 69,
+  "resolved_formal_references": 69,
+  "invalid_formal_references": 0,
+  "ambiguous_formal_references": 0,
+  "total_aliases": 6,
+  "valid_aliases": 6,
+  "invalid_aliases": 0,
+  "ambiguous_aliases": 0,
+  "total_merges": 2,
+  "valid_merges": 2,
+  "invalid_merges": 0,
+  "ambiguous_merges": 0,
+  "referential_integrity_verdict": "PASS_REFERENTIAL_INTEGRITY",
+  "alias_audits": [
+    {
+      "source_item_id": "SRC-NONEXP-20",
+      "alias_target": "EXP-DRAW-20260824-010-V1",
+      "target_exists": true,
+      "title_match": true,
+      "domain_match": true,
+      "semantic_match": true,
+      "explicit_lineage_evidence": "Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)",
+      "verdict": "VALID_ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-23",
+      "alias_target": "EXP-CROWD-20260816-001-V1",
+      "target_exists": true,
+      "title_match": true,
+      "domain_match": true,
+      "semantic_match": true,
+      "explicit_lineage_evidence": "Crowd topology 001 supporting audit lineage of formal experiment",
+      "verdict": "VALID_ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-24",
+      "alias_target": "EXP-CROWD-20260816-002-V1",
+      "target_exists": true,
+      "title_match": true,
+      "domain_match": true,
+      "semantic_match": true,
+      "explicit_lineage_evidence": "Crowd topology 002 independent calibration lineage of formal experiment",
+      "verdict": "VALID_ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-25",
+      "alias_target": "EXP-CROWD-20260816-003-V1",
+      "target_exists": true,
+      "title_match": true,
+      "domain_match": true,
+      "semantic_match": true,
+      "explicit_lineage_evidence": "Crowd topology 003 methodology supporting lineage of formal experiment",
+      "verdict": "VALID_ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-26",
+      "alias_target": "EXP-CROWD-20260816-004-V1",
+      "target_exists": true,
+      "title_match": true,
+      "domain_match": true,
+      "semantic_match": true,
+      "explicit_lineage_evidence": "Crowd retail 001 calibration lineage of formal experiment",
+      "verdict": "VALID_ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-27",
+      "alias_target": "EXP-PRIZE-20260816-001-V1",
+      "target_exists": true,
+      "title_match": true,
+      "domain_match": true,
+      "semantic_match": true,
+      "explicit_lineage_evidence": "Prize-share 001/002 historical validation and prospective lineage",
+      "verdict": "VALID_ALIAS"
+    }
+  ],
+  "merge_audits": [
+    {
+      "source_item_id": "SRC-NONEXP-21",
+      "merge_target": "EXP-DRAW-20260824-010-V1",
+      "target_exists": true,
+      "same_experiment_lineage": true,
+      "explicit_change_control_evidence": "DECISION-20260824-095 official repair change-control facet",
+      "verdict": "VALID_MERGE"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-22",
+      "merge_target": "EXP-DRAW-20260824-010-V1",
+      "target_exists": true,
+      "same_experiment_lineage": true,
+      "explicit_change_control_evidence": "DECISION-20260824-095 official repair change-control facet",
+      "verdict": "VALID_MERGE"
+    }
+  ],
+  "item_resolution_details": [
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-001-V1",
+      "source_title": "숫자 관계망 구조",
+      "normalized_record_id": "EXP-DRAW-20260816-001-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
+      "source_title": "숫자 동시출현 관계망 (EXP-001)",
+      "normalized_record_id": "EXP-DRAW-20260816-002-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
+      "source_title": "조건부 관계망",
+      "normalized_record_id": "EXP-DRAW-20260816-003-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
+      "source_title": "A 출현 후 다음 회차 B 관계",
+      "normalized_record_id": "EXP-DRAW-20260816-004-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
+      "source_title": "2회 간격 관계",
+      "normalized_record_id": "EXP-DRAW-20260816-005-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
+      "source_title": "3개 숫자 관계망",
+      "normalized_record_id": "EXP-DRAW-20260816-006-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
+      "source_title": "최근100 관계망",
+      "normalized_record_id": "EXP-DRAW-20260816-007-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
+      "source_title": "최근50 관계망",
+      "normalized_record_id": "EXP-DRAW-20260816-008-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+      "source_title": "전체 관계망",
+      "normalized_record_id": "EXP-DRAW-20260816-009-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-010-V1",
+      "source_title": "NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)",
+      "normalized_record_id": "EXP-DRAW-20260816-010-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-011-V1",
+      "source_title": "회차 간 흔적 구조",
+      "normalized_record_id": "EXP-DRAW-20260816-011-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-012-V1",
+      "source_title": "격회 재출현 (EXP-005)",
+      "normalized_record_id": "EXP-DRAW-20260816-012-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-013-V1",
+      "source_title": "같은 끝자리 회차 전이 (EXP-006)",
+      "normalized_record_id": "EXP-DRAW-20260816-013-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-014-V1",
+      "source_title": "끝수 전이",
+      "normalized_record_id": "EXP-DRAW-20260816-014-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-015-V1",
+      "source_title": "결손 회복속도",
+      "normalized_record_id": "EXP-DRAW-20260816-015-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-016-V1",
+      "source_title": "결손 회복 전환점",
+      "normalized_record_id": "EXP-DRAW-20260816-016-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-017-V1",
+      "source_title": "가변 전멸구간 (EXP-004)",
+      "normalized_record_id": "EXP-DRAW-20260816-017-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-018-V1",
+      "source_title": "다중 전멸구간 상호작용",
+      "normalized_record_id": "EXP-DRAW-20260816-018-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-019-V1",
+      "source_title": "이동×가변 전멸 교차",
+      "normalized_record_id": "EXP-DRAW-20260816-019-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-020-V1",
+      "source_title": "최근10 강도 지속",
+      "normalized_record_id": "EXP-DRAW-20260816-020-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-021-V1",
+      "source_title": "비전멸 전용 엔진",
+      "normalized_record_id": "EXP-DRAW-20260816-021-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-022-V1",
+      "source_title": "구간별 복귀우선 전이",
+      "normalized_record_id": "EXP-DRAW-20260816-022-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-023-V1",
+      "source_title": "쌍둥이 유사 회차",
+      "normalized_record_id": "EXP-DRAW-20260816-023-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-024-V1",
+      "source_title": "구조형 쌍둥이 회차 전이",
+      "normalized_record_id": "EXP-DRAW-20260816-024-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-025-V1",
+      "source_title": "유사 회차 이후 다음 회차 전이 (EXP-007)",
+      "normalized_record_id": "EXP-DRAW-20260816-025-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-026-V1",
+      "source_title": "숫자 간격 구조 (EXP-008)",
+      "normalized_record_id": "EXP-DRAW-20260816-026-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-027-V1",
+      "source_title": "간격 분산",
+      "normalized_record_id": "EXP-DRAW-20260816-027-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-028-V1",
+      "source_title": "등차수열형 구조",
+      "normalized_record_id": "EXP-DRAW-20260816-028-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-029-V1",
+      "source_title": "+13/+14 고정 간격",
+      "normalized_record_id": "EXP-DRAW-20260816-029-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-030-V1",
+      "source_title": "숫자 역할 구조",
+      "normalized_record_id": "EXP-DRAW-20260816-030-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-031-V1",
+      "source_title": "특정 UNIT 일시 강세",
+      "normalized_record_id": "EXP-DRAW-20260816-031-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-032-V1",
+      "source_title": "NUMBER 역할",
+      "normalized_record_id": "EXP-DRAW-20260816-032-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-033-V1",
+      "source_title": "역할 충돌",
+      "normalized_record_id": "EXP-DRAW-20260816-033-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-034-V1",
+      "source_title": "실패 원인 복기",
+      "normalized_record_id": "EXP-DRAW-20260816-034-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-035-V1",
+      "source_title": "전체 엔진 귀무감사",
+      "normalized_record_id": "EXP-DRAW-20260816-035-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-036-V1",
+      "source_title": "placebo/permutation",
+      "normalized_record_id": "EXP-DRAW-20260816-036-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-037-V1",
+      "source_title": "과최적화 방지",
+      "normalized_record_id": "EXP-DRAW-20260816-037-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V1",
+      "source_title": "NO-PICK COVERAGE & QUALIFIED RESEARCH FALLBACK (EXP-002)",
+      "normalized_record_id": "EXP-DRAW-20260816-038-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V2",
+      "source_title": "NO-PICK COVERAGE & NUMBER-RANK FALLBACK (EXP-002 V2)",
+      "normalized_record_id": "EXP-DRAW-20260816-038-V2",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-039-V1",
+      "source_title": "홀수 개수 lag-1 공분산 (EXP-009)",
+      "normalized_record_id": "EXP-DRAW-20260821-039-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-040-V1",
+      "source_title": "추첨 합계 lag-1 공분산 (EXP-010)",
+      "normalized_record_id": "EXP-DRAW-20260821-040-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-041-V1",
+      "source_title": "미러 보수 전이 (EXP-011)",
+      "normalized_record_id": "EXP-DRAW-20260821-041-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-042-V1",
+      "source_title": "개별 숫자 return-age rank (EXP-012)",
+      "normalized_record_id": "EXP-DRAW-20260821-042-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-043-V1",
+      "source_title": "누적 빈도 rank (EXP-013)",
+      "normalized_record_id": "EXP-DRAW-20260821-043-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-044-V1",
+      "source_title": "직전 BONUS→다음 MAIN (EXP-014)",
+      "normalized_record_id": "EXP-DRAW-20260821-044-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-045-V1",
+      "source_title": "BONUS 상대 순위 교환가능성 (EXP-015)",
+      "normalized_record_id": "EXP-DRAW-20260821-045-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-046-V1",
+      "source_title": "번호 라벨 이질성·지속성 (EXP-016)",
+      "normalized_record_id": "EXP-DRAW-20260821-046-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+      "source_title": "대중 번호 선택 행동",
+      "normalized_record_id": "EXP-CROWD-20260816-001-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+      "source_title": "많이 고르는 번호·패턴",
+      "normalized_record_id": "EXP-CROWD-20260816-002-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+      "source_title": "판매량 대비 1등 당첨게임 밀도 / EXP-PRIZE-001-V1 BIRTHDAY-ZONE CONCENTRATION",
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+      "source_title": "BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)",
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V2",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
+      "source_title": "SECOND-PRIZE CROSS-OUTCOME CORROBORATION (EXP-PRIZE-002-V1)",
+      "normalized_record_id": "EXP-PRIZE-20260821-004-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
+      "source_title": "BIRTHDAY-ZONE CROWD CONCENTRATION — PROSPECTIVE CONFIRMATION",
+      "normalized_record_id": "EXP-PRIZE-20260821-005-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
+      "source_title": "LOW/NORMAL/HIGH WINNER 구조",
+      "normalized_record_id": "EXP-PRIZE-20260816-002-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+      "source_title": "생일번호 편향",
+      "normalized_record_id": "EXP-CROWD-20260816-003-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-003-V1",
+      "source_title": "공동당첨 위험",
+      "normalized_record_id": "EXP-PRIZE-20260816-003-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+      "source_title": "고번호·끝수·연속수·시각/OMR 선택편향",
+      "normalized_record_id": "EXP-CROWD-20260816-004-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-005-V1",
+      "source_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+      "normalized_record_id": "EXP-CROWD-20260823-005-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-006-V1",
+      "source_title": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION",
+      "normalized_record_id": "EXP-CROWD-20260823-006-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-007-V1",
+      "source_title": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS",
+      "normalized_record_id": "EXP-CROWD-20260823-007-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-008-V1",
+      "source_title": "MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "normalized_record_id": "EXP-CROWD-20260823-008-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260824-009-V1",
+      "source_title": "PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "normalized_record_id": "EXP-CROWD-20260824-009-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260824-010-V1",
+      "source_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+      "normalized_record_id": "EXP-DRAW-20260824-010-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-017-V1",
+      "source_title": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1",
+      "normalized_record_id": "EXP-DRAW-20260827-017-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V1",
+      "source_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
+      "normalized_record_id": "EXP-DRAW-20260827-018-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V2",
+      "source_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2",
+      "normalized_record_id": "EXP-DRAW-20260827-018-V2",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-019-V1",
+      "source_title": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1",
+      "normalized_record_id": "EXP-DRAW-20260827-019-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260828-020-V1",
+      "source_title": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
+      "normalized_record_id": "EXP-DRAW-20260828-020-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260930-001-V1",
+      "source_title": "EDGE ARITHMETIC FAMILY V1",
+      "normalized_record_id": "EXP-DRAW-20260930-001-V1",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-01-UNIT_3",
+      "source_title": "UNIT_3 (3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.)",
+      "normalized_record_id": "OFFICIAL-UNIT-3",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-02-UNIT_5",
+      "source_title": "UNIT_5 (5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.)",
+      "normalized_record_id": "OFFICIAL-UNIT-5",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-03-UNIT_9",
+      "source_title": "UNIT_9 (9단위 전멸구간·복귀깊이 0/1/2. 1239 rerun NORMAL 62.4091.)",
+      "normalized_record_id": "OFFICIAL-UNIT-9",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-04-UNIT_10",
+      "source_title": "UNIT_10 (10단위 전멸구간과 41..45 크기 보정. 1239 rerun NORMAL 65.4002.)",
+      "normalized_record_id": "OFFICIAL-UNIT-10",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-05-END_DIGIT",
+      "source_title": "END_DIGIT (끝수 점유·전멸·복귀. 1239 SEVERE 100.0.)",
+      "normalized_record_id": "OFFICIAL-END-DIGIT",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-06-NUMBER",
+      "source_title": "NUMBER (개별 번호 구조·멤버십 관문. 1239 selected 0.)",
+      "normalized_record_id": "OFFICIAL-NUMBER-14KEY",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-07-TRIO",
+      "source_title": "TRIO (핵심 조합 단위. `3/3 PRIMARY`, `exact2/3 SUPPORT`.)",
+      "normalized_record_id": "OFFICIAL-TRIO-15KEY",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-08-PAIR",
+      "source_title": "PAIR (lifecycle/signature/timing shadow repair와 승인 change-control.)",
+      "normalized_record_id": "OFFICIAL-PAIR-LIFECYCLE",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-09-CORE",
+      "source_title": "CORE (NUMBER→TRIO→PAIR→CORE 보호 판정 계층.)",
+      "normalized_record_id": "OFFICIAL-CORE-INVARIANTS",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-10-FIXED_ORBIT",
+      "source_title": "Fixed Orbit (고정 KTS 3×3 TRIO; 역사 exact3 5/1237.)",
+      "normalized_record_id": "OFFICIAL-FIXED-ORBIT",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-11-LINKED_ORBIT",
+      "source_title": "Linked Orbit (직전 MAIN6+BONUS 연동 3×3 TRIO; 역사 exact3 7/1237, 우월성 미지지.)",
+      "normalized_record_id": "OFFICIAL-LINKED-ORBIT",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-12-KTS45",
+      "source_title": "KTS45 (330 TRIO 고정 schedule; 결과 후 재생성 금지.)",
+      "normalized_record_id": "OFFICIAL-KTS45",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-01",
+      "source_title": "TRIO ORBIT Fixed/Linked 역사검증",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-FIXED",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-02",
+      "source_title": "TRIO ORBIT divergence attribution",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-LINKED",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-03",
+      "source_title": "KTS pair-completion collision",
+      "normalized_record_id": "NON-EXP-03",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-04",
+      "source_title": "LAG 3~6 reappearance map",
+      "normalized_record_id": "NON-EXP-04",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-05",
+      "source_title": "BONUS extinction interaction",
+      "normalized_record_id": "NON-EXP-05",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-06",
+      "source_title": "BONUS lag2 interaction",
+      "normalized_record_id": "NON-EXP-06",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-07",
+      "source_title": "Ending-frequency interaction",
+      "normalized_record_id": "NON-EXP-07",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-08",
+      "source_title": "TRIO HOLD causal decomposition",
+      "normalized_record_id": "NON-EXP-08",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-09",
+      "source_title": "Survivor-pool rolling-origin actionability",
+      "normalized_record_id": "NON-EXP-09",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-10",
+      "source_title": "Opposite-period stability filter validation",
+      "normalized_record_id": "NON-EXP-10",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-11",
+      "source_title": "NO-PICK structural root-cause audit",
+      "normalized_record_id": "NON-EXP-11",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-12",
+      "source_title": "NO-PICK causal trace",
+      "normalized_record_id": "NON-EXP-12",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-13",
+      "source_title": "NUMBER member-structure SEVERE causal trace",
+      "normalized_record_id": "NON-EXP-13",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-14",
+      "source_title": "Current-1239 END_DIGIT severe causal trace",
+      "normalized_record_id": "NON-EXP-14",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-15",
+      "source_title": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "normalized_record_id": "NON-EXP-15",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-16",
+      "source_title": "Current-1239 opposite-period causal trace",
+      "normalized_record_id": "NON-EXP-16",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-17",
+      "source_title": "Current-1239 official pre-draw audit",
+      "normalized_record_id": "NON-EXP-17",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-18",
+      "source_title": "Contiguous 1..1238 rebuild and 1239 rerun",
+      "normalized_record_id": "NON-EXP-18",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-19",
+      "source_title": "Discovery 2.0 independent-signal audit",
+      "normalized_record_id": "NON-EXP-19",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-20",
+      "source_title": "Pair shadow repair deterministic validation",
+      "normalized_record_id": "EXP-DRAW-20260824-010-V1",
+      "mapping_type": "ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-21",
+      "source_title": "Official repair Phase A/B canary/change-control validation",
+      "normalized_record_id": "EXP-DRAW-20260824-010-V1",
+      "mapping_type": "MERGED"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-22",
+      "source_title": "Official repair apply/finalize verification",
+      "normalized_record_id": "EXP-DRAW-20260824-010-V1",
+      "mapping_type": "MERGED"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-23",
+      "source_title": "Crowd topology 001 supporting audit lineage",
+      "normalized_record_id": "EXP-CROWD-20260816-001-V1",
+      "mapping_type": "ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-24",
+      "source_title": "Crowd topology 002 independent reproduction/calibration",
+      "normalized_record_id": "EXP-CROWD-20260816-002-V1",
+      "mapping_type": "ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-25",
+      "source_title": "Crowd topology 003 supporting methodology lineage",
+      "normalized_record_id": "EXP-CROWD-20260816-003-V1",
+      "mapping_type": "ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-26",
+      "source_title": "Crowd retail 001 calibration/reproduction lineage",
+      "normalized_record_id": "EXP-CROWD-20260816-004-V1",
+      "mapping_type": "ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-27",
+      "source_title": "Prize-share 001/002 historical validation 및 prospective preparation lineage",
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V1",
+      "mapping_type": "ALIAS"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-28",
+      "source_title": "LZ76 거시 복잡도 국면 고립 검정 V1",
+      "normalized_record_id": "NON-EXP-28",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
+      "source_title": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+      "normalized_record_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "source_title": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "source_title": "TRIO ORBIT Statistical Correction & Null Calibration 001",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-REVIEWED-01-MBC_실제_공_추첨순서",
+      "source_title": "MBC 실제 공 추첨순서 / DRAW-ORDER",
+      "normalized_record_id": "REVIEWED-MBC_실제_공_추첨순서",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-REVIEWED-02-REHEARSAL",
+      "source_title": "REHEARSAL / 리허설 번호",
+      "normalized_record_id": "REVIEWED-REHEARSAL",
+      "mapping_type": "DIRECT"
+    },
+    {
+      "source_item_id": "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244",
+      "source_title": "TRIO ORBIT Target Round 1244 Prospective Predraw",
+      "normalized_record_id": "PROSPECTIVE-TRIO-ORBIT-TARGET-1244",
+      "mapping_type": "DIRECT"
+    }
+  ]
+}

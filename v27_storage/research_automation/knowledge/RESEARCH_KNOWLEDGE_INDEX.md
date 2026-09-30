@@ -27,21 +27,21 @@
 | 12 | `EXP-DRAW-20260816-012-V1` | 격회 재출현 (EXP-005) | `FORMAL_REGISTRY` | `FAILED` | Next round state | Fair lottery null |
 | 13 | `EXP-DRAW-20260816-013-V1` | 같은 끝자리 회차 전이 (EXP-006) | `FORMAL_REGISTRY` | `FAILED` | Next round state | Fair lottery null |
 | 14 | `EXP-DRAW-20260816-014-V1` | 끝수 전이 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 15 | `EXP-DRAW-20260816-015-V1` | 결손 회복속도 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 16 | `EXP-DRAW-20260816-016-V1` | 결손 회복 전환점 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 17 | `EXP-DRAW-20260816-017-V1` | 가변 전멸구간 (EXP-004) | `FORMAL_REGISTRY` | `FAILED` | Next round state | Fair lottery null |
-| 18 | `EXP-DRAW-20260816-018-V1` | 다중 전멸구간 상호작용 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 19 | `EXP-DRAW-20260816-019-V1` | 이동×가변 전멸 교차 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 20 | `EXP-DRAW-20260816-020-V1` | 최근10 강도 지속 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 21 | `EXP-DRAW-20260816-021-V1` | 비전멸 전용 엔진 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 22 | `EXP-DRAW-20260816-022-V1` | 구간별 복귀우선 전이 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
+| 15 | `EXP-DRAW-20260816-015-V1` | 결손 회복속도 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 16 | `EXP-DRAW-20260816-016-V1` | 결손 회복 전환점 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 17 | `EXP-DRAW-20260816-017-V1` | 가변 전멸구간 (EXP-004) | `FORMAL_REGISTRY` | `FAILED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 18 | `EXP-DRAW-20260816-018-V1` | 다중 전멸구간 상호작용 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 19 | `EXP-DRAW-20260816-019-V1` | 이동×가변 전멸 교차 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 20 | `EXP-DRAW-20260816-020-V1` | 최근10 강도 지속 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 21 | `EXP-DRAW-20260816-021-V1` | 비전멸 전용 엔진 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
+| 22 | `EXP-DRAW-20260816-022-V1` | 구간별 복귀우선 전이 | `FORMAL_REGISTRY` | `REGISTERED` | Next-round extinction negative-space recovery probability | Hypergeometric partition sampling null |
 | 23 | `EXP-DRAW-20260816-023-V1` | 쌍둥이 유사 회차 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
 | 24 | `EXP-DRAW-20260816-024-V1` | 구조형 쌍둥이 회차 전이 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
 | 25 | `EXP-DRAW-20260816-025-V1` | 유사 회차 이후 다음 회차 전이 (EXP-007) | `FORMAL_REGISTRY` | `FAILED` | Next round state | Fair lottery null |
-| 26 | `EXP-DRAW-20260816-026-V1` | 숫자 간격 구조 (EXP-008) | `FORMAL_REGISTRY` | `FAILED` | Next round state | Fair lottery null |
-| 27 | `EXP-DRAW-20260816-027-V1` | 간격 분산 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 28 | `EXP-DRAW-20260816-028-V1` | 등차수열형 구조 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
-| 29 | `EXP-DRAW-20260816-029-V1` | +13/+14 고정 간격 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
+| 26 | `EXP-DRAW-20260816-026-V1` | 숫자 간격 구조 (EXP-008) | `FORMAL_REGISTRY` | `FAILED` | Adjacent spacing distribution and minimum distance invariance | Uniform order statistics spacing distribution on discrete grid {1..45} |
+| 27 | `EXP-DRAW-20260816-027-V1` | 간격 분산 | `FORMAL_REGISTRY` | `REGISTERED` | Adjacent spacing distribution and minimum distance invariance | Uniform order statistics spacing distribution on discrete grid {1..45} |
+| 28 | `EXP-DRAW-20260816-028-V1` | 등차수열형 구조 | `FORMAL_REGISTRY` | `REGISTERED` | Adjacent spacing distribution and minimum distance invariance | Uniform order statistics spacing distribution on discrete grid {1..45} |
+| 29 | `EXP-DRAW-20260816-029-V1` | +13/+14 고정 간격 | `FORMAL_REGISTRY` | `REGISTERED` | Adjacent spacing distribution and minimum distance invariance | Uniform order statistics spacing distribution on discrete grid {1..45} |
 | 30 | `EXP-DRAW-20260816-030-V1` | 숫자 역할 구조 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
 | 31 | `EXP-DRAW-20260816-031-V1` | 특정 UNIT 일시 강세 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
 | 32 | `EXP-DRAW-20260816-032-V1` | NUMBER 역할 | `FORMAL_REGISTRY` | `REGISTERED` | Next round state | Fair lottery null |
@@ -55,7 +55,7 @@
 | 40 | `EXP-DRAW-20260821-039-V1` | 홀수 개수 lag-1 공분산 (EXP-009) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
 | 41 | `EXP-DRAW-20260821-040-V1` | 추첨 합계 lag-1 공분산 (EXP-010) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
 | 42 | `EXP-DRAW-20260821-041-V1` | 미러 보수 전이 (EXP-011) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
-| 43 | `EXP-DRAW-20260821-042-V1` | 개별 숫자 return-age rank (EXP-012) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
+| 43 | `EXP-DRAW-20260821-042-V1` | 개별 숫자 return-age rank (EXP-012) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Number reappearance hazard as a function of return age | Geometric distribution with memoryless parameter p = 6/45 |
 | 44 | `EXP-DRAW-20260821-043-V1` | 누적 빈도 rank (EXP-013) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
 | 45 | `EXP-DRAW-20260821-044-V1` | 직전 BONUS→다음 MAIN (EXP-014) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
 | 46 | `EXP-DRAW-20260821-045-V1` | BONUS 상대 순위 교환가능성 (EXP-015) | `FORMAL_REGISTRY` | `FAILED_EARLY` | Next round state | Fair lottery null |
@@ -70,17 +70,17 @@
 | 55 | `EXP-CROWD-20260816-003-V1` | 생일번호 편향 | `FORMAL_REGISTRY` | `REGISTERED` | Crowd concentration in Johnson space | Independent uniform ticket selection by players |
 | 56 | `EXP-PRIZE-20260816-003-V1` | 공동당첨 위험 | `FORMAL_REGISTRY` | `REGISTERED` | First/second prize share dilution risk | Poisson/binomial winner count under uniform ticket distribution |
 | 57 | `EXP-CROWD-20260816-004-V1` | 고번호·끝수·연속수·시각/OMR 선택편향 | `FORMAL_REGISTRY` | `REGISTERED` | Crowd concentration in Johnson space | Independent uniform ticket selection by players |
-| 58 | `EXP-CROWD-20260823-005-V1` | CROWD | `FORMAL_REGISTRY` | `LOCKED BEFORE OUTCOME RELATION ANALYSIS` | Next round state | Fair lottery null |
-| 59 | `EXP-CROWD-20260823-006-V1` | CROWD | `FORMAL_REGISTRY` | `LOCKED BEFORE OUTCOME ANALYSIS` | Next round state | Fair lottery null |
-| 60 | `EXP-CROWD-20260823-007-V1` | CROWD | `FORMAL_REGISTRY` | `LOCKED BEFORE OUTCOME ANALYSIS` | Next round state | Fair lottery null |
-| 61 | `EXP-CROWD-20260823-008-V1` | CROWD | `FORMAL_REGISTRY` | `LOCKED BEFORE OUTCOME TEST` | Next round state | Fair lottery null |
-| 62 | `EXP-CROWD-20260824-009-V1` | CROWD | `FORMAL_REGISTRY` | `LOCKED BEFORE START 1239 PUBLICATION` | Next round state | Fair lottery null |
-| 63 | `EXP-DRAW-20260824-010-V1` | DRAW | `FORMAL_REGISTRY` | `USER-APPROVED SEALED CHANGE CONTROL` | Next round state | Fair lottery null |
-| 64 | `EXP-DRAW-20260827-017-V1` | DRAW | `FORMAL_REGISTRY` | `SHA-256 LOCKED BEFORE OUTCOME TEST` | Next round state | Fair lottery null |
-| 65 | `EXP-DRAW-20260827-018-V1` | DRAW | `FORMAL_REGISTRY` | `SHA-256 LOCKED BEFORE OUTCOME TEST` | Next round state | Fair lottery null |
-| 66 | `EXP-DRAW-20260827-018-V2` | DRAW | `FORMAL_REGISTRY` | `PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME` | Next round state | Fair lottery null |
-| 67 | `EXP-DRAW-20260827-019-V1` | DRAW | `FORMAL_REGISTRY` | `LOCKED BEFORE OFFICIAL-DATA ACQUISITION` | Next round state | Fair lottery null |
-| 68 | `EXP-DRAW-20260828-020-V1` | DRAW | `FORMAL_REGISTRY` | `LOCKED BEFORE TRAIN RELATIONSHIP` | Next round state | Fair lottery null |
+| 58 | `EXP-CROWD-20260823-005-V1` | JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION | `FORMAL_REGISTRY` | `FAILED` | Next round state | Fair lottery null |
+| 59 | `EXP-CROWD-20260823-006-V1` | RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION | `FORMAL_REGISTRY` | `SUPPORTED_WITHIN_EXPERIMENT` | Next round state | Fair lottery null |
+| 60 | `EXP-CROWD-20260823-007-V1` | JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS | `FORMAL_REGISTRY` | `EXPLORATORY_NOT_SUPPORTED` | Next round state | Fair lottery null |
+| 61 | `EXP-CROWD-20260823-008-V1` | MANUAL SAME-RETAILER JACKPOT COLLISION | `FORMAL_REGISTRY` | `EXPLORATORY_RETAILER_MODE_CONCENTRATION` | Next round state | Fair lottery null |
+| 62 | `EXP-CROWD-20260824-009-V1` | PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION | `FORMAL_REGISTRY` | `PROSPECTIVE_LOCKED_WAITING_FOR_DATA` | Next round state | Fair lottery null |
+| 63 | `EXP-DRAW-20260824-010-V1` | OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT | `FORMAL_REGISTRY` | `OFFICIAL_REPAIR_APPLIED_AND_VERIFIED` | Production shadow state integrity without gate or pick changes | Frozen production baseline |
+| 64 | `EXP-DRAW-20260827-017-V1` | TRIO ORBIT CONSENSUS NUMBER EFFECT V1 | `FORMAL_REGISTRY` | `FAILED_NOT_SUPPORTED` | Next round state | Fair lottery null |
+| 65 | `EXP-DRAW-20260827-018-V1` | RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1 | `FORMAL_REGISTRY` | `READY_FOR_TEST` | Next round state | Fair lottery null |
+| 66 | `EXP-DRAW-20260827-018-V2` | RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2 | `FORMAL_REGISTRY` | `AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT` | Next round state | Fair lottery null |
+| 67 | `EXP-DRAW-20260827-019-V1` | SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1 | `FORMAL_REGISTRY` | `FAILED_NOT_SUPPORTED` | Number draw appearance correlation with sales | Zero correlation between sales crowd volume and drawn numbers |
+| 68 | `EXP-DRAW-20260828-020-V1` | LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1 | `FORMAL_REGISTRY` | `FAILED_NO_SELECTION_SIGNAL` | Next round number selection signal | Regime transition independence |
 | 69 | `EXP-DRAW-20260930-001-V1` | EDGE ARITHMETIC FAMILY V1 | `FORMAL_REGISTRY` | `INCONCLUSIVE / NO_SUPPORTED_ENDPOINT` | Next round main6 ball appearance | 50,000 full-record order permutations |
 | 70 | `OFFICIAL-UNIT-3` | UNIT_3 (3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.) | `OFFICIAL_INTERNAL` | `OFFICIAL_FROZEN` | Partition recovery speed and vacancy duration | Hypergeometric uniform ball partition distribution |
 | 71 | `OFFICIAL-UNIT-5` | UNIT_5 (5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.) | `OFFICIAL_INTERNAL` | `OFFICIAL_FROZEN` | Partition recovery speed and vacancy duration | Hypergeometric uniform ball partition distribution |

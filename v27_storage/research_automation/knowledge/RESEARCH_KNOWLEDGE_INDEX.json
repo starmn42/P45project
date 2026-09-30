@@ -340,29 +340,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-DRAW-20260816-009-V1",
       "source_classes": [
-        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
-        "SRC-NONEXP-20",
-        "SRC-NONEXP-21",
-        "SRC-NONEXP-22"
+        "SRC-FORMAL-EXP-DRAW-20260816-009-V1"
       ],
       "formal_ids": [
         "EXP-DRAW-20260816-009-V1"
       ],
       "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
-      "aliases": [
-        "SRC-NONEXP-20",
-        "SRC-NONEXP-21",
-        "SRC-NONEXP-22"
-      ]
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-010-V1",
@@ -544,18 +535,20 @@
       "canonical_name": "결손 회복속도",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -579,18 +572,20 @@
       "canonical_name": "결손 회복 전환점",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -614,18 +609,20 @@
       "canonical_name": "가변 전멸구간 (EXP-004)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
@@ -649,18 +646,20 @@
       "canonical_name": "다중 전멸구간 상호작용",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -684,18 +683,20 @@
       "canonical_name": "이동×가변 전멸 교차",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -719,18 +720,20 @@
       "canonical_name": "최근10 강도 지속",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -754,18 +757,20 @@
       "canonical_name": "비전멸 전용 엔진",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -789,18 +794,20 @@
       "canonical_name": "구간별 복귀우선 전이",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Variable partition zones and vacancy states across rolling windows",
+      "transformation": "Zone vacancy tracking and recovery rate calculation",
+      "condition": "Previous round extinction state",
+      "target": "Next-round extinction negative-space recovery probability",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "recovery_rate",
+        "vacancy_duration"
       ],
-      "null": "Fair lottery null",
+      "null": "Hypergeometric partition sampling null",
       "ontology_tags": [
-        "NUMBER"
+        "extinction",
+        "recovery",
+        "occupancy"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
@@ -929,17 +936,20 @@
       "canonical_name": "숫자 간격 구조 (EXP-008)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
-      "lag": 1,
+      "inputs": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
+      "transformation": "Adjacent difference vector and spacing variance calculation",
+      "condition": "Order statistics spacing vector",
+      "target": "Adjacent spacing distribution and minimum distance invariance",
+      "lag": 0,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "min_spacing",
+        "spacing_variance",
+        "kolmogorov_smirnov_d"
       ],
-      "null": "Fair lottery null",
+      "null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
       "ontology_tags": [
+        "spacing",
+        "gap",
         "NUMBER"
       ],
       "verdict": "FAILED",
@@ -964,17 +974,20 @@
       "canonical_name": "간격 분산",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
-      "lag": 1,
+      "inputs": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
+      "transformation": "Adjacent difference vector and spacing variance calculation",
+      "condition": "Order statistics spacing vector",
+      "target": "Adjacent spacing distribution and minimum distance invariance",
+      "lag": 0,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "min_spacing",
+        "spacing_variance",
+        "kolmogorov_smirnov_d"
       ],
-      "null": "Fair lottery null",
+      "null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
       "ontology_tags": [
+        "spacing",
+        "gap",
         "NUMBER"
       ],
       "verdict": "REGISTERED",
@@ -999,17 +1012,20 @@
       "canonical_name": "등차수열형 구조",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
-      "lag": 1,
+      "inputs": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
+      "transformation": "Adjacent difference vector and spacing variance calculation",
+      "condition": "Order statistics spacing vector",
+      "target": "Adjacent spacing distribution and minimum distance invariance",
+      "lag": 0,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "min_spacing",
+        "spacing_variance",
+        "kolmogorov_smirnov_d"
       ],
-      "null": "Fair lottery null",
+      "null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
       "ontology_tags": [
+        "spacing",
+        "gap",
         "NUMBER"
       ],
       "verdict": "REGISTERED",
@@ -1034,17 +1050,20 @@
       "canonical_name": "+13/+14 고정 간격",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
-      "lag": 1,
+      "inputs": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
+      "transformation": "Adjacent difference vector and spacing variance calculation",
+      "condition": "Order statistics spacing vector",
+      "target": "Adjacent spacing distribution and minimum distance invariance",
+      "lag": 0,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "min_spacing",
+        "spacing_variance",
+        "kolmogorov_smirnov_d"
       ],
-      "null": "Fair lottery null",
+      "null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
       "ontology_tags": [
+        "spacing",
+        "gap",
         "NUMBER"
       ],
       "verdict": "REGISTERED",
@@ -1524,17 +1543,19 @@
       "canonical_name": "개별 숫자 return-age rank (EXP-012)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "DRAW raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "inputs": "Individual number return ages (rounds elapsed since last appearance)",
+      "transformation": "Return age rank sorting and threshold hazard tracking",
+      "condition": "Historical return age distributions",
+      "target": "Number reappearance hazard as a function of return age",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "return_age_rank",
+        "reappearance_hazard"
       ],
-      "null": "Fair lottery null",
+      "null": "Geometric distribution with memoryless parameter p = 6/45",
       "ontology_tags": [
+        "order/rank",
+        "gap",
         "NUMBER"
       ],
       "verdict": "FAILED",
@@ -2091,10 +2112,10 @@
     },
     {
       "research_id": "EXP-CROWD-20260823-005-V1",
-      "canonical_name": "CROWD",
+      "canonical_name": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
-      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "status": "FAILED",
+      "inputs": "CROWD raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2107,7 +2128,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
+      "verdict": "FAILED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2121,15 +2142,15 @@
       "formal_ids": [
         "EXP-CROWD-20260823-005-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-CROWD-TOPO-001-V1",
+      "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-006-V1",
-      "canonical_name": "CROWD",
+      "canonical_name": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE OUTCOME ANALYSIS",
-      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "status": "SUPPORTED_WITHIN_EXPERIMENT",
+      "inputs": "CROWD raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2142,7 +2163,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "verdict": "SUPPORTED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2156,15 +2177,15 @@
       "formal_ids": [
         "EXP-CROWD-20260823-006-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-CROWD-TOPO-002-V1",
+      "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-007-V1",
-      "canonical_name": "CROWD",
+      "canonical_name": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE OUTCOME ANALYSIS",
-      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "status": "EXPLORATORY_NOT_SUPPORTED",
+      "inputs": "CROWD raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2177,7 +2198,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "verdict": "SUPPORTED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2191,15 +2212,15 @@
       "formal_ids": [
         "EXP-CROWD-20260823-007-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-CROWD-TOPO-003-V1",
+      "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-008-V1",
-      "canonical_name": "CROWD",
+      "canonical_name": "MANUAL SAME-RETAILER JACKPOT COLLISION",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE OUTCOME TEST",
-      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "status": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+      "inputs": "CROWD raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2212,7 +2233,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "LOCKED BEFORE OUTCOME TEST",
+      "verdict": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2226,15 +2247,15 @@
       "formal_ids": [
         "EXP-CROWD-20260823-008-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-CROWD-RETAIL-001-V1",
+      "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260824-009-V1",
-      "canonical_name": "CROWD",
+      "canonical_name": "PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE START 1239 PUBLICATION",
-      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "inputs": "CROWD raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2247,7 +2268,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "LOCKED BEFORE START 1239 PUBLICATION",
+      "verdict": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2261,50 +2282,61 @@
       "formal_ids": [
         "EXP-CROWD-20260824-009-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-CROWD-RETAIL-PROSPECTIVE-001-V1",
+      "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260824-010-V1",
-      "canonical_name": "DRAW",
+      "canonical_name": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
       "source_class": "FORMAL_REGISTRY",
-      "status": "USER-APPROVED SEALED CHANGE CONTROL",
-      "inputs": "PAIR OFFICIAL CHANGE CONTROL raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "status": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+      "inputs": "Official shadow lifecycle states for all 990 ball pairs",
+      "transformation": "Deterministic shadow lifecycle repair apply audit (DECISION-20260824-095)",
+      "condition": "Canary non-regression check on historical and unrevealed draws",
+      "target": "Production shadow state integrity without gate or pick changes",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "shadow_integrity_pass",
+        "signature_invariance"
       ],
-      "null": "Fair lottery null",
+      "null": "Frozen production baseline",
       "ontology_tags": [
-        "NUMBER"
+        "PAIR",
+        "CORE",
+        "transition"
       ],
-      "verdict": "USER-APPROVED SEALED CHANGE CONTROL",
+      "verdict": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
       "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-DRAW-20260824-010-V1",
       "source_classes": [
+        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-DRAW-20260824-010-V1"
+        "SRC-FORMAL-EXP-DRAW-20260824-010-V1",
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22"
       ],
       "formal_ids": [
         "EXP-DRAW-20260824-010-V1"
       ],
-      "actionability": "Formal experiment protocol in OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001",
-      "aliases": []
+      "actionability": "Formal experiment protocol in PAIR OFFICIAL CHANGE CONTROL",
+      "aliases": [
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22"
+      ]
     },
     {
       "research_id": "EXP-DRAW-20260827-017-V1",
-      "canonical_name": "DRAW",
+      "canonical_name": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1",
       "source_class": "FORMAL_REGISTRY",
-      "status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
-      "inputs": "TRIO ORBIT CONSENSUS NUMBER LAB raw numbers",
+      "status": "FAILED_NOT_SUPPORTED",
+      "inputs": "DRAW raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2317,7 +2349,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "verdict": "FAILED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2331,15 +2363,15 @@
       "formal_ids": [
         "EXP-DRAW-20260827-017-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-017",
+      "actionability": "Formal experiment protocol in TRIO ORBIT CONSENSUS NUMBER LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-018-V1",
-      "canonical_name": "DRAW",
+      "canonical_name": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
       "source_class": "FORMAL_REGISTRY",
-      "status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
-      "inputs": "RESIDUAL NEIGHBOR CLOSURE LAB raw numbers",
+      "status": "READY_FOR_TEST",
+      "inputs": "DRAW raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2352,7 +2384,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "verdict": "READY_FOR_TEST",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2366,15 +2398,15 @@
       "formal_ids": [
         "EXP-DRAW-20260827-018-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-018",
+      "actionability": "Formal experiment protocol in RESIDUAL NEIGHBOR CLOSURE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-018-V2",
-      "canonical_name": "DRAW",
+      "canonical_name": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2",
       "source_class": "FORMAL_REGISTRY",
-      "status": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
-      "inputs": "RESIDUAL NEIGHBOR CLOSURE LAB raw numbers",
+      "status": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+      "inputs": "DRAW raw numbers",
       "transformation": "Standard structural extraction",
       "condition": "Unconditioned baseline",
       "target": "Next round state",
@@ -2387,7 +2419,7 @@
       "ontology_tags": [
         "NUMBER"
       ],
-      "verdict": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
+      "verdict": "AXIS_CLOSED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2401,28 +2433,30 @@
       "formal_ids": [
         "EXP-DRAW-20260827-018-V2"
       ],
-      "actionability": "Formal experiment protocol in EXP-018 V2",
+      "actionability": "Formal experiment protocol in RESIDUAL NEIGHBOR CLOSURE LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-019-V1",
-      "canonical_name": "DRAW",
+      "canonical_name": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
-      "inputs": "SALES-ADJUSTED CROWD EFFECT LAB raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
-      "lag": 1,
+      "status": "FAILED_NOT_SUPPORTED",
+      "inputs": "Official sales volume and birthday range (1..31)",
+      "transformation": "Sales-normalized crowd selection bias model",
+      "condition": "Birthday vs non-birthday numbers",
+      "target": "Number draw appearance correlation with sales",
+      "lag": 0,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "permutation_beta",
+        "p_perm"
       ],
-      "null": "Fair lottery null",
+      "null": "Zero correlation between sales crowd volume and drawn numbers",
       "ontology_tags": [
+        "range",
+        "regime",
         "NUMBER"
       ],
-      "verdict": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
+      "verdict": "FAILED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2436,28 +2470,29 @@
       "formal_ids": [
         "EXP-DRAW-20260827-019-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-019",
+      "actionability": "Formal experiment protocol in SALES-ADJUSTED CROWD EFFECT LAB",
       "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260828-020-V1",
-      "canonical_name": "DRAW",
+      "canonical_name": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
       "source_class": "FORMAL_REGISTRY",
-      "status": "LOCKED BEFORE TRAIN RELATIONSHIP",
-      "inputs": "LAGGED CROWD METADATA SIGNAL LAB raw numbers",
-      "transformation": "Standard structural extraction",
-      "condition": "Unconditioned baseline",
-      "target": "Next round state",
+      "status": "FAILED_NO_SELECTION_SIGNAL",
+      "inputs": "Lagged winner count regimes (low/high winner count at t-1)",
+      "transformation": "Winner count regime indicator conditioning",
+      "condition": "Previous round winner count extremity",
+      "target": "Next round number selection signal",
       "lag": 1,
       "metrics": [
-        "hit_rate",
-        "lift"
+        "regime_conditional_lift"
       ],
-      "null": "Fair lottery null",
+      "null": "Regime transition independence",
       "ontology_tags": [
-        "NUMBER"
+        "regime",
+        "lag",
+        "transition"
       ],
-      "verdict": "LOCKED BEFORE TRAIN RELATIONSHIP",
+      "verdict": "FAILED",
       "evidence_paths": [
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
@@ -2471,7 +2506,7 @@
       "formal_ids": [
         "EXP-DRAW-20260828-020-V1"
       ],
-      "actionability": "Formal experiment protocol in EXP-020",
+      "actionability": "Formal experiment protocol in LAGGED CROWD METADATA SIGNAL LAB",
       "aliases": []
     },
     {

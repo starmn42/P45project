@@ -127,3 +127,33 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
 
 
+
+### 7. P45 CANONICAL RESEARCH ID RESOLVER + REFERENTIAL INTEGRITY FINALIZATION (2026-09-30)
+- **배경 및 원인 분석:**
+  - V1.2에서 115개 원천 연구 항목의 전수 색인(100%)을 달성했으나, 인간 레이블(EXP-009)과 물리 레지스트리 행(EXP-DRAW-20260816-009-V1)의 숫자 서픽스 자동 동일시 위험이 발견됨.
+  - EXP-DRAW-20260816-009-V1은 NUMBER RELATION LAB '전체 관계망' 연구이며, 공식 PAIR 라이프사이클 수리 감사 행은 EXP-DRAW-20260824-010-V1임.
+  - 후보 A의 시맨틱 매칭에 무관한 EXP-DRAW-20260821-042-V1 (RETURN LAB 개별 숫자 return-age rank)이 유입되었던 문제 확인.
+- **핵심 구현 및 성과:**
+  - **식별자 네임스페이스 엄격 분리 (canonical_id_resolver.py):**
+    - CANONICAL_REGISTRY_ID, HUMAN_EXP_LABEL, NON_EXP_ID, OFFICIAL_INTERNAL_ID, SOURCE_ITEM_ID 분리.
+    - 서픽스 자동 매핑 엄격 차단 (EXP-009 != ...-009-V1).
+    - 자동 생성 테이블: CANONICAL_REGISTRY_LOOKUP.json (69행), HUMAN_EXP_LABEL_MAP.json (28개 명시적 레이블).
+  - **참조 무결성 전수 감사 (RESEARCH_REFERENTIAL_INTEGRITY_AUDIT.*):**
+    - 115개 원천 항목 전수 감사: 정식 레지스트리 참조 74건 전수 해결 (무효 0, 모호 0).
+    - ALIAS 6건 전수 VALID, MERGED 2건 전수 VALID.
+    - PAIR 수리 항목(SRC-NONEXP-20, 21, 22) 정규화 타깃을 EXP-DRAW-20260824-010-V1로 정정.
+    - EXP-DRAW-20260816-009-V1 (전체 관계망) 및 EXP-DRAW-20260821-042-V1 (return-age rank) 보호 완료.
+  - **Fail-Closed 참조 무결성 가드 및 시맨틱 매처 정밀화:**
+    - 상위 매칭에 무효/모호 레지스트리 참조 유입 시 BLOCKED_REFERENTIAL_INTEGRITY로 차단.
+    - 동일 도메인이 아닌 경우 실패 축 구제(FAILED_AXIS_RESCUE) 분류 금지 -> 후보 A에서 무관한 return-age 오매칭 원천 배제.
+- **후보군 A/B/C 재평가:**
+  - 후보 A (IDEA-1243-NEGA-001): REJECT_RESCUE 유지 (042 배제, EXP-004/015/022 기준 차단).
+  - 후보 B (IDEA-1243-OPPO-002): REJECT_RESCUE 유지 (간격·반발 실패축 기준 차단).
+  - 후보 C (IDEA-1243-CROS-003): NEEDS_EVIDENCE 유지 (READY_FOR_PROTOCOL 자동 승격 금지, 새 실험 실행 0건).
+- **무결성 및 검증 요약:**
+  - 22개 신규 테스트(	est_canonical_id_integrity.py) 포함 총 86개 테스트 전수 통과 (0 failures, 0 errors).
+  - Official 보호 검증 PASS: 엔진, DB, Sealed, Web pick 변경 0건. Future Leakage = 0.
+  - 정식 레지스트리: 69행 유지 (새 실험 실행 0건).
+  - 로컬 런타임 활성화: CANONICAL_ID_RESOLVER_ACTIVE=YES, REFERENTIAL_INTEGRITY_GUARD_ACTIVE=YES.
+  - Git Commit: P45 enforce canonical research ID integrity (main 브랜치 반영 예정).
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 web/* 수정 0건 -> VERCEL_DEPLOY_NOT_REQUIRED.

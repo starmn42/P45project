@@ -315,3 +315,32 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
 
 
 
+
+- **2026-09-30: [CANONICAL RESEARCH ID RESOLVER + REFERENTIAL INTEGRITY FINALIZATION]**
+  - **작업 목적:** 연구 색인 과정에서 발생할 수 있는 식별자 네임스페이스 혼동 및 잘못된 정식 레지스트리 ID ALIAS/MERGE를 원천 차단하고 참조 무결성(Referential Integrity) 기계적 보장 체계 구축.
+  - **식별된 핵심 문제 및 원인:**
+    1. EXP-009 (인간 레이블 / 홀수 lag-1 공분산)와 EXP-DRAW-20260816-009-V1 (물리 레지스트리 9행 / NUMBER RELATION LAB '전체 관계망')의 숫자 서픽스 자동 동일시 오류 가능성.
+    2. 공식 PAIR 라이프사이클 수리 정식 레지스트리 행은 EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)임에도 오매핑될 위험.
+    3. 후보 A top semantic match에 무관한 EXP-DRAW-20260821-042-V1 (RETURN LAB 개별 숫자 return-age rank) 유입 문제.
+  - **구조적 해결 및 구현 성과:**
+    1. **독립 모듈 구현 (canonical_id_resolver.py):**
+       - 5대 식별자 네임스페이스 분리: CANONICAL_REGISTRY_ID, HUMAN_EXP_LABEL, NON_EXP_ID, OFFICIAL_INTERNAL_ID, SOURCE_ITEM_ID.
+       - 서픽스 자동 매핑 엄격 금지 (EXP-009 != ...-009-V1).
+       - 자동 생성 테이블: CANONICAL_REGISTRY_LOOKUP.json (69행), HUMAN_EXP_LABEL_MAP.json (28개 명시적 레이블).
+    2. **전체 115개 원천 항목 및 ALIAS/MERGE 전수 감사:**
+       - 산출물: RESEARCH_REFERENTIAL_INTEGRITY_AUDIT.json, RESEARCH_REFERENTIAL_INTEGRITY_AUDIT.md.
+       - 결과: 정식 레지스트리 참조 74건 전수 해결 (무효 0, 모호 0), ALIAS 6건 전수 VALID, MERGED 2건 전수 VALID.
+       - PAIR 수리 항목(SRC-NONEXP-20, 21, 22) 정규화 타깃을 EXP-DRAW-20260824-010-V1로 정정.
+       - EXP-DRAW-20260816-009-V1 (전체 관계망) 및 EXP-DRAW-20260821-042-V1 (return-age rank) 보호 완료.
+    3. **Fail-Closed 참조 무결성 가드 및 시맨틱 매처 정밀화:**
+       - 상위 시맨틱 매칭에 무효/모호 레지스트리 참조 유입 시 BLOCKED_REFERENTIAL_INTEGRITY로 차단.
+       - 동일 도메인이 아닌 경우 실패 축 구제(FAILED_AXIS_RESCUE) 분류 금지 -> 후보 A에서 무관한 return-age 오매칭 원천 배제.
+    4. **후보군 A/B/C 재평가:**
+       - 후보 A: REJECT_RESCUE (042 제외, EXP-004/015/022 기준 차단).
+       - 후보 B: REJECT_RESCUE (간격·반발 실패축 기준 차단).
+       - 후보 C: NEEDS_EVIDENCE (공식 PAIR 라이프사이클 및 010 수리 감사행 기준 유지, 프로토콜 승격 금지).
+  - **테스트 및 검증:**
+    - 22개 신규 테스트(test_canonical_id_integrity.py) 전수 통과.
+    - 기존 64개 포함 총 86개 테스트 전수 통과 (0 failures, 0 errors).
+    - 공식 엔진/DB/봉인 파일 변경 0건 (Protection verdict: PASS, Changed: 0).
+    - Vercel 배포 불필요 (VERCEL_DEPLOY_NOT_REQUIRED).

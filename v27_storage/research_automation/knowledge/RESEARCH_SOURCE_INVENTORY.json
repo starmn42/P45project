@@ -983,16 +983,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 58 (Canonical ID: EXP-CROWD-20260823-005-V1)",
-      "source_title": "CROWD",
-      "source_status": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
+      "source_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+      "source_status": "FAILED",
       "canonical_experiment_id_if_any": "EXP-CROWD-20260823-005-V1",
-      "evidence_reference": "Lab: EXP-CROWD-TOPO-001-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME RELATION ANALYSIS, Effect: FAILED",
+      "evidence_reference": "Lab: CROWD / PRIZE-SHARE LAB, Domain: CROWD, Status: FAILED, Effect: false",
       "details": {
-        "lab": "EXP-CROWD-TOPO-001-V1",
-        "domain": "CROWD / PRIZE-SHARE LAB",
-        "official_effect": "FAILED",
+        "lab": "CROWD / PRIZE-SHARE LAB",
+        "domain": "CROWD",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION"
+        "source_status": "LOCKED BEFORE OUTCOME RELATION ANALYSIS"
       }
     },
     {
@@ -1000,16 +1000,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 59 (Canonical ID: EXP-CROWD-20260823-006-V1)",
-      "source_title": "CROWD",
-      "source_status": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "source_title": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION",
+      "source_status": "SUPPORTED_WITHIN_EXPERIMENT",
       "canonical_experiment_id_if_any": "EXP-CROWD-20260823-006-V1",
-      "evidence_reference": "Lab: EXP-CROWD-TOPO-002-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME ANALYSIS, Effect: SUPPORTED_WITHIN_EXPERIMENT",
+      "evidence_reference": "Lab: CROWD / PRIZE-SHARE LAB, Domain: CROWD, Status: SUPPORTED_WITHIN_EXPERIMENT, Effect: false",
       "details": {
-        "lab": "EXP-CROWD-TOPO-002-V1",
-        "domain": "CROWD / PRIZE-SHARE LAB",
-        "official_effect": "SUPPORTED_WITHIN_EXPERIMENT",
+        "lab": "CROWD / PRIZE-SHARE LAB",
+        "domain": "CROWD",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION"
+        "source_status": "LOCKED BEFORE OUTCOME ANALYSIS"
       }
     },
     {
@@ -1017,16 +1017,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 60 (Canonical ID: EXP-CROWD-20260823-007-V1)",
-      "source_title": "CROWD",
-      "source_status": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "source_title": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS",
+      "source_status": "EXPLORATORY_NOT_SUPPORTED",
       "canonical_experiment_id_if_any": "EXP-CROWD-20260823-007-V1",
-      "evidence_reference": "Lab: EXP-CROWD-TOPO-003-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME ANALYSIS, Effect: EXPLORATORY_NOT_SUPPORTED",
+      "evidence_reference": "Lab: CROWD / PRIZE-SHARE LAB, Domain: CROWD, Status: EXPLORATORY_NOT_SUPPORTED, Effect: false",
       "details": {
-        "lab": "EXP-CROWD-TOPO-003-V1",
-        "domain": "CROWD / PRIZE-SHARE LAB",
-        "official_effect": "EXPLORATORY_NOT_SUPPORTED",
+        "lab": "CROWD / PRIZE-SHARE LAB",
+        "domain": "CROWD",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS"
+        "source_status": "LOCKED BEFORE OUTCOME ANALYSIS"
       }
     },
     {
@@ -1034,16 +1034,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 61 (Canonical ID: EXP-CROWD-20260823-008-V1)",
-      "source_title": "CROWD",
-      "source_status": "LOCKED BEFORE OUTCOME TEST",
+      "source_title": "MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "source_status": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
       "canonical_experiment_id_if_any": "EXP-CROWD-20260823-008-V1",
-      "evidence_reference": "Lab: EXP-CROWD-RETAIL-001-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME TEST, Effect: EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+      "evidence_reference": "Lab: CROWD / PRIZE-SHARE LAB, Domain: CROWD, Status: EXPLORATORY_RETAILER_MODE_CONCENTRATION, Effect: false",
       "details": {
-        "lab": "EXP-CROWD-RETAIL-001-V1",
-        "domain": "CROWD / PRIZE-SHARE LAB",
-        "official_effect": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+        "lab": "CROWD / PRIZE-SHARE LAB",
+        "domain": "CROWD",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "MANUAL SAME-RETAILER JACKPOT COLLISION"
+        "source_status": "LOCKED BEFORE OUTCOME TEST"
       }
     },
     {
@@ -1051,16 +1051,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 62 (Canonical ID: EXP-CROWD-20260824-009-V1)",
-      "source_title": "CROWD",
-      "source_status": "LOCKED BEFORE START 1239 PUBLICATION",
+      "source_title": "PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "source_status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
       "canonical_experiment_id_if_any": "EXP-CROWD-20260824-009-V1",
-      "evidence_reference": "Lab: EXP-CROWD-RETAIL-PROSPECTIVE-001-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE START 1239 PUBLICATION, Effect: PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "evidence_reference": "Lab: CROWD / PRIZE-SHARE LAB, Domain: CROWD, Status: PROSPECTIVE_LOCKED_WAITING_FOR_DATA, Effect: false",
       "details": {
-        "lab": "EXP-CROWD-RETAIL-PROSPECTIVE-001-V1",
-        "domain": "CROWD / PRIZE-SHARE LAB",
-        "official_effect": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+        "lab": "CROWD / PRIZE-SHARE LAB",
+        "domain": "CROWD",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION"
+        "source_status": "LOCKED BEFORE START 1239 PUBLICATION"
       }
     },
     {
@@ -1068,16 +1068,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 63 (Canonical ID: EXP-DRAW-20260824-010-V1)",
-      "source_title": "DRAW",
-      "source_status": "USER-APPROVED SEALED CHANGE CONTROL",
+      "source_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+      "source_status": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
       "canonical_experiment_id_if_any": "EXP-DRAW-20260824-010-V1",
-      "evidence_reference": "Lab: OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001, Domain: PAIR OFFICIAL CHANGE CONTROL, Status: USER-APPROVED SEALED CHANGE CONTROL, Effect: OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+      "evidence_reference": "Lab: PAIR OFFICIAL CHANGE CONTROL, Domain: DRAW, Status: OFFICIAL_REPAIR_APPLIED_AND_VERIFIED, Effect: false",
       "details": {
-        "lab": "OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001",
-        "domain": "PAIR OFFICIAL CHANGE CONTROL",
-        "official_effect": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+        "lab": "PAIR OFFICIAL CHANGE CONTROL",
+        "domain": "DRAW",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT"
+        "source_status": "USER-APPROVED SEALED CHANGE CONTROL"
       }
     },
     {
@@ -1085,16 +1085,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 64 (Canonical ID: EXP-DRAW-20260827-017-V1)",
-      "source_title": "DRAW",
-      "source_status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "source_title": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1",
+      "source_status": "FAILED_NOT_SUPPORTED",
       "canonical_experiment_id_if_any": "EXP-DRAW-20260827-017-V1",
-      "evidence_reference": "Lab: EXP-017, Domain: TRIO ORBIT CONSENSUS NUMBER LAB, Status: SHA-256 LOCKED BEFORE OUTCOME TEST, Effect: FAILED_NOT_SUPPORTED",
+      "evidence_reference": "Lab: TRIO ORBIT CONSENSUS NUMBER LAB, Domain: DRAW, Status: FAILED_NOT_SUPPORTED, Effect: false",
       "details": {
-        "lab": "EXP-017",
-        "domain": "TRIO ORBIT CONSENSUS NUMBER LAB",
-        "official_effect": "FAILED_NOT_SUPPORTED",
+        "lab": "TRIO ORBIT CONSENSUS NUMBER LAB",
+        "domain": "DRAW",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1"
+        "source_status": "SHA-256 LOCKED BEFORE OUTCOME TEST"
       }
     },
     {
@@ -1102,16 +1102,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 65 (Canonical ID: EXP-DRAW-20260827-018-V1)",
-      "source_title": "DRAW",
-      "source_status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "source_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
+      "source_status": "READY_FOR_TEST",
       "canonical_experiment_id_if_any": "EXP-DRAW-20260827-018-V1",
-      "evidence_reference": "Lab: EXP-018, Domain: RESIDUAL NEIGHBOR CLOSURE LAB, Status: SHA-256 LOCKED BEFORE OUTCOME TEST, Effect: READY_FOR_TEST",
+      "evidence_reference": "Lab: RESIDUAL NEIGHBOR CLOSURE LAB, Domain: DRAW, Status: READY_FOR_TEST, Effect: false",
       "details": {
-        "lab": "EXP-018",
-        "domain": "RESIDUAL NEIGHBOR CLOSURE LAB",
-        "official_effect": "READY_FOR_TEST",
+        "lab": "RESIDUAL NEIGHBOR CLOSURE LAB",
+        "domain": "DRAW",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1"
+        "source_status": "SHA-256 LOCKED BEFORE OUTCOME TEST"
       }
     },
     {
@@ -1119,16 +1119,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 66 (Canonical ID: EXP-DRAW-20260827-018-V2)",
-      "source_title": "DRAW",
-      "source_status": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
+      "source_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2",
+      "source_status": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
       "canonical_experiment_id_if_any": "EXP-DRAW-20260827-018-V2",
-      "evidence_reference": "Lab: EXP-018 V2, Domain: RESIDUAL NEIGHBOR CLOSURE LAB, Status: PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME, Effect: AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+      "evidence_reference": "Lab: RESIDUAL NEIGHBOR CLOSURE LAB, Domain: DRAW, Status: AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT, Effect: false",
       "details": {
-        "lab": "EXP-018 V2",
-        "domain": "RESIDUAL NEIGHBOR CLOSURE LAB",
-        "official_effect": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+        "lab": "RESIDUAL NEIGHBOR CLOSURE LAB",
+        "domain": "DRAW",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2"
+        "source_status": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME"
       }
     },
     {
@@ -1136,16 +1136,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 67 (Canonical ID: EXP-DRAW-20260827-019-V1)",
-      "source_title": "DRAW",
-      "source_status": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
+      "source_title": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1",
+      "source_status": "FAILED_NOT_SUPPORTED",
       "canonical_experiment_id_if_any": "EXP-DRAW-20260827-019-V1",
-      "evidence_reference": "Lab: EXP-019, Domain: SALES-ADJUSTED CROWD EFFECT LAB, Status: LOCKED BEFORE OFFICIAL-DATA ACQUISITION, Effect: FAILED_NOT_SUPPORTED",
+      "evidence_reference": "Lab: SALES-ADJUSTED CROWD EFFECT LAB, Domain: DRAW, Status: FAILED_NOT_SUPPORTED, Effect: false",
       "details": {
-        "lab": "EXP-019",
-        "domain": "SALES-ADJUSTED CROWD EFFECT LAB",
-        "official_effect": "FAILED_NOT_SUPPORTED",
+        "lab": "SALES-ADJUSTED CROWD EFFECT LAB",
+        "domain": "DRAW",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1"
+        "source_status": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION"
       }
     },
     {
@@ -1153,16 +1153,16 @@
       "source_class": "FORMAL_REGISTRY",
       "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
       "source_location": "Table row 68 (Canonical ID: EXP-DRAW-20260828-020-V1)",
-      "source_title": "DRAW",
-      "source_status": "LOCKED BEFORE TRAIN RELATIONSHIP",
+      "source_title": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
+      "source_status": "FAILED_NO_SELECTION_SIGNAL",
       "canonical_experiment_id_if_any": "EXP-DRAW-20260828-020-V1",
-      "evidence_reference": "Lab: EXP-020, Domain: LAGGED CROWD METADATA SIGNAL LAB, Status: LOCKED BEFORE TRAIN RELATIONSHIP, Effect: FAILED_NO_SELECTION_SIGNAL",
+      "evidence_reference": "Lab: LAGGED CROWD METADATA SIGNAL LAB, Domain: DRAW, Status: FAILED_NO_SELECTION_SIGNAL, Effect: false",
       "details": {
-        "lab": "EXP-020",
-        "domain": "LAGGED CROWD METADATA SIGNAL LAB",
-        "official_effect": "FAILED_NO_SELECTION_SIGNAL",
+        "lab": "LAGGED CROWD METADATA SIGNAL LAB",
+        "domain": "DRAW",
+        "official_effect": "false",
         "promotion_status": "false",
-        "source_status": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1"
+        "source_status": "LOCKED BEFORE TRAIN RELATIONSHIP"
       }
     },
     {

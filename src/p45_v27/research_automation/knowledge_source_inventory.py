@@ -74,6 +74,8 @@ class CoverageManifest:
     unmapped_items: list[str] = field(default_factory=list)
     source_class_counts: dict[str, int] = field(default_factory=dict)
     mapping_type_counts: dict[str, int] = field(default_factory=dict)
+    has_referential_integrity: bool = True
+    referential_integrity_audit: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -82,6 +84,8 @@ class CoverageManifest:
             "unmapped_source_items_count": self.unmapped_source_items_count,
             "coverage_ratio": self.coverage_ratio,
             "is_complete": self.is_complete,
+            "has_referential_integrity": self.has_referential_integrity,
+            "referential_integrity_audit": self.referential_integrity_audit,
             "source_class_counts": self.source_class_counts,
             "mapping_type_counts": self.mapping_type_counts,
             "unmapped_items": self.unmapped_items,
@@ -108,13 +112,38 @@ class ResearchSourceInventoryBuilder:
         )
         for idx, r in enumerate(rows, 1):
             eid = r[0].strip()
-            lab = r[1].strip()
-            domain = r[2].strip()
-            name = r[3].strip()
-            source_status = r[4].strip()
-            status = r[5].strip()
-            official_effect = r[6].strip()
-            promo = r[7].strip()
+            c1 = r[1].strip()
+            c2 = r[2].strip()
+            c3 = r[3].strip()
+            c4 = r[4].strip()
+            c5 = r[5].strip()
+            c6 = r[6].strip()
+            c7 = r[7].strip()
+
+            if c2 in ("DRAW", "CROWD", "PRIZE", "PRIZE_SHARE"):
+                domain = c2
+                lab = c1
+                name = c3
+                source_status = c4
+                status = c5
+                official_effect = c6
+                promo = c7
+            elif c3 in ("DRAW", "CROWD", "PRIZE", "PRIZE_SHARE"):
+                domain = c3
+                lab = c2
+                name = c4
+                source_status = c5
+                status = c6
+                official_effect = c7
+                promo = "false"
+            else:
+                domain = c2
+                lab = c1
+                name = c3
+                source_status = c4
+                status = c5
+                official_effect = c6
+                promo = c7
 
             item = ResearchSourceItem(
                 source_item_id=f"SRC-FORMAL-{eid}",
@@ -470,37 +499,37 @@ class ResearchKnowledgeCoverageManifestBuilder:
                         )
                     )
                 elif num == 20:
-                    # Pair shadow repair deterministic validation -> ALIAS to EXP-009 / Official Pair Repair
+                    # Pair shadow repair deterministic validation -> ALIAS to canonical official repair EXP-DRAW-20260824-010-V1
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-DRAW-20260816-009-V1",
+                            normalized_record_id="EXP-DRAW-20260824-010-V1",
                             mapping_type=MappingType.ALIAS.value,
-                            mapping_reason="Supporting deterministic validation lineage for formal repair EXP-DRAW-20260816-009-V1",
+                            mapping_reason="Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)",
                             evidence=it.source_document,
                             confidence=1.0,
                         )
                     )
                 elif num == 21:
-                    # Official repair Phase A/B canary/change-control validation -> MERGED into EXP-009
+                    # Official repair Phase A/B canary/change-control validation -> MERGED into EXP-DRAW-20260824-010-V1
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-DRAW-20260816-009-V1",
+                            normalized_record_id="EXP-DRAW-20260824-010-V1",
                             mapping_type=MappingType.MERGED.value,
-                            mapping_reason="Official repair Phase A/B canary/change-control validation facet",
+                            mapping_reason="Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
                             evidence=it.source_document,
                             confidence=1.0,
                         )
                     )
                 elif num == 22:
-                    # Official repair apply/finalize verification -> MERGED into EXP-009
+                    # Official repair apply/finalize verification -> MERGED into EXP-DRAW-20260824-010-V1
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-DRAW-20260816-009-V1",
+                            normalized_record_id="EXP-DRAW-20260824-010-V1",
                             mapping_type=MappingType.MERGED.value,
-                            mapping_reason="Official repair apply and finalize verification facet",
+                            mapping_reason="Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
                             evidence=it.source_document,
                             confidence=1.0,
                         )
@@ -617,7 +646,15 @@ class ResearchKnowledgeCoverageManifestBuilder:
         mapped_count = len(mappings)
         total_count = len(source_items)
         coverage_ratio = mapped_count / total_count if total_count > 0 else 0.0
-        is_complete = (len(unmapped) == 0) and (mapped_count == total_count)
+
+        # Referential integrity audit
+        from .canonical_id_resolver import CanonicalResearchIdResolver
+        resolver = CanonicalResearchIdResolver(self.root)
+        audit_report = resolver.audit_referential_integrity(source_items, mappings)
+        resolver.save_audit_report(audit_report)
+
+        is_integrity_pass = (audit_report.referential_integrity_verdict == "PASS_REFERENTIAL_INTEGRITY")
+        is_complete = (len(unmapped) == 0) and (mapped_count == total_count) and is_integrity_pass
 
         src_counts = {sc.value: sum(1 for it in source_items if it.source_class == sc.value) for sc in SourceClass}
         type_counts = {mt.value: sum(1 for m in mappings if m.mapping_type == mt.value) for mt in MappingType}
@@ -628,6 +665,8 @@ class ResearchKnowledgeCoverageManifestBuilder:
             unmapped_source_items_count=len(unmapped),
             coverage_ratio=coverage_ratio,
             is_complete=is_complete,
+            has_referential_integrity=is_integrity_pass,
+            referential_integrity_audit=audit_report.to_dict(),
             mappings=mappings,
             unmapped_items=unmapped,
             source_class_counts=src_counts,
@@ -648,7 +687,8 @@ class ResearchKnowledgeCoverageManifestBuilder:
         md.append(f"- **총 원천 연구 항목(Total Source Items):** **{manifest.total_source_items}건**")
         md.append(f"- **매핑 완료 항목(Mapped Source Items):** **{manifest.mapped_source_items_count}건**")
         md.append(f"- **누락 항목(Unmapped Source Items):** **{manifest.unmapped_source_items_count}건**")
-        md.append(f"- **커버리지 달성률(Coverage Ratio):** **{manifest.coverage_ratio * 100:.1f}%**")
+        md.append(f"- **Coverage Ratio:** **{manifest.coverage_ratio * 100:.1f}%**")
+        md.append(f"- **Referential Integrity Verdict:** **`{'PASS_REFERENTIAL_INTEGRITY' if manifest.has_referential_integrity else 'FAIL_REFERENTIAL_INTEGRITY'}`**")
         md.append(f"- **Coverage Complete Verdict:** **`{'PASS_FULL_COVERAGE' if manifest.is_complete else 'FAIL_INCOMPLETE'}`**")
         md.append("")
         md.append("### Mapping Type Distribution")

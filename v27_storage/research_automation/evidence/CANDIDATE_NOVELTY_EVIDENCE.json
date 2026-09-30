@@ -5,7 +5,8 @@
     "REJECT_DUPLICATE": 0,
     "REJECT_RESCUE": 2,
     "NEEDS_EVIDENCE": 1,
-    "READY_FOR_PROTOCOL": 0
+    "READY_FOR_PROTOCOL": 0,
+    "BLOCKED_REFERENTIAL_INTEGRITY": 0
   },
   "audits": [
     {
@@ -21,25 +22,24 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
@@ -47,7 +47,11 @@
           ],
           "different_features": [],
           "similarity_score": 140.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-015-V1",
+          "canonical_title": "결손 회복속도",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 15)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-017-V1",
@@ -57,25 +61,24 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
@@ -83,7 +86,11 @@
           ],
           "different_features": [],
           "similarity_score": 140.0,
-          "semantic_overlap_class": "FAILED_AXIS_RESCUE"
+          "semantic_overlap_class": "FAILED_AXIS_RESCUE",
+          "canonical_registry_id": "EXP-DRAW-20260816-017-V1",
+          "canonical_title": "가변 전멸구간 (EXP-004)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 17)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-022-V1",
@@ -93,25 +100,24 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
@@ -119,7 +125,11 @@
           ],
           "different_features": [],
           "similarity_score": 140.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-022-V1",
+          "canonical_title": "구간별 복귀우선 전이",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 22)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-016-V1",
@@ -129,32 +139,35 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
           ],
           "different_features": [],
           "similarity_score": 100.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-016-V1",
+          "canonical_title": "결손 회복 전환점",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 16)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-018-V1",
@@ -164,32 +177,35 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
           ],
           "different_features": [],
           "similarity_score": 100.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-018-V1",
+          "canonical_title": "다중 전멸구간 상호작용",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 18)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-019-V1",
@@ -199,32 +215,35 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
           ],
           "different_features": [],
           "similarity_score": 100.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-019-V1",
+          "canonical_title": "이동×가변 전멸 교차",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 19)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-020-V1",
@@ -234,32 +253,35 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
           ],
           "different_features": [],
           "similarity_score": 100.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-020-V1",
+          "canonical_title": "최근10 강도 지속",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 20)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-021-V1",
@@ -269,114 +291,127 @@
           "ontology_tags": [
             "extinction",
             "recovery",
-            "occupancy",
-            "range"
+            "occupancy"
           ],
           "candidate_input": "",
-          "existing_input": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+          "existing_input": "Variable partition zones and vacancy states across rolling windows",
           "candidate_transformation": "",
-          "existing_transformation": "Zero-occupancy extinction tracking and return velocity",
+          "existing_transformation": "Zone vacancy tracking and recovery rate calculation",
           "candidate_target": "",
-          "existing_target": "Next-round zone rebound or recovery duration",
+          "existing_target": "Next-round extinction negative-space recovery probability",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "recovery_rounds, zone_occupancy_excess_z",
+          "existing_metric": "recovery_rate, vacancy_duration",
           "candidate_null": "",
-          "existing_null": "Binomial/hypergeometric memoryless zone occupancy",
+          "existing_null": "Hypergeometric partition sampling null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Extinction event (0 balls in zone) or deficiency",
+          "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: extinction, recovery, occupancy",
+            "Shared ontology concepts: occupancy, extinction, recovery",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
           ],
           "different_features": [],
           "similarity_score": 100.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-021-V1",
+          "canonical_title": "비전멸 전용 엔진",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 21)"
         },
         {
-          "existing_research_id": "OFFICIAL-UNIT-PARTITIONS",
-          "existing_title": "P45 Official UNIT Partitions (UNIT_3, UNIT_5, UNIT_9, UNIT_10)",
+          "existing_research_id": "OFFICIAL-UNIT-3",
+          "existing_title": "UNIT_3 (3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.)",
           "source_type": "OFFICIAL_INTERNAL",
           "status": "OFFICIAL_FROZEN",
           "ontology_tags": [
-            "range",
+            "extinction",
+            "recovery",
             "occupancy",
             "CORE"
           ],
           "candidate_input": "",
-          "existing_input": "Lottery balls 1..45 partitioned into equal or structured subsets",
+          "existing_input": "UNIT-3 partition numbers",
           "candidate_transformation": "",
-          "existing_transformation": "Fixed partition grouping for internal representation",
+          "existing_transformation": "Partition occupancy, extinction and recovery depth",
           "candidate_target": "",
-          "existing_target": "Internal representation buckets",
-          "candidate_lag": 1,
-          "existing_lag": 0,
-          "candidate_metric": "",
-          "existing_metric": "partition_balance",
-          "candidate_null": "",
-          "existing_null": "Hypergeometric partition null",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Fixed partition boundaries without variable threshold hunting",
-          "same_features": [
-            "Shared ontology concepts: occupancy",
-            "Shared partition/extinction domain inputs",
-            "Overlapping target definition: "
-          ],
-          "different_features": [
-            "Different lag: cand=1 vs existing=0"
-          ],
-          "similarity_score": 60.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260821-042-V1",
-          "existing_title": "개별 숫자 return-age rank (EXP-012)",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "FAILED_EARLY",
-          "ontology_tags": [
-            "order/rank",
-            "gap",
-            "recovery"
-          ],
-          "candidate_input": "",
-          "existing_input": "Number appearance history",
-          "candidate_transformation": "",
-          "existing_transformation": "Return-age rank (rounds since last appearance)",
-          "candidate_target": "",
-          "existing_target": "Next draw selection priority",
+          "existing_target": "Partition recovery speed and vacancy duration",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "rank_correlation, hit_rate_by_rank",
+          "existing_metric": "recovery_speed, occupancy_ratio",
           "candidate_null": "",
-          "existing_null": "Geometric distribution of return ages",
+          "existing_null": "Hypergeometric uniform ball partition distribution",
           "candidate_conditioning": "",
-          "existing_conditioning": "Ranking by dormancy duration",
+          "existing_conditioning": "Historical draw partition states",
           "same_features": [
-            "Shared ontology concepts: recovery",
+            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
           ],
-          "different_features": [
-            "Different input structural primitives"
+          "different_features": [],
+          "similarity_score": 100.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "OFFICIAL-UNIT-3",
+          "canonical_title": "UNIT_3 (3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "Research Master authoritative axis"
+        },
+        {
+          "existing_research_id": "OFFICIAL-UNIT-5",
+          "existing_title": "UNIT_5 (5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.)",
+          "source_type": "OFFICIAL_INTERNAL",
+          "status": "OFFICIAL_FROZEN",
+          "ontology_tags": [
+            "extinction",
+            "recovery",
+            "occupancy",
+            "CORE"
           ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "FAILED_AXIS_RESCUE"
+          "candidate_input": "",
+          "existing_input": "UNIT-5 partition numbers",
+          "candidate_transformation": "",
+          "existing_transformation": "Partition occupancy, extinction and recovery depth",
+          "candidate_target": "",
+          "existing_target": "Partition recovery speed and vacancy duration",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "recovery_speed, occupancy_ratio",
+          "candidate_null": "",
+          "existing_null": "Hypergeometric uniform ball partition distribution",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Historical draw partition states",
+          "same_features": [
+            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared partition/extinction domain inputs",
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1"
+          ],
+          "different_features": [],
+          "similarity_score": 100.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "OFFICIAL-UNIT-5",
+          "canonical_title": "UNIT_5 (5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "Research Master authoritative axis"
         }
       ],
       "exact_overlaps": [],
       "partial_overlaps": [
-        "OFFICIAL-UNIT-PARTITIONS"
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5"
       ],
       "failed_axis_rescues": [
-        "EXP-DRAW-20260816-017-V1",
-        "EXP-DRAW-20260821-042-V1"
+        "EXP-DRAW-20260816-017-V1"
       ],
-      "novelty_justification": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-017-V1, EXP-DRAW-20260821-042-V1.",
-      "novelty_evidence_exists": true
+      "novelty_justification": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-017-V1.",
+      "novelty_evidence_exists": true,
+      "referential_integrity_pass": true,
+      "invalid_references": []
     },
     {
       "candidate_id": "IDEA-1243-OPPO-002",
@@ -394,19 +429,19 @@
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "Sorted winning numbers x1 < x2 < ... < x6",
+          "existing_input": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
           "candidate_transformation": "",
-          "existing_transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+          "existing_transformation": "Adjacent difference vector and spacing variance calculation",
           "candidate_target": "",
-          "existing_target": "Spacing vector and dispersion variance",
+          "existing_target": "Adjacent spacing distribution and minimum distance invariance",
           "candidate_lag": 1,
           "existing_lag": 0,
           "candidate_metric": "",
-          "existing_metric": "spacing_variance, adjacent_gap_vector, minimum_spacing",
+          "existing_metric": "min_spacing, spacing_variance, kolmogorov_smirnov_d",
           "candidate_null": "",
-          "existing_null": "Uniform order statistics spacing distribution on {1..45}",
+          "existing_null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
           "candidate_conditioning": "",
-          "existing_conditioning": "Within-round spacing distribution or arithmetic progression",
+          "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
             "Shared ontology concepts: NUMBER, spacing",
             "Shared adjacent spacing / proximity domain inputs",
@@ -417,7 +452,11 @@
             "Different lag: cand=1 vs existing=0"
           ],
           "similarity_score": 115.0,
-          "semantic_overlap_class": "FAILED_AXIS_RESCUE"
+          "semantic_overlap_class": "FAILED_AXIS_RESCUE",
+          "canonical_registry_id": "EXP-DRAW-20260816-026-V1",
+          "canonical_title": "숫자 간격 구조 (EXP-008)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 26)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-027-V1",
@@ -430,19 +469,19 @@
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "Sorted winning numbers x1 < x2 < ... < x6",
+          "existing_input": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
           "candidate_transformation": "",
-          "existing_transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+          "existing_transformation": "Adjacent difference vector and spacing variance calculation",
           "candidate_target": "",
-          "existing_target": "Spacing vector and dispersion variance",
+          "existing_target": "Adjacent spacing distribution and minimum distance invariance",
           "candidate_lag": 1,
           "existing_lag": 0,
           "candidate_metric": "",
-          "existing_metric": "spacing_variance, adjacent_gap_vector, minimum_spacing",
+          "existing_metric": "min_spacing, spacing_variance, kolmogorov_smirnov_d",
           "candidate_null": "",
-          "existing_null": "Uniform order statistics spacing distribution on {1..45}",
+          "existing_null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
           "candidate_conditioning": "",
-          "existing_conditioning": "Within-round spacing distribution or arithmetic progression",
+          "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
             "Shared ontology concepts: NUMBER, spacing",
             "Shared adjacent spacing / proximity domain inputs",
@@ -453,18 +492,22 @@
             "Different lag: cand=1 vs existing=0"
           ],
           "similarity_score": 115.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-027-V1",
+          "canonical_title": "간격 분산",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 27)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260827-018-V2",
-          "existing_title": "DRAW",
+          "existing_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2",
           "source_type": "FORMAL_REGISTRY",
-          "status": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
+          "status": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
           "ontology_tags": [
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "RESIDUAL NEIGHBOR CLOSURE LAB raw numbers",
+          "existing_input": "DRAW raw numbers",
           "candidate_transformation": "",
           "existing_transformation": "Standard structural extraction",
           "candidate_target": "",
@@ -486,7 +529,11 @@
           ],
           "different_features": [],
           "similarity_score": 110.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "FAILED_AXIS_RESCUE",
+          "canonical_registry_id": "EXP-DRAW-20260827-018-V2",
+          "canonical_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 66)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-029-V1",
@@ -499,19 +546,19 @@
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "Sorted winning numbers x1 < x2 < ... < x6",
+          "existing_input": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
           "candidate_transformation": "",
-          "existing_transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+          "existing_transformation": "Adjacent difference vector and spacing variance calculation",
           "candidate_target": "",
-          "existing_target": "Spacing vector and dispersion variance",
+          "existing_target": "Adjacent spacing distribution and minimum distance invariance",
           "candidate_lag": 1,
           "existing_lag": 0,
           "candidate_metric": "",
-          "existing_metric": "spacing_variance, adjacent_gap_vector, minimum_spacing",
+          "existing_metric": "min_spacing, spacing_variance, kolmogorov_smirnov_d",
           "candidate_null": "",
-          "existing_null": "Uniform order statistics spacing distribution on {1..45}",
+          "existing_null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
           "candidate_conditioning": "",
-          "existing_conditioning": "Within-round spacing distribution or arithmetic progression",
+          "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
             "Shared ontology concepts: NUMBER, spacing",
             "Shared adjacent spacing / proximity domain inputs",
@@ -521,7 +568,11 @@
             "Different lag: cand=1 vs existing=0"
           ],
           "similarity_score": 75.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-029-V1",
+          "canonical_title": "+13/+14 고정 간격",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 29)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-005-V1",
@@ -555,18 +606,22 @@
           ],
           "different_features": [],
           "similarity_score": 70.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260816-005-V1",
+          "canonical_title": "2회 간격 관계",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 5)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260827-018-V1",
-          "existing_title": "DRAW",
+          "existing_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
           "source_type": "FORMAL_REGISTRY",
-          "status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+          "status": "READY_FOR_TEST",
           "ontology_tags": [
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "RESIDUAL NEIGHBOR CLOSURE LAB raw numbers",
+          "existing_input": "DRAW raw numbers",
           "candidate_transformation": "",
           "existing_transformation": "Standard structural extraction",
           "candidate_target": "",
@@ -587,7 +642,11 @@
           ],
           "different_features": [],
           "similarity_score": 70.0,
-          "semantic_overlap_class": "NEAR_DUPLICATE"
+          "semantic_overlap_class": "NEAR_DUPLICATE",
+          "canonical_registry_id": "EXP-DRAW-20260827-018-V1",
+          "canonical_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 65)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-028-V1",
@@ -600,19 +659,19 @@
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "Sorted winning numbers x1 < x2 < ... < x6",
+          "existing_input": "Sorted drawn numbers x_(1) < x_(2) < ... < x_(6)",
           "candidate_transformation": "",
-          "existing_transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+          "existing_transformation": "Adjacent difference vector and spacing variance calculation",
           "candidate_target": "",
-          "existing_target": "Spacing vector and dispersion variance",
+          "existing_target": "Adjacent spacing distribution and minimum distance invariance",
           "candidate_lag": 1,
           "existing_lag": 0,
           "candidate_metric": "",
-          "existing_metric": "spacing_variance, adjacent_gap_vector, minimum_spacing",
+          "existing_metric": "min_spacing, spacing_variance, kolmogorov_smirnov_d",
           "candidate_null": "",
-          "existing_null": "Uniform order statistics spacing distribution on {1..45}",
+          "existing_null": "Uniform order statistics spacing distribution on discrete grid {1..45}",
           "candidate_conditioning": "",
-          "existing_conditioning": "Within-round spacing distribution or arithmetic progression",
+          "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
             "Shared ontology concepts: NUMBER, spacing",
             "Overlapping target definition: "
@@ -622,7 +681,11 @@
             "Different lag: cand=1 vs existing=0"
           ],
           "similarity_score": 50.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-028-V1",
+          "canonical_title": "등차수열형 구조",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 28)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-001-V1",
@@ -657,7 +720,11 @@
             "Different input structural primitives"
           ],
           "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-001-V1",
+          "canonical_title": "숫자 관계망 구조",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 1)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-002-V1",
@@ -692,7 +759,11 @@
             "Different input structural primitives"
           ],
           "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-002-V1",
+          "canonical_title": "숫자 동시출현 관계망 (EXP-001)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 2)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-003-V1",
@@ -727,7 +798,11 @@
             "Different input structural primitives"
           ],
           "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-003-V1",
+          "canonical_title": "조건부 관계망",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 3)"
         }
       ],
       "exact_overlaps": [],
@@ -738,10 +813,13 @@
         "EXP-DRAW-20260816-003-V1"
       ],
       "failed_axis_rescues": [
-        "EXP-DRAW-20260816-026-V1"
+        "EXP-DRAW-20260816-026-V1",
+        "EXP-DRAW-20260827-018-V2"
       ],
-      "novelty_justification": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-026-V1.",
-      "novelty_evidence_exists": true
+      "novelty_justification": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-026-V1, EXP-DRAW-20260827-018-V2.",
+      "novelty_evidence_exists": true,
+      "referential_integrity_pass": true,
+      "invalid_references": []
     },
     {
       "candidate_id": "IDEA-1243-CROS-003",
@@ -749,8 +827,47 @@
       "final_verdict": "NEEDS_EVIDENCE",
       "top_matches": [
         {
+          "existing_research_id": "EXP-DRAW-20260824-010-V1",
+          "existing_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+          "source_type": "FORMAL_REGISTRY",
+          "status": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+          "ontology_tags": [
+            "PAIR",
+            "CORE",
+            "transition"
+          ],
+          "candidate_input": "",
+          "existing_input": "Official shadow lifecycle states for all 990 ball pairs",
+          "candidate_transformation": "",
+          "existing_transformation": "Deterministic shadow lifecycle repair apply audit (DECISION-20260824-095)",
+          "candidate_target": "",
+          "existing_target": "Production shadow state integrity without gate or pick changes",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "shadow_integrity_pass, signature_invariance",
+          "candidate_null": "",
+          "existing_null": "Frozen production baseline",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Canary non-regression check on historical and unrevealed draws",
+          "same_features": [
+            "Shared ontology concepts: PAIR, transition",
+            "Shared pair-level combinatorial inputs",
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1",
+            "Related pair domain concept EXP-DRAW-20260824-010-V1, but distinct parametric hazard structure"
+          ],
+          "different_features": [],
+          "similarity_score": 85.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260824-010-V1",
+          "canonical_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 63)"
+        },
+        {
           "existing_research_id": "OFFICIAL-PAIR-LIFECYCLE",
-          "existing_title": "P45 Official PAIR Shadow Lifecycle System",
+          "existing_title": "PAIR (lifecycle/signature/timing shadow repair와 승인 change-control.)",
           "source_type": "OFFICIAL_INTERNAL",
           "status": "OFFICIAL_FROZEN",
           "ontology_tags": [
@@ -759,19 +876,19 @@
             "transition"
           ],
           "candidate_input": "",
-          "existing_input": "990 ball pairs across all draws",
+          "existing_input": "All 990 ball pairs across all draws",
           "candidate_transformation": "",
-          "existing_transformation": "Shadow lifecycle state tracking (Active vs Dormant)",
+          "existing_transformation": "Shadow lifecycle state tracking and signature timing repair",
           "candidate_target": "",
-          "existing_target": "Internal shadow validation and state integrity",
+          "existing_target": "Internal shadow state integrity",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
           "existing_metric": "pair_state_integrity",
           "candidate_null": "",
-          "existing_null": "Official shadow state preservation",
+          "existing_null": "Deterministic shadow state preservation",
           "candidate_conditioning": "",
-          "existing_conditioning": "Official engine change control audit DECISION-20260824-095",
+          "existing_conditioning": "DECISION-20260824-095 audit",
           "same_features": [
             "Shared ontology concepts: PAIR, transition",
             "Shared pair-level combinatorial inputs",
@@ -781,7 +898,11 @@
           ],
           "different_features": [],
           "similarity_score": 85.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "OFFICIAL-PAIR-LIFECYCLE",
+          "canonical_title": "PAIR (lifecycle/signature/timing shadow repair와 승인 change-control.)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "Research Master authoritative axis"
         },
         {
           "existing_research_id": "EXP-DRAW-20260816-023-V1",
@@ -789,80 +910,10 @@
           "source_type": "FORMAL_REGISTRY",
           "status": "REGISTERED",
           "ontology_tags": [
-            "similarity",
-            "cross-round relation",
-            "transition"
-          ],
-          "candidate_input": "",
-          "existing_input": "Full draw outcome vectors across historical rounds",
-          "candidate_transformation": "",
-          "existing_transformation": "Multivariate set distance / twin round vector matching",
-          "candidate_target": "",
-          "existing_target": "Next-round carryover following similar round",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "set_intersection_size, twin_similarity_score",
-          "candidate_null": "",
-          "existing_null": "Permutation null of draw order",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Historical round with high similarity score to current draw",
-          "same_features": [
-            "Shared ontology concepts: transition",
-            "Shared pair-level combinatorial inputs",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-023-V1, but distinct parametric hazard structure"
-          ],
-          "different_features": [],
-          "similarity_score": 70.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260816-024-V1",
-          "existing_title": "구조형 쌍둥이 회차 전이",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "REGISTERED",
-          "ontology_tags": [
-            "similarity",
-            "cross-round relation",
-            "transition"
-          ],
-          "candidate_input": "",
-          "existing_input": "Full draw outcome vectors across historical rounds",
-          "candidate_transformation": "",
-          "existing_transformation": "Multivariate set distance / twin round vector matching",
-          "candidate_target": "",
-          "existing_target": "Next-round carryover following similar round",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "set_intersection_size, twin_similarity_score",
-          "candidate_null": "",
-          "existing_null": "Permutation null of draw order",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Historical round with high similarity score to current draw",
-          "same_features": [
-            "Shared ontology concepts: transition",
-            "Shared pair-level combinatorial inputs",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-024-V1, but distinct parametric hazard structure"
-          ],
-          "different_features": [],
-          "similarity_score": 70.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260824-010-V1",
-          "existing_title": "DRAW",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "USER-APPROVED SEALED CHANGE CONTROL",
-          "ontology_tags": [
             "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "PAIR OFFICIAL CHANGE CONTROL raw numbers",
+          "existing_input": "DRAW raw numbers",
           "candidate_transformation": "",
           "existing_transformation": "Standard structural extraction",
           "candidate_target": "",
@@ -879,247 +930,312 @@
             "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260824-010-V1, but distinct parametric hazard structure"
+            "Related pair domain concept EXP-DRAW-20260816-023-V1, but distinct parametric hazard structure"
           ],
           "different_features": [
             "No shared ontology concepts"
           ],
           "similarity_score": 55.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-023-V1",
+          "canonical_title": "쌍둥이 유사 회차",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 23)"
         },
         {
-          "existing_research_id": "EXP-DRAW-20260816-010-V1",
-          "existing_title": "NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "FAILED",
-          "ontology_tags": [
-            "NUMBER",
-            "transition",
-            "lag"
-          ],
-          "candidate_input": "",
-          "existing_input": "Winning numbers from round t-1",
-          "candidate_transformation": "",
-          "existing_transformation": "1-step Markov transition matrix or modulo arithmetic",
-          "candidate_target": "",
-          "existing_target": "Next draw winning numbers",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "transition_probability, empirical_lift",
-          "candidate_null": "",
-          "existing_null": "Uniform independent transitions across 45 states",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Consecutive round transitions (t-1 -> t)",
-          "same_features": [
-            "Shared ontology concepts: transition",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-010-V1, but distinct parametric hazard structure"
-          ],
-          "different_features": [
-            "Different input structural primitives"
-          ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260816-011-V1",
-          "existing_title": "회차 간 흔적 구조",
+          "existing_research_id": "EXP-DRAW-20260816-024-V1",
+          "existing_title": "구조형 쌍둥이 회차 전이",
           "source_type": "FORMAL_REGISTRY",
           "status": "REGISTERED",
           "ontology_tags": [
-            "NUMBER",
-            "transition",
-            "lag"
+            "NUMBER"
           ],
           "candidate_input": "",
-          "existing_input": "Winning numbers from round t-1",
+          "existing_input": "DRAW raw numbers",
           "candidate_transformation": "",
-          "existing_transformation": "1-step Markov transition matrix or modulo arithmetic",
+          "existing_transformation": "Standard structural extraction",
           "candidate_target": "",
-          "existing_target": "Next draw winning numbers",
+          "existing_target": "Next round state",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "transition_probability, empirical_lift",
+          "existing_metric": "hit_rate, lift",
           "candidate_null": "",
-          "existing_null": "Uniform independent transitions across 45 states",
+          "existing_null": "Fair lottery null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Consecutive round transitions (t-1 -> t)",
+          "existing_conditioning": "Unconditioned baseline",
           "same_features": [
-            "Shared ontology concepts: transition",
+            "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-011-V1, but distinct parametric hazard structure"
+            "Related pair domain concept EXP-DRAW-20260816-024-V1, but distinct parametric hazard structure"
           ],
           "different_features": [
-            "Different input structural primitives"
+            "No shared ontology concepts"
           ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "similarity_score": 55.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-024-V1",
+          "canonical_title": "구조형 쌍둥이 회차 전이",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 24)"
         },
         {
-          "existing_research_id": "EXP-DRAW-20260816-012-V1",
-          "existing_title": "격회 재출현 (EXP-005)",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "FAILED",
+          "existing_research_id": "OFFICIAL-CORE-INVARIANTS",
+          "existing_title": "CORE (NUMBER→TRIO→PAIR→CORE 보호 판정 계층.)",
+          "source_type": "OFFICIAL_INTERNAL",
+          "status": "OFFICIAL_FROZEN",
           "ontology_tags": [
-            "NUMBER",
-            "transition",
-            "lag"
+            "CORE",
+            "regime"
           ],
           "candidate_input": "",
-          "existing_input": "Winning numbers from round t-1",
+          "existing_input": "Hierarchical decision pipeline NUMBER->TRIO->PAIR->CORE",
           "candidate_transformation": "",
-          "existing_transformation": "1-step Markov transition matrix or modulo arithmetic",
+          "existing_transformation": "Multi-level gate and threshold filtering",
           "candidate_target": "",
-          "existing_target": "Next draw winning numbers",
+          "existing_target": "Official pick generation",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "transition_probability, empirical_lift",
+          "existing_metric": "pipeline_invariance_pass",
           "candidate_null": "",
-          "existing_null": "Uniform independent transitions across 45 states",
+          "existing_null": "Pipeline determinism invariant",
           "candidate_conditioning": "",
-          "existing_conditioning": "Consecutive round transitions (t-1 -> t)",
+          "existing_conditioning": "Production draw processing",
           "same_features": [
-            "Shared ontology concepts: transition",
+            "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-012-V1, but distinct parametric hazard structure"
+            "Related pair domain concept OFFICIAL-CORE-INVARIANTS, but distinct parametric hazard structure"
           ],
           "different_features": [
-            "Different input structural primitives"
+            "No shared ontology concepts"
           ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "similarity_score": 55.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "OFFICIAL-CORE-INVARIANTS",
+          "canonical_title": "CORE (NUMBER→TRIO→PAIR→CORE 보호 판정 계층.)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "Research Master authoritative axis"
         },
         {
-          "existing_research_id": "EXP-DRAW-20260816-013-V1",
-          "existing_title": "같은 끝자리 회차 전이 (EXP-006)",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "FAILED",
+          "existing_research_id": "NON-EXP-03",
+          "existing_title": "KTS pair-completion collision",
+          "source_type": "NON_EXP_EXECUTED",
+          "status": "COMPLETED",
           "ontology_tags": [
-            "NUMBER",
-            "transition",
-            "lag"
+            "CORE"
           ],
           "candidate_input": "",
-          "existing_input": "Winning numbers from round t-1",
+          "existing_input": "Historical lottery records",
           "candidate_transformation": "",
-          "existing_transformation": "1-step Markov transition matrix or modulo arithmetic",
+          "existing_transformation": "KTS pair-completion collision",
           "candidate_target": "",
-          "existing_target": "Next draw winning numbers",
+          "existing_target": "Diagnostic insight",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "transition_probability, empirical_lift",
+          "existing_metric": "diagnostic_metric",
           "candidate_null": "",
-          "existing_null": "Uniform independent transitions across 45 states",
+          "existing_null": "Standard null",
           "candidate_conditioning": "",
-          "existing_conditioning": "Consecutive round transitions (t-1 -> t)",
+          "existing_conditioning": "Historical audit",
           "same_features": [
-            "Shared ontology concepts: transition",
+            "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-013-V1, but distinct parametric hazard structure"
+            "Related pair domain concept NON-EXP-03, but distinct parametric hazard structure"
           ],
           "different_features": [
-            "Different input structural primitives"
+            "No shared ontology concepts"
           ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "similarity_score": 55.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "NON-EXP-03",
+          "canonical_title": "KTS pair-completion collision",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "Research Master authoritative axis"
         },
         {
-          "existing_research_id": "EXP-DRAW-20260816-014-V1",
-          "existing_title": "끝수 전이",
+          "existing_research_id": "EXP-DRAW-20260828-020-V1",
+          "existing_title": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
           "source_type": "FORMAL_REGISTRY",
-          "status": "REGISTERED",
+          "status": "FAILED_NO_SELECTION_SIGNAL",
           "ontology_tags": [
-            "NUMBER",
-            "transition",
-            "lag"
-          ],
-          "candidate_input": "",
-          "existing_input": "Winning numbers from round t-1",
-          "candidate_transformation": "",
-          "existing_transformation": "1-step Markov transition matrix or modulo arithmetic",
-          "candidate_target": "",
-          "existing_target": "Next draw winning numbers",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "transition_probability, empirical_lift",
-          "candidate_null": "",
-          "existing_null": "Uniform independent transitions across 45 states",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Consecutive round transitions (t-1 -> t)",
-          "same_features": [
-            "Shared ontology concepts: transition",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-014-V1, but distinct parametric hazard structure"
-          ],
-          "different_features": [
-            "Different input structural primitives"
-          ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260816-025-V1",
-          "existing_title": "유사 회차 이후 다음 회차 전이 (EXP-007)",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "FAILED",
-          "ontology_tags": [
-            "similarity",
-            "cross-round relation",
+            "regime",
+            "lag",
             "transition"
           ],
           "candidate_input": "",
-          "existing_input": "Full draw outcome vectors across historical rounds",
+          "existing_input": "Lagged winner count regimes (low/high winner count at t-1)",
           "candidate_transformation": "",
-          "existing_transformation": "Multivariate set distance / twin round vector matching",
+          "existing_transformation": "Winner count regime indicator conditioning",
           "candidate_target": "",
-          "existing_target": "Next-round carryover following similar round",
+          "existing_target": "Next round number selection signal",
           "candidate_lag": 1,
           "existing_lag": 1,
           "candidate_metric": "",
-          "existing_metric": "set_intersection_size, twin_similarity_score",
+          "existing_metric": "regime_conditional_lift",
           "candidate_null": "",
-          "existing_null": "Permutation null of draw order",
+          "existing_null": "Regime transition independence",
           "candidate_conditioning": "",
-          "existing_conditioning": "Historical round with high similarity score to current draw",
+          "existing_conditioning": "Previous round winner count extremity",
           "same_features": [
             "Shared ontology concepts: transition",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-025-V1, but distinct parametric hazard structure"
+            "Related pair domain concept EXP-DRAW-20260828-020-V1, but distinct parametric hazard structure"
           ],
           "different_features": [
             "Different input structural primitives"
           ],
           "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP"
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260828-020-V1",
+          "canonical_title": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 68)"
+        },
+        {
+          "existing_research_id": "EXP-DRAW-20260930-001-V1",
+          "existing_title": "EDGE ARITHMETIC FAMILY V1",
+          "source_type": "FORMAL_REGISTRY",
+          "status": "INCONCLUSIVE / NO_SUPPORTED_ENDPOINT",
+          "ontology_tags": [
+            "arithmetic transform",
+            "transition",
+            "lag"
+          ],
+          "candidate_input": "",
+          "existing_input": "Edge ball arithmetic combinations (sum, difference, modulo)",
+          "candidate_transformation": "",
+          "existing_transformation": "Deterministic algebraic transforms across 4 formulas and 2 lags",
+          "candidate_target": "",
+          "existing_target": "Next round main6 ball appearance",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "maxT_statistic, permutation_fwer_p",
+          "candidate_null": "",
+          "existing_null": "50,000 full-record order permutations",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Edge ball states at t-1 and t-2",
+          "same_features": [
+            "Shared ontology concepts: transition",
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1",
+            "Related pair domain concept EXP-DRAW-20260930-001-V1, but distinct parametric hazard structure"
+          ],
+          "different_features": [
+            "Different input structural primitives"
+          ],
+          "similarity_score": 45.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260930-001-V1",
+          "canonical_title": "EDGE ARITHMETIC FAMILY V1",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 69)"
+        },
+        {
+          "existing_research_id": "OFFICIAL-LINKED-ORBIT",
+          "existing_title": "Linked Orbit (직전 MAIN6+BONUS 연동 3×3 TRIO; 역사 exact3 7/1237, 우월성 미지지.)",
+          "source_type": "OFFICIAL_INTERNAL",
+          "status": "OFFICIAL_FROZEN",
+          "ontology_tags": [
+            "TRIO",
+            "recurrence",
+            "transition",
+            "CORE"
+          ],
+          "candidate_input": "",
+          "existing_input": "Linked 3-TRIO candidate sets using 3 winning numbers from round t-1 as anchor",
+          "candidate_transformation": "",
+          "existing_transformation": "Anchor carryover and orbit rotation",
+          "candidate_target": "",
+          "existing_target": "PRIMARY (3/3) and SUPPORT (exact 2/3) hits",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "support_hit_rate, mcnemar_exact_p, holm_adj_p",
+          "candidate_null": "",
+          "existing_null": "Binomial exact null p0 = 987,390 / 8,145,060 ≈ 0.121226",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Target draw t conditioned on winning balls of t-1",
+          "same_features": [
+            "Shared ontology concepts: transition",
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1",
+            "Related pair domain concept OFFICIAL-LINKED-ORBIT, but distinct parametric hazard structure"
+          ],
+          "different_features": [
+            "Different input structural primitives"
+          ],
+          "similarity_score": 45.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "OFFICIAL-LINKED-ORBIT",
+          "canonical_title": "Linked Orbit (직전 MAIN6+BONUS 연동 3×3 TRIO; 역사 exact3 7/1237, 우월성 미지지.)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "Research Master authoritative axis"
+        },
+        {
+          "existing_research_id": "EXP-DRAW-20260816-001-V1",
+          "existing_title": "숫자 관계망 구조",
+          "source_type": "FORMAL_REGISTRY",
+          "status": "REGISTERED",
+          "ontology_tags": [
+            "NUMBER",
+            "interaction",
+            "cross-round relation"
+          ],
+          "candidate_input": "",
+          "existing_input": "Individual winning lottery numbers (1..45)",
+          "candidate_transformation": "",
+          "existing_transformation": "Pairwise co-occurrence frequency and correlation graph",
+          "candidate_target": "",
+          "existing_target": "Next-round number co-occurrence likelihood",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "jaccard_similarity, lift, co_occurrence_count",
+          "candidate_null": "",
+          "existing_null": "Hypergeometric independent random ball selection without replacement",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Unconditional simultaneous occurrence or conditional on number A",
+          "same_features": [
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1"
+          ],
+          "different_features": [
+            "No shared ontology concepts",
+            "Different input structural primitives"
+          ],
+          "similarity_score": 30.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-001-V1",
+          "canonical_title": "숫자 관계망 구조",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 1)"
         }
       ],
       "exact_overlaps": [],
       "partial_overlaps": [
+        "EXP-DRAW-20260824-010-V1",
         "OFFICIAL-PAIR-LIFECYCLE",
         "EXP-DRAW-20260816-023-V1",
         "EXP-DRAW-20260816-024-V1",
-        "EXP-DRAW-20260824-010-V1",
-        "EXP-DRAW-20260816-010-V1",
-        "EXP-DRAW-20260816-011-V1",
-        "EXP-DRAW-20260816-012-V1",
-        "EXP-DRAW-20260816-013-V1",
-        "EXP-DRAW-20260816-014-V1",
-        "EXP-DRAW-20260816-025-V1"
+        "OFFICIAL-CORE-INVARIANTS",
+        "NON-EXP-03",
+        "EXP-DRAW-20260828-020-V1",
+        "EXP-DRAW-20260930-001-V1",
+        "OFFICIAL-LINKED-ORBIT",
+        "EXP-DRAW-20260816-001-V1"
       ],
       "failed_axis_rescues": [],
       "novelty_justification": "Candidate addresses a distinct parametric hazard distribution on 990 pairs separate from official repair and EXP-012, but lacks pre-specified multiplicity family and hazard pooling justification required for formal protocol generation.",
-      "novelty_evidence_exists": true
+      "novelty_evidence_exists": true,
+      "referential_integrity_pass": true,
+      "invalid_references": []
     }
   ]
 }

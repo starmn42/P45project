@@ -1,0 +1,700 @@
+{
+  "total_canonical_registry_rows": 69,
+  "domain_counts": {
+    "DRAW": 54,
+    "CROWD": 9,
+    "PRIZE": 6
+  },
+  "entries": {
+    "EXP-DRAW-20260816-001-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-001-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "숫자 관계망 구조",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 1)"
+    },
+    "EXP-DRAW-20260816-002-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-002-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "숫자 동시출현 관계망 (EXP-001)",
+      "human_exp_label_if_explicit": "EXP-001",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 2)"
+    },
+    "EXP-DRAW-20260816-003-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-003-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "조건부 관계망",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 3)"
+    },
+    "EXP-DRAW-20260816-004-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-004-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "A 출현 후 다음 회차 B 관계",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 4)"
+    },
+    "EXP-DRAW-20260816-005-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-005-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "2회 간격 관계",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 5)"
+    },
+    "EXP-DRAW-20260816-006-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-006-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "3개 숫자 관계망",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 6)"
+    },
+    "EXP-DRAW-20260816-007-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-007-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "최근100 관계망",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 7)"
+    },
+    "EXP-DRAW-20260816-008-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-008-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "최근50 관계망",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 8)"
+    },
+    "EXP-DRAW-20260816-009-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-009-V1",
+      "domain": "DRAW",
+      "lab": "NUMBER RELATION LAB",
+      "canonical_title": "전체 관계망",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 9)"
+    },
+    "EXP-DRAW-20260816-010-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-010-V1",
+      "domain": "DRAW",
+      "lab": "TRANSITION LAB",
+      "canonical_title": "NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)",
+      "human_exp_label_if_explicit": "EXP-003",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 10)"
+    },
+    "EXP-DRAW-20260816-011-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-011-V1",
+      "domain": "DRAW",
+      "lab": "TRANSITION LAB",
+      "canonical_title": "회차 간 흔적 구조",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 11)"
+    },
+    "EXP-DRAW-20260816-012-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-012-V1",
+      "domain": "DRAW",
+      "lab": "TRANSITION LAB",
+      "canonical_title": "격회 재출현 (EXP-005)",
+      "human_exp_label_if_explicit": "EXP-005",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 12)"
+    },
+    "EXP-DRAW-20260816-013-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-013-V1",
+      "domain": "DRAW",
+      "lab": "TRANSITION LAB",
+      "canonical_title": "같은 끝자리 회차 전이 (EXP-006)",
+      "human_exp_label_if_explicit": "EXP-006",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 13)"
+    },
+    "EXP-DRAW-20260816-014-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-014-V1",
+      "domain": "DRAW",
+      "lab": "TRANSITION LAB",
+      "canonical_title": "끝수 전이",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 14)"
+    },
+    "EXP-DRAW-20260816-015-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-015-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "결손 회복속도",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 15)"
+    },
+    "EXP-DRAW-20260816-016-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-016-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "결손 회복 전환점",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 16)"
+    },
+    "EXP-DRAW-20260816-017-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-017-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "가변 전멸구간 (EXP-004)",
+      "human_exp_label_if_explicit": "EXP-004",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 17)"
+    },
+    "EXP-DRAW-20260816-018-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-018-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "다중 전멸구간 상호작용",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 18)"
+    },
+    "EXP-DRAW-20260816-019-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-019-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "이동×가변 전멸 교차",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 19)"
+    },
+    "EXP-DRAW-20260816-020-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-020-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "최근10 강도 지속",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 20)"
+    },
+    "EXP-DRAW-20260816-021-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-021-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "비전멸 전용 엔진",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 21)"
+    },
+    "EXP-DRAW-20260816-022-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-022-V1",
+      "domain": "DRAW",
+      "lab": "STRUCTURE LAB",
+      "canonical_title": "구간별 복귀우선 전이",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 22)"
+    },
+    "EXP-DRAW-20260816-023-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-023-V1",
+      "domain": "DRAW",
+      "lab": "SIMILAR ROUND LAB",
+      "canonical_title": "쌍둥이 유사 회차",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 23)"
+    },
+    "EXP-DRAW-20260816-024-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-024-V1",
+      "domain": "DRAW",
+      "lab": "SIMILAR ROUND LAB",
+      "canonical_title": "구조형 쌍둥이 회차 전이",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 24)"
+    },
+    "EXP-DRAW-20260816-025-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-025-V1",
+      "domain": "DRAW",
+      "lab": "SIMILAR ROUND LAB",
+      "canonical_title": "유사 회차 이후 다음 회차 전이 (EXP-007)",
+      "human_exp_label_if_explicit": "EXP-007",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 25)"
+    },
+    "EXP-DRAW-20260816-026-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-026-V1",
+      "domain": "DRAW",
+      "lab": "SPACING LAB",
+      "canonical_title": "숫자 간격 구조 (EXP-008)",
+      "human_exp_label_if_explicit": "EXP-008",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 26)"
+    },
+    "EXP-DRAW-20260816-027-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-027-V1",
+      "domain": "DRAW",
+      "lab": "SPACING LAB",
+      "canonical_title": "간격 분산",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 27)"
+    },
+    "EXP-DRAW-20260816-028-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-028-V1",
+      "domain": "DRAW",
+      "lab": "SPACING LAB",
+      "canonical_title": "등차수열형 구조",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 28)"
+    },
+    "EXP-DRAW-20260816-029-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-029-V1",
+      "domain": "DRAW",
+      "lab": "SPACING LAB",
+      "canonical_title": "+13/+14 고정 간격",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 29)"
+    },
+    "EXP-DRAW-20260816-030-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-030-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "숫자 역할 구조",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 30)"
+    },
+    "EXP-DRAW-20260816-031-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-031-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "특정 UNIT 일시 강세",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 31)"
+    },
+    "EXP-DRAW-20260816-032-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-032-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "NUMBER 역할",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 32)"
+    },
+    "EXP-DRAW-20260816-033-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-033-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "역할 충돌",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 33)"
+    },
+    "EXP-DRAW-20260816-034-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-034-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "실패 원인 복기",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 34)"
+    },
+    "EXP-DRAW-20260816-035-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-035-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "전체 엔진 귀무감사",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 35)"
+    },
+    "EXP-DRAW-20260816-036-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-036-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "placebo/permutation",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 36)"
+    },
+    "EXP-DRAW-20260816-037-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-037-V1",
+      "domain": "DRAW",
+      "lab": "ROLE AND AUDIT LAB",
+      "canonical_title": "과최적화 방지",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 37)"
+    },
+    "EXP-DRAW-20260816-038-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260816-038-V1",
+      "domain": "DRAW",
+      "lab": "NO-PICK COVERAGE LAB",
+      "canonical_title": "NO-PICK COVERAGE & QUALIFIED RESEARCH FALLBACK (EXP-002)",
+      "human_exp_label_if_explicit": "EXP-002",
+      "status": "DESIGNED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 38)"
+    },
+    "EXP-DRAW-20260816-038-V2": {
+      "canonical_registry_id": "EXP-DRAW-20260816-038-V2",
+      "domain": "DRAW",
+      "lab": "NO-PICK COVERAGE LAB",
+      "canonical_title": "NO-PICK COVERAGE & NUMBER-RANK FALLBACK (EXP-002 V2)",
+      "human_exp_label_if_explicit": "EXP-002 V2",
+      "status": "FAILED",
+      "version": "V2",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 39)"
+    },
+    "EXP-DRAW-20260821-039-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-039-V1",
+      "domain": "DRAW",
+      "lab": "SERIAL COMPOSITION LAB",
+      "canonical_title": "홀수 개수 lag-1 공분산 (EXP-009)",
+      "human_exp_label_if_explicit": "EXP-009",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 40)"
+    },
+    "EXP-DRAW-20260821-040-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-040-V1",
+      "domain": "DRAW",
+      "lab": "SERIAL COMPOSITION LAB",
+      "canonical_title": "추첨 합계 lag-1 공분산 (EXP-010)",
+      "human_exp_label_if_explicit": "EXP-010",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 41)"
+    },
+    "EXP-DRAW-20260821-041-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-041-V1",
+      "domain": "DRAW",
+      "lab": "TRANSITION LAB",
+      "canonical_title": "미러 보수 전이 (EXP-011)",
+      "human_exp_label_if_explicit": "EXP-011",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 42)"
+    },
+    "EXP-DRAW-20260821-042-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-042-V1",
+      "domain": "DRAW",
+      "lab": "RETURN LAB",
+      "canonical_title": "개별 숫자 return-age rank (EXP-012)",
+      "human_exp_label_if_explicit": "EXP-012",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 43)"
+    },
+    "EXP-DRAW-20260821-043-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-043-V1",
+      "domain": "DRAW",
+      "lab": "FREQUENCY LAB",
+      "canonical_title": "누적 빈도 rank (EXP-013)",
+      "human_exp_label_if_explicit": "EXP-013",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 44)"
+    },
+    "EXP-DRAW-20260821-044-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-044-V1",
+      "domain": "DRAW",
+      "lab": "BONUS TRANSITION LAB",
+      "canonical_title": "직전 BONUS→다음 MAIN (EXP-014)",
+      "human_exp_label_if_explicit": "EXP-014",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 45)"
+    },
+    "EXP-DRAW-20260821-045-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-045-V1",
+      "domain": "DRAW",
+      "lab": "BONUS ROLE LAB",
+      "canonical_title": "BONUS 상대 순위 교환가능성 (EXP-015)",
+      "human_exp_label_if_explicit": "EXP-015",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 46)"
+    },
+    "EXP-DRAW-20260821-046-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260821-046-V1",
+      "domain": "DRAW",
+      "lab": "MARGINAL LABEL LAB",
+      "canonical_title": "번호 라벨 이질성·지속성 (EXP-016)",
+      "human_exp_label_if_explicit": "EXP-016",
+      "status": "FAILED_EARLY",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 47)"
+    },
+    "EXP-CROWD-20260816-001-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260816-001-V1",
+      "domain": "CROWD",
+      "lab": "CROWD LAB",
+      "canonical_title": "대중 번호 선택 행동",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 48)"
+    },
+    "EXP-CROWD-20260816-002-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260816-002-V1",
+      "domain": "CROWD",
+      "lab": "CROWD LAB",
+      "canonical_title": "많이 고르는 번호·패턴",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 49)"
+    },
+    "EXP-PRIZE-20260816-001-V1": {
+      "canonical_registry_id": "EXP-PRIZE-20260816-001-V1",
+      "domain": "PRIZE_SHARE",
+      "lab": "PRIZE-SHARE LAB",
+      "canonical_title": "판매량 대비 1등 당첨게임 밀도 / EXP-PRIZE-001-V1 BIRTHDAY-ZONE CONCENTRATION",
+      "human_exp_label_if_explicit": null,
+      "status": "PROTOCOL_BLOCKED_SOURCE_SEMANTICS",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 50)"
+    },
+    "EXP-PRIZE-20260816-001-V2": {
+      "canonical_registry_id": "EXP-PRIZE-20260816-001-V2",
+      "domain": "PRIZE_SHARE",
+      "lab": "PRIZE-SHARE LAB",
+      "canonical_title": "BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)",
+      "human_exp_label_if_explicit": null,
+      "status": "SUPPORTED_WITHIN_EXPERIMENT",
+      "version": "V2",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 51)"
+    },
+    "EXP-PRIZE-20260821-004-V1": {
+      "canonical_registry_id": "EXP-PRIZE-20260821-004-V1",
+      "domain": "PRIZE_SHARE",
+      "lab": "PRIZE-SHARE LAB",
+      "canonical_title": "SECOND-PRIZE CROSS-OUTCOME CORROBORATION (EXP-PRIZE-002-V1)",
+      "human_exp_label_if_explicit": null,
+      "status": "SUPPORTED_CROSS_OUTCOME",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 52)"
+    },
+    "EXP-PRIZE-20260821-005-V1": {
+      "canonical_registry_id": "EXP-PRIZE-20260821-005-V1",
+      "domain": "PRIZE_SHARE",
+      "lab": "PRIZE-SHARE LAB",
+      "canonical_title": "BIRTHDAY-ZONE CROWD CONCENTRATION — PROSPECTIVE CONFIRMATION",
+      "human_exp_label_if_explicit": null,
+      "status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 53)"
+    },
+    "EXP-PRIZE-20260816-002-V1": {
+      "canonical_registry_id": "EXP-PRIZE-20260816-002-V1",
+      "domain": "PRIZE_SHARE",
+      "lab": "PRIZE-SHARE LAB",
+      "canonical_title": "LOW/NORMAL/HIGH WINNER 구조",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 54)"
+    },
+    "EXP-CROWD-20260816-003-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260816-003-V1",
+      "domain": "CROWD",
+      "lab": "CROWD LAB",
+      "canonical_title": "생일번호 편향",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 55)"
+    },
+    "EXP-PRIZE-20260816-003-V1": {
+      "canonical_registry_id": "EXP-PRIZE-20260816-003-V1",
+      "domain": "PRIZE_SHARE",
+      "lab": "PRIZE-SHARE LAB",
+      "canonical_title": "공동당첨 위험",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 56)"
+    },
+    "EXP-CROWD-20260816-004-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260816-004-V1",
+      "domain": "CROWD",
+      "lab": "CROWD LAB",
+      "canonical_title": "고번호·끝수·연속수·시각/OMR 선택편향",
+      "human_exp_label_if_explicit": null,
+      "status": "REGISTERED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 57)"
+    },
+    "EXP-CROWD-20260823-005-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260823-005-V1",
+      "domain": "CROWD",
+      "lab": "CROWD / PRIZE-SHARE LAB",
+      "canonical_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+      "human_exp_label_if_explicit": "EXP-CROWD-TOPO-001-V1",
+      "status": "FAILED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 58)"
+    },
+    "EXP-CROWD-20260823-006-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260823-006-V1",
+      "domain": "CROWD",
+      "lab": "CROWD / PRIZE-SHARE LAB",
+      "canonical_title": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION",
+      "human_exp_label_if_explicit": "EXP-CROWD-TOPO-002-V1",
+      "status": "SUPPORTED_WITHIN_EXPERIMENT",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 59)"
+    },
+    "EXP-CROWD-20260823-007-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260823-007-V1",
+      "domain": "CROWD",
+      "lab": "CROWD / PRIZE-SHARE LAB",
+      "canonical_title": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS",
+      "human_exp_label_if_explicit": "EXP-CROWD-TOPO-003-V1",
+      "status": "EXPLORATORY_NOT_SUPPORTED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 60)"
+    },
+    "EXP-CROWD-20260823-008-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260823-008-V1",
+      "domain": "CROWD",
+      "lab": "CROWD / PRIZE-SHARE LAB",
+      "canonical_title": "MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "human_exp_label_if_explicit": "EXP-CROWD-RETAIL-001-V1",
+      "status": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 61)"
+    },
+    "EXP-CROWD-20260824-009-V1": {
+      "canonical_registry_id": "EXP-CROWD-20260824-009-V1",
+      "domain": "CROWD",
+      "lab": "CROWD / PRIZE-SHARE LAB",
+      "canonical_title": "PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION",
+      "human_exp_label_if_explicit": "EXP-CROWD-RETAIL-PROSPECTIVE-001-V1",
+      "status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 62)"
+    },
+    "EXP-DRAW-20260824-010-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260824-010-V1",
+      "domain": "DRAW",
+      "lab": "PAIR OFFICIAL CHANGE CONTROL",
+      "canonical_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+      "human_exp_label_if_explicit": "OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001",
+      "status": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 63)"
+    },
+    "EXP-DRAW-20260827-017-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260827-017-V1",
+      "domain": "DRAW",
+      "lab": "TRIO ORBIT CONSENSUS NUMBER LAB",
+      "canonical_title": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1",
+      "human_exp_label_if_explicit": "EXP-017",
+      "status": "FAILED_NOT_SUPPORTED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 64)"
+    },
+    "EXP-DRAW-20260827-018-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260827-018-V1",
+      "domain": "DRAW",
+      "lab": "RESIDUAL NEIGHBOR CLOSURE LAB",
+      "canonical_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1",
+      "human_exp_label_if_explicit": "EXP-018",
+      "status": "READY_FOR_TEST",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 65)"
+    },
+    "EXP-DRAW-20260827-018-V2": {
+      "canonical_registry_id": "EXP-DRAW-20260827-018-V2",
+      "domain": "DRAW",
+      "lab": "RESIDUAL NEIGHBOR CLOSURE LAB",
+      "canonical_title": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2",
+      "human_exp_label_if_explicit": "EXP-018 V2",
+      "status": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+      "version": "V2",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 66)"
+    },
+    "EXP-DRAW-20260827-019-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260827-019-V1",
+      "domain": "DRAW",
+      "lab": "SALES-ADJUSTED CROWD EFFECT LAB",
+      "canonical_title": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1",
+      "human_exp_label_if_explicit": "EXP-019",
+      "status": "FAILED_NOT_SUPPORTED",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 67)"
+    },
+    "EXP-DRAW-20260828-020-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260828-020-V1",
+      "domain": "DRAW",
+      "lab": "LAGGED CROWD METADATA SIGNAL LAB",
+      "canonical_title": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1",
+      "human_exp_label_if_explicit": "EXP-020",
+      "status": "FAILED_NO_SELECTION_SIGNAL",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 68)"
+    },
+    "EXP-DRAW-20260930-001-V1": {
+      "canonical_registry_id": "EXP-DRAW-20260930-001-V1",
+      "domain": "DRAW",
+      "lab": "EDGE ARITHMETIC TRANSITION LAB",
+      "canonical_title": "EDGE ARITHMETIC FAMILY V1",
+      "human_exp_label_if_explicit": null,
+      "status": "INCONCLUSIVE / NO_SUPPORTED_ENDPOINT",
+      "version": "V1",
+      "source_location": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 69)"
+    }
+  }
+}
