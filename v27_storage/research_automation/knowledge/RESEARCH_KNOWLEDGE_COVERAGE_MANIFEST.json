@@ -1,0 +1,943 @@
+{
+  "total_source_items": 115,
+  "mapped_source_items_count": 115,
+  "unmapped_source_items_count": 0,
+  "coverage_ratio": 1.0,
+  "is_complete": true,
+  "source_class_counts": {
+    "FORMAL_REGISTRY": 69,
+    "OFFICIAL_INTERNAL": 12,
+    "NON_EXP_EXECUTED": 31,
+    "REVIEWED_UNEXECUTED": 2,
+    "ACTIVE_PROSPECTIVE": 1
+  },
+  "mapping_type_counts": {
+    "DIRECT": 107,
+    "ALIAS": 6,
+    "MERGED": 2,
+    "RELATED_BUT_DISTINCT": 0
+  },
+  "unmapped_items": [],
+  "mappings": [
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-001-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-001-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-002-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-003-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-004-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-005-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-006-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-007-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-008-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-009-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-010-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-010-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-011-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-011-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-012-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-012-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-013-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-013-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-014-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-014-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-015-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-015-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-016-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-016-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-017-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-017-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-018-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-018-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-019-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-019-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-020-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-020-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-021-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-021-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-022-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-022-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-023-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-023-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-024-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-024-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-025-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-025-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-026-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-026-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-027-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-027-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-028-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-028-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-029-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-029-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-030-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-030-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-031-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-031-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-032-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-032-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-033-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-033-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-034-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-034-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-035-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-035-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-036-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-036-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-037-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-037-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V1",
+      "normalized_record_id": "EXP-DRAW-20260816-038-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V2",
+      "normalized_record_id": "EXP-DRAW-20260816-038-V2",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-039-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-039-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-040-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-040-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-041-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-041-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-042-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-042-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-043-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-043-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-044-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-044-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-045-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-045-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-046-V1",
+      "normalized_record_id": "EXP-DRAW-20260821-046-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+      "normalized_record_id": "EXP-CROWD-20260816-001-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+      "normalized_record_id": "EXP-CROWD-20260816-002-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V2",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
+      "normalized_record_id": "EXP-PRIZE-20260821-004-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
+      "normalized_record_id": "EXP-PRIZE-20260821-005-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
+      "normalized_record_id": "EXP-PRIZE-20260816-002-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+      "normalized_record_id": "EXP-CROWD-20260816-003-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-003-V1",
+      "normalized_record_id": "EXP-PRIZE-20260816-003-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+      "normalized_record_id": "EXP-CROWD-20260816-004-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-005-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-005-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-006-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-006-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-007-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-007-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-008-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-008-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260824-009-V1",
+      "normalized_record_id": "EXP-CROWD-20260824-009-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260824-010-V1",
+      "normalized_record_id": "EXP-DRAW-20260824-010-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-017-V1",
+      "normalized_record_id": "EXP-DRAW-20260827-017-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V1",
+      "normalized_record_id": "EXP-DRAW-20260827-018-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V2",
+      "normalized_record_id": "EXP-DRAW-20260827-018-V2",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-019-V1",
+      "normalized_record_id": "EXP-DRAW-20260827-019-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260828-020-V1",
+      "normalized_record_id": "EXP-DRAW-20260828-020-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260930-001-V1",
+      "normalized_record_id": "EXP-DRAW-20260930-001-V1",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
+      "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-01-UNIT_3",
+      "normalized_record_id": "OFFICIAL-UNIT-3",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis UNIT_3",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-02-UNIT_5",
+      "normalized_record_id": "OFFICIAL-UNIT-5",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis UNIT_5",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-03-UNIT_9",
+      "normalized_record_id": "OFFICIAL-UNIT-9",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis UNIT_9",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-04-UNIT_10",
+      "normalized_record_id": "OFFICIAL-UNIT-10",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis UNIT_10",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-05-END_DIGIT",
+      "normalized_record_id": "OFFICIAL-END-DIGIT",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis END_DIGIT",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-06-NUMBER",
+      "normalized_record_id": "OFFICIAL-NUMBER-14KEY",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis NUMBER",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-07-TRIO",
+      "normalized_record_id": "OFFICIAL-TRIO-15KEY",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis TRIO",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-08-PAIR",
+      "normalized_record_id": "OFFICIAL-PAIR-LIFECYCLE",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis PAIR",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-09-CORE",
+      "normalized_record_id": "OFFICIAL-CORE-INVARIANTS",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis CORE",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-10-FIXED_ORBIT",
+      "normalized_record_id": "OFFICIAL-FIXED-ORBIT",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis Fixed Orbit",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-11-LINKED_ORBIT",
+      "normalized_record_id": "OFFICIAL-LINKED-ORBIT",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis Linked Orbit",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-12-KTS45",
+      "normalized_record_id": "OFFICIAL-KTS45",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Authoritative official internal research axis KTS45",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-01",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-FIXED",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT Fixed/Linked 역사검증",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-02",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-LINKED",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT divergence attribution",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-03",
+      "normalized_record_id": "NON-EXP-03",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: KTS pair-completion collision",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-04",
+      "normalized_record_id": "NON-EXP-04",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: LAG 3~6 reappearance map",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-05",
+      "normalized_record_id": "NON-EXP-05",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: BONUS extinction interaction",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-06",
+      "normalized_record_id": "NON-EXP-06",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: BONUS lag2 interaction",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-07",
+      "normalized_record_id": "NON-EXP-07",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Ending-frequency interaction",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-08",
+      "normalized_record_id": "NON-EXP-08",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: TRIO HOLD causal decomposition",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-09",
+      "normalized_record_id": "NON-EXP-09",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Survivor-pool rolling-origin actionability",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-10",
+      "normalized_record_id": "NON-EXP-10",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Opposite-period stability filter validation",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-11",
+      "normalized_record_id": "NON-EXP-11",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: NO-PICK structural root-cause audit",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-12",
+      "normalized_record_id": "NON-EXP-12",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: NO-PICK causal trace",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-13",
+      "normalized_record_id": "NON-EXP-13",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: NUMBER member-structure SEVERE causal trace",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-14",
+      "normalized_record_id": "NON-EXP-14",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 END_DIGIT severe causal trace",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-15",
+      "normalized_record_id": "NON-EXP-15",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-16",
+      "normalized_record_id": "NON-EXP-16",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 opposite-period causal trace",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-17",
+      "normalized_record_id": "NON-EXP-17",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 official pre-draw audit",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-18",
+      "normalized_record_id": "NON-EXP-18",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-19",
+      "normalized_record_id": "NON-EXP-19",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-20",
+      "normalized_record_id": "EXP-DRAW-20260816-009-V1",
+      "mapping_type": "ALIAS",
+      "mapping_reason": "Supporting deterministic validation lineage for formal repair EXP-DRAW-20260816-009-V1",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-21",
+      "normalized_record_id": "EXP-DRAW-20260816-009-V1",
+      "mapping_type": "MERGED",
+      "mapping_reason": "Official repair Phase A/B canary/change-control validation facet",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-22",
+      "normalized_record_id": "EXP-DRAW-20260816-009-V1",
+      "mapping_type": "MERGED",
+      "mapping_reason": "Official repair apply and finalize verification facet",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-23",
+      "normalized_record_id": "EXP-CROWD-20260816-001-V1",
+      "mapping_type": "ALIAS",
+      "mapping_reason": "Crowd topology 001 supporting audit lineage of formal experiment",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-24",
+      "normalized_record_id": "EXP-CROWD-20260816-002-V1",
+      "mapping_type": "ALIAS",
+      "mapping_reason": "Crowd topology 002 independent calibration lineage of formal experiment",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-25",
+      "normalized_record_id": "EXP-CROWD-20260816-003-V1",
+      "mapping_type": "ALIAS",
+      "mapping_reason": "Crowd topology 003 methodology supporting lineage of formal experiment",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-26",
+      "normalized_record_id": "EXP-CROWD-20260816-004-V1",
+      "mapping_type": "ALIAS",
+      "mapping_reason": "Crowd retail 001 calibration lineage of formal experiment",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-27",
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V1",
+      "mapping_type": "ALIAS",
+      "mapping_reason": "Prize-share 001/002 historical validation and prospective lineage",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-28",
+      "normalized_record_id": "NON-EXP-28",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: LZ76 거시 복잡도 국면 고립 검정 V1",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
+      "normalized_record_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "normalized_record_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT Statistical Correction & Null Calibration 001",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-REVIEWED-01-MBC_실제_공_추첨순서",
+      "normalized_record_id": "REVIEWED-MBC_실제_공_추첨순서",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Reviewed unexecuted research idea",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-REVIEWED-02-REHEARSAL",
+      "normalized_record_id": "REVIEWED-REHEARSAL",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Reviewed unexecuted research idea",
+      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "confidence": 1.0
+    },
+    {
+      "source_item_id": "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244",
+      "normalized_record_id": "PROSPECTIVE-TRIO-ORBIT-TARGET-1244",
+      "mapping_type": "DIRECT",
+      "mapping_reason": "Active sealed prospective target round 1244",
+      "evidence": "v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md",
+      "confidence": 1.0
+    }
+  ]
+}

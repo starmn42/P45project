@@ -100,21 +100,42 @@ class ResearchDiscoveryAgent:
 
         return audit_results
 
-    def run_discovery_cycle(self, canonical_round: int, *, is_migration: bool = False) -> dict[str, Any]:
-        """Runs discovery cycle V1.1.
+    def run_discovery_cycle(self, canonical_round: int, *, is_migration: bool = False, migration_key: str | None = None) -> dict[str, Any]:
+        """Runs discovery cycle V1.1/V1.2.
         
         Strict Rules:
+        - If migration_key is given, uses that specific key (e.g. knowledge_coverage_completion:v1_1:{round})
         - If is_migration is True, uses key discovery_migration:v1_to_v1_1:{round}
         - Normal future runtime uses key discovery_cycle:v1_1:{round}
         - Strictly requires semantic novelty audit and evidence file generation
         - Only candidates clearing all 14 gates advance to READY_FOR_PROTOCOL
         - If 0 candidates pass, returns status NO_VALID_NEW_HYPOTHESIS without forced candidate fabrication
         """
-        idempotency_key = f"discovery_migration:v1_to_v1_1:{canonical_round}" if is_migration else f"discovery_cycle:v1_1:{canonical_round}"
+        if migration_key:
+            idempotency_key = migration_key
+        elif is_migration:
+            idempotency_key = f"discovery_migration:v1_to_v1_1:{canonical_round}"
+        else:
+            idempotency_key = f"discovery_cycle:v1_1:{canonical_round}"
         safe_key_filename = idempotency_key.replace(":", "_")
-        idempotency_file = self.storage_dir / f"{safe_key_filename}.json"
+        # 1. Fail-Closed Knowledge Coverage Check (First Gate)
+        if not self.knowledge_index.is_coverage_complete():
+            logger.error(
+                "FAIL_CLOSED: Research Knowledge Coverage is incomplete. "
+                "Discovery Agent refuses to generate ideas without complete memory of past research."
+            )
+            return {
+                "status": "BLOCKED_KNOWLEDGE_COVERAGE_INCOMPLETE",
+                "round": canonical_round,
+                "idempotency_key": idempotency_key,
+                "new_candidates_count": 0,
+                "ready_for_protocol_count": 0,
+                "unmapped_source_items": getattr(self.knowledge_index.manifest, "unmapped_items", []),
+                "official_lifecycle_affected": False,
+            }
 
-        # 1. Idempotency Check
+        # 2. Idempotency Check
+        idempotency_file = self.storage_dir / f"{safe_key_filename}.json"
         if idempotency_file.exists():
             try:
                 cached_data = json.loads(idempotency_file.read_text(encoding="utf-8"))

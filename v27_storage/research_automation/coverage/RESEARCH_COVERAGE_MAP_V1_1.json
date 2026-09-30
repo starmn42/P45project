@@ -6,12 +6,14 @@
     "consistency_verdict": "PASS"
   },
   "research_linkage_summary": {
-    "total_indexed_research_items": 77,
-    "total_formal_registry_links": 173,
-    "total_non_exp_links": 7,
-    "total_official_links": 13,
-    "axes_with_prior_evidence_count": 21,
-    "strictly_untested_structural_axes_count": 3
+    "total_indexed_research_items": 107,
+    "total_formal_registry_links": 109,
+    "total_non_exp_links": 46,
+    "total_official_links": 38,
+    "axes_with_prior_evidence_count": 17,
+    "strictly_untested_structural_axes_count": 7,
+    "orphan_records_count": 0,
+    "orphan_records": []
   },
   "axes": {
     "NUMBER": {
@@ -33,6 +35,17 @@
         "EXP-DRAW-20260816-012-V1",
         "EXP-DRAW-20260816-013-V1",
         "EXP-DRAW-20260816-014-V1",
+        "EXP-DRAW-20260816-015-V1",
+        "EXP-DRAW-20260816-016-V1",
+        "EXP-DRAW-20260816-017-V1",
+        "EXP-DRAW-20260816-018-V1",
+        "EXP-DRAW-20260816-019-V1",
+        "EXP-DRAW-20260816-020-V1",
+        "EXP-DRAW-20260816-021-V1",
+        "EXP-DRAW-20260816-022-V1",
+        "EXP-DRAW-20260816-023-V1",
+        "EXP-DRAW-20260816-024-V1",
+        "EXP-DRAW-20260816-025-V1",
         "EXP-DRAW-20260816-026-V1",
         "EXP-DRAW-20260816-027-V1",
         "EXP-DRAW-20260816-028-V1",
@@ -47,7 +60,13 @@
         "EXP-DRAW-20260816-037-V1",
         "EXP-DRAW-20260816-038-V1",
         "EXP-DRAW-20260816-038-V2",
+        "EXP-DRAW-20260821-039-V1",
+        "EXP-DRAW-20260821-040-V1",
         "EXP-DRAW-20260821-041-V1",
+        "EXP-DRAW-20260821-042-V1",
+        "EXP-DRAW-20260821-043-V1",
+        "EXP-DRAW-20260821-044-V1",
+        "EXP-DRAW-20260821-045-V1",
         "EXP-DRAW-20260821-046-V1",
         "EXP-CROWD-20260816-001-V1",
         "EXP-CROWD-20260816-002-V1",
@@ -65,20 +84,239 @@
         "EXP-DRAW-20260827-019-V1",
         "EXP-DRAW-20260828-020-V1"
       ],
-      "related_non_exp_axes": [],
+      "related_non_exp_axes": [
+        "EXP-DRAW-20260816-009-V1",
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1"
+      ],
       "related_official_axes": [
         "OFFICIAL-NUMBER-14KEY"
       ],
+      "normalized_record_ids": [
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1",
+        "EXP-DRAW-20260816-004-V1",
+        "EXP-DRAW-20260816-005-V1",
+        "EXP-DRAW-20260816-006-V1",
+        "EXP-DRAW-20260816-007-V1",
+        "EXP-DRAW-20260816-008-V1",
+        "EXP-DRAW-20260816-009-V1",
+        "EXP-DRAW-20260816-010-V1",
+        "EXP-DRAW-20260816-011-V1",
+        "EXP-DRAW-20260816-012-V1",
+        "EXP-DRAW-20260816-013-V1",
+        "EXP-DRAW-20260816-014-V1",
+        "EXP-DRAW-20260816-015-V1",
+        "EXP-DRAW-20260816-016-V1",
+        "EXP-DRAW-20260816-017-V1",
+        "EXP-DRAW-20260816-018-V1",
+        "EXP-DRAW-20260816-019-V1",
+        "EXP-DRAW-20260816-020-V1",
+        "EXP-DRAW-20260816-021-V1",
+        "EXP-DRAW-20260816-022-V1",
+        "EXP-DRAW-20260816-023-V1",
+        "EXP-DRAW-20260816-024-V1",
+        "EXP-DRAW-20260816-025-V1",
+        "EXP-DRAW-20260816-026-V1",
+        "EXP-DRAW-20260816-027-V1",
+        "EXP-DRAW-20260816-028-V1",
+        "EXP-DRAW-20260816-029-V1",
+        "EXP-DRAW-20260816-030-V1",
+        "EXP-DRAW-20260816-031-V1",
+        "EXP-DRAW-20260816-032-V1",
+        "EXP-DRAW-20260816-033-V1",
+        "EXP-DRAW-20260816-034-V1",
+        "EXP-DRAW-20260816-035-V1",
+        "EXP-DRAW-20260816-036-V1",
+        "EXP-DRAW-20260816-037-V1",
+        "EXP-DRAW-20260816-038-V1",
+        "EXP-DRAW-20260816-038-V2",
+        "EXP-DRAW-20260821-039-V1",
+        "EXP-DRAW-20260821-040-V1",
+        "EXP-DRAW-20260821-041-V1",
+        "EXP-DRAW-20260821-042-V1",
+        "EXP-DRAW-20260821-043-V1",
+        "EXP-DRAW-20260821-044-V1",
+        "EXP-DRAW-20260821-045-V1",
+        "EXP-DRAW-20260821-046-V1",
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1",
+        "EXP-CROWD-20260823-005-V1",
+        "EXP-CROWD-20260823-006-V1",
+        "EXP-CROWD-20260823-007-V1",
+        "EXP-CROWD-20260823-008-V1",
+        "EXP-CROWD-20260824-009-V1",
+        "EXP-DRAW-20260824-010-V1",
+        "EXP-DRAW-20260827-017-V1",
+        "EXP-DRAW-20260827-018-V1",
+        "EXP-DRAW-20260827-018-V2",
+        "EXP-DRAW-20260827-019-V1",
+        "EXP-DRAW-20260828-020-V1",
+        "OFFICIAL-NUMBER-14KEY",
+        "REVIEWED-REHEARSAL"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-001-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22",
+        "SRC-FORMAL-EXP-DRAW-20260816-010-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-011-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-012-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-013-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-014-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-015-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-016-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-017-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-018-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-019-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-020-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-021-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-022-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-023-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-024-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-025-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-026-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-027-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-028-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-029-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-030-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-031-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-032-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-033-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-034-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-035-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-036-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-037-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-038-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-038-V2",
+        "SRC-FORMAL-EXP-DRAW-20260821-039-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-040-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-041-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-042-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-043-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-044-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-045-V1",
+        "SRC-FORMAL-EXP-DRAW-20260821-046-V1",
+        "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+        "SRC-NONEXP-23",
+        "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+        "SRC-NONEXP-24",
+        "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+        "SRC-NONEXP-25",
+        "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+        "SRC-NONEXP-26",
+        "SRC-FORMAL-EXP-CROWD-20260823-005-V1",
+        "SRC-FORMAL-EXP-CROWD-20260823-006-V1",
+        "SRC-FORMAL-EXP-CROWD-20260823-007-V1",
+        "SRC-FORMAL-EXP-CROWD-20260823-008-V1",
+        "SRC-FORMAL-EXP-CROWD-20260824-009-V1",
+        "SRC-FORMAL-EXP-DRAW-20260824-010-V1",
+        "SRC-FORMAL-EXP-DRAW-20260827-017-V1",
+        "SRC-FORMAL-EXP-DRAW-20260827-018-V1",
+        "SRC-FORMAL-EXP-DRAW-20260827-018-V2",
+        "SRC-FORMAL-EXP-DRAW-20260827-019-V1",
+        "SRC-FORMAL-EXP-DRAW-20260828-020-V1",
+        "SRC-OFFICIAL-06-NUMBER",
+        "SRC-REVIEWED-02-REHEARSAL"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1",
+        "EXP-DRAW-20260816-004-V1",
+        "EXP-DRAW-20260816-005-V1",
+        "EXP-DRAW-20260816-006-V1",
+        "EXP-DRAW-20260816-007-V1",
+        "EXP-DRAW-20260816-008-V1",
+        "EXP-DRAW-20260816-009-V1",
+        "EXP-DRAW-20260816-010-V1",
+        "EXP-DRAW-20260816-011-V1",
+        "EXP-DRAW-20260816-012-V1",
+        "EXP-DRAW-20260816-013-V1",
+        "EXP-DRAW-20260816-014-V1",
+        "EXP-DRAW-20260816-015-V1",
+        "EXP-DRAW-20260816-016-V1",
+        "EXP-DRAW-20260816-017-V1",
+        "EXP-DRAW-20260816-018-V1",
+        "EXP-DRAW-20260816-019-V1",
+        "EXP-DRAW-20260816-020-V1",
+        "EXP-DRAW-20260816-021-V1",
+        "EXP-DRAW-20260816-022-V1",
+        "EXP-DRAW-20260816-023-V1",
+        "EXP-DRAW-20260816-024-V1",
+        "EXP-DRAW-20260816-025-V1",
+        "EXP-DRAW-20260816-026-V1",
+        "EXP-DRAW-20260816-027-V1",
+        "EXP-DRAW-20260816-028-V1",
+        "EXP-DRAW-20260816-029-V1",
+        "EXP-DRAW-20260816-030-V1",
+        "EXP-DRAW-20260816-031-V1",
+        "EXP-DRAW-20260816-032-V1",
+        "EXP-DRAW-20260816-033-V1",
+        "EXP-DRAW-20260816-034-V1",
+        "EXP-DRAW-20260816-035-V1",
+        "EXP-DRAW-20260816-036-V1",
+        "EXP-DRAW-20260816-037-V1",
+        "EXP-DRAW-20260816-038-V1",
+        "EXP-DRAW-20260816-038-V2",
+        "EXP-DRAW-20260821-039-V1",
+        "EXP-DRAW-20260821-040-V1",
+        "EXP-DRAW-20260821-041-V1",
+        "EXP-DRAW-20260821-042-V1",
+        "EXP-DRAW-20260821-043-V1",
+        "EXP-DRAW-20260821-044-V1",
+        "EXP-DRAW-20260821-045-V1",
+        "EXP-DRAW-20260821-046-V1",
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1",
+        "EXP-CROWD-20260823-005-V1",
+        "EXP-CROWD-20260823-006-V1",
+        "EXP-CROWD-20260823-007-V1",
+        "EXP-CROWD-20260823-008-V1",
+        "EXP-CROWD-20260824-009-V1",
+        "EXP-DRAW-20260824-010-V1",
+        "EXP-DRAW-20260827-017-V1",
+        "EXP-DRAW-20260827-018-V1",
+        "EXP-DRAW-20260827-018-V2",
+        "EXP-DRAW-20260827-019-V1",
+        "EXP-DRAW-20260828-020-V1"
+      ],
+      "non_exp_ids": [
+        "EXP-DRAW-20260816-009-V1",
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1"
+      ],
+      "official_internal_ids": [
+        "OFFICIAL-NUMBER-14KEY"
+      ],
       "active_count": 0,
-      "tested_count": 8,
-      "failed_count": 8,
+      "tested_count": 16,
+      "failed_count": 16,
       "partial_count": 0,
       "blocked_count": 0,
-      "registered_only_count": 26,
+      "registered_only_count": 35,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "src/p45_v27/"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
       ]
     },
     "TRIO": {
@@ -88,12 +326,52 @@
       "related_formal_registry_ids": [],
       "related_non_exp_axes": [
         "NON-EXP-TRIO-ORBIT-FIXED",
-        "NON-EXP-TRIO-ORBIT-LINKED"
+        "NON-EXP-TRIO-ORBIT-LINKED",
+        "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION"
       ],
       "related_official_axes": [
-        "OFFICIAL-TRIO-15KEY"
+        "OFFICIAL-TRIO-15KEY",
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "OFFICIAL-KTS45"
       ],
-      "active_count": 2,
+      "normalized_record_ids": [
+        "OFFICIAL-TRIO-15KEY",
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "OFFICIAL-KTS45",
+        "NON-EXP-TRIO-ORBIT-FIXED",
+        "NON-EXP-TRIO-ORBIT-LINKED",
+        "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "PROSPECTIVE-TRIO-ORBIT-TARGET-1244"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-07-TRIO",
+        "SRC-OFFICIAL-10-FIXED_ORBIT",
+        "SRC-OFFICIAL-11-LINKED_ORBIT",
+        "SRC-OFFICIAL-12-KTS45",
+        "SRC-NONEXP-01",
+        "SRC-NONEXP-02",
+        "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [
+        "NON-EXP-TRIO-ORBIT-FIXED",
+        "NON-EXP-TRIO-ORBIT-LINKED",
+        "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION"
+      ],
+      "official_internal_ids": [
+        "OFFICIAL-TRIO-15KEY",
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "OFFICIAL-KTS45"
+      ],
+      "active_count": 1,
       "tested_count": 0,
       "failed_count": 0,
       "partial_count": 0,
@@ -101,8 +379,8 @@
       "registered_only_count": 0,
       "untested_boolean": false,
       "evidence_paths": [
-        "v27_storage/audits/trio_orbit_prospective_retrospective_001/",
-        "src/p45_v27/"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md"
       ]
     },
     "PAIR": {
@@ -114,6 +392,17 @@
       "related_official_axes": [
         "OFFICIAL-PAIR-LIFECYCLE"
       ],
+      "normalized_record_ids": [
+        "OFFICIAL-PAIR-LIFECYCLE"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-08-PAIR"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [
+        "OFFICIAL-PAIR-LIFECYCLE"
+      ],
       "active_count": 0,
       "tested_count": 0,
       "failed_count": 0,
@@ -122,7 +411,7 @@
       "registered_only_count": 0,
       "untested_boolean": false,
       "evidence_paths": [
-        "src/p45_v27/"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
       ]
     },
     "CORE": {
@@ -138,261 +427,123 @@
         "EXP-PRIZE-20260816-003-V1"
       ],
       "related_non_exp_axes": [
+        "EXP-PRIZE-20260816-001-V1",
+        "NON-EXP-03",
+        "NON-EXP-04",
+        "NON-EXP-05",
+        "NON-EXP-06",
+        "NON-EXP-07",
+        "NON-EXP-08",
+        "NON-EXP-09",
+        "NON-EXP-10",
+        "NON-EXP-11",
+        "NON-EXP-12",
+        "NON-EXP-13",
+        "NON-EXP-14",
+        "NON-EXP-15",
+        "NON-EXP-16",
+        "NON-EXP-17",
+        "NON-EXP-18",
+        "NON-EXP-19",
+        "NON-EXP-28",
         "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY"
       ],
       "related_official_axes": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10",
+        "OFFICIAL-END-DIGIT",
         "OFFICIAL-NUMBER-14KEY",
         "OFFICIAL-TRIO-15KEY",
         "OFFICIAL-PAIR-LIFECYCLE",
         "OFFICIAL-CORE-INVARIANTS",
-        "OFFICIAL-UNIT-PARTITIONS"
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "OFFICIAL-KTS45"
       ],
-      "active_count": 0,
-      "tested_count": 3,
-      "failed_count": 0,
-      "partial_count": 0,
-      "blocked_count": 1,
-      "registered_only_count": 2,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/",
-        "src/p45_v27/"
-      ]
-    },
-    "occupancy": {
-      "ontology_axis": "occupancy",
-      "category": "OCCUPANCY",
-      "description": "occupancy",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-015-V1",
-        "EXP-DRAW-20260816-016-V1",
-        "EXP-DRAW-20260816-017-V1",
-        "EXP-DRAW-20260816-018-V1",
-        "EXP-DRAW-20260816-019-V1",
-        "EXP-DRAW-20260816-020-V1",
-        "EXP-DRAW-20260816-021-V1",
-        "EXP-DRAW-20260816-022-V1"
+      "normalized_record_ids": [
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-PRIZE-20260816-001-V2",
+        "EXP-PRIZE-20260821-004-V1",
+        "EXP-PRIZE-20260821-005-V1",
+        "EXP-PRIZE-20260816-002-V1",
+        "EXP-PRIZE-20260816-003-V1",
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10",
+        "OFFICIAL-END-DIGIT",
+        "OFFICIAL-NUMBER-14KEY",
+        "OFFICIAL-TRIO-15KEY",
+        "OFFICIAL-PAIR-LIFECYCLE",
+        "OFFICIAL-CORE-INVARIANTS",
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "OFFICIAL-KTS45",
+        "NON-EXP-03",
+        "NON-EXP-04",
+        "NON-EXP-05",
+        "NON-EXP-06",
+        "NON-EXP-07",
+        "NON-EXP-08",
+        "NON-EXP-09",
+        "NON-EXP-10",
+        "NON-EXP-11",
+        "NON-EXP-12",
+        "NON-EXP-13",
+        "NON-EXP-14",
+        "NON-EXP-15",
+        "NON-EXP-16",
+        "NON-EXP-17",
+        "NON-EXP-18",
+        "NON-EXP-19",
+        "NON-EXP-28",
+        "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+        "REVIEWED-MBC_실제_공_추첨순서"
       ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [
-        "OFFICIAL-UNIT-PARTITIONS"
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+        "SRC-NONEXP-27",
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+        "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260816-003-V1",
+        "SRC-OFFICIAL-01-UNIT_3",
+        "SRC-OFFICIAL-02-UNIT_5",
+        "SRC-OFFICIAL-03-UNIT_9",
+        "SRC-OFFICIAL-04-UNIT_10",
+        "SRC-OFFICIAL-05-END_DIGIT",
+        "SRC-OFFICIAL-06-NUMBER",
+        "SRC-OFFICIAL-07-TRIO",
+        "SRC-OFFICIAL-08-PAIR",
+        "SRC-OFFICIAL-09-CORE",
+        "SRC-OFFICIAL-10-FIXED_ORBIT",
+        "SRC-OFFICIAL-11-LINKED_ORBIT",
+        "SRC-OFFICIAL-12-KTS45",
+        "SRC-NONEXP-03",
+        "SRC-NONEXP-04",
+        "SRC-NONEXP-05",
+        "SRC-NONEXP-06",
+        "SRC-NONEXP-07",
+        "SRC-NONEXP-08",
+        "SRC-NONEXP-09",
+        "SRC-NONEXP-10",
+        "SRC-NONEXP-11",
+        "SRC-NONEXP-12",
+        "SRC-NONEXP-13",
+        "SRC-NONEXP-14",
+        "SRC-NONEXP-15",
+        "SRC-NONEXP-16",
+        "SRC-NONEXP-17",
+        "SRC-NONEXP-18",
+        "SRC-NONEXP-19",
+        "SRC-NONEXP-28",
+        "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
+        "SRC-REVIEWED-01-MBC_실제_공_추첨순서"
       ],
-      "active_count": 0,
-      "tested_count": 1,
-      "failed_count": 1,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 7,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "src/p45_v27/"
-      ]
-    },
-    "extinction": {
-      "ontology_axis": "extinction",
-      "category": "EXTINCTION",
-      "description": "extinction",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-015-V1",
-        "EXP-DRAW-20260816-016-V1",
-        "EXP-DRAW-20260816-017-V1",
-        "EXP-DRAW-20260816-018-V1",
-        "EXP-DRAW-20260816-019-V1",
-        "EXP-DRAW-20260816-020-V1",
-        "EXP-DRAW-20260816-021-V1",
-        "EXP-DRAW-20260816-022-V1"
-      ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [],
-      "active_count": 0,
-      "tested_count": 1,
-      "failed_count": 1,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 7,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
-    },
-    "recovery": {
-      "ontology_axis": "recovery",
-      "category": "RECOVERY",
-      "description": "recovery",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-015-V1",
-        "EXP-DRAW-20260816-016-V1",
-        "EXP-DRAW-20260816-017-V1",
-        "EXP-DRAW-20260816-018-V1",
-        "EXP-DRAW-20260816-019-V1",
-        "EXP-DRAW-20260816-020-V1",
-        "EXP-DRAW-20260816-021-V1",
-        "EXP-DRAW-20260816-022-V1",
-        "EXP-DRAW-20260821-042-V1"
-      ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [],
-      "active_count": 0,
-      "tested_count": 2,
-      "failed_count": 2,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 7,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
-    },
-    "transition": {
-      "ontology_axis": "transition",
-      "category": "TRANSITION",
-      "description": "transition",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-010-V1",
-        "EXP-DRAW-20260816-011-V1",
-        "EXP-DRAW-20260816-012-V1",
-        "EXP-DRAW-20260816-013-V1",
-        "EXP-DRAW-20260816-014-V1",
-        "EXP-DRAW-20260816-023-V1",
-        "EXP-DRAW-20260816-024-V1",
-        "EXP-DRAW-20260816-025-V1",
-        "EXP-DRAW-20260821-041-V1",
-        "EXP-DRAW-20260821-044-V1",
-        "EXP-DRAW-20260930-001-V1"
-      ],
-      "related_non_exp_axes": [
-        "NON-EXP-TRIO-ORBIT-LINKED"
-      ],
-      "related_official_axes": [
-        "OFFICIAL-PAIR-LIFECYCLE"
-      ],
-      "active_count": 1,
-      "tested_count": 7,
-      "failed_count": 6,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 4,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "v27_storage/audits/trio_orbit_prospective_retrospective_001/",
-        "src/p45_v27/"
-      ]
-    },
-    "recurrence": {
-      "ontology_axis": "recurrence",
-      "category": "RECURRENCE",
-      "description": "recurrence",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260821-044-V1"
-      ],
-      "related_non_exp_axes": [
-        "NON-EXP-TRIO-ORBIT-FIXED",
-        "NON-EXP-TRIO-ORBIT-LINKED"
-      ],
-      "related_official_axes": [],
-      "active_count": 2,
-      "tested_count": 1,
-      "failed_count": 1,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 0,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "v27_storage/audits/trio_orbit_prospective_retrospective_001/"
-      ]
-    },
-    "lag": {
-      "ontology_axis": "lag",
-      "category": "LAG",
-      "description": "lag",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-010-V1",
-        "EXP-DRAW-20260816-011-V1",
-        "EXP-DRAW-20260816-012-V1",
-        "EXP-DRAW-20260816-013-V1",
-        "EXP-DRAW-20260816-014-V1",
-        "EXP-DRAW-20260821-039-V1",
-        "EXP-DRAW-20260821-040-V1",
-        "EXP-DRAW-20260821-041-V1",
-        "EXP-DRAW-20260930-001-V1"
-      ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [],
-      "active_count": 0,
-      "tested_count": 7,
-      "failed_count": 6,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 2,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
-    },
-    "gap": {
-      "ontology_axis": "gap",
-      "category": "GAP",
-      "description": "gap",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-026-V1",
-        "EXP-DRAW-20260816-027-V1",
-        "EXP-DRAW-20260816-028-V1",
-        "EXP-DRAW-20260816-029-V1",
-        "EXP-DRAW-20260821-042-V1"
-      ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [],
-      "active_count": 0,
-      "tested_count": 2,
-      "failed_count": 2,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 3,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
-    },
-    "spacing": {
-      "ontology_axis": "spacing",
-      "category": "SPACING",
-      "description": "spacing",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-026-V1",
-        "EXP-DRAW-20260816-027-V1",
-        "EXP-DRAW-20260816-028-V1",
-        "EXP-DRAW-20260816-029-V1"
-      ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [],
-      "active_count": 0,
-      "tested_count": 1,
-      "failed_count": 1,
-      "partial_count": 0,
-      "blocked_count": 0,
-      "registered_only_count": 3,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
-    },
-    "range": {
-      "ontology_axis": "range",
-      "category": "RANGE",
-      "description": "range",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-015-V1",
-        "EXP-DRAW-20260816-016-V1",
-        "EXP-DRAW-20260816-017-V1",
-        "EXP-DRAW-20260816-018-V1",
-        "EXP-DRAW-20260816-019-V1",
-        "EXP-DRAW-20260816-020-V1",
-        "EXP-DRAW-20260816-021-V1",
-        "EXP-DRAW-20260816-022-V1",
+      "formal_ids": [
         "EXP-PRIZE-20260816-001-V1",
         "EXP-PRIZE-20260816-001-V2",
         "EXP-PRIZE-20260821-004-V1",
@@ -400,20 +551,409 @@
         "EXP-PRIZE-20260816-002-V1",
         "EXP-PRIZE-20260816-003-V1"
       ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [
-        "OFFICIAL-UNIT-PARTITIONS"
+      "non_exp_ids": [
+        "EXP-PRIZE-20260816-001-V1",
+        "NON-EXP-03",
+        "NON-EXP-04",
+        "NON-EXP-05",
+        "NON-EXP-06",
+        "NON-EXP-07",
+        "NON-EXP-08",
+        "NON-EXP-09",
+        "NON-EXP-10",
+        "NON-EXP-11",
+        "NON-EXP-12",
+        "NON-EXP-13",
+        "NON-EXP-14",
+        "NON-EXP-15",
+        "NON-EXP-16",
+        "NON-EXP-17",
+        "NON-EXP-18",
+        "NON-EXP-19",
+        "NON-EXP-28",
+        "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY"
+      ],
+      "official_internal_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10",
+        "OFFICIAL-END-DIGIT",
+        "OFFICIAL-NUMBER-14KEY",
+        "OFFICIAL-TRIO-15KEY",
+        "OFFICIAL-PAIR-LIFECYCLE",
+        "OFFICIAL-CORE-INVARIANTS",
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "OFFICIAL-KTS45"
       ],
       "active_count": 0,
-      "tested_count": 3,
+      "tested_count": 4,
       "failed_count": 1,
       "partial_count": 0,
       "blocked_count": 1,
-      "registered_only_count": 9,
+      "registered_only_count": 2,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "src/p45_v27/"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    "occupancy": {
+      "ontology_axis": "occupancy",
+      "category": "OCCUPANCY",
+      "description": "occupancy",
+      "related_formal_registry_ids": [],
+      "related_non_exp_axes": [],
+      "related_official_axes": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "normalized_record_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-01-UNIT_3",
+        "SRC-OFFICIAL-02-UNIT_5",
+        "SRC-OFFICIAL-03-UNIT_9",
+        "SRC-OFFICIAL-04-UNIT_10"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "active_count": 0,
+      "tested_count": 0,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ]
+    },
+    "extinction": {
+      "ontology_axis": "extinction",
+      "category": "EXTINCTION",
+      "description": "extinction",
+      "related_formal_registry_ids": [],
+      "related_non_exp_axes": [],
+      "related_official_axes": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "normalized_record_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-01-UNIT_3",
+        "SRC-OFFICIAL-02-UNIT_5",
+        "SRC-OFFICIAL-03-UNIT_9",
+        "SRC-OFFICIAL-04-UNIT_10"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "active_count": 0,
+      "tested_count": 0,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ]
+    },
+    "recovery": {
+      "ontology_axis": "recovery",
+      "category": "RECOVERY",
+      "description": "recovery",
+      "related_formal_registry_ids": [],
+      "related_non_exp_axes": [],
+      "related_official_axes": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "normalized_record_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-01-UNIT_3",
+        "SRC-OFFICIAL-02-UNIT_5",
+        "SRC-OFFICIAL-03-UNIT_9",
+        "SRC-OFFICIAL-04-UNIT_10"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [
+        "OFFICIAL-UNIT-3",
+        "OFFICIAL-UNIT-5",
+        "OFFICIAL-UNIT-9",
+        "OFFICIAL-UNIT-10"
+      ],
+      "active_count": 0,
+      "tested_count": 0,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ]
+    },
+    "transition": {
+      "ontology_axis": "transition",
+      "category": "TRANSITION",
+      "description": "transition",
+      "related_formal_registry_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "related_non_exp_axes": [],
+      "related_official_axes": [
+        "OFFICIAL-PAIR-LIFECYCLE",
+        "OFFICIAL-LINKED-ORBIT"
+      ],
+      "normalized_record_ids": [
+        "EXP-DRAW-20260930-001-V1",
+        "OFFICIAL-PAIR-LIFECYCLE",
+        "OFFICIAL-LINKED-ORBIT"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260930-001-V1",
+        "SRC-OFFICIAL-08-PAIR",
+        "SRC-OFFICIAL-11-LINKED_ORBIT"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "non_exp_ids": [],
+      "official_internal_ids": [
+        "OFFICIAL-PAIR-LIFECYCLE",
+        "OFFICIAL-LINKED-ORBIT"
+      ],
+      "active_count": 0,
+      "tested_count": 1,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ]
+    },
+    "recurrence": {
+      "ontology_axis": "recurrence",
+      "category": "RECURRENCE",
+      "description": "recurrence",
+      "related_formal_registry_ids": [],
+      "related_non_exp_axes": [
+        "NON-EXP-TRIO-ORBIT-FIXED",
+        "NON-EXP-TRIO-ORBIT-LINKED",
+        "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION"
+      ],
+      "related_official_axes": [
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT"
+      ],
+      "normalized_record_ids": [
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT",
+        "NON-EXP-TRIO-ORBIT-FIXED",
+        "NON-EXP-TRIO-ORBIT-LINKED",
+        "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "PROSPECTIVE-TRIO-ORBIT-TARGET-1244"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-10-FIXED_ORBIT",
+        "SRC-OFFICIAL-11-LINKED_ORBIT",
+        "SRC-NONEXP-01",
+        "SRC-NONEXP-02",
+        "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [
+        "NON-EXP-TRIO-ORBIT-FIXED",
+        "NON-EXP-TRIO-ORBIT-LINKED",
+        "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION"
+      ],
+      "official_internal_ids": [
+        "OFFICIAL-FIXED-ORBIT",
+        "OFFICIAL-LINKED-ORBIT"
+      ],
+      "active_count": 1,
+      "tested_count": 0,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md"
+      ]
+    },
+    "lag": {
+      "ontology_axis": "lag",
+      "category": "LAG",
+      "description": "lag",
+      "related_formal_registry_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "related_non_exp_axes": [],
+      "related_official_axes": [],
+      "normalized_record_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260930-001-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
+      "active_count": 0,
+      "tested_count": 1,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    "gap": {
+      "ontology_axis": "gap",
+      "category": "GAP",
+      "description": "gap",
+      "related_formal_registry_ids": [],
+      "related_non_exp_axes": [],
+      "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
+      "active_count": 0,
+      "tested_count": 0,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": true,
+      "evidence_paths": []
+    },
+    "spacing": {
+      "ontology_axis": "spacing",
+      "category": "SPACING",
+      "description": "spacing",
+      "related_formal_registry_ids": [],
+      "related_non_exp_axes": [],
+      "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
+      "active_count": 0,
+      "tested_count": 0,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 0,
+      "registered_only_count": 0,
+      "untested_boolean": true,
+      "evidence_paths": []
+    },
+    "range": {
+      "ontology_axis": "range",
+      "category": "RANGE",
+      "description": "range",
+      "related_formal_registry_ids": [
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-PRIZE-20260816-001-V2",
+        "EXP-PRIZE-20260821-004-V1",
+        "EXP-PRIZE-20260821-005-V1",
+        "EXP-PRIZE-20260816-002-V1",
+        "EXP-PRIZE-20260816-003-V1"
+      ],
+      "related_non_exp_axes": [
+        "EXP-PRIZE-20260816-001-V1"
+      ],
+      "related_official_axes": [],
+      "normalized_record_ids": [
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-PRIZE-20260816-001-V2",
+        "EXP-PRIZE-20260821-004-V1",
+        "EXP-PRIZE-20260821-005-V1",
+        "EXP-PRIZE-20260816-002-V1",
+        "EXP-PRIZE-20260816-003-V1"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+        "SRC-NONEXP-27",
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+        "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260816-003-V1"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-PRIZE-20260816-001-V2",
+        "EXP-PRIZE-20260821-004-V1",
+        "EXP-PRIZE-20260821-005-V1",
+        "EXP-PRIZE-20260816-002-V1",
+        "EXP-PRIZE-20260816-003-V1"
+      ],
+      "non_exp_ids": [
+        "EXP-PRIZE-20260816-001-V1"
+      ],
+      "official_internal_ids": [],
+      "active_count": 0,
+      "tested_count": 2,
+      "failed_count": 0,
+      "partial_count": 0,
+      "blocked_count": 1,
+      "registered_only_count": 2,
+      "untested_boolean": false,
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ]
     },
     "similarity": {
@@ -421,26 +961,63 @@
       "category": "SIMILARITY",
       "description": "similarity",
       "related_formal_registry_ids": [
-        "EXP-DRAW-20260816-023-V1",
-        "EXP-DRAW-20260816-024-V1",
-        "EXP-DRAW-20260816-025-V1",
-        "EXP-DRAW-20260821-045-V1",
         "EXP-CROWD-20260816-001-V1",
         "EXP-CROWD-20260816-002-V1",
         "EXP-CROWD-20260816-003-V1",
         "EXP-CROWD-20260816-004-V1"
       ],
-      "related_non_exp_axes": [],
-      "related_official_axes": [],
+      "related_non_exp_axes": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1"
+      ],
+      "related_official_axes": [
+        "OFFICIAL-KTS45"
+      ],
+      "normalized_record_ids": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1",
+        "OFFICIAL-KTS45"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+        "SRC-NONEXP-23",
+        "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+        "SRC-NONEXP-24",
+        "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+        "SRC-NONEXP-25",
+        "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+        "SRC-NONEXP-26",
+        "SRC-OFFICIAL-12-KTS45"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1"
+      ],
+      "non_exp_ids": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1"
+      ],
+      "official_internal_ids": [
+        "OFFICIAL-KTS45"
+      ],
       "active_count": 0,
-      "tested_count": 2,
-      "failed_count": 2,
+      "tested_count": 0,
+      "failed_count": 0,
       "partial_count": 0,
       "blocked_count": 0,
-      "registered_only_count": 6,
+      "registered_only_count": 4,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ]
     },
     "opposite-state": {
@@ -450,6 +1027,11 @@
       "related_formal_registry_ids": [],
       "related_non_exp_axes": [],
       "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
       "active_count": 0,
       "tested_count": 0,
       "failed_count": 0,
@@ -463,24 +1045,22 @@
       "ontology_axis": "persistence",
       "category": "PERSISTENCE",
       "description": "persistence",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260821-039-V1",
-        "EXP-DRAW-20260821-040-V1",
-        "EXP-DRAW-20260821-043-V1",
-        "EXP-DRAW-20260821-046-V1"
-      ],
+      "related_formal_registry_ids": [],
       "related_non_exp_axes": [],
       "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
       "active_count": 0,
-      "tested_count": 4,
-      "failed_count": 4,
+      "tested_count": 0,
+      "failed_count": 0,
       "partial_count": 0,
       "blocked_count": 0,
       "registered_only_count": 0,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+      "untested_boolean": true,
+      "evidence_paths": []
     },
     "decay": {
       "ontology_axis": "decay",
@@ -489,6 +1069,11 @@
       "related_formal_registry_ids": [],
       "related_non_exp_axes": [],
       "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
       "active_count": 0,
       "tested_count": 0,
       "failed_count": 0,
@@ -503,8 +1088,6 @@
       "category": "REGIME",
       "description": "regime",
       "related_formal_registry_ids": [
-        "EXP-DRAW-20260821-043-V1",
-        "EXP-DRAW-20260821-046-V1",
         "EXP-CROWD-20260816-001-V1",
         "EXP-CROWD-20260816-002-V1",
         "EXP-PRIZE-20260816-001-V1",
@@ -517,45 +1100,117 @@
         "EXP-CROWD-20260816-004-V1"
       ],
       "related_non_exp_axes": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1",
         "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY"
       ],
-      "related_official_axes": [],
+      "related_official_axes": [
+        "OFFICIAL-CORE-INVARIANTS"
+      ],
+      "normalized_record_ids": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-PRIZE-20260816-001-V2",
+        "EXP-PRIZE-20260821-004-V1",
+        "EXP-PRIZE-20260821-005-V1",
+        "EXP-PRIZE-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-PRIZE-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1",
+        "OFFICIAL-CORE-INVARIANTS",
+        "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+        "SRC-NONEXP-23",
+        "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+        "SRC-NONEXP-24",
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+        "SRC-NONEXP-27",
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+        "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
+        "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
+        "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+        "SRC-NONEXP-25",
+        "SRC-FORMAL-EXP-PRIZE-20260816-003-V1",
+        "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+        "SRC-NONEXP-26",
+        "SRC-OFFICIAL-09-CORE",
+        "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-PRIZE-20260816-001-V2",
+        "EXP-PRIZE-20260821-004-V1",
+        "EXP-PRIZE-20260821-005-V1",
+        "EXP-PRIZE-20260816-002-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-PRIZE-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1"
+      ],
+      "non_exp_ids": [
+        "EXP-CROWD-20260816-001-V1",
+        "EXP-CROWD-20260816-002-V1",
+        "EXP-PRIZE-20260816-001-V1",
+        "EXP-CROWD-20260816-003-V1",
+        "EXP-CROWD-20260816-004-V1",
+        "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY"
+      ],
+      "official_internal_ids": [
+        "OFFICIAL-CORE-INVARIANTS"
+      ],
       "active_count": 0,
-      "tested_count": 5,
-      "failed_count": 2,
+      "tested_count": 3,
+      "failed_count": 0,
       "partial_count": 0,
       "blocked_count": 1,
       "registered_only_count": 6,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ]
     },
     "order/rank": {
       "ontology_axis": "order/rank",
       "category": "ORDER_RANK",
       "description": "order/rank",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260821-042-V1",
-        "EXP-DRAW-20260821-043-V1",
-        "EXP-DRAW-20260821-045-V1"
-      ],
+      "related_formal_registry_ids": [],
       "related_non_exp_axes": [],
       "related_official_axes": [
         "OFFICIAL-NUMBER-14KEY",
         "OFFICIAL-TRIO-15KEY"
       ],
+      "normalized_record_ids": [
+        "OFFICIAL-NUMBER-14KEY",
+        "OFFICIAL-TRIO-15KEY"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-06-NUMBER",
+        "SRC-OFFICIAL-07-TRIO"
+      ],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [
+        "OFFICIAL-NUMBER-14KEY",
+        "OFFICIAL-TRIO-15KEY"
+      ],
       "active_count": 0,
-      "tested_count": 3,
-      "failed_count": 3,
+      "tested_count": 0,
+      "failed_count": 0,
       "partial_count": 0,
       "blocked_count": 0,
       "registered_only_count": 0,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-        "src/p45_v27/"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
       ]
     },
     "arithmetic transform": {
@@ -563,21 +1218,30 @@
       "category": "ARITHMETIC_TRANSFORM",
       "description": "arithmetic transform",
       "related_formal_registry_ids": [
-        "EXP-DRAW-20260821-039-V1",
-        "EXP-DRAW-20260821-040-V1",
         "EXP-DRAW-20260930-001-V1"
       ],
       "related_non_exp_axes": [],
       "related_official_axes": [],
+      "normalized_record_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260930-001-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
       "active_count": 0,
-      "tested_count": 3,
-      "failed_count": 2,
+      "tested_count": 1,
+      "failed_count": 0,
       "partial_count": 0,
       "blocked_count": 0,
       "registered_only_count": 0,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ]
     },
     "interaction": {
@@ -595,8 +1259,52 @@
         "EXP-DRAW-20260816-008-V1",
         "EXP-DRAW-20260816-009-V1"
       ],
-      "related_non_exp_axes": [],
+      "related_non_exp_axes": [
+        "EXP-DRAW-20260816-009-V1"
+      ],
       "related_official_axes": [],
+      "normalized_record_ids": [
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1",
+        "EXP-DRAW-20260816-004-V1",
+        "EXP-DRAW-20260816-005-V1",
+        "EXP-DRAW-20260816-006-V1",
+        "EXP-DRAW-20260816-007-V1",
+        "EXP-DRAW-20260816-008-V1",
+        "EXP-DRAW-20260816-009-V1",
+        "REVIEWED-REHEARSAL"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-001-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22",
+        "SRC-REVIEWED-02-REHEARSAL"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1",
+        "EXP-DRAW-20260816-004-V1",
+        "EXP-DRAW-20260816-005-V1",
+        "EXP-DRAW-20260816-006-V1",
+        "EXP-DRAW-20260816-007-V1",
+        "EXP-DRAW-20260816-008-V1",
+        "EXP-DRAW-20260816-009-V1"
+      ],
+      "non_exp_ids": [
+        "EXP-DRAW-20260816-009-V1"
+      ],
+      "official_internal_ids": [],
       "active_count": 0,
       "tested_count": 1,
       "failed_count": 1,
@@ -605,7 +1313,8 @@
       "registered_only_count": 8,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
       ]
     },
     "conditional transition": {
@@ -615,6 +1324,11 @@
       "related_formal_registry_ids": [],
       "related_non_exp_axes": [],
       "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
       "active_count": 0,
       "tested_count": 0,
       "failed_count": 0,
@@ -628,22 +1342,22 @@
       "ontology_axis": "bonus interaction",
       "category": "BONUS_INTERACTION",
       "description": "bonus interaction",
-      "related_formal_registry_ids": [
-        "EXP-DRAW-20260821-044-V1",
-        "EXP-DRAW-20260821-045-V1"
-      ],
+      "related_formal_registry_ids": [],
       "related_non_exp_axes": [],
       "related_official_axes": [],
+      "normalized_record_ids": [],
+      "source_item_ids": [],
+      "formal_ids": [],
+      "non_exp_ids": [],
+      "official_internal_ids": [],
       "active_count": 0,
-      "tested_count": 2,
-      "failed_count": 2,
+      "tested_count": 0,
+      "failed_count": 0,
       "partial_count": 0,
       "blocked_count": 0,
       "registered_only_count": 0,
-      "untested_boolean": false,
-      "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+      "untested_boolean": true,
+      "evidence_paths": []
     },
     "cross-round relation": {
       "ontology_axis": "cross-round relation",
@@ -658,22 +1372,62 @@
         "EXP-DRAW-20260816-006-V1",
         "EXP-DRAW-20260816-007-V1",
         "EXP-DRAW-20260816-008-V1",
-        "EXP-DRAW-20260816-009-V1",
-        "EXP-DRAW-20260816-023-V1",
-        "EXP-DRAW-20260816-024-V1",
-        "EXP-DRAW-20260816-025-V1"
+        "EXP-DRAW-20260816-009-V1"
       ],
-      "related_non_exp_axes": [],
+      "related_non_exp_axes": [
+        "EXP-DRAW-20260816-009-V1"
+      ],
       "related_official_axes": [],
+      "normalized_record_ids": [
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1",
+        "EXP-DRAW-20260816-004-V1",
+        "EXP-DRAW-20260816-005-V1",
+        "EXP-DRAW-20260816-006-V1",
+        "EXP-DRAW-20260816-007-V1",
+        "EXP-DRAW-20260816-008-V1",
+        "EXP-DRAW-20260816-009-V1"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-001-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
+        "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1",
+        "EXP-DRAW-20260816-004-V1",
+        "EXP-DRAW-20260816-005-V1",
+        "EXP-DRAW-20260816-006-V1",
+        "EXP-DRAW-20260816-007-V1",
+        "EXP-DRAW-20260816-008-V1",
+        "EXP-DRAW-20260816-009-V1"
+      ],
+      "non_exp_ids": [
+        "EXP-DRAW-20260816-009-V1"
+      ],
+      "official_internal_ids": [],
       "active_count": 0,
-      "tested_count": 2,
-      "failed_count": 2,
+      "tested_count": 1,
+      "failed_count": 1,
       "partial_count": 0,
       "blocked_count": 0,
-      "registered_only_count": 10,
+      "registered_only_count": 8,
       "untested_boolean": false,
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
       ]
     }
   }

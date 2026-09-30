@@ -186,16 +186,18 @@ class SemanticNoveltyCheckerV1_1:
             else:
                 overlap_class = SemanticOverlapClass.DISTINCT
 
+            rec_ids = {record.research_id, record.research_id.replace("NORM-", "")} | set(getattr(record, "formal_ids", []))
+
             # Specific check for Candidate A (Extinction) vs EXP-004, EXP-015, EXP-022
             if any(k in cand_title.lower() for k in ["extinction", "recovery", "전멸", "복귀", "결손"]):
-                if record.research_id in ("EXP-DRAW-20260816-017-V1", "EXP-DRAW-20260816-015-V1", "EXP-DRAW-20260816-022-V1"):
+                if any(x in rec_ids for x in ("EXP-DRAW-20260816-017-V1", "EXP-DRAW-20260816-015-V1", "EXP-DRAW-20260816-022-V1")):
                     score += 40.0
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE if is_failed else SemanticOverlapClass.NEAR_DUPLICATE
                     same_feats.append(f"Substantive overlap with registered/failed extinction-recovery axis {record.research_id}")
 
             # Specific check for Candidate B (Spacing Repulsion) vs EXP-008, EXP-018, EXP-027
             if any(k in cand_title.lower() for k in ["repulsion", "proximity", "spacing", "간격", "인접", "거리"]):
-                if record.research_id in ("EXP-DRAW-20260816-026-V1", "EXP-DRAW-20260827-018-V2", "EXP-DRAW-20260816-027-V1"):
+                if any(x in rec_ids for x in ("EXP-DRAW-20260816-026-V1", "EXP-DRAW-20260827-018-V2", "EXP-DRAW-20260816-027-V1")):
                     score += 40.0
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE if is_failed else SemanticOverlapClass.NEAR_DUPLICATE
                     same_feats.append(f"Substantive overlap with registered/failed spacing-neighbor axis {record.research_id}")

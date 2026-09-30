@@ -272,4 +272,46 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
   - 정식 레지스트리: 69행 유지 (새 실험 실행 0건).
 
 
+## 2026-09-30 — RESEARCH DISCOVERY AGENT V1.2 (KNOWLEDGE COVERAGE COMPLETION & FAIL-CLOSED FINALIZATION)
+
+- **배경 및 V1.1 원인 분석 (Coverage Gap Resolution):**
+  - 직전 V1.1 보고에서 Knowledge Index가 77건(Formal 69, Non-EXP 3, Official 5)으로 집계되었으나, authoritative Research Master에는 EXP ID 없이 실제 실행·검증한 Non-EXP 연구축(최소 28건 + 후속 감사 3건 = 31건)과 Official Internal 연구축(12건)이 실존함.
+  - V1.1에서는 대표 축 3개/5개만 직접 색인하고 나머지를 누락하였던 구조적 공백이 확인됨.
+  - 성공 기준 `KNOWN_RESEARCH_SOURCE_COVERAGE = 100%`, `UNEXPLAINED_MISSING_SOURCE_ITEMS = 0` 달성을 위해 전체 원천 연구 전수 색인 및 기계적 증명 체계 구축.
+- **V1.2 핵심 구현 및 구조적 성과:**
+  1. **원문 기반 SOURCE INVENTORY 구축 (`knowledge_source_inventory.py`):**
+     - 임의 축약/추측 배제, 원천 문서(P45_RESEARCH_MASTER_INDEX_005.md, 06_INITIAL_EXPERIMENT_REGISTRY.md 등) 파서를 통해 총 115건의 원천 연구 항목 수집:
+       - `FORMAL_REGISTRY`: 69건 (DRAW 54, CROWD 9, PRIZE 6)
+       - `NON_EXP_EXECUTED`: 31건 (Section C 28건 + 후속 감사 3건)
+       - `OFFICIAL_INTERNAL`: 12건 (UNIT_3, UNIT_5, UNIT_9, UNIT_10, END_DIGIT, NUMBER, TRIO, PAIR, CORE, Fixed Orbit, Linked Orbit, KTS45)
+       - `REVIEWED_UNEXECUTED`: 2건 (MBC DRAW-ORDER, REHEARSAL)
+       - `ACTIVE_PROSPECTIVE`: 1건 (1244회 봉인 TRIO ORBIT)
+     - 산출물: `RESEARCH_SOURCE_INVENTORY.json`, `RESEARCH_SOURCE_INVENTORY.md` 저장 완료.
+  2. **100% 완결 COVERAGE MANIFEST (`RESEARCH_KNOWLEDGE_COVERAGE_MANIFEST.*`):**
+     - 모든 원천 항목에 대해 정규화 레코드 매핑 생성 (Mapped: 115 / 115, 100.0%, Unmapped: 0).
+     - 매핑 유형: DIRECT 107건, ALIAS 6건 (동일 실체 감사 계보), MERGED 2건 (EXP-009 단일 실체 카나리/검증 통합), RELATED_DISTINCT 0건.
+     - 임의 병합 금지: 명확한 증거(Evidence)와 사유(Reason)가 입증된 경우에만 ALIAS/MERGED 승인.
+  3. **KNOWLEDGE INDEX V1.2 정규화 및 양방향 역추적 (Reverse Trace):**
+     - 총 107건의 정규화 레코드(`RESEARCH_KNOWLEDGE_INDEX.json`, `RESEARCH_KNOWLEDGE_INDEX.md`).
+     - 오래된 연구의 미상 필드는 추측 없이 `UNKNOWN` 유지 (레코드 탈락 방지).
+     - 양방향 역추적 무결성: `Source Item -> Record` (115/115 PASS), `Record -> Source Items` (107/107 PASS).
+  4. **FAIL-CLOSED 차단 모드 가동 (`research_discovery_agent.py`):**
+     - `knowledge_coverage_complete != True` 시 즉시 `BLOCKED_KNOWLEDGE_COVERAGE_INCOMPLETE` 반환, 신규 후보 생성 및 프로토콜 승격 완전 차단.
+  5. **COVERAGE MAP V1.2 온톨로지 연동:**
+     - 24대 불변 온톨로지 축과 107개 정규화 레코드 연동 완료, 고아 레코드(Orphan) = 0건 검증 완료.
+- **후보군 A/B/C 전체 Index 재검증 (Regression Verdict):**
+  - 후보 A (`IDEA-1243-NEGA-001`): `REJECT_RESCUE` 유지 (기존 실패 전멸·복귀 축 구제 시도 차단).
+  - 후보 B (`IDEA-1243-OPPO-002`): `REJECT_RESCUE` 유지 (기존 종결 간격 분산 축 구제 시도 차단).
+  - 후보 C (`IDEA-1243-CROS-003`): `NEEDS_EVIDENCE` 유지 (READY_FOR_PROTOCOL 자동 승격 금지, 새 실험 실행 0건).
+  - 전체 신규 후보 생성: 0건 (`NO_VALID_NEW_HYPOTHESIS`).
+- **테스트 및 검증:**
+  - 20대 신규 테스트 스위트(`test_knowledge_coverage_completion.py`) 전수 통과.
+  - 기존 44개 테스트 포함 총 64개 테스트 전수 통과 (0 failures, 0 errors).
+  - 공식 자산 무결성 100% 보호 (`Protection verdict: PASS, Changed: 0`).
+  - 로컬 런타임 활성화: V1.2 Fail-Closed Knowledge Coverage Guard 완전 장착 완료.
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+  - 정식 레지스트리: 69행 유지 (새 실험 실행 0건).
+
+
+
 

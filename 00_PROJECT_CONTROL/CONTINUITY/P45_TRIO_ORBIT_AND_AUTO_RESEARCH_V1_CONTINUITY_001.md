@@ -103,3 +103,27 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - Vercel 배포 판정: `VERCEL_DEPLOY_NOT_REQUIRED`.
   - 정식 레지스트리 69행 유지 (새 실험 실행 0건).
 
+### 6. P45 RESEARCH DISCOVERY AGENT V1.2 — KNOWLEDGE COVERAGE COMPLETION (2026-09-30)
+- **배경 및 원인 분석:**
+  - V1.1 보고 당시 Knowledge Index가 77건(Formal 69, Non-EXP 3, Official 5)으로 집계되었으나, authoritative Research Master에는 12 Official Internal 축 및 31 Non-EXP 실행 연구축이 실존함.
+  - V1.1에서는 대표 축만 임의 추출하고 나머지를 누락하였던 구조적 공백이 발견됨.
+  - "P45의 기존 연구 전체를 빠짐없이 읽고 있는가"를 증명하기 위해 전수 색인 체계 구축.
+- **핵심 구현 및 성과:**
+  - **Source Inventory (`RESEARCH_SOURCE_INVENTORY.*`):** 총 115건 수집 (Formal 69, Non-EXP 31, Official Internal 12, Reviewed Unexecuted 2, Active Prospective 1).
+  - **Coverage Manifest (`RESEARCH_KNOWLEDGE_COVERAGE_MANIFEST.*`):** 115건 전수 매핑 (Mapped: 115/115 100.0%, Unmapped: 0건). DIRECT 107건, ALIAS 6건, MERGED 2건.
+  - **Knowledge Index V1.2 (`RESEARCH_KNOWLEDGE_INDEX.*`):** 총 107건의 정규화 레코드 완성, 양방향 역추적 무결성 100% 검증. 미상 필드는 추측 배제하고 `UNKNOWN` 처리.
+  - **Fail-Closed Mode:** `knowledge_coverage_complete != True` 시 신규 후보 생성 및 프로토콜 승격을 즉시 전면 차단 (`BLOCKED_KNOWLEDGE_COVERAGE_INCOMPLETE`).
+  - **Coverage Map V1.2 연동:** 24대 불변 온톨로지 축과 107개 정규화 레코드 연동 완료 (고아 레코드 = 0건).
+- **후보군 A/B/C 재검증:**
+  - 후보 A (`IDEA-1243-NEGA-001`): `REJECT_RESCUE` 유지.
+  - 후보 B (`IDEA-1243-OPPO-002`): `REJECT_RESCUE` 유지.
+  - 후보 C (`IDEA-1243-CROS-003`): `NEEDS_EVIDENCE` 유지 (READY_FOR_PROTOCOL 자동 승격 금지, 새 실험 실행 0건).
+- **무결성 및 검증 요약:**
+  - 20대 신규 테스트 포함 총 64개 단위/통합 테스트 전수 통과 (0 failures, 0 errors).
+  - Official 보호 검증 PASS: 엔진, DB, Sealed, Web pick 변경 0건. Future Leakage = 0.
+  - 정식 레지스트리: 69행 유지 (새 실험 실행 0건).
+  - 로컬 런타임 V1.2 Fail-Closed 가드 장착 및 활성화 확인.
+  - Git Commit: `P45 complete research knowledge coverage guard` (main 브랜치 반영).
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+
+

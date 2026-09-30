@@ -44,6 +44,11 @@ class AxisCoverageRecordV1_1:
     related_formal_registry_ids: list[str] = field(default_factory=list)
     related_non_exp_axes: list[str] = field(default_factory=list)
     related_official_axes: list[str] = field(default_factory=list)
+    normalized_record_ids: list[str] = field(default_factory=list)
+    source_item_ids: list[str] = field(default_factory=list)
+    formal_ids: list[str] = field(default_factory=list)
+    non_exp_ids: list[str] = field(default_factory=list)
+    official_internal_ids: list[str] = field(default_factory=list)
     active_count: int = 0
     tested_count: int = 0
     failed_count: int = 0
@@ -72,8 +77,13 @@ class CoverageMapBuilderV1_1:
                 description=concept.value,
             )
 
+        mapped_record_ids: set[str] = set()
+
         # Map each record from the knowledge index to its associated ontology tags
         for record in knowledge_index.list_all():
+            rec_id = getattr(record, "record_id", record.research_id)
+            is_mapped = False
+
             for tag in record.ontology_tags:
                 matched_concept: str | None = None
                 for c in ALL_ONTOLOGY_CONCEPTS:
@@ -83,17 +93,33 @@ class CoverageMapBuilderV1_1:
                 
                 if matched_concept and matched_concept in axis_records:
                     axis_rec = axis_records[matched_concept]
+                    is_mapped = True
+
+                    # Link IDs
+                    if rec_id not in axis_rec.normalized_record_ids:
+                        axis_rec.normalized_record_ids.append(rec_id)
+                    for sid in getattr(record, "source_item_ids", []):
+                        if sid not in axis_rec.source_item_ids:
+                            axis_rec.source_item_ids.append(sid)
 
                     # Link research ID by source_class
-                    if record.source_class == "FORMAL_REGISTRY":
+                    sclasses = getattr(record, "source_classes", [record.source_class])
+                    if "FORMAL_REGISTRY" in sclasses:
                         if record.research_id not in axis_rec.related_formal_registry_ids:
                             axis_rec.related_formal_registry_ids.append(record.research_id)
-                    elif record.source_class == "NON_EXP_EXECUTED":
+                        for fid in getattr(record, "formal_ids", []):
+                            if fid not in axis_rec.formal_ids:
+                                axis_rec.formal_ids.append(fid)
+                    if "NON_EXP_EXECUTED" in sclasses:
                         if record.research_id not in axis_rec.related_non_exp_axes:
                             axis_rec.related_non_exp_axes.append(record.research_id)
-                    elif record.source_class == "OFFICIAL_INTERNAL":
+                        if rec_id not in axis_rec.non_exp_ids:
+                            axis_rec.non_exp_ids.append(rec_id)
+                    if "OFFICIAL_INTERNAL" in sclasses:
                         if record.research_id not in axis_rec.related_official_axes:
                             axis_rec.related_official_axes.append(record.research_id)
+                        if rec_id not in axis_rec.official_internal_ids:
+                            axis_rec.official_internal_ids.append(rec_id)
 
                     # Update non-exclusive research status counts
                     status_upper = record.status.upper()
@@ -116,6 +142,16 @@ class CoverageMapBuilderV1_1:
                     for p in record.evidence_paths:
                         if p not in axis_rec.evidence_paths:
                             axis_rec.evidence_paths.append(p)
+
+            if is_mapped:
+                mapped_record_ids.add(rec_id)
+
+        all_records = knowledge_index.list_all()
+        orphan_records = [
+            getattr(r, "record_id", r.research_id)
+            for r in all_records
+            if getattr(r, "record_id", r.research_id) not in mapped_record_ids
+        ]
 
         # Compute untested_boolean for each axis
         # An axis is strictly UNTESTED if tested_count == 0, active_count == 0, and blocked_count == 0
@@ -152,6 +188,8 @@ class CoverageMapBuilderV1_1:
                 "total_official_links": total_official_links,
                 "axes_with_prior_evidence_count": tested_axes_count,
                 "strictly_untested_structural_axes_count": untested_axes_count,
+                "orphan_records_count": len(orphan_records),
+                "orphan_records": orphan_records,
             },
             "axes": {k: axis_rec.to_dict() for k, axis_rec in axis_records.items()},
         }

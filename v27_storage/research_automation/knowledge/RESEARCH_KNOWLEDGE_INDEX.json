@@ -1,10 +1,16 @@
 {
-  "version": "1.1",
-  "total_records": 77,
-  "counts_by_source_class": {
+  "version": "1.2",
+  "total_records": 107,
+  "manifest_coverage_complete": true,
+  "manifest_coverage_ratio": 1.0,
+  "total_source_items_mapped": 115,
+  "unmapped_source_items_count": 0,
+  "source_class_counts": {
     "FORMAL_REGISTRY": 69,
-    "NON_EXP_EXECUTED": 3,
-    "OFFICIAL_INTERNAL": 5
+    "OFFICIAL_INTERNAL": 12,
+    "NON_EXP_EXECUTED": 31,
+    "REVIEWED_UNEXECUTED": 2,
+    "ACTIVE_PROSPECTIVE": 1
   },
   "records": [
     {
@@ -30,8 +36,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-001-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-001-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-001-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-002-V1",
@@ -56,8 +74,20 @@
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-002-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-002-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-002-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-003-V1",
@@ -82,8 +112,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-003-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-003-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-003-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-004-V1",
@@ -108,8 +150,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-004-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-004-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-004-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-005-V1",
@@ -134,8 +188,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-005-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-005-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-005-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-006-V1",
@@ -160,8 +226,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-006-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-006-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-006-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-007-V1",
@@ -186,8 +264,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-007-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-007-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-007-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-008-V1",
@@ -212,8 +302,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-008-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-008-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-008-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-009-V1",
@@ -238,7 +340,28 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-009-V1",
+      "source_classes": [
+        "NON_EXP_EXECUTED",
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-009-V1"
+      ],
+      "actionability": "Formal experiment protocol in NUMBER RELATION LAB",
+      "aliases": [
+        "SRC-NONEXP-20",
+        "SRC-NONEXP-21",
+        "SRC-NONEXP-22"
       ]
     },
     {
@@ -246,512 +369,700 @@
       "canonical_name": "NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "Winning numbers from round t-1",
-      "transformation": "1-step Markov transition matrix or modulo arithmetic",
-      "condition": "Consecutive round transitions (t-1 -> t)",
-      "target": "Next draw winning numbers",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "transition_probability",
-        "empirical_lift"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform independent transitions across 45 states",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "transition",
-        "lag"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-010-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-010-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-010-V1"
+      ],
+      "actionability": "Formal experiment protocol in TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-011-V1",
       "canonical_name": "회차 간 흔적 구조",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Winning numbers from round t-1",
-      "transformation": "1-step Markov transition matrix or modulo arithmetic",
-      "condition": "Consecutive round transitions (t-1 -> t)",
-      "target": "Next draw winning numbers",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "transition_probability",
-        "empirical_lift"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform independent transitions across 45 states",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "transition",
-        "lag"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-011-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-011-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-011-V1"
+      ],
+      "actionability": "Formal experiment protocol in TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-012-V1",
       "canonical_name": "격회 재출현 (EXP-005)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "Winning numbers from round t-1",
-      "transformation": "1-step Markov transition matrix or modulo arithmetic",
-      "condition": "Consecutive round transitions (t-1 -> t)",
-      "target": "Next draw winning numbers",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "transition_probability",
-        "empirical_lift"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform independent transitions across 45 states",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "transition",
-        "lag"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-012-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-012-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-012-V1"
+      ],
+      "actionability": "Formal experiment protocol in TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-013-V1",
       "canonical_name": "같은 끝자리 회차 전이 (EXP-006)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "Winning numbers from round t-1",
-      "transformation": "1-step Markov transition matrix or modulo arithmetic",
-      "condition": "Consecutive round transitions (t-1 -> t)",
-      "target": "Next draw winning numbers",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "transition_probability",
-        "empirical_lift"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform independent transitions across 45 states",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "transition",
-        "lag"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-013-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-013-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-013-V1"
+      ],
+      "actionability": "Formal experiment protocol in TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-014-V1",
       "canonical_name": "끝수 전이",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Winning numbers from round t-1",
-      "transformation": "1-step Markov transition matrix or modulo arithmetic",
-      "condition": "Consecutive round transitions (t-1 -> t)",
-      "target": "Next draw winning numbers",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "transition_probability",
-        "empirical_lift"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform independent transitions across 45 states",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "transition",
-        "lag"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-014-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-014-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-014-V1"
+      ],
+      "actionability": "Formal experiment protocol in TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-015-V1",
       "canonical_name": "결손 회복속도",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-015-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-015-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-015-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-016-V1",
       "canonical_name": "결손 회복 전환점",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-016-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-016-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-016-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-017-V1",
       "canonical_name": "가변 전멸구간 (EXP-004)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-017-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-017-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-017-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-018-V1",
       "canonical_name": "다중 전멸구간 상호작용",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-018-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-018-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-018-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-019-V1",
       "canonical_name": "이동×가변 전멸 교차",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-019-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-019-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-019-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-020-V1",
       "canonical_name": "최근10 강도 지속",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-020-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-020-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-020-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-021-V1",
       "canonical_name": "비전멸 전용 엔진",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-021-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-021-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-021-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-022-V1",
       "canonical_name": "구간별 복귀우선 전이",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
-      "transformation": "Zero-occupancy extinction tracking and return velocity",
-      "condition": "Extinction event (0 balls in zone) or deficiency",
-      "target": "Next-round zone rebound or recovery duration",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "recovery_rounds",
-        "zone_occupancy_excess_z"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "extinction",
-        "recovery",
-        "occupancy",
-        "range"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-022-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-022-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-022-V1"
+      ],
+      "actionability": "Formal experiment protocol in STRUCTURE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-023-V1",
       "canonical_name": "쌍둥이 유사 회차",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Full draw outcome vectors across historical rounds",
-      "transformation": "Multivariate set distance / twin round vector matching",
-      "condition": "Historical round with high similarity score to current draw",
-      "target": "Next-round carryover following similar round",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "set_intersection_size",
-        "twin_similarity_score"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Permutation null of draw order",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "similarity",
-        "cross-round relation",
-        "transition"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-023-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-023-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-023-V1"
+      ],
+      "actionability": "Formal experiment protocol in SIMILAR ROUND LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-024-V1",
       "canonical_name": "구조형 쌍둥이 회차 전이",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Full draw outcome vectors across historical rounds",
-      "transformation": "Multivariate set distance / twin round vector matching",
-      "condition": "Historical round with high similarity score to current draw",
-      "target": "Next-round carryover following similar round",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "set_intersection_size",
-        "twin_similarity_score"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Permutation null of draw order",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "similarity",
-        "cross-round relation",
-        "transition"
+        "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-024-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-024-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-024-V1"
+      ],
+      "actionability": "Formal experiment protocol in SIMILAR ROUND LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-025-V1",
       "canonical_name": "유사 회차 이후 다음 회차 전이 (EXP-007)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "Full draw outcome vectors across historical rounds",
-      "transformation": "Multivariate set distance / twin round vector matching",
-      "condition": "Historical round with high similarity score to current draw",
-      "target": "Next-round carryover following similar round",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "set_intersection_size",
-        "twin_similarity_score"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Permutation null of draw order",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "similarity",
-        "cross-round relation",
-        "transition"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-025-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-025-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-025-V1"
+      ],
+      "actionability": "Formal experiment protocol in SIMILAR ROUND LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-026-V1",
       "canonical_name": "숫자 간격 구조 (EXP-008)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED",
-      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
-      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
-      "condition": "Within-round spacing distribution or arithmetic progression",
-      "target": "Spacing vector and dispersion variance",
-      "lag": 0,
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
       "metrics": [
-        "spacing_variance",
-        "adjacent_gap_vector",
-        "minimum_spacing"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "spacing",
-        "gap",
         "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-026-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-026-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-026-V1"
+      ],
+      "actionability": "Formal experiment protocol in SPACING LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-027-V1",
       "canonical_name": "간격 분산",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
-      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
-      "condition": "Within-round spacing distribution or arithmetic progression",
-      "target": "Spacing vector and dispersion variance",
-      "lag": 0,
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
       "metrics": [
-        "spacing_variance",
-        "adjacent_gap_vector",
-        "minimum_spacing"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "spacing",
-        "gap",
         "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-027-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-027-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-027-V1"
+      ],
+      "actionability": "Formal experiment protocol in SPACING LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-028-V1",
       "canonical_name": "등차수열형 구조",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
-      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
-      "condition": "Within-round spacing distribution or arithmetic progression",
-      "target": "Spacing vector and dispersion variance",
-      "lag": 0,
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
       "metrics": [
-        "spacing_variance",
-        "adjacent_gap_vector",
-        "minimum_spacing"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "spacing",
-        "gap",
         "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-028-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-028-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-028-V1"
+      ],
+      "actionability": "Formal experiment protocol in SPACING LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-029-V1",
       "canonical_name": "+13/+14 고정 간격",
       "source_class": "FORMAL_REGISTRY",
       "status": "REGISTERED",
-      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
-      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
-      "condition": "Within-round spacing distribution or arithmetic progression",
-      "target": "Spacing vector and dispersion variance",
-      "lag": 0,
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
       "metrics": [
-        "spacing_variance",
-        "adjacent_gap_vector",
-        "minimum_spacing"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "spacing",
-        "gap",
         "NUMBER"
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-029-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-029-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-029-V1"
+      ],
+      "actionability": "Formal experiment protocol in SPACING LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-030-V1",
@@ -773,8 +1084,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-030-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-030-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-030-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-031-V1",
@@ -796,8 +1119,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-031-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-031-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-031-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-032-V1",
@@ -819,8 +1154,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-032-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-032-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-032-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-033-V1",
@@ -842,8 +1189,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-033-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-033-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-033-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-034-V1",
@@ -865,8 +1224,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-034-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-034-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-034-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-035-V1",
@@ -888,8 +1259,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-035-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-035-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-035-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-036-V1",
@@ -911,8 +1294,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-036-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-036-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-036-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-037-V1",
@@ -934,8 +1329,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-037-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-037-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-037-V1"
+      ],
+      "actionability": "Formal experiment protocol in ROLE AND AUDIT LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-038-V1",
@@ -957,8 +1364,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-038-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-038-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-038-V1"
+      ],
+      "actionability": "Formal experiment protocol in NO-PICK COVERAGE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260816-038-V2",
@@ -980,204 +1399,300 @@
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260816-038-V2",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260816-038-V2"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260816-038-V2"
+      ],
+      "actionability": "Formal experiment protocol in NO-PICK COVERAGE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-039-V1",
       "canonical_name": "홀수 개수 lag-1 공분산 (EXP-009)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Summary statistics of winning draws (odd count, sum of six)",
-      "transformation": "Time-series lag-1 covariance and autocorrelation",
-      "condition": "Serial consecutive draws",
-      "target": "Next draw macro property (parity, sum)",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "autocorrelation_rho",
-        "lag1_covariance"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Zero serial autocorrelation under independent Bernoulli/hypergeometric draws",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "arithmetic transform",
-        "lag",
-        "persistence"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-039-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-039-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-039-V1"
+      ],
+      "actionability": "Formal experiment protocol in SERIAL COMPOSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-040-V1",
       "canonical_name": "추첨 합계 lag-1 공분산 (EXP-010)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Summary statistics of winning draws (odd count, sum of six)",
-      "transformation": "Time-series lag-1 covariance and autocorrelation",
-      "condition": "Serial consecutive draws",
-      "target": "Next draw macro property (parity, sum)",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "autocorrelation_rho",
-        "lag1_covariance"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Zero serial autocorrelation under independent Bernoulli/hypergeometric draws",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "arithmetic transform",
-        "lag",
-        "persistence"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-040-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-040-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-040-V1"
+      ],
+      "actionability": "Formal experiment protocol in SERIAL COMPOSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-041-V1",
       "canonical_name": "미러 보수 전이 (EXP-011)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Winning numbers from round t-1",
-      "transformation": "1-step Markov transition matrix or modulo arithmetic",
-      "condition": "Consecutive round transitions (t-1 -> t)",
-      "target": "Next draw winning numbers",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "transition_probability",
-        "empirical_lift"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform independent transitions across 45 states",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "transition",
-        "lag"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-041-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-041-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-041-V1"
+      ],
+      "actionability": "Formal experiment protocol in TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-042-V1",
       "canonical_name": "개별 숫자 return-age rank (EXP-012)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Number appearance history",
-      "transformation": "Return-age rank (rounds since last appearance)",
-      "condition": "Ranking by dormancy duration",
-      "target": "Next draw selection priority",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "rank_correlation",
-        "hit_rate_by_rank"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Geometric distribution of return ages",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "order/rank",
-        "gap",
-        "recovery"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-042-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-042-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-042-V1"
+      ],
+      "actionability": "Formal experiment protocol in RETURN LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-043-V1",
       "canonical_name": "누적 빈도 rank (EXP-013)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Cumulative historical draw frequencies",
-      "transformation": "Frequency rank sorting",
-      "condition": "Historical hot/cold accumulation",
-      "target": "Next draw selection priority",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "frequency_rank_hit_rate"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Multinomial equal frequency null",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "order/rank",
-        "persistence",
-        "regime"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-043-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-043-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-043-V1"
+      ],
+      "actionability": "Formal experiment protocol in FREQUENCY LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-044-V1",
       "canonical_name": "직전 BONUS→다음 MAIN (EXP-014)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Bonus ball (7th ball) from round t-1",
-      "transformation": "Migration indicator from bonus to main6",
-      "condition": "Prior round bonus ball",
-      "target": "Next draw main6 appearance",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
       "lag": 1,
       "metrics": [
-        "bonus_to_main_recurrence_rate"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Fair lottery recurrence probability 6/45 ≈ 13.33%",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "bonus interaction",
-        "transition",
-        "recurrence"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-044-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-044-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-044-V1"
+      ],
+      "actionability": "Formal experiment protocol in BONUS TRANSITION LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-045-V1",
       "canonical_name": "BONUS 상대 순위 교환가능성 (EXP-015)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Bonus ball vs main 6 balls",
-      "transformation": "Relative size rank exchangeability",
-      "condition": "Bonus relative position in sorted draw",
-      "target": "Rank distribution uniformity",
-      "lag": 0,
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
       "metrics": [
-        "rank_uniformity_chi2"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Discrete uniform distribution on {1..7}",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "bonus interaction",
-        "order/rank",
-        "similarity"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-045-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-045-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-045-V1"
+      ],
+      "actionability": "Formal experiment protocol in BONUS ROLE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260821-046-V1",
       "canonical_name": "번호 라벨 이질성·지속성 (EXP-016)",
       "source_class": "FORMAL_REGISTRY",
       "status": "FAILED_EARLY",
-      "inputs": "Physical ball labels 1..45",
-      "transformation": "Long-term label heterogeneity test",
-      "condition": "Complete official draw history",
-      "target": "Ball physical drawing bias",
-      "lag": 0,
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
       "metrics": [
-        "goodness_of_fit_chi2"
+        "hit_rate",
+        "lift"
       ],
-      "null": "Uniform multinomial probability p = 1/45 for all balls",
+      "null": "Fair lottery null",
       "ontology_tags": [
-        "NUMBER",
-        "persistence",
-        "regime"
+        "NUMBER"
       ],
       "verdict": "FAILED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260821-046-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260821-046-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260821-046-V1"
+      ],
+      "actionability": "Formal experiment protocol in MARGINAL LABEL LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260816-001-V1",
@@ -1201,7 +1716,24 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260816-001-V1",
+      "source_classes": [
+        "NON_EXP_EXECUTED",
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+        "SRC-NONEXP-23"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260816-001-V1"
+      ],
+      "actionability": "Formal experiment protocol in CROWD LAB",
+      "aliases": [
+        "SRC-NONEXP-23"
       ]
     },
     {
@@ -1226,7 +1758,24 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260816-002-V1",
+      "source_classes": [
+        "NON_EXP_EXECUTED",
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+        "SRC-NONEXP-24"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260816-002-V1"
+      ],
+      "actionability": "Formal experiment protocol in CROWD LAB",
+      "aliases": [
+        "SRC-NONEXP-24"
       ]
     },
     {
@@ -1251,7 +1800,24 @@
       ],
       "verdict": "PROTOCOL_BLOCKED_SOURCE_SEMANTICS",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-PRIZE-20260816-001-V1",
+      "source_classes": [
+        "NON_EXP_EXECUTED",
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+        "SRC-NONEXP-27"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260816-001-V1"
+      ],
+      "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
+      "aliases": [
+        "SRC-NONEXP-27"
       ]
     },
     {
@@ -1276,8 +1842,20 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-PRIZE-20260816-001-V2",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V2"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260816-001-V2"
+      ],
+      "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-PRIZE-20260821-004-V1",
@@ -1301,8 +1879,20 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-PRIZE-20260821-004-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260821-004-V1"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260821-004-V1"
+      ],
+      "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-PRIZE-20260821-005-V1",
@@ -1326,8 +1916,20 @@
       ],
       "verdict": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-PRIZE-20260821-005-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260821-005-V1"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260821-005-V1"
+      ],
+      "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-PRIZE-20260816-002-V1",
@@ -1351,8 +1953,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-PRIZE-20260816-002-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260816-002-V1"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260816-002-V1"
+      ],
+      "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260816-003-V1",
@@ -1376,7 +1990,24 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260816-003-V1",
+      "source_classes": [
+        "NON_EXP_EXECUTED",
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+        "SRC-NONEXP-25"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260816-003-V1"
+      ],
+      "actionability": "Formal experiment protocol in CROWD LAB",
+      "aliases": [
+        "SRC-NONEXP-25"
       ]
     },
     {
@@ -1401,8 +2032,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-PRIZE-20260816-003-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-PRIZE-20260816-003-V1"
+      ],
+      "formal_ids": [
+        "EXP-PRIZE-20260816-003-V1"
+      ],
+      "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260816-004-V1",
@@ -1426,7 +2069,24 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260816-004-V1",
+      "source_classes": [
+        "NON_EXP_EXECUTED",
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+        "SRC-NONEXP-26"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260816-004-V1"
+      ],
+      "actionability": "Formal experiment protocol in CROWD LAB",
+      "aliases": [
+        "SRC-NONEXP-26"
       ]
     },
     {
@@ -1449,8 +2109,20 @@
       ],
       "verdict": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260823-005-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260823-005-V1"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260823-005-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-CROWD-TOPO-001-V1",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-006-V1",
@@ -1472,8 +2144,20 @@
       ],
       "verdict": "LOCKED BEFORE OUTCOME ANALYSIS",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260823-006-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260823-006-V1"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260823-006-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-CROWD-TOPO-002-V1",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-007-V1",
@@ -1495,8 +2179,20 @@
       ],
       "verdict": "LOCKED BEFORE OUTCOME ANALYSIS",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260823-007-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260823-007-V1"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260823-007-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-CROWD-TOPO-003-V1",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-008-V1",
@@ -1518,8 +2214,20 @@
       ],
       "verdict": "LOCKED BEFORE OUTCOME TEST",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260823-008-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260823-008-V1"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260823-008-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-CROWD-RETAIL-001-V1",
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260824-009-V1",
@@ -1541,8 +2249,20 @@
       ],
       "verdict": "LOCKED BEFORE START 1239 PUBLICATION",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-CROWD-20260824-009-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-CROWD-20260824-009-V1"
+      ],
+      "formal_ids": [
+        "EXP-CROWD-20260824-009-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-CROWD-RETAIL-PROSPECTIVE-001-V1",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260824-010-V1",
@@ -1564,8 +2284,20 @@
       ],
       "verdict": "USER-APPROVED SEALED CHANGE CONTROL",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260824-010-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260824-010-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260824-010-V1"
+      ],
+      "actionability": "Formal experiment protocol in OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-017-V1",
@@ -1587,8 +2319,20 @@
       ],
       "verdict": "SHA-256 LOCKED BEFORE OUTCOME TEST",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260827-017-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260827-017-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260827-017-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-017",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-018-V1",
@@ -1610,8 +2354,20 @@
       ],
       "verdict": "SHA-256 LOCKED BEFORE OUTCOME TEST",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260827-018-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260827-018-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260827-018-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-018",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-018-V2",
@@ -1633,8 +2389,20 @@
       ],
       "verdict": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260827-018-V2",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260827-018-V2"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260827-018-V2"
+      ],
+      "actionability": "Formal experiment protocol in EXP-018 V2",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260827-019-V1",
@@ -1656,8 +2424,20 @@
       ],
       "verdict": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260827-019-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260827-019-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260827-019-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-019",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260828-020-V1",
@@ -1679,8 +2459,20 @@
       ],
       "verdict": "LOCKED BEFORE TRAIN RELATIONSHIP",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260828-020-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260828-020-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260828-020-V1"
+      ],
+      "actionability": "Formal experiment protocol in EXP-020",
+      "aliases": []
     },
     {
       "research_id": "EXP-DRAW-20260930-001-V1",
@@ -1704,39 +2496,373 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
-      ]
+        "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ],
+      "record_id": "EXP-DRAW-20260930-001-V1",
+      "source_classes": [
+        "FORMAL_REGISTRY"
+      ],
+      "source_item_ids": [
+        "SRC-FORMAL-EXP-DRAW-20260930-001-V1"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-20260930-001-V1"
+      ],
+      "actionability": "Formal experiment protocol in EDGE ARITHMETIC TRANSITION LAB",
+      "aliases": []
     },
     {
-      "research_id": "NON-EXP-TRIO-ORBIT-FIXED",
-      "canonical_name": "TRIO ORBIT Pure Fixed Prospective Tracking (1239..1243)",
-      "source_class": "NON_EXP_EXECUTED",
-      "status": "ACTIVE",
-      "inputs": "Fixed 3-TRIO candidate sets (9 numbers)",
-      "transformation": "Direct set matching against drawn main6 balls",
-      "condition": "Fixed invariant trios without anchor replacement",
-      "target": "PRIMARY (3/3) and SUPPORT (exact 2/3) hits",
+      "research_id": "OFFICIAL-UNIT-3",
+      "canonical_name": "UNIT_3 (3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "UNIT-3 partition numbers",
+      "transformation": "Partition occupancy, extinction and recovery depth",
+      "condition": "Historical draw partition states",
+      "target": "Partition recovery speed and vacancy duration",
       "lag": 1,
       "metrics": [
+        "recovery_speed",
+        "occupancy_ratio"
+      ],
+      "null": "Hypergeometric uniform ball partition distribution",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-UNIT-3",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-01-UNIT_3"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-UNIT-5",
+      "canonical_name": "UNIT_5 (5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "UNIT-5 partition numbers",
+      "transformation": "Partition occupancy, extinction and recovery depth",
+      "condition": "Historical draw partition states",
+      "target": "Partition recovery speed and vacancy duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_speed",
+        "occupancy_ratio"
+      ],
+      "null": "Hypergeometric uniform ball partition distribution",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-UNIT-5",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-02-UNIT_5"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-UNIT-9",
+      "canonical_name": "UNIT_9 (9단위 전멸구간·복귀깊이 0/1/2. 1239 rerun NORMAL 62.4091.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "UNIT-9 partition numbers",
+      "transformation": "Partition occupancy, extinction and recovery depth",
+      "condition": "Historical draw partition states",
+      "target": "Partition recovery speed and vacancy duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_speed",
+        "occupancy_ratio"
+      ],
+      "null": "Hypergeometric uniform ball partition distribution",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-UNIT-9",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-03-UNIT_9"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-UNIT-10",
+      "canonical_name": "UNIT_10 (10단위 전멸구간과 41..45 크기 보정. 1239 rerun NORMAL 65.4002.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "UNIT-10 partition numbers",
+      "transformation": "Partition occupancy, extinction and recovery depth",
+      "condition": "Historical draw partition states",
+      "target": "Partition recovery speed and vacancy duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_speed",
+        "occupancy_ratio"
+      ],
+      "null": "Hypergeometric uniform ball partition distribution",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-UNIT-10",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-04-UNIT_10"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-END-DIGIT",
+      "canonical_name": "END_DIGIT (끝수 점유·전멸·복귀. 1239 SEVERE 100.0.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "UNKNOWN",
+      "transformation": "UNKNOWN",
+      "condition": "UNKNOWN",
+      "target": "UNKNOWN",
+      "lag": 1,
+      "metrics": [
+        "UNKNOWN"
+      ],
+      "null": "UNKNOWN",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-END-DIGIT",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-05-END_DIGIT"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-NUMBER-14KEY",
+      "canonical_name": "NUMBER (개별 번호 구조·멤버십 관문. 1239 selected 0.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "Historical lottery draw statistics for individual numbers 1..45",
+      "transformation": "14-key lexicographical deterministic sorting rule",
+      "condition": "Official frozen gate rules",
+      "target": "Official number priority ranking",
+      "lag": 1,
+      "metrics": [
+        "official_selection_stability"
+      ],
+      "null": "Deterministic tie-breaking null",
+      "ontology_tags": [
+        "NUMBER",
+        "order/rank",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-NUMBER-14KEY",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-06-NUMBER"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-TRIO-15KEY",
+      "canonical_name": "TRIO (핵심 조합 단위. `3/3 PRIMARY`, `exact2/3 SUPPORT`.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "All 14,190 three-number subsets",
+      "transformation": "15-key lexicographical deterministic trio ranking",
+      "condition": "Official frozen gate rules",
+      "target": "Official trio priority ranking (3/3 PRIMARY, exact 2/3 SUPPORT)",
+      "lag": 1,
+      "metrics": [
+        "primary_hit_rate",
+        "support_hit_rate"
+      ],
+      "null": "Hypergeometric combinations null",
+      "ontology_tags": [
+        "TRIO",
+        "order/rank",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-TRIO-15KEY",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-07-TRIO"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-PAIR-LIFECYCLE",
+      "canonical_name": "PAIR (lifecycle/signature/timing shadow repair와 승인 change-control.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "All 990 ball pairs across all draws",
+      "transformation": "Shadow lifecycle state tracking and signature timing repair",
+      "condition": "DECISION-20260824-095 audit",
+      "target": "Internal shadow state integrity",
+      "lag": 1,
+      "metrics": [
+        "pair_state_integrity"
+      ],
+      "null": "Deterministic shadow state preservation",
+      "ontology_tags": [
+        "PAIR",
+        "CORE",
+        "transition"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-PAIR-LIFECYCLE",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-08-PAIR"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-CORE-INVARIANTS",
+      "canonical_name": "CORE (NUMBER→TRIO→PAIR→CORE 보호 판정 계층.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "Hierarchical decision pipeline NUMBER->TRIO->PAIR->CORE",
+      "transformation": "Multi-level gate and threshold filtering",
+      "condition": "Production draw processing",
+      "target": "Official pick generation",
+      "lag": 1,
+      "metrics": [
+        "pipeline_invariance_pass"
+      ],
+      "null": "Pipeline determinism invariant",
+      "ontology_tags": [
+        "CORE",
+        "regime"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-CORE-INVARIANTS",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-09-CORE"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-FIXED-ORBIT",
+      "canonical_name": "Fixed Orbit (고정 KTS 3×3 TRIO; 역사 exact3 5/1237.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "Fixed KTS 3x3 TRIO candidate sets (9 numbers)",
+      "transformation": "Fixed rotation schedule across rounds",
+      "condition": "Unconditional fixed candidate set",
+      "target": "PRIMARY (3/3) and SUPPORT (2/3) hits",
+      "lag": 0,
+      "metrics": [
         "support_hit_rate",
-        "exact_binomial_p",
         "wilson_ci"
       ],
       "null": "Binomial exact null p0 = 987,390 / 8,145,060 ≈ 0.121226",
       "ontology_tags": [
         "TRIO",
-        "recurrence"
+        "recurrence",
+        "CORE"
       ],
-      "verdict": "SMALL_SAMPLE_INCONCLUSIVE",
+      "verdict": "OFFICIAL_FROZEN",
       "evidence_paths": [
-        "v27_storage/audits/trio_orbit_prospective_retrospective_001/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-FIXED-ORBIT",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-10-FIXED_ORBIT"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
     },
     {
-      "research_id": "NON-EXP-TRIO-ORBIT-LINKED",
-      "canonical_name": "TRIO ORBIT Linked Previous Draw Tracking (1239..1243)",
-      "source_class": "NON_EXP_EXECUTED",
-      "status": "ACTIVE",
+      "research_id": "OFFICIAL-LINKED-ORBIT",
+      "canonical_name": "Linked Orbit (직전 MAIN6+BONUS 연동 3×3 TRIO; 역사 exact3 7/1237, 우월성 미지지.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
       "inputs": "Linked 3-TRIO candidate sets using 3 winning numbers from round t-1 as anchor",
       "transformation": "Anchor carryover and orbit rotation",
       "condition": "Target draw t conditioned on winning balls of t-1",
@@ -1751,16 +2877,705 @@
       "ontology_tags": [
         "TRIO",
         "recurrence",
-        "transition"
+        "transition",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-LINKED-ORBIT",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-11-LINKED_ORBIT"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "OFFICIAL-KTS45",
+      "canonical_name": "KTS45 (330 TRIO 고정 schedule; 결과 후 재생성 금지.)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "330 TRIO fixed schedule",
+      "transformation": "Combinatorial block design schedule",
+      "condition": "Immutable schedule",
+      "target": "Full space coverage",
+      "lag": 0,
+      "metrics": [
+        "schedule_invariance"
+      ],
+      "null": "Steiner block design",
+      "ontology_tags": [
+        "TRIO",
+        "similarity",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "OFFICIAL-KTS45",
+      "source_classes": [
+        "OFFICIAL_INTERNAL"
+      ],
+      "source_item_ids": [
+        "SRC-OFFICIAL-12-KTS45"
+      ],
+      "formal_ids": [],
+      "actionability": "Official engine production invariant",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-TRIO-ORBIT-FIXED",
+      "canonical_name": "TRIO ORBIT Fixed/Linked 역사검증",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "TRIO ORBIT 3-trio candidate sets",
+      "transformation": "Historical backtest & null calibration",
+      "condition": "Rounds 1..1243",
+      "target": "PRIMARY and SUPPORT hits",
+      "lag": 1,
+      "metrics": [
+        "support_rate",
+        "mcnemar_exact_p"
+      ],
+      "null": "Exact binomial null p0 ≈ 0.121226",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence"
       ],
       "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
       "evidence_paths": [
-        "v27_storage/audits/trio_orbit_prospective_retrospective_001/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-TRIO-ORBIT-FIXED",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-01"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-TRIO-ORBIT-LINKED",
+      "canonical_name": "TRIO ORBIT divergence attribution",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "TRIO ORBIT 3-trio candidate sets",
+      "transformation": "Historical backtest & null calibration",
+      "condition": "Rounds 1..1243",
+      "target": "PRIMARY and SUPPORT hits",
+      "lag": 1,
+      "metrics": [
+        "support_rate",
+        "mcnemar_exact_p"
+      ],
+      "null": "Exact binomial null p0 ≈ 0.121226",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence"
+      ],
+      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-TRIO-ORBIT-LINKED",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-02"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-03",
+      "canonical_name": "KTS pair-completion collision",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "KTS pair-completion collision",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-03",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-03"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-04",
+      "canonical_name": "LAG 3~6 reappearance map",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "LAG 3~6 reappearance map",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-04",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-04"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-05",
+      "canonical_name": "BONUS extinction interaction",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "BONUS extinction interaction",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-05",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-05"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-06",
+      "canonical_name": "BONUS lag2 interaction",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "BONUS lag2 interaction",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-06",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-06"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-07",
+      "canonical_name": "Ending-frequency interaction",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Ending-frequency interaction",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-07",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-07"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-08",
+      "canonical_name": "TRIO HOLD causal decomposition",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "TRIO HOLD causal decomposition",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-08",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-08"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-09",
+      "canonical_name": "Survivor-pool rolling-origin actionability",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Survivor-pool rolling-origin actionability",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-09",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-09"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-10",
+      "canonical_name": "Opposite-period stability filter validation",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Opposite-period stability filter validation",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-10",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-10"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-11",
+      "canonical_name": "NO-PICK structural root-cause audit",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "NO-PICK structural root-cause audit",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-11",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-11"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-12",
+      "canonical_name": "NO-PICK causal trace",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "NO-PICK causal trace",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-12",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-12"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-13",
+      "canonical_name": "NUMBER member-structure SEVERE causal trace",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "NUMBER member-structure SEVERE causal trace",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-13",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-13"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-14",
+      "canonical_name": "Current-1239 END_DIGIT severe causal trace",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Current-1239 END_DIGIT severe causal trace",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-14",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-14"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-15",
+      "canonical_name": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-15",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-15"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-16",
+      "canonical_name": "Current-1239 opposite-period causal trace",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Current-1239 opposite-period causal trace",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-16",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-16"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-17",
+      "canonical_name": "Current-1239 official pre-draw audit",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Current-1239 official pre-draw audit",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-17",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-17"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-18",
+      "canonical_name": "Contiguous 1..1238 rebuild and 1239 rerun",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Contiguous 1..1238 rebuild and 1239 rerun",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-18",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-18"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-19",
+      "canonical_name": "Discovery 2.0 independent-signal audit",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Historical lottery records",
+      "transformation": "Discovery 2.0 independent-signal audit",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-19",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-19"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
+    },
+    {
+      "research_id": "NON-EXP-28",
+      "canonical_name": "LZ76 거시 복잡도 국면 고립 검정 V1",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "FAILED_NOT_SUPPORTED",
+      "inputs": "Historical lottery records",
+      "transformation": "LZ76 거시 복잡도 국면 고립 검정 V1",
+      "condition": "Historical audit",
+      "target": "Diagnostic insight",
+      "lag": 1,
+      "metrics": [
+        "diagnostic_metric"
+      ],
+      "null": "Standard null",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "COMPLETED",
+      "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-28",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-28"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
     },
     {
       "research_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
-      "canonical_name": "Whole Engine Synthetic Replay Semantics Recovery Audit 001",
+      "canonical_name": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
       "source_class": "NON_EXP_EXECUTED",
       "status": "COMPLETED",
       "inputs": "Full synthetic draw replay through official core pipeline",
@@ -1769,8 +3584,7 @@
       "target": "Semantic recovery and pipeline integrity",
       "lag": 0,
       "metrics": [
-        "semantic_fidelity_score",
-        "invariant_check_pass"
+        "semantic_fidelity_score"
       ],
       "null": "Synthetic permutation baseline",
       "ontology_tags": [
@@ -1779,126 +3593,187 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
-        "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
     },
     {
-      "research_id": "OFFICIAL-NUMBER-14KEY",
-      "canonical_name": "P45 Official NUMBER 14-Key Deterministic Sorting Rule",
-      "source_class": "OFFICIAL_INTERNAL",
-      "status": "OFFICIAL_FROZEN",
-      "inputs": "Historical lottery draw statistics for individual numbers 1..45",
-      "transformation": "14-key lexicographical sort without arbitrary weights",
-      "condition": "Official frozen gate rules",
-      "target": "Official number priority ranking",
+      "research_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "canonical_name": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "ACTIVE",
+      "inputs": "TRIO ORBIT 3-trio candidate sets",
+      "transformation": "Historical backtest & null calibration",
+      "condition": "Rounds 1..1243",
+      "target": "PRIMARY and SUPPORT hits",
       "lag": 1,
       "metrics": [
-        "official_selection_stability"
+        "support_rate",
+        "mcnemar_exact_p"
       ],
-      "null": "Deterministic tie-breaking baseline",
-      "ontology_tags": [
-        "NUMBER",
-        "order/rank",
-        "CORE"
-      ],
-      "verdict": "OFFICIAL_FROZEN",
-      "evidence_paths": [
-        "src/p45_v27/"
-      ]
-    },
-    {
-      "research_id": "OFFICIAL-TRIO-15KEY",
-      "canonical_name": "P45 Official TRIO 15-Key Deterministic Sorting Rule",
-      "source_class": "OFFICIAL_INTERNAL",
-      "status": "OFFICIAL_FROZEN",
-      "inputs": "All 14,190 three-number subsets",
-      "transformation": "15-key lexicographical sort without arbitrary weights",
-      "condition": "Official frozen gate rules",
-      "target": "Official trio priority ranking",
-      "lag": 1,
-      "metrics": [
-        "official_trio_stability"
-      ],
-      "null": "Deterministic tie-breaking baseline",
+      "null": "Exact binomial null p0 ≈ 0.121226",
       "ontology_tags": [
         "TRIO",
-        "order/rank",
-        "CORE"
+        "recurrence"
       ],
-      "verdict": "OFFICIAL_FROZEN",
+      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
       "evidence_paths": [
-        "src/p45_v27/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
     },
     {
-      "research_id": "OFFICIAL-PAIR-LIFECYCLE",
-      "canonical_name": "P45 Official PAIR Shadow Lifecycle System",
-      "source_class": "OFFICIAL_INTERNAL",
-      "status": "OFFICIAL_FROZEN",
-      "inputs": "990 ball pairs across all draws",
-      "transformation": "Shadow lifecycle state tracking (Active vs Dormant)",
-      "condition": "Official engine change control audit DECISION-20260824-095",
-      "target": "Internal shadow validation and state integrity",
+      "research_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "canonical_name": "TRIO ORBIT Statistical Correction & Null Calibration 001",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "TRIO ORBIT 3-trio candidate sets",
+      "transformation": "Historical backtest & null calibration",
+      "condition": "Rounds 1..1243",
+      "target": "PRIMARY and SUPPORT hits",
       "lag": 1,
       "metrics": [
-        "pair_state_integrity"
+        "support_rate",
+        "mcnemar_exact_p"
       ],
-      "null": "Official shadow state preservation",
+      "null": "Exact binomial null p0 ≈ 0.121226",
       "ontology_tags": [
-        "PAIR",
-        "CORE",
-        "transition"
+        "TRIO",
+        "recurrence"
       ],
-      "verdict": "OFFICIAL_FROZEN",
+      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
       "evidence_paths": [
-        "src/p45_v27/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "source_classes": [
+        "NON_EXP_EXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION"
+      ],
+      "formal_ids": [],
+      "actionability": "Non-EXP research audit and causal trace",
+      "aliases": []
     },
     {
-      "research_id": "OFFICIAL-CORE-INVARIANTS",
-      "canonical_name": "P45 Official Core Engine Invariant Rules (NO-PICK 867/867)",
-      "source_class": "OFFICIAL_INTERNAL",
-      "status": "OFFICIAL_FROZEN",
-      "inputs": "Historical backtest coverage windows 43..1235",
-      "transformation": "Strict non-mutation of frozen gates and signatures",
-      "condition": "Zero-coverage invariant preservation",
-      "target": "Official engine safety and reproducibility",
-      "lag": 0,
+      "research_id": "REVIEWED-MBC_실제_공_추첨순서",
+      "canonical_name": "MBC 실제 공 추첨순서 / DRAW-ORDER",
+      "source_class": "REVIEWED_UNEXECUTED",
+      "status": "REVIEWED_UNEXECUTED",
+      "inputs": "UNKNOWN",
+      "transformation": "UNKNOWN",
+      "condition": "UNKNOWN",
+      "target": "UNKNOWN",
+      "lag": 1,
       "metrics": [
-        "invariant_violation_count"
+        "UNKNOWN"
       ],
-      "null": "Engine frozen state",
+      "null": "UNKNOWN",
       "ontology_tags": [
         "CORE"
       ],
-      "verdict": "OFFICIAL_FROZEN",
+      "verdict": "UNEXECUTED_IDEA",
       "evidence_paths": [
-        "src/p45_v27/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "REVIEWED-MBC_실제_공_추첨순서",
+      "source_classes": [
+        "REVIEWED_UNEXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-REVIEWED-01-MBC_실제_공_추첨순서"
+      ],
+      "formal_ids": [],
+      "actionability": "Unexecuted idea (Held/Dropped)",
+      "aliases": []
     },
     {
-      "research_id": "OFFICIAL-UNIT-PARTITIONS",
-      "canonical_name": "P45 Official UNIT Partitions (UNIT_3, UNIT_5, UNIT_9, UNIT_10)",
-      "source_class": "OFFICIAL_INTERNAL",
-      "status": "OFFICIAL_FROZEN",
-      "inputs": "Lottery balls 1..45 partitioned into equal or structured subsets",
-      "transformation": "Fixed partition grouping for internal representation",
-      "condition": "Fixed partition boundaries without variable threshold hunting",
-      "target": "Internal representation buckets",
+      "research_id": "REVIEWED-REHEARSAL",
+      "canonical_name": "REHEARSAL / 리허설 번호",
+      "source_class": "REVIEWED_UNEXECUTED",
+      "status": "REVIEWED_UNEXECUTED",
+      "inputs": "Pre-broadcast rehearsal draw numbers",
+      "transformation": "Rehearsal vs live draw overlap",
+      "condition": "Rehearsal draw events",
+      "target": "Rehearsal draw influence",
       "lag": 0,
       "metrics": [
-        "partition_balance"
+        "jaccard_overlap"
       ],
-      "null": "Hypergeometric partition null",
+      "null": "Independent draw null",
       "ontology_tags": [
-        "range",
-        "occupancy",
-        "CORE"
+        "NUMBER",
+        "interaction"
       ],
-      "verdict": "OFFICIAL_FROZEN",
+      "verdict": "UNEXECUTED_IDEA",
       "evidence_paths": [
-        "src/p45_v27/"
-      ]
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+      ],
+      "record_id": "REVIEWED-REHEARSAL",
+      "source_classes": [
+        "REVIEWED_UNEXECUTED"
+      ],
+      "source_item_ids": [
+        "SRC-REVIEWED-02-REHEARSAL"
+      ],
+      "formal_ids": [],
+      "actionability": "Unexecuted idea (Held/Dropped)",
+      "aliases": []
+    },
+    {
+      "research_id": "PROSPECTIVE-TRIO-ORBIT-TARGET-1244",
+      "canonical_name": "TRIO ORBIT Target Round 1244 Prospective Predraw",
+      "source_class": "ACTIVE_PROSPECTIVE",
+      "status": "PENDING_SEALED",
+      "inputs": "Round 1244 prospective trio candidates",
+      "transformation": "Sealed predraw protocol",
+      "condition": "Target round 1244 unrevealed",
+      "target": "PRIMARY (3/3) and SUPPORT (2/3) hits",
+      "lag": 1,
+      "metrics": [
+        "exact_primary",
+        "exact_support"
+      ],
+      "null": "Exact hypergeometric combinations null",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence"
+      ],
+      "verdict": "SEALED_WAITING_FOR_DATA",
+      "evidence_paths": [
+        "v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md"
+      ],
+      "record_id": "PROSPECTIVE-TRIO-ORBIT-TARGET-1244",
+      "source_classes": [
+        "ACTIVE_PROSPECTIVE"
+      ],
+      "source_item_ids": [
+        "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244"
+      ],
+      "formal_ids": [
+        "EXP-DRAW-TRIO-ORBIT-PROSPECTIVE-1244"
+      ],
+      "actionability": "Active sealed prospective waiting for lottery outcome",
+      "aliases": []
     }
   ]
 }

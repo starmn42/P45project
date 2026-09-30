@@ -25,6 +25,14 @@ from .idea_provider import BaseIdeaProvider, DeterministicStructuralProvider, Op
 from .candidate_ranker import CandidateRanker, MAX_CANDIDATES_PER_CYCLE
 from .research_discovery_agent import ResearchDiscoveryAgent
 
+from .knowledge_source_inventory import (
+    ResearchSourceItem,
+    ResearchSourceInventoryBuilder,
+    CoverageManifest,
+    ResearchKnowledgeCoverageManifestBuilder,
+    SourceClass,
+    MappingType,
+)
 from .knowledge_index import ResearchKnowledgeRecord, ResearchKnowledgeIndex, ResearchKnowledgeIndexBuilder
 from .coverage_map_v1_1 import CoverageMapBuilderV1_1, AxisCoverageRecordV1_1
 from .semantic_novelty_checker import (
@@ -35,6 +43,12 @@ from .semantic_novelty_checker import (
 )
 
 __all__ = [
+    "ResearchSourceItem",
+    "ResearchSourceInventoryBuilder",
+    "CoverageManifest",
+    "ResearchKnowledgeCoverageManifestBuilder",
+    "SourceClass",
+    "MappingType",
     "ResearchState",
     "FollowupType",
     "NOVEL_IDEA_GENERATION_EXTERNAL_AI",

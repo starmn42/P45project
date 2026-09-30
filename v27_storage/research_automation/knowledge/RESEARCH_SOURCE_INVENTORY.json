@@ -1,0 +1,1841 @@
+{
+  "version": "1.2",
+  "total_source_items": 115,
+  "class_counts": {
+    "FORMAL_REGISTRY": 69,
+    "OFFICIAL_INTERNAL": 12,
+    "NON_EXP_EXECUTED": 31,
+    "REVIEWED_UNEXECUTED": 2,
+    "ACTIVE_PROSPECTIVE": 1
+  },
+  "source_items": [
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-001-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 1 (Canonical ID: EXP-DRAW-20260816-001-V1)",
+      "source_title": "숫자 관계망 구조",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-001-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 2 (Canonical ID: EXP-DRAW-20260816-002-V1)",
+      "source_title": "숫자 동시출현 관계망 (EXP-001)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-002-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 3 (Canonical ID: EXP-DRAW-20260816-003-V1)",
+      "source_title": "조건부 관계망",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-003-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 4 (Canonical ID: EXP-DRAW-20260816-004-V1)",
+      "source_title": "A 출현 후 다음 회차 B 관계",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-004-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 5 (Canonical ID: EXP-DRAW-20260816-005-V1)",
+      "source_title": "2회 간격 관계",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-005-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 6 (Canonical ID: EXP-DRAW-20260816-006-V1)",
+      "source_title": "3개 숫자 관계망",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-006-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 7 (Canonical ID: EXP-DRAW-20260816-007-V1)",
+      "source_title": "최근100 관계망",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-007-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 8 (Canonical ID: EXP-DRAW-20260816-008-V1)",
+      "source_title": "최근50 관계망",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-008-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 9 (Canonical ID: EXP-DRAW-20260816-009-V1)",
+      "source_title": "전체 관계망",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-009-V1",
+      "evidence_reference": "Lab: NUMBER RELATION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "NUMBER RELATION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-010-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 10 (Canonical ID: EXP-DRAW-20260816-010-V1)",
+      "source_title": "NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-010-V1",
+      "evidence_reference": "Lab: TRANSITION LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-011-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 11 (Canonical ID: EXP-DRAW-20260816-011-V1)",
+      "source_title": "회차 간 흔적 구조",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-011-V1",
+      "evidence_reference": "Lab: TRANSITION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-012-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 12 (Canonical ID: EXP-DRAW-20260816-012-V1)",
+      "source_title": "격회 재출현 (EXP-005)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-012-V1",
+      "evidence_reference": "Lab: TRANSITION LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-013-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 13 (Canonical ID: EXP-DRAW-20260816-013-V1)",
+      "source_title": "같은 끝자리 회차 전이 (EXP-006)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-013-V1",
+      "evidence_reference": "Lab: TRANSITION LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-014-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 14 (Canonical ID: EXP-DRAW-20260816-014-V1)",
+      "source_title": "끝수 전이",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-014-V1",
+      "evidence_reference": "Lab: TRANSITION LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-015-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 15 (Canonical ID: EXP-DRAW-20260816-015-V1)",
+      "source_title": "결손 회복속도",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-015-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-016-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 16 (Canonical ID: EXP-DRAW-20260816-016-V1)",
+      "source_title": "결손 회복 전환점",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-016-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "HOLD"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-017-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 17 (Canonical ID: EXP-DRAW-20260816-017-V1)",
+      "source_title": "가변 전멸구간 (EXP-004)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-017-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-018-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 18 (Canonical ID: EXP-DRAW-20260816-018-V1)",
+      "source_title": "다중 전멸구간 상호작용",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-018-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "HOLD"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-019-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 19 (Canonical ID: EXP-DRAW-20260816-019-V1)",
+      "source_title": "이동×가변 전멸 교차",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-019-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-020-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 20 (Canonical ID: EXP-DRAW-20260816-020-V1)",
+      "source_title": "최근10 강도 지속",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-020-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-021-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 21 (Canonical ID: EXP-DRAW-20260816-021-V1)",
+      "source_title": "비전멸 전용 엔진",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-021-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-022-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 22 (Canonical ID: EXP-DRAW-20260816-022-V1)",
+      "source_title": "구간별 복귀우선 전이",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-022-V1",
+      "evidence_reference": "Lab: STRUCTURE LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "STRUCTURE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "HOLD"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-023-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 23 (Canonical ID: EXP-DRAW-20260816-023-V1)",
+      "source_title": "쌍둥이 유사 회차",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-023-V1",
+      "evidence_reference": "Lab: SIMILAR ROUND LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "SIMILAR ROUND LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-024-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 24 (Canonical ID: EXP-DRAW-20260816-024-V1)",
+      "source_title": "구조형 쌍둥이 회차 전이",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-024-V1",
+      "evidence_reference": "Lab: SIMILAR ROUND LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "SIMILAR ROUND LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "HOLD"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-025-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 25 (Canonical ID: EXP-DRAW-20260816-025-V1)",
+      "source_title": "유사 회차 이후 다음 회차 전이 (EXP-007)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-025-V1",
+      "evidence_reference": "Lab: SIMILAR ROUND LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "SIMILAR ROUND LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "HOLD"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-026-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 26 (Canonical ID: EXP-DRAW-20260816-026-V1)",
+      "source_title": "숫자 간격 구조 (EXP-008)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-026-V1",
+      "evidence_reference": "Lab: SPACING LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "SPACING LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-027-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 27 (Canonical ID: EXP-DRAW-20260816-027-V1)",
+      "source_title": "간격 분산",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-027-V1",
+      "evidence_reference": "Lab: SPACING LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "SPACING LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-028-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 28 (Canonical ID: EXP-DRAW-20260816-028-V1)",
+      "source_title": "등차수열형 구조",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-028-V1",
+      "evidence_reference": "Lab: SPACING LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "SPACING LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-029-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 29 (Canonical ID: EXP-DRAW-20260816-029-V1)",
+      "source_title": "+13/+14 고정 간격",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-029-V1",
+      "evidence_reference": "Lab: SPACING LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "SPACING LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-030-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 30 (Canonical ID: EXP-DRAW-20260816-030-V1)",
+      "source_title": "숫자 역할 구조",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-030-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-031-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 31 (Canonical ID: EXP-DRAW-20260816-031-V1)",
+      "source_title": "특정 UNIT 일시 강세",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-031-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-032-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 32 (Canonical ID: EXP-DRAW-20260816-032-V1)",
+      "source_title": "NUMBER 역할",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-032-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-033-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 33 (Canonical ID: EXP-DRAW-20260816-033-V1)",
+      "source_title": "역할 충돌",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-033-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-034-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 34 (Canonical ID: EXP-DRAW-20260816-034-V1)",
+      "source_title": "실패 원인 복기",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-034-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-035-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 35 (Canonical ID: EXP-DRAW-20260816-035-V1)",
+      "source_title": "전체 엔진 귀무감사",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-035-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-036-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 36 (Canonical ID: EXP-DRAW-20260816-036-V1)",
+      "source_title": "placebo/permutation",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-036-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-037-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 37 (Canonical ID: EXP-DRAW-20260816-037-V1)",
+      "source_title": "과최적화 방지",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-037-V1",
+      "evidence_reference": "Lab: ROLE AND AUDIT LAB, Domain: DRAW, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "ROLE AND AUDIT LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PARTIAL"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 38 (Canonical ID: EXP-DRAW-20260816-038-V1)",
+      "source_title": "NO-PICK COVERAGE & QUALIFIED RESEARCH FALLBACK (EXP-002)",
+      "source_status": "DESIGNED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-038-V1",
+      "evidence_reference": "Lab: NO-PICK COVERAGE LAB, Domain: DRAW, Status: DESIGNED, Effect: NONE",
+      "details": {
+        "lab": "NO-PICK COVERAGE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "NEW_REGISTERED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V2",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 39 (Canonical ID: EXP-DRAW-20260816-038-V2)",
+      "source_title": "NO-PICK COVERAGE & NUMBER-RANK FALLBACK (EXP-002 V2)",
+      "source_status": "FAILED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260816-038-V2",
+      "evidence_reference": "Lab: NO-PICK COVERAGE LAB, Domain: DRAW, Status: FAILED, Effect: NONE",
+      "details": {
+        "lab": "NO-PICK COVERAGE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PROTOCOL_REVISION"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-039-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 40 (Canonical ID: EXP-DRAW-20260821-039-V1)",
+      "source_title": "홀수 개수 lag-1 공분산 (EXP-009)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-039-V1",
+      "evidence_reference": "Lab: SERIAL COMPOSITION LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "SERIAL COMPOSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-040-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 41 (Canonical ID: EXP-DRAW-20260821-040-V1)",
+      "source_title": "추첨 합계 lag-1 공분산 (EXP-010)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-040-V1",
+      "evidence_reference": "Lab: SERIAL COMPOSITION LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "SERIAL COMPOSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-041-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 42 (Canonical ID: EXP-DRAW-20260821-041-V1)",
+      "source_title": "미러 보수 전이 (EXP-011)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-041-V1",
+      "evidence_reference": "Lab: TRANSITION LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-042-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 43 (Canonical ID: EXP-DRAW-20260821-042-V1)",
+      "source_title": "개별 숫자 return-age rank (EXP-012)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-042-V1",
+      "evidence_reference": "Lab: RETURN LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "RETURN LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-043-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 44 (Canonical ID: EXP-DRAW-20260821-043-V1)",
+      "source_title": "누적 빈도 rank (EXP-013)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-043-V1",
+      "evidence_reference": "Lab: FREQUENCY LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "FREQUENCY LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-044-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 45 (Canonical ID: EXP-DRAW-20260821-044-V1)",
+      "source_title": "직전 BONUS→다음 MAIN (EXP-014)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-044-V1",
+      "evidence_reference": "Lab: BONUS TRANSITION LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "BONUS TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-045-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 46 (Canonical ID: EXP-DRAW-20260821-045-V1)",
+      "source_title": "BONUS 상대 순위 교환가능성 (EXP-015)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-045-V1",
+      "evidence_reference": "Lab: BONUS ROLE LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "BONUS ROLE LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-046-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 47 (Canonical ID: EXP-DRAW-20260821-046-V1)",
+      "source_title": "번호 라벨 이질성·지속성 (EXP-016)",
+      "source_status": "FAILED_EARLY",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260821-046-V1",
+      "evidence_reference": "Lab: MARGINAL LABEL LAB, Domain: DRAW, Status: FAILED_EARLY, Effect: NONE",
+      "details": {
+        "lab": "MARGINAL LABEL LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCAL_SETTLEMENT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 48 (Canonical ID: EXP-CROWD-20260816-001-V1)",
+      "source_title": "대중 번호 선택 행동",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260816-001-V1",
+      "evidence_reference": "Lab: CROWD LAB, Domain: CROWD, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "CROWD LAB",
+        "domain": "CROWD",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 49 (Canonical ID: EXP-CROWD-20260816-002-V1)",
+      "source_title": "많이 고르는 번호·패턴",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260816-002-V1",
+      "evidence_reference": "Lab: CROWD LAB, Domain: CROWD, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "CROWD LAB",
+        "domain": "CROWD",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "MISSING"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 50 (Canonical ID: EXP-PRIZE-20260816-001-V1)",
+      "source_title": "판매량 대비 1등 당첨게임 밀도 / EXP-PRIZE-001-V1 BIRTHDAY-ZONE CONCENTRATION",
+      "source_status": "PROTOCOL_BLOCKED_SOURCE_SEMANTICS",
+      "canonical_experiment_id_if_any": "EXP-PRIZE-20260816-001-V1",
+      "evidence_reference": "Lab: PRIZE-SHARE LAB, Domain: PRIZE_SHARE, Status: PROTOCOL_BLOCKED_SOURCE_SEMANTICS, Effect: NONE",
+      "details": {
+        "lab": "PRIZE-SHARE LAB",
+        "domain": "PRIZE_SHARE",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "NEW_REGISTERED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 51 (Canonical ID: EXP-PRIZE-20260816-001-V2)",
+      "source_title": "BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)",
+      "source_status": "SUPPORTED_WITHIN_EXPERIMENT",
+      "canonical_experiment_id_if_any": "EXP-PRIZE-20260816-001-V2",
+      "evidence_reference": "Lab: PRIZE-SHARE LAB, Domain: PRIZE_SHARE, Status: SUPPORTED_WITHIN_EXPERIMENT, Effect: NONE",
+      "details": {
+        "lab": "PRIZE-SHARE LAB",
+        "domain": "PRIZE_SHARE",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "V2_LOCKED_BACKTEST + INDEPENDENT_REPRODUCTION_PASS"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 52 (Canonical ID: EXP-PRIZE-20260821-004-V1)",
+      "source_title": "SECOND-PRIZE CROSS-OUTCOME CORROBORATION (EXP-PRIZE-002-V1)",
+      "source_status": "SUPPORTED_CROSS_OUTCOME",
+      "canonical_experiment_id_if_any": "EXP-PRIZE-20260821-004-V1",
+      "evidence_reference": "Lab: PRIZE-SHARE LAB, Domain: PRIZE_SHARE, Status: SUPPORTED_CROSS_OUTCOME, Effect: NONE",
+      "details": {
+        "lab": "PRIZE-SHARE LAB",
+        "domain": "PRIZE_SHARE",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "LOCKED_CROSS_OUTCOME_BACKTEST"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 53 (Canonical ID: EXP-PRIZE-20260821-005-V1)",
+      "source_title": "BIRTHDAY-ZONE CROWD CONCENTRATION — PROSPECTIVE CONFIRMATION",
+      "source_status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "canonical_experiment_id_if_any": "EXP-PRIZE-20260821-005-V1",
+      "evidence_reference": "Lab: PRIZE-SHARE LAB, Domain: PRIZE_SHARE, Status: PROSPECTIVE_LOCKED_WAITING_FOR_DATA, Effect: NONE",
+      "details": {
+        "lab": "PRIZE-SHARE LAB",
+        "domain": "PRIZE_SHARE",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "PROTOCOL_LOCKED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 54 (Canonical ID: EXP-PRIZE-20260816-002-V1)",
+      "source_title": "LOW/NORMAL/HIGH WINNER 구조",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-PRIZE-20260816-002-V1",
+      "evidence_reference": "Lab: PRIZE-SHARE LAB, Domain: PRIZE_SHARE, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "PRIZE-SHARE LAB",
+        "domain": "PRIZE_SHARE",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "NEW_REGISTERED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 55 (Canonical ID: EXP-CROWD-20260816-003-V1)",
+      "source_title": "생일번호 편향",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260816-003-V1",
+      "evidence_reference": "Lab: CROWD LAB, Domain: CROWD, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "CROWD LAB",
+        "domain": "CROWD",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "NEW_REGISTERED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-003-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 56 (Canonical ID: EXP-PRIZE-20260816-003-V1)",
+      "source_title": "공동당첨 위험",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-PRIZE-20260816-003-V1",
+      "evidence_reference": "Lab: PRIZE-SHARE LAB, Domain: PRIZE_SHARE, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "PRIZE-SHARE LAB",
+        "domain": "PRIZE_SHARE",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "NEW_REGISTERED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 57 (Canonical ID: EXP-CROWD-20260816-004-V1)",
+      "source_title": "고번호·끝수·연속수·시각/OMR 선택편향",
+      "source_status": "REGISTERED",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260816-004-V1",
+      "evidence_reference": "Lab: CROWD LAB, Domain: CROWD, Status: REGISTERED, Effect: NONE",
+      "details": {
+        "lab": "CROWD LAB",
+        "domain": "CROWD",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "NEW_REGISTERED"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-005-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 58 (Canonical ID: EXP-CROWD-20260823-005-V1)",
+      "source_title": "CROWD",
+      "source_status": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260823-005-V1",
+      "evidence_reference": "Lab: EXP-CROWD-TOPO-001-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME RELATION ANALYSIS, Effect: FAILED",
+      "details": {
+        "lab": "EXP-CROWD-TOPO-001-V1",
+        "domain": "CROWD / PRIZE-SHARE LAB",
+        "official_effect": "FAILED",
+        "promotion_status": "false",
+        "source_status": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-006-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 59 (Canonical ID: EXP-CROWD-20260823-006-V1)",
+      "source_title": "CROWD",
+      "source_status": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260823-006-V1",
+      "evidence_reference": "Lab: EXP-CROWD-TOPO-002-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME ANALYSIS, Effect: SUPPORTED_WITHIN_EXPERIMENT",
+      "details": {
+        "lab": "EXP-CROWD-TOPO-002-V1",
+        "domain": "CROWD / PRIZE-SHARE LAB",
+        "official_effect": "SUPPORTED_WITHIN_EXPERIMENT",
+        "promotion_status": "false",
+        "source_status": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-007-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 60 (Canonical ID: EXP-CROWD-20260823-007-V1)",
+      "source_title": "CROWD",
+      "source_status": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260823-007-V1",
+      "evidence_reference": "Lab: EXP-CROWD-TOPO-003-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME ANALYSIS, Effect: EXPLORATORY_NOT_SUPPORTED",
+      "details": {
+        "lab": "EXP-CROWD-TOPO-003-V1",
+        "domain": "CROWD / PRIZE-SHARE LAB",
+        "official_effect": "EXPLORATORY_NOT_SUPPORTED",
+        "promotion_status": "false",
+        "source_status": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-008-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 61 (Canonical ID: EXP-CROWD-20260823-008-V1)",
+      "source_title": "CROWD",
+      "source_status": "LOCKED BEFORE OUTCOME TEST",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260823-008-V1",
+      "evidence_reference": "Lab: EXP-CROWD-RETAIL-001-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE OUTCOME TEST, Effect: EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+      "details": {
+        "lab": "EXP-CROWD-RETAIL-001-V1",
+        "domain": "CROWD / PRIZE-SHARE LAB",
+        "official_effect": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
+        "promotion_status": "false",
+        "source_status": "MANUAL SAME-RETAILER JACKPOT COLLISION"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-CROWD-20260824-009-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 62 (Canonical ID: EXP-CROWD-20260824-009-V1)",
+      "source_title": "CROWD",
+      "source_status": "LOCKED BEFORE START 1239 PUBLICATION",
+      "canonical_experiment_id_if_any": "EXP-CROWD-20260824-009-V1",
+      "evidence_reference": "Lab: EXP-CROWD-RETAIL-PROSPECTIVE-001-V1, Domain: CROWD / PRIZE-SHARE LAB, Status: LOCKED BEFORE START 1239 PUBLICATION, Effect: PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "details": {
+        "lab": "EXP-CROWD-RETAIL-PROSPECTIVE-001-V1",
+        "domain": "CROWD / PRIZE-SHARE LAB",
+        "official_effect": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+        "promotion_status": "false",
+        "source_status": "PROSPECTIVE MANUAL SAME-RETAILER JACKPOT COLLISION"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260824-010-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 63 (Canonical ID: EXP-DRAW-20260824-010-V1)",
+      "source_title": "DRAW",
+      "source_status": "USER-APPROVED SEALED CHANGE CONTROL",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260824-010-V1",
+      "evidence_reference": "Lab: OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001, Domain: PAIR OFFICIAL CHANGE CONTROL, Status: USER-APPROVED SEALED CHANGE CONTROL, Effect: OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+      "details": {
+        "lab": "OFFICIAL-PAIR-LIFECYCLE-REPAIR-APPLY-001",
+        "domain": "PAIR OFFICIAL CHANGE CONTROL",
+        "official_effect": "OFFICIAL_REPAIR_APPLIED_AND_VERIFIED",
+        "promotion_status": "false",
+        "source_status": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-017-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 64 (Canonical ID: EXP-DRAW-20260827-017-V1)",
+      "source_title": "DRAW",
+      "source_status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260827-017-V1",
+      "evidence_reference": "Lab: EXP-017, Domain: TRIO ORBIT CONSENSUS NUMBER LAB, Status: SHA-256 LOCKED BEFORE OUTCOME TEST, Effect: FAILED_NOT_SUPPORTED",
+      "details": {
+        "lab": "EXP-017",
+        "domain": "TRIO ORBIT CONSENSUS NUMBER LAB",
+        "official_effect": "FAILED_NOT_SUPPORTED",
+        "promotion_status": "false",
+        "source_status": "TRIO ORBIT CONSENSUS NUMBER EFFECT V1"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 65 (Canonical ID: EXP-DRAW-20260827-018-V1)",
+      "source_title": "DRAW",
+      "source_status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260827-018-V1",
+      "evidence_reference": "Lab: EXP-018, Domain: RESIDUAL NEIGHBOR CLOSURE LAB, Status: SHA-256 LOCKED BEFORE OUTCOME TEST, Effect: READY_FOR_TEST",
+      "details": {
+        "lab": "EXP-018",
+        "domain": "RESIDUAL NEIGHBOR CLOSURE LAB",
+        "official_effect": "READY_FOR_TEST",
+        "promotion_status": "false",
+        "source_status": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V1"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V2",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 66 (Canonical ID: EXP-DRAW-20260827-018-V2)",
+      "source_title": "DRAW",
+      "source_status": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260827-018-V2",
+      "evidence_reference": "Lab: EXP-018 V2, Domain: RESIDUAL NEIGHBOR CLOSURE LAB, Status: PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME, Effect: AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+      "details": {
+        "lab": "EXP-018 V2",
+        "domain": "RESIDUAL NEIGHBOR CLOSURE LAB",
+        "official_effect": "AXIS_CLOSED_NO_PRACTICALLY_USEFUL_RESIDUAL_NEIGHBOR_EFFECT",
+        "promotion_status": "false",
+        "source_status": "RESIDUAL NEIGHBOR EFFECT / ADJACENCY AXIS CLOSURE V2"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-019-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 67 (Canonical ID: EXP-DRAW-20260827-019-V1)",
+      "source_title": "DRAW",
+      "source_status": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260827-019-V1",
+      "evidence_reference": "Lab: EXP-019, Domain: SALES-ADJUSTED CROWD EFFECT LAB, Status: LOCKED BEFORE OFFICIAL-DATA ACQUISITION, Effect: FAILED_NOT_SUPPORTED",
+      "details": {
+        "lab": "EXP-019",
+        "domain": "SALES-ADJUSTED CROWD EFFECT LAB",
+        "official_effect": "FAILED_NOT_SUPPORTED",
+        "promotion_status": "false",
+        "source_status": "SALES-ADJUSTED BIRTHDAY-RANGE CROWD EFFECT V1"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260828-020-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 68 (Canonical ID: EXP-DRAW-20260828-020-V1)",
+      "source_title": "DRAW",
+      "source_status": "LOCKED BEFORE TRAIN RELATIONSHIP",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260828-020-V1",
+      "evidence_reference": "Lab: EXP-020, Domain: LAGGED CROWD METADATA SIGNAL LAB, Status: LOCKED BEFORE TRAIN RELATIONSHIP, Effect: FAILED_NO_SELECTION_SIGNAL",
+      "details": {
+        "lab": "EXP-020",
+        "domain": "LAGGED CROWD METADATA SIGNAL LAB",
+        "official_effect": "FAILED_NO_SELECTION_SIGNAL",
+        "promotion_status": "false",
+        "source_status": "LAGGED WINNER-COUNT REGIME NEXT-DRAW NUMBER SIGNAL V1"
+      }
+    },
+    {
+      "source_item_id": "SRC-FORMAL-EXP-DRAW-20260930-001-V1",
+      "source_class": "FORMAL_REGISTRY",
+      "source_document": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
+      "source_location": "Table row 69 (Canonical ID: EXP-DRAW-20260930-001-V1)",
+      "source_title": "EDGE ARITHMETIC FAMILY V1",
+      "source_status": "INCONCLUSIVE / NO_SUPPORTED_ENDPOINT",
+      "canonical_experiment_id_if_any": "EXP-DRAW-20260930-001-V1",
+      "evidence_reference": "Lab: EDGE ARITHMETIC TRANSITION LAB, Domain: DRAW, Status: INCONCLUSIVE / NO_SUPPORTED_ENDPOINT, Effect: NONE",
+      "details": {
+        "lab": "EDGE ARITHMETIC TRANSITION LAB",
+        "domain": "DRAW",
+        "official_effect": "NONE",
+        "promotion_status": "false",
+        "source_status": "USER_AUTHORIZED_LOCKED_EXECUTION"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-01-UNIT_3",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 1 (UNIT_3)",
+      "source_title": "UNIT_3 (3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "v2.7 설계, current-1239 rerun",
+      "details": {
+        "axis_name": "UNIT_3",
+        "meaning": "3단위 점유·전멸·복귀. 1239 rerun NORMAL 69.1188.",
+        "evidence": "v2.7 설계, current-1239 rerun"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-02-UNIT_5",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 2 (UNIT_5)",
+      "source_title": "UNIT_5 (5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "number-member trace, rerun",
+      "details": {
+        "axis_name": "UNIT_5",
+        "meaning": "5단위 점유·전멸·복귀. 과거 SEVERE 99.1909와 contiguous 재구축 후 NORMAL 57.4778을 구분.",
+        "evidence": "number-member trace, rerun"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-03-UNIT_9",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 3 (UNIT_9)",
+      "source_title": "UNIT_9 (9단위 전멸구간·복귀깊이 0/1/2. 1239 rerun NORMAL 62.4091.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "v2.5/v2.7, rerun",
+      "details": {
+        "axis_name": "UNIT_9",
+        "meaning": "9단위 전멸구간·복귀깊이 0/1/2. 1239 rerun NORMAL 62.4091.",
+        "evidence": "v2.5/v2.7, rerun"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-04-UNIT_10",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 4 (UNIT_10)",
+      "source_title": "UNIT_10 (10단위 전멸구간과 41..45 크기 보정. 1239 rerun NORMAL 65.4002.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "v2.7, rerun",
+      "details": {
+        "axis_name": "UNIT_10",
+        "meaning": "10단위 전멸구간과 41..45 크기 보정. 1239 rerun NORMAL 65.4002.",
+        "evidence": "v2.7, rerun"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-05-END_DIGIT",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 5 (END_DIGIT)",
+      "source_title": "END_DIGIT (끝수 점유·전멸·복귀. 1239 SEVERE 100.0.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "1239 root-cause trace",
+      "details": {
+        "axis_name": "END_DIGIT",
+        "meaning": "끝수 점유·전멸·복귀. 1239 SEVERE 100.0.",
+        "evidence": "1239 root-cause trace"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-06-NUMBER",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 6 (NUMBER)",
+      "source_title": "NUMBER (개별 번호 구조·멤버십 관문. 1239 selected 0.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "1239 predraw/rerun",
+      "details": {
+        "axis_name": "NUMBER",
+        "meaning": "개별 번호 구조·멤버십 관문. 1239 selected 0.",
+        "evidence": "1239 predraw/rerun"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-07-TRIO",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 7 (TRIO)",
+      "source_title": "TRIO (핵심 조합 단위. `3/3 PRIMARY`, `exact2/3 SUPPORT`.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Core Guide",
+      "details": {
+        "axis_name": "TRIO",
+        "meaning": "핵심 조합 단위. `3/3 PRIMARY`, `exact2/3 SUPPORT`.",
+        "evidence": "Core Guide"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-08-PAIR",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 8 (PAIR)",
+      "source_title": "PAIR (lifecycle/signature/timing shadow repair와 승인 change-control.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "repair audits",
+      "details": {
+        "axis_name": "PAIR",
+        "meaning": "lifecycle/signature/timing shadow repair와 승인 change-control.",
+        "evidence": "repair audits"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-09-CORE",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 9 (CORE)",
+      "source_title": "CORE (NUMBER→TRIO→PAIR→CORE 보호 판정 계층.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Core Guide/manifests",
+      "details": {
+        "axis_name": "CORE",
+        "meaning": "NUMBER→TRIO→PAIR→CORE 보호 판정 계층.",
+        "evidence": "Core Guide/manifests"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-10-FIXED_ORBIT",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 10 (Fixed Orbit)",
+      "source_title": "Fixed Orbit (고정 KTS 3×3 TRIO; 역사 exact3 5/1237.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "TRIO ORBIT result",
+      "details": {
+        "axis_name": "Fixed Orbit",
+        "meaning": "고정 KTS 3×3 TRIO; 역사 exact3 5/1237.",
+        "evidence": "TRIO ORBIT result"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-11-LINKED_ORBIT",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 11 (Linked Orbit)",
+      "source_title": "Linked Orbit (직전 MAIN6+BONUS 연동 3×3 TRIO; 역사 exact3 7/1237, 우월성 미지지.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "TRIO ORBIT/divergence",
+      "details": {
+        "axis_name": "Linked Orbit",
+        "meaning": "직전 MAIN6+BONUS 연동 3×3 TRIO; 역사 exact3 7/1237, 우월성 미지지.",
+        "evidence": "TRIO ORBIT/divergence"
+      }
+    },
+    {
+      "source_item_id": "SRC-OFFICIAL-12-KTS45",
+      "source_class": "OFFICIAL_INTERNAL",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section A Table Row 12 (KTS45)",
+      "source_title": "KTS45 (330 TRIO 고정 schedule; 결과 후 재생성 금지.)",
+      "source_status": "OFFICIAL_FROZEN",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "locked schedule/protocol",
+      "details": {
+        "axis_name": "KTS45",
+        "meaning": "330 TRIO 고정 schedule; 결과 후 재생성 금지.",
+        "evidence": "locked schedule/protocol"
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-01",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 1",
+      "source_title": "TRIO ORBIT Fixed/Linked 역사검증",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "TRIO ORBIT Fixed/Linked 역사검증.",
+      "details": {
+        "original_index": 1,
+        "full_text": "TRIO ORBIT Fixed/Linked 역사검증."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-02",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 2",
+      "source_title": "TRIO ORBIT divergence attribution",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "TRIO ORBIT divergence attribution.",
+      "details": {
+        "original_index": 2,
+        "full_text": "TRIO ORBIT divergence attribution."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-03",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 3",
+      "source_title": "KTS pair-completion collision",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "KTS pair-completion collision.",
+      "details": {
+        "original_index": 3,
+        "full_text": "KTS pair-completion collision."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-04",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 4",
+      "source_title": "LAG 3~6 reappearance map",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "LAG 3~6 reappearance map.",
+      "details": {
+        "original_index": 4,
+        "full_text": "LAG 3~6 reappearance map."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-05",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 5",
+      "source_title": "BONUS extinction interaction",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "BONUS extinction interaction.",
+      "details": {
+        "original_index": 5,
+        "full_text": "BONUS extinction interaction."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-06",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 6",
+      "source_title": "BONUS lag2 interaction",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "BONUS lag2 interaction.",
+      "details": {
+        "original_index": 6,
+        "full_text": "BONUS lag2 interaction."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-07",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 7",
+      "source_title": "Ending-frequency interaction",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Ending-frequency interaction.",
+      "details": {
+        "original_index": 7,
+        "full_text": "Ending-frequency interaction."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-08",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 8",
+      "source_title": "TRIO HOLD causal decomposition",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "TRIO HOLD causal decomposition.",
+      "details": {
+        "original_index": 8,
+        "full_text": "TRIO HOLD causal decomposition."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-09",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 9",
+      "source_title": "Survivor-pool rolling-origin actionability",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Survivor-pool rolling-origin actionability.",
+      "details": {
+        "original_index": 9,
+        "full_text": "Survivor-pool rolling-origin actionability."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-10",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 10",
+      "source_title": "Opposite-period stability filter validation",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Opposite-period stability filter validation.",
+      "details": {
+        "original_index": 10,
+        "full_text": "Opposite-period stability filter validation."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-11",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 11",
+      "source_title": "NO-PICK structural root-cause audit",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "NO-PICK structural root-cause audit.",
+      "details": {
+        "original_index": 11,
+        "full_text": "NO-PICK structural root-cause audit."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-12",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 12",
+      "source_title": "NO-PICK causal trace",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "NO-PICK causal trace.",
+      "details": {
+        "original_index": 12,
+        "full_text": "NO-PICK causal trace."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-13",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 13",
+      "source_title": "NUMBER member-structure SEVERE causal trace",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "NUMBER member-structure SEVERE causal trace.",
+      "details": {
+        "original_index": 13,
+        "full_text": "NUMBER member-structure SEVERE causal trace."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-14",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 14",
+      "source_title": "Current-1239 END_DIGIT severe causal trace",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Current-1239 END_DIGIT severe causal trace.",
+      "details": {
+        "original_index": 14,
+        "full_text": "Current-1239 END_DIGIT severe causal trace."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-15",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 15",
+      "source_title": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Current-1239 NUMBER/END_DIGIT root-cause trace.",
+      "details": {
+        "original_index": 15,
+        "full_text": "Current-1239 NUMBER/END_DIGIT root-cause trace."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-16",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 16",
+      "source_title": "Current-1239 opposite-period causal trace",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Current-1239 opposite-period causal trace.",
+      "details": {
+        "original_index": 16,
+        "full_text": "Current-1239 opposite-period causal trace."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-17",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 17",
+      "source_title": "Current-1239 official pre-draw audit",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Current-1239 official pre-draw audit.",
+      "details": {
+        "original_index": 17,
+        "full_text": "Current-1239 official pre-draw audit."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-18",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 18",
+      "source_title": "Contiguous 1..1238 rebuild and 1239 rerun",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Contiguous 1..1238 rebuild and 1239 rerun.",
+      "details": {
+        "original_index": 18,
+        "full_text": "Contiguous 1..1238 rebuild and 1239 rerun."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-19",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 19",
+      "source_title": "Discovery 2.0 independent-signal audit",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Discovery 2.0 independent-signal audit.",
+      "details": {
+        "original_index": 19,
+        "full_text": "Discovery 2.0 independent-signal audit."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-20",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 20",
+      "source_title": "Pair shadow repair deterministic validation",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Pair shadow repair deterministic validation.",
+      "details": {
+        "original_index": 20,
+        "full_text": "Pair shadow repair deterministic validation."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-21",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 21",
+      "source_title": "Official repair Phase A/B canary/change-control validation",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Official repair Phase A/B canary/change-control validation.",
+      "details": {
+        "original_index": 21,
+        "full_text": "Official repair Phase A/B canary/change-control validation."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-22",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 22",
+      "source_title": "Official repair apply/finalize verification",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Official repair apply/finalize verification.",
+      "details": {
+        "original_index": 22,
+        "full_text": "Official repair apply/finalize verification."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-23",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 23",
+      "source_title": "Crowd topology 001 supporting audit lineage",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Crowd topology 001 supporting audit lineage.",
+      "details": {
+        "original_index": 23,
+        "full_text": "Crowd topology 001 supporting audit lineage."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-24",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 24",
+      "source_title": "Crowd topology 002 independent reproduction/calibration",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Crowd topology 002 independent reproduction/calibration.",
+      "details": {
+        "original_index": 24,
+        "full_text": "Crowd topology 002 independent reproduction/calibration."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-25",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 25",
+      "source_title": "Crowd topology 003 supporting methodology lineage",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Crowd topology 003 supporting methodology lineage.",
+      "details": {
+        "original_index": 25,
+        "full_text": "Crowd topology 003 supporting methodology lineage."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-26",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 26",
+      "source_title": "Crowd retail 001 calibration/reproduction lineage",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Crowd retail 001 calibration/reproduction lineage.",
+      "details": {
+        "original_index": 26,
+        "full_text": "Crowd retail 001 calibration/reproduction lineage."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-27",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 27",
+      "source_title": "Prize-share 001/002 historical validation 및 prospective preparation lineage",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "Prize-share 001/002 historical validation 및 prospective preparation lineage.",
+      "details": {
+        "original_index": 27,
+        "full_text": "Prize-share 001/002 historical validation 및 prospective preparation lineage."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-28",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section C Item 28",
+      "source_title": "LZ76 거시 복잡도 국면 고립 검정 V1",
+      "source_status": "FAILED_NOT_SUPPORTED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "LZ76 거시 복잡도 국면 고립 검정 V1 — `FAILED_NOT_SUPPORTED`; occupancy p1 `0.014598540145985401` PASS, persistence p2 `0.43745625437456254` FAIL, joint `NO`, reproducibility `PASS`, future leakage `0`.",
+      "details": {
+        "original_index": 28,
+        "full_text": "LZ76 거시 복잡도 국면 고립 검정 V1 — `FAILED_NOT_SUPPORTED`; occupancy p1 `0.014598540145985401` PASS, persistence p2 `0.43745625437456254` FAIL, joint `NO`, reproducibility `PASS`, future leakage `0`."
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "## WHOLE-ENGINE synthetic replay semantics recovery audit",
+      "source_title": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/",
+      "details": {
+        "scope": "Historical draw replay without outcome peeking"
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "## 2026-09-30 — TRIO ORBIT RETROSPECTIVE + AUTO RESEARCH LOOP V1",
+      "source_title": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+      "source_status": "ACTIVE",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "v27_storage/audits/trio_orbit_prospective_retrospective_001/",
+      "details": {
+        "scope": "Prospective 5-round null calibration and historical trace"
+      }
+    },
+    {
+      "source_item_id": "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
+      "source_class": "NON_EXP_EXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "## 2026-09-30 — STATISTICAL CORRECTION + RESEARCH DISCOVERY AGENT V1",
+      "source_title": "TRIO ORBIT Statistical Correction & Null Calibration 001",
+      "source_status": "COMPLETED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "v27_storage/audits/trio_orbit_prospective_retrospective_001/TRIO_ORBIT_STATISTICAL_CORRECTION_001.md",
+      "details": {
+        "scope": "Wilson CI and Holm family-wise multiplicity adjustment"
+      }
+    },
+    {
+      "source_item_id": "SRC-REVIEWED-01-MBC_실제_공_추첨순서",
+      "source_class": "REVIEWED_UNEXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section D Table Row 1 (MBC 실제 공 추첨순서 / DRAW-ORDER)",
+      "source_title": "MBC 실제 공 추첨순서 / DRAW-ORDER",
+      "source_status": "REVIEWED_UNEXECUTED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "`REVIEWED_IDEA / LOCAL_FEASIBILITY_EVIDENCE`",
+      "details": {
+        "idea_name": "MBC 실제 공 추첨순서 / DRAW-ORDER",
+        "status_note": "정식 EXP 아님, 효과 검증 미실행, 선행연구 대비 가치가 낮아 보류. source feasibility 12/12만 확인.",
+        "evidence_status": "`REVIEWED_IDEA / LOCAL_FEASIBILITY_EVIDENCE`"
+      }
+    },
+    {
+      "source_item_id": "SRC-REVIEWED-02-REHEARSAL",
+      "source_class": "REVIEWED_UNEXECUTED",
+      "source_document": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
+      "source_location": "Section D Table Row 2 (REHEARSAL / 리허설 번호)",
+      "source_title": "REHEARSAL / 리허설 번호",
+      "source_status": "REVIEWED_UNEXECUTED",
+      "canonical_experiment_id_if_any": null,
+      "evidence_reference": "`USER_DECISION / CONVERSATION_ORIGIN_IDEA / NO_RESULT_EXPECTED`",
+      "details": {
+        "idea_name": "REHEARSAL / 리허설 번호",
+        "status_note": "정식 EXP 아님, EXP-021 아님, 실행 안 함, 사용자 판단으로 패스.",
+        "evidence_status": "`USER_DECISION / CONVERSATION_ORIGIN_IDEA / NO_RESULT_EXPECTED`"
+      }
+    },
+    {
+      "source_item_id": "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244",
+      "source_class": "ACTIVE_PROSPECTIVE",
+      "source_document": "v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md",
+      "source_location": "P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md",
+      "source_title": "TRIO ORBIT Target Round 1244 Prospective Predraw",
+      "source_status": "PENDING_SEALED",
+      "canonical_experiment_id_if_any": "EXP-DRAW-TRIO-ORBIT-PROSPECTIVE-1244",
+      "evidence_reference": "v27_storage/prospective/trio_orbit_v1_001/",
+      "details": {
+        "target_round": 1244,
+        "status": "SEALED_WAITING_FOR_DATA"
+      }
+    }
+  ]
+}
