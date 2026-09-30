@@ -344,3 +344,39 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
     - 기존 64개 포함 총 86개 테스트 전수 통과 (0 failures, 0 errors).
     - 공식 엔진/DB/봉인 파일 변경 0건 (Protection verdict: PASS, Changed: 0).
     - Vercel 배포 불필요 (VERCEL_DEPLOY_NOT_REQUIRED).
+
+- **2026-09-30: [NON-EXP 1:1 LINEAGE & SEMANTIC REFERENTIAL INTEGRITY FINAL PASS]**
+  - **작업 목적:** NON-EXP source item 각각이 실제로 그 연구의 정식 formal experiment / lineage에 연결되어 있는지 전수 1:1 감사하고, 도메인 불일치 및 침묵의 오매핑(silent wrong alias)을 원천 차단하는 Domain Compatibility Hard Guard 구축.
+  - **식별된 핵심 문제 및 원인 (Root Cause):**
+    1. 이전 감사 로직은 target_exists와 lineage 등의 키워드 존재 여부만 검사하여, 소스 도메인(CROWD)과 대상 도메인(DRAW)의 불일치를 탐지하지 못함.
+    2. SRC-NONEXP-23 (Crowd topology 001)이 이전 보고에서 DRAW 도메인의 EXP-DRAW-20260816-038-V2 (NO-PICK) 또는 EXP-CROWD-20260816-001-V1에 잘못 매핑됨.
+    3. SRC-NONEXP-24 (Crowd topology 002)가 이전 보고에서 DRAW 도메인의 EXP-DRAW-20260827-018-V2 (Residual Neighbor) 또는 EXP-CROWD-20260816-002-V1에 잘못 매핑됨.
+    4. 후보 C (IDEA-1243-CROS-003) 상위 매치에 '쌍둥이' 단어 매칭으로 인해 구조적으로 무관한 EXP-DRAW-20260816-023-V1 / 024-V1 (쌍둥이 유사 회차 / 전이)가 유입됨.
+  - **정정 및 구현 성과:**
+    1. **Authoritative Canonical ID 정정:**
+       - SRC-NONEXP-23: EXP-CROWD-20260823-005-V1 (EXP-CROWD-TOPO-001-V1, Row 58) 1:1 ALIAS 매핑.
+       - SRC-NONEXP-24: EXP-CROWD-20260823-006-V1 (EXP-CROWD-TOPO-002-V1, Row 59) 1:1 ALIAS 매핑 (독립 재현 및 calibration 감사 계보 증빙).
+       - SRC-NONEXP-25: EXP-CROWD-20260823-007-V1 (EXP-CROWD-TOPO-003-V1, Row 60) 1:1 ALIAS 매핑.
+       - SRC-NONEXP-26: EXP-CROWD-20260823-008-V1 (EXP-CROWD-RETAIL-001-V1, Row 61) 1:1 ALIAS 매핑.
+       - SRC-NONEXP-27: 다중 대상 계보 (EXP-PRIZE-20260816-001-V2, EXP-PRIZE-20260821-004-V1, EXP-PRIZE-20260821-005-V1)를 갖는 VALID_RELATED_DISTINCT 및 lineage_targets: [] 스키마 지원.
+       - SRC-NONEXP-01 ~ 19, 28 ~ 31: formal parent가 없는 독자 연구를 억지 alias하지 않고 정당한 VALID_DIRECT 레코드로 유지.
+    2. **Domain Compatibility Hard Guard 장착:**
+       - CROWD 소스는 반드시 CROWD 정식 대상에만 매핑 허용 (명시적 교차 증거 없는 한 DRAW/PRIZE 타깃 즉시 차단).
+       - PRIZE 소스는 반드시 PRIZE 정식 대상에만 매핑 허용.
+       - PAIR 소스는 반드시 PAIR change-control 대상에만 매핑 허용 (NUMBER RELATION 타깃 불가).
+       - 위반 시 DOMAIN_MISMATCH_UNJUSTIFIED 및 FAIL_NON_EXP_REFERENTIAL_INTEGRITY로 Fail-Closed 발동.
+    3. **1:1 전수 감사 리포트 산출:**
+       - v27_storage/research_automation/knowledge/NON_EXP_LINEAGE_AUDIT.json
+       - v27_storage/research_automation/knowledge/NON_EXP_LINEAGE_AUDIT.md (31건 전수 감사 결과: VALID_DIRECT 23건, VALID_ALIAS 5건, VALID_MERGE 2건, VALID_RELATED_DISTINCT 1건, 도메인 불일치 0건).
+    4. **후보군 A/B/C 정밀 재평가:**
+       - 후보 A: REJECT_RESCUE 유지 (전멸·복귀 실패축 기준 차단).
+       - 후보 B: REJECT_RESCUE 유지 (간격·인접 실패축 기준 차단).
+       - 후보 C: NEEDS_EVIDENCE 유지 (무관한 쌍둥이 유사 회차 제거 완료, 공식 PAIR 라이프사이클 및 010 수리 행, KTS pair completion 기준 상위 매칭 재구성, 자동 승격 0).
+  - **테스트 및 검증:**
+    - 신규 24개 테스트 추가 (TestNonExpLineageSemanticIntegrity), test_canonical_id_integrity.py 46개 전수 통과.
+    - 전체 5개 연구 자동화 모듈 총 110개 테스트 전수 통과 (기존 86개 + 신규 24개, 0 failures, 0 errors).
+    - 공식 엔진/DB/봉인 파일 변경 0건 (Protection verdict: PASS, Changed: 0).
+    - 런타임 가드 활성화: NON_EXP_LINEAGE_GUARD_ACTIVE = YES, DISCOVERY_FAIL_CLOSED_ACTIVE = YES.
+    - Vercel 배포 불필요: VERCEL_DEPLOY_NOT_REQUIRED.
+    - 최종 판정: PASS_NON_EXP_REFERENTIAL_INTEGRITY 복구 완료.
+

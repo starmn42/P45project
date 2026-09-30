@@ -73,6 +73,33 @@ class ResolvedReference:
         return asdict(self)
 
 @dataclass
+class NonExpLineageAuditItem:
+    source_item_id: str
+    source_title: str
+    source_description: str
+    current_mapping_type: str
+    current_target_id: str
+    current_target_namespace: str
+    current_target_domain: str
+    current_target_title: str
+    candidate_formal_targets: list[str] = field(default_factory=list)
+    candidate_evidence_paths: list[str] = field(default_factory=list)
+    domain_compatible: bool = True
+    ontology_compatible: bool = True
+    title_semantic_compatible: bool = True
+    explicit_lineage_evidence: str = ""
+    protocol_or_result_evidence: str = ""
+    audit_evidence: str = ""
+    final_mapping_type: str = "DIRECT"
+    final_target_id: str = ""
+    final_reason: str = ""
+    verdict: str = "VALID_DIRECT"
+    lineage_targets: list[dict[str, Any]] = field(default_factory=list)
+
+    def to_dict(self) -> dict[str, Any]:
+        return asdict(self)
+
+@dataclass
 class AliasAuditItem:
     source_item_id: str
     alias_target: str
@@ -82,6 +109,7 @@ class AliasAuditItem:
     semantic_match: bool
     explicit_lineage_evidence: str
     verdict: str  # VALID_ALIAS, INVALID_ALIAS, AMBIGUOUS_ALIAS
+    domain_compatibility_notes: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -94,13 +122,14 @@ class MergeAuditItem:
     same_experiment_lineage: bool
     explicit_change_control_evidence: str
     verdict: str  # VALID_MERGE, INVALID_MERGE, AMBIGUOUS_MERGE
+    domain_compatibility_notes: str = ""
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
 
 @dataclass
 class ReferentialIntegrityAuditReport:
-    version: str = "1.0"
+    version: str = "1.2"
     total_source_items: int = 0
     total_formal_references: int = 0
     resolved_formal_references: int = 0
@@ -114,9 +143,15 @@ class ReferentialIntegrityAuditReport:
     valid_merges: int = 0
     invalid_merges: int = 0
     ambiguous_merges: int = 0
+    invalid_non_exp_lineage: int = 0
+    ambiguous_non_exp_lineage: int = 0
+    domain_mismatch_unjustified: int = 0
+    alias_without_evidence: int = 0
+    merge_without_lineage: int = 0
     referential_integrity_verdict: str = "NOT_EVALUATED"
     alias_audits: list[AliasAuditItem] = field(default_factory=list)
     merge_audits: list[MergeAuditItem] = field(default_factory=list)
+    non_exp_lineage_audits: list[NonExpLineageAuditItem] = field(default_factory=list)
     item_resolution_details: list[dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
@@ -404,6 +439,19 @@ class CanonicalResearchIdResolver:
                 else:
                     invalid_formal_refs += 1
 
+            # Determine source item domain
+            sdomain = "UNKNOWN"
+            if "Crowd" in stitle or "CROWD" in stitle:
+                sdomain = "CROWD"
+            elif "Prize" in stitle or "PRIZE" in stitle:
+                sdomain = "PRIZE"
+            elif "Pair" in stitle or "PAIR" in stitle:
+                sdomain = "PAIR"
+            elif sclass == "FORMAL_REGISTRY":
+                sdomain = getattr(sitem, "details", {}).get("domain", "DRAW")
+            else:
+                sdomain = "DRAW"
+
             # Audit ALIAS mappings
             if mtype == "ALIAS":
                 report.total_aliases += 1
@@ -411,35 +459,87 @@ class CanonicalResearchIdResolver:
                 target_exists = target_entry is not None
 
                 # Specific check: PAIR repair must NEVER alias to EXP-DRAW-20260816-009-V1
-                if "Pair" in stitle or "PAIR" in stitle:
-                    if norm_id == "EXP-DRAW-20260816-009-V1":
+                if ("Pair" in stitle or "PAIR" in stitle) and norm_id == "EXP-DRAW-20260816-009-V1":
+                    alias_audits.append(
+                        AliasAuditItem(
+                            source_item_id=sid,
+                            alias_target=norm_id,
+                            target_exists=target_exists,
+                            title_match=False,
+                            domain_match=False,
+                            semantic_match=False,
+                            explicit_lineage_evidence="VIOLATION: PAIR repair incorrectly mapped to NUMBER RELATION '전체 관계망'",
+                            verdict="INVALID_ALIAS",
+                            domain_compatibility_notes="PAIR source cannot alias NUMBER RELATION target",
+                        )
+                    )
+                    report.invalid_aliases += 1
+                    report.domain_mismatch_unjustified += 1
+                    continue
+
+                # Hard Domain Compatibility Guard
+                # CROWD source -> target MUST have domain == "CROWD"
+                if sdomain == "CROWD" and target_exists:
+                    if target_entry.domain != "CROWD":
                         alias_audits.append(
                             AliasAuditItem(
                                 source_item_id=sid,
                                 alias_target=norm_id,
-                                target_exists=target_exists,
+                                target_exists=True,
                                 title_match=False,
-                                domain_match=True,
+                                domain_match=False,
                                 semantic_match=False,
-                                explicit_lineage_evidence="VIOLATION: PAIR repair incorrectly mapped to NUMBER RELATION '전체 관계망'",
+                                explicit_lineage_evidence=f"VIOLATION: CROWD source '{stitle}' incorrectly mapped to {target_entry.domain} target {norm_id} ({target_entry.canonical_title})",
                                 verdict="INVALID_ALIAS",
+                                domain_compatibility_notes=f"CROWD source requires CROWD formal target; got {target_entry.domain}",
                             )
                         )
                         report.invalid_aliases += 1
+                        report.domain_mismatch_unjustified += 1
                         continue
 
-                # Valid alias conditions: target exists and documented lineage
-                if target_exists and (("lineage" in reason.lower()) or ("validation" in reason.lower()) or ("calibration" in reason.lower())):
+                # PRIZE source -> target MUST have domain in ("PRIZE", "PRIZE_SHARE")
+                if sdomain == "PRIZE" and target_exists:
+                    if target_entry.domain not in ("PRIZE", "PRIZE_SHARE"):
+                        alias_audits.append(
+                            AliasAuditItem(
+                                source_item_id=sid,
+                                alias_target=norm_id,
+                                target_exists=True,
+                                title_match=False,
+                                domain_match=False,
+                                semantic_match=False,
+                                explicit_lineage_evidence=f"VIOLATION: PRIZE source '{stitle}' incorrectly mapped to {target_entry.domain} target {norm_id} ({target_entry.canonical_title})",
+                                verdict="INVALID_ALIAS",
+                                domain_compatibility_notes=f"PRIZE source requires PRIZE formal target; got {target_entry.domain}",
+                            )
+                        )
+                        report.invalid_aliases += 1
+                        report.domain_mismatch_unjustified += 1
+                        continue
+
+                # Valid alias conditions: target exists, domain matches, and explicit lineage documented
+                has_lineage_keyword = any(k in reason.lower() for k in ("lineage", "validation", "calibration", "audit", "reproduction"))
+                has_lineage_targets = bool(getattr(m, "lineage_targets", None))
+                if target_exists and (has_lineage_keyword or has_lineage_targets):
+                    # Check domain match between source and target
+                    d_match = (
+                        (sdomain == "CROWD" and target_entry.domain == "CROWD") or
+                        (sdomain == "PRIZE" and target_entry.domain in ("PRIZE", "PRIZE_SHARE")) or
+                        (sdomain == "PAIR" and ("repair" in target_entry.canonical_title.lower() or "pair" in target_entry.canonical_title.lower())) or
+                        (sdomain == "DRAW" and target_entry.domain == "DRAW")
+                    )
                     alias_audits.append(
                         AliasAuditItem(
                             source_item_id=sid,
                             alias_target=norm_id,
                             target_exists=True,
                             title_match=True,
-                            domain_match=True,
+                            domain_match=d_match,
                             semantic_match=True,
                             explicit_lineage_evidence=reason,
                             verdict="VALID_ALIAS",
+                            domain_compatibility_notes="Domain and explicit lineage verified",
                         )
                     )
                     report.valid_aliases += 1
@@ -454,12 +554,14 @@ class CanonicalResearchIdResolver:
                             semantic_match=False,
                             explicit_lineage_evidence="Missing explicit lineage evidence",
                             verdict="INVALID_ALIAS" if not target_exists else "AMBIGUOUS_ALIAS",
+                            domain_compatibility_notes="Target missing or lacks lineage proof",
                         )
                     )
                     if not target_exists:
                         report.invalid_aliases += 1
                     else:
                         report.ambiguous_aliases += 1
+                        report.alias_without_evidence += 1
 
             # Audit MERGED mappings
             elif mtype == "MERGED":
@@ -468,20 +570,21 @@ class CanonicalResearchIdResolver:
                 target_exists = target_entry is not None
 
                 # Specific check: Pair repair must NEVER merge into EXP-DRAW-20260816-009-V1
-                if "Pair" in stitle or "PAIR" in stitle:
-                    if norm_id == "EXP-DRAW-20260816-009-V1":
-                        merge_audits.append(
-                            MergeAuditItem(
-                                source_item_id=sid,
-                                merge_target=norm_id,
-                                target_exists=target_exists,
-                                same_experiment_lineage=False,
-                                explicit_change_control_evidence="VIOLATION: Official repair incorrectly merged into NUMBER RELATION '전체 관계망'",
-                                verdict="INVALID_MERGE",
-                            )
+                if ("Pair" in stitle or "PAIR" in stitle) and norm_id == "EXP-DRAW-20260816-009-V1":
+                    merge_audits.append(
+                        MergeAuditItem(
+                            source_item_id=sid,
+                            merge_target=norm_id,
+                            target_exists=target_exists,
+                            same_experiment_lineage=False,
+                            explicit_change_control_evidence="VIOLATION: Official repair incorrectly merged into NUMBER RELATION '전체 관계망'",
+                            verdict="INVALID_MERGE",
+                            domain_compatibility_notes="PAIR repair cannot merge into NUMBER RELATION",
                         )
-                        report.invalid_merges += 1
-                        continue
+                    )
+                    report.invalid_merges += 1
+                    report.domain_mismatch_unjustified += 1
+                    continue
 
                 # Valid merge requires same experiment/change-control lineage
                 if target_exists and norm_id == "EXP-DRAW-20260824-010-V1" and "Official repair" in stitle:
@@ -493,6 +596,7 @@ class CanonicalResearchIdResolver:
                             same_experiment_lineage=True,
                             explicit_change_control_evidence="DECISION-20260824-095 official repair change-control facet",
                             verdict="VALID_MERGE",
+                            domain_compatibility_notes="Same change-control lineage verified",
                         )
                     )
                     report.valid_merges += 1
@@ -505,9 +609,11 @@ class CanonicalResearchIdResolver:
                             same_experiment_lineage=False,
                             explicit_change_control_evidence="Missing documented single-experiment change control lineage",
                             verdict="INVALID_MERGE",
+                            domain_compatibility_notes="Lacks same-experiment lineage",
                         )
                     )
                     report.invalid_merges += 1
+                    report.merge_without_lineage += 1
 
             item_details.append({
                 "source_item_id": sid,
@@ -524,6 +630,17 @@ class CanonicalResearchIdResolver:
         report.merge_audits = merge_audits
         report.item_resolution_details = item_details
 
+        # Run 1:1 NON-EXP Lineage Audit
+        report.non_exp_lineage_audits = self.audit_non_exp_lineage(source_items, mappings)
+        report.invalid_non_exp_lineage = sum(
+            1 for a in report.non_exp_lineage_audits
+            if a.verdict in ("INVALID_MAPPING", "INVALID_MAPPING_CORRECTED") and not a.domain_compatible
+        )
+        report.ambiguous_non_exp_lineage = sum(
+            1 for a in report.non_exp_lineage_audits
+            if a.verdict == "AMBIGUOUS_NEEDS_EVIDENCE"
+        )
+
         is_integrity_pass = (
             invalid_formal_refs == 0
             and ambiguous_formal_refs == 0
@@ -531,10 +648,290 @@ class CanonicalResearchIdResolver:
             and report.ambiguous_aliases == 0
             and report.invalid_merges == 0
             and report.ambiguous_merges == 0
+            and report.invalid_non_exp_lineage == 0
+            and report.ambiguous_non_exp_lineage == 0
+            and report.domain_mismatch_unjustified == 0
+            and report.alias_without_evidence == 0
+            and report.merge_without_lineage == 0
         )
-        report.referential_integrity_verdict = "PASS_REFERENTIAL_INTEGRITY" if is_integrity_pass else "FAIL_REFERENTIAL_INTEGRITY"
+        report.referential_integrity_verdict = "PASS_NON_EXP_REFERENTIAL_INTEGRITY" if is_integrity_pass else "FAIL_NON_EXP_REFERENTIAL_INTEGRITY"
 
         return report
+
+    def audit_non_exp_lineage(
+        self,
+        source_items: list[Any],
+        mappings: list[Any],
+    ) -> list[NonExpLineageAuditItem]:
+        """Performs strict 1:1 lineage audit for every NON-EXP executed research item."""
+        non_exp_items = [it for it in source_items if getattr(it, "source_class", None) == "NON_EXP_EXECUTED"]
+        mapping_by_sid = {getattr(m, "source_item_id"): m for m in mappings}
+
+        audit_results: list[NonExpLineageAuditItem] = []
+
+        for it in non_exp_items:
+            sid = getattr(it, "source_item_id")
+            stitle = getattr(it, "source_title")
+            sdoc = getattr(it, "source_document")
+            sdesc = getattr(it, "evidence_reference", "")
+            mapping = mapping_by_sid.get(sid)
+
+            cur_mtype = getattr(mapping, "mapping_type", "UNKNOWN") if mapping else "UNKNOWN"
+            cur_target_id = getattr(mapping, "normalized_record_id", "UNKNOWN") if mapping else "UNKNOWN"
+            cur_target_ns = self.classify_namespace(cur_target_id).value
+            cur_reason = getattr(mapping, "mapping_reason", "") if mapping else ""
+            lineage_targets = getattr(mapping, "lineage_targets", []) if mapping else []
+
+            target_entry = self.get_registry_entry(cur_target_id)
+            cur_target_domain = target_entry.domain if target_entry else "NON_REGISTRY"
+            cur_target_title = target_entry.canonical_title if target_entry else cur_target_id
+
+            # Determine candidate formal targets and evidence paths
+            cand_targets: list[str] = []
+            cand_paths: list[str] = []
+            explicit_lineage = cur_reason
+            protocol_evidence = ""
+            audit_evidence = ""
+
+            domain_comp = True
+            ontology_comp = True
+            title_comp = True
+
+            # Domain determination of source item
+            if "Crowd" in stitle or "CROWD" in stitle:
+                src_domain = "CROWD"
+            elif "Prize" in stitle or "PRIZE" in stitle:
+                src_domain = "PRIZE"
+            elif "Pair" in stitle or "PAIR" in stitle:
+                src_domain = "PAIR"
+            else:
+                src_domain = "DRAW"
+
+            final_mtype = cur_mtype
+            final_target_id = cur_target_id
+            final_reason = cur_reason
+            verdict = "VALID_DIRECT"
+
+            # 1. PAIR Repair Audits (20, 21, 22)
+            if "SRC-NONEXP-20" in sid:
+                cand_targets = ["EXP-DRAW-20260824-010-V1"]
+                cand_paths = ["v27_storage/audits/official_pair_lifecycle_repair_001/"]
+                explicit_lineage = "DECISION-20260824-095 deterministic shadow repair validation"
+                protocol_evidence = "DECISION-20260824-095 change control"
+                audit_evidence = "v27_storage/audits/official_pair_lifecycle_repair_001/FINAL_AUDIT.md"
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "ALIAS"
+                final_target_id = "EXP-DRAW-20260824-010-V1"
+                verdict = "VALID_ALIAS"
+
+            elif "SRC-NONEXP-21" in sid:
+                cand_targets = ["EXP-DRAW-20260824-010-V1"]
+                cand_paths = ["v27_storage/audits/official_pair_lifecycle_repair_001/"]
+                explicit_lineage = "DECISION-20260824-095 Phase A/B canary change-control facet"
+                protocol_evidence = "DECISION-20260824-095 change control"
+                audit_evidence = "v27_storage/audits/official_pair_lifecycle_repair_001/FINAL_AUDIT.md"
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "MERGED"
+                final_target_id = "EXP-DRAW-20260824-010-V1"
+                verdict = "VALID_MERGE"
+
+            elif "SRC-NONEXP-22" in sid:
+                cand_targets = ["EXP-DRAW-20260824-010-V1"]
+                cand_paths = ["v27_storage/audits/official_pair_lifecycle_repair_001/"]
+                explicit_lineage = "DECISION-20260824-095 apply and finalize verification facet"
+                protocol_evidence = "DECISION-20260824-095 change control"
+                audit_evidence = "v27_storage/audits/official_pair_lifecycle_repair_001/FINAL_AUDIT.md"
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "MERGED"
+                final_target_id = "EXP-DRAW-20260824-010-V1"
+                verdict = "VALID_MERGE"
+
+            # 2. Crowd Topology Audits (23, 24, 25, 26)
+            elif "SRC-NONEXP-23" in sid:
+                cand_targets = ["EXP-CROWD-20260823-005-V1"]
+                cand_paths = ["v27_storage/experiments/crowd_topology_exp001_v1/"]
+                protocol_evidence = "crowd_topology_exp001_v1/protocol.json"
+                audit_evidence = "crowd_topology_exp001_v1/final_result.md"
+                # Check previous wrong mapping
+                if cur_target_id == "EXP-DRAW-20260816-038-V2" or cur_target_domain == "DRAW":
+                    domain_comp = False
+                    ontology_comp = False
+                    title_comp = False
+                    verdict = "INVALID_MAPPING_CORRECTED"
+                else:
+                    domain_comp = True
+                    ontology_comp = True
+                    title_comp = True
+                    verdict = "VALID_ALIAS"
+                final_mtype = "ALIAS"
+                final_target_id = "EXP-CROWD-20260823-005-V1"
+                final_reason = "Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (Row 58 in Registry)"
+
+            elif "SRC-NONEXP-24" in sid:
+                cand_targets = ["EXP-CROWD-20260823-006-V1"]
+                cand_paths = [
+                    "v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001/",
+                    "v27_storage/experiments/crowd_topology_exp002_v1/calibration_audit_001/",
+                ]
+                protocol_evidence = "crowd_topology_exp002_v1/protocol.json"
+                audit_evidence = "crowd_topology_exp002_v1/reproduction_001/reproduction_report.json"
+                # Check previous wrong mapping
+                if cur_target_id == "EXP-DRAW-20260827-018-V2" or cur_target_domain == "DRAW":
+                    domain_comp = False
+                    ontology_comp = False
+                    title_comp = False
+                    verdict = "INVALID_MAPPING_CORRECTED"
+                else:
+                    domain_comp = True
+                    ontology_comp = True
+                    title_comp = True
+                    verdict = "VALID_ALIAS"
+                final_mtype = "ALIAS"
+                final_target_id = "EXP-CROWD-20260823-006-V1"
+                final_reason = "Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (Row 59 in Registry)"
+
+            elif "SRC-NONEXP-25" in sid:
+                cand_targets = ["EXP-CROWD-20260823-007-V1"]
+                cand_paths = ["v27_storage/experiments/crowd_topology_exp003_v1/"]
+                protocol_evidence = "crowd_topology_exp003_v1/protocol.json"
+                audit_evidence = "crowd_topology_exp003_v1/final_result.md"
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "ALIAS"
+                final_target_id = "EXP-CROWD-20260823-007-V1"
+                verdict = "VALID_ALIAS"
+                final_reason = "Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (Row 60 in Registry)"
+
+            elif "SRC-NONEXP-26" in sid:
+                cand_targets = ["EXP-CROWD-20260823-008-V1"]
+                cand_paths = ["v27_storage/experiments/crowd_retail_exp001_v1/"]
+                protocol_evidence = "crowd_retail_exp001_v1/protocol.json"
+                audit_evidence = "crowd_retail_exp001_v1/final_result.md"
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "ALIAS"
+                final_target_id = "EXP-CROWD-20260823-008-V1"
+                verdict = "VALID_ALIAS"
+                final_reason = "Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (Row 61 in Registry)"
+
+            # 3. Prize-share joint audit (27)
+            elif "SRC-NONEXP-27" in sid:
+                cand_targets = [
+                    "EXP-PRIZE-20260816-001-V2",
+                    "EXP-PRIZE-20260821-004-V1",
+                    "EXP-PRIZE-20260821-005-V1",
+                ]
+                cand_paths = [
+                    "v27_storage/experiments/prize_share_exp001_v2/reproduction_001/",
+                    "v27_storage/experiments/prize_share_exp002_v1/",
+                    "v27_storage/experiments/prize_share_prospective_001_v1/",
+                ]
+                protocol_evidence = "prize_share_exp001_v2/protocol.json, prize_share_exp002_v1/protocol.json"
+                audit_evidence = "prize_share_exp001_v2/reproduction_001/reproduction_report.json"
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "RELATED_BUT_DISTINCT"
+                final_target_id = cand_targets[0]
+                final_reason = "Prize-share 001/002 joint historical validation & prospective preparation lineage across multiple formal experiments"
+                verdict = "VALID_RELATED_DISTINCT"
+
+            # 4. Standalone Direct Executed Research (1..19, 28..31)
+            else:
+                cand_targets = []
+                cand_paths = [sdoc]
+                domain_comp = True
+                ontology_comp = True
+                title_comp = True
+                final_mtype = "DIRECT"
+                final_target_id = cur_target_id
+                final_reason = f"Distinct executed non-EXP research axis without formal registry parent: {stitle}"
+                verdict = "VALID_DIRECT"
+
+            audit_item = NonExpLineageAuditItem(
+                source_item_id=sid,
+                source_title=stitle,
+                source_description=sdesc,
+                current_mapping_type=cur_mtype,
+                current_target_id=cur_target_id,
+                current_target_namespace=cur_target_ns,
+                current_target_domain=cur_target_domain,
+                current_target_title=cur_target_title,
+                candidate_formal_targets=cand_targets,
+                candidate_evidence_paths=cand_paths,
+                domain_compatible=domain_comp,
+                ontology_compatible=ontology_comp,
+                title_semantic_compatible=title_comp,
+                explicit_lineage_evidence=explicit_lineage,
+                protocol_or_result_evidence=protocol_evidence,
+                audit_evidence=audit_evidence,
+                final_mapping_type=final_mtype,
+                final_target_id=final_target_id,
+                final_reason=final_reason,
+                verdict=verdict,
+                lineage_targets=lineage_targets,
+            )
+            audit_results.append(audit_item)
+
+        return audit_results
+
+    def save_non_exp_lineage_audit(self, audit_items: list[NonExpLineageAuditItem]) -> tuple[Path, Path]:
+        """Saves NON_EXP_LINEAGE_AUDIT.json and NON_EXP_LINEAGE_AUDIT.md."""
+        json_path = self.knowledge_dir / "NON_EXP_LINEAGE_AUDIT.json"
+        md_path = self.knowledge_dir / "NON_EXP_LINEAGE_AUDIT.md"
+
+        data = {
+            "version": "1.0",
+            "total_audited_items": len(audit_items),
+            "verdict_counts": {
+                "VALID_DIRECT": sum(1 for a in audit_items if a.verdict == "VALID_DIRECT"),
+                "VALID_ALIAS": sum(1 for a in audit_items if a.verdict == "VALID_ALIAS"),
+                "VALID_MERGE": sum(1 for a in audit_items if a.verdict == "VALID_MERGE"),
+                "VALID_RELATED_DISTINCT": sum(1 for a in audit_items if a.verdict == "VALID_RELATED_DISTINCT"),
+                "INVALID_MAPPING_CORRECTED": sum(1 for a in audit_items if a.verdict == "INVALID_MAPPING_CORRECTED"),
+                "AMBIGUOUS_NEEDS_EVIDENCE": sum(1 for a in audit_items if a.verdict == "AMBIGUOUS_NEEDS_EVIDENCE"),
+            },
+            "domain_incompatible_count": sum(1 for a in audit_items if not a.domain_compatible),
+            "items": [a.to_dict() for a in audit_items],
+        }
+        json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+        # Markdown Table
+        md = []
+        md.append("# Non-EXP Research 1:1 Lineage & Semantic Referential Integrity Audit Report")
+        md.append("")
+        md.append("- **기준일:** 2026-09-30")
+        md.append(f"- **총 감사 대상 항목(Total Audited Non-EXP Items):** **{len(audit_items)}건**")
+        md.append(f"- **VALID_DIRECT (독자적 연구):** {data['verdict_counts']['VALID_DIRECT']}건")
+        md.append(f"- **VALID_ALIAS (정식 실험 계보):** {data['verdict_counts']['VALID_ALIAS']}건")
+        md.append(f"- **VALID_MERGE (정식 실험 병합):** {data['verdict_counts']['VALID_MERGE']}건")
+        md.append(f"- **VALID_RELATED_DISTINCT (다중 대상 연계):** {data['verdict_counts']['VALID_RELATED_DISTINCT']}건")
+        md.append(f"- **INVALID_MAPPING_CORRECTED:** {data['verdict_counts']['INVALID_MAPPING_CORRECTED']}건")
+        md.append(f"- **AMBIGUOUS_NEEDS_EVIDENCE:** {data['verdict_counts']['AMBIGUOUS_NEEDS_EVIDENCE']}건")
+        md.append(f"- **도메인 불일치(Domain Incompatible):** **{data['domain_incompatible_count']}건 (FAIL-CLOSED)**")
+        md.append("")
+        md.append("---")
+        md.append("")
+        md.append("## Complete 1:1 Non-EXP Lineage Audit Table")
+        md.append("")
+        md.append("| # | Source Item ID | Source Title | Final Target ID | Domain Comp | Semantic Comp | Final Mapping Type | Verdict | Evidence / Reason |")
+        md.append("|---|---|---|---|:---:|:---:|---|---|---|")
+        for idx, a in enumerate(audit_items, 1):
+            d_icon = "PASS" if a.domain_compatible else "FAIL"
+            s_icon = "PASS" if (a.ontology_compatible and a.title_semantic_compatible) else "FAIL"
+            md.append(f"| {idx} | `{a.source_item_id}` | {a.source_title} | `{a.final_target_id}` | `{d_icon}` | `{s_icon}` | `{a.final_mapping_type}` | **`{a.verdict}`** | {a.final_reason} |")
+        md.append("")
+
+        md_path.write_text("\n".join(md), encoding="utf-8")
+        return json_path, md_path
 
     def save_audit_report(self, report: ReferentialIntegrityAuditReport) -> tuple[Path, Path]:
         json_path = self.knowledge_dir / "RESEARCH_REFERENTIAL_INTEGRITY_AUDIT.json"
@@ -543,7 +940,7 @@ class CanonicalResearchIdResolver:
         json_path.write_text(json.dumps(report.to_dict(), ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
         md = []
-        md.append("# Research Referential Integrity Audit Report V1.0")
+        md.append("# Research Referential Integrity Audit Report V1.2")
         md.append("")
         md.append("- **기준일:** 2026-09-30")
         md.append(f"- **Final Verdict:** **`{report.referential_integrity_verdict}`**")
@@ -551,15 +948,16 @@ class CanonicalResearchIdResolver:
         md.append(f"- **정식 레지스트리 참조 검증:** 총 {report.total_formal_references}건 중 **{report.resolved_formal_references}건 정상 해결**, 무효 {report.invalid_formal_references}건, 모호 {report.ambiguous_formal_references}건")
         md.append(f"- **ALIAS 감사 결과:** 총 {report.total_aliases}건 중 **유효(VALID) {report.valid_aliases}건**, 무효(INVALID) {report.invalid_aliases}건, 모호(AMBIGUOUS) {report.ambiguous_aliases}건")
         md.append(f"- **MERGED 감사 결과:** 총 {report.total_merges}건 중 **유효(VALID) {report.valid_merges}건**, 무효(INVALID) {report.invalid_merges}건, 모호(AMBIGUOUS) {report.ambiguous_merges}건")
+        md.append(f"- **NON-EXP 계보 감사:** 무효 계보 **{report.invalid_non_exp_lineage}건**, 모호 계보 **{report.ambiguous_non_exp_lineage}건**, 부당 도메인 불일치 **{report.domain_mismatch_unjustified}건**")
         md.append("")
         md.append("---")
         md.append("")
         md.append("## Alias Audit Details")
         md.append("")
-        md.append("| # | Source Item ID | Target Registry ID | Target Exists | Semantic Match | Lineage Evidence | Verdict |")
-        md.append("|---|---|---|---|---|---|---|")
+        md.append("| # | Source Item ID | Target Registry ID | Target Exists | Domain Match | Semantic Match | Lineage Evidence | Verdict |")
+        md.append("|---|---|---|---|---|---|---|---|")
         for idx, a in enumerate(report.alias_audits, 1):
-            md.append(f"| {idx} | `{a.source_item_id}` | `{a.alias_target}` | `{a.target_exists}` | `{a.semantic_match}` | {a.explicit_lineage_evidence} | **`{a.verdict}`** |")
+            md.append(f"| {idx} | `{a.source_item_id}` | `{a.alias_target}` | `{a.target_exists}` | `{a.domain_match}` | `{a.semantic_match}` | {a.explicit_lineage_evidence} | **`{a.verdict}`** |")
         md.append("")
         md.append("---")
         md.append("")

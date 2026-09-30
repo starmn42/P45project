@@ -6,21 +6,26 @@
   "is_complete": true,
   "has_referential_integrity": true,
   "referential_integrity_audit": {
-    "version": "1.0",
+    "version": "1.2",
     "total_source_items": 115,
     "total_formal_references": 69,
     "resolved_formal_references": 69,
     "invalid_formal_references": 0,
     "ambiguous_formal_references": 0,
-    "total_aliases": 6,
-    "valid_aliases": 6,
+    "total_aliases": 5,
+    "valid_aliases": 5,
     "invalid_aliases": 0,
     "ambiguous_aliases": 0,
     "total_merges": 2,
     "valid_merges": 2,
     "invalid_merges": 0,
     "ambiguous_merges": 0,
-    "referential_integrity_verdict": "PASS_REFERENTIAL_INTEGRITY",
+    "invalid_non_exp_lineage": 0,
+    "ambiguous_non_exp_lineage": 0,
+    "domain_mismatch_unjustified": 0,
+    "alias_without_evidence": 0,
+    "merge_without_lineage": 0,
+    "referential_integrity_verdict": "PASS_NON_EXP_REFERENTIAL_INTEGRITY",
     "alias_audits": [
       {
         "source_item_id": "SRC-NONEXP-20",
@@ -30,57 +35,52 @@
         "domain_match": true,
         "semantic_match": true,
         "explicit_lineage_evidence": "Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)",
-        "verdict": "VALID_ALIAS"
+        "verdict": "VALID_ALIAS",
+        "domain_compatibility_notes": "Domain and explicit lineage verified"
       },
       {
         "source_item_id": "SRC-NONEXP-23",
-        "alias_target": "EXP-CROWD-20260816-001-V1",
+        "alias_target": "EXP-CROWD-20260823-005-V1",
         "target_exists": true,
         "title_match": true,
         "domain_match": true,
         "semantic_match": true,
-        "explicit_lineage_evidence": "Crowd topology 001 supporting audit lineage of formal experiment",
-        "verdict": "VALID_ALIAS"
+        "explicit_lineage_evidence": "Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (EXP-CROWD-20260823-005-V1, Row 58 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "domain_compatibility_notes": "Domain and explicit lineage verified"
       },
       {
         "source_item_id": "SRC-NONEXP-24",
-        "alias_target": "EXP-CROWD-20260816-002-V1",
+        "alias_target": "EXP-CROWD-20260823-006-V1",
         "target_exists": true,
         "title_match": true,
         "domain_match": true,
         "semantic_match": true,
-        "explicit_lineage_evidence": "Crowd topology 002 independent calibration lineage of formal experiment",
-        "verdict": "VALID_ALIAS"
+        "explicit_lineage_evidence": "Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (EXP-CROWD-20260823-006-V1, Row 59 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "domain_compatibility_notes": "Domain and explicit lineage verified"
       },
       {
         "source_item_id": "SRC-NONEXP-25",
-        "alias_target": "EXP-CROWD-20260816-003-V1",
+        "alias_target": "EXP-CROWD-20260823-007-V1",
         "target_exists": true,
         "title_match": true,
         "domain_match": true,
         "semantic_match": true,
-        "explicit_lineage_evidence": "Crowd topology 003 methodology supporting lineage of formal experiment",
-        "verdict": "VALID_ALIAS"
+        "explicit_lineage_evidence": "Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (EXP-CROWD-20260823-007-V1, Row 60 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "domain_compatibility_notes": "Domain and explicit lineage verified"
       },
       {
         "source_item_id": "SRC-NONEXP-26",
-        "alias_target": "EXP-CROWD-20260816-004-V1",
+        "alias_target": "EXP-CROWD-20260823-008-V1",
         "target_exists": true,
         "title_match": true,
         "domain_match": true,
         "semantic_match": true,
-        "explicit_lineage_evidence": "Crowd retail 001 calibration lineage of formal experiment",
-        "verdict": "VALID_ALIAS"
-      },
-      {
-        "source_item_id": "SRC-NONEXP-27",
-        "alias_target": "EXP-PRIZE-20260816-001-V1",
-        "target_exists": true,
-        "title_match": true,
-        "domain_match": true,
-        "semantic_match": true,
-        "explicit_lineage_evidence": "Prize-share 001/002 historical validation and prospective lineage",
-        "verdict": "VALID_ALIAS"
+        "explicit_lineage_evidence": "Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (EXP-CROWD-20260823-008-V1, Row 61 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "domain_compatibility_notes": "Domain and explicit lineage verified"
       }
     ],
     "merge_audits": [
@@ -90,7 +90,8 @@
         "target_exists": true,
         "same_experiment_lineage": true,
         "explicit_change_control_evidence": "DECISION-20260824-095 official repair change-control facet",
-        "verdict": "VALID_MERGE"
+        "verdict": "VALID_MERGE",
+        "domain_compatibility_notes": "Same change-control lineage verified"
       },
       {
         "source_item_id": "SRC-NONEXP-22",
@@ -98,7 +99,874 @@
         "target_exists": true,
         "same_experiment_lineage": true,
         "explicit_change_control_evidence": "DECISION-20260824-095 official repair change-control facet",
-        "verdict": "VALID_MERGE"
+        "verdict": "VALID_MERGE",
+        "domain_compatibility_notes": "Same change-control lineage verified"
+      }
+    ],
+    "non_exp_lineage_audits": [
+      {
+        "source_item_id": "SRC-NONEXP-01",
+        "source_title": "TRIO ORBIT Fixed/Linked 역사검증",
+        "source_description": "TRIO ORBIT Fixed/Linked 역사검증.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-TRIO-ORBIT-FIXED",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-TRIO-ORBIT-FIXED",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO ORBIT Fixed/Linked 역사검증",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-TRIO-ORBIT-FIXED",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO ORBIT Fixed/Linked 역사검증",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-02",
+        "source_title": "TRIO ORBIT divergence attribution",
+        "source_description": "TRIO ORBIT divergence attribution.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-TRIO-ORBIT-LINKED",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-TRIO-ORBIT-LINKED",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO ORBIT divergence attribution",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-TRIO-ORBIT-LINKED",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO ORBIT divergence attribution",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-03",
+        "source_title": "KTS pair-completion collision",
+        "source_description": "KTS pair-completion collision.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-03",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-03",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: KTS pair-completion collision",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-03",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: KTS pair-completion collision",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-04",
+        "source_title": "LAG 3~6 reappearance map",
+        "source_description": "LAG 3~6 reappearance map.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-04",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-04",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: LAG 3~6 reappearance map",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-04",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: LAG 3~6 reappearance map",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-05",
+        "source_title": "BONUS extinction interaction",
+        "source_description": "BONUS extinction interaction.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-05",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-05",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: BONUS extinction interaction",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-05",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: BONUS extinction interaction",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-06",
+        "source_title": "BONUS lag2 interaction",
+        "source_description": "BONUS lag2 interaction.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-06",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-06",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: BONUS lag2 interaction",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-06",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: BONUS lag2 interaction",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-07",
+        "source_title": "Ending-frequency interaction",
+        "source_description": "Ending-frequency interaction.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-07",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-07",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Ending-frequency interaction",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-07",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Ending-frequency interaction",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-08",
+        "source_title": "TRIO HOLD causal decomposition",
+        "source_description": "TRIO HOLD causal decomposition.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-08",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-08",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO HOLD causal decomposition",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-08",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO HOLD causal decomposition",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-09",
+        "source_title": "Survivor-pool rolling-origin actionability",
+        "source_description": "Survivor-pool rolling-origin actionability.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-09",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-09",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Survivor-pool rolling-origin actionability",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-09",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Survivor-pool rolling-origin actionability",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-10",
+        "source_title": "Opposite-period stability filter validation",
+        "source_description": "Opposite-period stability filter validation.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-10",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-10",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Opposite-period stability filter validation",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-10",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Opposite-period stability filter validation",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-11",
+        "source_title": "NO-PICK structural root-cause audit",
+        "source_description": "NO-PICK structural root-cause audit.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-11",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-11",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: NO-PICK structural root-cause audit",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-11",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: NO-PICK structural root-cause audit",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-12",
+        "source_title": "NO-PICK causal trace",
+        "source_description": "NO-PICK causal trace.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-12",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-12",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: NO-PICK causal trace",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-12",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: NO-PICK causal trace",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-13",
+        "source_title": "NUMBER member-structure SEVERE causal trace",
+        "source_description": "NUMBER member-structure SEVERE causal trace.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-13",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-13",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: NUMBER member-structure SEVERE causal trace",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-13",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: NUMBER member-structure SEVERE causal trace",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-14",
+        "source_title": "Current-1239 END_DIGIT severe causal trace",
+        "source_description": "Current-1239 END_DIGIT severe causal trace.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-14",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-14",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 END_DIGIT severe causal trace",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-14",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 END_DIGIT severe causal trace",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-15",
+        "source_title": "Current-1239 NUMBER/END_DIGIT root-cause trace",
+        "source_description": "Current-1239 NUMBER/END_DIGIT root-cause trace.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-15",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-15",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 NUMBER/END_DIGIT root-cause trace",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-15",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 NUMBER/END_DIGIT root-cause trace",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-16",
+        "source_title": "Current-1239 opposite-period causal trace",
+        "source_description": "Current-1239 opposite-period causal trace.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-16",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-16",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 opposite-period causal trace",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-16",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 opposite-period causal trace",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-17",
+        "source_title": "Current-1239 official pre-draw audit",
+        "source_description": "Current-1239 official pre-draw audit.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-17",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-17",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Current-1239 official pre-draw audit",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-17",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Current-1239 official pre-draw audit",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-18",
+        "source_title": "Contiguous 1..1238 rebuild and 1239 rerun",
+        "source_description": "Contiguous 1..1238 rebuild and 1239 rerun.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-18",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-18",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-18",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Contiguous 1..1238 rebuild and 1239 rerun",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-19",
+        "source_title": "Discovery 2.0 independent-signal audit",
+        "source_description": "Discovery 2.0 independent-signal audit.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-19",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-19",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-19",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: Discovery 2.0 independent-signal audit",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-20",
+        "source_title": "Pair shadow repair deterministic validation",
+        "source_description": "Pair shadow repair deterministic validation.",
+        "current_mapping_type": "ALIAS",
+        "current_target_id": "EXP-DRAW-20260824-010-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "DRAW",
+        "current_target_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+        "candidate_formal_targets": [
+          "EXP-DRAW-20260824-010-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/audits/official_pair_lifecycle_repair_001/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "DECISION-20260824-095 deterministic shadow repair validation",
+        "protocol_or_result_evidence": "DECISION-20260824-095 change control",
+        "audit_evidence": "v27_storage/audits/official_pair_lifecycle_repair_001/FINAL_AUDIT.md",
+        "final_mapping_type": "ALIAS",
+        "final_target_id": "EXP-DRAW-20260824-010-V1",
+        "final_reason": "Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)",
+        "verdict": "VALID_ALIAS",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-DRAW-20260824-010-V1",
+            "domain": "DRAW",
+            "relationship": "SHADOW_REPAIR_DETERMINISTIC_VALIDATION",
+            "evidence": "DECISION-20260824-095 deterministic validation"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-21",
+        "source_title": "Official repair Phase A/B canary/change-control validation",
+        "source_description": "Official repair Phase A/B canary/change-control validation.",
+        "current_mapping_type": "MERGED",
+        "current_target_id": "EXP-DRAW-20260824-010-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "DRAW",
+        "current_target_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+        "candidate_formal_targets": [
+          "EXP-DRAW-20260824-010-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/audits/official_pair_lifecycle_repair_001/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "DECISION-20260824-095 Phase A/B canary change-control facet",
+        "protocol_or_result_evidence": "DECISION-20260824-095 change control",
+        "audit_evidence": "v27_storage/audits/official_pair_lifecycle_repair_001/FINAL_AUDIT.md",
+        "final_mapping_type": "MERGED",
+        "final_target_id": "EXP-DRAW-20260824-010-V1",
+        "final_reason": "Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
+        "verdict": "VALID_MERGE",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-DRAW-20260824-010-V1",
+            "domain": "DRAW",
+            "relationship": "CANARY_CHANGE_CONTROL_FACET",
+            "evidence": "DECISION-20260824-095 Phase A/B canary validation"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-22",
+        "source_title": "Official repair apply/finalize verification",
+        "source_description": "Official repair apply/finalize verification.",
+        "current_mapping_type": "MERGED",
+        "current_target_id": "EXP-DRAW-20260824-010-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "DRAW",
+        "current_target_title": "OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT",
+        "candidate_formal_targets": [
+          "EXP-DRAW-20260824-010-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/audits/official_pair_lifecycle_repair_001/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "DECISION-20260824-095 apply and finalize verification facet",
+        "protocol_or_result_evidence": "DECISION-20260824-095 change control",
+        "audit_evidence": "v27_storage/audits/official_pair_lifecycle_repair_001/FINAL_AUDIT.md",
+        "final_mapping_type": "MERGED",
+        "final_target_id": "EXP-DRAW-20260824-010-V1",
+        "final_reason": "Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
+        "verdict": "VALID_MERGE",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-DRAW-20260824-010-V1",
+            "domain": "DRAW",
+            "relationship": "APPLY_FINALIZE_VERIFICATION_FACET",
+            "evidence": "DECISION-20260824-095 apply/finalize verification"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-23",
+        "source_title": "Crowd topology 001 supporting audit lineage",
+        "source_description": "Crowd topology 001 supporting audit lineage.",
+        "current_mapping_type": "ALIAS",
+        "current_target_id": "EXP-CROWD-20260823-005-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "CROWD",
+        "current_target_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+        "candidate_formal_targets": [
+          "EXP-CROWD-20260823-005-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/experiments/crowd_topology_exp001_v1/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (EXP-CROWD-20260823-005-V1, Row 58 in Registry)",
+        "protocol_or_result_evidence": "crowd_topology_exp001_v1/protocol.json",
+        "audit_evidence": "crowd_topology_exp001_v1/final_result.md",
+        "final_mapping_type": "ALIAS",
+        "final_target_id": "EXP-CROWD-20260823-005-V1",
+        "final_reason": "Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (Row 58 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-CROWD-20260823-005-V1",
+            "domain": "CROWD",
+            "relationship": "SUPPORTING_AUDIT_LINEAGE",
+            "evidence": "v27_storage/experiments/crowd_topology_exp001_v1/"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-24",
+        "source_title": "Crowd topology 002 independent reproduction/calibration",
+        "source_description": "Crowd topology 002 independent reproduction/calibration.",
+        "current_mapping_type": "ALIAS",
+        "current_target_id": "EXP-CROWD-20260823-006-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "CROWD",
+        "current_target_title": "RANDOM-BONUS COLUMN PROBE — D1-SHELL OVERDISPERSION",
+        "candidate_formal_targets": [
+          "EXP-CROWD-20260823-006-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001/",
+          "v27_storage/experiments/crowd_topology_exp002_v1/calibration_audit_001/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (EXP-CROWD-20260823-006-V1, Row 59 in Registry)",
+        "protocol_or_result_evidence": "crowd_topology_exp002_v1/protocol.json",
+        "audit_evidence": "crowd_topology_exp002_v1/reproduction_001/reproduction_report.json",
+        "final_mapping_type": "ALIAS",
+        "final_target_id": "EXP-CROWD-20260823-006-V1",
+        "final_reason": "Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (Row 59 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-CROWD-20260823-006-V1",
+            "domain": "CROWD",
+            "relationship": "INDEPENDENT_REPRODUCTION_CALIBRATION",
+            "evidence": "v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001, calibration_audit_001"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-25",
+        "source_title": "Crowd topology 003 supporting methodology lineage",
+        "source_description": "Crowd topology 003 supporting methodology lineage.",
+        "current_mapping_type": "ALIAS",
+        "current_target_id": "EXP-CROWD-20260823-007-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "CROWD",
+        "current_target_title": "JOHNSON ASSOCIATION-SCHEME RADIAL MOMENT TOMOGRAPHY — GEOMETRY-FREE OMNIBUS",
+        "candidate_formal_targets": [
+          "EXP-CROWD-20260823-007-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/experiments/crowd_topology_exp003_v1/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (EXP-CROWD-20260823-007-V1, Row 60 in Registry)",
+        "protocol_or_result_evidence": "crowd_topology_exp003_v1/protocol.json",
+        "audit_evidence": "crowd_topology_exp003_v1/final_result.md",
+        "final_mapping_type": "ALIAS",
+        "final_target_id": "EXP-CROWD-20260823-007-V1",
+        "final_reason": "Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (Row 60 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-CROWD-20260823-007-V1",
+            "domain": "CROWD",
+            "relationship": "METHODOLOGY_SUPPORTING_LINEAGE",
+            "evidence": "v27_storage/experiments/crowd_topology_exp003_v1/"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-26",
+        "source_title": "Crowd retail 001 calibration/reproduction lineage",
+        "source_description": "Crowd retail 001 calibration/reproduction lineage.",
+        "current_mapping_type": "ALIAS",
+        "current_target_id": "EXP-CROWD-20260823-008-V1",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "CROWD",
+        "current_target_title": "MANUAL SAME-RETAILER JACKPOT COLLISION",
+        "candidate_formal_targets": [
+          "EXP-CROWD-20260823-008-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/experiments/crowd_retail_exp001_v1/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (EXP-CROWD-20260823-008-V1, Row 61 in Registry)",
+        "protocol_or_result_evidence": "crowd_retail_exp001_v1/protocol.json",
+        "audit_evidence": "crowd_retail_exp001_v1/final_result.md",
+        "final_mapping_type": "ALIAS",
+        "final_target_id": "EXP-CROWD-20260823-008-V1",
+        "final_reason": "Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (Row 61 in Registry)",
+        "verdict": "VALID_ALIAS",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-CROWD-20260823-008-V1",
+            "domain": "CROWD",
+            "relationship": "CALIBRATION_REPRODUCTION_LINEAGE",
+            "evidence": "v27_storage/experiments/crowd_retail_exp001_v1/"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-27",
+        "source_title": "Prize-share 001/002 historical validation 및 prospective preparation lineage",
+        "source_description": "Prize-share 001/002 historical validation 및 prospective preparation lineage.",
+        "current_mapping_type": "RELATED_BUT_DISTINCT",
+        "current_target_id": "EXP-PRIZE-20260816-001-V2",
+        "current_target_namespace": "CANONICAL_REGISTRY_ID",
+        "current_target_domain": "PRIZE_SHARE",
+        "current_target_title": "BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)",
+        "candidate_formal_targets": [
+          "EXP-PRIZE-20260816-001-V2",
+          "EXP-PRIZE-20260821-004-V1",
+          "EXP-PRIZE-20260821-005-V1"
+        ],
+        "candidate_evidence_paths": [
+          "v27_storage/experiments/prize_share_exp001_v2/reproduction_001/",
+          "v27_storage/experiments/prize_share_exp002_v1/",
+          "v27_storage/experiments/prize_share_prospective_001_v1/"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Prize-share 001/002 joint historical validation and prospective preparation lineage across multiple formal experiments",
+        "protocol_or_result_evidence": "prize_share_exp001_v2/protocol.json, prize_share_exp002_v1/protocol.json",
+        "audit_evidence": "prize_share_exp001_v2/reproduction_001/reproduction_report.json",
+        "final_mapping_type": "RELATED_BUT_DISTINCT",
+        "final_target_id": "EXP-PRIZE-20260816-001-V2",
+        "final_reason": "Prize-share 001/002 joint historical validation & prospective preparation lineage across multiple formal experiments",
+        "verdict": "VALID_RELATED_DISTINCT",
+        "lineage_targets": [
+          {
+            "canonical_id": "EXP-PRIZE-20260816-001-V2",
+            "domain": "PRIZE_SHARE",
+            "relationship": "EXP001_V2_REPRODUCTION_VALIDATION",
+            "evidence": "v27_storage/experiments/prize_share_exp001_v2/reproduction_001"
+          },
+          {
+            "canonical_id": "EXP-PRIZE-20260821-004-V1",
+            "domain": "PRIZE_SHARE",
+            "relationship": "EXP002_V1_HISTORICAL_CROSS_OUTCOME_VALIDATION",
+            "evidence": "v27_storage/experiments/prize_share_exp002_v1/"
+          },
+          {
+            "canonical_id": "EXP-PRIZE-20260821-005-V1",
+            "domain": "PRIZE_SHARE",
+            "relationship": "PROSPECTIVE_PREPARATION_LINEAGE",
+            "evidence": "v27_storage/experiments/prize_share_prospective_001_v1/"
+          }
+        ]
+      },
+      {
+        "source_item_id": "SRC-NONEXP-28",
+        "source_title": "LZ76 거시 복잡도 국면 고립 검정 V1",
+        "source_description": "LZ76 거시 복잡도 국면 고립 검정 V1 — `FAILED_NOT_SUPPORTED`; occupancy p1 `0.014598540145985401` PASS, persistence p2 `0.43745625437456254` FAIL, joint `NO`, reproducibility `PASS`, future leakage `0`.",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-28",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-28",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: LZ76 거시 복잡도 국면 고립 검정 V1",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-28",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: LZ76 거시 복잡도 국면 고립 검정 V1",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
+        "source_title": "WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+        "source_description": "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: WHOLE-ENGINE synthetic replay semantics recovery audit 001",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "source_title": "TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+        "source_description": "v27_storage/audits/trio_orbit_prospective_retrospective_001/",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
+      },
+      {
+        "source_item_id": "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "source_title": "TRIO ORBIT Statistical Correction & Null Calibration 001",
+        "source_description": "v27_storage/audits/trio_orbit_prospective_retrospective_001/TRIO_ORBIT_STATISTICAL_CORRECTION_001.md",
+        "current_mapping_type": "DIRECT",
+        "current_target_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "current_target_namespace": "NON_EXP_ID",
+        "current_target_domain": "NON_REGISTRY",
+        "current_target_title": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "candidate_formal_targets": [],
+        "candidate_evidence_paths": [
+          "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md"
+        ],
+        "domain_compatible": true,
+        "ontology_compatible": true,
+        "title_semantic_compatible": true,
+        "explicit_lineage_evidence": "Distinct executed non-EXP research axis: TRIO ORBIT Statistical Correction & Null Calibration 001",
+        "protocol_or_result_evidence": "",
+        "audit_evidence": "",
+        "final_mapping_type": "DIRECT",
+        "final_target_id": "NON-EXP-TRIO-ORBIT-STATISTICAL-CORRECTION",
+        "final_reason": "Distinct executed non-EXP research axis without formal registry parent: TRIO ORBIT Statistical Correction & Null Calibration 001",
+        "verdict": "VALID_DIRECT",
+        "lineage_targets": []
       }
     ],
     "item_resolution_details": [
@@ -723,32 +1591,32 @@
       {
         "source_item_id": "SRC-NONEXP-23",
         "source_title": "Crowd topology 001 supporting audit lineage",
-        "normalized_record_id": "EXP-CROWD-20260816-001-V1",
+        "normalized_record_id": "EXP-CROWD-20260823-005-V1",
         "mapping_type": "ALIAS"
       },
       {
         "source_item_id": "SRC-NONEXP-24",
         "source_title": "Crowd topology 002 independent reproduction/calibration",
-        "normalized_record_id": "EXP-CROWD-20260816-002-V1",
+        "normalized_record_id": "EXP-CROWD-20260823-006-V1",
         "mapping_type": "ALIAS"
       },
       {
         "source_item_id": "SRC-NONEXP-25",
         "source_title": "Crowd topology 003 supporting methodology lineage",
-        "normalized_record_id": "EXP-CROWD-20260816-003-V1",
+        "normalized_record_id": "EXP-CROWD-20260823-007-V1",
         "mapping_type": "ALIAS"
       },
       {
         "source_item_id": "SRC-NONEXP-26",
         "source_title": "Crowd retail 001 calibration/reproduction lineage",
-        "normalized_record_id": "EXP-CROWD-20260816-004-V1",
+        "normalized_record_id": "EXP-CROWD-20260823-008-V1",
         "mapping_type": "ALIAS"
       },
       {
         "source_item_id": "SRC-NONEXP-27",
         "source_title": "Prize-share 001/002 historical validation 및 prospective preparation lineage",
-        "normalized_record_id": "EXP-PRIZE-20260816-001-V1",
-        "mapping_type": "ALIAS"
+        "normalized_record_id": "EXP-PRIZE-20260816-001-V2",
+        "mapping_type": "RELATED_BUT_DISTINCT"
       },
       {
         "source_item_id": "SRC-NONEXP-28",
@@ -803,9 +1671,9 @@
   },
   "mapping_type_counts": {
     "DIRECT": 107,
-    "ALIAS": 6,
+    "ALIAS": 5,
     "MERGED": 2,
-    "RELATED_BUT_DISTINCT": 0
+    "RELATED_BUT_DISTINCT": 1
   },
   "unmapped_items": [],
   "mappings": [
@@ -815,7 +1683,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-002-V1",
@@ -823,7 +1692,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-003-V1",
@@ -831,7 +1701,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-004-V1",
@@ -839,7 +1710,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-005-V1",
@@ -847,7 +1719,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-006-V1",
@@ -855,7 +1728,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-007-V1",
@@ -863,7 +1737,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-008-V1",
@@ -871,7 +1746,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-009-V1",
@@ -879,7 +1755,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-010-V1",
@@ -887,7 +1764,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-011-V1",
@@ -895,7 +1773,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-012-V1",
@@ -903,7 +1782,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-013-V1",
@@ -911,7 +1791,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-014-V1",
@@ -919,7 +1800,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-015-V1",
@@ -927,7 +1809,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-016-V1",
@@ -935,7 +1818,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-017-V1",
@@ -943,7 +1827,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-018-V1",
@@ -951,7 +1836,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-019-V1",
@@ -959,7 +1845,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-020-V1",
@@ -967,7 +1854,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-021-V1",
@@ -975,7 +1863,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-022-V1",
@@ -983,7 +1872,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-023-V1",
@@ -991,7 +1881,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-024-V1",
@@ -999,7 +1890,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-025-V1",
@@ -1007,7 +1899,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-026-V1",
@@ -1015,7 +1908,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-027-V1",
@@ -1023,7 +1917,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-028-V1",
@@ -1031,7 +1926,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-029-V1",
@@ -1039,7 +1935,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-030-V1",
@@ -1047,7 +1944,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-031-V1",
@@ -1055,7 +1953,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-032-V1",
@@ -1063,7 +1962,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-033-V1",
@@ -1071,7 +1971,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-034-V1",
@@ -1079,7 +1980,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-035-V1",
@@ -1087,7 +1989,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-036-V1",
@@ -1095,7 +1998,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-037-V1",
@@ -1103,7 +2007,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V1",
@@ -1111,7 +2016,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260816-038-V2",
@@ -1119,7 +2025,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-039-V1",
@@ -1127,7 +2034,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-040-V1",
@@ -1135,7 +2043,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-041-V1",
@@ -1143,7 +2052,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-042-V1",
@@ -1151,7 +2061,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-043-V1",
@@ -1159,7 +2070,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-044-V1",
@@ -1167,7 +2079,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-045-V1",
@@ -1175,7 +2088,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260821-046-V1",
@@ -1183,7 +2097,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
@@ -1191,7 +2106,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
@@ -1199,7 +2115,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
@@ -1207,7 +2124,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
@@ -1215,7 +2133,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-004-V1",
@@ -1223,7 +2142,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260821-005-V1",
@@ -1231,7 +2151,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-002-V1",
@@ -1239,7 +2160,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
@@ -1247,7 +2169,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-PRIZE-20260816-003-V1",
@@ -1255,7 +2178,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
@@ -1263,7 +2187,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-005-V1",
@@ -1271,7 +2196,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-006-V1",
@@ -1279,7 +2205,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-007-V1",
@@ -1287,7 +2214,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260823-008-V1",
@@ -1295,7 +2223,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-CROWD-20260824-009-V1",
@@ -1303,7 +2232,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260824-010-V1",
@@ -1311,7 +2241,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-017-V1",
@@ -1319,7 +2250,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V1",
@@ -1327,7 +2259,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-018-V2",
@@ -1335,7 +2268,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260827-019-V1",
@@ -1343,7 +2277,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260828-020-V1",
@@ -1351,7 +2286,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-FORMAL-EXP-DRAW-20260930-001-V1",
@@ -1359,7 +2295,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Canonical formal experiment registry row 1:1 mapping",
       "evidence": "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-01-UNIT_3",
@@ -1367,7 +2304,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis UNIT_3",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-02-UNIT_5",
@@ -1375,7 +2313,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis UNIT_5",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-03-UNIT_9",
@@ -1383,7 +2322,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis UNIT_9",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-04-UNIT_10",
@@ -1391,7 +2331,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis UNIT_10",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-05-END_DIGIT",
@@ -1399,7 +2340,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis END_DIGIT",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-06-NUMBER",
@@ -1407,7 +2349,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis NUMBER",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-07-TRIO",
@@ -1415,7 +2358,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis TRIO",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-08-PAIR",
@@ -1423,7 +2367,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis PAIR",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-09-CORE",
@@ -1431,7 +2376,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis CORE",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-10-FIXED_ORBIT",
@@ -1439,7 +2385,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis Fixed Orbit",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-11-LINKED_ORBIT",
@@ -1447,7 +2394,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis Linked Orbit",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-OFFICIAL-12-KTS45",
@@ -1455,7 +2403,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Authoritative official internal research axis KTS45",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-01",
@@ -1463,7 +2412,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT Fixed/Linked 역사검증",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-02",
@@ -1471,7 +2421,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT divergence attribution",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-03",
@@ -1479,7 +2430,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: KTS pair-completion collision",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-04",
@@ -1487,7 +2439,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: LAG 3~6 reappearance map",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-05",
@@ -1495,7 +2448,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: BONUS extinction interaction",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-06",
@@ -1503,7 +2457,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: BONUS lag2 interaction",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-07",
@@ -1511,7 +2466,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Ending-frequency interaction",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-08",
@@ -1519,7 +2475,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: TRIO HOLD causal decomposition",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-09",
@@ -1527,7 +2484,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Survivor-pool rolling-origin actionability",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-10",
@@ -1535,7 +2493,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Opposite-period stability filter validation",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-11",
@@ -1543,7 +2502,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: NO-PICK structural root-cause audit",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-12",
@@ -1551,7 +2511,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: NO-PICK causal trace",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-13",
@@ -1559,7 +2520,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: NUMBER member-structure SEVERE causal trace",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-14",
@@ -1567,7 +2529,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 END_DIGIT severe causal trace",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-15",
@@ -1575,7 +2538,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 NUMBER/END_DIGIT root-cause trace",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-16",
@@ -1583,7 +2547,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 opposite-period causal trace",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-17",
@@ -1591,7 +2556,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Current-1239 official pre-draw audit",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-18",
@@ -1599,7 +2565,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-19",
@@ -1607,71 +2574,148 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-20",
       "normalized_record_id": "EXP-DRAW-20260824-010-V1",
       "mapping_type": "ALIAS",
       "mapping_reason": "Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "evidence": "v27_storage/audits/official_pair_lifecycle_repair_001/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-DRAW-20260824-010-V1",
+          "domain": "DRAW",
+          "relationship": "SHADOW_REPAIR_DETERMINISTIC_VALIDATION",
+          "evidence": "DECISION-20260824-095 deterministic validation"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-21",
       "normalized_record_id": "EXP-DRAW-20260824-010-V1",
       "mapping_type": "MERGED",
       "mapping_reason": "Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "evidence": "v27_storage/audits/official_pair_lifecycle_repair_001/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-DRAW-20260824-010-V1",
+          "domain": "DRAW",
+          "relationship": "CANARY_CHANGE_CONTROL_FACET",
+          "evidence": "DECISION-20260824-095 Phase A/B canary validation"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-22",
       "normalized_record_id": "EXP-DRAW-20260824-010-V1",
       "mapping_type": "MERGED",
       "mapping_reason": "Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "evidence": "v27_storage/audits/official_pair_lifecycle_repair_001/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-DRAW-20260824-010-V1",
+          "domain": "DRAW",
+          "relationship": "APPLY_FINALIZE_VERIFICATION_FACET",
+          "evidence": "DECISION-20260824-095 apply/finalize verification"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-23",
-      "normalized_record_id": "EXP-CROWD-20260816-001-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-005-V1",
       "mapping_type": "ALIAS",
-      "mapping_reason": "Crowd topology 001 supporting audit lineage of formal experiment",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "mapping_reason": "Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (EXP-CROWD-20260823-005-V1, Row 58 in Registry)",
+      "evidence": "v27_storage/experiments/crowd_topology_exp001_v1/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-CROWD-20260823-005-V1",
+          "domain": "CROWD",
+          "relationship": "SUPPORTING_AUDIT_LINEAGE",
+          "evidence": "v27_storage/experiments/crowd_topology_exp001_v1/"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-24",
-      "normalized_record_id": "EXP-CROWD-20260816-002-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-006-V1",
       "mapping_type": "ALIAS",
-      "mapping_reason": "Crowd topology 002 independent calibration lineage of formal experiment",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "mapping_reason": "Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (EXP-CROWD-20260823-006-V1, Row 59 in Registry)",
+      "evidence": "v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001, calibration_audit_001",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-CROWD-20260823-006-V1",
+          "domain": "CROWD",
+          "relationship": "INDEPENDENT_REPRODUCTION_CALIBRATION",
+          "evidence": "v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001, calibration_audit_001"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-25",
-      "normalized_record_id": "EXP-CROWD-20260816-003-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-007-V1",
       "mapping_type": "ALIAS",
-      "mapping_reason": "Crowd topology 003 methodology supporting lineage of formal experiment",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "mapping_reason": "Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (EXP-CROWD-20260823-007-V1, Row 60 in Registry)",
+      "evidence": "v27_storage/experiments/crowd_topology_exp003_v1/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-CROWD-20260823-007-V1",
+          "domain": "CROWD",
+          "relationship": "METHODOLOGY_SUPPORTING_LINEAGE",
+          "evidence": "v27_storage/experiments/crowd_topology_exp003_v1/"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-26",
-      "normalized_record_id": "EXP-CROWD-20260816-004-V1",
+      "normalized_record_id": "EXP-CROWD-20260823-008-V1",
       "mapping_type": "ALIAS",
-      "mapping_reason": "Crowd retail 001 calibration lineage of formal experiment",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "mapping_reason": "Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (EXP-CROWD-20260823-008-V1, Row 61 in Registry)",
+      "evidence": "v27_storage/experiments/crowd_retail_exp001_v1/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-CROWD-20260823-008-V1",
+          "domain": "CROWD",
+          "relationship": "CALIBRATION_REPRODUCTION_LINEAGE",
+          "evidence": "v27_storage/experiments/crowd_retail_exp001_v1/"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-27",
-      "normalized_record_id": "EXP-PRIZE-20260816-001-V1",
-      "mapping_type": "ALIAS",
-      "mapping_reason": "Prize-share 001/002 historical validation and prospective lineage",
-      "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "normalized_record_id": "EXP-PRIZE-20260816-001-V2",
+      "mapping_type": "RELATED_BUT_DISTINCT",
+      "mapping_reason": "Prize-share 001/002 joint historical validation and prospective preparation lineage across multiple formal experiments",
+      "evidence": "v27_storage/experiments/prize_share_exp001_v2/, prize_share_exp002_v1/, prize_share_prospective_001_v1/",
+      "confidence": 1.0,
+      "lineage_targets": [
+        {
+          "canonical_id": "EXP-PRIZE-20260816-001-V2",
+          "domain": "PRIZE_SHARE",
+          "relationship": "EXP001_V2_REPRODUCTION_VALIDATION",
+          "evidence": "v27_storage/experiments/prize_share_exp001_v2/reproduction_001"
+        },
+        {
+          "canonical_id": "EXP-PRIZE-20260821-004-V1",
+          "domain": "PRIZE_SHARE",
+          "relationship": "EXP002_V1_HISTORICAL_CROSS_OUTCOME_VALIDATION",
+          "evidence": "v27_storage/experiments/prize_share_exp002_v1/"
+        },
+        {
+          "canonical_id": "EXP-PRIZE-20260821-005-V1",
+          "domain": "PRIZE_SHARE",
+          "relationship": "PROSPECTIVE_PREPARATION_LINEAGE",
+          "evidence": "v27_storage/experiments/prize_share_prospective_001_v1/"
+        }
+      ]
     },
     {
       "source_item_id": "SRC-NONEXP-28",
@@ -1679,7 +2723,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: LZ76 거시 복잡도 국면 고립 검정 V1",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-29-WHOLE-ENGINE-REPLAY",
@@ -1687,7 +2732,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE",
@@ -1695,7 +2741,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-NONEXP-31-TRIO-ORBIT-STATISTICAL-CORRECTION",
@@ -1703,7 +2750,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Distinct executed non-EXP research axis: TRIO ORBIT Statistical Correction & Null Calibration 001",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-REVIEWED-01-MBC_실제_공_추첨순서",
@@ -1711,7 +2759,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Reviewed unexecuted research idea",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-REVIEWED-02-REHEARSAL",
@@ -1719,7 +2768,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Reviewed unexecuted research idea",
       "evidence": "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     },
     {
       "source_item_id": "SRC-PROSPECTIVE-01-TRIO-ORBIT-TARGET-1244",
@@ -1727,7 +2777,8 @@
       "mapping_type": "DIRECT",
       "mapping_reason": "Active sealed prospective target round 1244",
       "evidence": "v27_storage\\prospective\\trio_orbit_v1_001\\P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md",
-      "confidence": 1.0
+      "confidence": 1.0,
+      "lineage_targets": []
     }
   ]
 }

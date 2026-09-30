@@ -338,5 +338,261 @@ class TestCanonicalIdReferentialIntegrity(unittest.TestCase):
         self.assertEqual(idx2.has_referential_integrity(), self.index.has_referential_integrity())
 
 
+
+class TestNonExpLineageSemanticIntegrity(unittest.TestCase):
+    """Enforces the 24 non-EXP 1:1 lineage and semantic referential integrity tests."""
+
+    @classmethod
+    def setUpClass(cls):
+        cls.resolver = CanonicalResearchIdResolver()
+        cls.inv_builder = ResearchSourceInventoryBuilder()
+        cls.source_items = cls.inv_builder.build_source_inventory()
+        cls.man_builder = ResearchKnowledgeCoverageManifestBuilder()
+        cls.manifest = cls.man_builder.build_manifest(cls.source_items)
+        cls.audit_report = cls.resolver.audit_referential_integrity(cls.source_items, cls.manifest.mappings)
+        cls.non_exp_audits = {a.source_item_id: a for a in cls.audit_report.non_exp_lineage_audits}
+        builder = ResearchKnowledgeIndexBuilder()
+        cls.index = builder.build_index()
+        cls.agent = ResearchDiscoveryAgent()
+        cls.checker = SemanticNoveltyCheckerV1_1(knowledge_index=cls.index)
+
+    # 1. SRC-NONEXP-23 cannot alias to DRAW NO-PICK target.
+    def test_23_nonexp_23_cannot_alias_to_draw_nopick(self):
+        # Attempt bad alias: SRC-NONEXP-23 to EXP-DRAW-20260816-038-V2
+        from p45_v27.research_automation.knowledge_source_inventory import SourceMappingEntry, MappingType
+        bad_mapping = [SourceMappingEntry(
+            source_item_id="SRC-NONEXP-23",
+            normalized_record_id="EXP-DRAW-20260816-038-V2",
+            mapping_type=MappingType.ALIAS.value,
+            mapping_reason="Fake alias to draw no pick",
+            evidence="none",
+        )]
+        report = self.resolver.audit_referential_integrity(self.source_items, bad_mapping)
+        self.assertGreater(report.invalid_aliases, 0)
+        self.assertGreater(report.domain_mismatch_unjustified, 0)
+        self.assertEqual(report.referential_integrity_verdict, "FAIL_NON_EXP_REFERENTIAL_INTEGRITY")
+
+    # 2. SRC-NONEXP-24 cannot alias to DRAW adjacency target.
+    def test_24_nonexp_24_cannot_alias_to_draw_adjacency(self):
+        from p45_v27.research_automation.knowledge_source_inventory import SourceMappingEntry, MappingType
+        bad_mapping = [SourceMappingEntry(
+            source_item_id="SRC-NONEXP-24",
+            normalized_record_id="EXP-DRAW-20260827-018-V2",
+            mapping_type=MappingType.ALIAS.value,
+            mapping_reason="Fake alias to draw adjacency",
+            evidence="none",
+        )]
+        report = self.resolver.audit_referential_integrity(self.source_items, bad_mapping)
+        self.assertGreater(report.invalid_aliases, 0)
+        self.assertGreater(report.domain_mismatch_unjustified, 0)
+        self.assertEqual(report.referential_integrity_verdict, "FAIL_NON_EXP_REFERENTIAL_INTEGRITY")
+
+    # 3. CROWD source requires CROWD target unless explicit cross-domain lineage evidence exists.
+    def test_25_crowd_source_requires_crowd_target(self):
+        for audit in self.audit_report.alias_audits:
+            if "CROWD" in audit.source_item_id or "Crowd" in audit.explicit_lineage_evidence:
+                target_entry = self.resolver.get_registry_entry(audit.alias_target)
+                self.assertIsNotNone(target_entry)
+                self.assertEqual(target_entry.domain, "CROWD")
+                self.assertTrue(audit.domain_match)
+
+    # 4. PRIZE source requires PRIZE target unless explicit cross-domain lineage evidence exists.
+    def test_26_prize_source_requires_prize_target(self):
+        for m in self.manifest.mappings:
+            if "SRC-NONEXP-27" in m.source_item_id:
+                for lt in m.lineage_targets:
+                    self.assertIn(lt["domain"], ("PRIZE", "PRIZE_SHARE"))
+
+    # 5. PAIR repair cannot alias NUMBER RELATION target.
+    def test_27_pair_repair_cannot_alias_number_relation(self):
+        from p45_v27.research_automation.knowledge_source_inventory import SourceMappingEntry, MappingType
+        bad_mapping = [SourceMappingEntry(
+            source_item_id="SRC-NONEXP-20",
+            normalized_record_id="EXP-DRAW-20260816-009-V1",
+            mapping_type=MappingType.ALIAS.value,
+            mapping_reason="Fake alias to number relation",
+            evidence="none",
+        )]
+        report = self.resolver.audit_referential_integrity(self.source_items, bad_mapping)
+        self.assertGreater(report.invalid_aliases, 0)
+        self.assertGreater(report.domain_mismatch_unjustified, 0)
+
+    # 6. Every NON-EXP source item has audited lineage verdict.
+    def test_28_every_non_exp_has_audited_verdict(self):
+        non_exp_items = [it for it in self.source_items if it.source_class == "NON_EXP_EXECUTED"]
+        self.assertGreaterEqual(len(non_exp_items), 31)
+        for it in non_exp_items:
+            sid = it.source_item_id
+            self.assertIn(sid, self.non_exp_audits)
+            audit = self.non_exp_audits[sid]
+            self.assertIn(audit.verdict, ("VALID_DIRECT", "VALID_ALIAS", "VALID_MERGE", "VALID_RELATED_DISTINCT"))
+            self.assertTrue(audit.domain_compatible)
+            self.assertTrue(audit.ontology_compatible)
+            self.assertTrue(audit.title_semantic_compatible)
+
+    # 7. Every ALIAS has explicit evidence path.
+    def test_29_every_alias_has_explicit_evidence_path(self):
+        for a in self.audit_report.alias_audits:
+            if a.verdict == "VALID_ALIAS":
+                self.assertTrue(len(a.explicit_lineage_evidence) > 0)
+                self.assertTrue(a.target_exists)
+
+    # 8. Every MERGE has same experiment lineage proof.
+    def test_30_every_merge_has_same_experiment_lineage_proof(self):
+        for m in self.audit_report.merge_audits:
+            if m.verdict == "VALID_MERGE":
+                self.assertTrue(m.same_experiment_lineage)
+                self.assertTrue(len(m.explicit_change_control_evidence) > 0)
+                self.assertTrue(m.target_exists)
+
+    # 9. DIRECT record allowed without formal target.
+    def test_31_direct_record_allowed_without_formal_target(self):
+        direct_audits = [a for a in self.non_exp_audits.values() if a.verdict == "VALID_DIRECT"]
+        self.assertGreaterEqual(len(direct_audits), 20)
+        for d in direct_audits:
+            self.assertFalse(d.final_target_id.startswith("EXP-"))
+
+    # 10. RELATED_BUT_DISTINCT allowed without forced alias.
+    def test_32_related_but_distinct_allowed_without_forced_alias(self):
+        related_audits = [a for a in self.non_exp_audits.values() if a.verdict == "VALID_RELATED_DISTINCT"]
+        self.assertGreaterEqual(len(related_audits), 1)
+        item27 = self.non_exp_audits.get("SRC-NONEXP-27")
+        self.assertIsNotNone(item27)
+        self.assertEqual(item27.verdict, "VALID_RELATED_DISTINCT")
+
+    # 11. Multi-target lineage supported.
+    def test_33_multi_target_lineage_supported(self):
+        item27_mapping = next(m for m in self.manifest.mappings if m.source_item_id == "SRC-NONEXP-27")
+        self.assertGreaterEqual(len(item27_mapping.lineage_targets), 3)
+        target_ids = [lt["canonical_id"] for lt in item27_mapping.lineage_targets]
+        self.assertIn("EXP-PRIZE-20260816-001-V2", target_ids)
+        self.assertIn("EXP-PRIZE-20260821-004-V1", target_ids)
+        self.assertIn("EXP-PRIZE-20260821-005-V1", target_ids)
+
+    # 12. Bad domain target triggers fail-closed.
+    def test_34_bad_domain_target_triggers_fail_closed(self):
+        from p45_v27.research_automation.knowledge_source_inventory import SourceMappingEntry, MappingType
+        bad_mapping = [SourceMappingEntry(
+            source_item_id="SRC-NONEXP-23",
+            normalized_record_id="EXP-DRAW-20260816-001-V1",
+            mapping_type=MappingType.ALIAS.value,
+            mapping_reason="Mismatched domain alias",
+            evidence="none",
+        )]
+        report = self.resolver.audit_referential_integrity(self.source_items, bad_mapping)
+        self.assertEqual(report.referential_integrity_verdict, "FAIL_NON_EXP_REFERENTIAL_INTEGRITY")
+        self.assertGreater(report.domain_mismatch_unjustified, 0)
+
+    # 13. Fake existing Registry ID but wrong domain is rejected.
+    def test_35_fake_existing_registry_id_wrong_domain_rejected(self):
+        from p45_v27.research_automation.knowledge_source_inventory import SourceMappingEntry, MappingType
+        # Target exists (EXP-DRAW-20260827-019-V1 is in registry) but domain is DRAW, not CROWD
+        bad_mapping = [SourceMappingEntry(
+            source_item_id="SRC-NONEXP-24",
+            normalized_record_id="EXP-DRAW-20260827-019-V1",
+            mapping_type=MappingType.ALIAS.value,
+            mapping_reason="Lineage keyword present but wrong domain",
+            evidence="none",
+        )]
+        report = self.resolver.audit_referential_integrity(self.source_items, bad_mapping)
+        self.assertEqual(report.referential_integrity_verdict, "FAIL_NON_EXP_REFERENTIAL_INTEGRITY")
+        self.assertGreater(report.invalid_aliases, 0)
+
+    # 14. Correct Crowd topology 001 lineage passes.
+    def test_36_correct_crowd_topology_001_lineage_passes(self):
+        audit23 = self.non_exp_audits.get("SRC-NONEXP-23")
+        self.assertIsNotNone(audit23)
+        self.assertEqual(audit23.verdict, "VALID_ALIAS")
+        self.assertEqual(audit23.final_target_id, "EXP-CROWD-20260823-005-V1")
+        self.assertEqual(audit23.current_target_domain, "CROWD")
+
+    # 15. Correct Crowd topology 002 lineage passes.
+    def test_37_correct_crowd_topology_002_lineage_passes(self):
+        audit24 = self.non_exp_audits.get("SRC-NONEXP-24")
+        self.assertIsNotNone(audit24)
+        self.assertEqual(audit24.verdict, "VALID_ALIAS")
+        self.assertEqual(audit24.final_target_id, "EXP-CROWD-20260823-006-V1")
+        self.assertEqual(audit24.current_target_domain, "CROWD")
+
+    # 16. Correct Crowd topology 003 lineage passes if evidence exists.
+    def test_38_correct_crowd_topology_003_lineage_passes(self):
+        audit25 = self.non_exp_audits.get("SRC-NONEXP-25")
+        self.assertIsNotNone(audit25)
+        self.assertEqual(audit25.verdict, "VALID_ALIAS")
+        self.assertEqual(audit25.final_target_id, "EXP-CROWD-20260823-007-V1")
+        self.assertEqual(audit25.current_target_domain, "CROWD")
+
+    # 17. Correct Crowd retail 001 lineage passes.
+    def test_39_correct_crowd_retail_001_lineage_passes(self):
+        audit26 = self.non_exp_audits.get("SRC-NONEXP-26")
+        self.assertIsNotNone(audit26)
+        self.assertEqual(audit26.verdict, "VALID_ALIAS")
+        self.assertEqual(audit26.final_target_id, "EXP-CROWD-20260823-008-V1")
+        self.assertEqual(audit26.current_target_domain, "CROWD")
+
+    # 18. Prize-share 001/002 joint lineage handled correctly.
+    def test_40_prize_share_joint_lineage_handled_correctly(self):
+        audit27 = self.non_exp_audits.get("SRC-NONEXP-27")
+        self.assertIsNotNone(audit27)
+        self.assertEqual(audit27.verdict, "VALID_RELATED_DISTINCT")
+        self.assertEqual(len(audit27.candidate_formal_targets), 3)
+
+    # 19. Candidate C irrelevant twin-round matches removed unless explicit structural evidence exists.
+    def test_41_candidate_c_irrelevant_twin_round_matches_removed(self):
+        cand_c = {
+            "candidate_id": "IDEA-1243-CROS-003",
+            "title": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance",
+            "proposed_inputs": "Pair absence intervals (dormancy duration) for all 990 pairs",
+            "target_metric": "Hazard rate constancy across dormancy bins",
+            "novelty_reason": "Pair-level memorylessness test across dormancy regimes",
+            "lag": 1,
+            "null_hypothesis": "Geometric memoryless null p = comb(43,4)/comb(45,6)",
+            "conditioning": "Pair absence since last appearance",
+        }
+        res = self.checker.audit_candidate(cand_c)
+        top_ids = [m.existing_research_id for m in res.top_matches[:5]]
+        self.assertNotIn("EXP-DRAW-20260816-023-V1", top_ids)
+        self.assertNotIn("EXP-DRAW-20260816-024-V1", top_ids)
+        self.assertNotIn("EXP-DRAW-20260816-025-V1", top_ids)
+        for m in res.top_matches[:2]:
+            self.assertTrue(
+                "pair" in m.existing_title.lower() or "pair" in m.existing_research_id.lower() or "core" in m.existing_title.lower()
+            )
+
+    # 20. Candidate A/B verdict regression.
+    def test_42_candidate_a_b_verdict_regression(self):
+        res = self.agent.reassess_v1_candidates()
+        cand_a = next(c for c in res if c.candidate_id == "IDEA-1243-NEGA-001")
+        cand_b = next(c for c in res if c.candidate_id == "IDEA-1243-OPPO-002")
+        self.assertEqual(cand_a.final_verdict, NoveltyFinalVerdict.REJECT_RESCUE.value)
+        self.assertEqual(cand_b.final_verdict, NoveltyFinalVerdict.REJECT_RESCUE.value)
+
+    # 21. Candidate C remains non-promoted.
+    def test_43_candidate_c_remains_non_promoted(self):
+        res = self.agent.reassess_v1_candidates()
+        cand_c = next(c for c in res if c.candidate_id == "IDEA-1243-CROS-003")
+        self.assertEqual(cand_c.final_verdict, NoveltyFinalVerdict.NEEDS_EVIDENCE.value)
+        self.assertNotEqual(cand_c.final_verdict, NoveltyFinalVerdict.READY_FOR_PROTOCOL.value)
+
+    # 22. Official firewall.
+    def test_44_official_firewall_intact(self):
+        for rec in self.index.list_all():
+            if "OFFICIAL" in rec.source_classes:
+                self.assertIn(rec.verdict, ("OFFICIAL_FROZEN", "USER-APPROVED SEALED CHANGE CONTROL", "SUPPORTED"))
+
+    # 23. Future leakage 0.
+    def test_45_future_leakage_zero(self):
+        prospective = self.index.filter_by_class(SourceClass.ACTIVE_PROSPECTIVE.value)
+        self.assertEqual(len(prospective), 1)
+        self.assertIn("1244", prospective[0].condition)
+
+    # 24. Idempotency.
+    def test_46_idempotency_audit_repeat(self):
+        audit2 = self.resolver.audit_referential_integrity(self.source_items, self.manifest.mappings)
+        self.assertEqual(audit2.referential_integrity_verdict, self.audit_report.referential_integrity_verdict)
+        self.assertEqual(len(audit2.non_exp_lineage_audits), len(self.audit_report.non_exp_lineage_audits))
+
+
 if __name__ == "__main__":
     unittest.main()
+

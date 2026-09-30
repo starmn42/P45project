@@ -13,9 +13,9 @@
 | Mapping Type | 건수 | 설명 |
 |---|---:|---|
 | `DIRECT` | 107 | DIRECT 매핑 항목 |
-| `ALIAS` | 6 | ALIAS 매핑 항목 |
+| `ALIAS` | 5 | ALIAS 매핑 항목 |
 | `MERGED` | 2 | MERGED 매핑 항목 |
-| `RELATED_BUT_DISTINCT` | 0 | RELATED_BUT_DISTINCT 매핑 항목 |
+| `RELATED_BUT_DISTINCT` | 1 | RELATED_BUT_DISTINCT 매핑 항목 |
 
 ---
 
@@ -123,14 +123,14 @@
 | 98 | `SRC-NONEXP-17` | `NON-EXP-17` | `DIRECT` | Distinct executed non-EXP research axis: Current-1239 official pre-draw audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 99 | `SRC-NONEXP-18` | `NON-EXP-18` | `DIRECT` | Distinct executed non-EXP research axis: Contiguous 1..1238 rebuild and 1239 rerun | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 100 | `SRC-NONEXP-19` | `NON-EXP-19` | `DIRECT` | Distinct executed non-EXP research axis: Discovery 2.0 independent-signal audit | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 101 | `SRC-NONEXP-20` | `EXP-DRAW-20260824-010-V1` | `ALIAS` | Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001) | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 102 | `SRC-NONEXP-21` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 103 | `SRC-NONEXP-22` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 104 | `SRC-NONEXP-23` | `EXP-CROWD-20260816-001-V1` | `ALIAS` | Crowd topology 001 supporting audit lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 105 | `SRC-NONEXP-24` | `EXP-CROWD-20260816-002-V1` | `ALIAS` | Crowd topology 002 independent calibration lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 106 | `SRC-NONEXP-25` | `EXP-CROWD-20260816-003-V1` | `ALIAS` | Crowd topology 003 methodology supporting lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 107 | `SRC-NONEXP-26` | `EXP-CROWD-20260816-004-V1` | `ALIAS` | Crowd retail 001 calibration lineage of formal experiment | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
-| 108 | `SRC-NONEXP-27` | `EXP-PRIZE-20260816-001-V1` | `ALIAS` | Prize-share 001/002 historical validation and prospective lineage | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
+| 101 | `SRC-NONEXP-20` | `EXP-DRAW-20260824-010-V1` | `ALIAS` | Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001) | v27_storage/audits/official_pair_lifecycle_repair_001/ |
+| 102 | `SRC-NONEXP-21` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | v27_storage/audits/official_pair_lifecycle_repair_001/ |
+| 103 | `SRC-NONEXP-22` | `EXP-DRAW-20260824-010-V1` | `MERGED` | Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1) | v27_storage/audits/official_pair_lifecycle_repair_001/ |
+| 104 | `SRC-NONEXP-23` | `EXP-CROWD-20260823-005-V1` | `ALIAS` | Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (EXP-CROWD-20260823-005-V1, Row 58 in Registry) | v27_storage/experiments/crowd_topology_exp001_v1/ |
+| 105 | `SRC-NONEXP-24` | `EXP-CROWD-20260823-006-V1` | `ALIAS` | Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (EXP-CROWD-20260823-006-V1, Row 59 in Registry) | v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001, calibration_audit_001 |
+| 106 | `SRC-NONEXP-25` | `EXP-CROWD-20260823-007-V1` | `ALIAS` | Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (EXP-CROWD-20260823-007-V1, Row 60 in Registry) | v27_storage/experiments/crowd_topology_exp003_v1/ |
+| 107 | `SRC-NONEXP-26` | `EXP-CROWD-20260823-008-V1` | `ALIAS` | Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (EXP-CROWD-20260823-008-V1, Row 61 in Registry) | v27_storage/experiments/crowd_retail_exp001_v1/ |
+| 108 | `SRC-NONEXP-27` | `EXP-PRIZE-20260816-001-V2` | `RELATED_BUT_DISTINCT` | Prize-share 001/002 joint historical validation and prospective preparation lineage across multiple formal experiments | v27_storage/experiments/prize_share_exp001_v2/, prize_share_exp002_v1/, prize_share_prospective_001_v1/ |
 | 109 | `SRC-NONEXP-28` | `NON-EXP-28` | `DIRECT` | Distinct executed non-EXP research axis: LZ76 거시 복잡도 국면 고립 검정 V1 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 110 | `SRC-NONEXP-29-WHOLE-ENGINE-REPLAY` | `NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY` | `DIRECT` | Distinct executed non-EXP research axis: WHOLE-ENGINE synthetic replay semantics recovery audit 001 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |
 | 111 | `SRC-NONEXP-30-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | `NON-EXP-TRIO-ORBIT-PROSPECTIVE-RETROSPECTIVE` | `DIRECT` | Distinct executed non-EXP research axis: TRIO ORBIT Prospective (1239..1243) Retrospective Audit 001 | 90_RESEARCH\P45_RESEARCH_MASTER_INDEX_005.md |

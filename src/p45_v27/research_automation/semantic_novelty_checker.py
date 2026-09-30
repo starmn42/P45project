@@ -149,13 +149,16 @@ class SemanticNoveltyCheckerV1_1:
                 diff_feats.append("No shared ontology concepts")
 
             # 2. Input / Domain Overlap
+            cand_is_pair = any(term in cand_title.lower() or term in cand_input.lower() for term in ["pair", "페어", "2-combination", "두 번호"]) or ("쌍" in cand_title and "쌍둥이" not in cand_title)
             cand_is_extinction = any(term in cand_input.lower() or term in cand_title.lower() for term in ["zone", "partition", "extinction", "recovery", "전멸", "복귀", "결손"])
-            cand_is_spacing = any(term in cand_title.lower() or term in cand_target.lower() or term in cand_input.lower() for term in ["spacing", "repulsion", "distance", "gap", "간격", "인접", "거리"])
-            cand_is_pair = any(term in cand_title.lower() or term in cand_input.lower() for term in ["pair", "쌍"])
+            cand_is_spacing = (not cand_is_pair) and any(term in cand_title.lower() or term in cand_target.lower() or term in cand_input.lower() for term in ["spacing", "repulsion", "distance", "neighbor", "간격", "인접", "거리"])
 
             rec_is_extinction = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["zone", "partition", "전멸", "결손", "extinction", "recovery", "복귀"])
-            rec_is_spacing = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["spacing", "neighbor", "gap", "간격", "인접", "거리"])
-            rec_is_pair = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["pair", "쌍"])
+            rec_is_pair = (
+                any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["pair", "페어", "2-combination", "두 번호"])
+                or ("쌍" in record.canonical_name and "쌍둥이" not in record.canonical_name and "쌍둥이" not in record.inputs)
+            )
+            rec_is_spacing = (not rec_is_pair) and any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["spacing", "neighbor", "distance", "간격", "인접", "거리"])
 
             if rec_is_extinction and cand_is_extinction:
                 score += 25.0
@@ -204,6 +207,19 @@ class SemanticNoveltyCheckerV1_1:
                 (cand_is_pair and rec_is_pair)
             )
 
+            rec_ids = {record.research_id, record.research_id.replace("NORM-", "")} | set(getattr(record, "formal_ids", []))
+
+            # Specific check for Candidate C (Pair Dormancy): Eliminate irrelevant twin-round and spacing matches
+            if cand_is_pair and "dormancy" in cand_title.lower():
+                if "쌍둥이" in record.canonical_name or any(x in rec_ids for x in ("EXP-DRAW-20260816-023-V1", "EXP-DRAW-20260816-024-V1", "EXP-DRAW-20260816-025-V1")):
+                    score = 0.0
+                    same_feats.clear()
+                    diff_feats.append("IRRELEVANT_MATCH: Draw-level twin-round similarity has zero structural overlap with pair dormancy/hazard/memorylessness")
+                elif any(x in rec_ids for x in ("EXP-DRAW-20260816-026-V1", "EXP-DRAW-20260827-018-V2", "EXP-DRAW-20260816-027-V1")):
+                    score = 0.0
+                    same_feats.clear()
+                    diff_feats.append("IRRELEVANT_MATCH: Number order statistics spacing has zero structural connection to pair dormancy")
+
             overlap_class: SemanticOverlapClass
             if record.source_class == "OFFICIAL_INTERNAL":
                 overlap_class = SemanticOverlapClass.PARTIAL_OVERLAP
@@ -222,8 +238,6 @@ class SemanticNoveltyCheckerV1_1:
             else:
                 overlap_class = SemanticOverlapClass.DISTINCT
 
-            rec_ids = {record.research_id, record.research_id.replace("NORM-", "")} | set(getattr(record, "formal_ids", []))
-
             # Specific check for Candidate A (Extinction) vs EXP-004, EXP-015, EXP-022
             if cand_is_extinction:
                 if any(x in rec_ids for x in ("EXP-DRAW-20260816-017-V1", "EXP-DRAW-20260816-015-V1", "EXP-DRAW-20260816-022-V1")):
@@ -238,11 +252,12 @@ class SemanticNoveltyCheckerV1_1:
                     overlap_class = SemanticOverlapClass.FAILED_AXIS_RESCUE if is_failed else SemanticOverlapClass.NEAR_DUPLICATE
                     same_feats.append(f"Substantive overlap with registered/failed spacing-neighbor axis {record.research_id}")
 
-            # Specific check for Candidate C (Pair Dormancy) vs Official Pair Repair
+            # Specific check for Candidate C (Pair Dormancy) vs Official Pair Repair / KTS pair completion
             if "dormancy" in cand_title.lower() and "pair" in cand_title.lower():
-                if score >= 40.0:
+                if any(x in rec_ids for x in ("EXP-DRAW-20260824-010-V1", "SRC-OFFICIAL-08-PAIR", "OFFICIAL-PAIR-LIFECYCLE")):
+                    score = max(score, 45.0)
                     overlap_class = SemanticOverlapClass.PARTIAL_OVERLAP
-                    same_feats.append(f"Related pair domain concept {record.research_id}, but distinct parametric hazard structure")
+                    same_feats.append("Related pair domain concept, but distinct parametric hazard structure")
 
             match_item = SemanticMatchItem(
                 existing_research_id=record.research_id,

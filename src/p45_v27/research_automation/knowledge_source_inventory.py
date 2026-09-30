@@ -59,6 +59,7 @@ class SourceMappingEntry:
     mapping_reason: str
     evidence: str
     confidence: float = 1.0
+    lineage_targets: list[dict[str, Any]] = field(default_factory=list)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
@@ -506,8 +507,14 @@ class ResearchKnowledgeCoverageManifestBuilder:
                             normalized_record_id="EXP-DRAW-20260824-010-V1",
                             mapping_type=MappingType.ALIAS.value,
                             mapping_reason="Supporting deterministic validation lineage for formal repair EXP-DRAW-20260824-010-V1 (OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT 001)",
-                            evidence=it.source_document,
+                            evidence="v27_storage/audits/official_pair_lifecycle_repair_001/",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-DRAW-20260824-010-V1",
+                                "domain": "DRAW",
+                                "relationship": "SHADOW_REPAIR_DETERMINISTIC_VALIDATION",
+                                "evidence": "DECISION-20260824-095 deterministic validation",
+                            }],
                         )
                     )
                 elif num == 21:
@@ -518,8 +525,14 @@ class ResearchKnowledgeCoverageManifestBuilder:
                             normalized_record_id="EXP-DRAW-20260824-010-V1",
                             mapping_type=MappingType.MERGED.value,
                             mapping_reason="Official repair Phase A/B canary/change-control validation facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
-                            evidence=it.source_document,
+                            evidence="v27_storage/audits/official_pair_lifecycle_repair_001/",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-DRAW-20260824-010-V1",
+                                "domain": "DRAW",
+                                "relationship": "CANARY_CHANGE_CONTROL_FACET",
+                                "evidence": "DECISION-20260824-095 Phase A/B canary validation",
+                            }],
                         )
                     )
                 elif num == 22:
@@ -530,68 +543,118 @@ class ResearchKnowledgeCoverageManifestBuilder:
                             normalized_record_id="EXP-DRAW-20260824-010-V1",
                             mapping_type=MappingType.MERGED.value,
                             mapping_reason="Official repair apply and finalize verification facet of DECISION-20260824-095 (EXP-DRAW-20260824-010-V1)",
-                            evidence=it.source_document,
+                            evidence="v27_storage/audits/official_pair_lifecycle_repair_001/",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-DRAW-20260824-010-V1",
+                                "domain": "DRAW",
+                                "relationship": "APPLY_FINALIZE_VERIFICATION_FACET",
+                                "evidence": "DECISION-20260824-095 apply/finalize verification",
+                            }],
                         )
                     )
                 elif num == 23:
-                    # Crowd topology 001 supporting audit lineage -> ALIAS to EXP-CROWD-20260816-001-V1
+                    # Crowd topology 001 supporting audit lineage -> ALIAS to canonical EXP-CROWD-20260823-005-V1 (EXP-CROWD-TOPO-001-V1)
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-CROWD-20260816-001-V1",
+                            normalized_record_id="EXP-CROWD-20260823-005-V1",
                             mapping_type=MappingType.ALIAS.value,
-                            mapping_reason="Crowd topology 001 supporting audit lineage of formal experiment",
-                            evidence=it.source_document,
+                            mapping_reason="Crowd topology 001 supporting audit lineage of formal experiment EXP-CROWD-TOPO-001-V1 (EXP-CROWD-20260823-005-V1, Row 58 in Registry)",
+                            evidence="v27_storage/experiments/crowd_topology_exp001_v1/",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-CROWD-20260823-005-V1",
+                                "domain": "CROWD",
+                                "relationship": "SUPPORTING_AUDIT_LINEAGE",
+                                "evidence": "v27_storage/experiments/crowd_topology_exp001_v1/",
+                            }],
                         )
                     )
                 elif num == 24:
-                    # Crowd topology 002 independent reproduction/calibration -> ALIAS to EXP-CROWD-20260816-002-V1
+                    # Crowd topology 002 independent reproduction/calibration -> ALIAS to canonical EXP-CROWD-20260823-006-V1 (EXP-CROWD-TOPO-002-V1)
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-CROWD-20260816-002-V1",
+                            normalized_record_id="EXP-CROWD-20260823-006-V1",
                             mapping_type=MappingType.ALIAS.value,
-                            mapping_reason="Crowd topology 002 independent calibration lineage of formal experiment",
-                            evidence=it.source_document,
+                            mapping_reason="Crowd topology 002 independent reproduction/calibration lineage of formal experiment EXP-CROWD-TOPO-002-V1 (EXP-CROWD-20260823-006-V1, Row 59 in Registry)",
+                            evidence="v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001, calibration_audit_001",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-CROWD-20260823-006-V1",
+                                "domain": "CROWD",
+                                "relationship": "INDEPENDENT_REPRODUCTION_CALIBRATION",
+                                "evidence": "v27_storage/experiments/crowd_topology_exp002_v1/reproduction_001, calibration_audit_001",
+                            }],
                         )
                     )
                 elif num == 25:
-                    # Crowd topology 003 supporting methodology lineage -> ALIAS to EXP-CROWD-20260816-003-V1
+                    # Crowd topology 003 supporting methodology lineage -> ALIAS to canonical EXP-CROWD-20260823-007-V1 (EXP-CROWD-TOPO-003-V1)
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-CROWD-20260816-003-V1",
+                            normalized_record_id="EXP-CROWD-20260823-007-V1",
                             mapping_type=MappingType.ALIAS.value,
-                            mapping_reason="Crowd topology 003 methodology supporting lineage of formal experiment",
-                            evidence=it.source_document,
+                            mapping_reason="Crowd topology 003 methodology supporting lineage of formal experiment EXP-CROWD-TOPO-003-V1 (EXP-CROWD-20260823-007-V1, Row 60 in Registry)",
+                            evidence="v27_storage/experiments/crowd_topology_exp003_v1/",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-CROWD-20260823-007-V1",
+                                "domain": "CROWD",
+                                "relationship": "METHODOLOGY_SUPPORTING_LINEAGE",
+                                "evidence": "v27_storage/experiments/crowd_topology_exp003_v1/",
+                            }],
                         )
                     )
                 elif num == 26:
-                    # Crowd retail 001 calibration/reproduction lineage -> ALIAS to EXP-CROWD-20260816-004-V1
+                    # Crowd retail 001 calibration/reproduction lineage -> ALIAS to canonical EXP-CROWD-20260823-008-V1 (EXP-CROWD-RETAIL-001-V1)
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-CROWD-20260816-004-V1",
+                            normalized_record_id="EXP-CROWD-20260823-008-V1",
                             mapping_type=MappingType.ALIAS.value,
-                            mapping_reason="Crowd retail 001 calibration lineage of formal experiment",
-                            evidence=it.source_document,
+                            mapping_reason="Crowd retail 001 calibration lineage of formal experiment EXP-CROWD-RETAIL-001-V1 (EXP-CROWD-20260823-008-V1, Row 61 in Registry)",
+                            evidence="v27_storage/experiments/crowd_retail_exp001_v1/",
                             confidence=1.0,
+                            lineage_targets=[{
+                                "canonical_id": "EXP-CROWD-20260823-008-V1",
+                                "domain": "CROWD",
+                                "relationship": "CALIBRATION_REPRODUCTION_LINEAGE",
+                                "evidence": "v27_storage/experiments/crowd_retail_exp001_v1/",
+                            }],
                         )
                     )
                 elif num == 27:
-                    # Prize-share 001/002 historical validation lineage -> ALIAS to EXP-PRIZE-20260816-001-V1
+                    # Prize-share 001/002 joint validation & prospective prep lineage -> Multi-target lineage
                     mappings.append(
                         SourceMappingEntry(
                             source_item_id=sid,
-                            normalized_record_id="EXP-PRIZE-20260816-001-V1",
-                            mapping_type=MappingType.ALIAS.value,
-                            mapping_reason="Prize-share 001/002 historical validation and prospective lineage",
-                            evidence=it.source_document,
+                            normalized_record_id="EXP-PRIZE-20260816-001-V2",
+                            mapping_type=MappingType.RELATED_BUT_DISTINCT.value,
+                            mapping_reason="Prize-share 001/002 joint historical validation and prospective preparation lineage across multiple formal experiments",
+                            evidence="v27_storage/experiments/prize_share_exp001_v2/, prize_share_exp002_v1/, prize_share_prospective_001_v1/",
                             confidence=1.0,
+                            lineage_targets=[
+                                {
+                                    "canonical_id": "EXP-PRIZE-20260816-001-V2",
+                                    "domain": "PRIZE_SHARE",
+                                    "relationship": "EXP001_V2_REPRODUCTION_VALIDATION",
+                                    "evidence": "v27_storage/experiments/prize_share_exp001_v2/reproduction_001",
+                                },
+                                {
+                                    "canonical_id": "EXP-PRIZE-20260821-004-V1",
+                                    "domain": "PRIZE_SHARE",
+                                    "relationship": "EXP002_V1_HISTORICAL_CROSS_OUTCOME_VALIDATION",
+                                    "evidence": "v27_storage/experiments/prize_share_exp002_v1/",
+                                },
+                                {
+                                    "canonical_id": "EXP-PRIZE-20260821-005-V1",
+                                    "domain": "PRIZE_SHARE",
+                                    "relationship": "PROSPECTIVE_PREPARATION_LINEAGE",
+                                    "evidence": "v27_storage/experiments/prize_share_prospective_001_v1/",
+                                },
+                            ],
                         )
                     )
                 elif "WHOLE-ENGINE" in sid:
@@ -653,7 +716,10 @@ class ResearchKnowledgeCoverageManifestBuilder:
         audit_report = resolver.audit_referential_integrity(source_items, mappings)
         resolver.save_audit_report(audit_report)
 
-        is_integrity_pass = (audit_report.referential_integrity_verdict == "PASS_REFERENTIAL_INTEGRITY")
+        is_integrity_pass = audit_report.referential_integrity_verdict in (
+            "PASS_REFERENTIAL_INTEGRITY",
+            "PASS_NON_EXP_REFERENTIAL_INTEGRITY",
+        )
         is_complete = (len(unmapped) == 0) and (mapped_count == total_count) and is_integrity_pass
 
         src_counts = {sc.value: sum(1 for it in source_items if it.source_class == sc.value) for sc in SourceClass}

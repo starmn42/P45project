@@ -1737,25 +1737,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260816-001-V1",
       "source_classes": [
-        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260816-001-V1",
-        "SRC-NONEXP-23"
+        "SRC-FORMAL-EXP-CROWD-20260816-001-V1"
       ],
       "formal_ids": [
         "EXP-CROWD-20260816-001-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD LAB",
-      "aliases": [
-        "SRC-NONEXP-23"
-      ]
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260816-002-V1",
@@ -1779,25 +1774,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260816-002-V1",
       "source_classes": [
-        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260816-002-V1",
-        "SRC-NONEXP-24"
+        "SRC-FORMAL-EXP-CROWD-20260816-002-V1"
       ],
       "formal_ids": [
         "EXP-CROWD-20260816-002-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD LAB",
-      "aliases": [
-        "SRC-NONEXP-24"
-      ]
+      "aliases": []
     },
     {
       "research_id": "EXP-PRIZE-20260816-001-V1",
@@ -1821,25 +1811,20 @@
       ],
       "verdict": "PROTOCOL_BLOCKED_SOURCE_SEMANTICS",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-PRIZE-20260816-001-V1",
       "source_classes": [
-        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-PRIZE-20260816-001-V1",
-        "SRC-NONEXP-27"
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V1"
       ],
       "formal_ids": [
         "EXP-PRIZE-20260816-001-V1"
       ],
       "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
-      "aliases": [
-        "SRC-NONEXP-27"
-      ]
+      "aliases": []
     },
     {
       "research_id": "EXP-PRIZE-20260816-001-V2",
@@ -1863,20 +1848,25 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-PRIZE-20260816-001-V2",
       "source_classes": [
+        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-PRIZE-20260816-001-V2"
+        "SRC-FORMAL-EXP-PRIZE-20260816-001-V2",
+        "SRC-NONEXP-27"
       ],
       "formal_ids": [
         "EXP-PRIZE-20260816-001-V2"
       ],
       "actionability": "Formal experiment protocol in PRIZE-SHARE LAB",
-      "aliases": []
+      "aliases": [
+        "SRC-NONEXP-27"
+      ]
     },
     {
       "research_id": "EXP-PRIZE-20260821-004-V1",
@@ -2011,25 +2001,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260816-003-V1",
       "source_classes": [
-        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260816-003-V1",
-        "SRC-NONEXP-25"
+        "SRC-FORMAL-EXP-CROWD-20260816-003-V1"
       ],
       "formal_ids": [
         "EXP-CROWD-20260816-003-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD LAB",
-      "aliases": [
-        "SRC-NONEXP-25"
-      ]
+      "aliases": []
     },
     {
       "research_id": "EXP-PRIZE-20260816-003-V1",
@@ -2090,25 +2075,20 @@
       ],
       "verdict": "REGISTERED",
       "evidence_paths": [
-        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260816-004-V1",
       "source_classes": [
-        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260816-004-V1",
-        "SRC-NONEXP-26"
+        "SRC-FORMAL-EXP-CROWD-20260816-004-V1"
       ],
       "formal_ids": [
         "EXP-CROWD-20260816-004-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD LAB",
-      "aliases": [
-        "SRC-NONEXP-26"
-      ]
+      "aliases": []
     },
     {
       "research_id": "EXP-CROWD-20260823-005-V1",
@@ -2130,20 +2110,25 @@
       ],
       "verdict": "FAILED",
       "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260823-005-V1",
       "source_classes": [
+        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260823-005-V1"
+        "SRC-FORMAL-EXP-CROWD-20260823-005-V1",
+        "SRC-NONEXP-23"
       ],
       "formal_ids": [
         "EXP-CROWD-20260823-005-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
-      "aliases": []
+      "aliases": [
+        "SRC-NONEXP-23"
+      ]
     },
     {
       "research_id": "EXP-CROWD-20260823-006-V1",
@@ -2165,20 +2150,25 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260823-006-V1",
       "source_classes": [
+        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260823-006-V1"
+        "SRC-FORMAL-EXP-CROWD-20260823-006-V1",
+        "SRC-NONEXP-24"
       ],
       "formal_ids": [
         "EXP-CROWD-20260823-006-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
-      "aliases": []
+      "aliases": [
+        "SRC-NONEXP-24"
+      ]
     },
     {
       "research_id": "EXP-CROWD-20260823-007-V1",
@@ -2200,20 +2190,25 @@
       ],
       "verdict": "SUPPORTED",
       "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260823-007-V1",
       "source_classes": [
+        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260823-007-V1"
+        "SRC-FORMAL-EXP-CROWD-20260823-007-V1",
+        "SRC-NONEXP-25"
       ],
       "formal_ids": [
         "EXP-CROWD-20260823-007-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
-      "aliases": []
+      "aliases": [
+        "SRC-NONEXP-25"
+      ]
     },
     {
       "research_id": "EXP-CROWD-20260823-008-V1",
@@ -2235,20 +2230,25 @@
       ],
       "verdict": "EXPLORATORY_RETAILER_MODE_CONCENTRATION",
       "evidence_paths": [
+        "90_RESEARCH\\P45_RESEARCH_MASTER_INDEX_005.md",
         "00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
       ],
       "record_id": "EXP-CROWD-20260823-008-V1",
       "source_classes": [
+        "NON_EXP_EXECUTED",
         "FORMAL_REGISTRY"
       ],
       "source_item_ids": [
-        "SRC-FORMAL-EXP-CROWD-20260823-008-V1"
+        "SRC-FORMAL-EXP-CROWD-20260823-008-V1",
+        "SRC-NONEXP-26"
       ],
       "formal_ids": [
         "EXP-CROWD-20260823-008-V1"
       ],
       "actionability": "Formal experiment protocol in CROWD / PRIZE-SHARE LAB",
-      "aliases": []
+      "aliases": [
+        "SRC-NONEXP-26"
+      ]
     },
     {
       "research_id": "EXP-CROWD-20260824-009-V1",

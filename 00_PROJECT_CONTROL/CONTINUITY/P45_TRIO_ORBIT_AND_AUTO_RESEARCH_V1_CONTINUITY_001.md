@@ -157,3 +157,36 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - 로컬 런타임 활성화: CANONICAL_ID_RESOLVER_ACTIVE=YES, REFERENTIAL_INTEGRITY_GUARD_ACTIVE=YES.
   - Git Commit: P45 enforce canonical research ID integrity (main 브랜치 반영 예정).
   - Vercel 배포 판정: 연구 백엔드 내부 변경으로 web/* 수정 0건 -> VERCEL_DEPLOY_NOT_REQUIRED.
+
+
+
+### 8. P45 NON-EXP 1:1 LINEAGE & SEMANTIC REFERENTIAL INTEGRITY FINAL PASS (2026-09-30)
+- **배경 및 원인 분석:**
+  - 기존 1차 참조 무결성 감사에서 `SRC-NONEXP-23` (Crowd topology 001)이 `EXP-DRAW-20260816-038-V2` (NO-PICK COVERAGE)에, `SRC-NONEXP-24` (Crowd topology 002)가 `EXP-DRAW-20260827-018-V2` (Residual Neighbor)에 각각 `VALID_ALIAS` 처리된 중대한 도메인/시맨틱 불일치 발견.
+  - **테스트 결함 원인 (Root Cause):** 기존 감사 로직이 레지스트리 내 ID 존재 여부와 사유 문자열 내 키워드(`lineage`) 유무만 검사하고, 원천 도메인과 타깃 도메인 간 일치성(`source_domain == target_domain`) 및 명시적 파일 경로 증거를 검증하지 않는 단순 존재성 단언(existence-only assertion)에 머물렀기 때문임.
+- **핵심 구현 및 전수 정정:**
+  - **NON-EXP 31건 1:1 전수 계보 감사 체계 수립 (`NON_EXP_LINEAGE_AUDIT.json`, `NON_EXP_LINEAGE_AUDIT.md`):**
+    - 31개 항목 전체에 대해 원천 도메인, 타깃 네임스페이스, 도메인 적합성, 온톨로지 적합성, 시맨틱 일치성, 명시적 계보 증거 경로를 1:1 대조.
+    - 정식 레지스트리 부모가 없는 순수 독립 비실험 연구(23건: `SRC-NONEXP-01~19`, `28~31`)는 억지 별칭 부여 없이 `VALID_DIRECT`로 확정.
+  - **핵심 계보 항목 정밀 정정:**
+    - `SRC-NONEXP-23` (Crowd topology 001): 잘못된 DRAW 타깃을 취소하고, 레지스트리 58행 정식 물리 ID인 `EXP-CROWD-20260823-005-V1` (`EXP-CROWD-TOPO-001-V1`)에 `VALID_ALIAS` 연결 (증거: `EXP-CROWD-TOPO-001/supporting_audit_001/`).
+    - `SRC-NONEXP-24` (Crowd topology 002): 잘못된 DRAW 타깃을 취소하고, 레지스트리 59행 정식 물리 ID인 `EXP-CROWD-20260823-006-V1` (`EXP-CROWD-TOPO-002-V1`)에 `VALID_ALIAS` 연결 (증거: `EXP-CROWD-TOPO-002/independent_reproduction_calibration/`).
+    - `SRC-NONEXP-25` (Crowd topology 003): 60행 정식 물리 ID `EXP-CROWD-20260823-007-V1` (`EXP-CROWD-TOPO-003-V1`)에 `VALID_ALIAS` 연결.
+    - `SRC-NONEXP-26` (Crowd retail 001): 61행 정식 물리 ID `EXP-CROWD-20260823-008-V1` (`EXP-CROWD-RETAIL-001-V1`)에 `VALID_ALIAS` 연결.
+    - `SRC-NONEXP-27` (Prize-share 001/002): 단일 강제 alias 대신 `multi-target lineage`(`EXP-PRIZE-20260816-001-V2`, `EXP-PRIZE-20260821-004-V1`, `EXP-PRIZE-20260821-005-V1`)를 지원하는 `VALID_RELATED_DISTINCT`로 정립.
+    - `SRC-NONEXP-20, 21, 22` (PAIR change-control 수리 계보): `EXP-DRAW-20260824-010-V1`과의 실질적 계보 증명(`VALID_ALIAS` 1건, `VALID_MERGE` 2건) 유지.
+  - **도메인 호환성 하드 가드 (Domain Compatibility Hard Guard) 및 Fail-Closed 강화:**
+    - CROWD -> DRAW, PRIZE -> DRAW, PAIR -> NUMBER RELATION 등 명시적 교차 증거 없는 오매칭 발생 시 `BLOCKED_NON_EXP_REFERENTIAL_INTEGRITY`로 즉각 차단.
+    - `invalid_non_exp_lineage`, `ambiguous_non_exp_lineage`, `domain_mismatch_unjustified`, `alias_without_evidence`, `merge_without_lineage` 항목을 0으로 강제.
+  - **후보 C 시맨틱 매처 무관 항목 배제:**
+    - 한국어 서브스트링("쌍") 오인식으로 유입된 SIMILAR ROUND LAB의 '쌍둥이 회차 전이'(`EXP-DRAW-20260816-023-V1`, `024-V1`) 및 번호 순서 간격 연구를 상위 매칭에서 원천 배제.
+    - 실질적 쌍 구조(`EXP-DRAW-20260824-010-V1`, `OFFICIAL-PAIR-LIFECYCLE`, `OFFICIAL-CORE-INVARIANTS`, `NON-EXP-03`) 중심으로 상위 근거 재구성.
+    - 후보 C 최종 판정: `NEEDS_EVIDENCE` 유지 (자동 승격 0건, READY_FOR_PROTOCOL=0).
+- **무결성 및 검증 요약:**
+  - 신규 24개 테스트 포함 총 110개 테스트 전수 통과 (0 failures, 0 errors).
+  - 정식 레지스트리 69행 유지 (신규 실험 0건, 신규 등록 0건).
+  - Official 엔진, DB, Sealed, Web pick 변경 0건. Future Leakage = 0.
+  - 최종 무결성 판정: `PASS_NON_EXP_REFERENTIAL_INTEGRITY` 복구 완료.
+  - Git Commit: `P45 enforce non-EXP lineage integrity`.
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+

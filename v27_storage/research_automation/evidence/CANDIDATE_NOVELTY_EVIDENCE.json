@@ -39,7 +39,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
@@ -78,7 +78,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
@@ -117,7 +117,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
@@ -156,7 +156,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -194,7 +194,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -232,7 +232,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -270,7 +270,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -308,7 +308,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Previous round extinction state",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -347,7 +347,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Historical draw partition states",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -386,7 +386,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Historical draw partition states",
           "same_features": [
-            "Shared ontology concepts: occupancy, extinction, recovery",
+            "Shared ontology concepts: recovery, extinction, occupancy",
             "Shared partition/extinction domain inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1"
@@ -443,7 +443,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: NUMBER, spacing",
+            "Shared ontology concepts: spacing, NUMBER",
             "Shared adjacent spacing / proximity domain inputs",
             "Overlapping target definition: ",
             "Substantive overlap with registered/failed spacing-neighbor axis EXP-DRAW-20260816-026-V1"
@@ -483,7 +483,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: NUMBER, spacing",
+            "Shared ontology concepts: spacing, NUMBER",
             "Shared adjacent spacing / proximity domain inputs",
             "Overlapping target definition: ",
             "Substantive overlap with registered/failed spacing-neighbor axis EXP-DRAW-20260816-027-V1"
@@ -560,7 +560,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: NUMBER, spacing",
+            "Shared ontology concepts: spacing, NUMBER",
             "Shared adjacent spacing / proximity domain inputs",
             "Overlapping target definition: "
           ],
@@ -611,6 +611,42 @@
           "canonical_title": "2회 간격 관계",
           "resolution_status": "RESOLVED_CANONICAL",
           "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 5)"
+        },
+        {
+          "existing_research_id": "EXP-CROWD-20260823-005-V1",
+          "existing_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+          "source_type": "FORMAL_REGISTRY",
+          "status": "FAILED",
+          "ontology_tags": [
+            "NUMBER"
+          ],
+          "candidate_input": "",
+          "existing_input": "CROWD raw numbers",
+          "candidate_transformation": "",
+          "existing_transformation": "Standard structural extraction",
+          "candidate_target": "",
+          "existing_target": "Next round state",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "hit_rate, lift",
+          "candidate_null": "",
+          "existing_null": "Fair lottery null",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Unconditioned baseline",
+          "same_features": [
+            "Shared ontology concepts: NUMBER",
+            "Shared adjacent spacing / proximity domain inputs",
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1"
+          ],
+          "different_features": [],
+          "similarity_score": 70.0,
+          "semantic_overlap_class": "FAILED_AXIS_RESCUE",
+          "canonical_registry_id": "EXP-CROWD-20260823-005-V1",
+          "canonical_title": "JOHNSON J(45,6) DISTANCE-1 LOCAL AUTOCORRELATION",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 58)"
         },
         {
           "existing_research_id": "EXP-DRAW-20260827-018-V1",
@@ -673,7 +709,7 @@
           "candidate_conditioning": "",
           "existing_conditioning": "Order statistics spacing vector",
           "same_features": [
-            "Shared ontology concepts: NUMBER, spacing",
+            "Shared ontology concepts: spacing, NUMBER",
             "Overlapping target definition: "
           ],
           "different_features": [
@@ -764,59 +800,20 @@
           "canonical_title": "숫자 동시출현 관계망 (EXP-001)",
           "resolution_status": "RESOLVED_CANONICAL",
           "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 2)"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260816-003-V1",
-          "existing_title": "조건부 관계망",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "REGISTERED",
-          "ontology_tags": [
-            "NUMBER",
-            "interaction",
-            "cross-round relation"
-          ],
-          "candidate_input": "",
-          "existing_input": "Individual winning lottery numbers (1..45)",
-          "candidate_transformation": "",
-          "existing_transformation": "Pairwise co-occurrence frequency and correlation graph",
-          "candidate_target": "",
-          "existing_target": "Next-round number co-occurrence likelihood",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "jaccard_similarity, lift, co_occurrence_count",
-          "candidate_null": "",
-          "existing_null": "Hypergeometric independent random ball selection without replacement",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Unconditional simultaneous occurrence or conditional on number A",
-          "same_features": [
-            "Shared ontology concepts: NUMBER",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1"
-          ],
-          "different_features": [
-            "Different input structural primitives"
-          ],
-          "similarity_score": 45.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP",
-          "canonical_registry_id": "EXP-DRAW-20260816-003-V1",
-          "canonical_title": "조건부 관계망",
-          "resolution_status": "RESOLVED_CANONICAL",
-          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 3)"
         }
       ],
       "exact_overlaps": [],
       "partial_overlaps": [
         "EXP-DRAW-20260816-028-V1",
         "EXP-DRAW-20260816-001-V1",
-        "EXP-DRAW-20260816-002-V1",
-        "EXP-DRAW-20260816-003-V1"
+        "EXP-DRAW-20260816-002-V1"
       ],
       "failed_axis_rescues": [
         "EXP-DRAW-20260816-026-V1",
-        "EXP-DRAW-20260827-018-V2"
+        "EXP-DRAW-20260827-018-V2",
+        "EXP-CROWD-20260823-005-V1"
       ],
-      "novelty_justification": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-026-V1, EXP-DRAW-20260827-018-V2.",
+      "novelty_justification": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-026-V1, EXP-DRAW-20260827-018-V2, EXP-CROWD-20260823-005-V1.",
       "novelty_evidence_exists": true,
       "referential_integrity_pass": true,
       "invalid_references": []
@@ -855,7 +852,7 @@
             "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260824-010-V1, but distinct parametric hazard structure"
+            "Related pair domain concept, but distinct parametric hazard structure"
           ],
           "different_features": [],
           "similarity_score": 85.0,
@@ -894,7 +891,7 @@
             "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
             "Identical temporal lag: 1",
-            "Related pair domain concept OFFICIAL-PAIR-LIFECYCLE, but distinct parametric hazard structure"
+            "Related pair domain concept, but distinct parametric hazard structure"
           ],
           "different_features": [],
           "similarity_score": 85.0,
@@ -903,82 +900,6 @@
           "canonical_title": "PAIR (lifecycle/signature/timing shadow repair와 승인 change-control.)",
           "resolution_status": "RESOLVED_CANONICAL",
           "source_evidence": "Research Master authoritative axis"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260816-023-V1",
-          "existing_title": "쌍둥이 유사 회차",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "REGISTERED",
-          "ontology_tags": [
-            "NUMBER"
-          ],
-          "candidate_input": "",
-          "existing_input": "DRAW raw numbers",
-          "candidate_transformation": "",
-          "existing_transformation": "Standard structural extraction",
-          "candidate_target": "",
-          "existing_target": "Next round state",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "hit_rate, lift",
-          "candidate_null": "",
-          "existing_null": "Fair lottery null",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Unconditioned baseline",
-          "same_features": [
-            "Shared pair-level combinatorial inputs",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-023-V1, but distinct parametric hazard structure"
-          ],
-          "different_features": [
-            "No shared ontology concepts"
-          ],
-          "similarity_score": 55.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP",
-          "canonical_registry_id": "EXP-DRAW-20260816-023-V1",
-          "canonical_title": "쌍둥이 유사 회차",
-          "resolution_status": "RESOLVED_CANONICAL",
-          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 23)"
-        },
-        {
-          "existing_research_id": "EXP-DRAW-20260816-024-V1",
-          "existing_title": "구조형 쌍둥이 회차 전이",
-          "source_type": "FORMAL_REGISTRY",
-          "status": "REGISTERED",
-          "ontology_tags": [
-            "NUMBER"
-          ],
-          "candidate_input": "",
-          "existing_input": "DRAW raw numbers",
-          "candidate_transformation": "",
-          "existing_transformation": "Standard structural extraction",
-          "candidate_target": "",
-          "existing_target": "Next round state",
-          "candidate_lag": 1,
-          "existing_lag": 1,
-          "candidate_metric": "",
-          "existing_metric": "hit_rate, lift",
-          "candidate_null": "",
-          "existing_null": "Fair lottery null",
-          "candidate_conditioning": "",
-          "existing_conditioning": "Unconditioned baseline",
-          "same_features": [
-            "Shared pair-level combinatorial inputs",
-            "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260816-024-V1, but distinct parametric hazard structure"
-          ],
-          "different_features": [
-            "No shared ontology concepts"
-          ],
-          "similarity_score": 55.0,
-          "semantic_overlap_class": "PARTIAL_OVERLAP",
-          "canonical_registry_id": "EXP-DRAW-20260816-024-V1",
-          "canonical_title": "구조형 쌍둥이 회차 전이",
-          "resolution_status": "RESOLVED_CANONICAL",
-          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 24)"
         },
         {
           "existing_research_id": "OFFICIAL-CORE-INVARIANTS",
@@ -1006,8 +927,7 @@
           "same_features": [
             "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept OFFICIAL-CORE-INVARIANTS, but distinct parametric hazard structure"
+            "Identical temporal lag: 1"
           ],
           "different_features": [
             "No shared ontology concepts"
@@ -1044,8 +964,7 @@
           "same_features": [
             "Shared pair-level combinatorial inputs",
             "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept NON-EXP-03, but distinct parametric hazard structure"
+            "Identical temporal lag: 1"
           ],
           "different_features": [
             "No shared ontology concepts"
@@ -1084,8 +1003,7 @@
           "same_features": [
             "Shared ontology concepts: transition",
             "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260828-020-V1, but distinct parametric hazard structure"
+            "Identical temporal lag: 1"
           ],
           "different_features": [
             "Different input structural primitives"
@@ -1124,8 +1042,7 @@
           "same_features": [
             "Shared ontology concepts: transition",
             "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept EXP-DRAW-20260930-001-V1, but distinct parametric hazard structure"
+            "Identical temporal lag: 1"
           ],
           "different_features": [
             "Different input structural primitives"
@@ -1165,8 +1082,7 @@
           "same_features": [
             "Shared ontology concepts: transition",
             "Overlapping target definition: ",
-            "Identical temporal lag: 1",
-            "Related pair domain concept OFFICIAL-LINKED-ORBIT, but distinct parametric hazard structure"
+            "Identical temporal lag: 1"
           ],
           "different_features": [
             "Different input structural primitives"
@@ -1216,20 +1132,98 @@
           "canonical_title": "숫자 관계망 구조",
           "resolution_status": "RESOLVED_CANONICAL",
           "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 1)"
+        },
+        {
+          "existing_research_id": "EXP-DRAW-20260816-002-V1",
+          "existing_title": "숫자 동시출현 관계망 (EXP-001)",
+          "source_type": "FORMAL_REGISTRY",
+          "status": "FAILED",
+          "ontology_tags": [
+            "NUMBER",
+            "interaction",
+            "cross-round relation"
+          ],
+          "candidate_input": "",
+          "existing_input": "Individual winning lottery numbers (1..45)",
+          "candidate_transformation": "",
+          "existing_transformation": "Pairwise co-occurrence frequency and correlation graph",
+          "candidate_target": "",
+          "existing_target": "Next-round number co-occurrence likelihood",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "jaccard_similarity, lift, co_occurrence_count",
+          "candidate_null": "",
+          "existing_null": "Hypergeometric independent random ball selection without replacement",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Unconditional simultaneous occurrence or conditional on number A",
+          "same_features": [
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1"
+          ],
+          "different_features": [
+            "No shared ontology concepts",
+            "Different input structural primitives"
+          ],
+          "similarity_score": 30.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-002-V1",
+          "canonical_title": "숫자 동시출현 관계망 (EXP-001)",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 2)"
+        },
+        {
+          "existing_research_id": "EXP-DRAW-20260816-003-V1",
+          "existing_title": "조건부 관계망",
+          "source_type": "FORMAL_REGISTRY",
+          "status": "REGISTERED",
+          "ontology_tags": [
+            "NUMBER",
+            "interaction",
+            "cross-round relation"
+          ],
+          "candidate_input": "",
+          "existing_input": "Individual winning lottery numbers (1..45)",
+          "candidate_transformation": "",
+          "existing_transformation": "Pairwise co-occurrence frequency and correlation graph",
+          "candidate_target": "",
+          "existing_target": "Next-round number co-occurrence likelihood",
+          "candidate_lag": 1,
+          "existing_lag": 1,
+          "candidate_metric": "",
+          "existing_metric": "jaccard_similarity, lift, co_occurrence_count",
+          "candidate_null": "",
+          "existing_null": "Hypergeometric independent random ball selection without replacement",
+          "candidate_conditioning": "",
+          "existing_conditioning": "Unconditional simultaneous occurrence or conditional on number A",
+          "same_features": [
+            "Overlapping target definition: ",
+            "Identical temporal lag: 1"
+          ],
+          "different_features": [
+            "No shared ontology concepts",
+            "Different input structural primitives"
+          ],
+          "similarity_score": 30.0,
+          "semantic_overlap_class": "PARTIAL_OVERLAP",
+          "canonical_registry_id": "EXP-DRAW-20260816-003-V1",
+          "canonical_title": "조건부 관계망",
+          "resolution_status": "RESOLVED_CANONICAL",
+          "source_evidence": "06_INITIAL_EXPERIMENT_REGISTRY.md (Row 3)"
         }
       ],
       "exact_overlaps": [],
       "partial_overlaps": [
         "EXP-DRAW-20260824-010-V1",
         "OFFICIAL-PAIR-LIFECYCLE",
-        "EXP-DRAW-20260816-023-V1",
-        "EXP-DRAW-20260816-024-V1",
         "OFFICIAL-CORE-INVARIANTS",
         "NON-EXP-03",
         "EXP-DRAW-20260828-020-V1",
         "EXP-DRAW-20260930-001-V1",
         "OFFICIAL-LINKED-ORBIT",
-        "EXP-DRAW-20260816-001-V1"
+        "EXP-DRAW-20260816-001-V1",
+        "EXP-DRAW-20260816-002-V1",
+        "EXP-DRAW-20260816-003-V1"
       ],
       "failed_axis_rescues": [],
       "novelty_justification": "Candidate addresses a distinct parametric hazard distribution on 990 pairs separate from official repair and EXP-012, but lacks pre-specified multiplicity family and hazard pooling justification required for formal protocol generation.",
