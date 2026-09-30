@@ -1,0 +1,20 @@
+{
+  "candidate_id": "IDEA-1243-OPPO-002",
+  "created_at": "2026-09-30T08:00:03.270310+00:00",
+  "birth_round": 1243,
+  "source_research": "STRUCTURAL_DISCOVERY_AGENT_V1",
+  "candidate_type": "STRUCTURAL_DISCOVERY_AGENT_V1:OPPOSITE_HYPOTHESIS",
+  "hypothesis": "Consecutive sorted winning numbers exhibit significant repulsion (minimum adjacent spacing > Poisson null), acting as a structural dispersion constraint.",
+  "opposite_hypothesis": "Adjacent ball spacing is completely memoryless and conforms strictly to the uniform order-statistics spacing null distribution.",
+  "novelty_status": "NOVEL",
+  "duplicate_status": "PASS_NO_EXACT_COLLISION",
+  "rescue_check": "PASS_EXCLUDED_PREDECESSORS: EXP-001 (Number clustering), EXP-018 (Neighbor adjacency)",
+  "data_snooping_status": "CLEAN_PROSPECTIVE_ONLY",
+  "confirmatory_start_round": 1244,
+  "minimum_sample": 40,
+  "recommended_action": "GENERATE_PROTOCOL",
+  "state": "READY_FOR_PROTOCOL",
+  "protocol_sha256": null,
+  "locked_at": null,
+  "notes": "Number Proximity Minimum-Distance Repulsion Invariance"
+}

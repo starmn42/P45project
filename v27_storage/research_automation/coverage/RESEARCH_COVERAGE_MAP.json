@@ -1,0 +1,405 @@
+{
+  "version": "1.0",
+  "total_concepts": 24,
+  "status_summary": {
+    "TESTED": 0,
+    "FAILED": 8,
+    "SUPPORTED": 0,
+    "INCONCLUSIVE": 0,
+    "BLOCKED": 0,
+    "ACTIVE": 3,
+    "PARTIALLY_TESTED": 10,
+    "UNTESTED": 3
+  },
+  "axes": {
+    "NUMBER": {
+      "concept": "NUMBER",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-001",
+        "EXP-002",
+        "EXP-003",
+        "EXP-016",
+        "EXP-017",
+        "EXP-018",
+        "EXP-019"
+      ],
+      "failed_mechanisms": [
+        "Unconditional simultaneous number co-occurrence clustering",
+        "Number-rank fallback for official pick coverage",
+        "1-step markovian transition on raw numbers",
+        "Ball physical label persistent heterogeneity",
+        "Consensus overlap number enhancement",
+        "Adjacency / residual neighbor distance effect",
+        "Sales volume / crowd birthday number bias"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "TRIO": {
+      "concept": "TRIO",
+      "status": "ACTIVE",
+      "associated_experiments": [
+        "EXP-017",
+        "TRIO-ORBIT-PROSPECTIVE"
+      ],
+      "failed_mechanisms": [
+        "Consensus overlap number enhancement"
+      ],
+      "active_mechanisms": [
+        "Prospective 3-Trio coverage tracking (Fixed vs Linked)"
+      ],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "PAIR": {
+      "concept": "PAIR",
+      "status": "UNTESTED",
+      "associated_experiments": [],
+      "failed_mechanisms": [],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Conditional transition of pair lifecycle states without parameter mutation"
+      ],
+      "notes": ""
+    },
+    "CORE": {
+      "concept": "CORE",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-002"
+      ],
+      "failed_mechanisms": [
+        "Number-rank fallback for official pick coverage"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "occupancy": {
+      "concept": "occupancy",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-004"
+      ],
+      "failed_mechanisms": [
+        "Variable extinction zone detection without pre-registered boundary"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "extinction": {
+      "concept": "extinction",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-004"
+      ],
+      "failed_mechanisms": [
+        "Variable extinction zone detection without pre-registered boundary"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Negative space: behavior of remaining partition zones when a major partition undergoes zero-occupancy extinction"
+      ],
+      "notes": ""
+    },
+    "recovery": {
+      "concept": "recovery",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-012"
+      ],
+      "failed_mechanisms": [
+        "Return-age rank priority for selection"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Recovery velocity invariance: testing if recovery time follows memoryless geometric null"
+      ],
+      "notes": ""
+    },
+    "transition": {
+      "concept": "transition",
+      "status": "ACTIVE",
+      "associated_experiments": [
+        "EXP-003",
+        "EXP-006",
+        "EXP-011",
+        "EXP-014",
+        "EXP-020",
+        "TRIO-ORBIT-PROSPECTIVE"
+      ],
+      "failed_mechanisms": [
+        "1-step markovian transition on raw numbers",
+        "Modulo-10 last digit round periodicity",
+        "46-x arithmetic mirror transition",
+        "Bonus ball lag-1 recurrence to main6",
+        "Lagged winner count regime indicator"
+      ],
+      "active_mechanisms": [
+        "Prospective 3-Trio coverage tracking (Fixed vs Linked)"
+      ],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "recurrence": {
+      "concept": "recurrence",
+      "status": "ACTIVE",
+      "associated_experiments": [
+        "EXP-005",
+        "EXP-014",
+        "TRIO-ORBIT-PROSPECTIVE"
+      ],
+      "failed_mechanisms": [
+        "Lag-2 number carryover recurrence",
+        "Bonus ball lag-1 recurrence to main6"
+      ],
+      "active_mechanisms": [
+        "Prospective 3-Trio coverage tracking (Fixed vs Linked)"
+      ],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "lag": {
+      "concept": "lag",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-003",
+        "EXP-005",
+        "EXP-009",
+        "EXP-010",
+        "EXP-020"
+      ],
+      "failed_mechanisms": [
+        "1-step markovian transition on raw numbers",
+        "Lag-2 number carryover recurrence",
+        "Parity balance serial autocorrelation",
+        "Sum-of-six lag-1 serial autocorrelation",
+        "Lagged winner count regime indicator"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "gap": {
+      "concept": "gap",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-012",
+        "EXP-018"
+      ],
+      "failed_mechanisms": [
+        "Return-age rank priority for selection",
+        "Adjacency / residual neighbor distance effect"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "spacing": {
+      "concept": "spacing",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-018"
+      ],
+      "failed_mechanisms": [
+        "Adjacency / residual neighbor distance effect"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "range": {
+      "concept": "range",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-004",
+        "EXP-010",
+        "EXP-019"
+      ],
+      "failed_mechanisms": [
+        "Variable extinction zone detection without pre-registered boundary",
+        "Sum-of-six lag-1 serial autocorrelation",
+        "Sales volume / crowd birthday number bias"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "similarity": {
+      "concept": "similarity",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-015"
+      ],
+      "failed_mechanisms": [
+        "Bonus relative rank exchangeability"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "opposite-state": {
+      "concept": "opposite-state",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-011"
+      ],
+      "failed_mechanisms": [
+        "46-x arithmetic mirror transition"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Repulsion / negative-space dispersion as opposite hypothesis to failed co-occurrence clustering"
+      ],
+      "notes": ""
+    },
+    "persistence": {
+      "concept": "persistence",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-009",
+        "EXP-013",
+        "EXP-016"
+      ],
+      "failed_mechanisms": [
+        "Parity balance serial autocorrelation",
+        "Cumulative frequency rank bias",
+        "Ball physical label persistent heterogeneity"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Negative space persistence: persistent non-occupancy duration in fixed 5-zone partition"
+      ],
+      "notes": ""
+    },
+    "decay": {
+      "concept": "decay",
+      "status": "UNTESTED",
+      "associated_experiments": [],
+      "failed_mechanisms": [],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Multi-round structural decay: hazard of non-appearance over 3..7 rounds"
+      ],
+      "notes": ""
+    },
+    "regime": {
+      "concept": "regime",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-013",
+        "EXP-016",
+        "EXP-019",
+        "EXP-020"
+      ],
+      "failed_mechanisms": [
+        "Cumulative frequency rank bias",
+        "Ball physical label persistent heterogeneity",
+        "Sales volume / crowd birthday number bias",
+        "Lagged winner count regime indicator"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "order/rank": {
+      "concept": "order/rank",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-002",
+        "EXP-012",
+        "EXP-013",
+        "EXP-015"
+      ],
+      "failed_mechanisms": [
+        "Number-rank fallback for official pick coverage",
+        "Return-age rank priority for selection",
+        "Cumulative frequency rank bias",
+        "Bonus relative rank exchangeability"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "arithmetic transform": {
+      "concept": "arithmetic transform",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-006",
+        "EXP-009",
+        "EXP-010",
+        "EXP-011"
+      ],
+      "failed_mechanisms": [
+        "Modulo-10 last digit round periodicity",
+        "Parity balance serial autocorrelation",
+        "Sum-of-six lag-1 serial autocorrelation",
+        "46-x arithmetic mirror transition"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "interaction": {
+      "concept": "interaction",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-001",
+        "EXP-017"
+      ],
+      "failed_mechanisms": [
+        "Unconditional simultaneous number co-occurrence clustering",
+        "Consensus overlap number enhancement"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "conditional transition": {
+      "concept": "conditional transition",
+      "status": "UNTESTED",
+      "associated_experiments": [],
+      "failed_mechanisms": [],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [
+        "Cross-structure interaction: pair state transition conditional on partition extinction"
+      ],
+      "notes": ""
+    },
+    "bonus interaction": {
+      "concept": "bonus interaction",
+      "status": "PARTIALLY_TESTED",
+      "associated_experiments": [
+        "EXP-014",
+        "EXP-015"
+      ],
+      "failed_mechanisms": [
+        "Bonus ball lag-1 recurrence to main6",
+        "Bonus relative rank exchangeability"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    },
+    "cross-round relation": {
+      "concept": "cross-round relation",
+      "status": "FAILED",
+      "associated_experiments": [
+        "EXP-001",
+        "EXP-005",
+        "EXP-006"
+      ],
+      "failed_mechanisms": [
+        "Unconditional simultaneous number co-occurrence clustering",
+        "Lag-2 number carryover recurrence",
+        "Modulo-10 last digit round periodicity"
+      ],
+      "active_mechanisms": [],
+      "untested_structural_spaces": [],
+      "notes": ""
+    }
+  }
+}

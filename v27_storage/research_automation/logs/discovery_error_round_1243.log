@@ -1,0 +1,2 @@
+Error: TypeError: CandidateRecord.__init__() got an unexpected keyword argument 'parent_research_id'
+Timestamp: 2026-09-30T07:57:30.599324+00:00

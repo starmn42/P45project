@@ -1,0 +1,20 @@
+{
+  "candidate_id": "IDEA-1243-NEGA-001",
+  "created_at": "2026-09-30T08:00:03.268602+00:00",
+  "birth_round": 1243,
+  "source_research": "STRUCTURAL_DISCOVERY_AGENT_V1",
+  "candidate_type": "STRUCTURAL_DISCOVERY_AGENT_V1:NEGATIVE_SPACE",
+  "hypothesis": "When a fixed 5-zone partition (Zones 1..5, each 9 balls) experiences complete extinction (0 balls drawn) in round t, the occupancy count in round t+1 exhibits positive compensatory rebound exceeding hypergeometric expectation.",
+  "opposite_hypothesis": "Zone extinction has zero memory effect: next-round zone occupancy conforms strictly to the memoryless hypergeometric distribution P(k balls | 9 balls in zone, 6 drawn from 45).",
+  "novelty_status": "NOVEL",
+  "duplicate_status": "PASS_NO_EXACT_COLLISION",
+  "rescue_check": "PASS_EXCLUDED_PREDECESSORS: EXP-004 (Variable extinction hunting)",
+  "data_snooping_status": "CLEAN_PROSPECTIVE_ONLY",
+  "confirmatory_start_round": 1244,
+  "minimum_sample": 30,
+  "recommended_action": "GENERATE_PROTOCOL",
+  "state": "READY_FOR_PROTOCOL",
+  "protocol_sha256": null,
+  "locked_at": null,
+  "notes": "Fixed-Partition Extinction Negative-Space Recovery Invariance"
+}

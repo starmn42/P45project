@@ -1,0 +1,45 @@
+"""Constants and configurations for P45 AUTO RESEARCH LOOP V1."""
+from __future__ import annotations
+
+from enum import Enum
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[3]
+
+STORAGE_BASE = ROOT / "v27_storage/research_automation"
+CANDIDATE_QUEUE_DIR = STORAGE_BASE / "candidate_queue"
+RETROSPECTIVES_DIR = STORAGE_BASE / "retrospectives"
+STATE_DIR = STORAGE_BASE / "state"
+LOGS_DIR = STORAGE_BASE / "logs"
+AUDIT_LOG_FILE = STORAGE_BASE / "research_automation_audit.jsonl"
+
+# Required State Machine states
+class ResearchState(str, Enum):
+    IDEA_CANDIDATE = "IDEA_CANDIDATE"
+    REVIEW_REQUIRED_V1_1 = "REVIEW_REQUIRED_V1_1"
+    NEEDS_EVIDENCE = "NEEDS_EVIDENCE"
+    REJECT_DUPLICATE = "REJECT_DUPLICATE"
+    REJECT_RESCUE = "REJECT_RESCUE"
+    REJECT_NOT_TESTABLE = "REJECT_NOT_TESTABLE"
+    WAIT_PROSPECTIVE = "WAIT_PROSPECTIVE"
+    READY_FOR_PROTOCOL = "READY_FOR_PROTOCOL"
+    PROTOCOL_LOCKED = "PROTOCOL_LOCKED"
+    TESTING = "TESTING"
+    SUPPORTED = "SUPPORTED"
+    INCONCLUSIVE = "INCONCLUSIVE"
+    FAILED = "FAILED"
+    RETIREMENT_CANDIDATE = "RETIREMENT_CANDIDATE"
+    PROMOTION_CANDIDATE = "PROMOTION_CANDIDATE"
+    USER_APPROVAL_REQUIRED = "USER_APPROVAL_REQUIRED"
+
+# Allowed Followup Hypothesis Types in V1
+class FollowupType(str, Enum):
+    INDEPENDENT_NEW_HYPOTHESIS = "INDEPENDENT_NEW_HYPOTHESIS"
+    OPPOSITE_HYPOTHESIS = "OPPOSITE_HYPOTHESIS"
+    INTERACTION_HYPOTHESIS = "INTERACTION_HYPOTHESIS"
+
+# Max candidates generated per settlement cycle to prevent research runaway
+MAX_CANDIDATES_PER_CYCLE = 3
+
+# External AI configuration status
+NOVEL_IDEA_GENERATION_EXTERNAL_AI = "NOT_CONFIGURED"

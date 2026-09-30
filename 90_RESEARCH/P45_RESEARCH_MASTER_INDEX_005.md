@@ -178,3 +178,98 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
 - Evidence = E:\P45 프로젝트\v27_storage\audits\web_joseon_heritage_001\FINAL_REPORT.md, browser_checks.json, protected_comparison.json, screenshots/*.png.
 - RESUME_FROM = APPROVED_REFERENCE_COMPARISON_ONLY. 승인 시안과 기존 캡처 비교부터 재개; 완료된 전체 검증/정산/생성 반복 금지.
 - Official Engine FROZEN; NO-PICK 867/867 UNRESOLVED; latest numbered EXP-020; EXP-035 NOT_EVALUATED / STOP_NULL_SEMANTICS_NOT_VALID. 연구/Registry 수 변화 없음.
+
+
+## 2026-09-30 — EDGE ARITHMETIC FAMILY V1
+
+- Canonical ID EXP-DRAW-20260930-001-V1, direct duplicate NEW. Four formulas ×2lags, MAIN-only primary, no rule tuning.
+- Family NO_SUPPORTED_ENDPOINT; six INCONCLUSIVE positive effects, two FAILED_NOT_SUPPORTED (A2/D1), no SUPPORTED endpoint.
+- Completed1..1243; locked 70/30 per lag;5 blocks;50,000 full-record order permutations,8 endpoint maxT, exact independent reproduction PASS.
+- Research runner idempotent, repeat write0; all4 research shadow source1243 ->1244/1245 sealed. Official integration NO; promotion false; Official/DB/sealed/prospective/WEB change0; leakage0.
+- Formal rows69 (DRAW54/CROWD9/PRIZE6). Latest numbered EXP-020 unchanged. Prior Recovery043 remains authoritative for runtime/UI state; this Work did not revalidate WEB.
+- Evidence: v27_storage/experiments/edge_arithmetic_family_v1_001/final_result.md; protocol.json; reproducibility_report.json; protection_comparison.json.
+
+
+## 2026-09-30 — TRIO ORBIT RETROSPECTIVE + AUTO RESEARCH LOOP V1
+
+- 새 운영 원칙: "매 공식 결과 settlement 후 active research 자동 retrospective를 수행하고, 안전한 follow-up candidate를 자동 평가한다."
+- TRIO ORBIT Prospective(1239..1243, 5회): Fixed PRIMARY 0, Linked PRIMARY 0, Fixed SUPPORT 3, Linked SUPPORT 1.
+- Null Calibration: 3개 TRIO 후보 제시 시 공정 6/45 추첨에서 1회차당 적어도 1개 SUPPORT(exact 2/3) 발생 확률은 약 12.12%. N=5 표본은 SMALL_SAMPLE_INCONCLUSIVE이며 60% 성능으로 과대평가 불가.
+- Historical(1..1238, 1,237회): Fixed PRIMARY 5/1237 (0.40%), Linked PRIMARY 7/1237 (0.57%), McNemar p=0.77441; Fixed SUPPORT 159/1237 (12.85%), Linked SUPPORT 174/1237 (14.07%), McNemar p=0.41025. Anchor 재출현 36.54% vs 귀무 35.60% (p=0.49). 우월성 증거 없음 (NO_EVIDENCE_OF_LINKED_SUPERIORITY).
+- Official Engine: NO_CHANGE_SUPPORTED. 엔진 코드/게이트/DB 수정 0건 (FROZEN 유지).
+- WEB 의미론: web/index.html의 "직전연동 V1 · 실전 우선"은 증거와 불일치하여 SEMANTIC_MISMATCH_CANDIDATE로 기록. 권장 "직전연동 V1 · 연구 비교" 제안 (실제 WEB 수정 0).
+- AUTO RESEARCH LOOP V1: src/p45_v27/research_automation/ 구현 완료. 공식 lifecycle 격리, Promotion Firewall, 사후 데이터 오염 방지, 프로토콜 사전잠금, 멱등성 보장, 17개 단위/통합 테스트 PASS.
+- Registry: 69 rows 유지 (인프라 구현 자체는 새 예측 실험으로 카운트하지 않음, latest numbered EXP-020 유지).
+- Evidence: v27_storage/audits/trio_orbit_prospective_retrospective_001/ 및 v27_storage/research_automation/.
+
+
+## 2026-09-30 — STATISTICAL CORRECTION + RESEARCH DISCOVERY AGENT V1
+
+- **PHASE A (통계 정정 및 계보 보존):**
+  - Prospective Fixed SUPPORT: 기존 보고된 p≈0.0137은 단일 점확률 PMF $P(X=3) \approx 0.013757$이었음을 확인. 정확한 단측 농축 p-value $P(X \ge 3) \approx 0.014733$ 및 양측 exact binomial $p \approx 0.014733$으로 정정. Wilson 95% CI: [0.2307, 0.8824], $N=5$ 극소 표본으로 `SMALL_SAMPLE_INCONCLUSIVE`.
+  - Historical Linked SUPPORT: $N=1237, k=174$ (기대치 149.96)에 대해 단측 $p \approx 0.021781$, 양측 $p \approx 0.040486$. 본 분석은 사후 탐색적 진단(`RETROSPECTIVE_NOMINAL_DEVIATION` / `NOMINAL_SIGNAL_ONLY`)이며, 4대 역사 귀무검정군에 대해 Holm 다중비교 감도 보정 적용 시 $p_{\text{adj}} \approx 0.087125$ ($> 0.05$)로 가족별 유의성 미도달.
+  - Paired Direct Comparison: Fixed vs Linked 대응표본 검정(Both=22, Fixed-only=137, Linked-only=152, Neither=926)에서 McNemar exact $p = 0.410251$로 우월성 없음 (`NO_EVIDENCE_OF_LINKED_SUPERIORITY` 확정 유지).
+  - Linked Anchor Recurrence: 관측 36.54% vs 공정 귀무 35.60% ($Z=0.69, p=0.48912$). 추가 정보량 없음 (`NO_INCREMENTAL_ANCHOR_EVIDENCE` 확정 유지).
+  - 계보 보존 증거: `v27_storage/audits/trio_orbit_prospective_retrospective_001/TRIO_ORBIT_STATISTICAL_CORRECTION_001.md`, `.json` 생성 및 보고서 전면 반영.
+
+- **PHASE B (핵심 판정 재확인):**
+  - Official Engine: `NO_CHANGE_SUPPORTED` (엔진/임계치/게이트/DB 수정 0건, FROZEN 유지).
+  - Fixed vs Linked: `NO_EVIDENCE_OF_LINKED_SUPERIORITY`.
+  - Linked Anchor: `NO_INCREMENTAL_ANCHOR_EVIDENCE`.
+
+- **PHASE C (P45 RESEARCH DISCOVERY AGENT V1 구현 및 가동):**
+  - 구현 위치: `src/p45_v27/research_automation/` 하위 6대 신규 모듈 (`research_ontology.py`, `research_coverage_map.py`, `coverage_gap_analyzer.py`, `novelty_checker.py`, `idea_quality_gate.py`, `idea_provider.py`, `candidate_ranker.py`, `research_discovery_agent.py`).
+  - 24대 연구 개념축 Ontology 정의 및 연구 커버리지 맵 생성 (`RESEARCH_COVERAGE_MAP.json`).
+  - 사후 결과 스캔/적중률 브루트포스 절대 금지: 오직 구조적 공백(STRUCTURAL_GAP, NEGATIVE_SPACE, OPPOSITE_HYPOTHESIS, CROSS_STRUCTURE) 기반 탐색.
+  - 10대 Idea Quality Gate (NOVEL, NON_RESCUE, FALSIFIABLE, CLEAR_OPPOSITE, NULL_DEFINED, FUTURE_TESTABLE, DATA_AVAILABLE, MIN_SAMPLE_DEFINABLE, NO_LEAKAGE, MULTIPLE_TESTING_CONTROLLABLE) 구현.
+  - 제공자 구조: `DeterministicStructuralProvider` (ACTIVE), `OptionalLLMIdeaProvider` (`NOT_CONFIGURED` - 안전하게 비밀키 요구/생성 없이 정상 스탠바이).
+  - 첫 Discovery Cycle (1243회 대상 1회 실행):
+    - `IDEA-1243-NEGA-001`: Fixed-Partition Extinction Negative-Space Recovery Invariance (READY_FOR_PROTOCOL, 시작회차 1244).
+    - `IDEA-1243-OPPO-002`: Number Proximity Minimum-Distance Repulsion Invariance (READY_FOR_PROTOCOL, 시작회차 1244).
+    - `IDEA-1243-CROS-003`: Pair Lifecycle Dormancy Duration Geometric Memory Invariance (READY_FOR_PROTOCOL, 시작회차 1244).
+    - 멱등성 검증 완료: 동일 1243회 재호출 시 new candidates = 0, duplicate write = 0.
+  - Official Firewall: `PROMOTION_CANDIDATE` -> `USER_APPROVAL_REQUIRED` 자동 차단 유지.
+  - 검증 및 회귀테스트: 29 tests PASS (기존 17개 + 신규 12개 통계정정/디스커버리 에이전트).
+  - Official 보호 검증: 13대 공식 자산 변경 0건 (`Protection verdict: PASS, Changed: 0`), future leakage = 0.
+
+
+## 2026-09-30 — RESEARCH DISCOVERY AGENT V1.1 (SEMANTIC DUPLICATE GUARD + RUNTIME/GIT FINALIZATION)
+
+- **배경 및 V1 근본 원인 분석:**
+  - V1 Novelty Checker가 단순 문자열/키워드 매칭(exact substring)에 의존하여, 구조적 동등성을 지닌 과거 연구(EXP-004 가변 전멸구간, EXP-015 결손 회복속도, EXP-018 인접 쌍, EXP-027 간격 분산 등)를 신규 후보로 잘못 통과시키는 취약점이 발견됨.
+  - Coverage Map에서 개념 공간 차원(24대 Ontology 축)과 각 축에 매핑된 연구 인스턴스들의 상태 카운트(Tested, Active, Failed 등)를 혼동하여 총합 불일치 발생.
+  - 프로토콜 잠금(Protocol Lock) 및 미래 봉인(Prospective Seal) 완료 전 후보 생성 단계에서 `confirmatory_start_round`가 조기 확정되어 누수 위험 구조가 존재함.
+- **V1.1 구조적 개선 사항:**
+  1. **RESEARCH KNOWLEDGE INDEX 기계 판독 체계 구축 (`knowledge_index.py`):**
+     - 공식 Registry 69행 + 비-EXP 실행 연구축 3건 + Official 내부 연구축 5건 등 총 77건의 정규화된 연구 레코드 색인 (`RESEARCH_KNOWLEDGE_INDEX.json`). 8대 핵심 구조 필드(INPUT, TRANSFORMATION, CONDITION, TARGET, LAG, METRIC, NULL, ACTIONABILITY) 완비.
+  2. **COVERAGE MAP V1.1 정밀화 (`coverage_map_v1_1.py`):**
+     - 24대 불변 온톨로지 개념축과 비배타적 연구 상태 카운트를 분리. 역추적 가능한 research_id 매핑 완비 (`len(axes) == 24`, 불변 검증 PASS).
+  3. **SEMANTIC NOVELTY CHECKER V1.1 (`semantic_novelty_checker.py`):**
+     - 모든 신규 후보에 대해 기존 연구 77건 대상 8차원 구조 비교 수행 및 유사도 Top 10 산출.
+     - 중복 유형 분류: `EXACT_DUPLICATE`, `NEAR_DUPLICATE`, `FAILED_AXIS_RESCUE`, `PARTIAL_OVERLAP`, `DISTINCT`.
+     - 증거 산출물 필수화: `CANDIDATE_NOVELTY_EVIDENCE.json`, `.md` 생성 없이는 프로토콜 준비 불가.
+  4. **READY_FOR_PROTOCOL 게이트 강화 (`idea_quality_gate.py`):**
+     - 10대 기본 품질 게이트 통과 외에 4대 시맨틱 게이트(`SEMANTIC_DUPLICATE_CHECK`, `FAILED_AXIS_RESCUE_CHECK`, `NOVELTY_EVIDENCE_EXISTS`, `NOVELTY_JUSTIFICATION`) 전수 PASS 필수화.
+  5. **확증 회차(Confirmatory Round) 2단계 안전 분리:**
+     - 후보 제안 시점: `earliest_eligible_confirmatory_round = 1244`만 기록, `confirmatory_start_round = None` 강제.
+     - 프로토콜 잠금, SHA-256 생성, 봉인 완료 및 당첨 미공개 시점에만 실제 확증 시작 회차 확정 (Future Leakage = 0).
+- **V1 3대 후보 재평가 결과:**
+  - 후보 A (`IDEA-1243-NEGA-001` - Fixed-Partition Extinction Negative-Space Recovery Invariance):
+    - Top Similar: EXP-015 (결손 회복속도), EXP-004 (가변 전멸구간, FAILED), EXP-022 (이동×가변 전멸 교차).
+    - 판정: **`REJECT_RESCUE`** (기존 실패/등록된 전멸·복귀 축의 사후 재포장으로 판명).
+  - 후보 B (`IDEA-1243-OPPO-002` - Number Proximity Minimum-Distance Repulsion Invariance):
+    - Top Similar: EXP-027 (간격 분산), EXP-018 (인접 번호 구조, CLOSED), EXP-008 (숫자 간격 구조).
+    - 판정: **`REJECT_RESCUE`** (기존 종결된 간격/인접 번호 축의 명칭 변경으로 판명).
+  - 후보 C (`IDEA-1243-CROS-003` - Pair Lifecycle Dormancy Duration Geometric Memory Invariance):
+    - Top Similar: EXP-012 (PAIR 2회 출현 주기 및 갭 분석), Official Pair Lifecycle Repair.
+    - 판정: **`NEEDS_EVIDENCE`** (공식 무결성 점검과 개념적 차이는 인정되나, 990개 페어에 대한 사전 다중가설군 및 위험률 풀링 증거 미비로 보류).
+  - 생존 후보: **0건** (`NO_VALID_NEW_HYPOTHESIS`). 억지 후보 통과 0건.
+- **테스트 및 검증:**
+  - 단위/통합/회귀 테스트: 총 44개 테스트 전수 통과 (Auto Research Loop 17 + Discovery V1 12 + Discovery V1.1 15, 0 failures, 0 errors).
+  - 공식 엔진 보호: 13대 공식 자산 무결성 100% 유지 (`Protection verdict: PASS, Changed: 0`).
+  - 로컬 런타임 활성화: `ResearchAutomationCoordinator` 초기화 및 V1.1 시맨틱 가드 활성 확인 완료.
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+  - 정식 레지스트리: 69행 유지 (새 실험 실행 0건).
+
+
+

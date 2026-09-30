@@ -1,0 +1,70 @@
+{
+  "packet_id": "RETRO-PACKET-1243",
+  "target_round": 1243,
+  "created_at": "2026-09-30T07:22:30.944659+00:00",
+  "actual_draw": {
+    "main": [
+      9,
+      18,
+      24,
+      38,
+      43,
+      44
+    ],
+    "bonus": 35,
+    "date": "2026-09-26"
+  },
+  "research_evaluations": {
+    "trio_orbit_v1": {
+      "research_id": "EXP-DRAW-TRIO-ORBIT-V1",
+      "target_round": 1243,
+      "expected_outcome": {
+        "fixed_primary_null": 0.004227961488313161,
+        "fixed_support_null": 0.1212256263305611,
+        "linked_primary_null": 0.004227961488313161,
+        "linked_support_null": 0.1212256263305611
+      },
+      "observed_outcome": {
+        "fixed_primary": 0,
+        "fixed_support": 0,
+        "fixed_hits": [
+          0,
+          0,
+          1
+        ],
+        "linked_primary": 0,
+        "linked_support": 1,
+        "linked_hits": [
+          2,
+          0,
+          0
+        ]
+      },
+      "cumulative_performance": {
+        "settled_rounds": 5,
+        "fixed_support_total": 3,
+        "linked_support_total": 1,
+        "fixed_support_rate": 0.6,
+        "linked_support_rate": 0.2
+      },
+      "null_expectation": "Fair uniform 6/45 hypergeometric baseline",
+      "previous_verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
+      "new_evidence_contribution": "Round 1243: Fixed support=0, Linked support=1",
+      "drift_indication": "NONE_DETECTED_WITHIN_RANDOM_BOUNDS",
+      "failure_reason": "N/A (within null expectation)",
+      "unresolved_question": "Does Linked anchor provide any long-term lift over Fixed baseline?",
+      "followup_recommendation": "CONTINUE_SHADOW_TRACKING_NO_OFFICIAL_CHANGE"
+    },
+    "edge_arithmetic_family_v1": {
+      "research_id": "EXP-DRAW-20260930-001-V1",
+      "target_round": 1243,
+      "status": "SHADOW_TRACKING",
+      "family_verdict": "NO_SUPPORTED_ENDPOINT",
+      "followup_recommendation": "MAINTAIN_PASSIVE_SHADOW"
+    }
+  },
+  "overlap_events": [],
+  "global_verdict": "NO_CHANGE_SUPPORTED",
+  "promotion_eligible": false,
+  "followup_recommendation": "Maintain prospective shadow tracking; do not alter official engine."
+}

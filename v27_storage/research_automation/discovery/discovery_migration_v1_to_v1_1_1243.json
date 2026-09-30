@@ -1,0 +1,60 @@
+{
+  "status": "NO_VALID_NEW_HYPOTHESIS",
+  "round": 1243,
+  "idempotency_key": "discovery_migration:v1_to_v1_1:1243",
+  "new_candidates_count": 0,
+  "duplicate_write": 0,
+  "summary": {
+    "round": 1243,
+    "idempotency_key": "discovery_migration:v1_to_v1_1:1243",
+    "timestamp": "2026-09-30T08:27:06.171322+00:00",
+    "coverage_axes_read": 24,
+    "total_indexed_knowledge_records": 77,
+    "provider_status": {
+      "DeterministicStructuralProvider": "ACTIVE",
+      "OptionalLLMIdeaProvider": "NOT_CONFIGURED",
+      "NOVEL_IDEA_GENERATION_EXTERNAL_AI": "NOT_CONFIGURED"
+    },
+    "raw_candidates_generated": 3,
+    "semantic_novelty_audited_count": 3,
+    "ready_for_protocol_count": 0,
+    "needs_evidence_count": 1,
+    "rejected_count": 2,
+    "final_selected_count": 0,
+    "max_candidates_limit": 3,
+    "selected_candidates": [],
+    "queued_records": [],
+    "rejection_audit_summary": [
+      {
+        "candidate_id": "IDEA-1243-NEGA-001",
+        "title": "Fixed-Partition Extinction Negative-Space Recovery Invariance",
+        "verdict": "REJECT_RESCUE",
+        "reason": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-017-V1, EXP-DRAW-20260821-042-V1.",
+        "rescues": [
+          "EXP-DRAW-20260816-017-V1",
+          "EXP-DRAW-20260821-042-V1"
+        ],
+        "duplicates": []
+      },
+      {
+        "candidate_id": "IDEA-1243-OPPO-002",
+        "title": "Number Proximity Minimum-Distance Repulsion Invariance",
+        "verdict": "REJECT_RESCUE",
+        "reason": "Rejected: disguised rescue of previously failed/closed axes EXP-DRAW-20260816-026-V1.",
+        "rescues": [
+          "EXP-DRAW-20260816-026-V1"
+        ],
+        "duplicates": []
+      },
+      {
+        "candidate_id": "IDEA-1243-CROS-003",
+        "title": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance",
+        "verdict": "NEEDS_EVIDENCE",
+        "reason": "Candidate addresses a distinct parametric hazard distribution on 990 pairs separate from official repair and EXP-012, but lacks pre-specified multiplicity family and hazard pooling justification required for formal protocol generation.",
+        "rescues": [],
+        "duplicates": []
+      }
+    ],
+    "official_engine_firewall": "PROTECTED_UNMODIFIED"
+  }
+}

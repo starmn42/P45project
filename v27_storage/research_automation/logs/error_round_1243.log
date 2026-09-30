@@ -1,0 +1,9 @@
+Timestamp: 2026-09-30T08:33:01.437203+00:00
+Error: RuntimeError: SIMULATED_RESEARCH_AUTOMATION_FAULT_INJECTION
+
+Traceback:
+Traceback (most recent call last):
+  File "E:\P45 프로젝트\src\p45_v27\research_automation\hook.py", line 135, in trigger_research_automation_post_draw
+    raise RuntimeError("SIMULATED_RESEARCH_AUTOMATION_FAULT_INJECTION")
+RuntimeError: SIMULATED_RESEARCH_AUTOMATION_FAULT_INJECTION
+

@@ -1,0 +1,1904 @@
+{
+  "version": "1.1",
+  "total_records": 77,
+  "counts_by_source_class": {
+    "FORMAL_REGISTRY": 69,
+    "NON_EXP_EXECUTED": 3,
+    "OFFICIAL_INTERNAL": 5
+  },
+  "records": [
+    {
+      "research_id": "EXP-DRAW-20260816-001-V1",
+      "canonical_name": "숫자 관계망 구조",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-002-V1",
+      "canonical_name": "숫자 동시출현 관계망 (EXP-001)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-003-V1",
+      "canonical_name": "조건부 관계망",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-004-V1",
+      "canonical_name": "A 출현 후 다음 회차 B 관계",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-005-V1",
+      "canonical_name": "2회 간격 관계",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-006-V1",
+      "canonical_name": "3개 숫자 관계망",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-007-V1",
+      "canonical_name": "최근100 관계망",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-008-V1",
+      "canonical_name": "최근50 관계망",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-009-V1",
+      "canonical_name": "전체 관계망",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Individual winning lottery numbers (1..45)",
+      "transformation": "Pairwise co-occurrence frequency and correlation graph",
+      "condition": "Unconditional simultaneous occurrence or conditional on number A",
+      "target": "Next-round number co-occurrence likelihood",
+      "lag": 1,
+      "metrics": [
+        "jaccard_similarity",
+        "lift",
+        "co_occurrence_count"
+      ],
+      "null": "Hypergeometric independent random ball selection without replacement",
+      "ontology_tags": [
+        "NUMBER",
+        "interaction",
+        "cross-round relation"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-010-V1",
+      "canonical_name": "NUMBER 1-STEP TRANSITION / ROUND TRACE (EXP-003)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Winning numbers from round t-1",
+      "transformation": "1-step Markov transition matrix or modulo arithmetic",
+      "condition": "Consecutive round transitions (t-1 -> t)",
+      "target": "Next draw winning numbers",
+      "lag": 1,
+      "metrics": [
+        "transition_probability",
+        "empirical_lift"
+      ],
+      "null": "Uniform independent transitions across 45 states",
+      "ontology_tags": [
+        "NUMBER",
+        "transition",
+        "lag"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-011-V1",
+      "canonical_name": "회차 간 흔적 구조",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Winning numbers from round t-1",
+      "transformation": "1-step Markov transition matrix or modulo arithmetic",
+      "condition": "Consecutive round transitions (t-1 -> t)",
+      "target": "Next draw winning numbers",
+      "lag": 1,
+      "metrics": [
+        "transition_probability",
+        "empirical_lift"
+      ],
+      "null": "Uniform independent transitions across 45 states",
+      "ontology_tags": [
+        "NUMBER",
+        "transition",
+        "lag"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-012-V1",
+      "canonical_name": "격회 재출현 (EXP-005)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Winning numbers from round t-1",
+      "transformation": "1-step Markov transition matrix or modulo arithmetic",
+      "condition": "Consecutive round transitions (t-1 -> t)",
+      "target": "Next draw winning numbers",
+      "lag": 1,
+      "metrics": [
+        "transition_probability",
+        "empirical_lift"
+      ],
+      "null": "Uniform independent transitions across 45 states",
+      "ontology_tags": [
+        "NUMBER",
+        "transition",
+        "lag"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-013-V1",
+      "canonical_name": "같은 끝자리 회차 전이 (EXP-006)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Winning numbers from round t-1",
+      "transformation": "1-step Markov transition matrix or modulo arithmetic",
+      "condition": "Consecutive round transitions (t-1 -> t)",
+      "target": "Next draw winning numbers",
+      "lag": 1,
+      "metrics": [
+        "transition_probability",
+        "empirical_lift"
+      ],
+      "null": "Uniform independent transitions across 45 states",
+      "ontology_tags": [
+        "NUMBER",
+        "transition",
+        "lag"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-014-V1",
+      "canonical_name": "끝수 전이",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Winning numbers from round t-1",
+      "transformation": "1-step Markov transition matrix or modulo arithmetic",
+      "condition": "Consecutive round transitions (t-1 -> t)",
+      "target": "Next draw winning numbers",
+      "lag": 1,
+      "metrics": [
+        "transition_probability",
+        "empirical_lift"
+      ],
+      "null": "Uniform independent transitions across 45 states",
+      "ontology_tags": [
+        "NUMBER",
+        "transition",
+        "lag"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-015-V1",
+      "canonical_name": "결손 회복속도",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-016-V1",
+      "canonical_name": "결손 회복 전환점",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-017-V1",
+      "canonical_name": "가변 전멸구간 (EXP-004)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-018-V1",
+      "canonical_name": "다중 전멸구간 상호작용",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-019-V1",
+      "canonical_name": "이동×가변 전멸 교차",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-020-V1",
+      "canonical_name": "최근10 강도 지속",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-021-V1",
+      "canonical_name": "비전멸 전용 엔진",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-022-V1",
+      "canonical_name": "구간별 복귀우선 전이",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Partition zones and deciles (e.g. 5 zones of 9 numbers, variable zones)",
+      "transformation": "Zero-occupancy extinction tracking and return velocity",
+      "condition": "Extinction event (0 balls in zone) or deficiency",
+      "target": "Next-round zone rebound or recovery duration",
+      "lag": 1,
+      "metrics": [
+        "recovery_rounds",
+        "zone_occupancy_excess_z"
+      ],
+      "null": "Binomial/hypergeometric memoryless zone occupancy",
+      "ontology_tags": [
+        "extinction",
+        "recovery",
+        "occupancy",
+        "range"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-023-V1",
+      "canonical_name": "쌍둥이 유사 회차",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Full draw outcome vectors across historical rounds",
+      "transformation": "Multivariate set distance / twin round vector matching",
+      "condition": "Historical round with high similarity score to current draw",
+      "target": "Next-round carryover following similar round",
+      "lag": 1,
+      "metrics": [
+        "set_intersection_size",
+        "twin_similarity_score"
+      ],
+      "null": "Permutation null of draw order",
+      "ontology_tags": [
+        "similarity",
+        "cross-round relation",
+        "transition"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-024-V1",
+      "canonical_name": "구조형 쌍둥이 회차 전이",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Full draw outcome vectors across historical rounds",
+      "transformation": "Multivariate set distance / twin round vector matching",
+      "condition": "Historical round with high similarity score to current draw",
+      "target": "Next-round carryover following similar round",
+      "lag": 1,
+      "metrics": [
+        "set_intersection_size",
+        "twin_similarity_score"
+      ],
+      "null": "Permutation null of draw order",
+      "ontology_tags": [
+        "similarity",
+        "cross-round relation",
+        "transition"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-025-V1",
+      "canonical_name": "유사 회차 이후 다음 회차 전이 (EXP-007)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Full draw outcome vectors across historical rounds",
+      "transformation": "Multivariate set distance / twin round vector matching",
+      "condition": "Historical round with high similarity score to current draw",
+      "target": "Next-round carryover following similar round",
+      "lag": 1,
+      "metrics": [
+        "set_intersection_size",
+        "twin_similarity_score"
+      ],
+      "null": "Permutation null of draw order",
+      "ontology_tags": [
+        "similarity",
+        "cross-round relation",
+        "transition"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-026-V1",
+      "canonical_name": "숫자 간격 구조 (EXP-008)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
+      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+      "condition": "Within-round spacing distribution or arithmetic progression",
+      "target": "Spacing vector and dispersion variance",
+      "lag": 0,
+      "metrics": [
+        "spacing_variance",
+        "adjacent_gap_vector",
+        "minimum_spacing"
+      ],
+      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "ontology_tags": [
+        "spacing",
+        "gap",
+        "NUMBER"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-027-V1",
+      "canonical_name": "간격 분산",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
+      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+      "condition": "Within-round spacing distribution or arithmetic progression",
+      "target": "Spacing vector and dispersion variance",
+      "lag": 0,
+      "metrics": [
+        "spacing_variance",
+        "adjacent_gap_vector",
+        "minimum_spacing"
+      ],
+      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "ontology_tags": [
+        "spacing",
+        "gap",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-028-V1",
+      "canonical_name": "등차수열형 구조",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
+      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+      "condition": "Within-round spacing distribution or arithmetic progression",
+      "target": "Spacing vector and dispersion variance",
+      "lag": 0,
+      "metrics": [
+        "spacing_variance",
+        "adjacent_gap_vector",
+        "minimum_spacing"
+      ],
+      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "ontology_tags": [
+        "spacing",
+        "gap",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-029-V1",
+      "canonical_name": "+13/+14 고정 간격",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Sorted winning numbers x1 < x2 < ... < x6",
+      "transformation": "Adjacent ball differences (x_{i+1} - x_i) and spacing dispersion",
+      "condition": "Within-round spacing distribution or arithmetic progression",
+      "target": "Spacing vector and dispersion variance",
+      "lag": 0,
+      "metrics": [
+        "spacing_variance",
+        "adjacent_gap_vector",
+        "minimum_spacing"
+      ],
+      "null": "Uniform order statistics spacing distribution on {1..45}",
+      "ontology_tags": [
+        "spacing",
+        "gap",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-030-V1",
+      "canonical_name": "숫자 역할 구조",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-031-V1",
+      "canonical_name": "특정 UNIT 일시 강세",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-032-V1",
+      "canonical_name": "NUMBER 역할",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-033-V1",
+      "canonical_name": "역할 충돌",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-034-V1",
+      "canonical_name": "실패 원인 복기",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-035-V1",
+      "canonical_name": "전체 엔진 귀무감사",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-036-V1",
+      "canonical_name": "placebo/permutation",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-037-V1",
+      "canonical_name": "과최적화 방지",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-038-V1",
+      "canonical_name": "NO-PICK COVERAGE & QUALIFIED RESEARCH FALLBACK (EXP-002)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "DESIGNED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260816-038-V2",
+      "canonical_name": "NO-PICK COVERAGE & NUMBER-RANK FALLBACK (EXP-002 V2)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED",
+      "inputs": "DRAW raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-039-V1",
+      "canonical_name": "홀수 개수 lag-1 공분산 (EXP-009)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Summary statistics of winning draws (odd count, sum of six)",
+      "transformation": "Time-series lag-1 covariance and autocorrelation",
+      "condition": "Serial consecutive draws",
+      "target": "Next draw macro property (parity, sum)",
+      "lag": 1,
+      "metrics": [
+        "autocorrelation_rho",
+        "lag1_covariance"
+      ],
+      "null": "Zero serial autocorrelation under independent Bernoulli/hypergeometric draws",
+      "ontology_tags": [
+        "arithmetic transform",
+        "lag",
+        "persistence"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-040-V1",
+      "canonical_name": "추첨 합계 lag-1 공분산 (EXP-010)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Summary statistics of winning draws (odd count, sum of six)",
+      "transformation": "Time-series lag-1 covariance and autocorrelation",
+      "condition": "Serial consecutive draws",
+      "target": "Next draw macro property (parity, sum)",
+      "lag": 1,
+      "metrics": [
+        "autocorrelation_rho",
+        "lag1_covariance"
+      ],
+      "null": "Zero serial autocorrelation under independent Bernoulli/hypergeometric draws",
+      "ontology_tags": [
+        "arithmetic transform",
+        "lag",
+        "persistence"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-041-V1",
+      "canonical_name": "미러 보수 전이 (EXP-011)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Winning numbers from round t-1",
+      "transformation": "1-step Markov transition matrix or modulo arithmetic",
+      "condition": "Consecutive round transitions (t-1 -> t)",
+      "target": "Next draw winning numbers",
+      "lag": 1,
+      "metrics": [
+        "transition_probability",
+        "empirical_lift"
+      ],
+      "null": "Uniform independent transitions across 45 states",
+      "ontology_tags": [
+        "NUMBER",
+        "transition",
+        "lag"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-042-V1",
+      "canonical_name": "개별 숫자 return-age rank (EXP-012)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Number appearance history",
+      "transformation": "Return-age rank (rounds since last appearance)",
+      "condition": "Ranking by dormancy duration",
+      "target": "Next draw selection priority",
+      "lag": 1,
+      "metrics": [
+        "rank_correlation",
+        "hit_rate_by_rank"
+      ],
+      "null": "Geometric distribution of return ages",
+      "ontology_tags": [
+        "order/rank",
+        "gap",
+        "recovery"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-043-V1",
+      "canonical_name": "누적 빈도 rank (EXP-013)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Cumulative historical draw frequencies",
+      "transformation": "Frequency rank sorting",
+      "condition": "Historical hot/cold accumulation",
+      "target": "Next draw selection priority",
+      "lag": 1,
+      "metrics": [
+        "frequency_rank_hit_rate"
+      ],
+      "null": "Multinomial equal frequency null",
+      "ontology_tags": [
+        "order/rank",
+        "persistence",
+        "regime"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-044-V1",
+      "canonical_name": "직전 BONUS→다음 MAIN (EXP-014)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Bonus ball (7th ball) from round t-1",
+      "transformation": "Migration indicator from bonus to main6",
+      "condition": "Prior round bonus ball",
+      "target": "Next draw main6 appearance",
+      "lag": 1,
+      "metrics": [
+        "bonus_to_main_recurrence_rate"
+      ],
+      "null": "Fair lottery recurrence probability 6/45 ≈ 13.33%",
+      "ontology_tags": [
+        "bonus interaction",
+        "transition",
+        "recurrence"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-045-V1",
+      "canonical_name": "BONUS 상대 순위 교환가능성 (EXP-015)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Bonus ball vs main 6 balls",
+      "transformation": "Relative size rank exchangeability",
+      "condition": "Bonus relative position in sorted draw",
+      "target": "Rank distribution uniformity",
+      "lag": 0,
+      "metrics": [
+        "rank_uniformity_chi2"
+      ],
+      "null": "Discrete uniform distribution on {1..7}",
+      "ontology_tags": [
+        "bonus interaction",
+        "order/rank",
+        "similarity"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260821-046-V1",
+      "canonical_name": "번호 라벨 이질성·지속성 (EXP-016)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "FAILED_EARLY",
+      "inputs": "Physical ball labels 1..45",
+      "transformation": "Long-term label heterogeneity test",
+      "condition": "Complete official draw history",
+      "target": "Ball physical drawing bias",
+      "lag": 0,
+      "metrics": [
+        "goodness_of_fit_chi2"
+      ],
+      "null": "Uniform multinomial probability p = 1/45 for all balls",
+      "ontology_tags": [
+        "NUMBER",
+        "persistence",
+        "regime"
+      ],
+      "verdict": "FAILED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260816-001-V1",
+      "canonical_name": "대중 번호 선택 행동",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Lottery player selection patterns and ticket sales distributions",
+      "transformation": "Crowd popularity clustering and distance tomography",
+      "condition": "Player behavioral choice",
+      "target": "Crowd concentration in Johnson space",
+      "lag": 0,
+      "metrics": [
+        "distance_autocorrelation",
+        "t_max"
+      ],
+      "null": "Independent uniform ticket selection by players",
+      "ontology_tags": [
+        "regime",
+        "similarity",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260816-002-V1",
+      "canonical_name": "많이 고르는 번호·패턴",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Lottery player selection patterns and ticket sales distributions",
+      "transformation": "Crowd popularity clustering and distance tomography",
+      "condition": "Player behavioral choice",
+      "target": "Crowd concentration in Johnson space",
+      "lag": 0,
+      "metrics": [
+        "distance_autocorrelation",
+        "t_max"
+      ],
+      "null": "Independent uniform ticket selection by players",
+      "ontology_tags": [
+        "regime",
+        "similarity",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-PRIZE-20260816-001-V1",
+      "canonical_name": "판매량 대비 1등 당첨게임 밀도 / EXP-PRIZE-001-V1 BIRTHDAY-ZONE CONCENTRATION",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "PROTOCOL_BLOCKED_SOURCE_SEMANTICS",
+      "inputs": "First and second prize winner counts and ticket sales",
+      "transformation": "Winner count density and jackpot dilution ratio",
+      "condition": "Birthday-zone concentration in winning numbers",
+      "target": "First/second prize share dilution risk",
+      "lag": 0,
+      "metrics": [
+        "winner_count_ratio",
+        "dilution_elasticity"
+      ],
+      "null": "Poisson/binomial winner count under uniform ticket distribution",
+      "ontology_tags": [
+        "regime",
+        "range",
+        "CORE"
+      ],
+      "verdict": "PROTOCOL_BLOCKED_SOURCE_SEMANTICS",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-PRIZE-20260816-001-V2",
+      "canonical_name": "BIRTHDAY-ZONE CONCENTRATION — FIRST-PRIZE SHARE RISK (source semantics corrected)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "SUPPORTED_WITHIN_EXPERIMENT",
+      "inputs": "First and second prize winner counts and ticket sales",
+      "transformation": "Winner count density and jackpot dilution ratio",
+      "condition": "Birthday-zone concentration in winning numbers",
+      "target": "First/second prize share dilution risk",
+      "lag": 0,
+      "metrics": [
+        "winner_count_ratio",
+        "dilution_elasticity"
+      ],
+      "null": "Poisson/binomial winner count under uniform ticket distribution",
+      "ontology_tags": [
+        "regime",
+        "range",
+        "CORE"
+      ],
+      "verdict": "SUPPORTED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-PRIZE-20260821-004-V1",
+      "canonical_name": "SECOND-PRIZE CROSS-OUTCOME CORROBORATION (EXP-PRIZE-002-V1)",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "SUPPORTED_CROSS_OUTCOME",
+      "inputs": "First and second prize winner counts and ticket sales",
+      "transformation": "Winner count density and jackpot dilution ratio",
+      "condition": "Birthday-zone concentration in winning numbers",
+      "target": "First/second prize share dilution risk",
+      "lag": 0,
+      "metrics": [
+        "winner_count_ratio",
+        "dilution_elasticity"
+      ],
+      "null": "Poisson/binomial winner count under uniform ticket distribution",
+      "ontology_tags": [
+        "regime",
+        "range",
+        "CORE"
+      ],
+      "verdict": "SUPPORTED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-PRIZE-20260821-005-V1",
+      "canonical_name": "BIRTHDAY-ZONE CROWD CONCENTRATION — PROSPECTIVE CONFIRMATION",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "inputs": "First and second prize winner counts and ticket sales",
+      "transformation": "Winner count density and jackpot dilution ratio",
+      "condition": "Birthday-zone concentration in winning numbers",
+      "target": "First/second prize share dilution risk",
+      "lag": 0,
+      "metrics": [
+        "winner_count_ratio",
+        "dilution_elasticity"
+      ],
+      "null": "Poisson/binomial winner count under uniform ticket distribution",
+      "ontology_tags": [
+        "regime",
+        "range",
+        "CORE"
+      ],
+      "verdict": "PROSPECTIVE_LOCKED_WAITING_FOR_DATA",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-PRIZE-20260816-002-V1",
+      "canonical_name": "LOW/NORMAL/HIGH WINNER 구조",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "First and second prize winner counts and ticket sales",
+      "transformation": "Winner count density and jackpot dilution ratio",
+      "condition": "Birthday-zone concentration in winning numbers",
+      "target": "First/second prize share dilution risk",
+      "lag": 0,
+      "metrics": [
+        "winner_count_ratio",
+        "dilution_elasticity"
+      ],
+      "null": "Poisson/binomial winner count under uniform ticket distribution",
+      "ontology_tags": [
+        "regime",
+        "range",
+        "CORE"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260816-003-V1",
+      "canonical_name": "생일번호 편향",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Lottery player selection patterns and ticket sales distributions",
+      "transformation": "Crowd popularity clustering and distance tomography",
+      "condition": "Player behavioral choice",
+      "target": "Crowd concentration in Johnson space",
+      "lag": 0,
+      "metrics": [
+        "distance_autocorrelation",
+        "t_max"
+      ],
+      "null": "Independent uniform ticket selection by players",
+      "ontology_tags": [
+        "regime",
+        "similarity",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-PRIZE-20260816-003-V1",
+      "canonical_name": "공동당첨 위험",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "First and second prize winner counts and ticket sales",
+      "transformation": "Winner count density and jackpot dilution ratio",
+      "condition": "Birthday-zone concentration in winning numbers",
+      "target": "First/second prize share dilution risk",
+      "lag": 0,
+      "metrics": [
+        "winner_count_ratio",
+        "dilution_elasticity"
+      ],
+      "null": "Poisson/binomial winner count under uniform ticket distribution",
+      "ontology_tags": [
+        "regime",
+        "range",
+        "CORE"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260816-004-V1",
+      "canonical_name": "고번호·끝수·연속수·시각/OMR 선택편향",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "REGISTERED",
+      "inputs": "Lottery player selection patterns and ticket sales distributions",
+      "transformation": "Crowd popularity clustering and distance tomography",
+      "condition": "Player behavioral choice",
+      "target": "Crowd concentration in Johnson space",
+      "lag": 0,
+      "metrics": [
+        "distance_autocorrelation",
+        "t_max"
+      ],
+      "null": "Independent uniform ticket selection by players",
+      "ontology_tags": [
+        "regime",
+        "similarity",
+        "NUMBER"
+      ],
+      "verdict": "REGISTERED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260823-005-V1",
+      "canonical_name": "CROWD",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
+      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE OUTCOME RELATION ANALYSIS",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260823-006-V1",
+      "canonical_name": "CROWD",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260823-007-V1",
+      "canonical_name": "CROWD",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE OUTCOME ANALYSIS",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260823-008-V1",
+      "canonical_name": "CROWD",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE OUTCOME TEST",
+      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE OUTCOME TEST",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-CROWD-20260824-009-V1",
+      "canonical_name": "CROWD",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE START 1239 PUBLICATION",
+      "inputs": "CROWD / PRIZE-SHARE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE START 1239 PUBLICATION",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260824-010-V1",
+      "canonical_name": "DRAW",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "USER-APPROVED SEALED CHANGE CONTROL",
+      "inputs": "PAIR OFFICIAL CHANGE CONTROL raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "USER-APPROVED SEALED CHANGE CONTROL",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260827-017-V1",
+      "canonical_name": "DRAW",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "inputs": "TRIO ORBIT CONSENSUS NUMBER LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260827-018-V1",
+      "canonical_name": "DRAW",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "inputs": "RESIDUAL NEIGHBOR CLOSURE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "SHA-256 LOCKED BEFORE OUTCOME TEST",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260827-018-V2",
+      "canonical_name": "DRAW",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
+      "inputs": "RESIDUAL NEIGHBOR CLOSURE LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "PERCENTILE BOOTSTRAP CLARIFICATION LOCKED BEFORE OUTCOME",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260827-019-V1",
+      "canonical_name": "DRAW",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
+      "inputs": "SALES-ADJUSTED CROWD EFFECT LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE OFFICIAL-DATA ACQUISITION",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260828-020-V1",
+      "canonical_name": "DRAW",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "LOCKED BEFORE TRAIN RELATIONSHIP",
+      "inputs": "LAGGED CROWD METADATA SIGNAL LAB raw numbers",
+      "transformation": "Standard structural extraction",
+      "condition": "Unconditioned baseline",
+      "target": "Next round state",
+      "lag": 1,
+      "metrics": [
+        "hit_rate",
+        "lift"
+      ],
+      "null": "Fair lottery null",
+      "ontology_tags": [
+        "NUMBER"
+      ],
+      "verdict": "LOCKED BEFORE TRAIN RELATIONSHIP",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "EXP-DRAW-20260930-001-V1",
+      "canonical_name": "EDGE ARITHMETIC FAMILY V1",
+      "source_class": "FORMAL_REGISTRY",
+      "status": "INCONCLUSIVE / NO_SUPPORTED_ENDPOINT",
+      "inputs": "Edge ball arithmetic combinations (sum, difference, modulo)",
+      "transformation": "Deterministic algebraic transforms across 4 formulas and 2 lags",
+      "condition": "Edge ball states at t-1 and t-2",
+      "target": "Next round main6 ball appearance",
+      "lag": 1,
+      "metrics": [
+        "maxT_statistic",
+        "permutation_fwer_p"
+      ],
+      "null": "50,000 full-record order permutations",
+      "ontology_tags": [
+        "arithmetic transform",
+        "transition",
+        "lag"
+      ],
+      "verdict": "SUPPORTED",
+      "evidence_paths": [
+        "E:\\P45 프로젝트\\00_P45_STATE\\experiment_lab\\06_INITIAL_EXPERIMENT_REGISTRY.md"
+      ]
+    },
+    {
+      "research_id": "NON-EXP-TRIO-ORBIT-FIXED",
+      "canonical_name": "TRIO ORBIT Pure Fixed Prospective Tracking (1239..1243)",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "ACTIVE",
+      "inputs": "Fixed 3-TRIO candidate sets (9 numbers)",
+      "transformation": "Direct set matching against drawn main6 balls",
+      "condition": "Fixed invariant trios without anchor replacement",
+      "target": "PRIMARY (3/3) and SUPPORT (exact 2/3) hits",
+      "lag": 1,
+      "metrics": [
+        "support_hit_rate",
+        "exact_binomial_p",
+        "wilson_ci"
+      ],
+      "null": "Binomial exact null p0 = 987,390 / 8,145,060 ≈ 0.121226",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence"
+      ],
+      "verdict": "SMALL_SAMPLE_INCONCLUSIVE",
+      "evidence_paths": [
+        "v27_storage/audits/trio_orbit_prospective_retrospective_001/"
+      ]
+    },
+    {
+      "research_id": "NON-EXP-TRIO-ORBIT-LINKED",
+      "canonical_name": "TRIO ORBIT Linked Previous Draw Tracking (1239..1243)",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "ACTIVE",
+      "inputs": "Linked 3-TRIO candidate sets using 3 winning numbers from round t-1 as anchor",
+      "transformation": "Anchor carryover and orbit rotation",
+      "condition": "Target draw t conditioned on winning balls of t-1",
+      "target": "PRIMARY (3/3) and SUPPORT (exact 2/3) hits",
+      "lag": 1,
+      "metrics": [
+        "support_hit_rate",
+        "mcnemar_exact_p",
+        "holm_adj_p"
+      ],
+      "null": "Binomial exact null p0 = 987,390 / 8,145,060 ≈ 0.121226",
+      "ontology_tags": [
+        "TRIO",
+        "recurrence",
+        "transition"
+      ],
+      "verdict": "NO_EVIDENCE_OF_LINKED_SUPERIORITY",
+      "evidence_paths": [
+        "v27_storage/audits/trio_orbit_prospective_retrospective_001/"
+      ]
+    },
+    {
+      "research_id": "NON-EXP-WHOLE-ENGINE-SYNTHETIC-REPLAY",
+      "canonical_name": "Whole Engine Synthetic Replay Semantics Recovery Audit 001",
+      "source_class": "NON_EXP_EXECUTED",
+      "status": "COMPLETED",
+      "inputs": "Full synthetic draw replay through official core pipeline",
+      "transformation": "Whole pipeline replay without outcome peeking",
+      "condition": "Simulated lottery distributions",
+      "target": "Semantic recovery and pipeline integrity",
+      "lag": 0,
+      "metrics": [
+        "semantic_fidelity_score",
+        "invariant_check_pass"
+      ],
+      "null": "Synthetic permutation baseline",
+      "ontology_tags": [
+        "CORE",
+        "regime"
+      ],
+      "verdict": "SUPPORTED",
+      "evidence_paths": [
+        "v27_storage/audits/whole_engine_synthetic_replay_semantics_recovery_001/"
+      ]
+    },
+    {
+      "research_id": "OFFICIAL-NUMBER-14KEY",
+      "canonical_name": "P45 Official NUMBER 14-Key Deterministic Sorting Rule",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "Historical lottery draw statistics for individual numbers 1..45",
+      "transformation": "14-key lexicographical sort without arbitrary weights",
+      "condition": "Official frozen gate rules",
+      "target": "Official number priority ranking",
+      "lag": 1,
+      "metrics": [
+        "official_selection_stability"
+      ],
+      "null": "Deterministic tie-breaking baseline",
+      "ontology_tags": [
+        "NUMBER",
+        "order/rank",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "src/p45_v27/"
+      ]
+    },
+    {
+      "research_id": "OFFICIAL-TRIO-15KEY",
+      "canonical_name": "P45 Official TRIO 15-Key Deterministic Sorting Rule",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "All 14,190 three-number subsets",
+      "transformation": "15-key lexicographical sort without arbitrary weights",
+      "condition": "Official frozen gate rules",
+      "target": "Official trio priority ranking",
+      "lag": 1,
+      "metrics": [
+        "official_trio_stability"
+      ],
+      "null": "Deterministic tie-breaking baseline",
+      "ontology_tags": [
+        "TRIO",
+        "order/rank",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "src/p45_v27/"
+      ]
+    },
+    {
+      "research_id": "OFFICIAL-PAIR-LIFECYCLE",
+      "canonical_name": "P45 Official PAIR Shadow Lifecycle System",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "990 ball pairs across all draws",
+      "transformation": "Shadow lifecycle state tracking (Active vs Dormant)",
+      "condition": "Official engine change control audit DECISION-20260824-095",
+      "target": "Internal shadow validation and state integrity",
+      "lag": 1,
+      "metrics": [
+        "pair_state_integrity"
+      ],
+      "null": "Official shadow state preservation",
+      "ontology_tags": [
+        "PAIR",
+        "CORE",
+        "transition"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "src/p45_v27/"
+      ]
+    },
+    {
+      "research_id": "OFFICIAL-CORE-INVARIANTS",
+      "canonical_name": "P45 Official Core Engine Invariant Rules (NO-PICK 867/867)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "Historical backtest coverage windows 43..1235",
+      "transformation": "Strict non-mutation of frozen gates and signatures",
+      "condition": "Zero-coverage invariant preservation",
+      "target": "Official engine safety and reproducibility",
+      "lag": 0,
+      "metrics": [
+        "invariant_violation_count"
+      ],
+      "null": "Engine frozen state",
+      "ontology_tags": [
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "src/p45_v27/"
+      ]
+    },
+    {
+      "research_id": "OFFICIAL-UNIT-PARTITIONS",
+      "canonical_name": "P45 Official UNIT Partitions (UNIT_3, UNIT_5, UNIT_9, UNIT_10)",
+      "source_class": "OFFICIAL_INTERNAL",
+      "status": "OFFICIAL_FROZEN",
+      "inputs": "Lottery balls 1..45 partitioned into equal or structured subsets",
+      "transformation": "Fixed partition grouping for internal representation",
+      "condition": "Fixed partition boundaries without variable threshold hunting",
+      "target": "Internal representation buckets",
+      "lag": 0,
+      "metrics": [
+        "partition_balance"
+      ],
+      "null": "Hypergeometric partition null",
+      "ontology_tags": [
+        "range",
+        "occupancy",
+        "CORE"
+      ],
+      "verdict": "OFFICIAL_FROZEN",
+      "evidence_paths": [
+        "src/p45_v27/"
+      ]
+    }
+  ]
+}

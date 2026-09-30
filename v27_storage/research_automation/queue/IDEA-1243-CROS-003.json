@@ -1,0 +1,20 @@
+{
+  "candidate_id": "IDEA-1243-CROS-003",
+  "created_at": "2026-09-30T08:00:03.295191+00:00",
+  "birth_round": 1243,
+  "source_research": "STRUCTURAL_DISCOVERY_AGENT_V1",
+  "candidate_type": "STRUCTURAL_DISCOVERY_AGENT_V1:CROSS_STRUCTURE",
+  "hypothesis": "Pair lifecycle dormancy durations (gap rounds between occurrences) follow the memoryless geometric distribution, confirming complete temporal independence of ball pairings.",
+  "opposite_hypothesis": "Pair lifecycle dormancy exhibits non-geometric hazard aging or structural clustering.",
+  "novelty_status": "NOVEL",
+  "duplicate_status": "PASS_NO_EXACT_COLLISION",
+  "rescue_check": "PASS_EXCLUDED_PREDECESSORS: EXP-012 (Return-age rank mining)",
+  "data_snooping_status": "CLEAN_PROSPECTIVE_ONLY",
+  "confirmatory_start_round": 1244,
+  "minimum_sample": 50,
+  "recommended_action": "GENERATE_PROTOCOL",
+  "state": "READY_FOR_PROTOCOL",
+  "protocol_sha256": null,
+  "locked_at": null,
+  "notes": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance"
+}

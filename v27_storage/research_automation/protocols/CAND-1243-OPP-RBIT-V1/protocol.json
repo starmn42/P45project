@@ -1,0 +1,49 @@
+{
+  "candidate_id": "CAND-1243-OPP-RBIT-V1",
+  "candidate_type": "OPPOSITE_HYPOTHESIS",
+  "created_at": "2026-09-30T07:22:30.964374+00:00",
+  "data_ranges": {
+    "confirmatory_range_type": "PROSPECTIVE_OR_UNTOUCHED_HOLDOUT",
+    "confirmatory_start_round": 1244,
+    "discovery_data_status": "EXPLORATORY_ONLY_CANNOT_BE_USED_FOR_CONFIRMATORY_VERDICT",
+    "discovery_range": [
+      1,
+      1243
+    ],
+    "historical_prior_range": [
+      1,
+      1243
+    ]
+  },
+  "failure_criteria": "Confirmatory hit rate <= null or failure to achieve significance at stopping bound",
+  "future_data_blocking": {
+    "pending_outcomes_masked": true,
+    "read_future_forbidden": true,
+    "status": "ENFORCED"
+  },
+  "hypothesis": "Reversal/Dispersion: Numbers outside EXP-DRAW-TRIO-ORBIT-V1 active selection set exhibit higher recurrence than selected set.",
+  "metrics": {
+    "primary": "Hit rate in official target MAIN6 vs fair random null",
+    "secondary": [
+      "Wilson 95% CI",
+      "Exact two-sided binomial p",
+      "Sequential Wald stopping bound"
+    ]
+  },
+  "minimum_sample": 100,
+  "multiple_testing_family": "FAMILY-CAND-1243-OPP-RBIT-V1",
+  "null_model": "Fair 6/45 uniform hypergeometric / permutation null",
+  "official_isolation": {
+    "official_db_modification": "PROHIBITED",
+    "official_engine_modification": "PROHIBITED",
+    "official_web_recommendation_modification": "PROHIBITED",
+    "promotion_requires_explicit_user_approval": true
+  },
+  "opposite_hypothesis": "EXP-DRAW-TRIO-ORBIT-V1 selected set exhibits superior recurrence compared to non-selected universe.",
+  "prospective_walkforward_plan": "Append-only shadow tracking on new canonical draws as published",
+  "protocol_version": "P45-AUTO-PROTOCOL-V1",
+  "rationale": "Automated empirical follow-up under strict pre-registration.",
+  "source_research": "EXP-DRAW-TRIO-ORBIT-V1",
+  "stopping_rule": "Minimum 50 rounds, formal interim look every 25 rounds, terminate if Wald lower rejection boundary crossed",
+  "success_criteria": "Confirmatory hit rate > null with two-sided p <= 0.05 and minimum sample satisfied"
+}

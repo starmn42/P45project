@@ -1,0 +1,84 @@
+{
+  "status": "SUCCESS",
+  "round": 1243,
+  "idempotency_key": "discovery_cycle:1243",
+  "new_candidates_count": 3,
+  "duplicate_write": 0,
+  "summary": {
+    "round": 1243,
+    "idempotency_key": "discovery_cycle:1243",
+    "timestamp": "2026-09-30T08:00:03.297913+00:00",
+    "coverage_axes_read": 24,
+    "provider_status": {
+      "DeterministicStructuralProvider": "ACTIVE",
+      "OptionalLLMIdeaProvider": "NOT_CONFIGURED",
+      "NOVEL_IDEA_GENERATION_EXTERNAL_AI": "NOT_CONFIGURED"
+    },
+    "raw_candidates_generated": 3,
+    "quality_gate_cleared": 3,
+    "quality_gate_rejected": 0,
+    "final_selected_count": 3,
+    "max_candidates_limit": 3,
+    "selected_candidates": [
+      {
+        "candidate_id": "IDEA-1243-NEGA-001",
+        "title": "Fixed-Partition Extinction Negative-Space Recovery Invariance",
+        "origin": "STRUCTURAL_DISCOVERY_AGENT_V1:NEGATIVE_SPACE",
+        "ontology_tags": [
+          "extinction",
+          "recovery",
+          "occupancy"
+        ],
+        "hypothesis": "When a fixed 5-zone partition (Zones 1..5, each 9 balls) experiences complete extinction (0 balls drawn) in round t, the occupancy count in round t+1 exhibits positive compensatory rebound exceeding hypergeometric expectation.",
+        "opposite_hypothesis": "Zone extinction has zero memory effect: next-round zone occupancy conforms strictly to the memoryless hypergeometric distribution P(k balls | 9 balls in zone, 6 drawn from 45).",
+        "confirmatory_start_round": 1244,
+        "state": "REVIEW_REQUIRED_V1_1",
+        "v1_historical_verdict": "READY_FOR_PROTOCOL",
+        "v1_1_semantic_verdict": "REJECT_RESCUE",
+        "v1_1_state": "REJECT_RESCUE"
+      },
+      {
+        "candidate_id": "IDEA-1243-OPPO-002",
+        "title": "Number Proximity Minimum-Distance Repulsion Invariance",
+        "origin": "STRUCTURAL_DISCOVERY_AGENT_V1:OPPOSITE_HYPOTHESIS",
+        "ontology_tags": [
+          "opposite-state",
+          "spacing",
+          "NUMBER"
+        ],
+        "hypothesis": "Consecutive sorted winning numbers exhibit significant repulsion (minimum adjacent spacing > Poisson null), acting as a structural dispersion constraint.",
+        "opposite_hypothesis": "Adjacent ball spacing is completely memoryless and conforms strictly to the uniform order-statistics spacing null distribution.",
+        "confirmatory_start_round": 1244,
+        "state": "REVIEW_REQUIRED_V1_1",
+        "v1_historical_verdict": "READY_FOR_PROTOCOL",
+        "v1_1_semantic_verdict": "REJECT_RESCUE",
+        "v1_1_state": "REJECT_RESCUE"
+      },
+      {
+        "candidate_id": "IDEA-1243-CROS-003",
+        "title": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance",
+        "origin": "STRUCTURAL_DISCOVERY_AGENT_V1:CROSS_STRUCTURE",
+        "ontology_tags": [
+          "PAIR",
+          "transition",
+          "conditional transition"
+        ],
+        "hypothesis": "Pair lifecycle dormancy durations (gap rounds between occurrences) follow the memoryless geometric distribution, confirming complete temporal independence of ball pairings.",
+        "opposite_hypothesis": "Pair lifecycle dormancy exhibits non-geometric hazard aging or structural clustering.",
+        "confirmatory_start_round": 1244,
+        "state": "REVIEW_REQUIRED_V1_1",
+        "v1_historical_verdict": "READY_FOR_PROTOCOL",
+        "v1_1_semantic_verdict": "NEEDS_EVIDENCE",
+        "v1_1_state": "NEEDS_EVIDENCE"
+      }
+    ],
+    "queued_records": [
+      "IDEA-1243-NEGA-001",
+      "IDEA-1243-OPPO-002",
+      "IDEA-1243-CROS-003"
+    ],
+    "official_engine_firewall": "PROTECTED_UNMODIFIED"
+  },
+  "v1_1_migration_status": "MIGRATED_AND_REASSESSED",
+  "v1_1_reassessment_timestamp": "2026-09-30T08:33:50.689430+00:00"
+}
