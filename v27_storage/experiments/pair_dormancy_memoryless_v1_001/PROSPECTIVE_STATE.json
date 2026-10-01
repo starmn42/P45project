@@ -1,0 +1,10 @@
+{
+  "experiment_canonical_id": "EXP-DRAW-20261001-001-V1",
+  "candidate_id": "IDEA-1243-CROS-003",
+  "prospective_eligible_start_round": 1244,
+  "prospective_horizon": 52,
+  "verdict": "FAILED_RETROSPECTIVE_SCREEN",
+  "automatic_activation_allowed": false,
+  "prospective_status": "INACTIVE_DUE_TO_FAILED_OR_INCONCLUSIVE_HISTORICAL_SCREEN",
+  "current_completed_prospective_rounds": 0
+}

@@ -1,0 +1,61 @@
+{
+  "protocol_lock_version": "1.0.0",
+  "protocol_name": "PAIR_DORMANCY_MEMORYLESS_HAZARD_V1",
+  "protocol_file": "PROTOCOL.md",
+  "protocol_sha256": "7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a",
+  "lock_timestamp_utc": "2026-10-01T03:52:15Z",
+  "candidate": {
+    "candidate_id": "IDEA-1243-CROS-003",
+    "candidate_name": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance",
+    "birth_round": 1243,
+    "discovery_data_end_round": 1243,
+    "identity_fingerprint": "2f7f3e183e5e837723232cbdf5e7ab292fbf2e3e04ce3173dc8bd79db0fc09f5",
+    "hypothesis": "Pair lifecycle dormancy durations (gap rounds between occurrences) follow the memoryless geometric distribution, confirming complete temporal independence of ball pairings.",
+    "opposite_hypothesis": "Pair lifecycle dormancy exhibits non-geometric hazard aging or structural clustering."
+  },
+  "experiment": {
+    "canonical_physical_id": "EXP-DRAW-20261001-001-V1",
+    "human_exp_label": "NONE",
+    "family_name": "PAIR DORMANCY MEMORYLESS HAZARD LAB",
+    "experiment_title": "PAIR DORMANCY / GEOMETRIC MEMORYLESS HAZARD V1",
+    "registry_target_row": 70,
+    "official_integration": false
+  },
+  "mathematical_universe": {
+    "total_balls": 45,
+    "total_unordered_pairs": 990,
+    "pairs_per_draw": 15,
+    "bonus_included": false,
+    "analytic_pair_probability": 0.015151515151515152,
+    "analytic_pair_probability_fraction": "1/66"
+  },
+  "fixed_bins": [
+    {"bin": 1, "min_age": 1, "max_age": 12, "description": "Quantile 0 to 1/6"},
+    {"bin": 2, "min_age": 13, "max_age": 27, "description": "Quantile 1/6 to 2/6"},
+    {"bin": 3, "min_age": 28, "max_age": 46, "description": "Quantile 2/6 to 3/6"},
+    {"bin": 4, "min_age": 47, "max_age": 72, "description": "Quantile 3/6 to 4/6"},
+    {"bin": 5, "min_age": 73, "max_age": 118, "description": "Quantile 4/6 to 5/6"},
+    {"bin": 6, "min_age": 119, "max_age": null, "description": "Quantile 5/6 to 1"}
+  ],
+  "statistical_design": {
+    "primary_test_statistic": "GLOBAL_LIKELIHOOD_RATIO_DEVIANCE_T",
+    "primary_null": "ROUND_ORDER_PERMUTATION_NULL",
+    "permutation_count_B": 4999,
+    "deterministic_seed_formula": "SHA256(protocol_sha + canonical_id + 'PAIR_DORMANCY_MEMORYLESS_V1')[:8]",
+    "deterministic_seed_hex": "8ca8f963",
+    "deterministic_seed_int": 2359884131,
+    "multiplicity_policy": "SINGLE_PRIMARY_TEST_NO_PAIRWISE_NO_BINWISE_PRIMARY",
+    "secondary_multiple_testing_correction": "HOLM_ACROSS_6_BINS",
+    "decision_thresholds": {
+      "retrospective_signal_candidate": 0.01,
+      "inconclusive": 0.05
+    }
+  },
+  "data_scope": {
+    "historical_start_round": 1,
+    "historical_cutoff_round": 1243,
+    "future_leakage_guard": "ENFORCED_ROUND_LEQ_1243",
+    "prospective_eligible_start_round": 1244,
+    "prospective_horizon": 52
+  }
+}

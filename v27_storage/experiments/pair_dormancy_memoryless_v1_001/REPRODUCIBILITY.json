@@ -1,0 +1,26 @@
+{
+  "experiment_canonical_id": "EXP-DRAW-20261001-001-V1",
+  "candidate_id": "IDEA-1243-CROS-003",
+  "protocol_sha256": "7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a",
+  "deterministic_seed_int": 2359884131,
+  "reproducibility_pass": true,
+  "checks": {
+    "T_global_exact_match": true,
+    "p_perm_exact_match": true,
+    "exceed_count_exact_match": true,
+    "bin_exposures_exact_match": true,
+    "bin_events_exact_match": true,
+    "bin_hazards_exact_match": true,
+    "verdict_exact_match": true
+  },
+  "run1_summary": {
+    "T_global": 4.627019413022415,
+    "p_perm": 0.6224,
+    "verdict": "FAILED_RETROSPECTIVE_SCREEN"
+  },
+  "run2_summary": {
+    "T_global": 4.627019413022415,
+    "p_perm": 0.6224,
+    "verdict": "FAILED_RETROSPECTIVE_SCREEN"
+  }
+}

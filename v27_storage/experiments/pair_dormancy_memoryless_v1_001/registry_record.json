@@ -1,0 +1,63 @@
+{
+  "experiment_id": "EXP-DRAW-20261001-001-V1",
+  "canonical_physical_id": "EXP-DRAW-20261001-001-V1",
+  "human_exp_label": "NONE",
+  "lab_name": "PAIR DORMANCY MEMORYLESS HAZARD LAB",
+  "experiment_title": "PAIR DORMANCY / GEOMETRIC MEMORYLESS HAZARD V1",
+  "research_domain": "DRAW",
+  "protocol_version": "1",
+  "canonical_protocol_hash": "7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a",
+  "created_at": "2026-10-01T03:52:15Z",
+  "locked_at": "2026-10-01T03:52:15Z",
+  "target_registry_row": 70,
+  "candidate_heritage": {
+    "candidate_id": "IDEA-1243-CROS-003",
+    "candidate_name": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance",
+    "birth_round": 1243,
+    "discovery_data_end_round": 1243,
+    "fingerprint": "2f7f3e183e5e837723232cbdf5e7ab292fbf2e3e04ce3173dc8bd79db0fc09f5",
+    "hypothesis": "Pair lifecycle dormancy durations (gap rounds between occurrences) follow the memoryless geometric distribution, confirming complete temporal independence of ball pairings.",
+    "opposite_hypothesis": "Pair lifecycle dormancy exhibits non-geometric hazard aging or structural clustering."
+  },
+  "data_range": {
+    "first": 1,
+    "last": 1243
+  },
+  "future_data_block": "Enforced cutoff round <= 1243; future draws strictly excluded",
+  "input_data": [
+    {
+      "path": "v27_storage/live/p45_live_draws.csv",
+      "sha256": "275cc14ea893232feae40c836ce4d1ccdd9c3abcfb3e60708bdf406e066f885b"
+    }
+  ],
+  "calculation_method": {
+    "universe": "MAIN numbers 1..45, C(45, 2) = 990 unordered pairs",
+    "draw_pairs": "C(6, 2) = 15 pairs per draw",
+    "bonus_included": false,
+    "p0": "1/66",
+    "bins": [
+      {"bin": 1, "range": "1..12", "quantile": "0 to 1/6"},
+      {"bin": 2, "range": "13..27", "quantile": "1/6 to 2/6"},
+      {"bin": 3, "range": "28..46", "quantile": "2/6 to 3/6"},
+      {"bin": 4, "range": "47..72", "quantile": "3/6 to 4/6"},
+      {"bin": 5, "range": "73..118", "quantile": "4/6 to 5/6"},
+      {"bin": 6, "range": "119+", "quantile": "5/6 to 1"}
+    ],
+    "primary_statistic": "Global Likelihood-Ratio Deviance T_global",
+    "null_distribution": "Round-order permutation null",
+    "permutation_B": 4999,
+    "deterministic_seed": 2359884131,
+    "multiplicity_control": "Single primary endpoint, no 990 pairwise tests"
+  },
+  "results": {
+    "T_global_observed": 4.627019,
+    "permutation_p_value": 0.6224,
+    "permutation_exceedances": 3111,
+    "verdict": "FAILED_RETROSPECTIVE_SCREEN",
+    "interpretation": "No evidence of predictable dormancy effect. Failure to reject H0 does not prove memorylessness."
+  },
+  "official_effect": "NONE",
+  "official_isolation_verified": true,
+  "promotion_eligible": false,
+  "prospective_status": "INACTIVE"
+}

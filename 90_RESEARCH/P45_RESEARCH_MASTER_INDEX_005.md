@@ -428,4 +428,32 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
     - Vercel 배포: `VERCEL_DEPLOY_NOT_REQUIRED`.
     - 최종 판정: `PASS_CANONICAL_DISPLAY_IDENTITY`.
 
+- **2026-10-01: [PAIR DORMANCY MEMORYLESS HAZARD V1 — CANDIDATE C FORMALIZATION & HISTORICAL SCREEN]**
+  - **작업 목적:** 후보 C (`IDEA-1243-CROS-003`: `Pair Lifecycle Dormancy Duration Geometric Memory Invariance`)를 정식 Experiment Lab 연구로 승격하여 Protocol Lock, Calculator 구현, Preflight, Historical Backtest, 5-block Stability, Reproducibility, Prospective 준비 완결.
+  - **정식 Experiment ID 발급:** `EXP-DRAW-20261001-001-V1` (Row 70).
+  - **Human EXP Label:** `NONE` / `UNASSIGNED` (임의 EXP-021 부여 금지 준수).
+  - **가설 보존:** 원문 Candidate 가설/대립가설 원본 그대로 불변 보존.
+  - **통계적 설계 및 프로토콜 락:**
+    - MAIN6 unordered pair C(45, 2) = 990, draw당 C(6, 2) = 15. BONUS 전면 제외.
+    - 이론 기준: fair-draw pair analytic probability $p_0 = 1/66$.
+    - Fixed Bins: Geometric quantiles $B_1=[1, 12], B_2=[13, 27], B_3=[28, 46], B_4=[47, 72], B_5=[73, 118], B_6=[119, \infty)$.
+    - Primary Test Statistic: Global Likelihood-Ratio Deviance $T_{\text{global}}$ (Single primary endpoint; 990 pairwise inference 금지).
+    - Primary Null: Round-order permutation null ($B = 4999$, deterministic seed `2359884131`).
+    - Protocol SHA-256: `7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a`.
+  - **Preflight 검증:** A~M 13개 전 항목 100% PASS.
+  - **Historical Screen 결과 (1..1243):**
+    - $T_{\text{global}} = 4.627019$, Permutation $p = 0.622400$ ($3111/4999 \ge T_{\text{obs}}$).
+    - 최종 판정: **`FAILED_RETROSPECTIVE_SCREEN`**.
+    - 엄격 해석: PAIR dormancy에 따른 temporal hazard effect를 검출할 근거가 없음 (p > 0.05). H0 비기각을 memorylessness의 수학적 증명으로 과장하지 않음.
+    - 재현성: 독립 2회 실행 bitwise 완전 일치 (`PASS`).
+    - Prospective 상태: Historical screen FAILED로 인해 자동 활성화 금지 -> `PROSPECTIVE_LOCK.json` 미생성, `PROSPECTIVE_STATE.json`에 비활성 기록.
+  - **공식 엔진 보호:**
+    - Official DB, Gates, Thresholds, Signatures, 1244 Sealed Predraw, Recommendations 100% FROZEN.
+    - Future Leakage = 0 (1243 이후 데이터 완전 차단).
+  - **테스트 및 검증:**
+    - 32개 신규 테스트 추가 (`tests_v27/test_pair_dormancy_memoryless_v1.py`).
+    - 총 190개 테스트 전수 통과 (0 failures, 0 errors).
+    - 최종 판정: `PAIR_DORMANCY_V1_FAILED_RETROSPECTIVE`.
+
+
 

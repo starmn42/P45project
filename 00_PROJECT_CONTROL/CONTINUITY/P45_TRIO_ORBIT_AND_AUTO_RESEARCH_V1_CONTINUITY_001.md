@@ -256,4 +256,48 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - Git Commit: `P45 lock canonical research display identity`.
   - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
 
+### 11. P45 PAIR DORMANCY / GEOMETRIC MEMORYLESS HAZARD V1 (EXP-DRAW-20261001-001-V1) FORMALIZATION & HISTORICAL SCREEN (2026-10-01)
+- **배경 및 작업 목적:**
+  - 사용자 승인에 따라 Candidate C (`IDEA-1243-CROS-003`: `Pair Lifecycle Dormancy Duration Geometric Memory Invariance`)를 정식 Experiment Lab 연구로 승격하여 프로토콜 설계, 락, 계산기 구현, 사전검증(Preflight), 과거검증(Historical Screen), 안정성 진단, 재현성 검증 및 prospective 준비 완결.
+- **핵심 통제 원칙 및 규정:**
+  - 공식 엔진(Official Engine) 완전 동결(FROZEN): 게이트, 임계치, 서명, DB, 1244 sealed predraw, 번호 추천 일체 변경 없음.
+  - 임의 인간 약칭 `EXP-021` 부여 금지 준수: `human_exp_label = NONE (UNASSIGNED)`.
+  - 정식 물리 ID: `EXP-DRAW-20261001-001-V1` (Authoritative Registry Row 70 발급).
+  - 다중 검정(Multiple Testing) 통제: 단일 기본 평가변수($T_{\text{global}}$ LR deviance) 1개만 검정. 990개 pair별 개별 p-value 산출 금지.
+  - 사후 편향 방지: 6개 기하분포 분위수 Bin 사전 고정 (`B1=1..12`, `B2=13..27`, `B3=28..46`, `B4=47..72`, `B5=73..118`, `B6=119+`), 사후 변경 금지.
+  - Future Leakage 원천 차단: historical screen 데이터 상한 round 1243 강제 적용 (`Future Leakage = 0`).
+- **Preflight 사전 검증 (13/13 PASS):**
+  - A. C(45,2)=990 PASS
+  - B. C(6,2)=15 PASS
+  - C. 고정 pair 확률 $p_0 = 1/66$ exact PASS
+  - D. Dormancy reset PASS
+  - E. Age=1 정의 PASS
+  - F. Left-censoring 제외 PASS
+  - G. Bin 경계 Geometric quantiles 일치 PASS
+  - H. Future data cutoff PASS
+  - I. Deterministic seed 재현성 PASS (`seed = 2359884131`)
+  - J. Permutation 불변량(draw 구성, 번호별 빈도, pair별 빈도) 보존 PASS
+  - K. Permutation 시계열 순서 파괴 PASS
+  - L. Protocol SHA-256 불변 검증 PASS (`7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a`)
+  - M. Official 1244 sealed 파일 보호 PASS
+- **과거 검증 (Historical Retrospective Screen) 결과:**
+  - 분석 구간: 1회차 ~ 1243회차 (총 1,243개 draw, 1,134,896 risk exposures, 17,655 events).
+  - Observed $T_{\text{global}} = 4.627019$.
+  - Round-order Permutation Null ($B = 4999$, seed `2359884131`): $p_{\text{perm}} = 0.622400$ ($3,111 / 4,999 \ge T_{\text{obs}}$).
+  - 최종 판정: **`FAILED_RETROSPECTIVE_SCREEN`**.
+  - 결과 해석 준수: "PAIR dormancy에 따른 temporal hazard effect를 검출할 근거가 없음 (p > 0.05)". H0 비기각을 memorylessness의 증명으로 표현하지 않음. 사후 rescue/bin 변경 일체 금지.
+  - 5구간 시간순 안정성 진단: Block 1 ($T=10.95$), Block 2 ($T=3.05$), Block 3 ($T=6.27$), Block 4 ($T=2.21$), Block 5 ($T=4.48$) - 보조 진단으로 주 판정 불변.
+  - 재현성 검증: 동일 입력/시드로 독립 2회 실행 bitwise 완전 일치 (`PASS`).
+  - Prospective 준비: 과거 선별 실패로 인해 자동 활성화 금지 -> `PROSPECTIVE_STATE.json`에 비활성 기록 (`PROSPECTIVE_LOCK.json` 미생성).
+  - Discovery System 후보 C 상태: `FAILED` (lineage 보존, retired).
+- **무결성 및 테스트 요약:**
+  - 신규 32개 테스트 추가 (`tests_v27/test_pair_dormancy_memoryless_v1.py`).
+  - 기존 158개 포함 총 190개 단위 테스트 전수 통과 (0 failures, 0 errors).
+  - 정식 레지스트리: 70행 (EXP-DRAW-20261001-001-V1 등록 완료, Official Integration = false).
+  - Official 엔진 보호 검증: 변경 0건, Future Leakage 0건.
+  - Git Commit: `P45 formalize pair dormancy memoryless hazard V1`.
+  - Vercel 배포 판정: 백엔드 연구 실험실 작업으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+  - 최종 판정: `PAIR_DORMANCY_V1_FAILED_RETROSPECTIVE`.
+
+
 

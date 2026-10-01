@@ -13,8 +13,10 @@
   "confirmatory_start_round": 1244,
   "minimum_sample": 50,
   "recommended_action": "GENERATE_PROTOCOL",
-  "state": "READY_FOR_PROTOCOL",
-  "protocol_sha256": null,
-  "locked_at": null,
-  "notes": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance"
+  "state": "FAILED",
+  "verdict": "FAILED_RETROSPECTIVE_SCREEN",
+  "experiment_id": "EXP-DRAW-20261001-001-V1",
+  "protocol_sha256": "7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a",
+  "locked_at": "2026-10-01T03:52:15Z",
+  "notes": "Pair Lifecycle Dormancy Duration Geometric Memory Invariance - Historical screen p_perm=0.622400 > 0.05. No evidence of predictable dormancy effect. Candidate retired/failed."
 }

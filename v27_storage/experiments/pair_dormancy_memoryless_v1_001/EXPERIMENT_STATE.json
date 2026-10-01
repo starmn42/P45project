@@ -1,0 +1,15 @@
+{
+  "canonical_physical_id": "EXP-DRAW-20261001-001-V1",
+  "human_exp_label": "NONE",
+  "candidate_id": "IDEA-1243-CROS-003",
+  "status": "COMPLETED_HISTORICAL_SCREEN",
+  "verdict": "FAILED_RETROSPECTIVE_SCREEN",
+  "historical_cutoff": 1243,
+  "protocol_sha256": "7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a",
+  "primary_T_global": 4.627019413022415,
+  "permutation_p_value": 0.6224,
+  "reproducibility_verified": true,
+  "prospective_active": false,
+  "official_integration": false,
+  "updated_at": "2026-10-01T03:55:42Z"
+}
