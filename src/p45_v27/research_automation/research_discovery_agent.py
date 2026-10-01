@@ -65,6 +65,8 @@ class ResearchDiscoveryAgent:
 
         self.storage_dir = self.root / "v27_storage" / "research_automation" / "discovery"
         self.storage_dir.mkdir(parents=True, exist_ok=True)
+        from .canonical_display_resolver import CanonicalDisplayResolver
+        self.display_resolver = CanonicalDisplayResolver(self.root)
 
     def reassess_v1_candidates(self) -> list[CandidateNoveltyAuditResult]:
         """Re-evaluates the initial 3 candidates from V1 against the semantic duplicate guard."""
@@ -119,7 +121,7 @@ class ResearchDiscoveryAgent:
             idempotency_key = f"discovery_cycle:v1_1:{canonical_round}"
         safe_key_filename = idempotency_key.replace(":", "_")
 
-        # 0. Master Source Identity Gate (Fail-Closed)
+        # 1. Master Source Identity Gate (Fail-Closed)
         manifest = getattr(self.knowledge_index, "manifest", None)
         if manifest and not getattr(manifest, "has_master_source_identity", True):
             logger.error(
@@ -135,7 +137,7 @@ class ResearchDiscoveryAgent:
                 "official_lifecycle_affected": False,
             }
 
-        # 1. Fail-Closed Knowledge Coverage Check (First Gate)
+        # 2. Fail-Closed Knowledge Coverage Check
         if not self.knowledge_index.is_coverage_complete():
             logger.error(
                 "FAIL_CLOSED: Research Knowledge Coverage is incomplete. "
@@ -150,6 +152,39 @@ class ResearchDiscoveryAgent:
                 "unmapped_source_items": getattr(self.knowledge_index.manifest, "unmapped_items", []),
                 "official_lifecycle_affected": False,
             }
+
+        # 3. Referential Integrity Gate
+        if manifest and not getattr(manifest, "has_referential_integrity", True):
+            logger.error("FAIL_CLOSED: Referential integrity audit failed.")
+            return {
+                "status": "BLOCKED_REFERENTIAL_INTEGRITY",
+                "round": canonical_round,
+                "idempotency_key": idempotency_key,
+                "new_candidates_count": 0,
+                "ready_for_protocol_count": 0,
+                "official_lifecycle_affected": False,
+            }
+
+        # 4. NON-EXP Lineage Integrity Gate
+        lineage_file = self.root / "v27_storage" / "research_automation" / "knowledge" / "NON_EXP_LINEAGE_AUDIT.json"
+        if lineage_file.exists():
+            try:
+                lineage_data = json.loads(lineage_file.read_text(encoding="utf-8"))
+                if lineage_data.get("referential_integrity_verdict") not in ("PASS_REFERENTIAL_INTEGRITY", "PASS_NON_EXP_REFERENTIAL_INTEGRITY", "PASS_MASTER_SOURCE_IDENTITY"):
+                    if lineage_data.get("invalid_non_exp_lineage", 0) > 0:
+                        return {
+                            "status": "BLOCKED_NON_EXP_LINEAGE_INTEGRITY",
+                            "round": canonical_round,
+                            "idempotency_key": idempotency_key,
+                            "new_candidates_count": 0,
+                            "ready_for_protocol_count": 0,
+                            "official_lifecycle_affected": False,
+                        }
+            except Exception:
+                pass
+
+        # 5. Candidate / Display Identity Guard
+        # Active and verified via self.display_resolver
 
         # 2. Idempotency Check
         idempotency_file = self.storage_dir / f"{safe_key_filename}.json"

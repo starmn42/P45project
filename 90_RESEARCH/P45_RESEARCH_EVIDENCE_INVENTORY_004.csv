@@ -679,3 +679,7 @@ tests_v27\test_canonical_id_integrity.py,.py,15969,826db6083e3dfaae885d0220b731d
 "v27_storage\research_automation\knowledge\MASTER_NON_EXP_SOURCE_FINGERPRINTS.json",".json","5927","8190e2d9e061292d0ed76c7f602d5ce9c68f9776a8393e67abcfca756d281c29","MASTER_SOURCE_IDENTITY_LOCK"
 "v27_storage\research_automation\knowledge\MASTER_SOURCE_IDENTITY_AUDIT.json",".json","310","09fb650d13c19422ab457511c5790ba6b635379d2afa2ea9234edf76bd6f2f05","MASTER_SOURCE_IDENTITY_LOCK"
 "v27_storage\research_automation\knowledge\MASTER_SOURCE_IDENTITY_AUDIT.md",".md","701","1a9582c91b489b857fa032dd1ef7dde8308a9640a896029e6aebaa551e0c062a","MASTER_SOURCE_IDENTITY_LOCK"
+"src\p45_v27\research_automation\canonical_display_resolver.py",".py","26272","043ce6f2cb383f9f3a76b419171980a0ea173fbd9f60564fd56363a8e3d92c77","CANONICAL_DISPLAY_IDENTITY_LOCK"
+"tests_v27\test_canonical_display_identity.py",".py","19191","b9d92d2a52be111f257a6a7a89af414653b909228511c194f4261f699d6964f7","CANONICAL_DISPLAY_IDENTITY_LOCK"
+"v27_storage\research_automation\evidence\GOLDEN_CANDIDATE_DISPLAY_REPORT.json",".json","105913","b5779526ea530bb181e69b88edda4d49a8272ced085fc4578e7afd009d969b85","CANONICAL_DISPLAY_IDENTITY_LOCK"
+"v27_storage\research_automation\evidence\GOLDEN_CANDIDATE_DISPLAY_REPORT.md",".md","13280","406971e48c9a33f38767a44d4612eedf1dc128a18870e33994b643939e777646","CANONICAL_DISPLAY_IDENTITY_LOCK"

@@ -1,4 +1,4 @@
-"""Semantic Novelty Checker V1.1 for P45 RESEARCH DISCOVERY AGENT V1.1.
+"""Semantic Novelty Checker V1.1 / V1.2 for P45 RESEARCH DISCOVERY AGENT.
 
 Replaces shallow string/tag checks with deep structural semantic field comparisons:
 INPUT, TRANSFORMATION, CONDITION, TARGET, LAG, METRIC, NULL, ACTIONABILITY.
@@ -14,6 +14,15 @@ Classifies overlaps into:
 Enforces mandatory generation of:
 - CANDIDATE_NOVELTY_EVIDENCE.json
 - CANDIDATE_NOVELTY_EVIDENCE.md
+- GOLDEN_CANDIDATE_DISPLAY_REPORT.json
+- GOLDEN_CANDIDATE_DISPLAY_REPORT.md
+
+Enforces strict separation of authoritative canonical titles and candidate identities:
+CANONICAL_TITLE_SUBSTITUTION == 0
+CANDIDATE_NAME_SUBSTITUTION == 0
+HYPOTHESIS_SUBSTITUTION == 0
+OPPOSITE_HYPOTHESIS_SUBSTITUTION == 0
+DISPLAY_LAYER_SOURCE_MISMATCH == 0
 """
 from __future__ import annotations
 
@@ -24,10 +33,13 @@ from enum import Enum
 from pathlib import Path
 from typing import Any
 
+from .canonical_display_resolver import CanonicalDisplayResolver, DisplayIdentitySource
+from .canonical_id_resolver import CanonicalResearchIdResolver
 from .constants import ROOT
 from .knowledge_index import ResearchKnowledgeIndex, ResearchKnowledgeRecord
 
 logger = logging.getLogger("p45.research_automation.semantic_novelty")
+
 
 class SemanticOverlapClass(str, Enum):
     EXACT_DUPLICATE = "EXACT_DUPLICATE"
@@ -36,12 +48,15 @@ class SemanticOverlapClass(str, Enum):
     PARTIAL_OVERLAP = "PARTIAL_OVERLAP"
     DISTINCT = "DISTINCT"
 
+
 class NoveltyFinalVerdict(str, Enum):
     REJECT_DUPLICATE = "REJECT_DUPLICATE"
     REJECT_RESCUE = "REJECT_RESCUE"
     NEEDS_EVIDENCE = "NEEDS_EVIDENCE"
     READY_FOR_PROTOCOL = "READY_FOR_PROTOCOL"
     BLOCKED_REFERENTIAL_INTEGRITY = "BLOCKED_REFERENTIAL_INTEGRITY"
+    BLOCKED_DISPLAY_IDENTITY_INTEGRITY = "BLOCKED_DISPLAY_IDENTITY_INTEGRITY"
+
 
 @dataclass
 class SemanticMatchItem:
@@ -70,11 +85,18 @@ class SemanticMatchItem:
     semantic_overlap_class: str
     canonical_registry_id: str | None = None
     canonical_title: str | None = None
+    canonical_title_source_ref: str = ""
+    canonical_title_exact: str = ""
+    canonical_title_fingerprint: str = ""
+    semantic_reason: str = ""
+    similarity_diagnostics: dict[str, Any] = field(default_factory=dict)
     resolution_status: str = "RESOLVED"
     source_evidence: str = ""
+    display_source_trace: dict[str, Any] = field(default_factory=dict)
 
     def to_dict(self) -> dict[str, Any]:
         return asdict(self)
+
 
 @dataclass
 class CandidateNoveltyAuditResult:
@@ -89,11 +111,25 @@ class CandidateNoveltyAuditResult:
     novelty_evidence_exists: bool = True
     referential_integrity_pass: bool = True
     invalid_references: list[str] = field(default_factory=list)
+    candidate_name: str = ""
+    hypothesis: str = ""
+    opposite_hypothesis: str = ""
+    discovery_data_end_round: int = 1243
+    earliest_eligible_confirmatory_round: int = 1244
+    candidate_identity_fingerprint: str = ""
+    display_source_traces: list[dict[str, Any]] = field(default_factory=list)
+
+    def __post_init__(self) -> None:
+        if not self.candidate_name:
+            self.candidate_name = self.candidate_title
+        if not self.candidate_title:
+            self.candidate_title = self.candidate_name
 
     def to_dict(self) -> dict[str, Any]:
         d = asdict(self)
         d["top_matches"] = [m.to_dict() if hasattr(m, "to_dict") else m for m in self.top_matches]
         return d
+
 
 class SemanticNoveltyCheckerV1_1:
     """Performs rigorous structural semantic field matching against Research Knowledge Index."""
@@ -102,13 +138,69 @@ class SemanticNoveltyCheckerV1_1:
         self.knowledge_index = knowledge_index
         self.root = root
         self.evidence_dir = self.root / "v27_storage" / "research_automation" / "evidence"
-        from .canonical_id_resolver import CanonicalResearchIdResolver
         self.resolver = CanonicalResearchIdResolver(self.root)
+        self.display_resolver = CanonicalDisplayResolver(self.root)
 
     def audit_candidate(self, candidate_pkg: dict[str, Any]) -> CandidateNoveltyAuditResult:
         cand_id = candidate_pkg.get("candidate_id", "UNKNOWN")
-        cand_title = candidate_pkg.get("title", "")
-        cand_hyp = candidate_pkg.get("hypothesis", "")
+
+        # 1. Authoritative Candidate Identity Lock
+        orig_cand = None
+        try:
+            orig_cand = self.display_resolver.load_candidate_original_identity(cand_id)
+        except Exception as e:
+            logger.debug(f"Candidate {cand_id} identity lookup: {e}")
+
+        if orig_cand:
+            cand_name = orig_cand.candidate_name
+            cand_hyp = orig_cand.hypothesis
+            cand_opp = orig_cand.opposite_hypothesis
+            cand_end_round = orig_cand.discovery_data_end_round
+            cand_conf_round = orig_cand.earliest_eligible_confirmatory_round
+            cand_fp = orig_cand.identity_fingerprint
+            source_path = orig_cand.source_path
+        else:
+            cand_name = candidate_pkg.get("title") or candidate_pkg.get("notes") or candidate_pkg.get("candidate_name") or ""
+            cand_hyp = candidate_pkg.get("hypothesis", "")
+            cand_opp = candidate_pkg.get("opposite_hypothesis", "")
+            cand_end_round = int(candidate_pkg.get("birth_round") or candidate_pkg.get("discovery_data_end_round") or 1243)
+            cand_conf_round = int(candidate_pkg.get("confirmatory_start_round") or candidate_pkg.get("earliest_eligible_confirmatory_round") or 1244)
+            cand_fp = self.display_resolver.compute_candidate_identity_fingerprint(
+                candidate_id=cand_id,
+                candidate_name=cand_name,
+                hypothesis=cand_hyp,
+                opposite_hypothesis=cand_opp,
+                discovery_data_end_round=cand_end_round,
+            )
+            source_path = ""
+
+        cand_traces = [
+            {
+                "display_field": "candidate_name",
+                "display_value": cand_name,
+                "source_type": DisplayIdentitySource.ORIGINAL_CANDIDATE_ARTIFACT.value,
+                "source_path": source_path,
+                "source_id": cand_id,
+                "source_fingerprint": cand_fp,
+            },
+            {
+                "display_field": "hypothesis",
+                "display_value": cand_hyp,
+                "source_type": DisplayIdentitySource.ORIGINAL_CANDIDATE_ARTIFACT.value,
+                "source_path": source_path,
+                "source_id": cand_id,
+                "source_fingerprint": cand_fp,
+            },
+            {
+                "display_field": "opposite_hypothesis",
+                "display_value": cand_opp,
+                "source_type": DisplayIdentitySource.ORIGINAL_CANDIDATE_ARTIFACT.value,
+                "source_path": source_path,
+                "source_id": cand_id,
+                "source_fingerprint": cand_fp,
+            },
+        ]
+
         cand_input = ", ".join(candidate_pkg.get("source_variables", []))
         cand_target = candidate_pkg.get("target_variable", "")
         cand_lag = candidate_pkg.get("lag", 1)
@@ -125,14 +217,19 @@ class SemanticNoveltyCheckerV1_1:
             same_feats: list[str] = []
             diff_feats: list[str] = []
 
-            # Resolve canonical reference
+            # Resolve canonical display identity with source lock
+            disp_id = self.display_resolver.resolve_display_identity(record)
+            canonical_id = disp_id.canonical_id
+            canonical_title = disp_id.canonical_title
+            canonical_source_ref = disp_id.source_path
+            canonical_title_fp = disp_id.identity_fingerprint
+
+            # Check referential integrity
             res = self.resolver.resolve_source_reference(
                 record.research_id,
                 title=record.canonical_name,
                 source_class=record.source_class,
             )
-            canonical_id = res.resolved_canonical_id
-            canonical_title = res.canonical_title or record.canonical_name
             res_status = res.status
             res_evidence = res.evidence
 
@@ -149,9 +246,9 @@ class SemanticNoveltyCheckerV1_1:
                 diff_feats.append("No shared ontology concepts")
 
             # 2. Input / Domain Overlap
-            cand_is_pair = any(term in cand_title.lower() or term in cand_input.lower() for term in ["pair", "페어", "2-combination", "두 번호"]) or ("쌍" in cand_title and "쌍둥이" not in cand_title)
-            cand_is_extinction = any(term in cand_input.lower() or term in cand_title.lower() for term in ["zone", "partition", "extinction", "recovery", "전멸", "복귀", "결손"])
-            cand_is_spacing = (not cand_is_pair) and any(term in cand_title.lower() or term in cand_target.lower() or term in cand_input.lower() for term in ["spacing", "repulsion", "distance", "neighbor", "간격", "인접", "거리"])
+            cand_is_pair = any(term in cand_name.lower() or term in cand_input.lower() for term in ["pair", "페어", "2-combination", "두 번호"]) or ("쌍" in cand_name and "쌍둥이" not in cand_name)
+            cand_is_extinction = any(term in cand_input.lower() or term in cand_name.lower() for term in ["zone", "partition", "extinction", "recovery", "전멸", "복귀", "결손"])
+            cand_is_spacing = (not cand_is_pair) and any(term in cand_name.lower() or term in cand_target.lower() or term in cand_input.lower() for term in ["spacing", "repulsion", "distance", "neighbor", "간격", "인접", "거리"])
 
             rec_is_extinction = any(term in record.inputs.lower() or term in record.canonical_name.lower() for term in ["zone", "partition", "전멸", "결손", "extinction", "recovery", "복귀"])
             rec_is_pair = (
@@ -176,7 +273,7 @@ class SemanticNoveltyCheckerV1_1:
             if cand_target.lower() in record.target.lower() or record.target.lower() in cand_target.lower():
                 score += 20.0
                 same_feats.append(f"Overlapping target definition: {cand_target}")
-            elif any(w in record.canonical_name for w in ["분산", "간격", "전멸", "복귀"]) and any(w in cand_title for w in ["분산", "간격", "전멸", "복귀"]):
+            elif any(w in record.canonical_name for w in ["분산", "간격", "전멸", "복귀"]) and any(w in cand_name for w in ["분산", "간격", "전멸", "복귀"]):
                 score += 15.0
                 same_feats.append(f"Shared domain target metric concept: {record.canonical_name}")
             else:
@@ -210,7 +307,7 @@ class SemanticNoveltyCheckerV1_1:
             rec_ids = {record.research_id, record.research_id.replace("NORM-", "")} | set(getattr(record, "formal_ids", []))
 
             # Specific check for Candidate C (Pair Dormancy): Eliminate irrelevant twin-round and spacing matches
-            if cand_is_pair and "dormancy" in cand_title.lower():
+            if cand_is_pair and "dormancy" in cand_name.lower():
                 if "쌍둥이" in record.canonical_name or any(x in rec_ids for x in ("EXP-DRAW-20260816-023-V1", "EXP-DRAW-20260816-024-V1", "EXP-DRAW-20260816-025-V1")):
                     score = 0.0
                     same_feats.clear()
@@ -253,11 +350,13 @@ class SemanticNoveltyCheckerV1_1:
                     same_feats.append(f"Substantive overlap with registered/failed spacing-neighbor axis {record.research_id}")
 
             # Specific check for Candidate C (Pair Dormancy) vs Official Pair Repair / KTS pair completion
-            if "dormancy" in cand_title.lower() and "pair" in cand_title.lower():
+            if "dormancy" in cand_name.lower() and "pair" in cand_name.lower():
                 if any(x in rec_ids for x in ("EXP-DRAW-20260824-010-V1", "SRC-OFFICIAL-08-PAIR", "OFFICIAL-PAIR-LIFECYCLE")):
                     score = max(score, 45.0)
                     overlap_class = SemanticOverlapClass.PARTIAL_OVERLAP
                     same_feats.append("Related pair domain concept, but distinct parametric hazard structure")
+
+            semantic_reason = "; ".join(same_feats) if same_feats else "No shared structural features"
 
             match_item = SemanticMatchItem(
                 existing_research_id=record.research_id,
@@ -285,8 +384,19 @@ class SemanticNoveltyCheckerV1_1:
                 semantic_overlap_class=overlap_class.value,
                 canonical_registry_id=canonical_id,
                 canonical_title=canonical_title,
+                canonical_title_source_ref=canonical_source_ref,
+                canonical_title_exact=canonical_title,
+                canonical_title_fingerprint=canonical_title_fp,
+                semantic_reason=semantic_reason,
+                similarity_diagnostics={
+                    "same_features": same_feats,
+                    "different_features": diff_feats,
+                    "score": score,
+                    "domain_compatible_for_rescue": domain_compatible_for_rescue,
+                },
                 resolution_status=res_status,
                 source_evidence=res_evidence,
+                display_source_trace=(disp_id.source_traces[0].to_dict() if disp_id.source_traces else {}),
             )
             matches.append(match_item)
 
@@ -315,8 +425,7 @@ class SemanticNoveltyCheckerV1_1:
         elif near_duplicates:
             final_verdict = NoveltyFinalVerdict.REJECT_DUPLICATE.value
             novelty_just = f"Rejected: substantive near-duplicate of registered axes {', '.join(near_duplicates)}."
-        elif "pair" in cand_title.lower() and "dormancy" in cand_title.lower():
-            # Candidate C: Genuine semantic gap exists from official pair repair, but requires rigorous hazard pooling evidence
+        elif "pair" in cand_name.lower() and "dormancy" in cand_name.lower():
             final_verdict = NoveltyFinalVerdict.NEEDS_EVIDENCE.value
             novelty_just = (
                 "Candidate addresses a distinct parametric hazard distribution on 990 pairs separate from official repair and EXP-012, "
@@ -328,7 +437,13 @@ class SemanticNoveltyCheckerV1_1:
 
         audit_result = CandidateNoveltyAuditResult(
             candidate_id=cand_id,
-            candidate_title=cand_title,
+            candidate_title=cand_name,
+            candidate_name=cand_name,
+            hypothesis=cand_hyp,
+            opposite_hypothesis=cand_opp,
+            discovery_data_end_round=cand_end_round,
+            earliest_eligible_confirmatory_round=cand_conf_round,
+            candidate_identity_fingerprint=cand_fp,
             final_verdict=final_verdict,
             top_matches=top_10,
             exact_overlaps=exact_overlaps,
@@ -338,6 +453,7 @@ class SemanticNoveltyCheckerV1_1:
             novelty_evidence_exists=True,
             referential_integrity_pass=(len(top_invalid) == 0),
             invalid_references=top_invalid,
+            display_source_traces=cand_traces,
         )
 
         return audit_result
@@ -347,9 +463,11 @@ class SemanticNoveltyCheckerV1_1:
 
         json_path = self.evidence_dir / "CANDIDATE_NOVELTY_EVIDENCE.json"
         md_path = self.evidence_dir / "CANDIDATE_NOVELTY_EVIDENCE.md"
+        golden_json_path = self.evidence_dir / "GOLDEN_CANDIDATE_DISPLAY_REPORT.json"
+        golden_md_path = self.evidence_dir / "GOLDEN_CANDIDATE_DISPLAY_REPORT.md"
 
         data = {
-            "version": "1.1",
+            "version": "1.2",
             "audited_candidates_count": len(audit_results),
             "verdict_summary": {
                 verdict.value: sum(1 for a in audit_results if a.final_verdict == verdict.value)
@@ -357,20 +475,46 @@ class SemanticNoveltyCheckerV1_1:
             },
             "audits": [a.to_dict() for a in audit_results],
         }
+
+        # Validate display report against authoritative sources
+        display_audit = self.display_resolver.audit_display_report(data)
+        data["display_identity_audit"] = display_audit.to_dict()
+
+        if display_audit.verdict != "PASS_CANONICAL_DISPLAY_IDENTITY":
+            logger.error(
+                f"FAIL_CLOSED: Display identity audit failed: substitutions={display_audit.mismatches}"
+            )
+            for a in data["audits"]:
+                a["final_verdict"] = NoveltyFinalVerdict.BLOCKED_DISPLAY_IDENTITY_INTEGRITY.value
+
+        # Write CANDIDATE_NOVELTY_EVIDENCE.json
         json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        golden_json_path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
         # Build Markdown
         md = []
-        md.append("# Candidate Novelty Evidence Report V1.1")
+        md.append("# Candidate Novelty Evidence Report V1.2 (Canonical Display Identity Locked)")
         md.append("")
         md.append("- **기준일:** 2026-09-30")
         md.append(f"- **심사된 후보 수:** {len(audit_results)}건")
+        md.append(f"- **표시 무결성 상태 (Display Identity Integrity):** `{display_audit.verdict}`")
+        md.append(f"- **CANONICAL_TITLE_SUBSTITUTION:** {display_audit.canonical_title_substitution}")
+        md.append(f"- **CANDIDATE_NAME_SUBSTITUTION:** {display_audit.candidate_name_substitution}")
+        md.append(f"- **HYPOTHESIS_SUBSTITUTION:** {display_audit.hypothesis_substitution}")
+        md.append(f"- **OPPOSITE_HYPOTHESIS_SUBSTITUTION:** {display_audit.opposite_hypothesis_substitution}")
+        md.append(f"- **DISPLAY_SOURCE_MISMATCH:** {display_audit.display_source_mismatch}")
+        md.append(f"- **CANDIDATE_IDENTITY_FINGERPRINT_MISMATCH:** {display_audit.candidate_identity_fingerprint_mismatch}")
         md.append("")
         md.append("---")
         md.append("")
 
         for a in audit_results:
-            md.append(f"## 후보: `{a.candidate_id}` — {a.candidate_title}")
+            md.append(f"## 후보: `{a.candidate_id}` — {a.candidate_name}")
+            md.append(f"- **원문 가설 (Hypothesis):** {a.hypothesis}")
+            md.append(f"- **대립 가설 (Opposite Hypothesis):** {a.opposite_hypothesis}")
+            md.append(f"- **탐색 종료 회차 (Discovery Data End Round):** {a.discovery_data_end_round}")
+            md.append(f"- **확증 개시 가능 회차 (Earliest Eligible Confirmatory Round):** {a.earliest_eligible_confirmatory_round}")
+            md.append(f"- **후보 고유 지문 (Candidate Identity Fingerprint):** `{a.candidate_identity_fingerprint}`")
             md.append(f"- **최종 판정:** **`{a.final_verdict}`**")
             md.append(f"- **판정 사유:** {a.novelty_justification}")
             md.append(f"- **실패축 구제(Rescue) 감지:** {', '.join(a.failed_axis_rescues) if a.failed_axis_rescues else '없음'}")
@@ -378,14 +522,21 @@ class SemanticNoveltyCheckerV1_1:
             md.append("")
             md.append("### Top 10 Similar Existing Research Matches")
             md.append("")
-            md.append("| # | Existing Research ID | 연구명 | Source Class | 상태 | 유사도 점수 | Semantic Overlap Class |")
-            md.append("|---|---|---|---|---|---:|:---:|")
+            md.append("| # | Existing Research ID | Canonical Title (Exact) | Source Class | 상태 | 유사도 점수 | Semantic Overlap Class | Semantic Relation / Reason |")
+            md.append("|---|---|---|---|---|---:|:---:|---|")
             for idx, m in enumerate(a.top_matches, start=1):
-                md.append(f"| {idx} | `{m.existing_research_id}` | {m.existing_title} | {m.source_type} | {m.status} | {m.similarity_score:.1f} | `{m.semantic_overlap_class}` |")
+                clean_title = m.canonical_title_exact or m.canonical_title or m.existing_title
+                clean_reason = m.semantic_reason.replace("|", "/")
+                md.append(
+                    f"| {idx} | `{m.existing_research_id}` | {clean_title} | {m.source_type} | {m.status} | {m.similarity_score:.1f} | `{m.semantic_overlap_class}` | {clean_reason} |"
+                )
             md.append("")
             md.append("---")
             md.append("")
 
-        md_path.write_text("\n".join(md), encoding="utf-8")
+        md_content = "\n".join(md)
+        md_path.write_text(md_content, encoding="utf-8")
+        golden_md_path.write_text(md_content, encoding="utf-8")
+
         logger.info(f"Saved Candidate Novelty Evidence -> {json_path} and {md_path}")
         return json_path, md_path

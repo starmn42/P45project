@@ -41,6 +41,14 @@ from .semantic_novelty_checker import (
     NoveltyFinalVerdict,
     CandidateNoveltyAuditResult,
 )
+from .canonical_display_resolver import (
+    CanonicalDisplayResolver,
+    DisplayIdentitySource,
+    DisplaySourceTrace,
+    ResolvedDisplayIdentity,
+    CandidateOriginalIdentity,
+    DisplayIdentityAuditReport,
+)
 
 __all__ = [
     "ResearchSourceItem",
@@ -97,4 +105,10 @@ __all__ = [
     "SemanticOverlapClass",
     "NoveltyFinalVerdict",
     "CandidateNoveltyAuditResult",
+    "CanonicalDisplayResolver",
+    "DisplayIdentitySource",
+    "DisplaySourceTrace",
+    "ResolvedDisplayIdentity",
+    "CandidateOriginalIdentity",
+    "DisplayIdentityAuditReport",
 ]

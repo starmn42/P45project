@@ -221,4 +221,39 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - Git Commit: `P45 lock Research Master source identity`.
   - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
 
+### 10. P45 CANONICAL RESEARCH DISPLAY & HYPOTHESIS IDENTITY LOCK (2026-10-01)
+- **배경 및 원인 분석 (Root Cause):**
+  - 연구 디스커버리 표시/보고/증거 생성층에서 정식 연구 식별자와 렌더링 명칭이 분리되지 않고, 시맨틱 매칭 해석 표현(예: "전멸 회차속도", "전멸 회귀선", "대척 동반 출현")이 레지스트리의 권위 있는 연구명(Canonical Title)을 덮어쓰는 표시 계층 결함 확인.
+  - 후보 A/B/C의 가설 설명 또한 최초 생성 artifact 원문이 아닌 후속 시맨틱 요약문으로 대체될 위험 차단 필요.
+- **핵심 구현 및 불변 잠금 (Identity Lock):**
+  - **7대 식별자 계층 분리 (`CanonicalDisplayResolver`):**
+    - `canonical_title`: Formal Registry authoritative title (변형 불가).
+    - `raw_title`: Master Section C / Source artifact 원문 title (변형 불가).
+    - `candidate_name`: 최초 생성 artifact 이름 (변형 불가).
+    - `hypothesis`: 최초 candidate artifact 원문 가설 (요약 덮어쓰기 금지).
+    - `opposite_hypothesis`: 원본 대립 가설 그대로 보존.
+    - `semantic_title`: 보조 매칭 라벨 (변형 허용).
+    - `display_summary`: 사람이 읽기 쉬운 설명 (변형 허용).
+    - 불변 규칙: `semantic_title`과 `display_summary`는 권위 있는 제목/가설 필드를 절대 덮어쓰지 못함.
+  - **출처 지문 (Fingerprint) 잠금 및 Fail-Closed 감사 체계:**
+    - 후보 지문: `SHA256(candidate_id + candidate_name + hypothesis + opposite_hypothesis + discovery_data_end_round)`.
+    - 정식 연구명 지문: `SHA256(canonical_registry_id + domain + canonical_title + version)`.
+    - 보고서 전수 감사: `CANONICAL_TITLE_SUBSTITUTION`, `CANDIDATE_NAME_SUBSTITUTION`, `HYPOTHESIS_SUBSTITUTION`, `OPPOSITE_HYPOTHESIS_SUBSTITUTION`, `DISPLAY_SOURCE_MISMATCH`, `CANDIDATE_IDENTITY_FINGERPRINT_MISMATCH` 모두 0건 검증 필수. 위반 시 즉시 `BLOCKED_DISPLAY_IDENTITY_INTEGRITY` 및 `READY_FOR_PROTOCOL = 0`.
+  - **보고서 직렬화기 및 시맨틱 매처 정밀화 (`SemanticNoveltyCheckerV1_1`):**
+    - 시맨틱 매처는 유사도 점수와 사유(`semantic_reason`)만 별도 생성.
+    - 정식 연구명은 레지스트리 row lookup의 `canonical_title_exact`만 출력.
+    - 증거물 생성: `CANDIDATE_NOVELTY_EVIDENCE.json`, `.md` 및 `GOLDEN_CANDIDATE_DISPLAY_REPORT.json`, `.md` 동시 산출.
+  - **후보군 A/B/C 정밀 출력 검증:**
+    - 후보 A (`IDEA-1243-NEGA-001`): 원문 가설 및 정식 연구명(`EXP-DRAW-20260816-015-V1` = 결손 회복속도, `EXP-DRAW-20260816-017-V1` = 가변 전멸구간 (EXP-004)) 정확 출력, `REJECT_RESCUE` 유지.
+    - 후보 B (`IDEA-1243-OPPO-002`): 원문 가설 및 정식 연구명(`EXP-DRAW-20260816-026-V1` = 숫자 간격 구조 (EXP-008)) 정확 출력, `REJECT_RESCUE` 유지.
+    - 후보 C (`IDEA-1243-CROS-003`): 원문 가설 및 정식 연구명(`EXP-DRAW-20260824-010-V1` = OFFICIAL PAIR LIFECYCLE REPAIR APPLY AUDIT) 정확 출력, 쌍둥이 회차 오염 0건 유지, `NEEDS_EVIDENCE` 유지 (자동 승격 0).
+- **무결성 및 검증 요약:**
+  - 22개 신규 테스트 추가 (`TestCanonicalDisplayIdentity`), 총 158개 단위 테스트 전수 통과 (0 failures, 0 errors).
+  - 공식 엔진 보호 검증 PASS: 변경 0건, Future Leakage 0건.
+  - 정식 레지스트리 69행 유지 (신규 실험 0건, 신규 등록 0건).
+  - 로컬 런타임 활성화: `CANONICAL_DISPLAY_IDENTITY_GUARD_ACTIVE = YES`, `CANDIDATE_IDENTITY_LOCK_ACTIVE = YES`.
+  - 최종 무결성 판정: `PASS_CANONICAL_DISPLAY_IDENTITY`.
+  - Git Commit: `P45 lock canonical research display identity`.
+  - Vercel 배포 판정: 연구 백엔드 내부 변경으로 `web/*` 수정 0건 -> `VERCEL_DEPLOY_NOT_REQUIRED`.
+
 
