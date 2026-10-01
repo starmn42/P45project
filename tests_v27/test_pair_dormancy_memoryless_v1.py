@@ -294,5 +294,110 @@ class TestPairDormancyMemorylessV1(unittest.TestCase):
         lock_data = json.loads(lock_file.read_text(encoding="utf-8"))
         self.assertFalse(lock_data["experiment"]["official_integration"])
 
+
+class TestPairDormancyCorrectionIntegrity(unittest.TestCase):
+    """
+    15 mandatory correction integrity tests (Section 19).
+    """
+
+    @classmethod
+    def setUpClass(cls):
+        cls.calc_data = json.loads((EXPERIMENT_DIR / "CALCULATION.json").read_text(encoding="utf-8"))["primary_screen"]
+        cls.repro_data = json.loads((EXPERIMENT_DIR / "REPRODUCIBILITY.json").read_text(encoding="utf-8"))
+        cls.result_txt = (EXPERIMENT_DIR / "RESULT.md").read_text(encoding="utf-8")
+        cls.reg_txt = (PROJECT_ROOT / "00_P45_STATE" / "experiment_lab" / "06_INITIAL_EXPERIMENT_REGISTRY.md").read_text(encoding="utf-8")
+        cls.lock_data = json.loads((EXPERIMENT_DIR / "PROTOCOL_LOCK.json").read_text(encoding="utf-8"))
+        cls.protocol_txt = (EXPERIMENT_DIR / "PROTOCOL.md").read_bytes()
+        cls.prosp_data = json.loads((EXPERIMENT_DIR / "PROSPECTIVE_STATE.json").read_text(encoding="utf-8"))
+        cls.queue_data = json.loads((PROJECT_ROOT / "v27_storage" / "research_automation" / "queue" / "IDEA-1243-CROS-003.json").read_text(encoding="utf-8"))
+
+    # 1. CALCULATION bin exposure sum equals total
+    def test_correction_01_bin_exposure_sum_equals_total(self):
+        self.assertEqual(sum(self.calc_data["bin_exposures"]), self.calc_data["total_risk_exposures"])
+        self.assertEqual(self.calc_data["total_risk_exposures"], 1162896)
+        self.assertEqual(self.calc_data["bin_exposures"][5], 171005)
+
+    # 2. CALCULATION bin event sum equals total
+    def test_correction_02_bin_event_sum_equals_total(self):
+        self.assertEqual(sum(self.calc_data["bin_events"]), self.calc_data["total_events"])
+        self.assertEqual(self.calc_data["total_events"], 17655)
+
+    # 3. RESULT numbers equal CALCULATION
+    def test_correction_03_result_numbers_equal_calculation(self):
+        self.assertIn("1,162,896", self.result_txt)
+        self.assertIn("171,005", self.result_txt)
+        self.assertIn("17,655", self.result_txt)
+
+    # 4. REPRODUCIBILITY equals CALCULATION
+    def test_correction_04_reproducibility_equals_calculation(self):
+        self.assertTrue(self.repro_data["reproducibility_pass"])
+        self.assertEqual(self.repro_data["run1_summary"]["T_global"], self.calc_data["T_global_observed"])
+        self.assertEqual(self.repro_data["run1_summary"]["p_perm"], self.calc_data["permutation_p_value"])
+        self.assertEqual(self.repro_data["run1_summary"]["verdict"], self.calc_data["verdict"])
+
+    # 5. T_global unchanged
+    def test_correction_05_t_global_unchanged(self):
+        self.assertAlmostEqual(self.calc_data["T_global_observed"], 4.627019413022415, places=10)
+
+    # 6. p_perm unchanged
+    def test_correction_06_p_perm_unchanged(self):
+        self.assertEqual(self.calc_data["permutation_p_value"], 0.6224)
+
+    # 7. verdict unchanged
+    def test_correction_07_verdict_unchanged(self):
+        self.assertEqual(self.calc_data["verdict"], "FAILED_RETROSPECTIVE_SCREEN")
+
+    # 8. protocol SHA unchanged
+    def test_correction_08_protocol_sha_unchanged(self):
+        curr_sha = hashlib.sha256(self.protocol_txt).hexdigest()
+        self.assertEqual(curr_sha, "7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a")
+        self.assertEqual(self.lock_data["protocol_sha256"], curr_sha)
+
+    # 9. Registry ID exists exactly once
+    def test_correction_09_registry_id_exists_exactly_once(self):
+        count = self.reg_txt.count("EXP-DRAW-20261001-001-V1")
+        self.assertEqual(count, 1)
+
+    # 10. Registry collision count = 0 (EXP-DRAW-20261001-001-V1 has 0 collisions)
+    def test_correction_10_registry_collision_count_zero(self):
+        import re
+        all_eids = re.findall(r"\|(EXP-[A-Z]+-\d+-\d+-V\d+)\|", self.reg_txt)
+        collisions = [eid for eid in set(all_eids) if eid == "EXP-DRAW-20261001-001-V1" and all_eids.count(eid) > 1]
+        self.assertEqual(len(collisions), 0, f"Found collision for new experiment ID: {collisions}")
+        self.assertEqual(all_eids.count("EXP-DRAW-20261001-001-V1"), 1)
+
+    # 11. Registry count reconciliation
+    def test_correction_11_registry_count_reconciliation(self):
+        import re
+        all_eids = re.findall(r"\|(EXP-[A-Z]+-\d+-\d+-V\d+)\|", self.reg_txt)
+        unique_eids = set(all_eids)
+        self.assertEqual(len(unique_eids), 70)
+        self.assertEqual(all_eids[-1], "EXP-DRAW-20261001-001-V1")
+
+    # 12. Candidate state remains FAILED
+    def test_correction_12_candidate_state_remains_failed(self):
+        self.assertEqual(self.queue_data["candidate_id"], "IDEA-1243-CROS-003")
+        self.assertEqual(self.queue_data["state"], "FAILED")
+        self.assertEqual(self.queue_data["verdict"], "FAILED_RETROSPECTIVE_SCREEN")
+
+    # 13. Prospective inactive
+    def test_correction_13_prospective_inactive(self):
+        self.assertFalse(self.prosp_data["automatic_activation_allowed"])
+        self.assertEqual(self.prosp_data["prospective_status"], "INACTIVE_DUE_TO_FAILED_OR_INCONCLUSIVE_HISTORICAL_SCREEN")
+        self.assertFalse((EXPERIMENT_DIR / "PROSPECTIVE_LOCK.json").exists())
+
+    # 14. Official mutation = 0
+    def test_correction_14_official_mutation_zero(self):
+        sealed_file = PROJECT_ROOT / "v27_storage" / "prospective" / "trio_orbit_v1_001" / "P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md"
+        self.assertTrue(sealed_file.exists())
+        self.assertFalse(self.lock_data["experiment"]["official_integration"])
+
+    # 15. Future leakage = 0
+    def test_correction_15_future_leakage_zero(self):
+        self.assertEqual(self.calc_data["total_rounds"], 1243)
+        self.assertEqual(self.lock_data["data_scope"]["historical_cutoff_round"], 1243)
+
+
 if __name__ == "__main__":
     unittest.main()
+

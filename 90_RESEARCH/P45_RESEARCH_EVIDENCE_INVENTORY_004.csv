@@ -693,3 +693,5 @@ tests_v27\test_canonical_id_integrity.py,.py,15969,826db6083e3dfaae885d0220b731d
 "v27_storage\experiments\pair_dormancy_memoryless_v1_001\EXPERIMENT_STATE.json",".json","559","8997e61637d26b66473f7f1b7cf572427ba6d691dce1ba1b19bf2cc64d8ddd28","PAIR_DORMANCY_MEMORYLESS_V1"
 "v27_storage\experiments\pair_dormancy_memoryless_v1_001\PROSPECTIVE_STATE.json",".json","395","580ed2e0e9503a9e27b23dd74bfa932024177ea1fad0996c2bf4b65aaa24dd88","PAIR_DORMANCY_MEMORYLESS_V1"
 "tests_v27\test_pair_dormancy_memoryless_v1.py",".py","12936","9e990dc531689920b8cda24d94ba65161b5c6dacfb75b8d49b98108403683137","PAIR_DORMANCY_MEMORYLESS_V1"
+"00_P45_STATE\experiment_lab\06_INITIAL_EXPERIMENT_REGISTRY.md",".md","28977","b966d0fac0649c6cdc16ef0d19b1dd8cda1b3cc1fa05fcaa3c566216db892075","PAIR_DORMANCY_MEMORYLESS_V1_CORRECTION"
+"tests_v27\test_pair_dormancy_memoryless_v1.py",".py","18590","3d9d25183da794a3ee478a901e00651ffcf5c977afcf920e903c88409e42e666","PAIR_DORMANCY_MEMORYLESS_V1_CORRECTION"

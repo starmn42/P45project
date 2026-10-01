@@ -374,3 +374,38 @@ EXP-007 원본 결과는 변경하지 않았으며 additive ERRATA:
 - `10..15` was an example only and was not fixed or preferred.
 - official effect: `NONE`; future leakage: `0`
 - actual canonical physical/version rows after this registration: `68`
+
+
+### EDGE ARITHMETIC FAMILY V1 — 2026-09-30
+
+|experiment_id|LAB|RESEARCH_DOMAIN|연구명|인벤토리 출처상태|현재 상태|공식 영향|승격 가능|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20260930-001-V1|EDGE ARITHMETIC TRANSITION LAB|DRAW|EDGE ARITHMETIC FAMILY V1|USER_AUTHORIZED_LOCKED_EXECUTION|INCONCLUSIVE / NO_SUPPORTED_ENDPOINT|NONE|false|
+
+- Human alias: EDGE ARITHMETIC FAMILY V1; latest numbered EXP-020 unchanged, no EXP-021 assigned.
+- Completed1..1243, dev/holdout lag1 1..869 /870..1242; lag2 1..868 /869..1241.
+- Protocol SHA fe161f3497d0ef6d218009cc797192ddc67df38dd7a67c775210b7d5db953656; 50,000 full-record permutations seed20260930;8 endpoint maxT.
+- Endpoint verdicts: A1=INCONCLUSIVE, A2=FAILED_NOT_SUPPORTED, B1=INCONCLUSIVE, B2=INCONCLUSIVE, C1=INCONCLUSIVE, C2=INCONCLUSIVE, D1=FAILED_NOT_SUPPORTED, D2=INCONCLUSIVE.
+- Exact reproduction PASS; protection change0; future leakage0; research shadow ALL4 rules source1243 ->1244/1245 only.
+- Evidence: v27_storage/experiments/edge_arithmetic_family_v1_001/final_result.md.
+- Canonical physical/version rows after registration69 (DRAW54/CROWD9/PRIZE6). No official integration/promotion.
+
+### PAIR DORMANCY / GEOMETRIC MEMORYLESS HAZARD V1 — 2026-10-01
+
+|experiment_id|LAB|RESEARCH_DOMAIN|연구명|인벤토리 출처상태|현재 상태|공식 영향|승격 가능|
+|---|---|---|---|---|---|---|---|
+|EXP-DRAW-20261001-001-V1|PAIR DORMANCY MEMORYLESS HAZARD LAB|DRAW|PAIR DORMANCY / GEOMETRIC MEMORYLESS HAZARD V1|CANDIDATE_C_FORMALIZED|FAILED_RETROSPECTIVE_SCREEN|NONE|false|
+
+- Candidate heritage: IDEA-1243-CROS-003 (Pair Lifecycle Dormancy Duration Geometric Memory Invariance), fingerprint `2f7f3e183e5e837723232cbdf5e7ab292fbf2e3e04ce3173dc8bd79db0fc09f5`.
+- Human alias: NONE (UNASSIGNED); latest numbered EXP-020 unchanged, no EXP-021 assigned.
+- Data range: Completed 1..1243 (strict historical cutoff <= 1243; future leakage 0).
+- Protocol SHA-256: `7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a`; B = 4999 round-order permutations; deterministic seed `2359884131`.
+- Primary statistic: Global Likelihood-Ratio Deviance across 6 analytic geometric bins (T_global).
+- Observed T_global = 4.627019, permutation p = 0.622400 (3111/4999 >= T_obs).
+- Verdict: `FAILED_RETROSPECTIVE_SCREEN` (이번 사전 고정 V1 검정에서 dormancy hazard effect 미검출; memorylessness 증명 주장 금지).
+- Prospective status: INACTIVE (automatic activation forbidden on failed screen; Round 1244 prospective lock not created).
+- Reproducibility: PASS (independent 2-run bitwise exact match).
+- Official effect: NONE (Official engine, DB, 1244 sealed predraw, thresholds, signatures 100% FROZEN).
+- Canonical physical/version rows after registration: 70 (DRAW 55 / CROWD 9 / PRIZE 6). No official integration/promotion.
+
+

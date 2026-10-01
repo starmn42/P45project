@@ -281,11 +281,11 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
   - L. Protocol SHA-256 불변 검증 PASS (`7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a`)
   - M. Official 1244 sealed 파일 보호 PASS
 - **과거 검증 (Historical Retrospective Screen) 결과:**
-  - 분석 구간: 1회차 ~ 1243회차 (총 1,243개 draw, 1,134,896 risk exposures, 17,655 events).
+  - 분석 구간: 1회차 ~ 1243회차 (총 1,243개 draw, 1,162,896 risk exposures, 17,655 events).
   - Observed $T_{\text{global}} = 4.627019$.
   - Round-order Permutation Null ($B = 4999$, seed `2359884131`): $p_{\text{perm}} = 0.622400$ ($3,111 / 4,999 \ge T_{\text{obs}}$).
   - 최종 판정: **`FAILED_RETROSPECTIVE_SCREEN`**.
-  - 결과 해석 준수: "PAIR dormancy에 따른 temporal hazard effect를 검출할 근거가 없음 (p > 0.05)". H0 비기각을 memorylessness의 증명으로 표현하지 않음. 사후 rescue/bin 변경 일체 금지.
+  - 결과 해석 준수: "이번 사전 고정 V1 global dormancy 검정에서는 PAIR dormancy에 따른 temporal hazard effect를 검출하지 못했다 (p = 0.6224 > 0.05)". H0 비기각은 memorylessness의 증명이 아니며, 사후 rescue/bin 변경 일체 금지.
   - 5구간 시간순 안정성 진단: Block 1 ($T=10.95$), Block 2 ($T=3.05$), Block 3 ($T=6.27$), Block 4 ($T=2.21$), Block 5 ($T=4.48$) - 보조 진단으로 주 판정 불변.
   - 재현성 검증: 동일 입력/시드로 독립 2회 실행 bitwise 완전 일치 (`PASS`).
   - Prospective 준비: 과거 선별 실패로 인해 자동 활성화 금지 -> `PROSPECTIVE_STATE.json`에 비활성 기록 (`PROSPECTIVE_LOCK.json` 미생성).

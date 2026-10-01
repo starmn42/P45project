@@ -442,9 +442,10 @@ REHEARSAL에 실행 결과가 없는 것은 오류가 아니다. 두 항목 모�
     - Protocol SHA-256: `7e9b7ddedb71504cc1aaf80ebc1807e47e51243cbedc2e2ac038e8a34281850a`.
   - **Preflight 검증:** A~M 13개 전 항목 100% PASS.
   - **Historical Screen 결과 (1..1243):**
+    - 분석 구간: 1회차 ~ 1243회차 (총 1,243개 draw, 1,162,896 risk exposures, 17,655 events).
     - $T_{\text{global}} = 4.627019$, Permutation $p = 0.622400$ ($3111/4999 \ge T_{\text{obs}}$).
     - 최종 판정: **`FAILED_RETROSPECTIVE_SCREEN`**.
-    - 엄격 해석: PAIR dormancy에 따른 temporal hazard effect를 검출할 근거가 없음 (p > 0.05). H0 비기각을 memorylessness의 수학적 증명으로 과장하지 않음.
+    - 엄격 해석: 이번 사전 고정 V1 global dormancy 검정에서는 PAIR dormancy에 따른 temporal hazard effect를 검출하지 못했다 (p = 0.622400 > 0.05). H0 비기각을 memorylessness의 수학적 증명으로 과장하지 않음.
     - 재현성: 독립 2회 실행 bitwise 완전 일치 (`PASS`).
     - Prospective 상태: Historical screen FAILED로 인해 자동 활성화 금지 -> `PROSPECTIVE_LOCK.json` 미생성, `PROSPECTIVE_STATE.json`에 비활성 기록.
   - **공식 엔진 보호:**
