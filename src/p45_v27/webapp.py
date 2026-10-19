@@ -53,7 +53,7 @@ class AutoUpdateCoordinator:
                     status=self.adapter.read()
                     current_target=status.get("current",{}).get("target")
             if status["current"]["action"]=="WRITE_OPERATIONS_BLOCKED":
-                raise RuntimeError("PROSPECTIVE_WRITE_OPERATIONS_BLOCKED")
+                raise RuntimeError(f"PROSPECTIVE_WRITE_OPERATIONS_BLOCKED:{json.dumps(status.get('integrity', {}), ensure_ascii=False)}")
             pub_res=publish(self.adapter.read())
             steps.append(pub_res)
             self.state={"status":"자동 업데이트 반영","last_check":time.time(),"last_error":None,"steps":steps}
