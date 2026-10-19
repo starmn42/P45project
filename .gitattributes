@@ -1,0 +1,3 @@
+# Exact byte-for-byte preservation for locked state and storage integrity
+00_P45_STATE/** -text
+v27_storage/** -text
