@@ -1,0 +1,70 @@
+{
+  "target_round": 1242,
+  "actual_date": "2026-09-19",
+  "actual_main": [
+    2,
+    4,
+    10,
+    16,
+    31,
+    41
+  ],
+  "actual_bonus": 9,
+  "scoring_scope": "MAIN6_ONLY",
+  "sealed_record_sha256": "0df2e25fa769db79150c13701de4b0bc931939a4416d3f5fef5efd2a953f35e0",
+  "fixed": {
+    "sets": [
+      [
+        1,
+        32,
+        45
+      ],
+      [
+        2,
+        15,
+        16
+      ],
+      [
+        3,
+        5,
+        19
+      ]
+    ],
+    "hits": [
+      0,
+      2,
+      0
+    ],
+    "primary_3of3": 0,
+    "support_exact_2of3": 1
+  },
+  "linked": {
+    "sets": [
+      [
+        9,
+        35,
+        43
+      ],
+      [
+        5,
+        13,
+        24
+      ],
+      [
+        16,
+        23,
+        42
+      ]
+    ],
+    "hits": [
+      0,
+      0,
+      1
+    ],
+    "primary_3of3": 0,
+    "support_exact_2of3": 0
+  },
+  "historical_combined": false,
+  "future_leakage": 0,
+  "result_status": "SETTLED"
+}

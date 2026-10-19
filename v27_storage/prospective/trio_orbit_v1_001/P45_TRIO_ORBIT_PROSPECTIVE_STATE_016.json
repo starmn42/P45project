@@ -1,0 +1,17 @@
+{
+  "state_status": "OUTCOME_RECORDED",
+  "target_round": 1246,
+  "source_round": 1245,
+  "result_status": "OUTCOME_RECORDED",
+  "canonical_latest_at_selection": 1245,
+  "canonical_sha256": "9cd5d4947cf6d3a8d5d09e523c80dbf782c536a53a2248e9bd8e0c65e1056fea",
+  "kts_schedule_sha256": "5f212342c6c27fca8eafbc75d20a55fc4be4ca2961a9c70c3a7af0eca26f1075",
+  "pattern_index": 6,
+  "linked_pointer_after": 5,
+  "reset_occurred": false,
+  "sealed_record_sha256": "c054d51a72102cdc9e0b55bc4dae1f6d4b93bcb297c34f66ce07c3308f25e4d2",
+  "prior_state_file": "P45_TRIO_ORBIT_PROSPECTIVE_STATE_015.json",
+  "future_leakage": 0,
+  "official_protected_changes": 0,
+  "outcome_recorded_at": "2026-10-19T01:35:54.220055+00:00"
+}
