@@ -1,6 +1,7 @@
 """P45 TRIO ORBIT Prospective Web V1 on the existing standard HTTP server."""
 from __future__ import annotations
 import argparse, json, mimetypes, os, secrets, socket, threading, time
+from datetime import datetime, timezone
 from http import HTTPStatus
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from pathlib import Path
@@ -11,31 +12,69 @@ from .web_publish import publish
 
 PROJECT_ROOT=Path(__file__).resolve().parents[2]; WEB_ROOT=PROJECT_ROOT/"web"; ADAPTER=FrozenWebAdapter(PROJECT_ROOT)
 API_TOKEN=secrets.token_urlsafe(32)
+LIFECYCLE_LOG=PROJECT_ROOT/"v27_storage/live/p45_lifecycle_runs.jsonl"
+
+def _append_lifecycle_log(entry: dict) -> None:
+    try:
+        LIFECYCLE_LOG.parent.mkdir(parents=True, exist_ok=True)
+        with LIFECYCLE_LOG.open("a", encoding="utf-8") as f:
+            f.write(json.dumps(entry, ensure_ascii=False) + "\n")
+    except Exception:
+        pass
 
 class AutoUpdateCoordinator:
     def __init__(self, adapter:FrozenWebAdapter, update=run_update, interval:int=300)->None:
         self.adapter=adapter;self.update=update;self.interval=interval;self.lock=threading.Lock();self.stop=threading.Event()
         self.state={"status":"대기","last_check":None,"last_error":None,"steps":[]}
-    def run_once(self)->dict:
+    def run_once(self, trigger_source: str = "AUTO")->dict:
         if not self.lock.acquire(blocking=False):return self.state
+        steps=[];pub_res=None;current_target=None;canonical_latest=None
         try:
-            steps=[];updated=self.update();steps.append(updated.get("status","UNKNOWN"))
+            while True:
+                updated=self.update();status_val=updated.get("status","UNKNOWN");steps.append(status_val)
+                if status_val in ("DRAW_DATA_INVALID","DRAW_UPDATE_FAILED"):
+                    raise RuntimeError(f"DRAW_UPDATE_REJECTED:{status_val}:{updated.get('error','')}")
+                if status_val!="P45_NEW_DRAW_UPDATE_V1_READY":
+                    break
             status=self.adapter.read()
-            if status["current"]["action"]=="RECORD_OUTCOME":
-                self.adapter.service.record_outcome(status["current"]["target"]);steps.append("SETTLED")
-                status=self.adapter.read()
-            if status["current"]["action"]=="PREVIEW_AND_SEAL_NEXT":
-                preview=self.adapter.service.preview_next();self.adapter.service.seal_next(preview["preview_sha256"]);steps.append("NEXT_SEALED")
-                status=self.adapter.read()
+            canonical_latest=status.get("canonical",{}).get("latest")
+            current_target=status.get("current",{}).get("target")
+            while status["current"]["action"] in ("RECORD_OUTCOME","PREVIEW_AND_SEAL_NEXT"):
+                if status["current"]["action"]=="RECORD_OUTCOME":
+                    target_to_settle=status["current"]["target"]
+                    self.adapter.service.record_outcome(target_to_settle)
+                    steps.append(f"SETTLED_{target_to_settle}")
+                    status=self.adapter.read()
+                    current_target=status.get("current",{}).get("target")
+                elif status["current"]["action"]=="PREVIEW_AND_SEAL_NEXT":
+                    preview=self.adapter.service.preview_next()
+                    self.adapter.service.seal_next(preview["preview_sha256"])
+                    steps.append(f"NEXT_SEALED_{preview['target']}")
+                    status=self.adapter.read()
+                    current_target=status.get("current",{}).get("target")
+            if status["current"]["action"]=="WRITE_OPERATIONS_BLOCKED":
+                raise RuntimeError("PROSPECTIVE_WRITE_OPERATIONS_BLOCKED")
             pub_res=publish(self.adapter.read())
             steps.append(pub_res)
             self.state={"status":"자동 업데이트 반영","last_check":time.time(),"last_error":None,"steps":steps}
         except Exception as exc:
             self.state={"status":"자동 업데이트 오류","last_check":time.time(),"last_error":f"{type(exc).__name__}: {exc}","steps":steps}
-        finally:self.lock.release()
+        finally:
+            self.lock.release()
+            _append_lifecycle_log({
+                "timestamp":datetime.now(timezone.utc).isoformat(),
+                "trigger_source":trigger_source,
+                "target":current_target,
+                "canonical_latest":canonical_latest,
+                "steps":list(steps),
+                "success":self.state["last_error"] is None,
+                "error":self.state["last_error"],
+                "deploy_result":pub_res,
+                "final_state":self.state["status"],
+            })
         return self.state
     def loop(self)->None:
-        while not self.stop.is_set():self.run_once();self.stop.wait(self.interval)
+        while not self.stop.is_set():self.run_once(trigger_source="DAEMON_LOOP");self.stop.wait(self.interval)
 
 AUTO=AutoUpdateCoordinator(ADAPTER)
 
@@ -101,5 +140,16 @@ def serve(host:str="127.0.0.1",port:int=8045)->None:
     except KeyboardInterrupt:pass
     finally:AUTO.stop.set();server.server_close()
 def main(argv:list[str]|None=None)->int:
-    parser=argparse.ArgumentParser(description="P45 TRIO ORBIT prospective web v1");parser.add_argument("--host",default="127.0.0.1");parser.add_argument("--port",type=int,default=8045);args=parser.parse_args(argv);serve(args.host,args.port);return 0
+    parser=argparse.ArgumentParser(description="P45 TRIO ORBIT prospective web v1")
+    parser.add_argument("--host",default="127.0.0.1")
+    parser.add_argument("--port",type=int,default=8045)
+    parser.add_argument("--once",action="store_true",help="Run one complete lifecycle pass and exit")
+    parser.add_argument("--trigger-source",default=os.environ.get("P45_TRIGGER_SOURCE","CLI_ONCE"),help="Trigger source identifier")
+    args=parser.parse_args(argv)
+    if args.once:
+        res=AUTO.run_once(trigger_source=args.trigger_source)
+        print(json.dumps(res,ensure_ascii=False,indent=2))
+        return 0 if res.get("last_error") is None else 1
+    serve(args.host,args.port)
+    return 0
 if __name__=="__main__":raise SystemExit(main())

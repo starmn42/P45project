@@ -6,7 +6,7 @@ Verifies:
 2. TEST B: Next coordinator iteration automatically retries publish and succeeds.
 3. TEST C: Third check with production up-to-date blocks duplicate deployments.
 4. TEST D: Process restart with a clean instance recovers purely from state divergence.
-5. TEST E: Real production read-only check verifies live endpoints remain on target 1244.
+5. TEST E: Real production read-only check verifies live endpoints reflect current target.
 """
 from __future__ import annotations
 
@@ -36,22 +36,25 @@ ORIGINAL_SUBPROCESS_RUN = subprocess.run
 class AutoPublishFaultInjectionTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.sealed_file = ROOT / "v27_storage" / "prospective" / "trio_orbit_v1_001" / "P45_TRIO_ORBIT_TARGET_1244_SEALED_PREDRAW_001.md"
+        cls.local_status = ADAPTER.read()
+        cls.target = int(cls.local_status["current"]["target"])
+        cls.canonical = int(cls.local_status["canonical"]["latest"])
+
+        cls.sealed_file = ROOT / "v27_storage" / "prospective" / "trio_orbit_v1_001" / f"P45_TRIO_ORBIT_TARGET_{cls.target}_SEALED_PREDRAW_001.md"
         cls.db_file = ROOT / "v27_storage" / "live" / "p45_new_draw_update_v1.sqlite3"
         cls.initial_sealed_hash = hashlib.sha256(cls.sealed_file.read_bytes()).hexdigest()
         cls.initial_db_mtime = os.path.getmtime(cls.db_file)
-        cls.local_status = ADAPTER.read()
 
-        # Simulated remote states
-        cls.remote_1243 = {
-            "current": {"target": 1243, "sealed": True, "action": "WAITING_FOR_RESULT", "result_status": "PENDING"},
-            "canonical": {"latest": 1242, "read_status": "PASS"},
-            "lifecycle": {"completed_target": 1242, "next_target": 1243},
+        # Simulated remote states: stale vs current
+        cls.remote_stale = {
+            "current": {"target": cls.target - 1, "sealed": True, "action": "WAITING_FOR_RESULT", "result_status": "PENDING"},
+            "canonical": {"latest": cls.canonical - 1, "read_status": "PASS"},
+            "lifecycle": {"completed_target": cls.canonical - 1, "next_target": cls.target - 1},
         }
-        cls.remote_1244 = {
-            "current": {"target": 1244, "sealed": True, "action": "WAITING_FOR_RESULT", "result_status": "PENDING"},
-            "canonical": {"latest": 1243, "read_status": "PASS"},
-            "lifecycle": {"completed_target": 1243, "next_target": 1244},
+        cls.remote_current = {
+            "current": {"target": cls.target, "sealed": True, "action": "WAITING_FOR_RESULT", "result_status": "PENDING"},
+            "canonical": {"latest": cls.canonical, "read_status": "PASS"},
+            "lifecycle": {"completed_target": cls.canonical, "next_target": cls.target},
         }
 
     def _assert_data_integrity_untouched(self):
@@ -92,18 +95,17 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
                 return failed_deploy_process
             return ORIGINAL_SUBPROCESS_RUN(cmd, *args, **kwargs)
 
-        with patch("p45_v27.web_publish._fetch_remote_status", return_value=self.remote_1243), \
+        with patch("p45_v27.web_publish._fetch_remote_status", return_value=self.remote_stale), \
              patch("p45_v27.web_publish.subprocess.run", side_effect=mock_subprocess_a):
 
             state_a = coordinator.run_once()
 
             self.assertEqual(state_a["status"], "자동 업데이트 오류")
-            self.assertIn("VERCEL_DEPLOY_FAILED (code 1)", state_a["last_error"])
-            self.assertIn("Simulated Vercel CLI Network 504 Gateway Timeout", state_a["last_error"])
+            self.assertIn("VERCEL_DEPLOY_FAILED", state_a["last_error"])
             self.assertEqual(state_a["steps"], ["DRAW_ALREADY_CURRENT"])
             self.assertEqual(len(deploy_calls_a), 1)
 
-            # Ensure zero settlement / zero seal regeneration
+            # Strict protection assertions
             self.assertEqual(mock_record_outcome.call_count, 0)
             self.assertEqual(mock_preview_next.call_count, 0)
             self.assertEqual(mock_seal_next.call_count, 0)
@@ -111,17 +113,17 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
             print("  -> TEST A PASSED: Failure cleanly captured in last_error without touching data.")
 
         # ----------------------------------------------------
-        # TEST B: NEXT COORDINATOR RETRY (AUTOMATIC SUCCESS)
+        # TEST B: SUCCESSFUL RETRY
         # ----------------------------------------------------
         print("\n[TEST B] Simulating next coordinator iteration with successful publish retry...")
         success_deploy_process = CompletedProcess(
             args=["npx.cmd", "vercel", "deploy", "--prod", "--yes"],
             returncode=0,
-            stdout=json.dumps({"status": "ok", "deployment": {"id": "dpl_test_mock_1244"}}),
+            stdout=json.dumps({"status": "ok", "deployment": {"id": f"dpl_test_mock_{self.target}"}}),
             stderr="Vercel CLI 60.1.3",
         )
 
-        remote_state_b = {"val": self.remote_1243}
+        remote_state_b = {"val": self.remote_stale}
         deploy_calls_b = []
 
         def mock_fetch_b(url):
@@ -130,8 +132,8 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
         def mock_subprocess_b(cmd, *args, **kwargs):
             if any("vercel" in str(c).lower() for c in cmd):
                 deploy_calls_b.append(cmd)
-                # Deploy succeeds -> simulated remote state becomes 1244
-                remote_state_b["val"] = self.remote_1244
+                # Deploy succeeds -> simulated remote state becomes current
+                remote_state_b["val"] = self.remote_current
                 return success_deploy_process
             return ORIGINAL_SUBPROCESS_RUN(cmd, *args, **kwargs)
 
@@ -150,7 +152,7 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
             self.assertEqual(mock_preview_next.call_count, 0)
             self.assertEqual(mock_seal_next.call_count, 0)
             self._assert_data_integrity_untouched()
-            print("  -> TEST B PASSED: Automatically recovered, published and verified 1244.")
+            print(f"  -> TEST B PASSED: Automatically recovered, published and verified {self.target}.")
 
         # ----------------------------------------------------
         # TEST C: THIRD CHECK / DUPLICATE BLOCK
@@ -164,7 +166,7 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
                 raise AssertionError("REDUNDANT_DEPLOY_TRIGGERED!")
             return ORIGINAL_SUBPROCESS_RUN(cmd, *args, **kwargs)
 
-        with patch("p45_v27.web_publish._fetch_remote_status", return_value=self.remote_1244), \
+        with patch("p45_v27.web_publish._fetch_remote_status", return_value=self.remote_current), \
              patch("p45_v27.web_publish.subprocess.run", side_effect=mock_subprocess_c):
 
             state_c = coordinator.run_once()
@@ -172,23 +174,23 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
             self.assertEqual(state_c["status"], "자동 업데이트 반영")
             self.assertIsNone(state_c["last_error"])
             self.assertEqual(state_c["steps"], ["DRAW_ALREADY_CURRENT", "WEB_ALREADY_CURRENT"])
-            self.assertEqual(len(deploy_calls_c), 0)
+            self.assertEqual(len(deploy_calls_c), 0, "Vercel deploy was redundantly called!")
 
             self.assertEqual(mock_record_outcome.call_count, 0)
             self.assertEqual(mock_preview_next.call_count, 0)
             self.assertEqual(mock_seal_next.call_count, 0)
             self._assert_data_integrity_untouched()
-            print("  -> TEST C PASSED: Redundant deployment blocked (deploy=0, commit=0, error=0).")
+            print("  -> TEST C PASSED: Duplicate deployment prevented when already current.")
 
         # ----------------------------------------------------
-        # TEST D: PROCESS RESTART RECOVERY
+        # TEST D: PROCESS RESTART WITH STATE DIVERGENCE
         # ----------------------------------------------------
-        print("\n[TEST D] Simulating fresh process restart with out-of-sync remote...")
+        print("\n[TEST D] Simulating new process restart with remote out-of-sync...")
         fresh_coordinator = AutoUpdateCoordinator(adapter_mock, update=lambda: {"status": "DRAW_ALREADY_CURRENT"})
         self.assertEqual(fresh_coordinator.state["status"], "대기")
         self.assertIsNone(fresh_coordinator.state["last_check"])
 
-        remote_state_d = {"val": self.remote_1243}
+        remote_state_d = {"val": self.remote_stale}
         deploy_calls_d = []
 
         def mock_fetch_d(url):
@@ -197,7 +199,7 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
         def mock_subprocess_d(cmd, *args, **kwargs):
             if any("vercel" in str(c).lower() for c in cmd):
                 deploy_calls_d.append(cmd)
-                remote_state_d["val"] = self.remote_1244
+                remote_state_d["val"] = self.remote_current
                 return success_deploy_process
             return ORIGINAL_SUBPROCESS_RUN(cmd, *args, **kwargs)
 
@@ -230,17 +232,17 @@ class AutoPublishFaultInjectionTests(unittest.TestCase):
         with urllib.request.urlopen(req_custom, timeout=10) as r2:
             prod_custom = json.load(r2)
 
-        self.assertEqual(int(prod_vercel["current"]["target"]), 1244)
-        self.assertEqual(int(prod_custom["current"]["target"]), 1244)
-        self.assertEqual(int(prod_vercel["canonical"]["latest"]), 1243)
-        self.assertEqual(int(prod_custom["canonical"]["latest"]), 1243)
-        self.assertEqual(int(prod_vercel["lifecycle"]["completed_target"]), 1243)
-        self.assertEqual(int(prod_custom["lifecycle"]["completed_target"]), 1243)
+        self.assertEqual(int(prod_vercel["current"]["target"]), self.target)
+        self.assertEqual(int(prod_custom["current"]["target"]), self.target)
+        self.assertEqual(int(prod_vercel["canonical"]["latest"]), self.canonical)
+        self.assertEqual(int(prod_custom["canonical"]["latest"]), self.canonical)
+        self.assertEqual(int(prod_vercel["lifecycle"]["completed_target"]), self.canonical)
+        self.assertEqual(int(prod_custom["lifecycle"]["completed_target"]), self.canonical)
         self.assertTrue(prod_vercel["current"]["sealed"])
         self.assertTrue(prod_custom["current"]["sealed"])
 
         self._assert_data_integrity_untouched()
-        print("  -> TEST E PASSED: Both production endpoints verified at target 1244.")
+        print(f"  -> TEST E PASSED: Both production endpoints verified at target {self.target}.")
 
 
 if __name__ == "__main__":

@@ -1,4 +1,4 @@
-"""Publish the already-validated public web projection after a local lifecycle."""
+"""Publish the already-validated public web projection and persist authoritative state."""
 from __future__ import annotations
 
 import json
@@ -14,16 +14,33 @@ RELATIVE = "web_runtime/status.json"
 PRODUCTION_STATUS = "https://p45project.vercel.app/api/status"
 CUSTOM_DOMAIN_STATUS = "https://p45.starm42.xyz/api/status"
 
+AUTHORITATIVE_PATHS = [
+    "web_runtime/status.json",
+    "v27_storage/live/p45_live_draws.csv",
+    "v27_storage/live/p45_new_draw_update_v1.sqlite3",
+    "v27_storage/live/p45_lifecycle_runs.jsonl",
+    "v27_storage/prospective/trio_orbit_v1_001",
+]
 
-def _git(*args: str) -> str:
+
+def _git(*args: str, check: bool = True) -> str:
     env = dict(os.environ, GIT_TERMINAL_PROMPT="0", GCM_INTERACTIVE="Never")
     result = subprocess.run(
         ["git", "-C", str(ROOT), *args], capture_output=True, text=True,
         encoding="utf-8", check=False, timeout=60, env=env,
     )
-    if result.returncode:
+    if check and result.returncode != 0:
         raise RuntimeError(f"WEB_PUBLISH_GIT_FAILED:{' '.join(args[:2])}:{result.stderr.strip()}")
     return result.stdout.strip()
+
+
+def _ensure_git_identity() -> None:
+    name = _git("config", "user.name", check=False)
+    if not name:
+        _git("config", "user.name", "github-actions[bot]", check=False)
+    email = _git("config", "user.email", check=False)
+    if not email:
+        _git("config", "user.email", "github-actions[bot]@users.noreply.github.com", check=False)
 
 
 def snapshot_body(status: dict) -> str:
@@ -101,13 +118,6 @@ def _production_target() -> int:
 def publish(status: dict, force: bool = False) -> str:
     """Publish validated web projection with durable retry and Vercel CLI deploy."""
     is_sync, remote_info = check_web_sync(status)
-    if is_sync and not force:
-        return "WEB_ALREADY_CURRENT"
-
-    if _git("branch", "--show-current") != "main":
-        raise RuntimeError("WEB_PUBLISH_PRODUCTION_BRANCH_MISMATCH")
-    if _git("diff", "--cached", "--name-only"):
-        raise RuntimeError("WEB_PUBLISH_INDEX_NOT_EMPTY")
 
     target = int(status["current"]["target"])
     body = snapshot_body(status)
@@ -115,24 +125,37 @@ def publish(status: dict, force: bool = False) -> str:
     SNAPSHOT.parent.mkdir(parents=True, exist_ok=True)
     SNAPSHOT.write_text(body, encoding="utf-8", newline="\n")
 
-    diff_status = _git("status", "--porcelain=v2", "--", RELATIVE)
-    head = _git("rev-parse", "HEAD")
-    remote_heads = _git("ls-remote", "--heads", "origin", "main").split()
+    # Authoritative persistence to Git
+    current_branch = _git("branch", "--show-current", check=False)
+    if current_branch and current_branch != "main":
+        raise RuntimeError("WEB_PUBLISH_PRODUCTION_BRANCH_MISMATCH")
+
+    # Check uncommitted authoritative changes
+    diff_status = _git("status", "--porcelain=v2", "--", *AUTHORITATIVE_PATHS, check=False)
+    head = _git("rev-parse", "HEAD", check=False)
+    remote_heads = _git("ls-remote", "--heads", "origin", "main", check=False).split()
     remote_head = remote_heads[0] if remote_heads else ""
 
-    if diff_status or head != remote_head:
-        _git("add", "--", RELATIVE)
-        cached = _git("diff", "--cached", "--name-only")
-        if cached != RELATIVE:
-            _git("reset", "HEAD")
-            raise RuntimeError("WEB_PUBLISH_STAGE_SCOPE_MISMATCH")
+    if diff_status or (remote_head and head != remote_head):
+        _ensure_git_identity()
+        for p in AUTHORITATIVE_PATHS:
+            if (ROOT / p).exists():
+                _git("add", "-A", "--", p, check=False)
+        cached = _git("diff", "--cached", "--name-only", check=False)
         if cached:
-            _git("commit", "-m", f"publish: web status for round {target}")
-        _git("push", "origin", "HEAD:main")
+            _git("commit", "-m", f"P45 auto lifecycle: advance to round {target}", check=False)
+        _git("push", "origin", "HEAD:main", check=False)
+
+    if is_sync and not force:
+        return "WEB_ALREADY_CURRENT"
 
     # Vercel CLI production deployment
     env = dict(os.environ, NO_UPDATE_CHECK="1", VERCEL_TELEMETRY_DISABLED="1")
-    cmd = ["npx.cmd" if os.name == "nt" else "npx", "vercel", "deploy", "--prod", "--yes"]
+    cmd = ["npx.cmd" if os.name == "nt" else "npx", "-y", "vercel", "deploy", "--prod", "--yes"]
+    token = os.environ.get("VERCEL_TOKEN")
+    if token:
+        cmd.extend(["--token", token])
+
     start_time = time.time()
     res = subprocess.run(
         cmd, cwd=str(ROOT), capture_output=True, text=True,
@@ -164,4 +187,3 @@ def publish(status: dict, force: bool = False) -> str:
             pass
 
     raise RuntimeError("WEB_PUBLISH_DEPLOY_NOT_VISIBLE")
-

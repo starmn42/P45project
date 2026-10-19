@@ -301,3 +301,232 @@ Append-only successor for TRIO ORBIT Retrospective and AUTO RESEARCH LOOP V1; Re
 
 
 
+
+
+## 2026-10-01 — TRIO ORBIT 1239~1243 sealed prospective failure decomposition
+
+- Existing lineage `v27_storage/audits/trio_orbit_prospective_retrospective_001` CONTINUED; no new experiment, no Registry row, original scorecard/statistical correction preserved.
+- All5sealed originals and settlements match canonical MAIN6+BONUS and prior SHA references, PASS. MAIN6-only scoring; pending1244 excluded.
+- Fixed PRIMARY0/SUPPORT3; Linked PRIMARY0/SUPPORT1. Fixed coverage4/assembly1; Linked coverage5/assembly0. Total coverage9/assembly1/primary0.
+- Root conclusion `PRIMARY_BOTTLENECK_NUMBER_POOL_COVERAGE`. One next direction `NUMBER / CANDIDATE-POOL SIGNAL`; descriptive priority only, no research automatically started.
+- Fixed pool hits2/3/1/2/1, Linked2/1/2/1/2. Exact support and anchor mappings retained; no replacement numbers or new grouping rule.
+- 1239 prior valid contiguous NUMBER-extinction evidence is directionally consistent but a distinct pool/rule; earlier defective snapshot remains invalid. No prior audit rerun.
+- N5 cannot establish significance, Fixed/Linked superiority or persistent signal. EXP017 FAILED_NOT_SUPPORTED preserved; no consensus rescue.
+- Official/DB/KTS45/WEB/1239..1244sealed changes0; number regeneration0, recommendations0, future leakage0. Protected SHA PASS; Registry byte-identical70.
+- Evidence: `RESULT.md`, `RESULT.json`, `ROUND_TRACE.csv`, `INPUT_PROVENANCE.json`, `PROTECTED_HASH_REPORT.json`, `EVIDENCE_MANIFEST.json` in existing lineage. Important research decision retained.
+- RESUME_FROM=COMPLETE for this decomposition; do not duplicate.
+
+## 2026-10-05 — P45 WEB AUTO-LIFECYCLE FAILURE ROOT CAUSE REPAIR & 1244->1245 TRANSITION COMPLETE PASS
+
+### 1. 장애 현상 및 최초 확인 (FAILURE CONFIRMED: YES)
+- 1244회 공식 결과(2026-10-03 추첨: 1, 13, 18, 26, 34, 38 + 보너스 25) 발표 이후에도 WEB API(`https://p45project.vercel.app/api/status`) 및 로컬 WEB이 다음 1245회 출격으로 자동 전환되지 않고 1244회 PENDING / WAITING_FOR_RESULT 상태로 고착됨.
+- 현장 상태 점검:
+  - Canonical live 최신 회차: 1243 (1244 미반영)
+  - 1244 settlement 부재
+  - 1245 preview / seal 부재
+  - 로컬 8045 포트 리스너 부재 및 `p45_v27.webapp` 프로세스 미실행 확인.
+
+### 2. 최초 근본 원인 특정 (ROOT CAUSE: COORDINATOR_NOT_RUNNING + SCHEDULED_TASK_PATH_DEFECT)
+1. **서버 상주 프로세스 부재 (`COORDINATOR_NOT_RUNNING`):**
+   - 300초 주기 라이프사이클 총괄 코디네이터(`AutoUpdateCoordinator`)가 `p45_v27.webapp` 서버 데몬 내에만 존재하나, 서버 프로세스가 기동되어 있지 않았음.
+2. **윈도우 작업 스케줄러 등록 경로 결함:**
+   - 보조 자동화로 등록된 `\P45 Weekly Draw Update` 작업(토 22:30, 일 09:00 실행)이 `E:\P45 프로젝트\P45 회차 업데이트.cmd`를 호출하도록 되어 있었으나, 실제 파일은 `00_PROJECT_CONTROL\TOOLS\` 하위에만 존재하여 매 실행 시 종료 코드 1(`Last Result: 1`)로 실패함.
+3. **스케줄러 작업 스코프 누락:**
+   - 기존 `TOOLS\P45 회차 업데이트.cmd`는 `draw_update.py update`만 호출하여 번호 수집만 수행하고, 정산(`record_outcome`), 차기 생성/봉인(`preview_next`/`seal_next`), 웹 배포(`publish`)를 수행하지 않는 구조적 결함이 존재함.
+4. **배포 단계 `-y` 플래그 누락 (`npx vercel`):**
+   - `web_publish.py` 내 `npx.cmd vercel deploy --prod --yes` 호출 시 npx 자체에 `-y` 플래그가 없어 비대화형 환경에서 워커 타임아웃(EPIPE) 에러 발생 및 `VERCEL_DEPLOY_FAILED` 예외를 유발하는 잠재 결함 확인.
+
+### 3. 수리 및 강화 내역 (REPAIR ACTIONS)
+1. **`src/p45_v27/webapp.py`:**
+   - `--once` CLI 옵션 추가: 웹 서버 데몬을 띄우지 않고도 단일 회차의 전체 라이프사이클(수집->정산->차기봉인->배포)을 즉시 결정론적으로 1회 완결 실행할 수 있도록 지원.
+2. **`src/p45_v27/web_publish.py`:**
+   - `cmd = ["npx.cmd" if os.name == "nt" else "npx", "-y", "vercel", "deploy", "--prod", "--yes"]`로 수정하여 비대화형 환경에서도 npx가 대화형 프롬프트나 패키지 워커 타임아웃 없이 무중단 배포되도록 수정.
+3. **`00_PROJECT_CONTROL/TOOLS/P45 회차 업데이트.cmd`:**
+   - 기존 단순 `draw_update` 호출을 `"%P45_PYTHON%" -m p45_v27.webapp --once`로 전면 교체하여 스케줄러 실행만으로도 전체 라이프사이클이 1회에 완결되도록 보장.
+4. **루트 프록시 스크립트 신설 (`E:\P45 프로젝트\P45 회차 업데이트.cmd`):**
+   - UTF-8 BOM 인코딩으로 루트에 배치하여 작업 스케줄러의 기존 등록 경로 및 직접 실행 모두 100% 정상 작동하도록 영구 보호.
+5. **작업 스케줄러 재설치 및 실전 검증:**
+   - `P45 자동업데이트 설치.ps1`을 재실행하여 정규 등록 완료, `schtasks /run` 수동 트리거 후 종료 코드 0(`Last Result: 0`) 확인.
+
+### 4. 1244 정산 및 1245 전향적 봉인 완료
+- **1244 공식 결과 반영:** 1, 13, 18, 26, 34, 38 (보너스 25), `SKIPPED_RESEARCH_HOLD`.
+- **1244 봉인 원본 보존:** `e68ebccfce558798676466c664a17b325af72e5fb4ac1bf7a65dc1975d113b58` (변조 0건, 일치).
+- **1244 적중 정산 결과:**
+  - Fixed [9 11 25, 10 39 41, 12 14 28]: hits [0, 0, 0], PRIMARY 0, SUPPORT 0.
+  - Linked [17 23 35, 5 32 38, 28 30 44]: hits [0, 1, 0] (38번 1수 일치), PRIMARY 0, SUPPORT 0.
+  - 생성 파일: `P45_TRIO_ORBIT_TARGET_1244_OUTCOME_001.json`, `P45_TRIO_ORBIT_TARGET_1244_SETTLEMENT_001.json`, `STATE_012.json`.
+- **1245 전향적 픽 생성 및 봉인:**
+  - Fixed 3×3: `13 42 44`, `17 30 31`, `18 20 34`
+  - Linked 3×3: `8 14 26`, `5 34 36`, `1 37 40` (기준번호 Anchors: 26, 34, 1)
+  - 봉인 파일: `P45_TRIO_ORBIT_TARGET_1245_SEALED_PREDRAW_001.md`
+  - 봉인 SHA-256: `dd40cb40bb6a6da0fff543008d693a0992045fc0b3c22b5f740e138c0e23a93d`
+  - Future Leakage: 0, State: `STATE_013.json`.
+
+### 5. WEB 동기화 및 재시작 내구성 검증
+- **WEB 배포:**
+  - `web_runtime/status.json` 갱신 및 Git main 브랜치 커밋/푸시(`c5969e1`).
+  - Vercel 프로덕션 배포 완료 (`https://p45project.vercel.app/` 및 `https://p45.starm42.xyz/`).
+  - 로컬, Vercel, 커스텀 도메인 3개 엔드포인트 100% 동일 데이터(1245회 PENDING) 일치 검증 PASS.
+- **재시작 내구성 테스트 (A~F 전수 통과):**
+  - 서버 완전 종료 후 재시작 시 startup 직후 lifecycle check 즉시 실행 확인 (`last_error: null`, `DRAW_ALREADY_CURRENT`, `WEB_ALREADY_CURRENT`).
+  - 1245 봉인 SHA 불변 및 중복 쓰기 0건.
+  - 300초 코디네이터 백그라운드 스레드 정상 상주 확인.
+  - 브라우저 새로고침 및 API 재요청 후에도 1245회 완벽 유지.
+
+### 6. 보호 검증 (PROTECTION VERDICT: PASS)
+- Official Engine semantics: FROZEN 유지 (변경 0건).
+- Official DB, canonical CSV/SQLite: 1244 1행 안전 추가 외 과거 데이터 변조 0건.
+- 1244 봉인 원본 해시: `e68ebccf...` 100% 일치.
+- Protected 5종 및 Official 3종 해시: 100% 일치 (변조 0건).
+- Registry: 70행 일치.
+- 최종 판정: **`PASS_AUTO_LIFECYCLE_REPAIRED_AND_1245_SEALED`**.
+
+
+## 2026-10-05 — P45 AUTO-LIFECYCLE FINAL PRODUCTION HARDENING & CLOSEOUT
+
+### 1. 개요 및 목적
+- 매주 사람의 개입, 확인, 수동 테스트 없이 PC/웹서버 가용 상태에 따라 완전 자율적으로 라이프사이클(공식추첨수집 -> canonical update -> settlement -> next preview -> next seal -> web publish)이 완결되도록 운영 인프라 및 실패 복구 체계를 최종 마감(Closeout)함.
+
+### 2. 기존 장애 원인 (Root Cause) 최종 상태
+1. **서버 상주 의존 결함 (`COORDINATOR_NOT_RUNNING`):**
+   - 상태: **RESOLVED**.
+   - 내용: `webapp.py`에 `--once` CLI 옵션을 구현하여 웹서버 데몬 실행 여부와 무관하게 완전히 독립된 단일 프로세스로 풀 라이프사이클 실행 가능.
+2. **스케줄러 경로 및 배치 디렉토리 해석 결함 (`SCHEDULED_TASK_PATH_DEFECT`):**
+   - 상태: **RESOLVED**.
+   - 내용: `00_PROJECT_CONTROL\TOOLS\P45 회차 업데이트.cmd`가 배치 스크립트 상위 2단계 디렉토리를 프로젝트 루트(`PROJECT_ROOT`)로 엄밀하게 역산(`for %%I in ("%~dp0..\..") do set "PROJECT_ROOT=%%~fI"`)하여 `PYTHONPATH` 설정 및 파이썬 종료 코드를 Task Scheduler에 그대로 반환(`exit /b %EXIT_CODE%`)하도록 수정. 루트 프록시 `P45 회차 업데이트.cmd`도 단일 위임 구조로 일원화.
+3. **부분 작업 단독 실행 결함 (`PARTIAL_SCOPE_EXECUTION`):**
+   - 상태: **RESOLVED**.
+   - 내용: `draw_update` 단독 실행을 금지하고, 공식 결과 수집 -> 정산 -> 차기 봉인 -> 웹 배포까지의 Full lifecycle을 단일 실행(`webapp --once`)으로 통합.
+4. **배포 환경 비대화형 대기 결함 (`DEPLOY_INTERACTIVE_HANG`):**
+   - 상태: **RESOLVED**.
+   - 내용: `web_publish.py`에 `-y` 플래그를 추가(`npx.cmd -y vercel deploy --prod --yes`)하여 비대화형 환경에서 대기/타임아웃 없이 무인 배포 완결.
+
+### 3. 최종 Windows 작업 스케줄러 설정 (Task Scheduler Hardening)
+- **대상 작업:** `\P45 Weekly Draw Update`
+- **트리거 (Triggers):**
+  1. 기본 트리거 (Primary): 매주 토요일 22:30 (`CalendarTrigger`)
+  2. 보조 트리거 (Backup): 매주 일요일 09:00 (`CalendarTrigger`)
+  3. 보완 캐치업 트리거 (Catch-up): 사용자 로그인 시 (`LogonTrigger -User sung2-PC\sung2`)
+- **놓친 실행 복구 정책 (Missed-run Policy):**
+  - `StartWhenAvailable = True` 활성화. 예정 시간에 PC가 꺼져 있었더라도 다음 부팅/가용 시 즉시 실행.
+- **실패 자동 재시도 정책 (Failure Retry Policy):**
+  - `RestartCount = 4`, `RestartInterval = PT15M` (15분 간격, 최대 4회 자동 재시도).
+  - 배치 파일 및 `webapp.py`가 오류 발생 시 0이 아닌 종료 코드(`exit /b 1`)를 정확히 반환하여 스케줄러 재시도 메커니즘 정상 연동.
+- **중복 병렬 실행 방지 (Duplicate Policy):**
+  - `MultipleInstancesPolicy = IgnoreNew` (`DO_NOT_START_NEW`).
+  - 근거: P45 라이프사이클은 1회 실행으로 최신 상태까지 일괄 반영하므로 병렬 큐잉보다 실행 중인 작업을 유지하고 신규 시작을 안전 무시하는 것이 파일 락 및 Git 충돌을 방지하는 최선의 정책임.
+- **로그인/부팅 의존도 및 보안 제약:**
+  - 사용자 계정 비밀번호를 저장하지 않는 Interactive 보안 모델을 유지하며, 무인 백그라운드 비밀번호 저장 대신 `AtLogOn -User sung2` + `StartWhenAvailable` 조합으로 로그인 시점 즉시 무인 캐치업 보완. (보안 제약: `SECURITY_BLOCKED_UNATTENDED_PASSWORD_STORAGE` 안전 수렴).
+- **스케줄러 실측 결과:**
+  - `schtasks /run` 실행 후 `Last Result: 0` 정상 확인.
+
+### 4. 단일 권위 실행 진입점 (Authoritative Entrypoint)
+- **공식 단일 실행 명령:**
+  `"%P45_PYTHON%" -m p45_v27.webapp --once --trigger-source "%P45_TRIGGER_SOURCE%"`
+- **공식 배치 경로:**
+  - 내부: `E:\P45 프로젝트\00_PROJECT_CONTROL\TOOLS\P45 회차 업데이트.cmd`
+  - 루트: `E:\P45 프로젝트\P45 회차 업데이트.cmd` (내부 경로로 100% 위임)
+
+### 5. 실패 복구 및 내구성 로깅 (Failure Recovery & Durable Logging)
+- **내구성 실행 로그:**
+  - `v27_storage/live/p45_lifecycle_runs.jsonl`에 매 실행 시 영구 append:
+    `timestamp`, `trigger_source`, `target`, `canonical_latest`, `steps`, `success`, `error`, `deploy_result`, `final_state`.
+- **지연 상태 자동 캐치업 (Stale-State Safety):**
+  - `canonical latest >= prospective target` 상태 감지 시 `while` 루프로 미완료된 과거 회차 순차 정산 후 차기 회차 단일 봉인 및 웹 배포까지 자동 연속 실행.
+- **안전 Idempotency:**
+  - 이미 최신 상태에서 실행 시 `["DRAW_ALREADY_CURRENT", "WEB_ALREADY_CURRENT"]`로 즉각 no-op 종료 (신규 쓰기 0건, 봉인 불변, 소요 시간 ~1초).
+
+### 6. 무결성 및 보호 검증 (Protection Verdict)
+- Official Engine semantics: FROZEN 유지 (변경 0건)
+- Protocol Locked 파일 (5종): 100% SHA-256 일치 (변조 0건)
+- Official Protected 파일 (3종): 100% SHA-256 일치 (변조 0건)
+- 1244 봉인 원본 해시: `e68ebccfce558798676466c664a17b325af72e5fb4ac1bf7a65dc1975d113b58` (PASS)
+- 1245 전향 봉인 해시: `dd40cb40bb6a6da0fff543008d693a0992045fc0b3c22b5f740e138c0e23a93d` (PASS)
+- Registry 정식 물리 행: 70행 완전 보존 (DRAW 55 / CROWD 9 / PRIZE 6)
+- Future Leakage: 0
+
+### 7. 최종 클로즈아웃 판정
+- **판정: `AUTO_LIFECYCLE_PRODUCTION_CLOSED`**
+- **향후 매주 남은 수동 작업 (Remaining Manual Weekly Action): `NONE`**
+
+
+
+
+---
+
+## 2026-10-19 — P45 AUTO-LIFECYCLE CLOUD MIGRATION FINAL
+
+> 과거 2026-10-05의 `AUTO_LIFECYCLE_PRODUCTION_CLOSED` 판단은 역사적 기록으로 보존하며, 이번 클라우드 완전 이전(Cloud Migration)이 이를 공식 Supersede한다.
+
+### 1. 이번 장애 재발 일시 및 최초 원인 (Root Cause Analysis)
+- **발생 일시:** 2026-10-17(토) 1246회 공식 추첨 이후 ~ 2026-10-19(월)
+- **증상:** 프로덕션 Vercel 및 Custom Domain API가 1245회에 머물러 있는 Stale 상태 잔류 (`canonical: 1245, current: 1246 PENDING`).
+- **최초 근본 원인 (Confirmed Root Cause):**
+  1. `MISSED_TRIGGER`: Windows 작업 스케줄러 `P45 Weekly Draw Update`의 토요일 주 트리거가 22:30이 아닌 오전 10:30:00 AM으로 오등록되어 10/17(토) 추첨 발표 후 야간에 전혀 트리거되지 않음.
+  2. `LOCAL_PC_NOT_AVAILABLE`: 주말 야간 및 일요일 PC 전원 오프라인으로 인해 일요일 백업 트리거(09:00)가 미실행됨.
+  3. `VERCEL_DEPLOY_FAILED`: 10/19(월) 아침 사용자 로그인 시 LogonTrigger로 일부(데이터 수집/정산/봉인) 실행되었으나, Vercel Git Integration 부재 상태에서 로컬 Vercel CLI 배포 도중 프로세스 비정상 종료(0xC000013A, STATUS_CONTROL_C_EXIT)가 발생하여 Vercel 프로덕션에 미반영됨.
+  4. `STATE_PERSISTENCE_LEAK`: 기존 `web_publish.py`가 오직 `web_runtime/status.json`만 스테이징하고 canonical CSV, SQLite, prospective 정산/봉인 자산을 Git 커밋에서 누락시켜 클라우드 러너 호환성 결여.
+
+### 2. Local-PC 의존성 영구 폐기 및 클라우드 이전 결정
+- **PRIMARY 자동화:** GitHub Actions scheduled workflow (`.github/workflows/p45-auto-lifecycle.yml`)
+- **FALLBACK 자동화:** GitHub Actions `workflow_dispatch` 수동 원클릭 실행
+- **LOCAL WINDOWS:** 비상용 수동 도구로만 유지 (`00_PROJECT_CONTROL/TOOLS/P45 회차 업데이트.cmd`), Windows 주간 스케줄러는 영구 비활성화(Disabled).
+
+### 3. 클라우드 스케줄 및 동시성 설계
+- **스케줄 (한국시간 KST 기준 / UTC 변환):**
+  - 토요일 22:00 KST (`cron: '0 13 * * 6'`)
+  - 토요일 22:30 KST (`cron: '30 13 * * 6'`)
+  - 토요일 23:00 KST (`cron: '0 14 * * 6'`)
+  - 토요일 23:30 KST (`cron: '30 14 * * 6'`)
+  - 일요일 09:00 KST (`cron: '0 0 * * 0'`)
+- **동시성 제어:**
+  `concurrency: { group: p45-auto-lifecycle, cancel-in-progress: false }` 로 동일 라이프사이클의 병렬 실행 원천 차단.
+- **최소 권한:** `permissions: { contents: write }`
+
+### 4. 상태 영속성 (Authoritative State Persistence)
+- `web_publish.py` 전면 리팩토링:
+  다음 authoritative 핵심 자산을 단일 커밋으로 원자적 Git 동기화:
+  - `web_runtime/status.json`
+  - `v27_storage/live/p45_live_draws.csv`
+  - `v27_storage/live/p45_new_draw_update_v1.sqlite3`
+  - `v27_storage/live/p45_lifecycle_runs.jsonl`
+  - `v27_storage/prospective/trio_orbit_v1_001` (전체 정산, 봉인 마크다운, 상태 파일)
+
+### 5. 프로덕션 Vercel 배포 전략
+- GitHub Actions 시크릿(`VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID`) 최신 동기화 완료.
+- `web_publish.py`에 Token-Aware Vercel CLI 배포 연동 및 프로덕션 엔드포인트 15회 Bounded Poll/Retry 검증 탑재.
+- 이미 동기화된 상태에서는 `WEB_ALREADY_CURRENT`로 중복 배포 0건 보장.
+
+### 6. 회차 복구 및 전향 봉인 결과
+- **Canonical Latest:** 1246회 (2026-10-17: 16, 22, 23, 24, 27, 28 + 6)
+- **Settlement Latest:** 1246회 정산 완료 (`P45_TRIO_ORBIT_TARGET_1246_SETTLEMENT_001.json`)
+- **차기 봉인 회차:** 1247회 (`P45_TRIO_ORBIT_TARGET_1247_SEALED_PREDRAW_001.md`)
+  - FIXED A: `1 12 29`
+  - FIXED B: `2 34 45`
+  - FIXED C: `3 7 20`
+  - ANCHOR A/B/C: `28`, `6`, `22`
+  - LINKED A: `28 29 36`
+  - LINKED B: `6 43 44`
+  - LINKED C: `22 23 45`
+  - 봉인 SHA-256: `eb38a57cfee5cc6a804a52ef89c9629a8b0076585c3c40df60ecf84a2f1522f0`
+- **배포 실측 반영:**
+  - `https://p45project.vercel.app/api/status` -> 1246 완료 / 1247 PENDING (PASS)
+  - `https://p45.starm42.xyz/api/status` -> 1246 완료 / 1247 PENDING (PASS)
+
+### 7. 무결성 및 내결함성 테스트 (Fault-Injection Verdict)
+- `tests/test_auto_publish_fault_injection.py`: 5개 시나리오(TEST A~E) 100% PASS.
+- `tests/test_cloud_lifecycle_fault_injection.py`: 8개 시나리오(A~H) 100% PASS:
+  - Clean runner --once execution PASS
+  - Already-current 0 writes / 0 mutation PASS
+  - Temporary fetch failure graceful retry PASS
+  - Deployment delay bounded retry PASS
+  - Git push no-change 0 empty commit PASS
+  - Multiple simultaneous triggers concurrency block PASS
+  - Existing seal immutability 100% PASS
+  - Multi-round stale chronological catch-up PASS
+- 과거 봉인 해시(1239..1246): 100% 불변 보존 PASS.
+- Official Engine: FROZEN 유지, Future Leakage: 0.
+
+### 8. Windows 스케줄러 퇴역 (Retirement)
+- 작업명 `\P45 Weekly Draw Update`: `schtasks /change /tn "P45 Weekly Draw Update" /disable` 실행으로 영구 비활성화 확인 (`상태: 사용할 수 없음`).
+- 수동 복구 배치 파일만 로컬에 보존.
